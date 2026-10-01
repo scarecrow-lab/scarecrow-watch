@@ -1,5 +1,94 @@
 {
-  "generated": null,
+  "generated": "2026-10-01T12:44:19+00:00",
   "source": "UNHCR Refugee Data Finder",
-  "countries": {}
+  "countries": {
+    "Myanmar": {
+      "year": 2025,
+      "refugees": 1524378,
+      "asylum_seekers": 67824,
+      "idps": 3628840,
+      "stateless": 0,
+      "ooc": 496
+    },
+    "Philippines": {
+      "year": 2025,
+      "refugees": 807,
+      "asylum_seekers": 6088,
+      "idps": 43500,
+      "stateless": 0,
+      "ooc": 163707
+    },
+    "Thailand": {
+      "year": 2025,
+      "refugees": 327,
+      "asylum_seekers": 2656,
+      "idps": 0,
+      "stateless": 0,
+      "ooc": 0
+    },
+    "Cambodia": {
+      "year": 2025,
+      "refugees": 11332,
+      "asylum_seekers": 1646,
+      "idps": 517555,
+      "stateless": 0,
+      "ooc": 0
+    },
+    "Indonesia": {
+      "year": 2025,
+      "refugees": 9215,
+      "asylum_seekers": 8205,
+      "idps": 0,
+      "stateless": 0,
+      "ooc": 1137
+    },
+    "Laos": {
+      "year": 2025,
+      "refugees": 6489,
+      "asylum_seekers": 466,
+      "idps": 0,
+      "stateless": 0,
+      "ooc": 0
+    },
+    "Vietnam": {
+      "year": 2025,
+      "refugees": 20636,
+      "asylum_seekers": 19253,
+      "idps": 0,
+      "stateless": 0,
+      "ooc": 28
+    },
+    "Malaysia": {
+      "year": 2025,
+      "refugees": 2477,
+      "asylum_seekers": 5511,
+      "idps": 0,
+      "stateless": 0,
+      "ooc": 0
+    },
+    "Singapore": {
+      "year": 2025,
+      "refugees": 43,
+      "asylum_seekers": 212,
+      "idps": 0,
+      "stateless": 0,
+      "ooc": 0
+    },
+    "Brunei": {
+      "year": 2025,
+      "refugees": 5,
+      "asylum_seekers": 170,
+      "idps": 0,
+      "stateless": 0,
+      "ooc": 0
+    },
+    "Timor-Leste": {
+      "year": 2025,
+      "refugees": 15,
+      "asylum_seekers": 1520,
+      "idps": 0,
+      "stateless": 0,
+      "ooc": 0
+    }
+  }
 }
