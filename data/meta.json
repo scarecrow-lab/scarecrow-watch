@@ -1,0 +1,14 @@
+{
+  "sources": {
+    "reliefweb": {
+      "status": "pending"
+    },
+    "gdelt": {
+      "status": "pending"
+    },
+    "unhcr": {
+      "status": "pending"
+    }
+  },
+  "last_run": null
+}

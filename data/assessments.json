@@ -1,0 +1,573 @@
+{
+  "reviewed": "2026-10-01",
+  "reviewer": "Scarecrow Lab",
+  "scale": "1 (low) to 5 (severe)",
+  "framework": "UN Framework of Analysis for Atrocity Crimes, common risk factors 1-8",
+  "factors": [
+    {
+      "key": "conflict",
+      "en": "Conflict / instability",
+      "th": "ความขัดแย้ง / ความไม่มั่นคง"
+    },
+    {
+      "key": "violations",
+      "en": "Record of serious violations",
+      "th": "บันทึกการละเมิดร้ายแรง"
+    },
+    {
+      "key": "state",
+      "en": "Weak state structures",
+      "th": "โครงสร้างรัฐอ่อนแอ"
+    },
+    {
+      "key": "motive",
+      "en": "Motives / incentives",
+      "th": "แรงจูงใจ"
+    },
+    {
+      "key": "capacity",
+      "en": "Capacity to commit",
+      "th": "ศักยภาพในการก่อเหตุ"
+    },
+    {
+      "key": "mitigating",
+      "en": "Absence of mitigants",
+      "th": "การขาดปัจจัยบรรเทา"
+    },
+    {
+      "key": "enabling",
+      "en": "Enabling circumstances",
+      "th": "สภาวะเอื้ออำนวย"
+    },
+    {
+      "key": "trigger",
+      "en": "Triggering factors",
+      "th": "ปัจจัยกระตุ้น"
+    }
+  ],
+  "countries": [
+    {
+      "name": "Myanmar",
+      "scores": {
+        "conflict": 5,
+        "violations": 5,
+        "state": 4,
+        "motive": 5,
+        "capacity": 4,
+        "mitigating": 5,
+        "enabling": 5,
+        "trigger": 4
+      },
+      "note": "Active armed conflict across multiple fronts since the 2021 coup, alongside a longstanding, internationally documented case concerning the Rohingya. Civic space and independent media are severely constrained.",
+      "evidence": {
+        "conflict": {
+          "text": "ACLED now estimates more than 100,000 people killed since the 2021 coup, with over 3.5 million displaced. On 28 September 2026 a military airstrike on the market in Arakan Army-held Kyauktaw, Rakhine State, killed about 50 people and injured 58, one of the deadliest strikes of the war. Its January 2026 regional overview notes resistance-military clashes were actually 17% less frequent in 2025 than 2024 — but the military escalated airstrikes on civilians in 2026 under a reorganized command, with over a dozen mass killings and 450+ civilian deaths recorded in just the first half of the year. Fewer clashes, higher per-incident lethality against civilians specifically.",
+          "sources": [
+            {
+              "label": "AP via NBC News, Sep 2026",
+              "url": "https://www.nbcnews.com/world/myanmar/deadly-airstrike-market-myanmar-rakhine-state-rcna600408"
+            },
+            {
+              "label": "Reuters via US News, Sep 2026",
+              "url": "https://www.usnews.com/news/world/articles/2026-09-29/death-toll-from-myanmar-airstrike-in-rakhine-state-rises-to-50"
+            },
+            {
+              "label": "NBC News / ACLED, Jul 2026",
+              "url": "https://www.nbcnews.com/world/asia/myanmar-military-escalates-civilian-killings-monitor-warns-rcna589385"
+            },
+            {
+              "label": "ACLED Asia-Pacific Overview, Jan 2026",
+              "url": "https://acleddata.com/update/asia-pacific-overview-january-2026"
+            }
+          ]
+        },
+        "violations": {
+          "text": "Myanmar is the respondent in an ongoing ICJ genocide case (The Gambia v. Myanmar) over the 2017 Rohingya crackdown; merits hearings closed on 29 January 2026 and the court is deliberating. The Gambia says a judgment is expected in October 2026; as of 1 October the court had not announced a date. The ICC is separately investigating alleged crimes against humanity.",
+          "sources": [
+            {
+              "label": "UN IIMM case page",
+              "url": "https://iimm.un.org/en/icj-gambia-v-myanmar"
+            },
+            {
+              "label": "The Business Standard, Sep 2026",
+              "url": "https://www.tbsnews.net/bangladesh/court/icj-may-deliver-rohingya-genocide-verdict-next-month-1548711"
+            },
+            {
+              "label": "HRW, Jan 2026",
+              "url": "https://www.hrw.org/news/2026/01/08/myanmar-critical-hearings-in-rohingya-genocide-case"
+            },
+            {
+              "label": "Dhaka Tribune, Aug 2026",
+              "url": "https://www.dhakatribune.com/bangladesh/418516/rohingya-genocide-case-icj-verdict-expected-in"
+            }
+          ]
+        },
+        "state": {
+          "text": "Central military authority is contested and territorially fragmented: the junta's stable control has fallen to roughly 72–220 of Myanmar's 330 townships, with parallel administrations (the National Unity Government and several ethnic interim governments) controlling other areas.",
+          "sources": [
+            {
+              "label": "Wikipedia (ACLED-sourced), 2026",
+              "url": "https://en.wikipedia.org/wiki/Myanmar_civil_war_(2021%E2%80%93present)"
+            }
+          ]
+        },
+        "motive": {
+          "text": "The staggered Dec 2025–Jan 2026 'election' banned the largest opposition party (NLD), approved only 63 military-vetted parties, and guaranteed the military 25% of seats by constitution — consistent with entrenching power rather than a genuine transition. In April 2026 the military-backed parliament elected coup leader Min Aung Hlaing as president.",
+          "sources": [
+            {
+              "label": "Al Jazeera, Sep 2026",
+              "url": "https://www.aljazeera.com/news/2026/9/28/myanmar-army-air-strike-kills-dozens-in-rakhine-state"
+            },
+            {
+              "label": "FIDH / ALTSEAN-Burma briefing, Feb 2026",
+              "url": "https://www.fidh.org/en/region/asia/myanmar/myanmar-from-sham-to-scam-overview-of-the-2025-2026-fraudulent"
+            }
+          ]
+        },
+        "capacity": {
+          "text": "The military conducted roughly 5,600 airstrikes in 2025 alone and continued mass-casualty ground operations into 2026, showing sustained capacity for large-scale violence despite territorial losses.",
+          "sources": [
+            {
+              "label": "Wikipedia (RFA-sourced), 2026",
+              "url": "https://en.wikipedia.org/wiki/Airstrikes_in_the_Myanmar_civil_war_(2021%E2%80%93present)"
+            }
+          ]
+        },
+        "mitigating": {
+          "text": "Civic space is severely constrained: the junta held an estimated 23,000+ political prisoners during the election period, dissolved the main opposition party, and passed an Election Protection Law criminalizing dissent — removing most domestic checks on further escalation.",
+          "sources": [
+            {
+              "label": "FIDH / ALTSEAN-Burma, Feb 2026",
+              "url": "https://www.fidh.org/en/region/asia/myanmar/myanmar-from-sham-to-scam-overview-of-the-2025-2026-fraudulent"
+            },
+            {
+              "label": "Fortify Rights, Dec 2025",
+              "url": "https://www.fortifyrights.org/mya-inv-2025-12-10/"
+            }
+          ]
+        },
+        "enabling": {
+          "text": "State media and a new Election Protection Law were used to criminalize criticism (400+ people charged around the election period), while longstanding non-recognition of Rohingya identity continues to enable discriminatory treatment.",
+          "sources": [
+            {
+              "label": "FIDH / ALTSEAN-Burma, Feb 2026",
+              "url": "https://www.fidh.org/en/region/asia/myanmar/myanmar-from-sham-to-scam-overview-of-the-2025-2026-fraudulent"
+            },
+            {
+              "label": "Al Jazeera, Jan 2026",
+              "url": "https://www.aljazeera.com/news/2026/1/14/myanmar-says-rohingya-genocide-case-at-the-hague-is-flawed-unfounded"
+            }
+          ]
+        },
+        "trigger": {
+          "text": "The election period itself was a documented flashpoint: monitors recorded roughly 1,288 armed clashes and attacks on civilians in the six weeks around the three voting phases, killing 281 civilians, alongside 308 additional airstrikes.",
+          "sources": [
+            {
+              "label": "FIDH / ALTSEAN-Burma, Feb 2026",
+              "url": "https://www.fidh.org/en/region/asia/myanmar/myanmar-from-sham-to-scam-overview-of-the-2025-2026-fraudulent"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Philippines",
+      "scores": {
+        "conflict": 3,
+        "violations": 3,
+        "state": 3,
+        "motive": 2,
+        "capacity": 3,
+        "mitigating": 4,
+        "enabling": 2,
+        "trigger": 3
+      },
+      "note": "Localized risk concentrated in Mindanao (clan/insurgent violence, BARMM transition, private armies) and a persistent culture of impunity around past drug-war killings. National institutions and press remain comparatively active checks, but political-dynasty dominance blunts accountability.",
+      "evidence": {
+        "conflict": {
+          "text": "The Communist Party/NPA insurgency and clashes with MILF factions and the Dawlah Islamiyah-Maute group continue, with over 180 fatalities in the past year concentrated in Mindanao and the central Visayas. Over 121,500 people remain internally displaced in Mindanao, many since the 2017 Marawi siege.",
+          "sources": [
+            {
+              "label": "R2P Asia Pacific Centre, Jan 2026",
+              "url": "https://r2pasiapacific.org/files/12461/Philippines%20%20Risk%20assessment%20Jan%202026%20%20FINAL.pdf"
+            }
+          ]
+        },
+        "violations": {
+          "text": "Duterte-era drug-war killings (est. 6,000–30,000+) remain largely unprosecuted; Duterte has been detained at the ICC since March 2025 on crimes-against-humanity charges; on 16 September 2026 judges kept him in detention and his trial is set to open on 30 November 2026. The Philippines also ranks among the deadliest countries in Asia for journalists and environmental/land-rights defenders.",
+          "sources": [
+            {
+              "label": "Anadolu, Sep 2026",
+              "url": "https://aa.com.tr/en/asia-pacific/icc-rules-philippines-ex-president-duterte-to-remain-detained/4058996"
+            },
+            {
+              "label": "R2P Asia Pacific Centre, Jan 2026",
+              "url": "https://r2pasiapacific.org/files/12461/Philippines%20%20Risk%20assessment%20Jan%202026%20%20FINAL.pdf"
+            }
+          ]
+        },
+        "state": {
+          "text": "About 57% of investigated extrajudicial-killing cases have unidentified perpetrators, and 67% of identified perpetrators were state agents — reflecting weak accountability mechanisms despite a Justice Department task force formed to probe past EJKs.",
+          "sources": [
+            {
+              "label": "R2P Asia Pacific Centre, Jan 2026",
+              "url": "https://r2pasiapacific.org/files/12461/Philippines%20%20Risk%20assessment%20Jan%202026%20%20FINAL.pdf"
+            }
+          ]
+        },
+        "capacity": {
+          "text": "Over 20 private armies (mostly in Mindanao) operate alongside an estimated 545,000+ unregistered loose firearms nationwide, sustaining a durable capacity for political and clan violence largely outside state control.",
+          "sources": [
+            {
+              "label": "R2P Asia Pacific Centre, Jan 2026",
+              "url": "https://r2pasiapacific.org/files/12461/Philippines%20%20Risk%20assessment%20Jan%202026%20%20FINAL.pdf"
+            }
+          ]
+        },
+        "mitigating": {
+          "text": "Over 70% of elected officials come from political dynasties, which dominate Congress and most provincial governorships — concentrating power in ways that weaken the checks and accountability that would otherwise catch early warning signs.",
+          "sources": [
+            {
+              "label": "R2P Asia Pacific Centre, Jan 2026",
+              "url": "https://r2pasiapacific.org/files/12461/Philippines%20%20Risk%20assessment%20Jan%202026%20%20FINAL.pdf"
+            }
+          ]
+        },
+        "trigger": {
+          "text": "Elections are the most consistent trigger for violence: a conflict monitor recorded 611 violent incidents and 235 deaths in the Bangsamoro region (BARMM) between January and July 2026 alone, ahead of its first parliamentary elections.",
+          "sources": [
+            {
+              "label": "Daily Tribune (Philippines), Aug 2026",
+              "url": "https://tribune.net.ph/2026/08/03/barmm-election-violence-leaves-235-dead-ngo-says"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Thailand",
+      "scores": {
+        "conflict": 4,
+        "violations": 3,
+        "state": 2,
+        "motive": 3,
+        "capacity": 3,
+        "mitigating": 2,
+        "enabling": 2,
+        "trigger": 4
+      },
+      "note": "Two concurrent active conflicts: a 2025–2026 border war with Cambodia (deadliest fighting between the two countries in over a decade, repeated ceasefire collapses) and the separate, 22-year Deep South insurgency in Pattani, Yala and Narathiwat, which remained active with coordinated attacks as recently as August 2026.",
+      "evidence": {
+        "conflict": {
+          "text": "Two separate active conflicts run concurrently. (1) An interstate border war with Cambodia erupted in July 2025 (dozens killed, ~130,000+ displaced), collapsed again in December 2025 into 20 more days of fighting (101+ killed, 500,000+ displaced total), with tensions flaring repeatedly through 2026 despite a US/Malaysia-brokered ceasefire. (2) The separate, decades-long Deep South insurgency (Pattani, Yala, Narathiwat) marked 22 years in Jan 2026 with 10,116 officially certified incidents and 5,999 deaths since 2004, and remained active into 2026 — including a coordinated wave of 70+ arson and bomb attacks across four southern provinces in August 2026.",
+          "sources": [
+            {
+              "label": "NBC News, 2026",
+              "url": "https://www.nbcnews.com/world/asia/thailand-cambodia-sign-new-ceasefire-agreement-end-border-fighting-rcna251096"
+            },
+            {
+              "label": "Nation Thailand (SBPAC data), Jan 2026",
+              "url": "https://www.nationthailand.com/blogs/news/policy/40060749/"
+            },
+            {
+              "label": "TRT World, Aug 2026",
+              "url": "https://trtworld.com/article/1069a99791b3"
+            }
+          ]
+        },
+        "violations": {
+          "text": "Both sides have accused each other of violations of the laws of armed conflict — Thailand alleging Cambodian rocket/artillery fire into civilian homes, Cambodia alleging Thai use of cluster munitions, which are banned under an international treaty neither country deploying them has ratified.",
+          "sources": [
+            {
+              "label": "Oman Observer, Jun 2026",
+              "url": "https://www.omanobserver.om/article/1173981/world/asia/thailand-and-cambodias-deadly-border-dispute-what-we-know"
+            },
+            {
+              "label": "Ittefaq (Bangladesh), Jul 2026",
+              "url": "https://en.ittefaq.com.bd/12802/thailand-warns-clashes-with-cambodia-could-move"
+            }
+          ]
+        },
+        "trigger": {
+          "text": "A landmine incident and repeated accusations of ceasefire violations have twice reignited full-scale fighting after negotiated truces (July 2025 and October 2025 agreements both broke down), showing the border remains a live flashpoint rather than a resolved dispute.",
+          "sources": [
+            {
+              "label": "OODA Loop, 2026",
+              "url": "https://oodaloop.com/briefs/dangerous-places/thailand-halts-cambodia-ceasefire-agreement-will-inform-washington/"
+            }
+          ]
+        },
+        "mitigating": {
+          "text": "Freedom House rates Thailand 'Not Free' (34/100 in the 2025 report), citing continued use of lèse-majesté and computer-crime laws against activists and journalists, limiting the independent scrutiny that would otherwise flag escalation risk.",
+          "sources": [
+            {
+              "label": "Freedom House via The Southeast Asia Desk, 2026",
+              "url": "https://www.thesoutheastasiadesk.com/p/human-rights-in-southeast-asia-a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Cambodia",
+      "scores": {
+        "conflict": 4,
+        "violations": 3,
+        "state": 3,
+        "motive": 3,
+        "capacity": 2,
+        "mitigating": 5,
+        "enabling": 2,
+        "trigger": 3
+      },
+      "note": "The 2025–2026 border war with Thailand is the country's most severe active conflict in over a decade, layered on a domestic picture of a dominant one-party system with very little independent civic space to catch early warning signs.",
+      "evidence": {
+        "conflict": {
+          "text": "Cambodia fought Thailand in the deadliest bilateral clashes in over a decade, with fighting resuming in December 2025 after a July 2025 ceasefire collapsed — over 100 combined fatalities and half a million people displaced across both countries by January 2026.",
+          "sources": [
+            {
+              "label": "NBC News, 2026",
+              "url": "https://www.nbcnews.com/world/asia/thailand-cambodia-sign-new-ceasefire-agreement-end-border-fighting-rcna251096"
+            }
+          ]
+        },
+        "trigger": {
+          "text": "Cambodia's Prime Minister formally asked the UN Security Council to intervene against what it called 'Thailand's aggression' during the fighting, indicating the conflict escalated to the point of seeking international intervention.",
+          "sources": [
+            {
+              "label": "Ittefaq (Bangladesh), Jul 2026",
+              "url": "https://en.ittefaq.com.bd/12802/thailand-warns-clashes-with-cambodia-could-move"
+            }
+          ]
+        },
+        "mitigating": {
+          "text": "Freedom House rated Cambodia 'Not Free' at roughly 23/100 in 2025, reflecting the ruling Cambodian People's Party's dominance of the legislature and a shrinking space for independent media and opposition politics.",
+          "sources": [
+            {
+              "label": "Freedom House via The Southeast Asia Desk, 2026",
+              "url": "https://www.thesoutheastasiadesk.com/p/human-rights-in-southeast-asia-a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Indonesia",
+      "scores": {
+        "conflict": 3,
+        "violations": 3,
+        "state": 2,
+        "motive": 2,
+        "capacity": 2,
+        "mitigating": 2,
+        "enabling": 2,
+        "trigger": 2
+      },
+      "note": "Residual risk concentrated in Papua, where ACLED has documented a clear escalating trend in 2026 — conflict-related deaths rising month over month as security forces deploy drone and airstrike capability against separatist fighters, with civilians increasingly caught in between.",
+      "evidence": {
+        "conflict": {
+          "text": "ACLED's own analysts describe a 'deeply worrying pattern' in Papua: conflict-related deaths rose every month from the start of 2026, with 40+ killed in May 2026 alone, as Indonesian forces adopted more lethal tactics including drone and air strikes against the West Papua National Liberation Army (TPNPB).",
+          "sources": [
+            {
+              "label": "ACLED expert comment, May 2026",
+              "url": "https://acleddata.com/expert-comment/why-indonesias-papua-region-becoming-deadlier"
+            }
+          ]
+        },
+        "violations": {
+          "text": "Indonesia's own National Commission on Human Rights recorded 59 deaths and 50 further casualties from 42 violent incidents in West Papua in just the first half of 2026, with human rights monitors also documenting a rise in arbitrary detention and torture of indigenous Papuans.",
+          "sources": [
+            {
+              "label": "National Indigenous Times (AU), Sep 2026",
+              "url": "https://nit.com.au/18-09-2026/26558/latest-figures-on-west-papuan-deaths-tells-a-violent-picture-of-the-indonesian-armed-conflict-across-provinces"
+            },
+            {
+              "label": "Human Rights Monitor, Q1 2026",
+              "url": "https://humanrightsmonitor.org/reports/papua-monitor-q1-2026-no-de-escalation-as-military-operations-drive-new-displacement/"
+            }
+          ]
+        },
+        "trigger": {
+          "text": "Military operations are themselves generating displacement rather than resolving it: reported displacement in West Papua rose from about 107,000 in early 2026 to more than 125,000 by September 2026, with new waves following each operation. Access is restricted, so the true number is likely higher.",
+          "sources": [
+            {
+              "label": "Asia Pacific Report, Sep 2026",
+              "url": "https://asiapacificreport.nz/2026/09/25/they-just-have-to-get-out-civilians-pay-the-price-for-west-papua-conflict/"
+            },
+            {
+              "label": "Human Rights Monitor, Mar 2026",
+              "url": "https://humanrightsmonitor.org/reports/idp-update-march26-more-military-trigger-new-displacements-and-dampen-the-prospects-of-return/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Laos",
+      "scores": {
+        "conflict": 1,
+        "violations": 2,
+        "state": 3,
+        "motive": 1,
+        "capacity": 2,
+        "mitigating": 5,
+        "enabling": 1,
+        "trigger": 1
+      },
+      "note": "Low visible conflict, but Freedom House's lowest-scoring ASEAN state on civil liberties — very limited civic space, independent media and external monitoring make early-warning visibility itself a structural gap rather than a sign of safety.",
+      "evidence": {
+        "mitigating": {
+          "text": "Freedom House rates Laos 13/100 ('Not Free') in its 2026 report — the lowest score of any ASEAN member — citing near-total one-party control and minimal space for independent civil society or media to surface emerging risks.",
+          "sources": [
+            {
+              "label": "Freedom House, 2026",
+              "url": "https://freedomhouse.org/country/laos/freedom-world/2026"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Vietnam",
+      "scores": {
+        "conflict": 2,
+        "violations": 2,
+        "state": 2,
+        "motive": 2,
+        "capacity": 2,
+        "mitigating": 4,
+        "enabling": 1,
+        "trigger": 2
+      },
+      "note": "Low national conflict indicators overall, but the Central Highlands has periodically erupted into unrest — most seriously a 2023 armed attack on police stations by ethnic Montagnard (Degar) villagers over land confiscation and religious repression — layered on a very constrained civic and media space.",
+      "evidence": {
+        "conflict": {
+          "text": "In June 2023, dozens of Montagnard villagers armed with homemade weapons attacked two police stations in Dak Lak province, killing 9 (4 police officers, 2 officials, 3 civilians); Vietnam's military deployed tanks and helicopters and locked down the region. The unrest traces to decades of land confiscation and religious-freedom restrictions against the mostly Christian Montagnard minority, which rights groups describe as a recurring flashpoint rather than a one-off incident.",
+          "sources": [
+            {
+              "label": "AsiaNews, 2023",
+              "url": "https://www.asianews.it/en/south-east-asia/vietnam/montagnards-deny-involvement-in-violent-clashes-in-vietnam-s-central-highlands"
+            },
+            {
+              "label": "UCA News, 2023",
+              "url": "https://www.ucanews.com/amp/fighting-intensifies-in-vietnams-central-highlands/101646"
+            }
+          ]
+        },
+        "mitigating": {
+          "text": "Freedom House rates Vietnam 20/100 ('Not Free') in its 2026 report; Human Rights Watch's World Report 2026 notes continued detention of human rights defenders and independent journalists, and a February 2026 religion-focused bulletin flagged HRW alarm over criminalization of religious speech.",
+          "sources": [
+            {
+              "label": "Freedom House, 2026",
+              "url": "https://freedomhouse.org/country/vietnam/freedom-world/2026"
+            },
+            {
+              "label": "HRW World Report 2026 via The Southeast Asia Desk",
+              "url": "https://www.thesoutheastasiadesk.com/p/human-rights-in-southeast-asia-a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Malaysia",
+      "scores": {
+        "conflict": 1,
+        "violations": 1,
+        "state": 1,
+        "motive": 1,
+        "capacity": 1,
+        "mitigating": 2,
+        "enabling": 1,
+        "trigger": 1
+      },
+      "note": "Stable institutional environment; periodic communal/religious tension is monitored through active civil-society and media channels. Freedom House rates Malaysia 'Partly Free', a materially stronger civic-space rating than most of its ASEAN neighbours. Sabah's maritime border retains residual kidnap/piracy risk tied to the historical Sulu sultanate claim, though a Paris Court of Appeal ruling in December 2025 annulled the US$14.9 billion award against Malaysia in that dispute.",
+      "evidence": {
+        "conflict": {
+          "text": "No active armed conflict, but Sabah's east coast maintains a standing security zone (ESSCOM) following the 2013 Lahad Datu incursion by armed Sulu claimants; officials continue to flag maritime kidnapping/piracy risk from the southern Philippines as a residual concern requiring ongoing naval coordination.",
+          "sources": [
+            {
+              "label": "Newswav, 2026",
+              "url": "https://newswav.com/article/balabac-sabah-must-not-let-its-guard-down-A2609_S5H0Io"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Singapore",
+      "scores": {
+        "conflict": 1,
+        "violations": 1,
+        "state": 1,
+        "motive": 1,
+        "capacity": 1,
+        "mitigating": 3,
+        "enabling": 1,
+        "trigger": 1
+      },
+      "note": "Very low conflict indicators; strong state capacity.",
+      "evidence": {
+        "mitigating": {
+          "text": "Freedom House rates Singapore 48/100 ('Partly Free') in its 2026 report, reflecting restrictions on political speech and press freedom even amid strong institutional capacity — a governance watch item rather than an atrocity-risk driver.",
+          "sources": [
+            {
+              "label": "Freedom House, 2026",
+              "url": "https://freedomhouse.org/country/singapore/freedom-world/2026"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Brunei",
+      "scores": {
+        "conflict": 1,
+        "violations": 1,
+        "state": 1,
+        "motive": 1,
+        "capacity": 1,
+        "mitigating": 4,
+        "enabling": 1,
+        "trigger": 1
+      },
+      "note": "Very low conflict indicators and a small, closely governed population; limited independent civic monitoring capacity.",
+      "evidence": {
+        "mitigating": {
+          "text": "Freedom House rates Brunei 27/100 ('Not Free') in its 2026 report, reflecting an absolute monarchy with very limited political rights and independent media — a monitoring-capacity gap more than an active risk signal.",
+          "sources": [
+            {
+              "label": "Freedom House, 2026",
+              "url": "https://freedomhouse.org/country/brunei/freedom-world/2026"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Timor-Leste",
+      "scores": {
+        "conflict": 2,
+        "violations": 2,
+        "state": 3,
+        "motive": 1,
+        "capacity": 1,
+        "mitigating": 1,
+        "enabling": 1,
+        "trigger": 2
+      },
+      "note": "ASEAN's newest member (admitted 2025). No active armed conflict, and it is the only ASEAN state Freedom House rates 'Free' — but institutions are still young post-independence, and periodic gang-related violence has flared locally.",
+      "evidence": {
+        "mitigating": {
+          "text": "Timor-Leste is the only ASEAN member rated 'Free' by Freedom House, scoring 73/100 in 2026 (up from 72) — the highest in the bloc — reflecting competitive elections and peaceful transfers of power, though the report notes democratic institutions 'remain fragile.'",
+          "sources": [
+            {
+              "label": "Tatoli (Timor-Leste), Mar 2026",
+              "url": "https://en.tatoli.tl/2026/03/24/timor-leste-improves-its-score-and-retains-its-status-as-a-free-country-in-2026/10/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

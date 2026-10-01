@@ -1,0 +1,42 @@
+{
+  "generated": "2026-10-01T00:00:00+00:00",
+  "window_days": 14,
+  "items": [
+    {
+      "country": "Myanmar",
+      "date": "2026-09-29",
+      "title": "Myanmar airstrike on Kyauktaw market in Rakhine kills about 50, injures 58",
+      "url": "https://www.nbcnews.com/world/myanmar/deadly-airstrike-market-myanmar-rakhine-state-rcna600408",
+      "source": "AP via NBC News",
+      "kind": "News",
+      "via": "Scarecrow (seed)"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-09-25",
+      "title": "More than 125,000 reported displaced in West Papua as fighting intensifies",
+      "url": "https://asiapacificreport.nz/2026/09/25/they-just-have-to-get-out-civilians-pay-the-price-for-west-papua-conflict/",
+      "source": "Asia Pacific Report",
+      "kind": "News",
+      "via": "Scarecrow (seed)"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-09-24",
+      "title": "SAC-M and LAW position paper on the forthcoming ICJ judgment in The Gambia v. Myanmar",
+      "url": "https://specialadvisorycouncil.org/2026/09/sac-m-laws-new-joint-position-paper-navigating-the-forthcoming-icj-judgment-in-the-gambia-v-myanmar/",
+      "source": "SAC-M",
+      "kind": "Analysis",
+      "via": "Scarecrow (seed)"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-09-16",
+      "title": "ICC keeps Duterte in detention; trial set to open 30 November 2026",
+      "url": "https://aa.com.tr/en/asia-pacific/icc-rules-philippines-ex-president-duterte-to-remain-detained/4058996",
+      "source": "Anadolu",
+      "kind": "News",
+      "via": "Scarecrow (seed)"
+    }
+  ]
+}
