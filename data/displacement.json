@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01T12:44:19+00:00",
+  "generated": "2026-10-01T14:03:23+00:00",
   "source": "UNHCR Refugee Data Finder",
   "countries": {
     "Myanmar": {
@@ -7,40 +7,560 @@
       "refugees": 1524378,
       "asylum_seekers": 67824,
       "idps": 3628840,
-      "stateless": 0,
-      "ooc": 496
+      "stateless": 519647,
+      "ooc": 496,
+      "hosted_refugees": 0,
+      "hosted_asylum_seekers": 0,
+      "series": [
+        {
+          "year": 2016,
+          "refugees": 490285,
+          "asylum_seekers": 56023,
+          "idps": 375016,
+          "stateless": 925939,
+          "ooc": 261,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2017,
+          "refugees": 1156742,
+          "asylum_seekers": 41088,
+          "idps": 353108,
+          "stateless": 621514,
+          "ooc": 109,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2018,
+          "refugees": 1145149,
+          "asylum_seekers": 30459,
+          "idps": 370306,
+          "stateless": 620939,
+          "ooc": 98,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2019,
+          "refugees": 1076826,
+          "asylum_seekers": 37457,
+          "idps": 312018,
+          "stateless": 600000,
+          "ooc": 119,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2020,
+          "refugees": 1103245,
+          "asylum_seekers": 40207,
+          "idps": 370320,
+          "stateless": 600000,
+          "ooc": 151,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2021,
+          "refugees": 1177327,
+          "asylum_seekers": 43878,
+          "idps": 671011,
+          "stateless": 600000,
+          "ooc": 198,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2022,
+          "refugees": 1251618,
+          "asylum_seekers": 48701,
+          "idps": 1504848,
+          "stateless": 630000,
+          "ooc": 321,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2023,
+          "refugees": 1283426,
+          "asylum_seekers": 54636,
+          "idps": 2607645,
+          "stateless": 632789,
+          "ooc": 584,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2024,
+          "refugees": 1322503,
+          "asylum_seekers": 65946,
+          "idps": 3513867,
+          "stateless": 619429,
+          "ooc": 513,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2025,
+          "refugees": 1524378,
+          "asylum_seekers": 67824,
+          "idps": 3628840,
+          "stateless": 519647,
+          "ooc": 496,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        }
+      ]
     },
     "Philippines": {
       "year": 2025,
       "refugees": 807,
       "asylum_seekers": 6088,
       "idps": 43500,
-      "stateless": 0,
-      "ooc": 163707
+      "stateless": 55,
+      "ooc": 163707,
+      "hosted_refugees": 1032,
+      "hosted_asylum_seekers": 942,
+      "series": [
+        {
+          "year": 2016,
+          "refugees": 426,
+          "asylum_seekers": 3119,
+          "idps": 87418,
+          "stateless": 4636,
+          "ooc": 80053,
+          "hosted_refugees": 392,
+          "hosted_asylum_seekers": 205
+        },
+        {
+          "year": 2017,
+          "refugees": 445,
+          "asylum_seekers": 8081,
+          "idps": 311943,
+          "stateless": 2678,
+          "ooc": 80049,
+          "hosted_refugees": 512,
+          "hosted_asylum_seekers": 210
+        },
+        {
+          "year": 2018,
+          "refugees": 522,
+          "asylum_seekers": 3804,
+          "idps": 77651,
+          "stateless": 1068,
+          "ooc": 80038,
+          "hosted_refugees": 631,
+          "hosted_asylum_seekers": 238
+        },
+        {
+          "year": 2019,
+          "refugees": 554,
+          "asylum_seekers": 4732,
+          "idps": 178897,
+          "stateless": 388,
+          "ooc": 55029,
+          "hosted_refugees": 680,
+          "hosted_asylum_seekers": 319
+        },
+        {
+          "year": 2020,
+          "refugees": 469,
+          "asylum_seekers": 4989,
+          "idps": 150368,
+          "stateless": 387,
+          "ooc": 129467,
+          "hosted_refugees": 709,
+          "hosted_asylum_seekers": 397
+        },
+        {
+          "year": 2021,
+          "refugees": 521,
+          "asylum_seekers": 5525,
+          "idps": 105214,
+          "stateless": 260,
+          "ooc": 183651,
+          "hosted_refugees": 801,
+          "hosted_asylum_seekers": 586
+        },
+        {
+          "year": 2022,
+          "refugees": 586,
+          "asylum_seekers": 5492,
+          "idps": 98094,
+          "stateless": 267,
+          "ooc": 183184,
+          "hosted_refugees": 856,
+          "hosted_asylum_seekers": 780
+        },
+        {
+          "year": 2023,
+          "refugees": 645,
+          "asylum_seekers": 4670,
+          "idps": 108237,
+          "stateless": 28,
+          "ooc": 181243,
+          "hosted_refugees": 934,
+          "hosted_asylum_seekers": 1029
+        },
+        {
+          "year": 2024,
+          "refugees": 785,
+          "asylum_seekers": 6742,
+          "idps": 121576,
+          "stateless": 30,
+          "ooc": 176088,
+          "hosted_refugees": 962,
+          "hosted_asylum_seekers": 1380
+        },
+        {
+          "year": 2025,
+          "refugees": 807,
+          "asylum_seekers": 6088,
+          "idps": 43500,
+          "stateless": 55,
+          "ooc": 163707,
+          "hosted_refugees": 1032,
+          "hosted_asylum_seekers": 942
+        }
+      ]
     },
     "Thailand": {
       "year": 2025,
       "refugees": 327,
       "asylum_seekers": 2656,
       "idps": 0,
-      "stateless": 0,
-      "ooc": 0
+      "stateless": 610791,
+      "ooc": 0,
+      "hosted_refugees": 84017,
+      "hosted_asylum_seekers": 2880,
+      "series": [
+        {
+          "year": 2016,
+          "refugees": 147,
+          "asylum_seekers": 950,
+          "idps": 0,
+          "stateless": 487741,
+          "ooc": 0,
+          "hosted_refugees": 106431,
+          "hosted_asylum_seekers": 4986
+        },
+        {
+          "year": 2017,
+          "refugees": 164,
+          "asylum_seekers": 1333,
+          "idps": 0,
+          "stateless": 486440,
+          "ooc": 0,
+          "hosted_refugees": 104605,
+          "hosted_asylum_seekers": 2046
+        },
+        {
+          "year": 2018,
+          "refugees": 183,
+          "asylum_seekers": 2792,
+          "idps": 0,
+          "stateless": 478843,
+          "ooc": 0,
+          "hosted_refugees": 102234,
+          "hosted_asylum_seekers": 934
+        },
+        {
+          "year": 2019,
+          "refugees": 173,
+          "asylum_seekers": 3531,
+          "idps": 0,
+          "stateless": 475007,
+          "ooc": 0,
+          "hosted_refugees": 97556,
+          "hosted_asylum_seekers": 837
+        },
+        {
+          "year": 2020,
+          "refugees": 174,
+          "asylum_seekers": 3760,
+          "idps": 0,
+          "stateless": 480695,
+          "ooc": 0,
+          "hosted_refugees": 96179,
+          "hosted_asylum_seekers": 852
+        },
+        {
+          "year": 2021,
+          "refugees": 181,
+          "asylum_seekers": 3230,
+          "idps": 0,
+          "stateless": 561527,
+          "ooc": 0,
+          "hosted_refugees": 100510,
+          "hosted_asylum_seekers": 677
+        },
+        {
+          "year": 2022,
+          "refugees": 210,
+          "asylum_seekers": 3203,
+          "idps": 0,
+          "stateless": 574219,
+          "ooc": 0,
+          "hosted_refugees": 94472,
+          "hosted_asylum_seekers": 926
+        },
+        {
+          "year": 2023,
+          "refugees": 222,
+          "asylum_seekers": 3371,
+          "idps": 0,
+          "stateless": 587132,
+          "ooc": 0,
+          "hosted_refugees": 87314,
+          "hosted_asylum_seekers": 1674
+        },
+        {
+          "year": 2024,
+          "refugees": 300,
+          "asylum_seekers": 4022,
+          "idps": 0,
+          "stateless": 612524,
+          "ooc": 0,
+          "hosted_refugees": 84421,
+          "hosted_asylum_seekers": 2604
+        },
+        {
+          "year": 2025,
+          "refugees": 327,
+          "asylum_seekers": 2656,
+          "idps": 0,
+          "stateless": 610791,
+          "ooc": 0,
+          "hosted_refugees": 84017,
+          "hosted_asylum_seekers": 2880
+        }
+      ]
     },
     "Cambodia": {
       "year": 2025,
       "refugees": 11332,
       "asylum_seekers": 1646,
       "idps": 517555,
-      "stateless": 0,
-      "ooc": 0
+      "stateless": 75000,
+      "ooc": 0,
+      "hosted_refugees": 23,
+      "hosted_asylum_seekers": 5,
+      "series": [
+        {
+          "year": 2016,
+          "refugees": 12428,
+          "asylum_seekers": 380,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 61,
+          "hosted_asylum_seekers": 170
+        },
+        {
+          "year": 2017,
+          "refugees": 12238,
+          "asylum_seekers": 1578,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 61,
+          "hosted_asylum_seekers": 44
+        },
+        {
+          "year": 2018,
+          "refugees": 12139,
+          "asylum_seekers": 749,
+          "idps": 0,
+          "stateless": 57444,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2019,
+          "refugees": 11986,
+          "asylum_seekers": 846,
+          "idps": 0,
+          "stateless": 57444,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 27
+        },
+        {
+          "year": 2020,
+          "refugees": 11862,
+          "asylum_seekers": 916,
+          "idps": 0,
+          "stateless": 57444,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 12
+        },
+        {
+          "year": 2021,
+          "refugees": 12072,
+          "asylum_seekers": 893,
+          "idps": 0,
+          "stateless": 75000,
+          "ooc": 0,
+          "hosted_refugees": 24,
+          "hosted_asylum_seekers": 12
+        },
+        {
+          "year": 2022,
+          "refugees": 11700,
+          "asylum_seekers": 978,
+          "idps": 0,
+          "stateless": 75000,
+          "ooc": 0,
+          "hosted_refugees": 24,
+          "hosted_asylum_seekers": 12
+        },
+        {
+          "year": 2023,
+          "refugees": 11624,
+          "asylum_seekers": 959,
+          "idps": 0,
+          "stateless": 75000,
+          "ooc": 0,
+          "hosted_refugees": 24,
+          "hosted_asylum_seekers": 5
+        },
+        {
+          "year": 2024,
+          "refugees": 11474,
+          "asylum_seekers": 1521,
+          "idps": 0,
+          "stateless": 75000,
+          "ooc": 0,
+          "hosted_refugees": 23,
+          "hosted_asylum_seekers": 5
+        },
+        {
+          "year": 2025,
+          "refugees": 11332,
+          "asylum_seekers": 1646,
+          "idps": 517555,
+          "stateless": 75000,
+          "ooc": 0,
+          "hosted_refugees": 23,
+          "hosted_asylum_seekers": 5
+        }
+      ]
     },
     "Indonesia": {
       "year": 2025,
       "refugees": 9215,
       "asylum_seekers": 8205,
       "idps": 0,
-      "stateless": 0,
-      "ooc": 1137
+      "stateless": 2639,
+      "ooc": 1137,
+      "hosted_refugees": 7374,
+      "hosted_asylum_seekers": 4697,
+      "series": [
+        {
+          "year": 2016,
+          "refugees": 13056,
+          "asylum_seekers": 3581,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 7824,
+          "hosted_asylum_seekers": 6558
+        },
+        {
+          "year": 2017,
+          "refugees": 12485,
+          "asylum_seekers": 5384,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 9782,
+          "hosted_asylum_seekers": 4016
+        },
+        {
+          "year": 2018,
+          "refugees": 12148,
+          "asylum_seekers": 3395,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 10786,
+          "hosted_asylum_seekers": 3196
+        },
+        {
+          "year": 2019,
+          "refugees": 12039,
+          "asylum_seekers": 4323,
+          "idps": 0,
+          "stateless": 582,
+          "ooc": 0,
+          "hosted_refugees": 10287,
+          "hosted_asylum_seekers": 3343
+        },
+        {
+          "year": 2020,
+          "refugees": 13029,
+          "asylum_seekers": 4940,
+          "idps": 0,
+          "stateless": 874,
+          "ooc": 170,
+          "hosted_refugees": 10114,
+          "hosted_asylum_seekers": 3597
+        },
+        {
+          "year": 2021,
+          "refugees": 13962,
+          "asylum_seekers": 5872,
+          "idps": 0,
+          "stateless": 641,
+          "ooc": 276,
+          "hosted_refugees": 9982,
+          "hosted_asylum_seekers": 3116
+        },
+        {
+          "year": 2022,
+          "refugees": 11761,
+          "asylum_seekers": 10017,
+          "idps": 0,
+          "stateless": 928,
+          "ooc": 1143,
+          "hosted_refugees": 9785,
+          "hosted_asylum_seekers": 2889
+        },
+        {
+          "year": 2023,
+          "refugees": 11756,
+          "asylum_seekers": 13311,
+          "idps": 0,
+          "stateless": 2093,
+          "ooc": 990,
+          "hosted_refugees": 8450,
+          "hosted_asylum_seekers": 3793
+        },
+        {
+          "year": 2024,
+          "refugees": 9172,
+          "asylum_seekers": 18198,
+          "idps": 0,
+          "stateless": 2643,
+          "ooc": 1104,
+          "hosted_refugees": 7799,
+          "hosted_asylum_seekers": 4165
+        },
+        {
+          "year": 2025,
+          "refugees": 9215,
+          "asylum_seekers": 8205,
+          "idps": 0,
+          "stateless": 2639,
+          "ooc": 1137,
+          "hosted_refugees": 7374,
+          "hosted_asylum_seekers": 4697
+        }
+      ]
     },
     "Laos": {
       "year": 2025,
@@ -48,39 +568,559 @@
       "asylum_seekers": 466,
       "idps": 0,
       "stateless": 0,
-      "ooc": 0
+      "ooc": 0,
+      "hosted_refugees": 0,
+      "hosted_asylum_seekers": 0,
+      "series": [
+        {
+          "year": 2016,
+          "refugees": 7229,
+          "asylum_seekers": 167,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2017,
+          "refugees": 7056,
+          "asylum_seekers": 223,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2018,
+          "refugees": 6943,
+          "asylum_seekers": 294,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2019,
+          "refugees": 6757,
+          "asylum_seekers": 390,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2020,
+          "refugees": 6665,
+          "asylum_seekers": 463,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2021,
+          "refugees": 6778,
+          "asylum_seekers": 474,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2022,
+          "refugees": 6653,
+          "asylum_seekers": 476,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2023,
+          "refugees": 6551,
+          "asylum_seekers": 560,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2024,
+          "refugees": 6556,
+          "asylum_seekers": 760,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2025,
+          "refugees": 6489,
+          "asylum_seekers": 466,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        }
+      ]
     },
     "Vietnam": {
       "year": 2025,
       "refugees": 20636,
       "asylum_seekers": 19253,
       "idps": 0,
-      "stateless": 0,
-      "ooc": 28
+      "stateless": 25177,
+      "ooc": 28,
+      "hosted_refugees": 13,
+      "hosted_asylum_seekers": 0,
+      "series": [
+        {
+          "year": 2016,
+          "refugees": 329341,
+          "asylum_seekers": 4538,
+          "idps": 0,
+          "stateless": 11000,
+          "ooc": 68,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2017,
+          "refugees": 334064,
+          "asylum_seekers": 7115,
+          "idps": 0,
+          "stateless": 29522,
+          "ooc": 68,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2018,
+          "refugees": 334464,
+          "asylum_seekers": 5571,
+          "idps": 0,
+          "stateless": 34110,
+          "ooc": 68,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2019,
+          "refugees": 316441,
+          "asylum_seekers": 8095,
+          "idps": 0,
+          "stateless": 30581,
+          "ooc": 68,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2020,
+          "refugees": 316728,
+          "asylum_seekers": 9440,
+          "idps": 0,
+          "stateless": 32890,
+          "ooc": 68,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2021,
+          "refugees": 317737,
+          "asylum_seekers": 10345,
+          "idps": 0,
+          "stateless": 35475,
+          "ooc": 68,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2022,
+          "refugees": 17507,
+          "asylum_seekers": 10627,
+          "idps": 0,
+          "stateless": 26811,
+          "ooc": 68,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2023,
+          "refugees": 18339,
+          "asylum_seekers": 13179,
+          "idps": 0,
+          "stateless": 26811,
+          "ooc": 68,
+          "hosted_refugees": 19,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2024,
+          "refugees": 19961,
+          "asylum_seekers": 22594,
+          "idps": 0,
+          "stateless": 20590,
+          "ooc": 68,
+          "hosted_refugees": 19,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2025,
+          "refugees": 20636,
+          "asylum_seekers": 19253,
+          "idps": 0,
+          "stateless": 25177,
+          "ooc": 28,
+          "hosted_refugees": 13,
+          "hosted_asylum_seekers": 0
+        }
+      ]
     },
     "Malaysia": {
       "year": 2025,
       "refugees": 2477,
       "asylum_seekers": 5511,
       "idps": 0,
-      "stateless": 0,
-      "ooc": 0
+      "stateless": 134676,
+      "ooc": 0,
+      "hosted_refugees": 150164,
+      "hosted_asylum_seekers": 63011,
+      "series": [
+        {
+          "year": 2016,
+          "refugees": 453,
+          "asylum_seekers": 6163,
+          "idps": 0,
+          "stateless": 10931,
+          "ooc": 0,
+          "hosted_refugees": 92256,
+          "hosted_asylum_seekers": 56313
+        },
+        {
+          "year": 2017,
+          "refugees": 540,
+          "asylum_seekers": 9478,
+          "idps": 0,
+          "stateless": 10068,
+          "ooc": 0,
+          "hosted_refugees": 103837,
+          "hosted_asylum_seekers": 47509
+        },
+        {
+          "year": 2018,
+          "refugees": 817,
+          "asylum_seekers": 15037,
+          "idps": 0,
+          "stateless": 9631,
+          "ooc": 0,
+          "hosted_refugees": 121305,
+          "hosted_asylum_seekers": 41801
+        },
+        {
+          "year": 2019,
+          "refugees": 906,
+          "asylum_seekers": 21259,
+          "idps": 0,
+          "stateless": 108332,
+          "ooc": 0,
+          "hosted_refugees": 129102,
+          "hosted_asylum_seekers": 50619
+        },
+        {
+          "year": 2020,
+          "refugees": 1058,
+          "asylum_seekers": 21474,
+          "idps": 0,
+          "stateless": 111298,
+          "ooc": 0,
+          "hosted_refugees": 129902,
+          "hosted_asylum_seekers": 49822
+        },
+        {
+          "year": 2021,
+          "refugees": 1182,
+          "asylum_seekers": 20855,
+          "idps": 0,
+          "stateless": 112420,
+          "ooc": 0,
+          "hosted_refugees": 132086,
+          "hosted_asylum_seekers": 49372
+        },
+        {
+          "year": 2022,
+          "refugees": 1359,
+          "asylum_seekers": 19764,
+          "idps": 0,
+          "stateless": 115169,
+          "ooc": 0,
+          "hosted_refugees": 134554,
+          "hosted_asylum_seekers": 47433
+        },
+        {
+          "year": 2023,
+          "refugees": 999,
+          "asylum_seekers": 18810,
+          "idps": 0,
+          "stateless": 117070,
+          "ooc": 0,
+          "hosted_refugees": 135872,
+          "hosted_asylum_seekers": 48571
+        },
+        {
+          "year": 2024,
+          "refugees": 1209,
+          "asylum_seekers": 12779,
+          "idps": 0,
+          "stateless": 120857,
+          "ooc": 0,
+          "hosted_refugees": 138417,
+          "hosted_asylum_seekers": 52926
+        },
+        {
+          "year": 2025,
+          "refugees": 2477,
+          "asylum_seekers": 5511,
+          "idps": 0,
+          "stateless": 134676,
+          "ooc": 0,
+          "hosted_refugees": 150164,
+          "hosted_asylum_seekers": 63011
+        }
+      ]
     },
     "Singapore": {
       "year": 2025,
       "refugees": 43,
       "asylum_seekers": 212,
       "idps": 0,
-      "stateless": 0,
-      "ooc": 0
+      "stateless": 1109,
+      "ooc": 0,
+      "hosted_refugees": 0,
+      "hosted_asylum_seekers": 0,
+      "series": [
+        {
+          "year": 2016,
+          "refugees": 38,
+          "asylum_seekers": 47,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2017,
+          "refugees": 48,
+          "asylum_seekers": 55,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2018,
+          "refugees": 46,
+          "asylum_seekers": 70,
+          "idps": 0,
+          "stateless": 1303,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2019,
+          "refugees": 39,
+          "asylum_seekers": 88,
+          "idps": 0,
+          "stateless": 1303,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2020,
+          "refugees": 37,
+          "asylum_seekers": 74,
+          "idps": 0,
+          "stateless": 1109,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2021,
+          "refugees": 34,
+          "asylum_seekers": 100,
+          "idps": 0,
+          "stateless": 1109,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2022,
+          "refugees": 33,
+          "asylum_seekers": 117,
+          "idps": 0,
+          "stateless": 1109,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2023,
+          "refugees": 37,
+          "asylum_seekers": 229,
+          "idps": 0,
+          "stateless": 1109,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2024,
+          "refugees": 45,
+          "asylum_seekers": 303,
+          "idps": 0,
+          "stateless": 1109,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2025,
+          "refugees": 43,
+          "asylum_seekers": 212,
+          "idps": 0,
+          "stateless": 1109,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        }
+      ]
     },
     "Brunei": {
       "year": 2025,
       "refugees": 5,
       "asylum_seekers": 170,
       "idps": 0,
-      "stateless": 0,
-      "ooc": 0
+      "stateless": 20863,
+      "ooc": 0,
+      "hosted_refugees": 0,
+      "hosted_asylum_seekers": 0,
+      "series": [
+        {
+          "year": 2016,
+          "refugees": 0,
+          "asylum_seekers": 5,
+          "idps": 0,
+          "stateless": 20524,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2017,
+          "refugees": 0,
+          "asylum_seekers": 9,
+          "idps": 0,
+          "stateless": 20524,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2018,
+          "refugees": 0,
+          "asylum_seekers": 0,
+          "idps": 0,
+          "stateless": 20863,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2019,
+          "refugees": 0,
+          "asylum_seekers": 10,
+          "idps": 0,
+          "stateless": 20863,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2020,
+          "refugees": 0,
+          "asylum_seekers": 10,
+          "idps": 0,
+          "stateless": 20863,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2021,
+          "refugees": 0,
+          "asylum_seekers": 5,
+          "idps": 0,
+          "stateless": 20863,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2022,
+          "refugees": 0,
+          "asylum_seekers": 14,
+          "idps": 0,
+          "stateless": 20863,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2023,
+          "refugees": 0,
+          "asylum_seekers": 24,
+          "idps": 0,
+          "stateless": 20863,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2024,
+          "refugees": 0,
+          "asylum_seekers": 71,
+          "idps": 0,
+          "stateless": 20863,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2025,
+          "refugees": 5,
+          "asylum_seekers": 170,
+          "idps": 0,
+          "stateless": 20863,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        }
+      ]
     },
     "Timor-Leste": {
       "year": 2025,
@@ -88,7 +1128,111 @@
       "asylum_seekers": 1520,
       "idps": 0,
       "stateless": 0,
-      "ooc": 0
+      "ooc": 0,
+      "hosted_refugees": 0,
+      "hosted_asylum_seekers": 0,
+      "series": [
+        {
+          "year": 2016,
+          "refugees": 19,
+          "asylum_seekers": 0,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2017,
+          "refugees": 13,
+          "asylum_seekers": 5,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2018,
+          "refugees": 12,
+          "asylum_seekers": 10,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2019,
+          "refugees": 17,
+          "asylum_seekers": 41,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2020,
+          "refugees": 11,
+          "asylum_seekers": 324,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2021,
+          "refugees": 11,
+          "asylum_seekers": 368,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2022,
+          "refugees": 6,
+          "asylum_seekers": 690,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2023,
+          "refugees": 0,
+          "asylum_seekers": 1085,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2024,
+          "refugees": 5,
+          "asylum_seekers": 1453,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2025,
+          "refugees": 15,
+          "asylum_seekers": 1520,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        }
+      ]
     }
   }
 }
