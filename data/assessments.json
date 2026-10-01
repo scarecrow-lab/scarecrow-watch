@@ -7,42 +7,106 @@
     {
       "key": "conflict",
       "en": "Conflict / instability",
-      "th": "ความขัดแย้ง / ความไม่มั่นคง"
+      "id": "Konflik / ketidakstabilan",
+      "vi": "Xung đột / bất ổn",
+      "th": "ความขัดแย้ง / ความไม่มั่นคง",
+      "ms": "Konflik / ketidakstabilan",
+      "tl": "Tunggalian / kawalang-katatagan",
+      "my": "ပဋိပက္ခ / မတည်ငြိမ်မှု",
+      "km": "ជម្លោះ / អស្ថិរភាព",
+      "lo": "ຄວາມຂັດແຍ້ງ / ຄວາມບໍ່ໝັ້ນຄົງ",
+      "tet": "Konflitu / instabilidade"
     },
     {
       "key": "violations",
       "en": "Record of serious violations",
-      "th": "บันทึกการละเมิดร้ายแรง"
+      "id": "Catatan pelanggaran serius",
+      "vi": "Hồ sơ vi phạm nghiêm trọng",
+      "th": "บันทึกการละเมิดร้ายแรง",
+      "ms": "Rekod pelanggaran serius",
+      "tl": "Talaan ng seryosong paglabag",
+      "my": "ပြင်းထန်သော ချိုးဖောက်မှု မှတ်တမ်း",
+      "km": "កំណត់ត្រានៃការរំលោភបំពានធ្ងន់ធ្ងរ",
+      "lo": "ບັນທຶກການລະເມີດຮ້າຍແຮງ",
+      "tet": "Rejistu violasaun grave"
     },
     {
       "key": "state",
       "en": "Weak state structures",
-      "th": "โครงสร้างรัฐอ่อนแอ"
+      "id": "Struktur negara lemah",
+      "vi": "Cấu trúc nhà nước yếu",
+      "th": "โครงสร้างรัฐอ่อนแอ",
+      "ms": "Struktur negara lemah",
+      "tl": "Mahinang estruktura ng estado",
+      "my": "အားနည်းသော နိုင်ငံတော် ဖွဲ့စည်းပုံ",
+      "km": "រចនាសម្ព័ន្ធរដ្ឋខ្សោយ",
+      "lo": "ໂຄງສ້າງລັດອ່ອນແອ",
+      "tet": "Estrutura estadu frágil"
     },
     {
       "key": "motive",
       "en": "Motives / incentives",
-      "th": "แรงจูงใจ"
+      "id": "Motif / insentif",
+      "vi": "Động cơ / động lực",
+      "th": "แรงจูงใจ",
+      "ms": "Motif / insentif",
+      "tl": "Motibo / insentibo",
+      "my": "ရည်ရွယ်ချက် / လှုံ့ဆော်မှု",
+      "km": "ហេតុផល / ការលើកទឹកចិត្ត",
+      "lo": "ແຮງຈູງໃຈ",
+      "tet": "Motivu / insentivu"
     },
     {
       "key": "capacity",
       "en": "Capacity to commit",
-      "th": "ศักยภาพในการก่อเหตุ"
+      "id": "Kapasitas untuk melakukan",
+      "vi": "Năng lực thực hiện",
+      "th": "ศักยภาพในการก่อเหตุ",
+      "ms": "Kapasiti untuk melakukan",
+      "tl": "Kapasidad na magsagawa",
+      "my": "ကျူးလွန်နိုင်စွမ်း",
+      "km": "សមត្ថភាពប្រព្រឹត្ត",
+      "lo": "ຄວາມສາມາດໃນການກະທຳ",
+      "tet": "Kapasidade atu halo"
     },
     {
       "key": "mitigating",
       "en": "Absence of mitigants",
-      "th": "การขาดปัจจัยบรรเทา"
+      "id": "Ketiadaan faktor peredam",
+      "vi": "Thiếu yếu tố giảm nhẹ",
+      "th": "การขาดปัจจัยบรรเทา",
+      "ms": "Ketiadaan faktor peredam",
+      "tl": "Kawalan ng mga mitigant",
+      "my": "လျှော့ချမှု အချက်များ ချို့တဲ့ခြင်း",
+      "km": "កង្វះកត្តាកាត់បន្ថយ",
+      "lo": "ການຂາດປັດໄຈບັນເທົາ",
+      "tet": "Falta faktór mitigasaun"
     },
     {
       "key": "enabling",
       "en": "Enabling circumstances",
-      "th": "สภาวะเอื้ออำนวย"
+      "id": "Kondisi yang memungkinkan",
+      "vi": "Hoàn cảnh tạo điều kiện",
+      "th": "สภาวะเอื้ออำนวย",
+      "ms": "Keadaan yang membolehkan",
+      "tl": "Nagpapadaling kalagayan",
+      "my": "အခွင့်အလမ်းဖြစ်စေသော အခြေအနေများ",
+      "km": "ស្ថានភាពសម្រួល",
+      "lo": "ສະພາບການທີ່ເອື້ອອຳນວຍ",
+      "tet": "Sirkunstánsia enabling"
     },
     {
       "key": "trigger",
       "en": "Triggering factors",
-      "th": "ปัจจัยกระตุ้น"
+      "id": "Faktor pemicu",
+      "vi": "Yếu tố kích hoạt",
+      "th": "ปัจจัยกระตุ้น",
+      "ms": "Faktor pencetus",
+      "tl": "Mga nagpapasimulang factor",
+      "my": "လှုံ့ဆော်ပေးသော အချက်များ",
+      "km": "កត្តាបង្កគ្រោះ",
+      "lo": "ປັດໄຈກະຕຸ້ນ",
+      "tet": "Fator dezenkadeadór"
     }
   ],
   "countries": [

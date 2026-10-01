@@ -1,0 +1,489 @@
+{
+  "note": "Static country context, edited by hand. Profile: CIA World Factbook (public domain) + news reporting for current leaders. Hotspots: Lab-curated, approximate locations with their sources. Dehumanization: documented cases at pattern level only.",
+  "reviewed": "2026-10-01",
+  "flags": {
+    "Brunei": "🇧🇳",
+    "Cambodia": "🇰🇭",
+    "Indonesia": "🇮🇩",
+    "Laos": "🇱🇦",
+    "Malaysia": "🇲🇾",
+    "Myanmar": "🇲🇲",
+    "Philippines": "🇵🇭",
+    "Singapore": "🇸🇬",
+    "Thailand": "🇹🇭",
+    "Vietnam": "🇻🇳",
+    "Timor-Leste": "🇹🇱"
+  },
+  "profile": {
+    "Myanmar": {
+      "pop": "57,527,139 (2024 est.)",
+      "capital": "Nay Pyi Taw (administrative); Yangon still recognized by the US as primary capital",
+      "govt": "Military regime",
+      "leader": "President Sr. Gen. Min Aung Hlaing (sworn in 10 Apr 2026, having stepped down as commander-in-chief to take the post following the disputed 2025–26 election)",
+      "gdp": "$230.26 billion PPP (2022 est.)",
+      "gdpCap": "$4,200 (2022 est.)",
+      "area": "676,578 km²",
+      "languages": "Burmese (official)",
+      "religions": "Buddhist 87.9%, Christian 6.2%, Muslim 4.3%"
+    },
+    "Philippines": {
+      "pop": "116.4 million (2023 est.)",
+      "capital": "Manila",
+      "govt": "Presidential republic",
+      "leader": "President Ferdinand \"Bongbong\" Marcos Jr. (since 30 Jun 2022)",
+      "gdp": "$991.72 billion PPP (2022 est.)",
+      "gdpCap": "$8,600 (2022 est.)",
+      "area": "300,000 km²",
+      "languages": "Filipino, English (both official); 8+ major regional languages",
+      "religions": "Roman Catholic 78.8%, Muslim 6.4%"
+    },
+    "Thailand": {
+      "pop": "~70 million (2025 est.)",
+      "capital": "Bangkok",
+      "govt": "Constitutional monarchy",
+      "leader": "PM Anutin Charnvirakul (sworn in Sep 2025); King Maha Vajiralongkorn (Rama X) is head of state",
+      "gdp": "$526.41 billion (2024 est.)",
+      "gdpCap": "—",
+      "area": "513,120 km²",
+      "languages": "Thai (official)",
+      "religions": "Buddhist majority; sizable Muslim minority in the Deep South"
+    },
+    "Cambodia": {
+      "pop": "17,063,669 (2024 est.)",
+      "capital": "Phnom Penh",
+      "govt": "Parliamentary constitutional monarchy",
+      "leader": "PM Hun Manet (since 22 Aug 2023); King Norodom Sihamoni is head of state",
+      "gdp": "$72.24 billion PPP (2021 est.)",
+      "gdpCap": "$4,400 (2021 est.)",
+      "area": "181,035 km²",
+      "languages": "Khmer (official)",
+      "religions": "Buddhist (official) 97.1%"
+    },
+    "Indonesia": {
+      "pop": "281,562,465 (2023 est.)",
+      "capital": "Jakarta (capital relocation to Nusantara, Kalimantan, underway)",
+      "govt": "Presidential republic",
+      "leader": "President Prabowo Subianto (since 20 Oct 2024)",
+      "gdp": "$3.91 trillion PPP (2023 est.)",
+      "gdpCap": "$14,100 (2023 est.)",
+      "area": "1,904,569 km²",
+      "languages": "Bahasa Indonesia (official); 700+ languages in use",
+      "religions": "Muslim 87.2% — world's largest Muslim-majority nation"
+    },
+    "Laos": {
+      "pop": "7,953,556 (2024 est.)",
+      "capital": "Vientiane",
+      "govt": "Communist state (one-party)",
+      "leader": "President Thongloun Sisoulith and PM Sonexay Siphandone (both re-elected by the 10th National Assembly, Mar 2026)",
+      "gdp": "$58.26 billion PPP (2021 est.)",
+      "gdpCap": "$7,800 (2021 est.)",
+      "area": "236,800 km²",
+      "languages": "Lao (official)",
+      "religions": "Buddhist 64.7%, none/unstated 31.4%"
+    },
+    "Vietnam": {
+      "pop": "104,799,174 (2023 est.)",
+      "capital": "Hanoi",
+      "govt": "Communist state (one-party)",
+      "leader": "General Secretary & President To Lam (re-elected Party leader Jan 2026, elected State President 7 Apr 2026 — first to hold both concurrently); PM Le Minh Hung",
+      "gdp": "$1.04 trillion PPP (2021 est.)",
+      "gdpCap": "—",
+      "area": "331,210 km²",
+      "languages": "Vietnamese (official)",
+      "religions": "None/unaffiliated 86.3% (2019 est.) — Catholic and Buddhist minorities"
+    },
+    "Malaysia": {
+      "pop": "34,564,810 (2024 est.)",
+      "capital": "Kuala Lumpur (Putrajaya is the administrative center)",
+      "govt": "Federal parliamentary constitutional monarchy",
+      "leader": "PM Anwar Ibrahim (since 24 Nov 2022); King (Yang di-Pertuan Agong) Sultan Ibrahim of Johor (since 31 Jan 2024)",
+      "gdp": "$470.6 billion (2025 est.)",
+      "gdpCap": "$46,096 PPP (2025 est.)",
+      "area": "329,847 km²",
+      "languages": "Bahasa Malaysia (official); 130+ living languages",
+      "religions": "Muslim (official) 63.5%"
+    },
+    "Singapore": {
+      "pop": "5,975,383 (2023 est.)",
+      "capital": "Singapore",
+      "govt": "Parliamentary republic",
+      "leader": "PM Lawrence Wong (since 15 May 2024, succeeding Lee Hsien Loong); President Tharman Shanmugaratnam (since 14 Sep 2023)",
+      "gdp": "$578.25 billion PPP (2021 est.)",
+      "gdpCap": "—",
+      "area": "719 km²",
+      "languages": "English, Mandarin, Malay, Tamil (all official)",
+      "religions": "Buddhist 31.1%, Christian 18.9%, Muslim 15.6% — no majority faith"
+    },
+    "Brunei": {
+      "pop": "491,900 (2024 est.)",
+      "capital": "Bandar Seri Begawan",
+      "govt": "Absolute monarchy (sultanate)",
+      "leader": "Sultan and PM Hassanal Bolkiah (since 5 Oct 1967 — ruling monarch, both head of state and government)",
+      "gdp": "$26.34 billion PPP (2022 est.)",
+      "gdpCap": "—",
+      "area": "5,765 km²",
+      "languages": "Malay (official)",
+      "religions": "Muslim (official) 82.1%"
+    },
+    "Timor-Leste": {
+      "pop": "1,506,909 (2024 est.)",
+      "capital": "Dili",
+      "govt": "Semi-presidential republic",
+      "leader": "President José Ramos-Horta (since 20 May 2022); PM Kay Rala Xanana Gusmão (since 1 Jul 2023)",
+      "gdp": "$2.1 billion (2025 est.)",
+      "gdpCap": "$8,665 PPP (2025 est.)",
+      "area": "14,874 km²",
+      "languages": "Tetum Prasa and 15+ other local languages; Portuguese co-official",
+      "religions": "Roman Catholic 97.6%"
+    }
+  },
+  "csos": {
+    "Myanmar": [
+      {
+        "name": "ALTSEAN-Burma",
+        "desc": "Regional network monitoring human rights & democracy in Myanmar",
+        "url": "https://www.altsean.org"
+      },
+      {
+        "name": "Fortify Rights",
+        "desc": "Investigates and documents human rights violations",
+        "url": "https://www.fortifyrights.org"
+      },
+      {
+        "name": "Human Rights Myanmar",
+        "desc": "Independent monitoring and advocacy collective",
+        "url": "https://humanrightsmyanmar.org"
+      }
+    ],
+    "Philippines": [
+      {
+        "name": "Philippine Center for Investigative Journalism (PCIJ)",
+        "desc": "Investigative journalism, incl. political dynasties & accountability",
+        "url": "https://pcij.org"
+      },
+      {
+        "name": "Commission on Human Rights (CHR)",
+        "desc": "Official constitutional human rights body",
+        "url": "https://chr.gov.ph"
+      }
+    ],
+    "Thailand": [
+      {
+        "name": "Human Rights Watch — Thailand",
+        "desc": "Country-specific reporting and advocacy",
+        "url": "https://www.hrw.org/asia/thailand"
+      },
+      {
+        "name": "ACLED — Thailand",
+        "desc": "Conflict event monitoring for the Deep South and border areas",
+        "url": "https://acleddata.com/country/thailand"
+      }
+    ],
+    "Cambodia": [
+      {
+        "name": "LICADHO",
+        "desc": "Cambodia's longest-running national human rights NGO (est. 1992)",
+        "url": "https://licadho-cambodia.org"
+      },
+      {
+        "name": "Cambodian Center for Human Rights (CCHR)",
+        "desc": "Civil & political rights research and advocacy",
+        "url": "https://cchrcambodia.org"
+      }
+    ],
+    "Indonesia": [
+      {
+        "name": "KontraS",
+        "desc": "Commission for Disappeared Persons and Victims of Violence",
+        "url": "https://kontras.org"
+      },
+      {
+        "name": "Imparsial",
+        "desc": "The Indonesian Human Rights Monitor",
+        "url": "https://imparsial.org"
+      },
+      {
+        "name": "Human Rights Monitor (Papua)",
+        "desc": "Independent monitoring of West Papua specifically",
+        "url": "https://humanrightsmonitor.org"
+      }
+    ],
+    "Laos": [
+      {
+        "name": "Human Rights Watch — Laos",
+        "desc": "Independent domestic civil society space is severely restricted; monitoring is largely done by international organizations from outside the country.",
+        "url": "https://www.hrw.org/asia/laos"
+      }
+    ],
+    "Vietnam": [
+      {
+        "name": "Human Rights Watch — Vietnam",
+        "desc": "Independent domestic civil society space is severely restricted; monitoring is largely done by international and diaspora organizations.",
+        "url": "https://www.hrw.org/asia/vietnam"
+      }
+    ],
+    "Malaysia": [
+      {
+        "name": "SUARAM",
+        "desc": "Civil and political rights, freedom of expression and assembly",
+        "url": "https://www.suaram.net"
+      },
+      {
+        "name": "Centre for Independent Journalism (CIJ)",
+        "desc": "Media freedom and freedom of expression watchdog",
+        "url": "https://cijmalaysia.net"
+      }
+    ],
+    "Singapore": [
+      {
+        "name": "Human Rights Watch — Singapore",
+        "desc": "Country-specific reporting; independent domestic advocacy space is narrow",
+        "url": "https://www.hrw.org/asia/singapore"
+      }
+    ],
+    "Brunei": [
+      {
+        "name": "Human Rights Watch — Brunei",
+        "desc": "Independent domestic civil society is effectively absent; monitoring is done from outside the country.",
+        "url": "https://www.hrw.org/asia/brunei"
+      }
+    ],
+    "Timor-Leste": [
+      {
+        "name": "La'o Hamutuk",
+        "desc": "Timorese institute monitoring development, governance & natural resources",
+        "url": "https://www.laohamutuk.org"
+      }
+    ]
+  },
+  "csos_regional": [
+    {
+      "name": "Asia Pacific Centre for the Responsibility to Protect (R2P)",
+      "desc": "Atrocity-risk country studies using the UN Framework",
+      "url": "https://r2pasiapacific.org"
+    },
+    {
+      "name": "Business & Human Rights Resource Centre",
+      "desc": "Tracks corporate allegations across the region",
+      "url": "https://www.business-humanrights.org"
+    },
+    {
+      "name": "FORUM-ASIA",
+      "desc": "Regional human rights network of national CSOs",
+      "url": "https://forum-asia.org"
+    },
+    {
+      "name": "Global Witness",
+      "desc": "Natural resource, land & environmental-defender investigations",
+      "url": "https://www.globalwitness.org"
+    }
+  ],
+  "hotspots": {
+    "Myanmar": [
+      {
+        "lat": 20.9,
+        "lng": 93.1,
+        "sev": 4,
+        "label": "Rakhine State — active clashes",
+        "source": "ACLED"
+      },
+      {
+        "lat": 16.8,
+        "lng": 97.6,
+        "sev": 4,
+        "label": "Kayin State — armed conflict",
+        "source": "UCDP GED"
+      },
+      {
+        "lat": 21.5,
+        "lng": 97.9,
+        "sev": 3,
+        "label": "Shan State — insurgent activity",
+        "source": "ACLED"
+      },
+      {
+        "lat": 22,
+        "lng": 95.9,
+        "sev": 3,
+        "label": "Sagaing Region — resistance clashes",
+        "source": "ACLED"
+      },
+      {
+        "lat": 19.7,
+        "lng": 96.1,
+        "sev": 2,
+        "label": "Bago Region — sporadic incidents",
+        "source": "UCDP GED"
+      }
+    ],
+    "Philippines": [
+      {
+        "lat": 7.2,
+        "lng": 124.2,
+        "sev": 3,
+        "label": "Maguindanao — clan/insurgent violence",
+        "source": "ACLED"
+      },
+      {
+        "lat": 6,
+        "lng": 121,
+        "sev": 3,
+        "label": "Sulu — armed group activity",
+        "source": "UCDP GED"
+      },
+      {
+        "lat": 7.8,
+        "lng": 123.3,
+        "sev": 2,
+        "label": "Zamboanga — localized clashes",
+        "source": "ACLED"
+      }
+    ],
+    "Thailand": [
+      {
+        "lat": 6.9,
+        "lng": 101.3,
+        "sev": 3,
+        "label": "Pattani — coordinated arson/bomb attacks, Aug 2026",
+        "source": "ACLED"
+      },
+      {
+        "lat": 6.5,
+        "lng": 101.3,
+        "sev": 4,
+        "label": "Yala — Deep South insurgency, active into 2026",
+        "source": "UCDP GED"
+      },
+      {
+        "lat": 6.4,
+        "lng": 101.8,
+        "sev": 4,
+        "label": "Narathiwat — 40+ incidents in single Aug 2026 wave",
+        "source": "ACLED"
+      },
+      {
+        "lat": 6.7,
+        "lng": 100.7,
+        "sev": 2,
+        "label": "Songkhla — spillover attacks, Aug 2026",
+        "source": "ACLED"
+      },
+      {
+        "lat": 14.5,
+        "lng": 103.5,
+        "sev": 4,
+        "label": "Surin border — 2025-26 Thai-Cambodia clashes",
+        "source": "ACLED"
+      },
+      {
+        "lat": 14.2,
+        "lng": 104.6,
+        "sev": 4,
+        "label": "Emerald Triangle temples — artillery exchanges",
+        "source": "UCDP GED"
+      }
+    ],
+    "Indonesia": [
+      {
+        "lat": -4.3,
+        "lng": 138.9,
+        "sev": 3,
+        "label": "Papua — TPNPB clashes, rising 2026",
+        "source": "ACLED"
+      },
+      {
+        "lat": -3.5,
+        "lng": 140,
+        "sev": 3,
+        "label": "Intan Jaya / Puncak — drone & airstrikes",
+        "source": "UCDP GED"
+      },
+      {
+        "lat": -4.9,
+        "lng": 139.3,
+        "sev": 2,
+        "label": "Yahukimo — top hotspot of armed violence",
+        "source": "ACLED"
+      }
+    ],
+    "Cambodia": [
+      {
+        "lat": 14.4,
+        "lng": 103.5,
+        "sev": 4,
+        "label": "Oddar Meanchey — 2025-26 border war",
+        "source": "ACLED"
+      },
+      {
+        "lat": 12.4,
+        "lng": 104.9,
+        "sev": 1,
+        "label": "Sporadic land-dispute tension",
+        "source": "ACLED"
+      }
+    ],
+    "Laos": [],
+    "Vietnam": [
+      {
+        "lat": 12.7,
+        "lng": 108.05,
+        "sev": 2,
+        "label": "Dak Lak — 2023 Montagnard unrest, recurring flashpoint",
+        "source": "AsiaNews / UCA News"
+      }
+    ],
+    "Malaysia": [
+      {
+        "lat": 4.85,
+        "lng": 118.3,
+        "sev": 1,
+        "label": "Lahad Datu, Sabah — residual Sulu-claim security zone",
+        "source": "Newswav"
+      }
+    ],
+    "Singapore": [],
+    "Brunei": [],
+    "Timor-Leste": [
+      {
+        "lat": -8.6,
+        "lng": 125.6,
+        "sev": 2,
+        "label": "Dili — periodic gang/martial-arts-group violence",
+        "source": "ACLED"
+      }
+    ]
+  },
+  "dehumanization_cases": {
+    "Myanmar": [
+      {
+        "text": "The UN's Independent Investigative Mechanism for Myanmar found the military secretly ran a 'systematic and coordinated' Facebook hate campaign against the Rohingya before the 2017 crackdown, built on narratives that Rohingya posed an existential threat through 'terrorism' or 'Islamization,' and even a threat to 'racial purity' through population growth.",
+        "sources": [
+          {
+            "label": "The Irrawaddy, citing UN IIMM report",
+            "url": "https://www.irrawaddy.com/?p=135196"
+          }
+        ]
+      },
+      {
+        "text": "A 2018 UN Fact-Finding Mission found decades of state-sponsored stigmatization had produced 'institutionalised oppression from birth to death,' with Rohingya routinely described in official and public discourse as illegitimate 'interlopers' despite generations of residence in Rakhine State — a denial-of-identity pattern that legally and socially strips a group of belonging before violence occurs.",
+        "sources": [
+          {
+            "label": "Gulf Times, citing UN report",
+            "url": "https://www.gulf-times.com/story/604046/un-calls-for-myanmar-generals-to-be-tried-for-genocide-blames-facebook-for-incitement"
+          }
+        ]
+      }
+    ],
+    "Indonesia": [
+      {
+        "text": "Academic framing analysis of six major Indonesian news outlets found systematic use of 'separatist' and 'terrorist' labels for West Papuan pro-independence groups after the government's 2021 formal terrorist designation — media researchers describe this as media acting as a 'loudspeaker' for a securitized state narrative that delegitimizes political grievance by recasting it as criminality.",
+        "sources": [
+          {
+            "label": "Pacific Journalism Review, 2023",
+            "url": "https://ojs.aut.ac.nz/pacific-journalism-review/article/download/1279/1645"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -155,14 +155,14 @@ def gdelt():
 
 
 # ---------- UNHCR Refugee Data Finder ----------
-FIELDS = ["refugees", "asylum_seekers", "idps", "stateless", "ooc"]
+FIELDS = ["refugees", "asylum_seekers", "idps", "stateless", "ooc", "hosted_refugees", "hosted_asylum_seekers"]
 
 
 def unhcr():
     out = {}
     for name, iso in COUNTRIES.items():
         url = "https://api.unhcr.org/population/v1/population/?" + urllib.parse.urlencode({
-            "limit": 100, "yearFrom": NOW.year - 6, "yearTo": NOW.year, "coo": iso, "cf_type": "ISO"})
+            "limit": 200, "yearFrom": NOW.year - 10, "yearTo": NOW.year, "coo": iso, "cf_type": "ISO"})
         try:
             res = http_json(url)
         except Exception as e:
@@ -175,10 +175,37 @@ def unhcr():
                 continue
             agg = by_year.setdefault(y, {k: 0 for k in FIELDS})
             for k in FIELDS:
-                agg[k] += num(it.get(k))
+                if k not in ("stateless", "hosted_refugees", "hosted_asylum_seekers"):
+                    agg[k] += num(it.get(k))
+        # Stateless people, and refugees a country hosts, are recorded by the country where
+        # they live (stateless people often have no country of origin), so ask by residence too.
+        try:
+            page = 1
+            while page <= 20:
+                res2 = http_json("https://api.unhcr.org/population/v1/population/?" + urllib.parse.urlencode({
+                    "limit": 1000, "page": page, "yearFrom": NOW.year - 10, "yearTo": NOW.year,
+                    "coa": iso, "coo_all": "true", "cf_type": "ISO"}))
+                items = res2.get("items", []) or []
+                for it in items:
+                    y = num(it.get("year"))
+                    if not y:
+                        continue
+                    agg = by_year.setdefault(y, {k: 0 for k in FIELDS})
+                    agg["stateless"] += num(it.get("stateless"))
+                    if str(it.get("coo_iso", "")).upper() != iso:  # people from elsewhere living here
+                        agg["hosted_refugees"] += num(it.get("refugees"))
+                        agg["hosted_asylum_seekers"] += num(it.get("asylum_seekers"))
+                max_pages = num(res2.get("maxPages"))
+                if len(items) < 1000 or (max_pages and page >= max_pages):
+                    break
+                page += 1
+                time.sleep(1)
+        except Exception as e:
+            log("unhcr residence", name, e)
         if by_year:
             y = max(by_year)
-            out[name] = {"year": y, **by_year[y]}
+            series = [{"year": yr, **by_year[yr]} for yr in sorted(by_year)]
+            out[name] = {"year": y, **by_year[y], "series": series}
         time.sleep(1)
     if not out:
         raise RuntimeError("UNHCR returned no rows for any country")

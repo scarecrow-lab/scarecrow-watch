@@ -8,14 +8,14 @@
 <link rel="icon" href="assets/logo-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Source+Serif+4:wght@600&family=Noto+Sans+Myanmar:wght@400;600&family=Noto+Sans+Khmer:wght@400;600&family=Noto+Sans+Lao:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#14181f; --panel:#1c222c; --panel-2:#232a35; --line:#333d4b;
   --ink:#e9e6df; --ink-dim:#a9b0bc; --ink-faint:#6f7889; --gold:#c99a4b;
   --low:#4d8b78; --med:#c98a3e; --high:#b5533c; --crit:#c2414f; --ok:#4d8b78; --bad:#c2414f;
   --serif:'Source Serif 4', Georgia, serif;
-  --sans:'IBM Plex Sans','IBM Plex Sans Thai',-apple-system,'Segoe UI',sans-serif;
+  --sans:'IBM Plex Sans','IBM Plex Sans Thai','Noto Sans Myanmar','Noto Sans Khmer','Noto Sans Lao',-apple-system,'Segoe UI',sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,monospace;
   --brand:'Chakra Petch',var(--sans);
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
@@ -36,6 +36,7 @@ h1{ font-family:var(--serif); font-size:clamp(26px,4vw,36px); margin:0 0 6px; li
 .lede{ color:var(--ink-dim); margin:0; max-width:620px; font-size:14.5px; }
 .controls{ display:flex; gap:8px; }
 .btn{ background:var(--panel-2); color:var(--ink-dim); border:1px solid var(--line); border-radius:6px; padding:7px 12px; font:500 12px var(--mono); cursor:pointer; }
+.lang{ background:var(--panel-2); color:var(--gold); border:1px solid var(--gold); border-radius:6px; padding:7px 10px; font:500 13px var(--sans); cursor:pointer; max-width:190px; }
 .btn[aria-pressed="true"]{ color:var(--gold); border-color:var(--gold); }
 .fresh{ display:flex; flex-wrap:wrap; gap:8px 20px; font-size:12.5px; color:var(--ink-dim); background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:10px 14px; margin-bottom:18px; }
 .fresh span b{ color:var(--ink); font-weight:600; }
@@ -81,6 +82,31 @@ section.panel{ margin-top:18px; }
 footer{ margin-top:30px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-dim); max-width:820px; }
 footer p{ margin:0 0 10px; }
 #err{ display:none; }
+.tabs{ display:flex; flex-wrap:wrap; gap:6px; margin:16px 0 4px; border-bottom:1px solid var(--line); }
+.tab{ background:none; border:0; border-bottom:2px solid transparent; color:var(--ink-dim); font:500 13px var(--sans); padding:8px 10px; cursor:pointer; margin-bottom:-1px; }
+.tab[aria-selected="true"]{ color:var(--ink); border-bottom-color:var(--gold); }
+.flag{ margin-right:8px; }
+.chart-row{ display:grid; grid-template-columns:220px 1fr; gap:18px; align-items:center; }
+@media (max-width:640px){ .chart-row{ grid-template-columns:1fr; justify-items:center; } .chart-row .bars{ width:100%; } }
+.reading{ font-size:13px; color:var(--ink-dim); background:var(--panel-2); border:1px solid var(--line); border-radius:6px; padding:10px 12px; margin-top:16px; }
+.pgrid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px 18px; }
+.pgrid div{ border-top:1px solid var(--line); padding-top:8px; }
+.pk{ display:block; font:500 11px var(--mono); color:var(--ink-faint); letter-spacing:.05em; text-transform:uppercase; }
+.pv{ font-size:13.5px; }
+.org{ font-size:13px; padding:5px 0; color:var(--ink-dim); }
+.org a{ font-weight:600; }
+.case{ border-left:2px solid var(--crit); padding:4px 0 4px 12px; margin:10px 0; font-size:13.5px; color:var(--ink-dim); }
+.legend{ display:flex; flex-wrap:wrap; gap:6px 14px; font-size:12px; color:var(--ink-dim); margin:4px 0 8px; }
+.legend i{ display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:5px; vertical-align:-1px; }
+.contact{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:10px; align-items:end; margin-top:10px; }
+.contact label{ font-size:12px; color:var(--ink-dim); display:grid; gap:4px; }
+.contact select{ background:var(--panel-2); color:var(--ink); border:1px solid var(--line); border-radius:6px; padding:8px; font:inherit; }
+.cta{ background:var(--gold); color:#14181f; border:0; border-radius:6px; padding:9px 14px; font:600 13px var(--sans); cursor:pointer; }
+:lang(my) :is(.pk,.tab), :lang(km) :is(.pk,.tab), :lang(lo) :is(.pk,.tab){ font-family:var(--sans); letter-spacing:0; text-transform:none; }
+/* Complex scripts: keep them in the shaping-aware sans font, no letter-spacing or caps */
+:lang(my) :is(h3,.band,.chip,.sig .d,.ev .k,.btn,.lang), :lang(km) :is(h3,.band,.chip,.sig .d,.ev .k,.btn,.lang), :lang(lo) :is(h3,.band,.chip,.sig .d,.ev .k,.btn,.lang){ font-family:var(--sans); letter-spacing:0; text-transform:none; }
+:lang(my) h1, :lang(km) h1, :lang(lo) h1{ font-family:var(--sans); line-height:1.5; }
+:lang(my) body, :lang(km) body, :lang(lo) body{ line-height:1.75; }
 </style>
 </head>
 <body>
@@ -92,8 +118,8 @@ footer p{ margin:0 0 10px; }
       <p class="lede" data-i="lede"></p>
     </div>
     <div class="controls">
-      <button class="btn" id="lang-en" aria-pressed="true">EN</button>
-      <button class="btn" id="lang-th" aria-pressed="false">ไทย</button>
+      <label style="position:absolute;left:-9999px" for="langSel">Language</label>
+      <select class="lang" id="langSel"></select>
       <button class="btn" id="theme" data-i="theme">Theme</button>
     </div>
   </header>
@@ -109,8 +135,19 @@ footer p{ margin:0 0 10px; }
   <section class="panel" aria-labelledby="regTitle">
     <h3 id="regTitle" style="margin-top:0" data-i="regional">Latest signals across ASEAN</h3>
     <p class="muted" data-i="sigNote"></p>
+    <p class="muted" data-i="evNote"></p>
     <div class="filters" id="filters"></div>
     <div id="regional"></div>
+  </section>
+
+  <section class="panel" id="contactPanel" hidden aria-labelledby="contactTitle">
+    <h3 id="contactTitle" style="margin-top:0" data-i="contactTitle">Feedback & grievances</h3>
+    <p class="muted" data-i="contactNotice"></p>
+    <div class="contact">
+      <label><span data-i="contactType"></span><select id="cType"></select></label>
+      <label><span>ASEAN</span><select id="cCountry"></select></label>
+      <button class="cta" id="cSend" data-i="contactBtn">Write an email</button>
+    </div>
   </section>
 
   <footer>
@@ -121,51 +158,16 @@ footer p{ margin:0 0 10px; }
   </footer>
 </div>
 
+<script src="assets/i18n.js"></script>
 <script>
 "use strict";
-const T = {
-  en:{
-    title:"ASEAN Atrocity Risk Monitor",
-    lede:"A free early-warning dashboard for governments, civil society and NGOs. Lab-assessed risk scores sit next to public data that updates automatically every day.",
-    theme:"Theme", regional:"Latest signals across ASEAN",
-    sigNote:"Collected automatically from public sources. These are unverified signals for analysts to review, not Lab findings, and they never change a score on their own.",
-    labReviewed:"Lab assessment reviewed", updated:"updated", failed:"last attempt failed", pending:"waiting for first run", stale:"stale",
-    avg:"Average score", factors:"Risk factors (1 low – 5 severe)", lab:"Lab assessment", evidence:"Lab evidence",
-    disp:"Displacement (UNHCR)", dispNone:"No UNHCR figures loaded yet.", refugees:"Refugees & asylum-seekers abroad", idps:"Internally displaced", stateless:"Stateless", year:"Year",
-    signals:"Automated signals", sigNone:"No signals in the last 14 days.", unverified:"Unverified", all:"All",
-    bands:{low:"LOW",mod:"MODERATE",elev:"ELEVATED",sev:"SEVERE"},
-    nSignals:n=>`${n} signal${n===1?"":"s"}`,
-    loadErr:"Could not load the dashboard data. If you opened this file directly, serve the folder over HTTP instead (see README).",
-    fwTitle:"Data firewall.", fwText:"This public dashboard shows only public sources and findings the Scarecrow Lab has verified and published. Tips, witness accounts and case files never appear here, and nothing on this page indicates whether an investigation is under way.",
-    howTitle:"How it works.", howText:"Scores follow the eight common risk factors of the UN Framework of Analysis for Atrocity Crimes, rated 1–5 by the Lab and changed only when the Lab reviews them. ReliefWeb, GDELT and UNHCR data refresh automatically once a day.",
-    srcTitle:"Data sources.", srcText:"Public data is shown under each provider's terms:",
-    ago:(n,u)=>`${n} ${u}${n===1?"":"s"} ago`, units:{m:"minute",h:"hour",d:"day"}
-  },
-  th:{
-    title:"ระบบติดตามความเสี่ยงอาชญากรรมโหดร้ายร้ายแรงในอาเซียน",
-    lede:"แดชบอร์ดเตือนภัยล่วงหน้าที่ใช้ฟรี สำหรับรัฐบาล ภาคประชาสังคม และ NGO แสดงคะแนนความเสี่ยงที่ Lab ประเมิน คู่กับข้อมูลสาธารณะที่อัปเดตอัตโนมัติทุกวัน",
-    theme:"ธีม", regional:"สัญญาณล่าสุดทั่วอาเซียน",
-    sigNote:"รวบรวมอัตโนมัติจากแหล่งสาธารณะ เป็นสัญญาณที่ยังไม่ผ่านการตรวจสอบสำหรับนักวิเคราะห์ ไม่ใช่ข้อค้นพบของ Lab และไม่เปลี่ยนคะแนนด้วยตัวเอง",
-    labReviewed:"Lab ทบทวนการประเมิน", updated:"อัปเดต", failed:"ดึงข้อมูลครั้งล่าสุดไม่สำเร็จ", pending:"รอการดึงข้อมูลครั้งแรก", stale:"ข้อมูลเก่า",
-    avg:"คะแนนเฉลี่ย", factors:"ปัจจัยเสี่ยง (1 ต่ำ – 5 รุนแรง)", lab:"การประเมินของ Lab", evidence:"หลักฐานจาก Lab",
-    disp:"การพลัดถิ่น (UNHCR)", dispNone:"ยังไม่มีข้อมูลจาก UNHCR", refugees:"ผู้ลี้ภัยและผู้ขอลี้ภัยในต่างประเทศ", idps:"ผู้พลัดถิ่นในประเทศ", stateless:"ผู้ไร้รัฐ", year:"ปี",
-    signals:"สัญญาณอัตโนมัติ", sigNone:"ไม่มีสัญญาณในช่วง 14 วันที่ผ่านมา", unverified:"ยังไม่ยืนยัน", all:"ทั้งหมด",
-    bands:{low:"ต่ำ",mod:"ปานกลาง",elev:"สูง",sev:"รุนแรง"},
-    nSignals:n=>`${n} สัญญาณ`,
-    loadErr:"โหลดข้อมูลแดชบอร์ดไม่ได้ ถ้าเปิดไฟล์โดยตรง ให้เปิดผ่านเซิร์ฟเวอร์ HTTP แทน (ดู README)",
-    fwTitle:"Data firewall", fwText:"แดชบอร์ดสาธารณะนี้แสดงเฉพาะแหล่งข้อมูลสาธารณะและข้อค้นพบที่ Scarecrow Lab ยืนยันและเผยแพร่แล้ว เบาะแส คำให้การพยาน และแฟ้มคดีจะไม่ปรากฏที่นี่ และหน้านี้ไม่บอกว่ามีการสืบสวนใดอยู่ระหว่างดำเนินการ",
-    howTitle:"วิธีการทำงาน", howText:"คะแนนอิงปัจจัยเสี่ยงร่วม 8 ข้อของกรอบการวิเคราะห์อาชญากรรมโหดร้ายของ UN ให้คะแนน 1–5 โดย Lab และเปลี่ยนเฉพาะเมื่อ Lab ทบทวน ส่วนข้อมูลจาก ReliefWeb, GDELT และ UNHCR อัปเดตอัตโนมัติวันละครั้ง",
-    srcTitle:"แหล่งข้อมูล", srcText:"แสดงข้อมูลสาธารณะตามเงื่อนไขของผู้ให้บริการแต่ละราย:",
-    ago:(n,u)=>`${n} ${u}ที่แล้ว`, units:{m:"นาที",h:"ชั่วโมง",d:"วัน"}
-  }
-};
 const SOURCE_NAMES = {reliefweb:"ReliefWeb", gdelt:"GDELT", unhcr:"UNHCR"};
 let lang = "en", D = null, current = null, srcFilter = "";
 const $ = s => document.querySelector(s);
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 const safeUrl = u => (typeof u === "string" && /^https?:\/\//i.test(u)) ? u : null;
 const link = (url, text) => { const u = safeUrl(url); if (!u) return el("span", null, text); const a = el("a", null, text); a.href = u; a.target = "_blank"; a.rel = "noopener noreferrer"; return a; };
-const t = k => T[lang][k];
+const t = k => (T[lang] && T[lang][k] !== undefined) ? T[lang][k] : T.en[k];
 
 function avg(s){ const v = Object.values(s || {}).map(Number).filter(n => !isNaN(n)); return v.length ? v.reduce((a,b)=>a+b,0)/v.length : 0; }
 function band(a){ return a >= 3.9 ? ["sev","var(--crit)"] : a > 3.0 ? ["elev","var(--high)"] : a > 2.0 ? ["mod","var(--med)"] : ["low","var(--low)"]; }
@@ -173,9 +175,12 @@ function bandChip(a){ const [k,c] = band(a); const b = el("span","band",t("bands
 function ago(iso){
   const ms = Date.now() - Date.parse(iso); if (!(ms >= 0)) return iso || "";
   const m = Math.round(ms/60000), h = Math.round(ms/3600000), d = Math.round(ms/86400000);
-  const U = t("units"); return m < 60 ? t("ago")(m, U.m) : h < 48 ? t("ago")(h, U.h) : t("ago")(d, U.d);
+  const U = t("units"); return m < 60 ? agoText(m, U.m) : h < 48 ? agoText(h, U.h) : agoText(d, U.d);
 }
-const fmt = n => Number(n || 0).toLocaleString(lang === "th" ? "th-TH" : "en-US");
+const locale = () => (LANGS.find(l => l.code === lang) || LANGS[0]).locale;
+const fmt = n => { try { return Number(n || 0).toLocaleString(locale()); } catch(e){ return String(n || 0); } };
+const nSignals = n => `${n} ${n === 1 ? t("sig1") : t("sigN")}`;
+const agoText = (n, u) => t("agoTpl").replace("{n}", n).replace("{u}", u + (t("plural") && n !== 1 ? "s" : ""));
 
 async function getJSON(path){
   const r = await fetch(path + "?v=" + Date.now(), {cache:"no-store"});
@@ -185,8 +190,8 @@ async function getJSON(path){
 
 async function load(){
   try{
-    const [a, s, d, m] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
-    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}};
+    const [a, s, d, m, cx, site] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json","data/context.json","data/site.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
+    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}, cx: cx || {}, site: site || {}};
     D.a.countries.sort((x,y) => avg(y.scores) - avg(x.scores));
     const fromHash = decodeURIComponent((location.hash.match(/country=([^&]+)/) || [])[1] || "");
     current = D.a.countries.find(c => c.name === fromHash) ? fromHash : D.a.countries[0].name;
@@ -199,7 +204,7 @@ async function load(){
 function renderStatic(){
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i]").forEach(n => { const v = t(n.dataset.i); if (typeof v === "string") n.textContent = v; });
-  $("#lang-en").setAttribute("aria-pressed", lang === "en"); $("#lang-th").setAttribute("aria-pressed", lang === "th");
+  $("#langSel").value = lang;
   if ($("#err").style.display === "block") $("#err").textContent = t("loadErr");
 }
 
@@ -223,8 +228,8 @@ function renderList(){
     const a = avg(c.scores), b = el("button","row");
     b.setAttribute("aria-current", c.name === current);
     const s = el("span","s",a.toFixed(1)); s.style.color = band(a)[1];
-    const meta = el("span","m"); meta.append(bandChip(a), document.createTextNode("  " + t("nSignals")(signalsFor(c.name).length)));
-    b.append(el("span","n",c.name), s, meta);
+    const meta = el("span","m"); meta.append(bandChip(a), document.createTextNode("  " + nSignals(signalsFor(c.name).length)));
+    b.append(el("span","n",((D.cx.flags||{})[c.name] ? D.cx.flags[c.name] + " " : "") + c.name), s, meta);
     b.onclick = () => { current = c.name; history.replaceState(null, "", "#country=" + encodeURIComponent(c.name)); renderList(); renderDetail(); };
     L.append(b);
   }
@@ -240,45 +245,143 @@ function sigRow(i, showCountry){
   body.append(meta); r.append(d, body); return r;
 }
 
+let tab = "overview";
+const esc = v => String(v == null ? "" : v).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[ch]);
+const svgEl = html => { const d = document.createElement("div"); d.innerHTML = html; return d.firstElementChild; };
+
+function radarSVG(scores){
+  const F = D.a.factors, n = F.length, R = 92, cx = 110, cy = 110;
+  const pt = (i, r) => { const a = Math.PI*2*i/n - Math.PI/2; return [cx + r*Math.cos(a), cy + r*Math.sin(a)]; };
+  const rings = [0.25,0.5,0.75,1].map(f => `<polygon points="${F.map((_,i)=>pt(i,f*R).join(",")).join(" ")}" fill="none" stroke="var(--line)"/>`).join("");
+  const spokes = F.map((_,i) => { const [x,y] = pt(i,R); return `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="var(--line)"/>`; }).join("");
+  const poly = F.map((f,i) => pt(i, (Number(scores[f.key])||0)/5*R).join(",")).join(" ");
+  const nums = F.map((f,i) => { const [x,y] = pt(i,R+11); return `<text x="${x}" y="${y+3}" font-size="9" text-anchor="middle" fill="var(--ink-faint)" font-family="var(--mono)">${i+1}</text>`; }).join("");
+  return svgEl(`<svg viewBox="-6 -6 232 232" width="220" height="220" role="img" aria-label="Risk factor radar">${rings}${spokes}<polygon points="${poly}" fill="var(--gold)" fill-opacity="0.28" stroke="var(--gold)" stroke-width="2"/>${nums}</svg>`);
+}
+const sevColor = v => v <= 1 ? "var(--low)" : v === 2 ? "var(--med)" : v === 3 ? "var(--high)" : "var(--crit)";
+function hotspotSVG(points){
+  const W = 340, H = 250, P = 30;
+  if (!points.length) return svgEl(`<svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:520px"><rect width="${W}" height="${H}" rx="6" fill="var(--panel-2)" stroke="var(--line)"/><text x="${W/2}" y="${H/2}" text-anchor="middle" font-size="13" fill="var(--ink-faint)">${esc(t("noSignalCountry"))}</text></svg>`);
+  const la = points.map(p=>p.lat), lo = points.map(p=>p.lng);
+  const pa = Math.max(0.6,(Math.max(...la)-Math.min(...la))*0.3), po = Math.max(0.6,(Math.max(...lo)-Math.min(...lo))*0.3);
+  const minLa = Math.min(...la)-pa, maxLa = Math.max(...la)+pa, minLo = Math.min(...lo)-po, maxLo = Math.max(...lo)+po;
+  const x = v => P + (v-minLo)/((maxLo-minLo)||1)*(W-2*P), y = v => H-P - (v-minLa)/((maxLa-minLa)||1)*(H-2*P);
+  const grid = [0.25,0.5,0.75].map(f => `<line x1="${P}" x2="${W-P}" y1="${P+f*(H-2*P)}" y2="${P+f*(H-2*P)}" stroke="var(--line)" stroke-dasharray="3,4"/>`).join("");
+  const dots = points.map(p => `<circle cx="${x(p.lng).toFixed(1)}" cy="${y(p.lat).toFixed(1)}" r="${5+p.sev*1.8}" fill="${sevColor(p.sev)}" fill-opacity="0.75" stroke="${sevColor(p.sev)}" stroke-width="1.5"><title>${esc(p.label)} — ${esc(p.source)}</title></circle>`).join("");
+  return svgEl(`<svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:520px" role="img" aria-label="${esc(t("conflictMapHeader"))}"><rect width="${W}" height="${H}" rx="6" fill="var(--panel-2)" stroke="var(--line)"/>${grid}<text x="${P}" y="16" font-size="9" font-family="var(--mono)" fill="var(--ink-faint)">N ${maxLa.toFixed(1)}°</text><text x="${P}" y="${H-10}" font-size="9" font-family="var(--mono)" fill="var(--ink-faint)">S ${minLa.toFixed(1)}° · E ${minLo.toFixed(1)}°–${maxLo.toFixed(1)}°</text>${dots}</svg>`);
+}
+function trendSVG(series){
+  const W = 520, H = 210, L = 58, Rp = 14, Tp = 16, B = 30;
+  const yrs = series.map(r => r.year), A = series.map(r => (r.refugees||0)+(r.asylum_seekers||0)), I = series.map(r => r.idps||0), Hs = series.map(r => (r.hosted_refugees||0)+(r.hosted_asylum_seekers||0));
+  const showH = Hs.some(v => v > 0), max = Math.max(1, ...A, ...I, ...(showH ? Hs : [])), n = series.length;
+  const x = i => L + (n === 1 ? (W-L-Rp)/2 : i/(n-1)*(W-L-Rp)), y = v => H-B - v/max*(H-B-Tp);
+  const short = v => v >= 1e6 ? (v/1e6).toFixed(v>=1e7?0:1)+"M" : v >= 1e3 ? Math.round(v/1e3)+"k" : String(v);
+  const ticks = [0,0.5,1].map(f => `<line x1="${L}" x2="${W-Rp}" y1="${y(f*max)}" y2="${y(f*max)}" stroke="var(--line)"/><text x="${L-6}" y="${y(f*max)+3}" text-anchor="end" font-size="10" font-family="var(--mono)" fill="var(--ink-faint)">${short(Math.round(f*max))}</text>`).join("");
+  const line = (vals, col) => `<polyline points="${vals.map((v,i)=>x(i).toFixed(1)+","+y(v).toFixed(1)).join(" ")}" fill="none" stroke="${col}" stroke-width="2"/>` + vals.map((v,i)=>`<circle cx="${x(i).toFixed(1)}" cy="${y(v).toFixed(1)}" r="3" fill="${col}"><title>${yrs[i]}: ${fmt(v)}</title></circle>`).join("");
+  const labels = yrs.map((yr,i) => (n <= 8 || i % 2 === 0 || i === n-1) ? `<text x="${x(i)}" y="${H-10}" text-anchor="middle" font-size="10" font-family="var(--mono)" fill="var(--ink-faint)">${yr}</text>` : "").join("");
+  return svgEl(`<svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:620px" role="img" aria-label="${esc(t("migrationHeader"))}">${ticks}${line(A,"var(--gold)")}${line(I,"var(--crit)")}${showH ? line(Hs,"var(--low)") : ""}${labels}</svg>`);
+}
+function orgRow(o){ const r = el("div","org"); r.append(link(o.url, o.name), document.createTextNode(" — " + (o.desc||""))); return r; }
+
 function renderDetail(){
   const c = D.a.countries.find(x => x.name === current), a = avg(c.scores), box = $("#detail");
   box.replaceChildren();
-  const h = el("h2",null,c.name), top = el("div"); top.append(bandChip(a), el("span","muted","  " + t("avg") + " " + a.toFixed(2)));
+  const flag = (D.cx.flags||{})[c.name];
+  const h = el("h2"); if (flag) h.append(el("span","flag",flag)); h.append(document.createTextNode(c.name));
+  const top = el("div"); top.append(bandChip(a), el("span","muted","  " + t("avg") + " " + a.toFixed(2)));
   box.append(h, top);
-  box.append(el("h3",null,t("lab")), el("p","note",c.note || ""));
+  const tabs = el("div","tabs"); tabs.setAttribute("role","tablist");
+  [["overview","tabOverview"],["factbook","tabFactbook"],["map","tabMap"],["signals","signals"]].forEach(([k,lab]) => {
+    const b = el("button","tab",t(lab)); b.setAttribute("role","tab"); b.setAttribute("aria-selected", tab === k);
+    b.onclick = () => { tab = k; renderDetail(); }; tabs.append(b);
+  });
+  box.append(tabs);
+  const body = el("div"); box.append(body);
 
-  box.append(el("h3",null,t("factors")));
-  const bars = el("div","bars");
-  for (const f of D.a.factors){
-    const v = Number(c.scores[f.key] || 0), row = el("div","bar"), tr = el("div","track"), fill = el("div","fill");
-    fill.style.width = (v/5*100) + "%"; fill.style.background = band(v)[1]; tr.append(fill);
-    row.append(el("span",null,f[lang] || f.en), tr, el("b",null,String(v))); bars.append(row);
-  }
-  box.append(bars);
-
-  box.append(el("h3",null,t("disp")));
-  const dp = (D.d.countries || {})[c.name];
-  if (dp){
-    const st = el("div","stats");
-    const add = (n, label) => { const s = el("div","stat"); s.append(el("b",null,fmt(n)), el("span",null,label)); st.append(s); };
-    add((dp.refugees||0) + (dp.asylum_seekers||0), t("refugees")); add(dp.idps, t("idps")); add(dp.stateless, t("stateless"));
-    box.append(st, el("p","muted",`${t("year")} ${dp.year} · UNHCR Refugee Data Finder`));
-  } else box.append(el("p","muted",t("dispNone")));
-
-  box.append(el("h3",null,t("signals")));
-  const sg = signalsFor(c.name);
-  if (sg.length) sg.forEach(i => box.append(sigRow(i,false))); else box.append(el("p","muted",t("sigNone")));
-
-  const ev = Object.entries(c.evidence || {});
-  if (ev.length){
-    box.append(el("h3",null,t("evidence")));
-    for (const [k, e] of ev){
-      const f = D.a.factors.find(x => x.key === k), row = el("div","ev");
-      row.append(el("span","k",(f ? (f[lang] || f.en) : k).toUpperCase()), el("div",null,e.text || ""));
-      const src = el("div","src"); (e.sources || []).forEach(s => src.append(link(s.url, s.label))); row.append(src);
-      box.append(row);
+  if (tab === "overview"){
+    body.append(el("h3",null,t("lab")), el("p","note",c.note || ""));
+    body.append(el("h3",null,t("factors")));
+    const row = el("div","chart-row"), bars = el("div","bars");
+    D.a.factors.forEach((f,i) => {
+      const v = Number(c.scores[f.key] || 0), r = el("div","bar"), tr = el("div","track"), fill = el("div","fill");
+      fill.style.width = (v/5*100) + "%"; fill.style.background = band(v)[1]; tr.append(fill);
+      r.append(el("span",null,(i+1) + ". " + (f[lang] || f.en)), tr, el("b",null,String(v))); bars.append(r);
+    });
+    row.append(radarSVG(c.scores), bars); body.append(row);
+    const rd = el("div","reading"); rd.append(el("b",null,t("readingThisLabel") + " "), document.createTextNode(t("readingThisText"))); body.append(rd);
+    const ev = Object.entries(c.evidence || {});
+    if (ev.length){
+      body.append(el("h3",null,t("evidence")));
+      for (const [k, e] of ev){
+        const f = D.a.factors.find(x => x.key === k), r = el("div","ev");
+        r.append(el("span","k",(f ? (f[lang] || f.en) : k)), el("div",null,e.text || ""));
+        const src = el("div","src"); (e.sources || []).forEach(s => src.append(link(s.url, s.label))); r.append(src); body.append(r);
+      }
     }
   }
+
+  if (tab === "factbook"){
+    const p = (D.cx.profile || {})[c.name];
+    if (p){
+      const g = el("div","pgrid");
+      [["currentLeaderLabel","leader"],["populationLabel","pop"],["capitalLabel","capital"],["governmentLabel","govt"],["areaLabel","area"],["gdpLabel","gdp"],["gdpCapLabel","gdpCap"],["languagesLabel","languages"],["religionsLabel","religions"]].forEach(([lab,key]) => {
+        if (!p[key]) return; const d = el("div"); d.append(el("span","pk",t(lab)), el("span","pv",p[key])); g.append(d);
+      });
+      body.append(el("h3",null,t("tabFactbook")), g, el("p","muted",t("profileSourceNote") + (D.cx.reviewed ? " · " + D.cx.reviewed : "")));
+    }
+    body.append(el("h3",null,t("csoHeaderLabel") + " — " + c.name));
+    ((D.cx.csos || {})[c.name] || []).forEach(o => body.append(orgRow(o)));
+    body.append(el("h3",null,t("csoRegionalHeader")));
+    (D.cx.csos_regional || []).forEach(o => body.append(orgRow(o)));
+    body.append(el("p","muted",t("csoSafetyNote")));
+  }
+
+  if (tab === "map"){
+    body.append(el("h3",null,t("conflictMapHeader")));
+    const lg = el("div","legend");
+    [["low","var(--low)"],["mod","var(--med)"],["elev","var(--high)"],["sev","var(--crit)"]].forEach(([k,col]) => { const s = el("span"); const i = el("i"); i.style.background = col; s.append(i, document.createTextNode(t("bands")[k])); lg.append(s); });
+    const pts = (D.cx.hotspots || {})[c.name] || [];
+    body.append(lg, hotspotSVG(pts), el("p","muted",t("hotspotCaveat")));
+    pts.forEach(p => { const r = el("div","org"); const i = el("i"); i.style.cssText = `display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;background:${sevColor(p.sev)}`; r.append(i, document.createTextNode(`${p.label} — ${p.source}`)); body.append(r); });
+
+    body.append(el("h3",null,t("migrationHeader")));
+    const dp = (D.d.countries || {})[c.name];
+    if (dp && Array.isArray(dp.series) && dp.series.length){
+      const lg2 = el("div","legend"); [["abroad","var(--gold)"],["idps","var(--crit)"]].concat(dp.series.some(r => (r.hosted_refugees||0)+(r.hosted_asylum_seekers||0) > 0) ? [["hosted","var(--low)"]] : []).forEach(([k,col]) => { const s = el("span"); const i = el("i"); i.style.background = col; s.append(i, document.createTextNode(t(k))); lg2.append(s); });
+      body.append(lg2, trendSVG(dp.series));
+      const st = el("div","stats"); const add = (n, label) => { const s = el("div","stat"); s.append(el("b",null,fmt(n)), el("span",null,label)); st.append(s); };
+      add((dp.refugees||0)+(dp.asylum_seekers||0), t("refugees")); add(dp.idps, t("idps")); add((dp.hosted_refugees||0)+(dp.hosted_asylum_seekers||0), t("hosted")); add(dp.stateless, t("stateless"));
+      body.append(st, el("p","muted",`${t("year")} ${dp.year} · ` + t("migCaption")));
+    } else body.append(el("p","muted",t("migNone")));
+
+    body.append(el("h3",null,t("dehumTitle")));
+    const cases = (D.cx.dehumanization_cases || {})[c.name] || [];
+    if (cases.length){
+      cases.forEach(cs => { const r = el("div","case"); r.append(el("div",null,cs.text)); const src = el("div","src"); (cs.sources||[]).forEach(s => src.append(link(s.url, s.label))); r.append(src); body.append(r); });
+    } else body.append(el("p","muted",t("noSignalDehum")));
+    body.append(el("p","muted",t("dehumNote")));
+  }
+
+  if (tab === "signals"){
+    body.append(el("p","muted",t("sigNote")));
+    const sg = signalsFor(c.name);
+    if (sg.length) sg.forEach(i => body.append(sigRow(i,false))); else body.append(el("p","muted",t("sigNone")));
+  }
+}
+
+function renderContact(){
+  const email = (D.site || {}).contact_email || "";
+  const panel = $("#contactPanel");
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || /CHANGE-ME/i.test(email)){ panel.hidden = true; return; }
+  panel.hidden = false;
+  const ty = $("#cType"), co = $("#cCountry"), keepT = ty.value, keepC = co.value;
+  ty.replaceChildren(); [["grievance","fbTypeGrievance"],["score","fbTypeDispute"],["opinion","fbTypeOpinion"],["source","fbTypeSource"]].forEach(([v,k]) => { const o = el("option",null,t(k)); o.value = v; ty.append(o); });
+  co.replaceChildren(); D.a.countries.forEach(c => { const o = el("option",null,c.name); o.value = c.name; co.append(o); });
+  ty.value = keepT || "grievance"; co.value = keepC || current;
+  $("#cSend").onclick = () => {
+    const subject = `[Scarecrow Watch] ${ty.options[ty.selectedIndex].text} — ${co.value}`;
+    location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+  };
 }
 
 function renderRegional(){
@@ -291,15 +394,21 @@ function renderRegional(){
   items.forEach(i => R.append(sigRow(i,true)));
 }
 
-function render(){ renderStatic(); if (!D) return; renderFresh(); renderList(); renderDetail(); renderRegional(); }
+function render(){ renderStatic(); if (!D) return; renderFresh(); renderList(); renderDetail(); renderRegional(); renderContact(); }
 
-$("#lang-en").onclick = () => { lang = "en"; render(); };
-$("#lang-th").onclick = () => { lang = "th"; render(); };
+const sel = $("#langSel");
+LANGS.forEach(l => { const o = el("option", null, l.name); o.value = l.code; sel.append(o); });
+sel.onchange = () => { lang = sel.value; try { localStorage.setItem("sw-lang", lang); } catch(e){} render(); };
 $("#theme").onclick = () => {
   const r = document.documentElement, dark = r.dataset.theme ? r.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
   r.dataset.theme = dark ? "light" : "dark";
 };
-if ((navigator.language || "").toLowerCase().startsWith("th")) lang = "th";
+(function(){
+  let saved = null; try { saved = localStorage.getItem("sw-lang"); } catch(e){}
+  const nav = (navigator.language || "en").toLowerCase().split("-")[0];
+  const guess = ({fil:"tl", in:"id"})[nav] || nav;
+  lang = [saved, guess].find(c => c && T[c]) || "en";
+})();
 renderStatic();
 load();
 </script>
