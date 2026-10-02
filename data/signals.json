@@ -1,18 +1,216 @@
 {
-  "generated": "2026-10-01T14:03:23+00:00",
+  "generated": "2026-10-02T02:17:31+00:00",
   "window_days": 14,
   "items": [
     {
       "country": "Indonesia",
-      "date": "2026-10-01",
-      "title": "Indonesia arrests captain of capsized ferry , state news agency reports",
-      "url": "https://www.asiaone.com:443/asia/indonesia-arrests-captain-capsized-ferry-state-news-agency-reports",
-      "source": "asiaone.com",
+      "date": "2026-10-02",
+      "title": "U . S . stocks struggle for direction Thursday",
+      "url": "http://www.afghanistannews.net/news/279342264/u-s-stocks-struggle-for-direction-thursday",
+      "source": "afghanistannews.net",
       "kind": "News",
       "via": "GDELT"
     },
     {
       "country": "Indonesia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.utahindependent.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "utahindependent.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.pakistantelegraph.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "pakistantelegraph.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.saltlakecitysun.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "saltlakecitysun.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.ohiostandard.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "ohiostandard.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.tucsonpost.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "tucsonpost.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.theusnews.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "theusnews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.mexicostar.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "mexicostar.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-02",
+      "title": "U . S . stocks struggle for direction Thursday",
+      "url": "http://www.australiannews.net/news/279342264/u-s-stocks-struggle-for-direction-thursday",
+      "source": "australiannews.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.milwaukeesun.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "milwaukeesun.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Timor-Leste",
+      "date": "2026-10-02",
+      "title": "UN marks International Day of Older Persons with urgent call to overhaul Systems for Longevity",
+      "url": "https://newsindiatimes.com/un-marks-international-day-of-older-persons-with-urgent-call-to-overhaul-systems-for-longevity/",
+      "source": "newsindiatimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Timor-Leste",
+      "date": "2026-10-02",
+      "title": "Beyond Treaties : How investment disputes trap Pacific nations",
+      "url": "https://pina.com.fj/2026/10/02/beyond-treaties-how-investment-disputes-trap-pacific-nations/",
+      "source": "pina.com.fj",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "Bruno Agaba books main draw berth as Uganda International Series serves off",
+      "url": "https://kawowo.com/2026/10/01/bruno-agaba-books-main-draw-berth-as-uganda-international-series-serves-off-in-kampala/",
+      "source": "kawowo.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "UN Expert Urges Malaysian Govt To Stop Repatriation Of Myanmar Nationals , Deplores Myanmar Military Latest Airstrikes",
+      "url": "https://www.scoop.co.nz/stories/WO2610/S00009/un-expert-urges-malaysian-govt-to-stop-repatriation-of-myanmar-nationals-deplores-myanmar-militarys-latest-airstrikes.htm",
+      "source": "scoop.co.nz",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "Children and Armed Conflict",
+      "url": "https://www.securitycouncilreport.org/monthly-forecast/2026-10/children-and-armed-conflict-13.php",
+      "source": "securitycouncilreport.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "Women , Peace and Security",
+      "url": "https://www.securitycouncilreport.org/monthly-forecast/2026-10/women-peace-and-security-22.php",
+      "source": "securitycouncilreport.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "Former Myanmar American Chamber of Commerce board member detained in Spain",
+      "url": "https://mymotherlode.com/news/world/11184417/former-myanmar-american-chamber-of-commerce-board-member-detained-in-spain.html",
+      "source": "mymotherlode.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "  Epstein hearing put Norway foreign ministry on trial | Norway News in English www . newsinenglish . no",
+      "url": "https://www.newsinenglish.no/2026/10/01/epstein-hearings-put-norways-foreign-ministry-on-trial/",
+      "source": "newsinenglish.no",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "Former Myanmar American Chamber of Commerce board member detained in Spain",
+      "url": "https://www.wral.com/news/ap/7972a-former-myanmar-american-chamber-of-commerce-board-member-detained-in-spain/",
+      "source": "wral.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "Early Edition : October 1 , 2026",
+      "url": "https://www.justsecurity.org/159415/early-edition-october-1-2026/",
+      "source": "justsecurity.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "Former Myanmar American Chamber of Commerce board member detained in Spain",
+      "url": "https://abcnews.com/International/wireStory/former-myanmar-american-chamber-commerce-board-member-detained-136915362",
+      "source": "abcnews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "Istanbul symposium calls for Prophet Muhammad teachings in modern life",
+      "url": "https://www.dailysabah.com/turkiye/istanbul-symposium-calls-for-prophet-muhammads-teachings-in-modern-life/news",
+      "source": "dailysabah.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "UN refugee agency concerned by Malaysia returns to Myanmar",
+      "url": "https://www.thestar.com.my/news/nation/2026/10/01/un-refugee-agency-concerned-by-malaysia-returns-to-myanmar",
+      "source": "thestar.com.my",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
       "date": "2026-10-01",
       "title": "Asian youth forum confronts trafficking and exploitation",
       "url": "https://www.ucanews.com/news/asian-youth-forum-confronts-trafficking-and-exploitation/115518",
@@ -21,10 +219,28 @@
       "via": "GDELT"
     },
     {
-      "country": "Indonesia",
+      "country": "Myanmar",
       "date": "2026-10-01",
-      "title": "  Struggling to eat : Survivors suffer after Indonesia quake",
-      "url": "https://www.ucanews.com/news/struggling-to-eat-survivors-suffer-after-indonesia-quake/115520",
+      "title": "The  Little Flower  that nurtured the Bangladesh Church for a century",
+      "url": "https://www.ucanews.com/news/the-little-flower-that-nurtured-the-bangladesh-church-for-a-century/115533",
+      "source": "ucanews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "At least 49 killed in Myanmar airstrike on Rakhine market",
+      "url": "https://www.ucanews.com/news/at-least-49-killed-in-myanmar-airstrike-on-rakhine-market/115539",
+      "source": "ucanews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-01",
+      "title": "Malaysia starts sending Myanmar migrants home",
+      "url": "https://www.ucanews.com/news/malaysia-starts-sending-myanmar-migrants-home/115540",
       "source": "ucanews.com",
       "kind": "News",
       "via": "GDELT"
@@ -32,108 +248,63 @@
     {
       "country": "Indonesia",
       "date": "2026-10-01",
-      "title": "How Indonesia navigated through the 9 / 11 fallout",
-      "url": "https://www.ucanews.com/news/how-indonesia-navigated-through-the-9-11-fallout/115554",
-      "source": "ucanews.com",
+      "title": "The Latest : Trump hits the campaign trail in Texas , kicking off blitz before midterms",
+      "url": "http://www.idahopress.com/ap_news/us/the-latest-trump-hits-the-campaign-trail-in-texas-kicking-off-blitz-before-midterms/article_cbd98704-f1b8-5a9d-b130-048f97bc6f5b.html",
+      "source": "idahopress.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
       "country": "Indonesia",
       "date": "2026-10-01",
-      "title": "A socialist roadmap for Malaysia",
-      "url": "https://links.org.au/socialist-roadmap-malaysia",
-      "source": "links.org.au",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.hawaiitelegraph.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "hawaiitelegraph.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
       "country": "Indonesia",
       "date": "2026-10-01",
-      "title": "World Watch | The Shillong Times",
-      "url": "https://theshillongtimes.com/2026/10/01/world-watch-894/",
-      "source": "theshillongtimes.com",
+      "title": "U . S . stocks struggle for direction Thursday",
+      "url": "http://www.azerbaijannews.net/news/279342264/u-s-stocks-struggle-for-direction-thursday",
+      "source": "azerbaijannews.net",
       "kind": "News",
       "via": "GDELT"
     },
     {
       "country": "Indonesia",
       "date": "2026-10-01",
-      "title": "Foreign - born people aged 55+ face higher poverty risk than those born in the Netherlands",
-      "url": "https://nltimes.nl/2026/10/01/foreign-born-people-aged-55-face-higher-poverty-risk-born-netherlands",
-      "source": "nltimes.nl",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.albuquerqueexpress.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "albuquerqueexpress.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
       "country": "Indonesia",
       "date": "2026-10-01",
-      "title": "Screen Australia announces $5 . 7 million in production and development funding for 47 documentaries",
-      "url": "https://if.com.au/screen-australia-announces-5-7-million-in-production-and-development-funding-for-47-documentaries/",
-      "source": "if.com.au",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.oklahomastar.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "oklahomastar.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Indonesia",
+      "country": "Timor-Leste",
       "date": "2026-10-01",
-      "title": "  The toll is huge : El Niño - driven wildfires overwhelm Indonesia orangutan population | Indonesia",
-      "url": "https://www.theguardian.com/environment/2026/oct/01/el-nino-orangutans-indonesia-wildlife-destruction-aoe",
-      "source": "theguardian.com",
+      "title": "Pacific . scoop . co . nz » UN CRC Publishes Findings On Kazakhstan , Lesotho , Slovenia , Tajikistan , Timor - Leste , Uganda And Tanzania",
+      "url": "https://pacific.scoop.co.nz/2026/10/un-crc-publishes-findings-on-kazakhstan-lesotho-slovenia-tajikistan-timor-leste-uganda-and-tanzania/",
+      "source": "pacific.scoop.co.nz",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Indonesia",
+      "country": "Timor-Leste",
       "date": "2026-10-01",
-      "title": "  The toll is huge : El Niño - driven wildfires overwhelm Indonesia orangutan population",
-      "url": "https://www.aol.co.uk/articles/toll-huge-el-ni-o-030025000.html",
-      "source": "aol.co.uk",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-01",
-      "title": "How AI could  supercharge  election risks across south - east Asia",
-      "url": "https://www.aol.co.uk/articles/ai-could-supercharge-election-risks-015840000.html",
-      "source": "aol.co.uk",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-01",
-      "title": "How AI could  supercharge  election risks across south - east Asia | AI ( artificial intelligence ) ",
-      "url": "https://www.theguardian.com/technology/2026/oct/01/how-ai-could-supercharge-fake-news-elections-south-east-asia",
-      "source": "theguardian.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-01",
-      "title": "Shifting boundaries of freedom on Internet . ",
-      "url": "https://www.legallyindia.com/Blogs/shifting-boundaries-of-freedom-on-internet/",
-      "source": "legallyindia.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-01",
-      "title": "  Luxury villa demolished at Indonesian prison as probe finds  abuse of authority  – Asia News Network",
-      "url": "https://asianews.network/luxury-villas-demolished-at-indonesian-prison-as-probe-finds-abuse-of-authority/",
-      "source": "asianews.network",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-01",
-      "title": "US - led steel forum targets global overcapacity",
-      "url": "https://www.prokerala.com/news/articles/a1818864.html",
-      "source": "prokerala.com",
+      "title": "UN CRC Publishes Findings On Kazakhstan , Lesotho , Slovenia , Tajikistan , Timor - Leste , Uganda And Tanzania",
+      "url": "https://www.scoop.co.nz/stories/WO2610/S00010/un-crc-publishes-findings-on-kazakhstan-lesotho-slovenia-tajikistan-timor-leste-uganda-and-tanzania.htm",
+      "source": "scoop.co.nz",
       "kind": "News",
       "via": "GDELT"
     },
@@ -300,6 +471,15 @@
       "via": "GDELT"
     },
     {
+      "country": "Timor-Leste",
+      "date": "2026-09-30",
+      "title": "Indonesia Worst - Ever Forest Fires Caused by Plantations , El Nino",
+      "url": "https://foreignpolicy.com/2026/09/30/indonesia-forest-fires-worst-ever-plantations-el-nino/",
+      "source": "foreignpolicy.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
       "country": "Philippines",
       "date": "2026-09-30",
       "title": "Philippines : Government Must Implement Its Human Rights Obligations On Civic Space",
@@ -352,24 +532,6 @@
       "source": "liberianobserver.com",
       "kind": "News",
       "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-09-29",
-      "title": "Myanmar airstrike on Kyauktaw market in Rakhine kills about 50, injures 58",
-      "url": "https://www.nbcnews.com/world/myanmar/deadly-airstrike-market-myanmar-rakhine-state-rcna600408",
-      "source": "AP via NBC News",
-      "kind": "News",
-      "via": "Scarecrow (seed)"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-09-24",
-      "title": "SAC-M and LAW position paper on the forthcoming ICJ judgment in The Gambia v. Myanmar",
-      "url": "https://specialadvisorycouncil.org/2026/09/sac-m-laws-new-joint-position-paper-navigating-the-forthcoming-icj-judgment-in-the-gambia-v-myanmar/",
-      "source": "SAC-M",
-      "kind": "Analysis",
-      "via": "Scarecrow (seed)"
     }
   ]
 }
