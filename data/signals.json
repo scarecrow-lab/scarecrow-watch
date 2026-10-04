@@ -1,22 +1,274 @@
 {
-  "generated": "2026-10-03T02:00:45+00:00",
+  "generated": "2026-10-04T02:41:34+00:00",
   "window_days": 14,
   "items": [
     {
-      "country": "Thailand",
+      "country": "Myanmar",
       "date": "2026-10-02",
-      "title": "Pro - democracy activists increasingly vulnerable to authoritarian governments in Southeast Asia",
-      "url": "https://www.kasu.org/2026-10-02/pro-democracy-activists-increasingly-vulnerable-to-authoritarian-governments-in-southeast-asia",
-      "source": "kasu.org",
+      "title": "Canada child , forced labour risk imports hit $63B in 2025",
+      "url": "https://www.insideottawavalley.com/news/world-vision-canada-risky-imports-2026-report/article_31a4993f-1c7a-5910-9f1c-29e9789880d4.html",
+      "source": "insideottawavalley.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-02",
+      "title": "Airstrike - Devastated Villages in Shwegu Township Urgently Need Reconstruction Aid",
+      "url": "https://www.bnionline.net/en/news/airstrike-devastated-villages-shwegu-township-urgently-need-reconstruction-aid",
+      "source": "bnionline.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-02",
+      "title": "Myanmar ships with returnees from Malaysia enter home waters , state media says",
+      "url": "https://bdnews24.com/neighbours/zgeb3hv7zv",
+      "source": "bdnews24.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-02",
+      "title": "Myanmar Junta Airstrike Hits NUG Special Military Command Office in KNU Territory",
+      "url": "https://www.bnionline.net/en/news/myanmar-junta-airstrike-hits-nug-special-military-command-office-knu-territory",
+      "source": "bnionline.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-02",
+      "title": "Malaysia deports 1476 refugees to Myanmar",
+      "url": "https://www.greenleft.org.au/2026/1463/world/malaysia-deports-1476-refugees-myanmar",
+      "source": "greenleft.org.au",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-02",
+      "title": "Malaysia - Myanmar deportations : Concerns mount as hundreds of refugees and migrants are returned to military - ruled nation",
+      "url": "https://www.smh.com.au/world/asia/sending-them-to-their-deaths-malaysia-s-deal-with-the-devil-20261002-p611yy.html",
+      "source": "smh.com.au",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-02",
+      "title": "Malaysia - Myanmar deportations : Concerns mount as hundreds of refugees and migrants are returned to military - ruled nation",
+      "url": "https://www.theage.com.au/world/asia/sending-them-to-their-deaths-malaysia-s-deal-with-the-devil-20261002-p611yy.html",
+      "source": "theage.com.au",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-02",
+      "title": "Malaysia - Myanmar deportations : Concerns mount as hundreds of refugees and migrants are returned to military - ruled nation",
+      "url": "https://www.brisbanetimes.com.au/world/asia/sending-them-to-their-deaths-malaysia-s-deal-with-the-devil-20261002-p611yy.html",
+      "source": "brisbanetimes.com.au",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-02",
+      "title": "Death of Indonesian recruited by Russian military leaves family bereft",
+      "url": "https://asianews.network/death-of-indonesian-recruited-by-russian-military-leaves-family-bereft/",
+      "source": "asianews.network",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-02",
+      "title": "8 Near - Perfect Spy Thrillers For Fans Of Jack Ryan & Jason Bourne",
+      "url": "https://screenrant.com/near-perfect-spy-thrillers-like-jason-bourne-jack-ryan/",
+      "source": "screenrant.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "Over 200 organizations unite to protest against Israel on anniversary of Gaza genocide",
+      "url": "https://www.presstv.co.uk/Detail/2026/10/02/777436/Over-200-organizations-unite-to-protest-against-Israel-on-anniversary-of-Gaza-genocide",
+      "source": "presstv.co.uk",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "India medal tally rises to 65 - The Hitavada",
+      "url": "https://www.thehitavada.com/Encyc/2026/10/2/indias-medal-tally-rises-to-65.html",
+      "source": "thehitavada.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "Flydubai incident raises a question : Should cockpit doors be locked from inside ? ",
+      "url": "https://www.businesstoday.in/latest/trends/story/flydubai-incident-raises-a-question-should-cockpit-doors-be-locked-from-inside-559197-2026-10-02",
+      "source": "businesstoday.in",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "Does Sarawak have the moral right to bar Malaysians from entering ? ",
+      "url": "https://www.freemalaysiatoday.com/category/opinion/2026/10/02/does-sarawak-have-the-moral-right-to-bar-malaysians-from-entering",
+      "source": "freemalaysiatoday.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "Let travellers check entry status before flying to Sarawak , state govt urged",
+      "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/02/let-travellers-check-entry-status-before-flying-to-sarawak-state-govt-urged",
+      "source": "freemalaysiatoday.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "AI : Private ownership , collective risks",
+      "url": "https://aliran.com/web-specials/ai-private-ownership-collective-risks",
+      "source": "aliran.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "U . S . stocks struggle for direction Thursday",
+      "url": "http://www.afghanistannews.net/news/279342264/u-s-stocks-struggle-for-direction-thursday",
+      "source": "afghanistannews.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.utahindependent.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "utahindependent.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.pakistantelegraph.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "pakistantelegraph.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.saltlakecitysun.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "saltlakecitysun.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.ohiostandard.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "ohiostandard.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.tucsonpost.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "tucsonpost.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.theusnews.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "theusnews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.mexicostar.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "mexicostar.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-02",
+      "title": "U . S . stocks struggle for direction Thursday",
+      "url": "http://www.australiannews.net/news/279342264/u-s-stocks-struggle-for-direction-thursday",
+      "source": "australiannews.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-02",
+      "title": "Switzerland bet on carbon offsets shows little payoff so far",
+      "url": "https://www.swissinfo.ch/eng/emissions-reduction/switzerlands-bet-on-carbon-offsets-shows-little-payoff-so-far/92015148",
+      "source": "swissinfo.ch",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-02",
+      "title": "Your next redundancy round could cost more than you think",
+      "url": "https://www.hcamag.com/us/news/general/your-next-redundancy-round-could-cost-more-than-you-think/592025",
+      "source": "hcamag.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-02",
+      "title": "Business . Scoop » Customs Cracks Down On Export Of Sensitive Technology",
+      "url": "https://business.scoop.co.nz/2026/10/02/customs-cracks-down-on-export-of-sensitive-technology/",
+      "source": "business.scoop.co.nz",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-02",
+      "title": "No more execution attempts on Christa Pike , UN rights chief",
+      "url": "http://www.singaporestar.com/news/279346390/no-more-execution-attempts-on-christa-pike-un-rights-chief",
+      "source": "singaporestar.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
       "country": "Thailand",
       "date": "2026-10-02",
-      "title": "Canada child , forced labour risk imports hit $63B in 2025",
-      "url": "https://www.insideottawavalley.com/news/world-vision-canada-risky-imports-2026-report/article_31a4993f-1c7a-5910-9f1c-29e9789880d4.html",
-      "source": "insideottawavalley.com",
+      "title": "Pro - democracy activists increasingly vulnerable to authoritarian governments in Southeast Asia",
+      "url": "https://www.kasu.org/2026-10-02/pro-democracy-activists-increasingly-vulnerable-to-authoritarian-governments-in-southeast-asia",
+      "source": "kasu.org",
       "kind": "News",
       "via": "GDELT"
     },
@@ -68,15 +320,6 @@
     {
       "country": "Thailand",
       "date": "2026-10-02",
-      "title": "Switzerland bet on carbon offsets shows little payoff so far",
-      "url": "https://www.swissinfo.ch/eng/emissions-reduction/switzerlands-bet-on-carbon-offsets-shows-little-payoff-so-far/92015148",
-      "source": "swissinfo.ch",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
       "title": "Thailand floods ease as water recedes in Bangkok",
       "url": "http://www.thailandnews.net/news/279346804/thailand-floods-ease-as-water-recedes-in-bangkok",
       "source": "thailandnews.net",
@@ -104,153 +347,9 @@
     {
       "country": "Thailand",
       "date": "2026-10-02",
-      "title": "Malaysia - Myanmar deportations : Concerns mount as hundreds of refugees and migrants are returned to military - ruled nation",
-      "url": "https://www.smh.com.au/world/asia/sending-them-to-their-deaths-malaysia-s-deal-with-the-devil-20261002-p611yy.html",
-      "source": "smh.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Malaysia - Myanmar deportations : Concerns mount as hundreds of refugees and migrants are returned to military - ruled nation",
-      "url": "https://www.theage.com.au/world/asia/sending-them-to-their-deaths-malaysia-s-deal-with-the-devil-20261002-p611yy.html",
-      "source": "theage.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
       "title": "Hegseth AutoWarCom : who builds it , what the money buys , and why its hardest problem after Minab is the record , not the model",
       "url": "https://www.livetradingnews.com/hegseths-autowarcom-who-builds-it-what-the-money-buys-and-the-record-it-needs",
       "source": "livetradingnews.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Malaysia - Myanmar deportations : Concerns mount as hundreds of refugees and migrants are returned to military - ruled nation",
-      "url": "https://www.brisbanetimes.com.au/world/asia/sending-them-to-their-deaths-malaysia-s-deal-with-the-devil-20261002-p611yy.html",
-      "source": "brisbanetimes.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "Your next redundancy round could cost more than you think",
-      "url": "https://www.hcamag.com/us/news/general/your-next-redundancy-round-could-cost-more-than-you-think/592025",
-      "source": "hcamag.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "U . S . stocks struggle for direction Thursday",
-      "url": "http://www.afghanistannews.net/news/279342264/u-s-stocks-struggle-for-direction-thursday",
-      "source": "afghanistannews.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.utahindependent.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "utahindependent.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "Business . Scoop » Customs Cracks Down On Export Of Sensitive Technology",
-      "url": "https://business.scoop.co.nz/2026/10/02/customs-cracks-down-on-export-of-sensitive-technology/",
-      "source": "business.scoop.co.nz",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.pakistantelegraph.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "pakistantelegraph.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.saltlakecitysun.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "saltlakecitysun.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.ohiostandard.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "ohiostandard.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "No more execution attempts on Christa Pike , UN rights chief",
-      "url": "http://www.singaporestar.com/news/279346390/no-more-execution-attempts-on-christa-pike-un-rights-chief",
-      "source": "singaporestar.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.tucsonpost.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "tucsonpost.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.theusnews.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "theusnews.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.mexicostar.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "mexicostar.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "U . S . stocks struggle for direction Thursday",
-      "url": "http://www.australiannews.net/news/279342264/u-s-stocks-struggle-for-direction-thursday",
-      "source": "australiannews.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.milwaukeesun.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "milwaukeesun.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -260,42 +359,6 @@
       "title": "Beyond Treaties : How investment disputes trap Pacific nations",
       "url": "https://pina.com.fj/2026/10/02/beyond-treaties-how-investment-disputes-trap-pacific-nations/",
       "source": "pina.com.fj",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-01",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.hawaiitelegraph.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "hawaiitelegraph.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-01",
-      "title": "U . S . stocks struggle for direction Thursday",
-      "url": "http://www.azerbaijannews.net/news/279342264/u-s-stocks-struggle-for-direction-thursday",
-      "source": "azerbaijannews.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Timor-Leste",
-      "date": "2026-10-01",
-      "title": "Pacific . scoop . co . nz » UN CRC Publishes Findings On Kazakhstan , Lesotho , Slovenia , Tajikistan , Timor - Leste , Uganda And Tanzania",
-      "url": "https://pacific.scoop.co.nz/2026/10/un-crc-publishes-findings-on-kazakhstan-lesotho-slovenia-tajikistan-timor-leste-uganda-and-tanzania/",
-      "source": "pacific.scoop.co.nz",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Timor-Leste",
-      "date": "2026-10-01",
-      "title": "UN CRC Publishes Findings On Kazakhstan , Lesotho , Slovenia , Tajikistan , Timor - Leste , Uganda And Tanzania",
-      "url": "https://www.scoop.co.nz/stories/WO2610/S00010/un-crc-publishes-findings-on-kazakhstan-lesotho-slovenia-tajikistan-timor-leste-uganda-and-tanzania.htm",
-      "source": "scoop.co.nz",
       "kind": "News",
       "via": "GDELT"
     },
@@ -345,92 +408,101 @@
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Singapore",
       "date": "2026-10-01",
-      "title": "  Epstein hearing put Norway foreign ministry on trial | Norway News in English www . newsinenglish . no",
-      "url": "https://www.newsinenglish.no/2026/10/01/epstein-hearings-put-norways-foreign-ministry-on-trial/",
-      "source": "newsinenglish.no",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.albuquerqueexpress.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "albuquerqueexpress.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Singapore",
       "date": "2026-10-01",
-      "title": "Former Myanmar American Chamber of Commerce board member detained in Spain",
-      "url": "https://www.wral.com/news/ap/7972a-former-myanmar-american-chamber-of-commerce-board-member-detained-in-spain/",
-      "source": "wral.com",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.oklahomastar.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "oklahomastar.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Singapore",
       "date": "2026-10-01",
-      "title": "Early Edition : October 1 , 2026",
-      "url": "https://www.justsecurity.org/159415/early-edition-october-1-2026/",
-      "source": "justsecurity.org",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.afghanistansun.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "afghanistansun.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Singapore",
       "date": "2026-10-01",
-      "title": "Former Myanmar American Chamber of Commerce board member detained in Spain",
-      "url": "https://abcnews.com/International/wireStory/former-myanmar-american-chamber-commerce-board-member-detained-136915362",
-      "source": "abcnews.com",
+      "title": "Auckland . Scoop » Customs Cracks Down On Export Of Sensitive Technology",
+      "url": "https://auckland.scoop.co.nz/2026/10/customs-cracks-down-on-export-of-sensitive-technology/",
+      "source": "auckland.scoop.co.nz",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Singapore",
       "date": "2026-10-01",
-      "title": "Istanbul symposium calls for Prophet Muhammad teachings in modern life",
-      "url": "https://www.dailysabah.com/turkiye/istanbul-symposium-calls-for-prophet-muhammads-teachings-in-modern-life/news",
-      "source": "dailysabah.com",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.californiatelegraph.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "californiatelegraph.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Singapore",
       "date": "2026-10-01",
-      "title": "UN refugee agency concerned by Malaysia returns to Myanmar",
-      "url": "https://www.thestar.com.my/news/nation/2026/10/01/un-refugee-agency-concerned-by-malaysia-returns-to-myanmar",
-      "source": "thestar.com.my",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.russiaherald.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "russiaherald.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Singapore",
       "date": "2026-10-01",
-      "title": "Asian youth forum confronts trafficking and exploitation",
-      "url": "https://www.ucanews.com/news/asian-youth-forum-confronts-trafficking-and-exploitation/115518",
-      "source": "ucanews.com",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.stlouisstar.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "stlouisstar.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Singapore",
       "date": "2026-10-01",
-      "title": "The  Little Flower  that nurtured the Bangladesh Church for a century",
-      "url": "https://www.ucanews.com/news/the-little-flower-that-nurtured-the-bangladesh-church-for-a-century/115533",
-      "source": "ucanews.com",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.neworleanssun.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "neworleanssun.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Singapore",
       "date": "2026-10-01",
-      "title": "At least 49 killed in Myanmar airstrike on Rakhine market",
-      "url": "https://www.ucanews.com/news/at-least-49-killed-in-myanmar-airstrike-on-rakhine-market/115539",
-      "source": "ucanews.com",
+      "title": "Wall Street directionless on first October trading day",
+      "url": "http://www.vietnamtribune.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
+      "source": "vietnamtribune.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Timor-Leste",
       "date": "2026-10-01",
-      "title": "Malaysia starts sending Myanmar migrants home",
-      "url": "https://www.ucanews.com/news/malaysia-starts-sending-myanmar-migrants-home/115540",
-      "source": "ucanews.com",
+      "title": "Pacific . scoop . co . nz » UN CRC Publishes Findings On Kazakhstan , Lesotho , Slovenia , Tajikistan , Timor - Leste , Uganda And Tanzania",
+      "url": "https://pacific.scoop.co.nz/2026/10/un-crc-publishes-findings-on-kazakhstan-lesotho-slovenia-tajikistan-timor-leste-uganda-and-tanzania/",
+      "source": "pacific.scoop.co.nz",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Timor-Leste",
+      "date": "2026-10-01",
+      "title": "UN CRC Publishes Findings On Kazakhstan , Lesotho , Slovenia , Tajikistan , Timor - Leste , Uganda And Tanzania",
+      "url": "https://www.scoop.co.nz/stories/WO2610/S00010/un-crc-publishes-findings-on-kazakhstan-lesotho-slovenia-tajikistan-timor-leste-uganda-and-tanzania.htm",
+      "source": "scoop.co.nz",
       "kind": "News",
       "via": "GDELT"
     },
