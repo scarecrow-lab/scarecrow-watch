@@ -10,7 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Source+Serif+4:wght@600&family=Noto+Sans+Myanmar:wght@400;600&family=Noto+Sans+Khmer:wght@400;600&family=Noto+Sans+Lao:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Montserrat:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Source+Serif+4:wght@600&family=Noto+Sans+Myanmar:wght@400;600&family=Noto+Sans+Khmer:wght@400;600&family=Noto+Sans+Lao:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#14181f; --panel:#1c222c; --panel-2:#232a35; --line:#333d4b;
@@ -19,11 +19,12 @@
   --serif:'Source Serif 4', Georgia, serif;
   --sans:'IBM Plex Sans','IBM Plex Sans Thai','Noto Sans Myanmar','Noto Sans Khmer','Noto Sans Lao',-apple-system,'Segoe UI',sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,monospace;
-  --brand:'Chakra Petch',var(--sans);
+  --brand:'Montserrat','Chakra Petch',var(--sans);
+  --glass:rgba(28,34,44,.82); --shadow:0 1px 2px rgba(0,0,0,.25), 0 10px 30px rgba(0,0,0,.25);
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
-:root[data-theme="light"]{ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#8a8f98; --gold:#a87a2f; }
-@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#8a8f98; --gold:#a87a2f; } }
+:root[data-theme="light"]{ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#8a8f98; --gold:#a87a2f; --glass:rgba(255,255,255,.84); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); }
+@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#8a8f98; --gold:#a87a2f; --glass:rgba(255,255,255,.84); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); } }
 *,*::before,*::after{ box-sizing:inherit; }
 html{ scroll-padding-top:env(safe-area-inset-top,0px); }
 body{ margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); line-height:1.5; }
@@ -33,7 +34,27 @@ a{ color:var(--gold); }
 .logo-full{ width:150px; height:137px; background:var(--ink); -webkit-mask:url(assets/logo-full.png) center/contain no-repeat; mask:url(assets/logo-full.png) center/contain no-repeat; margin-bottom:14px; }
 header{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; align-items:flex-end; padding-bottom:20px; border-bottom:1px solid var(--line); margin-bottom:18px; }
 .wordmark{ display:flex; align-items:center; gap:10px; margin-bottom:10px; }
-.brand{ font-family:var(--brand); font-weight:700; font-size:20px; letter-spacing:.06em; color:var(--gold); }
+.brand{ font-family:var(--brand); font-weight:800; font-size:21px; letter-spacing:.05em; color:var(--ink); line-height:1; }
+.brand em{ font-style:normal; font-weight:700; color:var(--gold); margin-left:.3em; }
+/* ---- ambient ASEAN map + glass panels ---- */
+body{ background:radial-gradient(1200px 700px at 85% -10%, rgba(201,154,75,.10), transparent 60%), radial-gradient(900px 600px at -10% 110%, rgba(77,139,120,.08), transparent 60%), var(--bg); background-attachment:fixed; }
+#bgmap{ position:fixed; inset:0; width:100vw; height:100vh; z-index:0; pointer-events:none; opacity:0; transition:opacity .8s ease; }
+#bgmap.on{ opacity:1; }
+#bgmap .land{ fill:var(--ink); fill-opacity:.035; stroke:var(--ink); stroke-opacity:.10; stroke-width:.6; }
+#bgmap .asean{ fill-opacity:.07; stroke-opacity:.22; stroke-width:.8; }
+#bgmap .sel{ fill:var(--gold); fill-opacity:.22; stroke:var(--gold); stroke-opacity:.6; stroke-width:1.2; transition:fill-opacity .4s; }
+#bgmap .grat{ fill:none; stroke:var(--ink); stroke-opacity:.05; stroke-width:.5; stroke-dasharray:2 4; }
+.wrap{ position:relative; z-index:1; }
+.fresh,.list,.detail,.panel{ background:var(--panel); background:var(--glass); -webkit-backdrop-filter:blur(10px) saturate(1.1); backdrop-filter:blur(10px) saturate(1.1); box-shadow:var(--shadow); border-radius:12px !important; }
+header{ border-bottom:0 !important; padding-bottom:8px !important; }
+.btn,.lang{ border-radius:999px !important; padding:7px 14px !important; transition:border-color .15s, color .15s, background .15s; }
+.btn:hover,.lang:hover{ border-color:var(--gold); color:var(--gold); }
+@media (min-width:821px){ .list{ position:sticky; top:16px; max-height:calc(100vh - 32px); overflow:auto; } }
+.row{ transition:background .15s; }
+.tab{ border-radius:8px 8px 0 0; transition:color .15s, background .15s; }
+.tab:hover{ background:var(--panel-2); color:var(--ink); }
+.detail h2{ letter-spacing:-.01em; }
+@media (prefers-reduced-motion: reduce){ #bgmap,.row,.btn,.tab{ transition:none; } }
 h1{ font-family:var(--serif); font-size:clamp(26px,4vw,36px); margin:0 0 6px; line-height:1.15; }
 .lede{ color:var(--ink-dim); margin:0; max-width:620px; font-size:14.5px; }
 .controls{ display:flex; gap:8px; }
@@ -118,10 +139,11 @@ footer p{ margin:0 0 10px; }
 </style>
 </head>
 <body>
+<svg id="bgmap" aria-hidden="true" focusable="false"></svg>
 <div class="wrap">
   <header>
     <div>
-      <div class="wordmark"><span class="logo-mark" role="img" aria-label="Scarecrow"></span><span class="brand">SCARECROW WATCH</span></div>
+      <div class="wordmark"><span class="logo-mark" role="img" aria-label="Scarecrow"></span><span class="brand">SCARECROW<em>WATCH</em></span></div>
       <h1 data-i="title">ASEAN Atrocity Risk Monitor</h1>
       <p class="lede" data-i="lede"></p>
     </div>
@@ -516,7 +538,48 @@ function renderRegional(){
   items.forEach(i => R.append(sigRow(i,true)));
 }
 
-function render(){ renderStatic(); if (!D) return; renderFresh(); renderList(); renderDetail(); renderRegional(); renderContact(); }
+// ---------- ambient ASEAN background map ----------
+const ASEAN_ISO = {"104":"Myanmar","764":"Thailand","116":"Cambodia","418":"Laos","704":"Vietnam","458":"Malaysia","702":"Singapore","96":"Brunei","608":"Philippines","360":"Indonesia","626":"Timor-Leste"};
+let bgShapes = null;
+function loadScript(src){ return new Promise((ok, no) => { const s = document.createElement("script"); s.src = src; s.async = true; s.crossOrigin = "anonymous"; s.onload = ok; s.onerror = no; document.head.append(s); }); }
+function topoFeatures(topo, obj){
+  const tf = topo.transform, arcs = topo.arcs.map(a => { if (!tf) return a.map(p => [p[0], p[1]]); let x = 0, y = 0; return a.map(p => { x += p[0]; y += p[1]; return [x*tf.scale[0]+tf.translate[0], y*tf.scale[1]+tf.translate[1]]; }); });
+  const arc = i => i < 0 ? arcs[~i].slice().reverse() : arcs[i];
+  const ring = ids => { const out = []; ids.forEach((i,k) => { const a = arc(i); out.push(...(k ? a.slice(1) : a)); }); return out; };
+  return topo.objects[obj].geometries.filter(g => g.arcs).map(g => ({type:"Feature", id:String(Number(g.id)), properties:g.properties || {},
+    geometry: g.type === "Polygon" ? {type:"Polygon", coordinates:g.arcs.map(ring)} : {type:"MultiPolygon", coordinates:g.arcs.map(p => p.map(ring))}}));
+}
+function drawBgMap(){
+  const svg = document.getElementById("bgmap"); if (!svg || !bgShapes || !window.d3 || !d3.geoMercator) return;
+  const w = innerWidth, h = innerHeight, ns = "http://www.w3.org/2000/svg";
+  const box = {type:"MultiPoint", coordinates:[[90,-11.5],[142,28.5]]};
+  const pad = Math.min(w,h) * 0.04;
+  const proj = d3.geoMercator().fitExtent([[pad, pad],[w - pad, h - pad]], box), path = d3.geoPath(proj);
+  svg.setAttribute("viewBox", `0 0 ${w} ${h}`); svg.replaceChildren();
+  const g0 = document.createElementNS(ns,"path"); g0.setAttribute("class","grat"); g0.setAttribute("d", path(d3.geoGraticule().step([10,10])()) || ""); svg.append(g0);
+  for (const f of bgShapes){
+    const d = path(f); if (!d) continue;
+    const el2 = document.createElementNS(ns,"path"); const name = ASEAN_ISO[f.id];
+    el2.setAttribute("d", d); el2.setAttribute("class", "land" + (name ? " asean" : "") + (name && name === current ? " sel" : ""));
+    if (name) el2.dataset.country = name; svg.append(el2);
+  }
+  svg.classList.add("on");
+}
+function highlightBg(){ document.querySelectorAll("#bgmap path[data-country]").forEach(p => p.classList.toggle("sel", p.dataset.country === current)); }
+async function initBgMap(){
+  try {
+    if (!window.d3 || !d3.geoMercator){
+      await loadScript("https://cdn.jsdelivr.net/npm/d3-array@3.2.4/dist/d3-array.min.js");
+      await loadScript("https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js");
+    }
+    const topo = await (await fetch("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json")).json();
+    bgShapes = topoFeatures(topo, "countries");
+    drawBgMap();
+    let t; addEventListener("resize", () => { clearTimeout(t); t = setTimeout(drawBgMap, 200); });
+  } catch(e){ /* decorative only: the page works without it */ }
+}
+
+function render(){ renderStatic(); if (!D) return; renderFresh(); renderList(); renderDetail(); renderRegional(); renderContact(); highlightBg(); }
 
 const sel = $("#langSel");
 LANGS.forEach(l => { const o = el("option", null, l.name); o.value = l.code; sel.append(o); });
@@ -534,6 +597,7 @@ $("#theme").onclick = () => {
 })();
 renderStatic();
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", load); else load();
+setTimeout(initBgMap, 300);
 </script>
 </body>
 </html>
