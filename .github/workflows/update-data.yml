@@ -29,7 +29,7 @@ jobs:
         run: |
           git config user.name "scarecrow-bot"
           git config user.email "scarecrow-bot@users.noreply.github.com"
-          git add data/signals.json data/displacement.json data/meta.json
+          git add data/signals.json data/displacement.json data/indicators.json data/meta.json
           if git diff --cached --quiet; then
             echo "No changes"
           else
