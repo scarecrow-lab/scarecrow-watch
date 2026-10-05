@@ -4,6 +4,7 @@
 Pulls public data for the 11 ASEAN states and writes JSON files the dashboard reads:
   data/signals.json       recent reports and news (ReliefWeb, GDELT)  -> unverified signals
   data/displacement.json  people displaced from each country (UNHCR)
+  data/indicators.json    World Bank indicators used by the PREVENT layer
   data/meta.json          when each source last succeeded, and any error
 
 Lab assessments (data/assessments.json) are edited by hand and never touched here.
@@ -212,6 +213,38 @@ def unhcr():
     return out
 
 
+# ---------- World Bank (PREVENT indicators) ----------
+def worldbank():
+    spec = read("prevent.json", {}).get("indicators", {})
+    codes = {k: v["wb"] for k, v in spec.items() if v.get("wb")}
+    isos = ";".join(COUNTRIES.values())
+    out = {}
+    for key, code in codes.items():
+        url = (f"https://api.worldbank.org/v2/country/{isos}/indicator/{urllib.parse.quote(code)}?"
+               + urllib.parse.urlencode({"format": "json", "mrnev": 1, "per_page": 100}))
+        try:
+            res = http_json(url)
+        except Exception as e:
+            log("worldbank", code, e)
+            continue
+        rows = res[1] if isinstance(res, list) and len(res) > 1 and isinstance(res[1], list) else []
+        vals = {}
+        for r in rows:
+            name = ISO_TO_NAME.get(str(r.get("countryiso3code", "")).upper())
+            v = r.get("value")
+            if name and v is not None:
+                try:
+                    vals[name] = {"value": round(float(v), 2), "year": int(r.get("date"))}
+                except (TypeError, ValueError):
+                    pass
+        if vals:
+            out[key] = {"code": code, "countries": vals}
+        time.sleep(1)
+    if not out:
+        raise RuntimeError("World Bank returned no indicator values")
+    return out
+
+
 def merge_signals(new_items, old_items):
     cutoff = (NOW - timedelta(days=SIGNAL_DAYS)).strftime("%Y-%m-%d")
     seen, merged = set(), []
@@ -262,6 +295,17 @@ def main():
         prev = meta["sources"].get("unhcr", {})
         meta["sources"]["unhcr"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
         log("unhcr FAILED", e)
+
+    try:
+        wb = worldbank()
+        old = read("indicators.json", {}).get("indicators", {})
+        write("indicators.json", {"generated": stamp, "source": "World Bank WDI", "indicators": {**old, **wb}})
+        meta["sources"]["worldbank"] = {"status": "ok", "updated": stamp, "count": len(wb), "error": None}
+        log("worldbank ok", len(wb))
+    except Exception as e:
+        prev = meta["sources"].get("worldbank", {})
+        meta["sources"]["worldbank"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
+        log("worldbank FAILED", e)
 
     meta["last_run"] = stamp
     write("meta.json", meta)
