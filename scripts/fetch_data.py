@@ -6,7 +6,9 @@ Pulls public data for the 11 ASEAN states and writes JSON files the dashboard re
   data/displacement.json  people displaced from each country (UNHCR)
   data/indicators.json    World Bank, V-Dem (via OWID) and UCDP values used by the PREVENT layer
   data/auto_published.json  automated PREVENT scores currently public
-  data/auto_review.json   automated changes held for Lab approval
+  data/auto_review.json   automated changes held for Lab approval (scores and leader changes)
+  data/factbook_auto.json population, GDP, GDP per capita and area (World Bank)
+  data/leaders_seen.json  last confirmed leaders from Wikidata
   data/meta.json          when each source last succeeded, and any error
 
 Lab assessments (data/assessments.json) are edited by hand and never touched here.
@@ -17,7 +19,7 @@ from datetime import datetime, timedelta, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
-UA = "ScarecrowWatch/1.0"
+UA = "ScarecrowWatch/1.0 (https://github.com/scarecrow-lab; non-profit early-warning dashboard)"
 NOW = datetime.now(timezone.utc)
 
 COUNTRIES = {  # name -> ISO3
@@ -421,6 +423,102 @@ def review_auto(indicators):
     return len(pending)
 
 
+# ---------- Factbook: World Bank figures + Wikidata leaders ----------
+FACT_WB = {"pop": "SP.POP.TOTL", "gdp": "NY.GDP.MKTP.PP.CD", "gdpCap": "NY.GDP.PCAP.PP.CD", "area": "AG.SRF.TOTL.K2"}
+QID = {"Myanmar": "Q836", "Thailand": "Q869", "Cambodia": "Q424", "Laos": "Q819", "Vietnam": "Q881", "Malaysia": "Q833",
+       "Singapore": "Q334", "Brunei": "Q921", "Philippines": "Q928", "Indonesia": "Q252", "Timor-Leste": "Q574"}
+
+
+def factbook_numbers():
+    isos = ";".join(COUNTRIES.values())
+    out = {}
+    for field, code in FACT_WB.items():
+        url = f"https://api.worldbank.org/v2/country/{isos}/indicator/{code}?" + urllib.parse.urlencode({"format": "json", "mrnev": 1, "per_page": 100})
+        try:
+            res = http_json(url)
+        except Exception as e:
+            log("factbook", code, e)
+            continue
+        rows = res[1] if isinstance(res, list) and len(res) > 1 and isinstance(res[1], list) else []
+        for r in rows:
+            name = ISO_TO_NAME.get(str(r.get("countryiso3code", "")).upper())
+            if name and r.get("value") is not None:
+                try:
+                    out.setdefault(name, {})[field] = {"value": float(r["value"]), "year": int(r["date"])}
+                except (TypeError, ValueError):
+                    pass
+        time.sleep(1)
+    if not out:
+        raise RuntimeError("World Bank returned no factbook figures")
+    return out
+
+
+def wikidata_leaders():
+    values = " ".join(f"wd:{q}" for q in QID.values())
+    q = f"""SELECT ?country ?role ?personLabel WHERE {{
+      VALUES ?country {{ {values} }}
+      {{ ?country p:P35 ?st . ?st ps:P35 ?person . BIND("head_of_state" AS ?role) }}
+      UNION
+      {{ ?country p:P6 ?st . ?st ps:P6 ?person . BIND("head_of_government" AS ?role) }}
+      FILTER NOT EXISTS {{ ?st pq:P582 ?end }}
+      FILTER NOT EXISTS {{ ?st wikibase:rank wikibase:DeprecatedRank }}
+      SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+    }}"""
+    url = "https://query.wikidata.org/sparql?" + urllib.parse.urlencode({"query": q, "format": "json"})
+    res = json.loads(http_text(url, {"Accept": "application/sparql-results+json"}))
+    inv = {v: k for k, v in QID.items()}
+    out = {}
+    for b in res.get("results", {}).get("bindings", []):
+        qid = b["country"]["value"].rsplit("/", 1)[-1]
+        name, role, person = inv.get(qid), b["role"]["value"], b.get("personLabel", {}).get("value", "")
+        if name and person and not person.startswith("Q"):
+            out.setdefault(name, {}).setdefault(role, set()).add(person)
+    if not out:
+        raise RuntimeError("Wikidata returned no leaders")
+    return {n: {r: sorted(v) for r, v in d.items()} for n, d in out.items()}
+
+
+def leaders_text(d):
+    hs, hg = ", ".join(d.get("head_of_state", [])), ", ".join(d.get("head_of_government", []))
+    if hs and hg and hs != hg:
+        return f"Head of state: {hs}; head of government: {hg}"
+    return f"Head of state and government: {hs or hg}"
+
+
+def review_leaders(current):
+    """Detect leader changes; never publish them automatically."""
+    seen = read("leaders_seen.json", {"countries": {}})["countries"]
+    approvals = read("auto_approvals.json", {"approved": [], "rejected": []})
+    ok = {(a.get("country"), a.get("names")) for a in approvals.get("approved", []) if a.get("indicator") == "leader"}
+    no = {(a.get("country"), a.get("names")) for a in approvals.get("rejected", []) if a.get("indicator") == "leader"}
+    lab = {n: (p or {}).get("leader", "") for n, p in read("context.json", {}).get("profile", {}).items()}
+    pending = []
+    for name, d in current.items():
+        txt = leaders_text(d)
+        if name not in seen:
+            # First run: accept Wikidata silently only if it matches the Lab's Factbook text;
+            # otherwise flag it, so a Factbook entry that is already out of date gets caught.
+            people = [x for v in d.values() for x in v]
+            def known(person):
+                low = lab.get(name, "").lower()
+                return person.lower() in low or any(len(w) >= 4 and w.lower() in low for w in person.split())
+            if all(known(x) for x in people):
+                seen[name] = txt
+            elif (name, txt) in ok:
+                seen[name] = txt
+            else:
+                pending.append({"kind": "leader", "country": name, "indicator": "leader", "published": lab.get(name, "") or "(not recorded)",
+                                "proposed": txt, "source": "Wikidata", "status": "rejected" if (name, txt) in no else "pending"})
+        elif seen[name] != txt:
+            if (name, txt) in ok:
+                seen[name] = txt
+            else:
+                pending.append({"kind": "leader", "country": name, "indicator": "leader", "published": seen[name], "proposed": txt,
+                                "source": "Wikidata", "status": "rejected" if (name, txt) in no else "pending"})
+    write("leaders_seen.json", {"generated": NOW.isoformat(timespec="seconds"), "countries": seen})
+    return pending
+
+
 def merge_signals(new_items, old_items):
     cutoff = (NOW - timedelta(days=SIGNAL_DAYS)).strftime("%Y-%m-%d")
     seen, merged = set(), []
@@ -501,6 +599,26 @@ def main():
         log("review", held, "held for Lab review")
     except Exception as e:
         log("review FAILED", e)
+
+    try:
+        write("factbook_auto.json", {"generated": stamp, "source": "World Bank WDI", "countries": factbook_numbers()})
+        meta["sources"]["factbook"] = {"status": "ok", "updated": stamp, "error": None}
+    except Exception as e:
+        prev = meta["sources"].get("factbook", {})
+        meta["sources"]["factbook"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
+        log("factbook FAILED", e)
+
+    try:
+        held = review_leaders(wikidata_leaders())
+        rv = read("auto_review.json", {"pending": []})
+        rv["pending"] = [x for x in rv.get("pending", []) if x.get("kind") != "leader"] + held
+        write("auto_review.json", rv)
+        meta["sources"]["wikidata"] = {"status": "ok", "updated": stamp, "count": len(held), "error": None}
+        log("wikidata ok", len(held), "leader changes held")
+    except Exception as e:
+        prev = meta["sources"].get("wikidata", {})
+        meta["sources"]["wikidata"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
+        log("wikidata FAILED", e)
 
     meta["last_run"] = stamp
     write("meta.json", meta)

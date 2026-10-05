@@ -204,7 +204,7 @@ footer p{ margin:0 0 10px; }
 <script src="assets/i18n.js"></script>
 <script>
 "use strict";
-const SOURCE_NAMES = {reliefweb:"ReliefWeb", gdelt:"GDELT", unhcr:"UNHCR", worldbank:"World Bank", vdem:"V-Dem", ucdp:"UCDP"};
+const SOURCE_NAMES = {reliefweb:"ReliefWeb", gdelt:"GDELT", unhcr:"UNHCR", worldbank:"World Bank", vdem:"V-Dem", ucdp:"UCDP", wikidata:"Wikidata"};
 let lang = "en", D = null, current = null, srcFilter = "";
 const $ = s => document.querySelector(s);
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
@@ -233,8 +233,8 @@ async function getJSON(path){
 
 async function load(){
   try{
-    const [a, s, d, m, cx, site, pv, ind, apub, arev] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json","data/context.json","data/site.json","data/prevent.json","data/indicators.json","data/auto_published.json","data/auto_review.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
-    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}, cx: cx || {}, site: site || {}, pv, ind: (ind && ind.indicators) || {}, apub: (apub && apub.countries) || {}, arev: (arev && arev.pending) || []};
+    const [a, s, d, m, cx, site, pv, ind, apub, arev, fba] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json","data/context.json","data/site.json","data/prevent.json","data/indicators.json","data/auto_published.json","data/auto_review.json","data/factbook_auto.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
+    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}, cx: cx || {}, site: site || {}, pv, ind: (ind && ind.indicators) || {}, apub: (apub && apub.countries) || {}, arev: (arev && arev.pending) || [], fba: (fba && fba.countries) || {}};
     D.a.countries.sort((x,y) => avg(y.scores) - avg(x.scores));
     const fromHash = decodeURIComponent((location.hash.match(/country=([^&]+)/) || [])[1] || "");
     current = D.a.countries.find(c => c.name === fromHash) ? fromHash : D.a.countries[0].name;
@@ -503,8 +503,15 @@ function renderDetail(){
     const p = (D.cx.profile || {})[c.name];
     if (p){
       const g = el("div","pgrid");
+      const auto = (D.fba || {})[c.name] || {};
+      const money = v => { const n = Number(v); if (n >= 1e12) return "$" + (n/1e12).toFixed(2) + " trillion"; if (n >= 1e9) return "$" + (n/1e9).toFixed(1) + " billion"; return "$" + fmt(Math.round(n)); };
+      const autoText = {pop: x => fmt(Math.round(x.value)), gdp: x => money(x.value) + " PPP", gdpCap: x => money(x.value) + " PPP", area: x => fmt(Math.round(x.value)) + " km²"};
       [["currentLeaderLabel","leader"],["populationLabel","pop"],["capitalLabel","capital"],["governmentLabel","govt"],["areaLabel","area"],["gdpLabel","gdp"],["gdpCapLabel","gdpCap"],["languagesLabel","languages"],["religionsLabel","religions"]].forEach(([lab,key]) => {
-        if (!p[key]) return; const d = el("div"); d.append(el("span","pk",t(lab)), el("span","pv",p[key])); g.append(d);
+        const a = auto[key] && autoText[key] ? auto[key] : null;
+        const val = a ? `${autoText[key](a)} (${a.year})` : p[key]; if (!val) return;
+        const d = el("div"); d.append(el("span","pk",t(lab)), el("span","pv",val));
+        if (a) d.append(el("span","muted"," · " + t("prevAuto") + " · World Bank"));
+        g.append(d);
       });
       body.append(el("h3",null,t("tabFactbook")), g, el("p","muted",t("profileSourceNote") + (D.cx.reviewed ? " · " + D.cx.reviewed : "")));
     }
