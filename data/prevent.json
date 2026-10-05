@@ -4,8 +4,9 @@
   "reviewed": null,
   "method": {
     "scale": "Every indicator is scored 1 (low) to 5 (severe). A category score is the average of its indicators. The PREVENT structural index is the average of the six structural categories (P, R, E, V, E, N). Triggers (T) are listed as flags and never averaged in, because the framework locates the risk in how those in power respond to them.",
-    "auto": "World Bank indicators refresh daily and are scored against fixed thresholds stored in data/prevent.json, which the Lab can adjust. Neighbouring violence uses the highest Lab conflict score among ASEAN neighbours (non-ASEAN neighbours are not yet included).",
-    "adaptation": "Adapted by Scarecrow from the AIPG PREVENT Risk Assessment Framework. The framework does not prescribe scales, weights or thresholds; these are Scarecrow's choices."
+    "auto": "World Bank and V-Dem (via Our World in Data) indicators refresh daily; UCDP conflict events refresh monthly once a UCDP token is configured. Each is scored against thresholds stored in data/prevent.json. Neighbouring violence counts UCDP deaths in other countries within about 200 km of approximate border points; until UCDP data is available it falls back to the highest Lab conflict score among ASEAN neighbours.",
+    "adaptation": "Adapted by Scarecrow from the AIPG PREVENT Risk Assessment Framework. The framework does not prescribe scales, weights or thresholds; these are Scarecrow's choices.",
+    "review": "Exception-based review: an automated score that moves by more than one step from the last published score is held, and the previous score stays public until the Lab approves the change in the Review Room. Upcoming elections recorded by the Lab appear automatically as triggers from 180 days before to 30 days after the vote."
   },
   "categories": [
     {
@@ -106,9 +107,19 @@
       "type": "lab"
     },
     "armed_conflict": {
-      "en": "Current armed conflict",
-      "th": "ความขัดแย้งด้วยอาวุธในปัจจุบัน",
-      "type": "lab"
+      "en": "Current armed conflict (UCDP deaths, 12 months)",
+      "th": "ความขัดแย้งด้วยอาวุธในปัจจุบัน (ผู้เสียชีวิตตาม UCDP 12 เดือน)",
+      "type": "auto",
+      "source": "ucdp",
+      "unit": "deaths from organized violence, last 12 months",
+      "higher_is_worse": true,
+      "thresholds": [
+        1,
+        25,
+        250,
+        1000
+      ],
+      "fallback": "lab"
     },
     "coup_extralegal": {
       "en": "Coups or extralegal leadership change",
@@ -130,24 +141,68 @@
       "higher_is_worse": true
     },
     "electoral_democracy": {
-      "en": "Lack of electoral democracy",
-      "th": "การขาดประชาธิปไตยผ่านการเลือกตั้ง",
-      "type": "lab"
+      "en": "Lack of electoral democracy (V-Dem)",
+      "th": "การขาดประชาธิปไตยผ่านการเลือกตั้ง (V-Dem)",
+      "type": "auto",
+      "source": "owid",
+      "unit": "V-Dem index, 0–1 (higher is freer)",
+      "higher_is_worse": false,
+      "fallback": "lab",
+      "owid": "electoral-democracy-index",
+      "thresholds": [
+        0.7,
+        0.5,
+        0.35,
+        0.2
+      ]
     },
     "exec_constraints": {
-      "en": "Unlimited executive authority",
-      "th": "อำนาจบริหารไม่มีการถ่วงดุล",
-      "type": "lab"
+      "en": "Unlimited executive authority (V-Dem legislative constraints)",
+      "th": "อำนาจบริหารไม่มีการถ่วงดุล (ดัชนีการถ่วงดุลโดยสภาของ V-Dem)",
+      "type": "auto",
+      "source": "owid",
+      "unit": "V-Dem index, 0–1 (higher is freer)",
+      "higher_is_worse": false,
+      "fallback": "lab",
+      "owid": "legislative-constraints-on-the-executive-index",
+      "thresholds": [
+        0.8,
+        0.6,
+        0.4,
+        0.2
+      ]
     },
     "judicial_independence": {
-      "en": "Interference with the judiciary",
-      "th": "การแทรกแซงตุลาการ",
-      "type": "lab"
+      "en": "Weak judicial constraints (V-Dem)",
+      "th": "ตุลาการถ่วงดุลอำนาจบริหารได้น้อย (V-Dem)",
+      "type": "auto",
+      "source": "owid",
+      "unit": "V-Dem index, 0–1 (higher is freer)",
+      "higher_is_worse": false,
+      "fallback": "lab",
+      "owid": "judicial-constraints-on-the-executive-index",
+      "thresholds": [
+        0.8,
+        0.6,
+        0.4,
+        0.2
+      ]
     },
     "media_censorship": {
-      "en": "Government media censorship",
-      "th": "การเซ็นเซอร์สื่อโดยรัฐ",
-      "type": "lab"
+      "en": "Media censorship (V-Dem freedom of expression)",
+      "th": "การเซ็นเซอร์สื่อ (ดัชนีเสรีภาพการแสดงออกของ V-Dem)",
+      "type": "auto",
+      "source": "owid",
+      "unit": "V-Dem index, 0–1 (higher is freer)",
+      "higher_is_worse": false,
+      "fallback": "lab",
+      "owid": "freedom-of-expression-index",
+      "thresholds": [
+        0.8,
+        0.6,
+        0.4,
+        0.2
+      ]
     },
     "factionalism": {
       "en": "Factionalism",
@@ -246,9 +301,19 @@
       "higher_is_worse": true
     },
     "neighbor_violence": {
-      "en": "Violence in neighbouring countries",
-      "th": "ความรุนแรงในประเทศเพื่อนบ้าน",
-      "type": "derived"
+      "en": "Violence in neighbouring countries (~200 km of border)",
+      "th": "ความรุนแรงในประเทศเพื่อนบ้าน (ในรัศมี ~200 กม. จากชายแดน)",
+      "type": "auto",
+      "source": "ucdp",
+      "unit": "deaths in neighbouring countries within ~200 km of the border, last 12 months",
+      "higher_is_worse": true,
+      "thresholds": [
+        1,
+        25,
+        100,
+        500
+      ],
+      "fallback": "derived"
     },
     "trade_openness": {
       "en": "Low trade openness",
@@ -351,7 +416,8 @@
           "source": "AP via NBC News",
           "url": "https://www.nbcnews.com/world/myanmar/deadly-airstrike-market-myanmar-rakhine-state-rcna600408"
         }
-      ]
+      ],
+      "elections": []
     },
     "Philippines": {
       "lab": {
@@ -381,7 +447,8 @@
           "source": "Anadolu",
           "url": "https://aa.com.tr/en/asia-pacific/icc-rules-philippines-ex-president-duterte-to-remain-detained/4058996"
         }
-      ]
+      ],
+      "elections": []
     },
     "Thailand": {
       "lab": {
@@ -411,7 +478,8 @@
           "source": "Nikkei Asia",
           "url": "https://asia.nikkei.com/politics/international-relations/thailand-cambodia-conflict"
         }
-      ]
+      ],
+      "elections": []
     },
     "Cambodia": {
       "lab": {
@@ -441,7 +509,8 @@
           "source": "Nikkei Asia",
           "url": "https://asia.nikkei.com/politics/international-relations/thailand-cambodia-conflict"
         }
-      ]
+      ],
+      "elections": []
     },
     "Indonesia": {
       "lab": {
@@ -471,7 +540,8 @@
           "source": "Asia Pacific Report",
           "url": "https://asiapacificreport.nz/2026/09/25/they-just-have-to-get-out-civilians-pay-the-price-for-west-papua-conflict/"
         }
-      ]
+      ],
+      "elections": []
     },
     "Laos": {
       "lab": {
@@ -494,7 +564,8 @@
         "religious_restrictions": 3
       },
       "basis": "Post-1975 persecution of Hmong; one-party state with no free media or independent courts; very durable regime; economic and debt stress.",
-      "triggers": []
+      "triggers": [],
+      "elections": []
     },
     "Vietnam": {
       "lab": {
@@ -517,7 +588,8 @@
         "religious_restrictions": 3
       },
       "basis": "Historical wars; one-party state with tight media and religious controls; very durable regime; Mekong Delta climate stress.",
-      "triggers": []
+      "triggers": [],
+      "elections": []
     },
     "Malaysia": {
       "lab": {
@@ -540,7 +612,8 @@
         "religious_restrictions": 3
       },
       "basis": "1969 race riots; competitive elections with judicial and media independence improving; race and religion remain politically charged under bumiputera policy.",
-      "triggers": []
+      "triggers": [],
+      "elections": []
     },
     "Singapore": {
       "lab": {
@@ -563,7 +636,8 @@
         "religious_restrictions": 1
       },
       "basis": "No recent atrocity or conflict; dominant-party system with strong state capacity and some media limits.",
-      "triggers": []
+      "triggers": [],
+      "elections": []
     },
     "Brunei": {
       "lab": {
@@ -586,7 +660,8 @@
         "religious_restrictions": 4
       },
       "basis": "Absolute monarchy without elections; Sharia penal code restricts religious freedom; stable and durable.",
-      "triggers": []
+      "triggers": [],
+      "elections": []
     },
     "Timor-Leste": {
       "lab": {
@@ -609,7 +684,416 @@
         "religious_restrictions": 1
       },
       "basis": "Indonesian occupation atrocities 1975–99; 2006 crisis and 2008 attacks on leaders; electoral democracy with weak state capacity.",
-      "triggers": []
+      "triggers": [],
+      "elections": []
     }
+  },
+  "review_rules": {
+    "max_auto_step": 1,
+    "note": "An automated score that moves by more than max_auto_step from the last published score is held for Lab review instead of being published."
+  },
+  "election_window_days": {
+    "before": 180,
+    "after": 30
+  },
+  "border_points": {
+    "Myanmar": [
+      [
+        20.4,
+        99.9
+      ],
+      [
+        19.0,
+        97.9
+      ],
+      [
+        17.2,
+        98.3
+      ],
+      [
+        15.0,
+        98.5
+      ],
+      [
+        12.6,
+        99.1
+      ],
+      [
+        10.0,
+        98.5
+      ],
+      [
+        21.0,
+        100.9
+      ],
+      [
+        21.2,
+        92.4
+      ],
+      [
+        24.0,
+        94.2
+      ],
+      [
+        22.9,
+        93.3
+      ],
+      [
+        24.0,
+        97.8
+      ],
+      [
+        23.4,
+        98.9
+      ],
+      [
+        25.8,
+        98.7
+      ]
+    ],
+    "Thailand": [
+      [
+        20.4,
+        99.9
+      ],
+      [
+        19.0,
+        97.9
+      ],
+      [
+        17.2,
+        98.3
+      ],
+      [
+        15.0,
+        98.5
+      ],
+      [
+        12.6,
+        99.1
+      ],
+      [
+        10.0,
+        98.5
+      ],
+      [
+        19.9,
+        100.5
+      ],
+      [
+        17.9,
+        102.6
+      ],
+      [
+        16.6,
+        104.7
+      ],
+      [
+        15.1,
+        105.5
+      ],
+      [
+        14.4,
+        103.0
+      ],
+      [
+        14.3,
+        104.5
+      ],
+      [
+        13.6,
+        102.5
+      ],
+      [
+        12.6,
+        102.3
+      ],
+      [
+        6.5,
+        100.2
+      ],
+      [
+        6.0,
+        101.9
+      ],
+      [
+        5.7,
+        101.0
+      ]
+    ],
+    "Cambodia": [
+      [
+        14.4,
+        103.0
+      ],
+      [
+        14.3,
+        104.5
+      ],
+      [
+        13.6,
+        102.5
+      ],
+      [
+        12.6,
+        102.3
+      ],
+      [
+        13.9,
+        105.9
+      ],
+      [
+        10.9,
+        105.1
+      ],
+      [
+        11.6,
+        106.2
+      ],
+      [
+        12.9,
+        107.4
+      ],
+      [
+        13.9,
+        107.5
+      ]
+    ],
+    "Laos": [
+      [
+        21.0,
+        100.9
+      ],
+      [
+        19.9,
+        100.5
+      ],
+      [
+        17.9,
+        102.6
+      ],
+      [
+        16.6,
+        104.7
+      ],
+      [
+        15.1,
+        105.5
+      ],
+      [
+        13.9,
+        105.9
+      ],
+      [
+        21.6,
+        101.6
+      ],
+      [
+        22.4,
+        102.5
+      ],
+      [
+        20.6,
+        104.4
+      ],
+      [
+        18.3,
+        105.5
+      ],
+      [
+        16.6,
+        106.6
+      ],
+      [
+        15.3,
+        107.3
+      ]
+    ],
+    "Vietnam": [
+      [
+        22.4,
+        102.5
+      ],
+      [
+        20.6,
+        104.4
+      ],
+      [
+        18.3,
+        105.5
+      ],
+      [
+        16.6,
+        106.6
+      ],
+      [
+        15.3,
+        107.3
+      ],
+      [
+        10.9,
+        105.1
+      ],
+      [
+        11.6,
+        106.2
+      ],
+      [
+        12.9,
+        107.4
+      ],
+      [
+        13.9,
+        107.5
+      ],
+      [
+        22.8,
+        104.0
+      ],
+      [
+        22.5,
+        106.7
+      ],
+      [
+        21.5,
+        107.9
+      ]
+    ],
+    "Malaysia": [
+      [
+        6.5,
+        100.2
+      ],
+      [
+        6.0,
+        101.9
+      ],
+      [
+        5.7,
+        101.0
+      ],
+      [
+        1.45,
+        103.77
+      ],
+      [
+        1.5,
+        110.3
+      ],
+      [
+        1.2,
+        112.4
+      ],
+      [
+        2.6,
+        115.5
+      ],
+      [
+        4.3,
+        117.5
+      ],
+      [
+        4.6,
+        114.6
+      ],
+      [
+        4.8,
+        115.1
+      ],
+      [
+        5.9,
+        119.3
+      ]
+    ],
+    "Singapore": [
+      [
+        1.45,
+        103.77
+      ],
+      [
+        1.2,
+        104.0
+      ]
+    ],
+    "Brunei": [
+      [
+        4.6,
+        114.6
+      ],
+      [
+        4.8,
+        115.1
+      ],
+      [
+        4.0,
+        114.8
+      ]
+    ],
+    "Indonesia": [
+      [
+        1.5,
+        110.3
+      ],
+      [
+        1.2,
+        112.4
+      ],
+      [
+        2.6,
+        115.5
+      ],
+      [
+        4.3,
+        117.5
+      ],
+      [
+        -9.1,
+        125.0
+      ],
+      [
+        -9.4,
+        125.1
+      ],
+      [
+        -9.3,
+        124.4
+      ],
+      [
+        -2.6,
+        141.0
+      ],
+      [
+        -6.0,
+        141.0
+      ],
+      [
+        -8.9,
+        141.0
+      ]
+    ],
+    "Timor-Leste": [
+      [
+        -9.1,
+        125.0
+      ],
+      [
+        -9.4,
+        125.1
+      ],
+      [
+        -9.3,
+        124.4
+      ]
+    ],
+    "Philippines": [
+      [
+        5.9,
+        119.3
+      ],
+      [
+        6.0,
+        120.5
+      ]
+    ]
   }
 }

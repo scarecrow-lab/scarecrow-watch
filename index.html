@@ -169,7 +169,7 @@ footer p{ margin:0 0 10px; }
 <script src="assets/i18n.js"></script>
 <script>
 "use strict";
-const SOURCE_NAMES = {reliefweb:"ReliefWeb", gdelt:"GDELT", unhcr:"UNHCR", worldbank:"World Bank"};
+const SOURCE_NAMES = {reliefweb:"ReliefWeb", gdelt:"GDELT", unhcr:"UNHCR", worldbank:"World Bank", vdem:"V-Dem", ucdp:"UCDP"};
 let lang = "en", D = null, current = null, srcFilter = "";
 const $ = s => document.querySelector(s);
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
@@ -198,8 +198,8 @@ async function getJSON(path){
 
 async function load(){
   try{
-    const [a, s, d, m, cx, site, pv, ind] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json","data/context.json","data/site.json","data/prevent.json","data/indicators.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
-    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}, cx: cx || {}, site: site || {}, pv, ind: (ind && ind.indicators) || {}};
+    const [a, s, d, m, cx, site, pv, ind, apub, arev] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json","data/context.json","data/site.json","data/prevent.json","data/indicators.json","data/auto_published.json","data/auto_review.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
+    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}, cx: cx || {}, site: site || {}, pv, ind: (ind && ind.indicators) || {}, apub: (apub && apub.countries) || {}, arev: (arev && arev.pending) || []};
     D.a.countries.sort((x,y) => avg(y.scores) - avg(x.scores));
     const fromHash = decodeURIComponent((location.hash.match(/country=([^&]+)/) || [])[1] || "");
     current = D.a.countries.find(c => c.name === fromHash) ? fromHash : D.a.countries[0].name;
@@ -332,19 +332,30 @@ function preventFor(name){
   const C = P.countries[name], cats = [];
   for (const cat of P.categories){
     const rows = cat.indicators.map(k => {
-      const spec = P.indicators[k] || {}; let score = null, value = null, year = null, note = "";
-      if (spec.type === "lab") score = (C.lab || {})[k] ?? null;
-      else if (spec.type === "auto"){ const r = ((D.ind[k] || {}).countries || {})[name]; if (r){ value = r.value; year = r.year; score = autoScore(spec, r.value); } }
-      else if (spec.type === "derived" && k === "neighbor_violence"){
+      const spec = P.indicators[k] || {}; let score = null, value = null, year = null, note = "", src = "", fallback = "", held = null;
+      const derived = () => {
         const nb = (P.neighbors || {})[name] || [];
         const sc = nb.map(n => { const cc = D.a.countries.find(x => x.name === n); return cc ? Number(cc.scores.conflict) || null : null; }).filter(x => x != null);
-        if (sc.length){ score = Math.max(...sc); note = nb.join(", "); }
+        if (sc.length){ score = Math.max(...sc); note = nb.join(", "); fallback = "derived"; }
+      };
+      if (spec.type === "lab") score = (C.lab || {})[k] ?? null;
+      else if (spec.type === "auto"){
+        const pub = ((D.apub || {})[name] || {})[k];
+        if (pub && pub.score != null){ score = pub.score; value = pub.value; year = pub.year; src = pub.source || ""; }
+        else { const r = ((D.ind[k] || {}).countries || {})[name]; if (r){ value = r.value; year = r.year; score = autoScore(spec, r.value); src = (D.ind[k] || {}).source || ""; } }
+        if (score == null && spec.fallback === "lab"){ score = (C.lab || {})[k] ?? null; fallback = "lab"; }
+        if (score == null && spec.fallback === "derived") derived();
+        held = (D.arev || []).find(x => x.country === name && x.indicator === k && x.status === "pending") || null;
       }
-      return {k, spec, score, value, year, note};
+      else if (spec.type === "derived" && k === "neighbor_violence") derived();
+      return {k, spec, score, value, year, note, src, fallback, held};
     });
     cats.push({cat, rows, score: meanOf(rows.map(r => r.score))});
   }
-  return {cats, index: meanOf(cats.map(c => c.score)), triggers: C.triggers || [], basis: C.basis || ""};
+  const win = P.election_window_days || {before:180, after:30}, today = Date.now();
+  const elections = (C.elections || []).filter(e => { const t = Date.parse(e.date); return isFinite(t) && t - today <= win.before*864e5 && today - t <= win.after*864e5; })
+    .map(e => ({date:e.date, label:(t("prevElection") || "Election") + ": " + e.label, source:e.source, url:e.url}));
+  return {cats, index: meanOf(cats.map(c => c.score)), triggers: elections.concat(C.triggers || []), basis: C.basis || ""};
 }
 function renderPrevent(body, c){
   const P = D.pv, pi = preventFor(c.name);
@@ -364,9 +375,15 @@ function renderPrevent(body, c){
     for (const r of rows){
       const row = el("div","ind");
       const label = r.spec[lang] || r.spec.en || r.k;
-      const kind = el("span","chip",r.spec.type === "auto" ? t("prevAuto") : r.spec.type === "derived" ? t("prevDerived") : t("prevLab"));
+      const kind = el("span","chip",r.spec.type === "auto" && !r.fallback ? t("prevAuto") : (r.spec.type === "derived" || r.fallback === "derived") ? t("prevDerived") : t("prevLab"));
       let detail = "";
-      if (r.spec.type === "auto") detail = r.value != null ? `${fmt(r.value)} ${r.spec.unit || ""} (${r.year})` : t("prevNoData");
+      if (r.spec.type === "auto"){
+        if (r.value != null) detail = `${fmt(r.value)} ${r.spec.unit || ""} (${r.year})${r.src ? " · " + r.src : ""}`;
+        else if (r.fallback === "lab") detail = t("prevLabUntil");
+        else if (r.fallback === "derived") detail = `${t("prevNeighbors")}: ${r.note}`;
+        else detail = t("prevNoData");
+        if (r.held) detail += ` · ${t("prevHeld")} ${r.held.published}→${r.held.proposed}`;
+      }
       if (r.spec.type === "derived") detail = r.note ? `${t("prevNeighbors")}: ${r.note}` : t("prevNoData");
       const left = el("span"); left.append(kind, document.createTextNode(label)); if (detail) left.append(el("span","muted"," · " + detail));
       const sc = el("b",null,r.score != null ? String(r.score) : "—"); if (r.score != null) sc.style.color = band(r.score)[1];
@@ -378,7 +395,7 @@ function renderPrevent(body, c){
   else body.append(el("p","muted",t("prevNoTriggers")));
   body.append(el("h3",null,t("prevBasis")), el("p","note",pi.basis));
   body.append(el("h3",null,t("prevMethod")));
-  ["scale","auto","adaptation"].forEach(k => P.method && P.method[k] && body.append(el("p","muted",P.method[k])));
+  ["scale","auto","review","adaptation"].forEach(k => P.method && P.method[k] && body.append(el("p","muted",P.method[k])));
 }
 
 function orgRow(o){ const r = el("div","org"); r.append(link(o.url, o.name), document.createTextNode(" — " + (o.desc||""))); return r; }

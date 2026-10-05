@@ -4,13 +4,15 @@
 Pulls public data for the 11 ASEAN states and writes JSON files the dashboard reads:
   data/signals.json       recent reports and news (ReliefWeb, GDELT)  -> unverified signals
   data/displacement.json  people displaced from each country (UNHCR)
-  data/indicators.json    World Bank indicators used by the PREVENT layer
+  data/indicators.json    World Bank, V-Dem (via OWID) and UCDP values used by the PREVENT layer
+  data/auto_published.json  automated PREVENT scores currently public
+  data/auto_review.json   automated changes held for Lab approval
   data/meta.json          when each source last succeeded, and any error
 
 Lab assessments (data/assessments.json) are edited by hand and never touched here.
 Standard library only. If a source fails, its previous data is kept and the error is logged in meta.json.
 """
-import json, os, sys, time, urllib.parse, urllib.request
+import csv, io, json, math, os, sys, time, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -49,6 +51,20 @@ def http_json(url, body=None, timeout=60, tries=3):
                 raw = r.read().decode("utf-8", "replace")
             return json.loads(raw)
         except Exception as e:  # network error, HTTP error or non-JSON reply
+            last = e
+            if i < tries - 1:
+                time.sleep(5 * (i + 1))
+    raise RuntimeError(f"{url.split('?')[0]}: {last}")
+
+
+def http_text(url, headers=None, timeout=90, tries=3):
+    last = None
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read().decode("utf-8", "replace")
+        except Exception as e:
             last = e
             if i < tries - 1:
                 time.sleep(5 * (i + 1))
@@ -245,6 +261,166 @@ def worldbank():
     return out
 
 
+# ---------- V-Dem via Our World in Data ----------
+def owid():
+    spec = read("prevent.json", {}).get("indicators", {})
+    isos = set(COUNTRIES.values())
+    out, failed = {}, []
+    for key, v in spec.items():
+        slug = v.get("owid")
+        if not slug:
+            continue
+        url = f"https://ourworldindata.org/grapher/{urllib.parse.quote(slug)}.csv?v=1&csvType=full&useColumnShortNames=true"
+        try:
+            rows = list(csv.reader(io.StringIO(http_text(url))))
+        except Exception as e:
+            failed.append(f"{slug}: {e}")
+            continue
+        head, latest = rows[0], {}
+        try:
+            ci, yi = head.index("code"), head.index("year")
+        except ValueError:
+            ci, yi = 1, 2
+        vi = yi + 1  # the main value column follows the year column
+        for r in rows[1:]:
+            if len(r) <= vi or r[ci] not in isos:
+                continue
+            try:
+                y, val = int(r[yi]), float(r[vi])
+            except ValueError:
+                continue
+            if r[ci] not in latest or y > latest[r[ci]][0]:
+                latest[r[ci]] = (y, val)
+        vals = {ISO_TO_NAME[iso]: {"value": round(val, 3), "year": y} for iso, (y, val) in latest.items()}
+        if vals:
+            out[key] = {"source": "V-Dem via Our World in Data", "slug": slug, "countries": vals}
+        else:
+            failed.append(f"{slug}: no rows for ASEAN")
+        time.sleep(1)
+    for f in failed:
+        log("owid", f)
+    if not out:
+        raise RuntimeError("; ".join(failed)[:280] or "no V-Dem indicators configured")
+    return out
+
+
+# ---------- UCDP georeferenced events (needs a free token) ----------
+GW = {"Myanmar": 775, "Thailand": 800, "Cambodia": 811, "Laos": 812, "Vietnam": 816, "Malaysia": 820,
+      "Singapore": 830, "Brunei": 835, "Philippines": 840, "Indonesia": 850, "Timor-Leste": 860}
+GW_EXTRA = [771, 750, 710, 910]  # Bangladesh, India, China, Papua New Guinea: neighbours outside ASEAN
+GW_TO_NAME = {v: k for k, v in GW.items()}
+
+
+def km(a, b):
+    la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 6371 * 2 * math.asin(math.sqrt(h))
+
+
+def ucdp():
+    token = os.environ.get("UCDP_TOKEN", "").strip()
+    if not token:
+        raise RuntimeError("UCDP_TOKEN is not set (request a free token from UCDP)")
+    hdr = {"x-ucdp-access-token": token, "Accept": "application/json"}
+    countries = ",".join(str(c) for c in list(GW.values()) + GW_EXTRA)
+    since = (NOW - timedelta(days=365)).strftime("%Y-%m-%d")
+    events, versions = {}, []
+    yy = NOW.year % 100
+    # Monthly GED Candidate releases are versioned YY.0.N; try this year's and last year's.
+    for y in (yy, yy - 1):
+        for n in range(12, 0, -1):
+            ver = f"{y}.0.{n}"
+            url = f"https://ucdpapi.pcr.uu.se/api/gedevents/{ver}?" + urllib.parse.urlencode({"pagesize": 1000, "Country": countries, "StartDate": since})
+            got = 0
+            while url:
+                try:
+                    res = json.loads(http_text(url, hdr, tries=1))
+                except Exception:
+                    break
+                for e in res.get("Result", []) or []:
+                    if e.get("id") is not None:
+                        events[e["id"]] = e
+                        got += 1
+                url = res.get("NextPageUrl") or None
+                time.sleep(0.5)
+            if got:
+                versions.append(ver)
+    if not versions:
+        raise RuntimeError("no UCDP candidate data returned (check the token or version names)")
+    bp = read("prevent.json", {}).get("border_points", {})
+    deaths = {n: 0 for n in GW}
+    near = {n: 0 for n in GW}
+    for e in events.values():
+        if str(e.get("date_start", ""))[:10] < since:
+            continue
+        try:
+            d = int(e.get("best") or 0)
+            pt = (float(e["latitude"]), float(e["longitude"]))
+            cid = int(e.get("country_id"))
+        except (KeyError, TypeError, ValueError):
+            continue
+        own = GW_TO_NAME.get(cid)
+        if own:
+            deaths[own] += d
+        for name, pts in bp.items():
+            if name != own and any(km(pt, tuple(p)) <= 200 for p in pts):
+                near[name] += d
+    stamp = f"12 months to {NOW.strftime('%Y-%m')}"
+    return {
+        "armed_conflict": {"source": "UCDP GED Candidate", "versions": versions,
+                           "countries": {n: {"value": v, "year": stamp} for n, v in deaths.items()}},
+        "neighbor_violence": {"source": "UCDP GED Candidate", "versions": versions,
+                              "countries": {n: {"value": v, "year": stamp} for n, v in near.items()}},
+    }
+
+
+# ---------- exception-based review ----------
+def score(spec, v):
+    t = spec.get("thresholds") or []
+    if v is None or len(t) != 4:
+        return None
+    for i in range(4):
+        if (v < t[i]) if spec.get("higher_is_worse") else (v >= t[i]):
+            return i + 1
+    return 5
+
+
+def review_auto(indicators):
+    """Publish small automated changes; hold big jumps for Lab approval."""
+    pv = read("prevent.json", {})
+    spec, rules = pv.get("indicators", {}), pv.get("review_rules", {})
+    step = int(rules.get("max_auto_step", 1))
+    published = read("auto_published.json", {"countries": {}})
+    approvals = read("auto_approvals.json", {"approved": [], "rejected": []})
+    ok = {(a.get("country"), a.get("indicator"), a.get("score")) for a in approvals.get("approved", [])}
+    no = {(a.get("country"), a.get("indicator"), a.get("score")) for a in approvals.get("rejected", [])}
+    pending, stamp = [], NOW.isoformat(timespec="seconds")
+    for key, block in indicators.items():
+        sp = spec.get(key)
+        if not sp or sp.get("type") != "auto":
+            continue
+        for name, rec in (block.get("countries") or {}).items():
+            new = score(sp, rec.get("value"))
+            if new is None:
+                continue
+            pub = published["countries"].setdefault(name, {})
+            prev = pub.get(key, {}).get("score")
+            if prev is None:  # first automated value: compare with the Lab's score it replaces
+                prev = ((pv.get("countries", {}).get(name, {}) or {}).get("lab", {}) or {}).get(key)
+            entry = {"score": new, "value": rec.get("value"), "year": rec.get("year"), "source": block.get("source", ""), "at": stamp}
+            if prev is None or abs(new - prev) <= step or (name, key, new) in ok:
+                pub[key] = entry
+            else:
+                pending.append({"country": name, "indicator": key, "published": prev, "proposed": new,
+                                "value": rec.get("value"), "year": rec.get("year"), "source": block.get("source", ""),
+                                "status": "rejected" if (name, key, new) in no else "pending"})
+                if key not in pub:
+                    pub[key] = {"score": prev, "value": None, "year": None, "source": "Lab score kept pending review", "at": stamp}
+    write("auto_published.json", {"generated": stamp, "countries": published["countries"]})
+    write("auto_review.json", {"generated": stamp, "pending": pending})
+    return len(pending)
+
+
 def merge_signals(new_items, old_items):
     cutoff = (NOW - timedelta(days=SIGNAL_DAYS)).strftime("%Y-%m-%d")
     seen, merged = set(), []
@@ -306,6 +482,25 @@ def main():
         prev = meta["sources"].get("worldbank", {})
         meta["sources"]["worldbank"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
         log("worldbank FAILED", e)
+
+    for key, fn in (("vdem", owid), ("ucdp", ucdp)):
+        try:
+            got = fn()
+            old = read("indicators.json", {}).get("indicators", {})
+            write("indicators.json", {"generated": stamp, "source": "World Bank WDI, V-Dem via OWID, UCDP", "indicators": {**old, **got}})
+            meta["sources"][key] = {"status": "ok", "updated": stamp, "count": len(got), "error": None}
+            log(key, "ok", len(got))
+        except Exception as e:
+            prev = meta["sources"].get(key, {})
+            meta["sources"][key] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
+            log(key, "FAILED", e)
+
+    try:
+        held = review_auto(read("indicators.json", {}).get("indicators", {}))
+        meta["auto_review"] = {"pending": held, "checked": stamp}
+        log("review", held, "held for Lab review")
+    except Exception as e:
+        log("review FAILED", e)
 
     meta["last_run"] = stamp
     write("meta.json", meta)

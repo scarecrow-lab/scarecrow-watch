@@ -106,7 +106,10 @@ window.T={
   "catE1": "Executive overreach & non-democratic governance",
   "catV": "Volatility in the economy & environment",
   "catE2": "Exclusion & social fragmentation",
-  "catN": "Neighbouring instability & international factors"
+  "catN": "Neighbouring instability & international factors",
+  "prevHeld": "change awaiting Lab review",
+  "prevLabUntil": "Lab score until automated data arrives",
+  "prevElection": "Upcoming election"
  },
  "th": {
   "lede": "แดชบอร์ดเตือนภัยล่วงหน้าที่ใช้ฟรี สำหรับรัฐบาล ภาคประชาสังคม และ NGO แสดงคะแนนความเสี่ยงที่ Lab ประเมิน คู่กับข้อมูลสาธารณะที่อัปเดตอัตโนมัติทุกวัน",
@@ -213,7 +216,10 @@ window.T={
   "catE1": "อำนาจบริหารล้นเกินและการปกครองที่ไม่เป็นประชาธิปไตย",
   "catV": "ความผันผวนทางเศรษฐกิจและสิ่งแวดล้อม",
   "catE2": "การกีดกันและความแตกแยกทางสังคม",
-  "catN": "ความไม่มั่นคงของเพื่อนบ้านและปัจจัยระหว่างประเทศ"
+  "catN": "ความไม่มั่นคงของเพื่อนบ้านและปัจจัยระหว่างประเทศ",
+  "prevHeld": "การเปลี่ยนแปลงรอ Lab ตรวจสอบ",
+  "prevLabUntil": "ใช้คะแนน Lab จนกว่าข้อมูลอัตโนมัติจะเข้ามา",
+  "prevElection": "การเลือกตั้งที่กำลังจะมาถึง"
  },
  "id": {
   "lede": "Dasbor peringatan dini gratis untuk pemerintah, masyarakat sipil, dan LSM. Skor risiko yang dinilai Lab ditampilkan bersama data publik yang diperbarui otomatis setiap hari.",
@@ -320,7 +326,10 @@ window.T={
   "catE1": "Kekuasaan eksekutif berlebihan & tata kelola tidak demokratis",
   "catV": "Volatilitas ekonomi & lingkungan",
   "catE2": "Eksklusi & fragmentasi sosial",
-  "catN": "Ketidakstabilan tetangga & faktor internasional"
+  "catN": "Ketidakstabilan tetangga & faktor internasional",
+  "prevHeld": "perubahan menunggu tinjauan Lab",
+  "prevLabUntil": "Skor Lab hingga data otomatis tersedia",
+  "prevElection": "Pemilu mendatang"
  },
  "vi": {
   "lede": "Bảng cảnh báo sớm miễn phí cho chính phủ, xã hội dân sự và các tổ chức phi chính phủ. Điểm rủi ro do Lab đánh giá được hiển thị cùng dữ liệu công khai tự động cập nhật hằng ngày.",
@@ -427,7 +436,10 @@ window.T={
   "catE1": "Hành pháp lạm quyền & quản trị phi dân chủ",
   "catV": "Biến động kinh tế & môi trường",
   "catE2": "Loại trừ & chia rẽ xã hội",
-  "catN": "Bất ổn láng giềng & yếu tố quốc tế"
+  "catN": "Bất ổn láng giềng & yếu tố quốc tế",
+  "prevHeld": "thay đổi đang chờ Lab xem xét",
+  "prevLabUntil": "Dùng điểm Lab cho đến khi có dữ liệu tự động",
+  "prevElection": "Bầu cử sắp tới"
  },
  "ms": {
   "lede": "Papan pemuka amaran awal percuma untuk kerajaan, masyarakat sivil dan NGO. Skor risiko yang dinilai Lab dipaparkan bersama data awam yang dikemas kini secara automatik setiap hari.",
@@ -534,7 +546,10 @@ window.T={
   "catE1": "Kuasa eksekutif berlebihan & tadbir urus tidak demokratik",
   "catV": "Ketidaktentuan ekonomi & alam sekitar",
   "catE2": "Pengecualian & perpecahan sosial",
-  "catN": "Ketidakstabilan jiran & faktor antarabangsa"
+  "catN": "Ketidakstabilan jiran & faktor antarabangsa",
+  "prevHeld": "perubahan menunggu semakan Lab",
+  "prevLabUntil": "Skor Lab sehingga data automatik tiba",
+  "prevElection": "Pilihan raya akan datang"
  },
  "tl": {
   "lede": "Isang libreng dashboard ng maagang babala para sa mga pamahalaan, civil society at NGO. Ang mga risk score na tinasa ng Lab ay katabi ng pampublikong datos na awtomatikong ina-update araw-araw.",
@@ -641,7 +656,10 @@ window.T={
   "catE1": "Labis na kapangyarihan ng ehekutibo at di-demokratikong pamamahala",
   "catV": "Pabagu-bagong ekonomiya at kapaligiran",
   "catE2": "Eksklusyon at pagkakawatak-watak ng lipunan",
-  "catN": "Kawalang-tatag ng kapitbahay at mga salik na internasyonal"
+  "catN": "Kawalang-tatag ng kapitbahay at mga salik na internasyonal",
+  "prevHeld": "pagbabagong hinihintay ang pagrepaso ng Lab",
+  "prevLabUntil": "Score ng Lab hanggang dumating ang awtomatikong datos",
+  "prevElection": "Darating na halalan"
  },
  "my": {
   "lede": "အစိုးရများ၊ အရပ်ဘက်လူ့အဖွဲ့အစည်းများနှင့် NGO များအတွက် အခမဲ့ ကြိုတင်သတိပေးဒက်ရှ်ဘုတ်။ Lab ၏ အန္တရာယ်အမှတ်များကို နေ့စဉ် အလိုအလျောက် အပ်ဒိတ်လုပ်သော အများပြည်သူဒေတာနှင့်အတူ ပြသထားသည်။",
@@ -748,7 +766,10 @@ window.T={
   "catE1": "အုပ်ချုပ်ရေးအာဏာ လွန်ကဲမှုနှင့် ဒီမိုကရေစီမဆန်သော အုပ်ချုပ်ရေး",
   "catV": "စီးပွားရေးနှင့် ပတ်ဝန်းကျင် မတည်ငြိမ်မှု",
   "catE2": "ဖယ်ကြဉ်မှုနှင့် လူမှုအသိုက်အဝန်း ကွဲပြဲမှု",
-  "catN": "အိမ်နီးချင်း မတည်ငြိမ်မှုနှင့် နိုင်ငံတကာ အချက်များ"
+  "catN": "အိမ်နီးချင်း မတည်ငြိမ်မှုနှင့် နိုင်ငံတကာ အချက်များ",
+  "prevHeld": "Lab စိစစ်ရန် စောင့်ဆိုင်းနေသော ပြောင်းလဲမှု",
+  "prevLabUntil": "အလိုအလျောက်ဒေတာ မရောက်မချင်း Lab အမှတ်",
+  "prevElection": "လာမည့် ရွေးကောက်ပွဲ"
  },
  "km": {
   "lede": "ផ្ទាំងព្រមានជាមុនដោយឥតគិតថ្លៃ សម្រាប់រដ្ឋាភិបាល សង្គមស៊ីវិល និងអង្គការក្រៅរដ្ឋាភិបាល។ ពិន្ទុហានិភ័យដែល Lab វាយតម្លៃ បង្ហាញជាមួយទិន្នន័យសាធារណៈដែលធ្វើបច្ចុប្បន្នភាពដោយស្វ័យប្រវត្តិរៀងរាល់ថ្ងៃ។",
@@ -855,7 +876,10 @@ window.T={
   "catE1": "អំណាចប្រតិបត្តិហួសហេតុ និងអភិបាលកិច្ចមិនប្រជាធិបតេយ្យ",
   "catV": "ភាពប្រែប្រួលសេដ្ឋកិច្ច និងបរិស្ថាន",
   "catE2": "ការដកចេញ និងការបែកបាក់សង្គម",
-  "catN": "អស្ថិរភាពប្រទេសជិតខាង និងកត្តាអន្តរជាតិ"
+  "catN": "អស្ថិរភាពប្រទេសជិតខាង និងកត្តាអន្តរជាតិ",
+  "prevHeld": "ការផ្លាស់ប្តូរកំពុងរង់ចាំ Lab ពិនិត្យ",
+  "prevLabUntil": "ពិន្ទុ Lab រហូតដល់ទិន្នន័យស្វ័យប្រវត្តិមកដល់",
+  "prevElection": "ការបោះឆ្នោតខាងមុខ"
  },
  "lo": {
   "lede": "ແດຊບອດເຕືອນໄພລ່ວງໜ້າທີ່ໃຊ້ຟຣີ ສຳລັບລັດຖະບານ ສັງຄົມພົນລະເຮືອນ ແລະ NGO. ຄະແນນຄວາມສ່ຽງທີ່ Lab ປະເມີນ ສະແດງຄູ່ກັບຂໍ້ມູນສາທາລະນະທີ່ອັບເດດອັດຕະໂນມັດທຸກມື້.",
@@ -962,7 +986,10 @@ window.T={
   "catE1": "ອຳນາດບໍລິຫານເກີນຂອບເຂດ ແລະ ການປົກຄອງທີ່ບໍ່ເປັນປະຊາທິປະໄຕ",
   "catV": "ຄວາມຜັນຜວນທາງເສດຖະກິດ ແລະ ສິ່ງແວດລ້ອມ",
   "catE2": "ການກີດກັນ ແລະ ຄວາມແຕກແຍກທາງສັງຄົມ",
-  "catN": "ຄວາມບໍ່ໝັ້ນຄົງຂອງເພື່ອນບ້ານ ແລະ ປັດໄຈສາກົນ"
+  "catN": "ຄວາມບໍ່ໝັ້ນຄົງຂອງເພື່ອນບ້ານ ແລະ ປັດໄຈສາກົນ",
+  "prevHeld": "ການປ່ຽນແປງລໍຖ້າ Lab ກວດສອບ",
+  "prevLabUntil": "ໃຊ້ຄະແນນ Lab ຈົນກວ່າຂໍ້ມູນອັດຕະໂນມັດຈະມາ",
+  "prevElection": "ການເລືອກຕັ້ງທີ່ຈະມາເຖິງ"
  },
  "tet": {
   "lede": "Painel avizu sedu gratuitu ba governu, sosiedade sivíl no ONG sira. Pontuasaun risku husi Lab hatudu hamutuk ho dadus públiku ne'ebé atualiza automátiku loroloron.",
@@ -1069,6 +1096,9 @@ window.T={
   "catE1": "Podér ezekutivu liu no governasaun la demokrátiku",
   "catV": "Instabilidade ekonomia no ambiente",
   "catE2": "Eskluzaun no fahe sosiál",
-  "catN": "Instabilidade viziñu no fatór internasionál"
+  "catN": "Instabilidade viziñu no fatór internasionál",
+  "prevHeld": "mudansa hein revizaun Lab",
+  "prevLabUntil": "Pontuasaun Lab to'o dadus automátiku to'o",
+  "prevElection": "Eleisaun tuir mai"
  }
 };
