@@ -88,6 +88,7 @@ footer p{ margin:0 0 10px; }
 .ind b{ font:600 12px var(--mono); text-align:right; }
 .map{ height:360px; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--panel-2); }
 .leaflet-popup-content{ font:13px/1.45 var(--sans); }
+.map.dark .leaflet-tile-pane{ filter:invert(1) hue-rotate(180deg) brightness(0.85) contrast(0.9); }
 .leaflet-container a{ color:#a87a2f; }
 .tabs{ display:flex; flex-wrap:wrap; gap:6px; margin:16px 0 4px; border-bottom:1px solid var(--line); }
 .tab{ background:none; border:0; border-bottom:2px solid transparent; color:var(--ink-dim); font:500 13px var(--sans); padding:8px 10px; cursor:pointer; margin-bottom:-1px; }
@@ -299,9 +300,15 @@ function drawMap(box, name, pts){
   const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
   // maxZoom kept low on purpose: hotspot locations are approximate and must not imply precise sites.
   mapObj = L.map(box, {scrollWheelZoom:false, maxZoom:9, minZoom:3, worldCopyJump:true});
-  L.tileLayer(`https://{s}.basemaps.cartocdn.com/${dark ? "dark_all" : "light_all"}/{z}/{x}/{y}{r}.png`, {
-    subdomains:"abcd", maxZoom:9,
-    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>'
+  // OpenStreetMap standard tiles: no API key needed. Dark mode inverts the tiles with CSS.
+  box.classList.toggle("dark", dark);
+  let tileErrors = 0;
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom:9, crossOrigin:true,
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'
+  }).on("tileerror", () => {
+    // If the tile server is unreachable, fall back to the schematic view instead of a grey box.
+    if (++tileErrors === 6 && mapObj){ try { mapObj.remove(); } catch(e){} mapObj = null; box.replaceChildren(); box.classList.remove("map","dark"); box.append(hotspotSVG(pts)); }
   }).addTo(mapObj);
   const colors = {1:"#4d8b78",2:"#c98a3e",3:"#b5533c",4:"#c2414f",5:"#c2414f"};
   const marks = pts.filter(p => isFinite(p.lat) && isFinite(p.lng)).map(p => {
