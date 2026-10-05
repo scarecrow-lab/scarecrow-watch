@@ -1,0 +1,25 @@
+{
+  "generated": "2026-10-05T14:57:07+00:00",
+  "pending": [
+    {
+      "country": "Thailand",
+      "indicator": "exec_constraints",
+      "published": 3,
+      "proposed": 1,
+      "value": 0.916,
+      "year": 2025,
+      "source": "V-Dem via Our World in Data",
+      "status": "pending"
+    },
+    {
+      "country": "Laos",
+      "indicator": "judicial_independence",
+      "published": 5,
+      "proposed": 3,
+      "value": 0.571,
+      "year": 2025,
+      "source": "V-Dem via Our World in Data",
+      "status": "pending"
+    }
+  ]
+}

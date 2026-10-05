@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-05T14:31:07+00:00",
-  "source": "World Bank WDI",
+  "generated": "2026-10-05T14:57:07+00:00",
+  "source": "World Bank WDI, V-Dem via OWID, UCDP",
   "indicators": {
     "infant_mortality": {
       "code": "SP.DYN.IMRT.IN",
@@ -288,6 +288,190 @@
         },
         "Vietnam": {
           "value": 190.34,
+          "year": 2025
+        }
+      }
+    },
+    "electoral_democracy": {
+      "source": "V-Dem via Our World in Data",
+      "slug": "electoral-democracy-index",
+      "countries": {
+        "Cambodia": {
+          "value": 0.183,
+          "year": 2025
+        },
+        "Timor-Leste": {
+          "value": 0.736,
+          "year": 2025
+        },
+        "Indonesia": {
+          "value": 0.462,
+          "year": 2025
+        },
+        "Laos": {
+          "value": 0.135,
+          "year": 2025
+        },
+        "Malaysia": {
+          "value": 0.504,
+          "year": 2025
+        },
+        "Myanmar": {
+          "value": 0.08,
+          "year": 2025
+        },
+        "Philippines": {
+          "value": 0.392,
+          "year": 2025
+        },
+        "Singapore": {
+          "value": 0.434,
+          "year": 2025
+        },
+        "Thailand": {
+          "value": 0.424,
+          "year": 2025
+        },
+        "Vietnam": {
+          "value": 0.146,
+          "year": 2025
+        }
+      }
+    },
+    "exec_constraints": {
+      "source": "V-Dem via Our World in Data",
+      "slug": "legislative-constraints-on-the-executive-index",
+      "countries": {
+        "Cambodia": {
+          "value": 0.054,
+          "year": 2025
+        },
+        "Timor-Leste": {
+          "value": 0.658,
+          "year": 2025
+        },
+        "Indonesia": {
+          "value": 0.517,
+          "year": 2025
+        },
+        "Laos": {
+          "value": 0.3,
+          "year": 2025
+        },
+        "Malaysia": {
+          "value": 0.466,
+          "year": 2025
+        },
+        "Myanmar": {
+          "value": 0.292,
+          "year": 2022
+        },
+        "Philippines": {
+          "value": 0.726,
+          "year": 2025
+        },
+        "Singapore": {
+          "value": 0.561,
+          "year": 2025
+        },
+        "Thailand": {
+          "value": 0.916,
+          "year": 2025
+        },
+        "Vietnam": {
+          "value": 0.388,
+          "year": 2025
+        }
+      }
+    },
+    "judicial_independence": {
+      "source": "V-Dem via Our World in Data",
+      "slug": "judicial-constraints-on-the-executive-index",
+      "countries": {
+        "Cambodia": {
+          "value": 0.072,
+          "year": 2025
+        },
+        "Timor-Leste": {
+          "value": 0.674,
+          "year": 2025
+        },
+        "Indonesia": {
+          "value": 0.584,
+          "year": 2025
+        },
+        "Laos": {
+          "value": 0.571,
+          "year": 2025
+        },
+        "Malaysia": {
+          "value": 0.777,
+          "year": 2025
+        },
+        "Myanmar": {
+          "value": 0.025,
+          "year": 2025
+        },
+        "Philippines": {
+          "value": 0.66,
+          "year": 2025
+        },
+        "Singapore": {
+          "value": 0.868,
+          "year": 2025
+        },
+        "Thailand": {
+          "value": 0.733,
+          "year": 2025
+        },
+        "Vietnam": {
+          "value": 0.152,
+          "year": 2025
+        }
+      }
+    },
+    "media_censorship": {
+      "source": "V-Dem via Our World in Data",
+      "slug": "freedom-of-expression-index",
+      "countries": {
+        "Cambodia": {
+          "value": 0.153,
+          "year": 2025
+        },
+        "Timor-Leste": {
+          "value": 0.838,
+          "year": 2025
+        },
+        "Indonesia": {
+          "value": 0.688,
+          "year": 2025
+        },
+        "Laos": {
+          "value": 0.032,
+          "year": 2025
+        },
+        "Malaysia": {
+          "value": 0.586,
+          "year": 2025
+        },
+        "Myanmar": {
+          "value": 0.026,
+          "year": 2025
+        },
+        "Philippines": {
+          "value": 0.676,
+          "year": 2025
+        },
+        "Singapore": {
+          "value": 0.4,
+          "year": 2025
+        },
+        "Thailand": {
+          "value": 0.587,
+          "year": 2025
+        },
+        "Vietnam": {
+          "value": 0.102,
           "year": 2025
         }
       }
