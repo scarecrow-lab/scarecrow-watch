@@ -1,0 +1,204 @@
+{
+  "generated": "2026-10-05T15:31:19+00:00",
+  "source": "World Bank WDI",
+  "countries": {
+    "Brunei": {
+      "pop": {
+        "value": 466330.0,
+        "year": 2025
+      },
+      "gdp": {
+        "value": 43102847516.8548,
+        "year": 2025
+      },
+      "gdpCap": {
+        "value": 92429.9262686398,
+        "year": 2025
+      },
+      "area": {
+        "value": 5770.0,
+        "year": 2023
+      }
+    },
+    "Indonesia": {
+      "pop": {
+        "value": 285721236.0,
+        "year": 2025
+      },
+      "gdp": {
+        "value": 5045777634646.3,
+        "year": 2025
+      },
+      "gdpCap": {
+        "value": 17659.7921291587,
+        "year": 2025
+      },
+      "area": {
+        "value": 1916906.77,
+        "year": 2023
+      }
+    },
+    "Cambodia": {
+      "pop": {
+        "value": 17847982.0,
+        "year": 2025
+      },
+      "gdp": {
+        "value": 152469894039.209,
+        "year": 2025
+      },
+      "gdpCap": {
+        "value": 8542.6965378612,
+        "year": 2025
+      },
+      "area": {
+        "value": 181040.0,
+        "year": 2023
+      }
+    },
+    "Laos": {
+      "pop": {
+        "value": 7873046.0,
+        "year": 2025
+      },
+      "gdp": {
+        "value": 81745829310.985,
+        "year": 2025
+      },
+      "gdpCap": {
+        "value": 10382.9990718948,
+        "year": 2025
+      },
+      "area": {
+        "value": 236800.0,
+        "year": 2023
+      }
+    },
+    "Myanmar": {
+      "pop": {
+        "value": 54850648.0,
+        "year": 2025
+      },
+      "gdp": {
+        "value": 329736585932.9,
+        "year": 2025
+      },
+      "gdpCap": {
+        "value": 6011.53492175516,
+        "year": 2025
+      },
+      "area": {
+        "value": 676590.0,
+        "year": 2023
+      }
+    },
+    "Malaysia": {
+      "pop": {
+        "value": 35977838.0,
+        "year": 2025
+      },
+      "gdp": {
+        "value": 1492996614457.69,
+        "year": 2025
+      },
+      "gdpCap": {
+        "value": 41497.6746089548,
+        "year": 2025
+      },
+      "area": {
+        "value": 330411.0,
+        "year": 2023
+      }
+    },
+    "Philippines": {
+      "pop": {
+        "value": 116786962.0,
+        "year": 2025
+      },
+      "gdp": {
+        "value": 1468828072888.91,
+        "year": 2025
+      },
+      "gdpCap": {
+        "value": 12576.9867435109,
+        "year": 2025
+      },
+      "area": {
+        "value": 300000.0,
+        "year": 2023
+      }
+    },
+    "Singapore": {
+      "pop": {
+        "value": 6111175.0,
+        "year": 2025
+      },
+      "gdp": {
+        "value": 998284821428.084,
+        "year": 2025
+      },
+      "gdpCap": {
+        "value": 163353.990260152,
+        "year": 2025
+      },
+      "area": {
+        "value": 728.0,
+        "year": 2023
+      }
+    },
+    "Thailand": {
+      "pop": {
+        "value": 71619863.0,
+        "year": 2025
+      },
+      "gdp": {
+        "value": 1880026586072.36,
+        "year": 2025
+      },
+      "gdpCap": {
+        "value": 26250.0723587304,
+        "year": 2025
+      },
+      "area": {
+        "value": 513115.021,
+        "year": 2023
+      }
+    },
+    "Timor-Leste": {
+      "pop": {
+        "value": 1418517.0,
+        "year": 2025
+      },
+      "gdp": {
+        "value": 6822343566.70042,
+        "year": 2025
+      },
+      "gdpCap": {
+        "value": 4809.49016945191,
+        "year": 2025
+      },
+      "area": {
+        "value": 14870.0,
+        "year": 2023
+      }
+    },
+    "Vietnam": {
+      "pop": {
+        "value": 101598527.0,
+        "year": 2025
+      },
+      "gdp": {
+        "value": 1837764100907.65,
+        "year": 2025
+      },
+      "gdpCap": {
+        "value": 18088.491587163,
+        "year": 2025
+      },
+      "area": {
+        "value": 331338.31,
+        "year": 2023
+      }
+    }
+  }
+}

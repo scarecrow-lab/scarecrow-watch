@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T14:57:07+00:00",
+  "generated": "2026-10-05T15:31:19+00:00",
   "pending": [
     {
       "country": "Thailand",
@@ -19,6 +19,33 @@
       "value": 0.571,
       "year": 2025,
       "source": "V-Dem via Our World in Data",
+      "status": "pending"
+    },
+    {
+      "kind": "leader",
+      "country": "Myanmar",
+      "indicator": "leader",
+      "published": "President Sr. Gen. Min Aung Hlaing (sworn in 10 Apr 2026, having stepped down as commander-in-chief to take the post following the disputed 2025–26 election)",
+      "proposed": "Head of state: Myint Swe; head of government: Min Aung Hlaing",
+      "source": "Wikidata",
+      "status": "pending"
+    },
+    {
+      "kind": "leader",
+      "country": "Thailand",
+      "indicator": "leader",
+      "published": "PM Anutin Charnvirakul (sworn in Sep 2025); King Maha Vajiralongkorn (Rama X) is head of state",
+      "proposed": "Head of state: Rama X of Thailand; head of government: Paetongtarn Shinawatra, Phumtham Wechayachai",
+      "source": "Wikidata",
+      "status": "pending"
+    },
+    {
+      "kind": "leader",
+      "country": "Vietnam",
+      "indicator": "leader",
+      "published": "General Secretary & President To Lam (re-elected Party leader Jan 2026, elected State President 7 Apr 2026 — first to hold both concurrently); PM Le Minh Hung",
+      "proposed": "Head of state: Tô Lâm; head of government: Phạm Minh Chính",
+      "source": "Wikidata",
       "status": "pending"
     }
   ]
