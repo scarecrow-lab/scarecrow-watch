@@ -2,21 +2,27 @@
   "sources": {
     "reliefweb": {
       "status": "error",
-      "checked": "2026-10-05T02:02:12+00:00",
+      "checked": "2026-10-05T14:15:08+00:00",
       "error": "RELIEFWEB_APPNAME is not set (ReliefWeb requires an approved appname)"
     },
     "gdelt": {
       "status": "ok",
-      "updated": "2026-10-05T02:02:12+00:00",
-      "count": 37,
+      "updated": "2026-10-05T14:15:08+00:00",
+      "count": 0,
       "error": null
     },
     "unhcr": {
       "status": "ok",
-      "updated": "2026-10-05T02:02:12+00:00",
+      "updated": "2026-10-05T14:15:08+00:00",
       "count": 11,
+      "error": null
+    },
+    "worldbank": {
+      "status": "ok",
+      "updated": "2026-10-05T14:15:08+00:00",
+      "count": 6,
       "error": null
     }
   },
-  "last_run": "2026-10-05T02:02:12+00:00"
+  "last_run": "2026-10-05T14:15:08+00:00"
 }

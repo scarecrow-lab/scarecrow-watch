@@ -1,0 +1,296 @@
+{
+  "generated": "2026-10-05T14:15:08+00:00",
+  "source": "World Bank WDI",
+  "indicators": {
+    "infant_mortality": {
+      "code": "SP.DYN.IMRT.IN",
+      "countries": {
+        "Brunei": {
+          "value": 8.6,
+          "year": 2024
+        },
+        "Indonesia": {
+          "value": 15.2,
+          "year": 2024
+        },
+        "Cambodia": {
+          "value": 16.4,
+          "year": 2024
+        },
+        "Laos": {
+          "value": 27.2,
+          "year": 2024
+        },
+        "Myanmar": {
+          "value": 32.8,
+          "year": 2024
+        },
+        "Malaysia": {
+          "value": 7.0,
+          "year": 2024
+        },
+        "Philippines": {
+          "value": 21.7,
+          "year": 2024
+        },
+        "Singapore": {
+          "value": 2.2,
+          "year": 2024
+        },
+        "Thailand": {
+          "value": 7.7,
+          "year": 2024
+        },
+        "Timor-Leste": {
+          "value": 34.6,
+          "year": 2024
+        },
+        "Vietnam": {
+          "value": 12.0,
+          "year": 2024
+        }
+      }
+    },
+    "women_parliament": {
+      "code": "SG.GEN.PARL.ZS",
+      "countries": {
+        "Brunei": {
+          "value": 11.43,
+          "year": 2025
+        },
+        "Indonesia": {
+          "value": 21.9,
+          "year": 2025
+        },
+        "Cambodia": {
+          "value": 13.6,
+          "year": 2025
+        },
+        "Laos": {
+          "value": 21.95,
+          "year": 2025
+        },
+        "Myanmar": {
+          "value": 15.29,
+          "year": 2021
+        },
+        "Malaysia": {
+          "value": 13.51,
+          "year": 2025
+        },
+        "Philippines": {
+          "value": 28.34,
+          "year": 2025
+        },
+        "Singapore": {
+          "value": 32.32,
+          "year": 2025
+        },
+        "Thailand": {
+          "value": 19.6,
+          "year": 2025
+        },
+        "Timor-Leste": {
+          "value": 35.38,
+          "year": 2025
+        },
+        "Vietnam": {
+          "value": 31.38,
+          "year": 2025
+        }
+      }
+    },
+    "gdp_per_capita": {
+      "code": "NY.GDP.PCAP.PP.CD",
+      "countries": {
+        "Brunei": {
+          "value": 92429.93,
+          "year": 2025
+        },
+        "Indonesia": {
+          "value": 17659.79,
+          "year": 2025
+        },
+        "Cambodia": {
+          "value": 8542.7,
+          "year": 2025
+        },
+        "Laos": {
+          "value": 10383.0,
+          "year": 2025
+        },
+        "Myanmar": {
+          "value": 6011.53,
+          "year": 2025
+        },
+        "Malaysia": {
+          "value": 41497.67,
+          "year": 2025
+        },
+        "Philippines": {
+          "value": 12576.99,
+          "year": 2025
+        },
+        "Singapore": {
+          "value": 163353.99,
+          "year": 2025
+        },
+        "Thailand": {
+          "value": 26250.07,
+          "year": 2025
+        },
+        "Timor-Leste": {
+          "value": 4809.49,
+          "year": 2025
+        },
+        "Vietnam": {
+          "value": 18088.49,
+          "year": 2025
+        }
+      }
+    },
+    "gdp_growth": {
+      "code": "NY.GDP.MKTP.KD.ZG",
+      "countries": {
+        "Brunei": {
+          "value": 0.67,
+          "year": 2025
+        },
+        "Indonesia": {
+          "value": 5.11,
+          "year": 2025
+        },
+        "Cambodia": {
+          "value": 5.35,
+          "year": 2025
+        },
+        "Laos": {
+          "value": 4.54,
+          "year": 2025
+        },
+        "Myanmar": {
+          "value": -2.01,
+          "year": 2025
+        },
+        "Malaysia": {
+          "value": 5.17,
+          "year": 2025
+        },
+        "Philippines": {
+          "value": 4.4,
+          "year": 2025
+        },
+        "Singapore": {
+          "value": 5.03,
+          "year": 2025
+        },
+        "Thailand": {
+          "value": 2.44,
+          "year": 2025
+        },
+        "Timor-Leste": {
+          "value": 6.98,
+          "year": 2025
+        },
+        "Vietnam": {
+          "value": 8.02,
+          "year": 2025
+        }
+      }
+    },
+    "population_growth": {
+      "code": "SP.POP.GROW",
+      "countries": {
+        "Brunei": {
+          "value": 0.78,
+          "year": 2025
+        },
+        "Indonesia": {
+          "value": 0.78,
+          "year": 2025
+        },
+        "Cambodia": {
+          "value": 1.18,
+          "year": 2025
+        },
+        "Laos": {
+          "value": 1.32,
+          "year": 2025
+        },
+        "Myanmar": {
+          "value": 0.64,
+          "year": 2025
+        },
+        "Malaysia": {
+          "value": 1.17,
+          "year": 2025
+        },
+        "Philippines": {
+          "value": 0.81,
+          "year": 2025
+        },
+        "Singapore": {
+          "value": 1.22,
+          "year": 2025
+        },
+        "Thailand": {
+          "value": -0.07,
+          "year": 2025
+        },
+        "Timor-Leste": {
+          "value": 1.27,
+          "year": 2025
+        },
+        "Vietnam": {
+          "value": 0.6,
+          "year": 2025
+        }
+      }
+    },
+    "trade_openness": {
+      "code": "NE.TRD.GNFS.ZS",
+      "countries": {
+        "Brunei": {
+          "value": 123.61,
+          "year": 2025
+        },
+        "Indonesia": {
+          "value": 43.39,
+          "year": 2025
+        },
+        "Cambodia": {
+          "value": 136.09,
+          "year": 2025
+        },
+        "Laos": {
+          "value": 75.09,
+          "year": 2016
+        },
+        "Malaysia": {
+          "value": 136.4,
+          "year": 2025
+        },
+        "Philippines": {
+          "value": 66.79,
+          "year": 2025
+        },
+        "Singapore": {
+          "value": 320.31,
+          "year": 2025
+        },
+        "Thailand": {
+          "value": 138.41,
+          "year": 2025
+        },
+        "Timor-Leste": {
+          "value": 95.45,
+          "year": 2024
+        },
+        "Vietnam": {
+          "value": 190.34,
+          "year": 2025
+        }
+      }
+    }
+  }
+}
