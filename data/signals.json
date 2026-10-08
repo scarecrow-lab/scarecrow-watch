@@ -1,7 +1,25 @@
 {
-  "generated": "2026-10-07T02:25:13+00:00",
+  "generated": "2026-10-08T02:42:38+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Thailand",
+      "date": "2026-10-06",
+      "title": "Thailand asks firms to cut egg exports after flood losses",
+      "url": "https://wtvbam.com/2026/10/06/thailand-asks-firms-to-cut-egg-exports-after-flood-losses/",
+      "source": "wtvbam.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-06",
+      "title": "Thailand asks firms to cut egg exports after flood losses",
+      "url": "https://wiky.com/2026/10/06/thailand-asks-firms-to-cut-egg-exports-after-flood-losses/",
+      "source": "wiky.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
     {
       "country": "Thailand",
       "date": "2026-10-02",
@@ -116,24 +134,6 @@
       "title": "Malaysia - Myanmar deportations : Concerns mount as hundreds of refugees and migrants are returned to military - ruled nation",
       "url": "https://www.theage.com.au/world/asia/sending-them-to-their-deaths-malaysia-s-deal-with-the-devil-20261002-p611yy.html",
       "source": "theage.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Hegseth AutoWarCom : who builds it , what the money buys , and why its hardest problem after Minab is the record , not the model",
-      "url": "https://www.livetradingnews.com/hegseths-autowarcom-who-builds-it-what-the-money-buys-and-the-record-it-needs",
-      "source": "livetradingnews.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Malaysia - Myanmar deportations : Concerns mount as hundreds of refugees and migrants are returned to military - ruled nation",
-      "url": "https://www.brisbanetimes.com.au/world/asia/sending-them-to-their-deaths-malaysia-s-deal-with-the-devil-20261002-p611yy.html",
-      "source": "brisbanetimes.com.au",
       "kind": "News",
       "via": "GDELT"
     },
