@@ -117,7 +117,16 @@ window.T={
   "aboutLink": "About Scarecrow →",
   "aboutTitle": "ABOUT SCARECROW",
   "aboutSub": "Who we are and how we stay independent",
-  "prevLearn": "How the framework works, explained with graphics"
+  "prevLearn": "How the framework works, explained with graphics",
+  "covEyebrow": "An early-warning watch for Southeast Asia",
+  "covHeadline": "Atrocities are never sudden. The warnings stand in plain sight — if someone is watching.",
+  "covStory": "A scarecrow keeps watch at the edge of the field — through dusk and storm, for one purpose: to raise the alarm before the harvest is lost. Scarecrow Watch is that sentinel for Southeast Asia: an independent, open-source early-warning system tracking mass-atrocity risk across the eleven ASEAN states, so the signs are seen while there is still time to act.",
+  "covEnter": "Enter the platform",
+  "covSub": "Free to use · updated daily from public data",
+  "covDignity": "We document patterns and verified public data — not graphic images of victims. The region remembers what happens when no one keeps watch.",
+  "covM1": "Cambodia, 1975–79",
+  "covM2": "Rohingya, Myanmar",
+  "covM3": "Marawi & beyond"
  },
  "th": {
   "lede": "แดชบอร์ดเตือนภัยล่วงหน้าที่ใช้ฟรี สำหรับรัฐบาล ภาคประชาสังคม และ NGO แสดงคะแนนความเสี่ยงที่ Lab ประเมิน คู่กับข้อมูลสาธารณะที่อัปเดตอัตโนมัติทุกวัน",
@@ -235,7 +244,16 @@ window.T={
   "aboutLink": "เกี่ยวกับ Scarecrow →",
   "aboutTitle": "เกี่ยวกับ SCARECROW",
   "aboutSub": "เราคือใคร และรักษาความเป็นอิสระอย่างไร",
-  "prevLearn": "อธิบายกรอบการประเมินแบบเข้าใจง่ายพร้อมอินโฟกราฟิก"
+  "prevLearn": "อธิบายกรอบการประเมินแบบเข้าใจง่ายพร้อมอินโฟกราฟิก",
+  "covEyebrow": "ระบบเฝ้าระวังและเตือนภัยล่วงหน้าเพื่อเอเชียตะวันออกเฉียงใต้",
+  "covHeadline": "ความโหดร้ายไม่เคยเกิดขึ้นชั่วข้ามคืน สัญญาณเตือนปรากฏอยู่ตรงหน้า — หากมีใครสักคนเฝ้ามอง",
+  "covStory": "หุ่นไล่กายืนเฝ้าอยู่ริมทุ่ง ผ่านทั้งยามพลบค่ำและพายุ เพื่อจุดประสงค์เดียว คือส่งสัญญาณเตือนก่อนที่ผลผลิตจะเสียหาย Scarecrow Watch คือผู้เฝ้าระวังนั้นเพื่อเอเชียตะวันออกเฉียงใต้ — ระบบเตือนภัยล่วงหน้าแบบโอเพนซอร์สที่เป็นอิสระ ติดตามความเสี่ยงการก่อความโหดร้ายต่อมวลชนใน 11 ชาติอาเซียน เพื่อให้มองเห็นสัญญาณขณะที่ยังมีเวลาลงมือ",
+  "covEnter": "เข้าสู่แพลตฟอร์ม",
+  "covSub": "ใช้งานฟรี · อัปเดตทุกวันจากข้อมูลสาธารณะ",
+  "covDignity": "เราบันทึกรูปแบบและข้อมูลสาธารณะที่ตรวจสอบแล้ว — ไม่ใช่ภาพความรุนแรงของเหยื่อ ภูมิภาคนี้จดจำได้ดีว่าจะเกิดอะไรขึ้นเมื่อไม่มีใครเฝ้าระวัง",
+  "covM1": "กัมพูชา, 1975–79",
+  "covM2": "โรฮิงญา, เมียนมา",
+  "covM3": "มาราวี และที่อื่น ๆ"
  },
  "id": {
   "lede": "Dasbor peringatan dini gratis untuk pemerintah, masyarakat sipil, dan LSM. Skor risiko yang dinilai Lab ditampilkan bersama data publik yang diperbarui otomatis setiap hari.",
@@ -353,7 +371,16 @@ window.T={
   "aboutLink": "Tentang Scarecrow →",
   "aboutTitle": "TENTANG SCARECROW",
   "aboutSub": "Siapa kami dan bagaimana kami tetap independen",
-  "prevLearn": "Cara kerja kerangka ini, dijelaskan dengan grafik"
+  "prevLearn": "Cara kerja kerangka ini, dijelaskan dengan grafik",
+  "covEyebrow": "Sistem peringatan dini untuk Asia Tenggara",
+  "covHeadline": "Kekejaman tidak pernah terjadi tiba-tiba. Tandanya ada di depan mata — jika ada yang mengawasi.",
+  "covStory": "Orang-orangan sawah berjaga di tepi ladang — menembus senja dan badai, untuk satu tujuan: membunyikan alarm sebelum panen hilang. Scarecrow Watch adalah penjaga itu bagi Asia Tenggara: sistem peringatan dini sumber terbuka yang independen, memantau risiko kekejaman massal di sebelas negara ASEAN, agar tandanya terlihat selagi masih ada waktu untuk bertindak.",
+  "covEnter": "Masuk ke platform",
+  "covSub": "Gratis · diperbarui setiap hari dari data publik",
+  "covDignity": "Kami mendokumentasikan pola dan data publik terverifikasi — bukan gambar grafis korban. Kawasan ini ingat apa yang terjadi saat tak ada yang mengawasi.",
+  "covM1": "Kamboja, 1975–79",
+  "covM2": "Rohingya, Myanmar",
+  "covM3": "Marawi & sekitarnya"
  },
  "vi": {
   "lede": "Bảng cảnh báo sớm miễn phí cho chính phủ, xã hội dân sự và các tổ chức phi chính phủ. Điểm rủi ro do Lab đánh giá được hiển thị cùng dữ liệu công khai tự động cập nhật hằng ngày.",
@@ -471,7 +498,16 @@ window.T={
   "aboutLink": "Giới thiệu Scarecrow →",
   "aboutTitle": "VỀ SCARECROW",
   "aboutSub": "Chúng tôi là ai và cách giữ tính độc lập",
-  "prevLearn": "Cách khung này hoạt động, giải thích bằng hình ảnh"
+  "prevLearn": "Cách khung này hoạt động, giải thích bằng hình ảnh",
+  "covEyebrow": "Hệ thống cảnh báo sớm cho Đông Nam Á",
+  "covHeadline": "Tội ác không bao giờ xảy ra bất ngờ. Những dấu hiệu luôn hiển hiện — nếu có ai đó dõi theo.",
+  "covStory": "Bù nhìn canh giữ bên rìa cánh đồng — qua hoàng hôn và bão tố, chỉ với một mục đích: gióng lên hồi chuông cảnh báo trước khi mùa màng mất trắng. Scarecrow Watch là người canh giữ ấy cho Đông Nam Á: một hệ thống cảnh báo sớm mã nguồn mở, độc lập, theo dõi nguy cơ tội ác hàng loạt trên mười một quốc gia ASEAN, để các dấu hiệu được nhận ra khi vẫn còn thời gian hành động.",
+  "covEnter": "Vào nền tảng",
+  "covSub": "Miễn phí · cập nhật hằng ngày từ dữ liệu công khai",
+  "covDignity": "Chúng tôi ghi lại các mô hình và dữ liệu công khai đã kiểm chứng — không phải hình ảnh ghê rợn về nạn nhân. Khu vực này còn nhớ điều gì xảy ra khi không ai dõi theo.",
+  "covM1": "Campuchia, 1975–79",
+  "covM2": "Rohingya, Myanmar",
+  "covM3": "Marawi & hơn thế"
  },
  "ms": {
   "lede": "Papan pemuka amaran awal percuma untuk kerajaan, masyarakat sivil dan NGO. Skor risiko yang dinilai Lab dipaparkan bersama data awam yang dikemas kini secara automatik setiap hari.",
@@ -589,7 +625,16 @@ window.T={
   "aboutLink": "Tentang Scarecrow →",
   "aboutTitle": "TENTANG SCARECROW",
   "aboutSub": "Siapa kami dan cara kami kekal bebas",
-  "prevLearn": "Cara rangka kerja ini berfungsi, diterangkan dengan grafik"
+  "prevLearn": "Cara rangka kerja ini berfungsi, diterangkan dengan grafik",
+  "covEyebrow": "Sistem amaran awal untuk Asia Tenggara",
+  "covHeadline": "Kekejaman tidak pernah berlaku secara tiba-tiba. Tandanya terpampang di depan mata — jika ada yang memerhati.",
+  "covStory": "Orang-orang sawah berkawal di tepi bendang — merentasi senja dan ribut, untuk satu tujuan: membunyikan amaran sebelum hasil tuaian musnah. Scarecrow Watch ialah pengawal itu bagi Asia Tenggara: sistem amaran awal sumber terbuka yang bebas, memantau risiko kekejaman massa di sebelas negara ASEAN, agar tandanya dilihat sementara masih ada masa untuk bertindak.",
+  "covEnter": "Masuk ke platform",
+  "covSub": "Percuma · dikemas kini setiap hari daripada data awam",
+  "covDignity": "Kami mendokumentasikan corak dan data awam yang disahkan — bukan imej grafik mangsa. Rantau ini mengingati apa yang berlaku apabila tiada sesiapa memerhati.",
+  "covM1": "Kemboja, 1975–79",
+  "covM2": "Rohingya, Myanmar",
+  "covM3": "Marawi & sekitarnya"
  },
  "tl": {
   "lede": "Isang libreng dashboard ng maagang babala para sa mga pamahalaan, civil society at NGO. Ang mga risk score na tinasa ng Lab ay katabi ng pampublikong datos na awtomatikong ina-update araw-araw.",
@@ -707,7 +752,16 @@ window.T={
   "aboutLink": "Tungkol sa Scarecrow →",
   "aboutTitle": "TUNGKOL SA SCARECROW",
   "aboutSub": "Sino kami at paano kami nananatiling malaya",
-  "prevLearn": "Paano gumagana ang framework, ipinaliwanag gamit ang mga larawan"
+  "prevLearn": "Paano gumagana ang framework, ipinaliwanag gamit ang mga larawan",
+  "covEyebrow": "Sistema ng maagang babala para sa Timog-Silangang Asya",
+  "covHeadline": "Hindi kailanman biglaan ang mga kalupitan. Nakikita ang mga babala sa harap mismo — kung may nagbabantay.",
+  "covStory": "May bantay na panakot-ibon sa gilid ng bukid — sa takipsilim at sa bagyo, para sa iisang layunin: magbigay-hudyat bago mawala ang ani. Ang Scarecrow Watch ang bantay na iyon para sa Timog-Silangang Asya: isang malaya at open-source na sistema ng maagang babala na sumusubaybay sa panganib ng malawakang kalupitan sa labing-isang bansa ng ASEAN, upang makita ang mga palatandaan habang may panahon pang kumilos.",
+  "covEnter": "Pumasok sa plataporma",
+  "covSub": "Libre · ina-update araw-araw mula sa pampublikong datos",
+  "covDignity": "Dinodokumento namin ang mga pattern at beripikadong pampublikong datos — hindi mga nakakakilabot na larawan ng mga biktima. Natatandaan ng rehiyon kung ano ang nangyayari kapag walang nagbabantay.",
+  "covM1": "Cambodia, 1975–79",
+  "covM2": "Rohingya, Myanmar",
+  "covM3": "Marawi at higit pa"
  },
  "my": {
   "lede": "အစိုးရများ၊ အရပ်ဘက်လူ့အဖွဲ့အစည်းများနှင့် NGO များအတွက် အခမဲ့ ကြိုတင်သတိပေးဒက်ရှ်ဘုတ်။ Lab ၏ အန္တရာယ်အမှတ်များကို နေ့စဉ် အလိုအလျောက် အပ်ဒိတ်လုပ်သော အများပြည်သူဒေတာနှင့်အတူ ပြသထားသည်။",
@@ -825,7 +879,16 @@ window.T={
   "aboutLink": "Scarecrow အကြောင်း →",
   "aboutTitle": "SCARECROW အကြောင်း",
   "aboutSub": "ကျွန်ုပ်တို့ မည်သူဖြစ်ပြီး လွတ်လပ်မှုကို မည်သို့ ထိန်းသိမ်းသနည်း",
-  "prevLearn": "မူဘောင် အလုပ်လုပ်ပုံကို ပုံများဖြင့် ရှင်းပြထားသည်"
+  "prevLearn": "မူဘောင် အလုပ်လုပ်ပုံကို ပုံများဖြင့် ရှင်းပြထားသည်",
+  "covEyebrow": "အရှေ့တောင်အာရှအတွက် ကြိုတင်သတိပေး စောင့်ကြည့်စနစ်",
+  "covHeadline": "ရက်စက်မှုများသည် ဘယ်တော့မှ ရုတ်တရက် မဖြစ်ပေါ်ပါ။ သတိပေးချက်များသည် မျက်စိရှေ့တွင် ရှိနေသည် — တစ်စုံတစ်ယောက် စောင့်ကြည့်နေလျှင်။",
+  "covStory": "စိုက်ခင်းအစွန်းတွင် ချောင်းသမား(ရုပ်ကြမ်း)သည် နေဝင်ဆည်းဆာနှင့် မုန်တိုင်းကိုဖြတ်၍ ရည်ရွယ်ချက်တစ်ခုတည်းဖြင့် စောင့်ကြည့်သည် — အသီးအနှံ မဆုံးရှုံးမီ သတိပေးရန်။ Scarecrow Watch သည် အရှေ့တောင်အာရှအတွက် ထိုစောင့်ကြည့်သူဖြစ်သည် — လွတ်လပ်ပြီး open-source ကြိုတင်သတိပေးစနစ်အဖြစ် အာဆီယံ ၁၁ နိုင်ငံ၏ လူထုအပေါ် ရက်စက်မှုအန္တရာယ်ကို စောင့်ကြည့်ကာ အချိန်မီ မြင်တွေ့စေသည်။",
+  "covEnter": "ပလက်ဖောင်းသို့ ဝင်ရန်",
+  "covSub": "အခမဲ့ · အများသုံးဒေတာမှ နေ့စဉ်အပ်ဒိတ်",
+  "covDignity": "ကျွန်ုပ်တို့သည် ပုံစံများနှင့် အတည်ပြုပြီးသော အများသုံးဒေတာကို မှတ်တမ်းတင်သည် — သားကောင်များ၏ ရက်စက်သောပုံရိပ်များ မဟုတ်ပါ။",
+  "covM1": "ကမ္ဘောဒီးယား, 1975–79",
+  "covM2": "ရိုဟင်ဂျာ, မြန်မာ",
+  "covM3": "မာရာဝီနှင့် အခြား"
  },
  "km": {
   "lede": "ផ្ទាំងព្រមានជាមុនដោយឥតគិតថ្លៃ សម្រាប់រដ្ឋាភិបាល សង្គមស៊ីវិល និងអង្គការក្រៅរដ្ឋាភិបាល។ ពិន្ទុហានិភ័យដែល Lab វាយតម្លៃ បង្ហាញជាមួយទិន្នន័យសាធារណៈដែលធ្វើបច្ចុប្បន្នភាពដោយស្វ័យប្រវត្តិរៀងរាល់ថ្ងៃ។",
@@ -943,7 +1006,16 @@ window.T={
   "aboutLink": "អំពី Scarecrow →",
   "aboutTitle": "អំពី SCARECROW",
   "aboutSub": "យើងជានរណា និងរក្សាឯករាជ្យភាពយ៉ាងដូចម្តេច",
-  "prevLearn": "របៀបដែលក្របខ័ណ្ឌដំណើរការ ពន្យល់ដោយរូបភាព"
+  "prevLearn": "របៀបដែលក្របខ័ណ្ឌដំណើរការ ពន្យល់ដោយរូបភាព",
+  "covEyebrow": "ប្រព័ន្ធព្រមានជាមុនសម្រាប់អាស៊ីអាគ្នេយ៍",
+  "covHeadline": "អំពើឃោរឃៅមិនដែលកើតឡើងភ្លាមៗទេ។ សញ្ញាព្រមានស្ថិតនៅចំពោះមុខ — ប្រសិនបើមាននរណាម្នាក់កំពុងឃ្លាំមើល។",
+  "covStory": "ទីទ្រនិចឆ្មាំការពារនៅមាត់ស្រែ — កាត់តាមពេលព្រលប់និងព្យុះ ដើម្បីគោលបំណងតែមួយ៖ បន្លឺសញ្ញាព្រមានមុនពេលផលដំណាំត្រូវបាត់បង់។ Scarecrow Watch គឺជាអ្នកយាមនោះសម្រាប់អាស៊ីអាគ្នេយ៍៖ ប្រព័ន្ធព្រមានជាមុនប្រភពបើកចំហ ឯករាជ្យ ដែលតាមដានហានិភ័យនៃអំពើឃោរឃៅលើមហាជននៅ ១១ ប្រទេសអាស៊ាន ដើម្បីឱ្យឃើញសញ្ញាខណៈពេលនៅមានពេលសកម្មភាព។",
+  "covEnter": "ចូលទៅកាន់វេទិកា",
+  "covSub": "ប្រើប្រាស់ដោយឥតគិតថ្លៃ · ធ្វើបច្ចុប្បន្នភាពរាល់ថ្ងៃពីទិន្នន័យសាធារណៈ",
+  "covDignity": "យើងកត់ត្រាលំនាំ និងទិន្នន័យសាធារណៈដែលបានផ្ទៀងផ្ទាត់ — មិនមែនរូបភាពឃោរឃៅរបស់ជនរងគ្រោះទេ។",
+  "covM1": "កម្ពុជា, 1975–79",
+  "covM2": "រ៉ូហ៊ីងយ៉ា, មីយ៉ាន់ម៉ា",
+  "covM3": "ម៉ារ៉ាវី និងលើសពីនេះ"
  },
  "lo": {
   "lede": "ແດຊບອດເຕືອນໄພລ່ວງໜ້າທີ່ໃຊ້ຟຣີ ສຳລັບລັດຖະບານ ສັງຄົມພົນລະເຮືອນ ແລະ NGO. ຄະແນນຄວາມສ່ຽງທີ່ Lab ປະເມີນ ສະແດງຄູ່ກັບຂໍ້ມູນສາທາລະນະທີ່ອັບເດດອັດຕະໂນມັດທຸກມື້.",
@@ -1061,7 +1133,16 @@ window.T={
   "aboutLink": "ກ່ຽວກັບ Scarecrow →",
   "aboutTitle": "ກ່ຽວກັບ SCARECROW",
   "aboutSub": "ພວກເຮົາແມ່ນໃຜ ແລະ ຮັກສາຄວາມເປັນອິດສະຫຼະແນວໃດ",
-  "prevLearn": "ອະທິບາຍກອບການປະເມີນແບບເຂົ້າໃຈງ່າຍພ້ອມຮູບພາບ"
+  "prevLearn": "ອະທິບາຍກອບການປະເມີນແບບເຂົ້າໃຈງ່າຍພ້ອມຮູບພາບ",
+  "covEyebrow": "ລະບົບເຕືອນໄພລ່ວງໜ້າສຳລັບອາຊີຕາເວັນອອກສຽງໃຕ້",
+  "covHeadline": "ຄວາມໂຫດຮ້າຍບໍ່ເຄີຍເກີດຂຶ້ນແບບກະທັນຫັນ. ສັນຍານເຕືອນຢູ່ຕໍ່ໜ້າ — ຖ້າມີຄົນເຝົ້າເບິ່ງ.",
+  "covStory": "ຮຸ່ນໄລ່ກາຢືນເຝົ້າຢູ່ຂອບທົ່ງນາ — ຜ່ານຍາມແລງແລະພາຍຸ ເພື່ອຈຸດປະສົງດຽວ: ສົ່ງສັນຍານເຕືອນກ່ອນທີ່ຜົນລະປູກຈະເສຍຫາຍ. Scarecrow Watch ແມ່ນຜູ້ເຝົ້າລະວັງນັ້ນສຳລັບອາຊີຕາເວັນອອກສຽງໃຕ້ — ລະບົບເຕືອນໄພລ່ວງໜ້າແບບ open-source ທີ່ເປັນອິດສະຫຼະ ຕິດຕາມຄວາມສ່ຽງການກໍ່ຄວາມໂຫດຮ້າຍຕໍ່ມວນຊົນໃນ 11 ປະເທດອາຊຽນ ເພື່ອໃຫ້ເຫັນສັນຍານໃນຂະນະທີ່ຍັງມີເວລາລົງມື.",
+  "covEnter": "ເຂົ້າສູ່ແພລດຟອມ",
+  "covSub": "ໃຊ້ຟຣີ · ອັບເດດທຸກມື້ຈາກຂໍ້ມູນສາທາລະນະ",
+  "covDignity": "ພວກເຮົາບັນທຶກຮູບແບບແລະຂໍ້ມູນສາທາລະນະທີ່ກວດສອບແລ້ວ — ບໍ່ແມ່ນຮູບຄວາມຮຸນແຮງຂອງຜູ້ເຄາະຮ້າຍ.",
+  "covM1": "ກຳປູເຈຍ, 1975–79",
+  "covM2": "ໂຣຮິງຢາ, ມຽນມາ",
+  "covM3": "ມາຣາວີ ແລະອື່ນໆ"
  },
  "tet": {
   "lede": "Painel avizu sedu gratuitu ba governu, sosiedade sivíl no ONG sira. Pontuasaun risku husi Lab hatudu hamutuk ho dadus públiku ne'ebé atualiza automátiku loroloron.",
@@ -1179,6 +1260,15 @@ window.T={
   "aboutLink": "Kona-ba Scarecrow →",
   "aboutTitle": "KONA-BA SCARECROW",
   "aboutSub": "Ami mak se no oinsá ami mantein independénsia",
-  "prevLearn": "Oinsá kuadru ne'e funsiona, esplika ho imajen"
+  "prevLearn": "Oinsá kuadru ne'e funsiona, esplika ho imajen",
+  "covEyebrow": "Sistema avizu sedu ba Ázia Súl-Lorosa'e",
+  "covHeadline": "Krime boot la akontese derepente. Sinál sira iha ita-nia oin — se ema ida hateke.",
+  "covStory": "Sasuit-manu hein iha toos nia sorin — liu kalan-boot no udan-boot, ba objetivu ida de'it: fó avizu molok kolla lakon. Scarecrow Watch mak guarda ne'e ba Ázia Súl-Lorosa'e: sistema avizu sedu open-source no independente ne'ebé akompaña risku krime boot iha nasaun ASEAN sanulu-resin-ida, atu haree sinál sira enkuantu sei iha tempu atu hala'o asaun.",
+  "covEnter": "Tama ba plataforma",
+  "covSub": "Gratuitu · atualiza loron-loron husi dadus públiku",
+  "covDignity": "Ami dokumenta padrão no dadus públiku ne'ebé verifika ona — la'ós imajen violentu kona-ba vítima sira.",
+  "covM1": "Kamboja, 1975–79",
+  "covM2": "Rohingya, Myanmar",
+  "covM3": "Marawi no liu"
  }
 };
