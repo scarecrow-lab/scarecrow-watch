@@ -171,9 +171,61 @@ footer p{ margin:0 0 10px; }
 :lang(my) :is(h3,.band,.chip,.sig .d,.ev .k,.btn,.lang), :lang(km) :is(h3,.band,.chip,.sig .d,.ev .k,.btn,.lang), :lang(lo) :is(h3,.band,.chip,.sig .d,.ev .k,.btn,.lang){ font-family:var(--sans); letter-spacing:0; text-transform:none; }
 :lang(my) h1, :lang(km) h1, :lang(lo) h1{ font-family:var(--sans); line-height:1.5; }
 :lang(my) body, :lang(km) body, :lang(lo) body{ line-height:1.75; }
-</style>
+
+/* ===== Intro cover (pre-platform) ===== */
+#cover{ position:fixed; inset:0; z-index:60; background:#0d1016; color:#f3efe6;
+  display:flex; flex-direction:column; opacity:1; transition:opacity .7s ease; overflow:hidden; }
+#cover.gone{ opacity:0; pointer-events:none; }
+#cover .scene{ position:absolute; inset:0; width:100%; height:100%; }
+#cover .scene svg{ width:100%; height:100%; display:block; }
+#cover .veil{ position:absolute; inset:0; pointer-events:none;
+  background:linear-gradient(90deg, rgba(8,10,14,.92) 0%, rgba(8,10,14,.72) 38%, rgba(8,10,14,.28) 70%, rgba(8,10,14,.45) 100%),
+             linear-gradient(0deg, rgba(8,10,14,.85) 0%, rgba(8,10,14,0) 42%); }
+#cover .grain{ position:absolute; inset:0; pointer-events:none; opacity:.05; mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+#cover .inner{ position:relative; z-index:2; margin:auto 0 0; width:100%;
+  max-width:1180px; margin-left:auto; margin-right:auto; padding:118px 24px calc(54px + env(safe-area-inset-bottom,0px));
+  display:flex; flex-direction:column; align-items:flex-start; }
+#cover .top{ position:absolute; top:calc(30px + env(safe-area-inset-top,0px)); left:0; right:0;
+  display:flex; align-items:center; gap:11px; }
+#cover .cmark{ width:30px; height:31px; background:#f3efe6; flex:none;
+  -webkit-mask:url(assets/logo-icon.png) center/contain no-repeat; mask:url(assets/logo-icon.png) center/contain no-repeat; }
+#cover .cbrand{ font-family:var(--brand); font-weight:800; font-size:17px; letter-spacing:.11em; color:#f3efe6; }
+#cover .cbrand em{ font-style:normal; font-weight:700; color:var(--gold); margin-left:.32em; }
+#cover .eyebrow{ font-family:var(--mono); font-size:12px; letter-spacing:.26em; text-transform:uppercase;
+  color:var(--gold); margin:0 0 18px; }
+#cover h1.cov{ font-family:var(--serif); font-weight:600; color:#f6f2ea;
+  font-size:clamp(27px,4vw,46px); line-height:1.1; letter-spacing:-.01em; margin:0; max-width:17ch;
+  text-shadow:0 2px 30px rgba(0,0,0,.5); }
+#cover .story{ margin:22px 0 0; max-width:50ch; color:#d8d2c6; font-size:clamp(14.5px,1.5vw,17px); line-height:1.62; }
+#cover .story b{ color:#f3efe6; font-weight:600; }
+#cover .memory{ margin:16px 0 0; font-family:var(--mono); font-size:12.5px; letter-spacing:.04em;
+  color:#b9a98c; display:flex; flex-wrap:wrap; gap:6px 14px; }
+#cover .memory span{ position:relative; padding-left:15px; white-space:nowrap; }
+#cover .memory span::before{ content:""; position:absolute; left:0; top:50%; width:6px; height:6px; margin-top:-3px;
+  border-radius:50%; background:var(--crit); box-shadow:0 0 8px rgba(194,65,79,.7); }
+#cover .cta{ margin:34px 0 0; display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+#cover .enter{ font-family:var(--brand); font-weight:800; font-size:15px; letter-spacing:.03em;
+  color:#13161d; background:var(--gold); border:0; border-radius:999px; padding:15px 30px; cursor:pointer;
+  display:inline-flex; align-items:center; gap:10px; transition:transform .15s, box-shadow .2s, background .2s;
+  box-shadow:0 10px 34px rgba(201,154,75,.3); }
+#cover .enter:hover{ transform:translateY(-1px); background:#d9ab5e; box-shadow:0 14px 40px rgba(201,154,75,.42); }
+#cover .enter:focus-visible{ outline:3px solid #f3efe6; outline-offset:3px; }
+#cover .enter svg{ width:18px; height:18px; }
+#cover .subcta{ font-size:12.5px; color:#9aa0ab; font-family:var(--sans); }
+#cover .dignity{ margin:30px 0 0; font-size:11.5px; color:#7d8392; max-width:52ch; line-height:1.5; font-style:italic; }
+#cover .birds{ animation:covdrift 26s linear infinite; }
+@media (max-width:640px){
+  #cover .inner{ padding-bottom:calc(40px + env(safe-area-inset-bottom,0px)); }
+  #cover .veil{ background:linear-gradient(0deg, rgba(8,10,14,.92) 8%, rgba(8,10,14,.35) 60%, rgba(8,10,14,.5) 100%); }
+  #cover h1.cov{ max-width:none; }
+}
+@keyframes covdrift{ 0%{ transform:translateX(0); } 100%{ transform:translateX(-120px); } }
+@media (prefers-reduced-motion: reduce){ #cover .birds{ animation:none; } #cover{ transition:none; } }
+ #cover .top{ justify-content:space-between; } #cover .covlang{ -webkit-appearance:none; appearance:none; background:rgba(243,239,230,.08); color:#e8e2d6; border:1px solid rgba(243,239,230,.22); border-radius:999px; font:600 12.5px var(--sans); padding:6px 28px 6px 12px; cursor:pointer; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23c99a4b' stroke-width='2'%3E%3Cpath d='M2 4l4 4 4-4'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 10px center; } #cover .covlang:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; } #cover .covlang option{ color:#111; }</style>
 </head>
 <body>
+<div id="cover" role="dialog" aria-modal="true" aria-label="Welcome to Scarecrow Watch"><div class="scene"><svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c0f18"/><stop offset="42%" stop-color="#241f2e"/><stop offset="72%" stop-color="#5a3a33"/><stop offset="100%" stop-color="#9c5b38"/></linearGradient><radialGradient id="sun" cx="66%" cy="86%" r="40%"><stop offset="0" stop-color="#e8a860" stop-opacity=".85"/><stop offset="45%" stop-color="#c9774a" stop-opacity=".35"/><stop offset="100%" stop-color="#c9774a" stop-opacity="0"/></radialGradient><linearGradient id="field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a211d"/><stop offset="100%" stop-color="#0c0d12"/></linearGradient></defs><rect width="1600" height="900" fill="url(#sky)"/><rect width="1600" height="900" fill="url(#sun)"/><path d="M0,600 C260,560 470,596 720,576 C1000,554 1240,590 1600,566 L1600,640 L0,640 Z" fill="#3b2a2a" opacity=".55"/><g fill="none" stroke="#1f1a1e" stroke-linecap="round" opacity=".5"><path d="M980,586 C972,540 1000,512 988,470 C980,440 1000,414 992,384" stroke-width="7"/><path d="M1120,588 C1114,556 1130,536 1122,506 C1116,484 1130,466 1124,444" stroke-width="5"/><path d="M860,590 C856,566 868,552 862,528" stroke-width="4"/></g><g class="birds"><path d="M120,150 q7,-6 14,0 q7,-6 14,0" fill="none" stroke="#1b1f29" stroke-width="2.4" stroke-linecap="round" opacity="0.8"/><path d="M175,132 q7,-6 14,0 q7,-6 14,0" fill="none" stroke="#1b1f29" stroke-width="2.4" stroke-linecap="round" opacity="0.65"/><path d="M230,168 q7,-6 14,0 q7,-6 14,0" fill="none" stroke="#1b1f29" stroke-width="2.4" stroke-linecap="round" opacity="0.7"/><path d="M300,120 q7,-6 14,0 q7,-6 14,0" fill="none" stroke="#1b1f29" stroke-width="2.4" stroke-linecap="round" opacity="0.55"/><path d="M360,160 q7,-6 14,0 q7,-6 14,0" fill="none" stroke="#1b1f29" stroke-width="2.4" stroke-linecap="round" opacity="0.6"/><path d="M250,100 q7,-6 14,0 q7,-6 14,0" fill="none" stroke="#1b1f29" stroke-width="2.4" stroke-linecap="round" opacity="0.5"/><path d="M410,138 q7,-6 14,0 q7,-6 14,0" fill="none" stroke="#1b1f29" stroke-width="2.4" stroke-linecap="round" opacity="0.45"/></g><path d="M0,604 C300,588 560,604 820,598 C1120,590 1360,606 1600,596 L1600,900 L0,900 Z" fill="url(#field)"/><g stroke="#120f10" stroke-width="2" opacity=".4"><path d="M-40,690 C500,664 1100,672 1680,654" fill="none"/><path d="M-40,752 C520,724 1120,734 1680,712" fill="none"/><path d="M-40,822 C540,790 1140,800 1680,778" fill="none"/></g><g fill="#0a0b0f" opacity=".5"><polygon points="470,712 505,712 760,900 300,900"/><polygon points="980,686 1000,686 1140,900 880,900"/><polygon points="1270,672 1284,672 1360,900 1200,900"/></g><g transform="translate(1278,672) scale(0.62)" fill="#15171f"><rect x="-3" y="-260" width="6" height="260"/><rect x="-64" y="-212" width="128" height="7"/><polygon points="-52,-206 52,-206 40,-150 44,-120 30,-96 36,-66 20,-74 8,-58 -6,-74 -22,-62 -30,-92 -44,-118 -40,-150"/><ellipse cx="-62" cy="-206" rx="12" ry="26"/><ellipse cx="62" cy="-206" rx="12" ry="26"/><circle cx="0" cy="-232" r="21"/><polygon points="-30,-246 30,-246 0,-286"/><rect x="-38" y="-248" width="76" height="6" rx="3"/></g><g transform="translate(992,686) scale(0.82)" fill="#121319"><rect x="-3" y="-260" width="6" height="260"/><rect x="-64" y="-212" width="128" height="7"/><polygon points="-52,-206 52,-206 40,-150 44,-120 30,-96 36,-66 20,-74 8,-58 -6,-74 -22,-62 -30,-92 -44,-118 -40,-150"/><ellipse cx="-62" cy="-206" rx="12" ry="26"/><ellipse cx="62" cy="-206" rx="12" ry="26"/><circle cx="0" cy="-232" r="21"/><polygon points="-30,-246 30,-246 0,-286"/><rect x="-38" y="-248" width="76" height="6" rx="3"/></g><g transform="translate(488,712) scale(1.18)" fill="#0c0d12"><rect x="-3" y="-260" width="6" height="260"/><rect x="-64" y="-212" width="128" height="7"/><polygon points="-52,-206 52,-206 40,-150 44,-120 30,-96 36,-66 20,-74 8,-58 -6,-74 -22,-62 -30,-92 -44,-118 -40,-150"/><ellipse cx="-62" cy="-206" rx="12" ry="26"/><ellipse cx="62" cy="-206" rx="12" ry="26"/><circle cx="0" cy="-232" r="21"/><polygon points="-30,-246 30,-246 0,-286"/><rect x="-38" y="-248" width="76" height="6" rx="3"/></g></svg></div><div class="veil"></div><div class="grain"></div><div class="top"><span class="cmark" role="img" aria-label="Scarecrow"></span><span class="cbrand">SCARECROW<em>WATCH</em></span><label style="position:absolute;left:-9999px" for="covLang">Language</label><select class="covlang" id="covLang"></select></div><div class="inner"><p class="eyebrow" data-i="covEyebrow">An early-warning watch for Southeast Asia</p><h1 class="cov" data-i="covHeadline">Atrocities are never sudden. The warnings stand in plain sight — if someone is watching.</h1><p class="story" data-i="covStory">A scarecrow keeps watch at the edge of the field — through dusk and storm, for one purpose: to raise the alarm before the harvest is lost. Scarecrow Watch is that sentinel for Southeast Asia: an independent, open-source early-warning system tracking mass-atrocity risk across the eleven ASEAN states, so the signs are seen while there is still time to act.</p><div class="memory" aria-label="Why this matters"><span data-i="covM1">Cambodia, 1975–79</span><span data-i="covM2">Rohingya, Myanmar</span><span data-i="covM3">Marawi &amp; beyond</span></div><div class="cta"><button class="enter" id="enterBtn" type="button"><span data-i="covEnter">Enter the platform</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></button><span class="subcta" data-i="covSub">Free to use · updated daily from public data</span></div><p class="dignity" data-i="covDignity">We document patterns and verified public data — not graphic images of victims. The region remembers what happens when no one keeps watch.</p></div></div><script>(function(){try{if(sessionStorage.getItem("sw-entered")==="1"){var c=document.getElementById("cover");if(c)c.style.display="none";}}catch(e){}})();</script>
 <svg id="bgmap" aria-hidden="true" focusable="false"></svg>
 <div class="wrap">
   <header>
@@ -275,7 +327,7 @@ async function load(){
 function renderStatic(){
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i]").forEach(n => { const v = t(n.dataset.i); if (typeof v === "string") n.textContent = v; });
-  $("#langSel").value = lang;
+  $("#langSel").value = lang; { const cs = document.getElementById("covLang"); if (cs) cs.value = lang; }
   if ($("#err").style.display === "block") $("#err").textContent = t("loadErr");
 }
 
@@ -686,6 +738,7 @@ function render(){ renderStatic(); if (!D) return; renderFresh(); renderList(); 
 const sel = $("#langSel");
 LANGS.forEach(l => { const o = el("option", null, l.name); o.value = l.code; sel.append(o); });
 sel.onchange = () => { lang = sel.value; try { localStorage.setItem("sw-lang", lang); } catch(e){} render(); };
+const csel = document.getElementById("covLang"); if (csel){ LANGS.forEach(l => { const o = el("option", null, l.name); o.value = l.code; csel.append(o); }); csel.value = lang; csel.onchange = () => { lang = csel.value; try { localStorage.setItem("sw-lang", lang); } catch(e){} render(); }; }
 $("#theme").onclick = () => {
   const r = document.documentElement, dark = r.dataset.theme ? r.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
   r.dataset.theme = dark ? "light" : "dark";
@@ -700,6 +753,23 @@ $("#theme").onclick = () => {
 renderStatic();
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", load); else load();
 setTimeout(initBgMap, 300);
+</script>
+<script>
+(function(){
+  var cover = document.getElementById("cover"), btn = document.getElementById("enterBtn");
+  if(!cover || !btn) return;
+  function enter(){
+    try{ sessionStorage.setItem("sw-entered","1"); }catch(e){}
+    cover.classList.add("gone");
+    var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    setTimeout(function(){ cover.style.display="none";
+      var h=document.querySelector(".wrap h1"); if(h){ h.setAttribute("tabindex","-1"); h.focus(); }
+      window.scrollTo({top:0});
+    }, reduce ? 0 : 700);
+  }
+  btn.addEventListener("click", enter);
+  document.addEventListener("keydown", function(e){ if(e.key==="Escape" && cover.style.display!=="none") enter(); });
+})();
 </script>
 </body>
 </html>
