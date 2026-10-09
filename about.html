@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About Scarecrow</title>
+<meta name="description" content="Who runs Scarecrow Watch, how it is structured, how assessments are made, and how it stays independent.">
+<link rel="icon" href="assets/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14181f; --panel:#1c222c; --panel-2:#232a35; --line:#333d4b;
+  --ink:#e9e6df; --ink-dim:#a9b0bc; --ink-faint:#7c8596; --gold:#c99a4b; --green:#5aa38c; --red:#d0596a;
+  --gold-soft:rgba(201,154,75,.14); --green-soft:rgba(90,163,140,.14);
+  --sans:'IBM Plex Sans',-apple-system,'Segoe UI',sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace; --brand:'Montserrat',var(--sans);
+  --glass:rgba(28,34,44,.82); --shadow:0 1px 2px rgba(0,0,0,.25), 0 10px 30px rgba(0,0,0,.25);
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root[data-theme="light"]{ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#737a85; --gold:#9a6f27; --green:#3f7d6a; --red:#b5414f; --gold-soft:rgba(168,122,47,.12); --green-soft:rgba(63,125,106,.12); --glass:rgba(255,255,255,.86); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); }
+@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#737a85; --gold:#9a6f27; --green:#3f7d6a; --red:#b5414f; --gold-soft:rgba(168,122,47,.12); --green-soft:rgba(63,125,106,.12); --glass:rgba(255,255,255,.86); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); } }
+*,*::before,*::after{ box-sizing:inherit; }
+body{ margin:0; color:var(--ink); font:16px/1.6 var(--sans); background:radial-gradient(1100px 650px at 90% -10%, rgba(201,154,75,.12), transparent 60%), radial-gradient(900px 600px at -10% 105%, rgba(90,163,140,.09), transparent 60%), var(--bg); background-attachment:fixed; }
+a{ color:var(--gold); }
+.wrap{ max-width:1080px; margin:0 auto; padding:24px 20px 56px; }
+.top{ display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+.wordmark{ display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink); }
+.logo-mark{ width:34px; height:35px; background:var(--ink); -webkit-mask:url(assets/logo-icon.png) center/contain no-repeat; mask:url(assets/logo-icon.png) center/contain no-repeat; flex:none; }
+.brand{ font:800 19px var(--brand); letter-spacing:.05em; }
+.brand em{ font-style:normal; color:var(--gold); margin-left:.3em; font-weight:700; }
+.btn{ display:inline-flex; align-items:center; gap:6px; min-height:40px; padding:8px 16px; border-radius:999px; border:1px solid var(--line); background:var(--panel-2); color:var(--ink); font:500 14px var(--sans); text-decoration:none; cursor:pointer; }
+.btn:hover{ border-color:var(--gold); color:var(--gold); }
+.btn.primary{ background:var(--gold); border-color:var(--gold); color:#14181f; }
+.btn.primary:hover{ color:#14181f; filter:brightness(1.06); }
+
+.hero{ display:grid; grid-template-columns:1.25fr .75fr; gap:32px; align-items:center; padding:56px 0 40px; }
+@media (max-width:780px){ .hero{ grid-template-columns:1fr; padding-top:32px; } .hero .art{ order:-1; max-width:260px; margin:0 auto; } }
+.kicker{ font:500 12px var(--mono); letter-spacing:.14em; text-transform:uppercase; color:var(--gold); }
+h1{ font:800 clamp(34px,5.4vw,56px)/1.05 var(--brand); letter-spacing:-.015em; margin:12px 0 16px; text-wrap:balance; }
+.lede{ font-size:19px; line-height:1.55; color:var(--ink-dim); margin:0 0 24px; max-width:560px; text-wrap:pretty; }
+.art svg{ width:100%; height:auto; display:block; }
+
+section{ margin-top:72px; }
+h2{ font:800 clamp(24px,3.4vw,32px)/1.15 var(--brand); letter-spacing:-.01em; margin:8px 0 12px; text-wrap:balance; }
+.intro{ color:var(--ink-dim); max-width:680px; margin:0 0 28px; text-wrap:pretty; }
+.card{ background:var(--glass); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); padding:24px; }
+.figure{ padding:20px; }
+.figure svg{ width:100%; height:auto; display:block; }
+.caption{ font-size:13px; color:var(--ink-faint); margin:12px 4px 0; }
+
+.grid2{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.grid3{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+@media (max-width:820px){ .grid3{ grid-template-columns:1fr 1fr; } }
+@media (max-width:600px){ .grid2,.grid3{ grid-template-columns:1fr; } }
+.rule{ display:flex; gap:14px; align-items:flex-start; padding:18px; }
+.rule svg{ flex:none; width:28px; height:28px; color:var(--gold); margin-top:2px; }
+.rule h3{ font:700 16px/1.3 var(--brand); margin:0 0 4px; }
+.rule p{ margin:0; color:var(--ink-dim); font-size:15px; line-height:1.5; }
+.status{ display:inline-block; font:500 11px var(--mono); letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:999px; border:1px solid currentColor; }
+
+.chips{ display:flex; flex-wrap:wrap; gap:8px; }
+.chip{ font-size:14px; padding:6px 12px; border-radius:999px; background:var(--panel-2); border:1px solid var(--line); }
+.chip b{ font-weight:600; }
+
+.founder{ display:grid; grid-template-columns:auto 1fr; gap:22px; align-items:start; }
+@media (max-width:560px){ .founder{ grid-template-columns:1fr; } }
+.mono-badge{ width:84px; height:84px; border-radius:50%; display:grid; place-items:center; background:var(--gold-soft); border:1px solid var(--gold); font:800 28px var(--brand); color:var(--gold); }
+.founder h3{ font:800 22px var(--brand); margin:0; }
+.founder .role{ color:var(--gold); font-weight:600; margin:2px 0 12px; }
+.founder ul{ margin:0; padding-left:18px; color:var(--ink-dim); }
+.founder li{ margin:4px 0; }
+
+.cta{ text-align:center; padding:40px 24px; background:linear-gradient(var(--gold-soft), var(--gold-soft)), var(--panel); }
+.cta h2{ margin-top:0; }
+.cta .row{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:18px; }
+footer{ margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:13px; color:var(--ink-faint); display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.figure .only-wide{ display:block; } .figure .only-narrow{ display:none; }
+@media (max-width:640px){ .figure .only-wide{ display:none; } .figure .only-narrow{ display:block; max-width:420px; margin:0 auto; } .figure{ padding:14px; } }
+[hidden]{ display:none !important; }
+.placeholder{ color:var(--red); font-family:var(--mono); font-size:.92em; }
+@media (prefers-reduced-motion: no-preference){ .reveal{ animation:rise .6s ease-out both; } }
+@keyframes rise{ from{ opacity:0; transform:translateY(10px); } to{ opacity:1; transform:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="wordmark" href="./"><span class="logo-mark" role="img" aria-label="Scarecrow"></span><span class="brand">SCARECROW<em>WATCH</em></span></a>
+    <div style="display:flex; gap:8px">
+      <a class="btn" href="./">← Back to the dashboard</a>
+      <button class="btn" id="themeBtn" type="button">Theme</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="reveal">
+      <div class="kicker">About Scarecrow</div>
+      <h1>Someone has to stand watch over the field.</h1>
+      <p class="lede">Mass atrocities give warning, often months or years ahead. Scarecrow brings those warnings together for all 11 ASEAN states, openly and free of charge, so that communities and responders can act earlier.</p>
+      <div style="display:flex; gap:10px; flex-wrap:wrap">
+        <a class="btn primary" href="#involved">Work with us</a>
+        <a class="btn" href="#structure">How we are organised</a>
+      </div>
+    </div>
+    <div class="art reveal" aria-hidden="true">
+      <!-- Rice sheaf under a watchful sky: decorative -->
+      <svg viewBox="0 0 320 320">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="40%" r="55%"><stop offset="0" stop-color="var(--gold)" stop-opacity=".28"/><stop offset="1" stop-color="var(--gold)" stop-opacity="0"/></radialGradient>
+        </defs>
+        <circle cx="160" cy="140" r="150" fill="url(#glow)"/>
+        <g fill="none" stroke="var(--line)" stroke-width="1">
+          <circle cx="160" cy="150" r="70"/><circle cx="160" cy="150" r="105" stroke-dasharray="3 6"/><circle cx="160" cy="150" r="140" stroke-dasharray="1 8"/>
+        </g>
+        <g fill="none" stroke="var(--gold)" stroke-width="3.2" stroke-linecap="round">
+          <path d="M160 300 C160 230 160 160 160 70"/>
+          <path d="M160 150 C132 132 114 108 108 76"/><path d="M160 150 C188 132 206 108 212 76"/>
+          <path d="M160 196 C122 178 96 150 86 112"/><path d="M160 196 C198 178 224 150 234 112"/>
+          <path d="M160 240 C116 224 84 196 70 156"/><path d="M160 240 C204 224 236 196 250 156"/>
+        </g>
+        <g fill="var(--gold)">
+          <ellipse cx="108" cy="72" rx="5" ry="10" transform="rotate(-25 108 72)"/><ellipse cx="212" cy="72" rx="5" ry="10" transform="rotate(25 212 72)"/>
+          <ellipse cx="85" cy="108" rx="5" ry="10" transform="rotate(-35 85 108)"/><ellipse cx="235" cy="108" rx="5" ry="10" transform="rotate(35 235 108)"/>
+          <ellipse cx="69" cy="152" rx="5" ry="10" transform="rotate(-45 69 152)"/><ellipse cx="251" cy="152" rx="5" ry="10" transform="rotate(45 251 152)"/>
+          <ellipse cx="160" cy="62" rx="5.5" ry="11"/>
+        </g>
+        <path d="M150 262 h20 M146 272 h28" stroke="var(--ink-dim)" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- STRUCTURE -->
+  <section id="structure">
+    <div class="kicker">01 · Structure</div>
+    <h2>Two arms, one firewall</h2>
+    <p class="intro">Scarecrow is designed as two separate bodies. The public-interest work never depends on, or answers to, anyone who pays for analysis.</p>
+    <div class="card figure reveal">
+      <svg class="only-wide" viewBox="0 0 960 360" role="img" aria-label="Diagram: Scarecrow Lab publishes the free Scarecrow Watch. Only verified, published findings pass through the data firewall to Scarecrow Intelligence. Tips and case files stay in the Lab.">
+        <defs>
+          <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ink-faint)"/></marker>
+          <pattern id="brick" width="24" height="16" patternUnits="userSpaceOnUse"><path d="M0 0H24M0 8H24M12 0V8M0 8V16M24 8V16" stroke="var(--gold)" stroke-opacity=".35" stroke-width="1" fill="none"/></pattern>
+        </defs>
+        <!-- Lab -->
+        <rect x="20" y="40" width="330" height="280" rx="18" fill="var(--green-soft)" stroke="var(--green)" stroke-width="1.5"/>
+        <text x="44" y="78" font-family="Montserrat, sans-serif" font-weight="800" font-size="22" fill="var(--ink)">Scarecrow Lab</text>
+        <text x="44" y="100" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--green)" letter-spacing="1">NON-PROFIT · IN FORMATION</text>
+        <rect x="44" y="120" width="282" height="56" rx="10" fill="var(--panel)" stroke="var(--line)"/>
+        <text x="60" y="144" font-family="IBM Plex Sans, sans-serif" font-weight="600" font-size="15" fill="var(--ink)">Scarecrow Watch</text>
+        <text x="60" y="164" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="var(--ink-dim)">Free public dashboard · 11 countries</text>
+        <rect x="44" y="188" width="282" height="56" rx="10" fill="var(--panel)" stroke="var(--line)"/>
+        <text x="60" y="212" font-family="IBM Plex Sans, sans-serif" font-weight="600" font-size="15" fill="var(--ink)">Investigations</text>
+        <text x="60" y="232" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="var(--ink-dim)">Open-source, published in the public interest</text>
+        <rect x="44" y="256" width="282" height="44" rx="10" fill="none" stroke="var(--red)" stroke-dasharray="4 4"/>
+        <text x="60" y="283" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="var(--red)">Tips · witnesses · case files: stay here</text>
+        <!-- Firewall -->
+        <rect x="430" y="40" width="100" height="280" rx="10" fill="url(#brick)" stroke="var(--gold)" stroke-width="1.5"/>
+        <rect x="430" y="40" width="100" height="280" rx="10" fill="var(--gold-soft)"/>
+        <text x="480" y="176" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="800" font-size="15" fill="var(--gold)">DATA</text>
+        <text x="480" y="196" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="800" font-size="15" fill="var(--gold)">FIREWALL</text>
+        <!-- Intelligence -->
+        <rect x="610" y="40" width="330" height="280" rx="18" fill="var(--panel-2)" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="6 5"/>
+        <text x="634" y="78" font-family="Montserrat, sans-serif" font-weight="800" font-size="22" fill="var(--ink)">Scarecrow Intelligence</text>
+        <text x="634" y="100" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--ink-faint)" letter-spacing="1">SEPARATE COMPANY · PLANNED</text>
+        <text x="634" y="140" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">Human-rights due diligence for</text>
+        <text x="634" y="160" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">companies and investors that must</text>
+        <text x="634" y="180" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">check their supply chains.</text>
+        <text x="634" y="224" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">Its income can license the Lab's</text>
+        <text x="634" y="244" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">published findings, which helps</text>
+        <text x="634" y="264" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">fund public work without steering it.</text>
+        <!-- arrows -->
+        <path d="M350 150 H422" stroke="var(--ink-faint)" stroke-width="2" marker-end="url(#arr)"/>
+        <text x="386" y="138" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-faint)">published</text>
+        <path d="M538 150 H602" stroke="var(--ink-faint)" stroke-width="2" marker-end="url(#arr)"/>
+        <text x="570" y="138" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-faint)">only</text>
+        <path d="M350 278 H418" stroke="var(--red)" stroke-width="2"/><path d="M418 268 l10 10 M418 288 l10 -10" stroke="var(--red)" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M602 210 H538" stroke="var(--ink-faint)" stroke-width="2" stroke-dasharray="3 4"/><path d="M530 200 l10 10 M530 220 l10 -10" stroke="var(--red)" stroke-width="2.4" stroke-linecap="round" transform="translate(4 0)"/>
+        <text x="570" y="232" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="11" fill="var(--ink-faint)">no say</text>
+      </svg>
+
+      <svg class="only-narrow" viewBox="0 0 360 640" role="img" aria-label="Diagram: Scarecrow Lab publishes the free Scarecrow Watch. Only verified, published findings pass through the data firewall to Scarecrow Intelligence. Tips and case files stay in the Lab.">
+        <defs><marker id="arrN" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--ink-faint)"/></marker>
+        <pattern id="brickN" width="24" height="16" patternUnits="userSpaceOnUse"><path d="M0 0H24M0 8H24M12 0V8M0 8V16M24 8V16" stroke="var(--gold)" stroke-opacity=".35" fill="none"/></pattern></defs>
+        <rect x="8" y="8" width="344" height="262" rx="16" fill="var(--green-soft)" stroke="var(--green)" stroke-width="1.5"/>
+        <text x="28" y="44" font-family="Montserrat, sans-serif" font-weight="800" font-size="21" fill="var(--ink)">Scarecrow Lab</text>
+        <text x="28" y="66" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--green)" letter-spacing="1">NON-PROFIT · IN FORMATION</text>
+        <rect x="24" y="82" width="312" height="54" rx="10" fill="var(--panel)" stroke="var(--line)"/>
+        <text x="38" y="105" font-family="IBM Plex Sans, sans-serif" font-weight="600" font-size="16" fill="var(--ink)">Scarecrow Watch</text>
+        <text x="38" y="125" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">Free public dashboard · 11 countries</text>
+        <rect x="24" y="146" width="312" height="54" rx="10" fill="var(--panel)" stroke="var(--line)"/>
+        <text x="38" y="169" font-family="IBM Plex Sans, sans-serif" font-weight="600" font-size="16" fill="var(--ink)">Investigations</text>
+        <text x="38" y="189" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">Open-source, in the public interest</text>
+        <rect x="24" y="212" width="312" height="42" rx="10" fill="none" stroke="var(--red)" stroke-dasharray="4 4"/>
+        <text x="180" y="238" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--red)">Tips · witnesses · case files: stay here</text>
+        <path d="M180 272 V318" stroke="var(--ink-faint)" stroke-width="2" marker-end="url(#arrN)"/>
+        <text x="192" y="300" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="var(--ink-faint)">published findings only</text>
+        <rect x="8" y="324" width="344" height="60" rx="10" fill="url(#brickN)" stroke="var(--gold)" stroke-width="1.5"/>
+        <rect x="8" y="324" width="344" height="60" rx="10" fill="var(--gold-soft)"/>
+        <text x="180" y="361" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="800" font-size="17" fill="var(--gold)">DATA FIREWALL</text>
+        <path d="M180 386 V432" stroke="var(--ink-faint)" stroke-width="2" marker-end="url(#arrN)"/>
+        <text x="192" y="414" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="var(--ink-faint)">clients have no say</text>
+        <rect x="8" y="438" width="344" height="194" rx="16" fill="var(--panel-2)" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="6 5"/>
+        <text x="28" y="474" font-family="Montserrat, sans-serif" font-weight="800" font-size="21" fill="var(--ink)">Scarecrow Intelligence</text>
+        <text x="28" y="496" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--ink-faint)" letter-spacing="1">SEPARATE COMPANY · PLANNED</text>
+        <text x="28" y="528" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="var(--ink-dim)">Human-rights due diligence for</text>
+        <text x="28" y="550" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="var(--ink-dim)">companies and investors.</text>
+        <text x="28" y="582" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="var(--ink-dim)">Licensing fees help fund public</text>
+        <text x="28" y="604" font-family="IBM Plex Sans, sans-serif" font-size="15" fill="var(--ink-dim)">work without steering it.</text>
+      </svg>
+      <p class="caption">The Lab owns all evidence. Only findings that are verified and already published can cross the firewall. Clients cannot see, commission, delay or stop Lab work.</p>
+    </div>
+  </section>
+
+  <!-- RULES -->
+  <section>
+    <div class="kicker">02 · Safeguards</div>
+    <h2>Rules we hold ourselves to</h2>
+    <p class="intro">These are built into how the system works, not only written in a policy.</p>
+    <div class="grid3">
+      <div class="card rule reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6l-8-3z"/></svg><div><h3>Sources stay protected</h3><p>Tips, witness accounts and case files never appear publicly or reach any client.</p></div></div>
+      <div class="card rule reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="m16 11 2 2 4-4"/></svg><div><h3>Two people sign off</h3><p>One analyst edits an assessment; a different analyst must approve it before it is published.</p></div></div>
+      <div class="card rule reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 9v6M14 9v6"/></svg><div><h3>Big jumps wait for a human</h3><p>When automated data moves a score sharply, the change is held until an analyst checks it.</p></div></div>
+      <div class="card rule reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><h3>No exact locations</h3><p>Map hotspots are shown at province level, so no dot can point to a camp, village or safe house.</p></div></div>
+      <div class="card rule reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg><div><h3>Clients can't steer the Lab</h3><p>Anyone under active Lab investigation cannot become a client, and no client can commission or stop Lab work.</p></div></div>
+      <div class="card rule reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5M4 19h16"/><path d="M8 15l3-4 3 2 5-6"/></svg><div><h3>Funding disclosed yearly</h3><p>We will publish our funders and the sectors of any clients every year.</p></div></div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section>
+    <div class="kicker">03 · Method</div>
+    <h2>From public data to a published assessment</h2>
+    <p class="intro">Machines gather and flag; people judge. Every score links to the evidence behind it.</p>
+    <div class="card figure reveal">
+      <svg class="only-wide" viewBox="0 0 960 230" role="img" aria-label="Pipeline: public data sources, automated checks, Lab review by two analysts, public dashboard.">
+        <defs><marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--gold)"/></marker></defs>
+        <g font-family="IBM Plex Sans, sans-serif">
+          <rect x="10" y="30" width="200" height="150" rx="14" fill="var(--panel)" stroke="var(--line)"/>
+          <text x="30" y="62" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--gold)" letter-spacing="1">1 · COLLECT</text>
+          <text x="30" y="90" font-size="16" font-weight="600" fill="var(--ink)">Public data</text>
+          <text x="30" y="114" font-size="13" fill="var(--ink-dim)">UN agencies, World Bank,</text>
+          <text x="30" y="132" font-size="13" fill="var(--ink-dim)">V-Dem, UCDP, news and</text>
+          <text x="30" y="150" font-size="13" fill="var(--ink-dim)">curated civil-society sources</text>
+          <rect x="255" y="30" width="200" height="150" rx="14" fill="var(--panel)" stroke="var(--line)"/>
+          <text x="275" y="62" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--gold)" letter-spacing="1">2 · SCORE &amp; FLAG</text>
+          <text x="275" y="90" font-size="16" font-weight="600" fill="var(--ink)">Automated checks</text>
+          <text x="275" y="114" font-size="13" fill="var(--ink-dim)">Measurable indicators</text>
+          <text x="275" y="132" font-size="13" fill="var(--ink-dim)">scored daily; sharp changes</text>
+          <text x="275" y="150" font-size="13" fill="var(--ink-dim)">held for review</text>
+          <rect x="500" y="30" width="200" height="150" rx="14" fill="var(--gold-soft)" stroke="var(--gold)" stroke-width="1.5"/>
+          <text x="520" y="62" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--gold)" letter-spacing="1">3 · JUDGE</text>
+          <text x="520" y="90" font-size="16" font-weight="600" fill="var(--ink)">Lab review</text>
+          <text x="520" y="114" font-size="13" fill="var(--ink-dim)">Analysts weigh context;</text>
+          <text x="520" y="132" font-size="13" fill="var(--ink-dim)">a second analyst approves</text>
+          <circle cx="652" cy="160" r="9" fill="none" stroke="var(--gold)" stroke-width="1.6"/><circle cx="676" cy="160" r="9" fill="none" stroke="var(--gold)" stroke-width="1.6"/>
+          <rect x="745" y="30" width="200" height="150" rx="14" fill="var(--green-soft)" stroke="var(--green)" stroke-width="1.5"/>
+          <text x="765" y="62" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--green)" letter-spacing="1">4 · PUBLISH</text>
+          <text x="765" y="90" font-size="16" font-weight="600" fill="var(--ink)">Scarecrow Watch</text>
+          <text x="765" y="114" font-size="13" fill="var(--ink-dim)">Free, sourced, in 10</text>
+          <text x="765" y="132" font-size="13" fill="var(--ink-dim)">ASEAN languages</text>
+        </g>
+        <path d="M212 105 H248" stroke="var(--gold)" stroke-width="2" marker-end="url(#arr2)"/>
+        <path d="M457 105 H493" stroke="var(--gold)" stroke-width="2" marker-end="url(#arr2)"/>
+        <path d="M702 105 H738" stroke="var(--gold)" stroke-width="2" marker-end="url(#arr2)"/>
+        <text x="480" y="214" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="13" fill="var(--ink-faint)">Frameworks: UN Framework of Analysis for Atrocity Crimes (8 risk factors) · AIPG PREVENT (7 risk categories)</text>
+      </svg>
+      <svg class="only-narrow" viewBox="0 0 360 540" role="img" aria-label="Pipeline: public data sources, automated checks, Lab review by two analysts, public dashboard.">
+        <defs><marker id="arrN2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--gold)"/></marker></defs>
+        <rect x="8" y="8" width="344" height="104" rx="14" fill="var(--panel)" stroke="var(--line)" stroke-width="1.5"/>
+        <text x="26" y="38" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--gold)" letter-spacing="1">1 · COLLECT</text>
+        <text x="26" y="62" font-family="IBM Plex Sans, sans-serif" font-weight="600" font-size="17" fill="var(--ink)">Public data</text>
+        <text x="26" y="84" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">UN agencies, World Bank, V-Dem, UCDP,</text>
+        <text x="26" y="102" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">news and curated civil-society sources</text>
+        <path d="M180 114 V136" stroke="var(--gold)" stroke-width="2" marker-end="url(#arrN2)"/>
+        <rect x="8" y="140" width="344" height="104" rx="14" fill="var(--panel)" stroke="var(--line)" stroke-width="1.5"/>
+        <text x="26" y="170" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--gold)" letter-spacing="1">2 · SCORE &amp; FLAG</text>
+        <text x="26" y="194" font-family="IBM Plex Sans, sans-serif" font-weight="600" font-size="17" fill="var(--ink)">Automated checks</text>
+        <text x="26" y="216" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">Measurable indicators scored daily;</text>
+        <text x="26" y="234" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">sharp changes held for review</text>
+        <path d="M180 246 V268" stroke="var(--gold)" stroke-width="2" marker-end="url(#arrN2)"/>
+        <rect x="8" y="272" width="344" height="104" rx="14" fill="var(--gold-soft)" stroke="var(--gold)" stroke-width="1.5"/>
+        <text x="26" y="302" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--gold)" letter-spacing="1">3 · JUDGE</text>
+        <text x="26" y="326" font-family="IBM Plex Sans, sans-serif" font-weight="600" font-size="17" fill="var(--ink)">Lab review</text>
+        <text x="26" y="348" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">Analysts weigh context;</text>
+        <text x="26" y="366" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">a second analyst must approve</text>
+        <path d="M180 378 V400" stroke="var(--gold)" stroke-width="2" marker-end="url(#arrN2)"/>
+        <rect x="8" y="404" width="344" height="104" rx="14" fill="var(--green-soft)" stroke="var(--green)" stroke-width="1.5"/>
+        <text x="26" y="434" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--green)" letter-spacing="1">4 · PUBLISH</text>
+        <text x="26" y="458" font-family="IBM Plex Sans, sans-serif" font-weight="600" font-size="17" fill="var(--ink)">Scarecrow Watch</text>
+        <text x="26" y="480" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">Free, sourced, in 10</text>
+        <text x="26" y="498" font-family="IBM Plex Sans, sans-serif" font-size="14" fill="var(--ink-dim)">ASEAN languages</text>
+      </svg>
+      <p class="caption only-narrow">Frameworks: UN Framework of Analysis for Atrocity Crimes (8 risk factors) · AIPG PREVENT (7 risk categories)</p>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section>
+    <div class="kicker">04 · People</div>
+    <h2>Who is behind Scarecrow</h2>
+    <div class="card founder reveal">
+      <div class="mono-badge" aria-hidden="true">WI</div>
+      <div>
+        <h3>Watchara Intrasombat</h3>
+        <div class="role">Founder, Scarecrow Lab</div>
+        <ul>
+          <li>Background in mass-atrocity prevention, human rights, humanitarian aid and refugee protection</li>
+          <li>ESG analyst and auditor with B Lab partner institutions; has assessed 60+ companies across Europe, Asia, the Americas and Oceania</li>
+          <li>Trained with the Auschwitz Institute for the Prevention of Genocide and Mass Atrocities (AIPG), including its course on atrocity prevention and migration in ASEAN</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVOLVED -->
+  <section id="involved">
+    <div class="card cta reveal">
+      <div class="kicker">05 · Get involved</div>
+      <h2>Prevention needs a regional network</h2>
+      <p class="intro" style="margin:0 auto 18px">We are looking for people and organisations who share the goal.</p>
+      <div class="chips" style="justify-content:center">
+        <span class="chip"><b>Civil-society organisations</b> in each ASEAN country</span>
+        <span class="chip"><b>Native-language reviewers</b> for our translations</span>
+        <span class="chip"><b>Researchers &amp; OSINT volunteers</b></span>
+        <span class="chip"><b>Funders &amp; legal advisers</b></span>
+      </div>
+      <div class="row">
+        <a class="btn primary" id="mailBtn" href="#" hidden>Email the team</a>
+        <span class="placeholder" id="mailMissing">[CONTACT EMAIL: set it in data/site.json]</span>
+        <a class="btn" href="./">Explore the dashboard</a>
+      </div>
+      <p class="caption" style="margin-top:16px">Email is not anonymous. For sensitive information, write first to ask for a secure channel.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Scarecrow — ASEAN Intelligence &amp; Atrocities Monitor</span>
+    <a href="./">Scarecrow Watch</a>
+  </footer>
+</div>
+<script>
+"use strict";
+document.getElementById("themeBtn").onclick = () => {
+  const r = document.documentElement, dark = r.dataset.theme ? r.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
+  r.dataset.theme = dark ? "light" : "dark";
+};
+fetch("data/site.json", {cache:"no-store"}).then(r => r.ok ? r.json() : {}).then(s => {
+  const e = (s && s.contact_email) || "";
+  if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e) && !/CHANGE-ME/i.test(e)){
+    const b = document.getElementById("mailBtn"); b.href = "mailto:" + e + "?subject=" + encodeURIComponent("Scarecrow — getting involved"); b.hidden = false;
+    document.getElementById("mailMissing").hidden = true;
+  }
+}).catch(() => {});
+</script>
+</body>
+</html>
