@@ -23,7 +23,13 @@
 *,*::before,*::after{ box-sizing:inherit; }
 body{ margin:0; color:var(--ink); font:16px/1.6 var(--sans); background:radial-gradient(1100px 650px at 90% -10%, rgba(201,154,75,.12), transparent 60%), radial-gradient(900px 600px at -10% 105%, rgba(90,163,140,.09), transparent 60%), var(--bg); background-attachment:fixed; }
 a{ color:var(--gold); }
-.wrap{ max-width:1080px; margin:0 auto; padding:24px 20px 56px; }
+.wrap{ max-width:1080px; margin:0 auto; padding:24px 20px 56px; position:relative; z-index:1; }
+/* Faint full logo behind the page */
+.watermark{ position:fixed; z-index:0; pointer-events:none; left:50%; top:52%; width:min(78vw,760px); aspect-ratio:636/582; transform:translate(-50%,-50%);
+  background:var(--ink); opacity:.045; -webkit-mask:url(assets/logo-full.png) center/contain no-repeat; mask:url(assets/logo-full.png) center/contain no-repeat; }
+:root[data-theme="light"] .watermark{ opacity:.06; }
+@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]) .watermark{ opacity:.06; } }
+@media (max-width:640px){ .watermark{ width:120vw; top:45%; } }
 .top{ display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
 .wordmark{ display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink); }
 .logo-mark{ width:34px; height:35px; background:var(--ink); -webkit-mask:url(assets/logo-icon.png) center/contain no-repeat; mask:url(assets/logo-icon.png) center/contain no-repeat; flex:none; }
@@ -84,6 +90,7 @@ footer{ margin-top:56px; padding-top:20px; border-top:1px solid var(--line); fon
 </style>
 </head>
 <body>
+<div class="watermark" aria-hidden="true"></div>
 <div class="wrap">
   <div class="top">
     <a class="wordmark" href="./"><span class="logo-mark" role="img" aria-label="Scarecrow"></span><span class="brand">SCARECROW<em>WATCH</em></span></a>

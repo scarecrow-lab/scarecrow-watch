@@ -105,6 +105,18 @@ section.panel{ margin-top:18px; }
 footer{ margin-top:30px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-dim); max-width:820px; }
 footer p{ margin:0 0 10px; }
 #err{ display:none; }
+.about-cta{ display:flex; align-items:center; gap:16px; max-width:520px; margin:6px 0 22px; padding:16px 20px; border-radius:14px; text-decoration:none; color:var(--ink);
+  background:linear-gradient(135deg, rgba(201,154,75,.22), rgba(201,154,75,.06)); border:1.5px solid var(--gold); box-shadow:var(--shadow); transition:transform .15s, box-shadow .15s; }
+.about-cta:hover{ transform:translateY(-2px); box-shadow:0 2px 4px rgba(0,0,0,.2), 0 16px 36px rgba(0,0,0,.22); }
+.about-cta:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+.about-mark{ width:46px; height:47px; flex:none; background:var(--gold); -webkit-mask:url(assets/logo-icon.png) center/contain no-repeat; mask:url(assets/logo-icon.png) center/contain no-repeat; }
+.about-text{ display:flex; flex-direction:column; gap:2px; flex:1; min-width:0; }
+.about-title{ font:800 21px/1.15 var(--brand); letter-spacing:.06em; color:var(--ink); }
+.about-sub{ font-size:14px; color:var(--ink-dim); }
+.about-arrow{ font:800 24px var(--brand); color:var(--gold); transition:transform .15s; }
+.about-cta:hover .about-arrow{ transform:translateX(4px); }
+:lang(my) .about-title, :lang(km) .about-title, :lang(lo) .about-title, :lang(th) .about-title{ letter-spacing:0; }
+@media (prefers-reduced-motion: reduce){ .about-cta,.about-arrow{ transition:none; } .about-cta:hover{ transform:none; } }
 @media (max-width:820px){
   .list .detail.inline{ border-radius:0 !important; box-shadow:none; border:0; border-bottom:1px solid var(--line); background:var(--panel-2); -webkit-backdrop-filter:none; backdrop-filter:none; padding:16px 14px 20px; animation:drop .22s ease-out; }
   .list .detail.inline h2{ font-size:22px; }
@@ -195,7 +207,11 @@ footer p{ margin:0 0 10px; }
 
   <footer>
     <div class="logo-full" role="img" aria-label="Scarecrow — ASEAN Intelligence &amp; Atrocities Monitor"></div>
-    <p><a class="btn" href="about.html" data-i="aboutLink">About Scarecrow</a></p>
+    <a class="about-cta" href="about.html">
+      <span class="about-mark" aria-hidden="true"></span>
+      <span class="about-text"><span class="about-title" data-i="aboutTitle">ABOUT SCARECROW</span><span class="about-sub" data-i="aboutSub">Who we are and how we stay independent</span></span>
+      <span class="about-arrow" aria-hidden="true">→</span>
+    </a>
     <p><b data-i="fwTitle">Data firewall.</b> <span data-i="fwText"></span></p>
     <p><b data-i="howTitle">How it works.</b> <span data-i="howText"></span></p>
     <p><b data-i="srcTitle">Data sources.</b> <span data-i="srcText"></span> <a href="https://reliefweb.int" target="_blank" rel="noopener">ReliefWeb</a> · <a href="https://www.gdeltproject.org" target="_blank" rel="noopener">GDELT</a> · <a href="https://www.unhcr.org/refugee-statistics/" target="_blank" rel="noopener">UNHCR</a></p>

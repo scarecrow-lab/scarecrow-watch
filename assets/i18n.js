@@ -114,7 +114,9 @@ window.T={
   "kindIgo": "Intergovernmental",
   "showMore": "Show more",
   "curatedNote": "Curated sources are civil-society, media and intergovernmental publishers the Lab follows because they report on human rights in ASEAN. Being listed does not imply partnership with or endorsement of Scarecrow.",
-  "aboutLink": "About Scarecrow →"
+  "aboutLink": "About Scarecrow →",
+  "aboutTitle": "ABOUT SCARECROW",
+  "aboutSub": "Who we are and how we stay independent"
  },
  "th": {
   "lede": "แดชบอร์ดเตือนภัยล่วงหน้าที่ใช้ฟรี สำหรับรัฐบาล ภาคประชาสังคม และ NGO แสดงคะแนนความเสี่ยงที่ Lab ประเมิน คู่กับข้อมูลสาธารณะที่อัปเดตอัตโนมัติทุกวัน",
@@ -229,7 +231,9 @@ window.T={
   "kindIgo": "องค์กรระหว่างรัฐบาล",
   "showMore": "ดูเพิ่มเติม",
   "curatedNote": "แหล่งข่าวที่คัดสรร คือองค์กรภาคประชาสังคม สื่อ และองค์กรระหว่างรัฐบาลที่ Lab ติดตาม เพราะเผยแพร่ข้อมูลด้านสิทธิมนุษยชนในอาเซียน การอยู่ในรายชื่อไม่ได้หมายถึงความเป็นภาคีหรือการรับรอง Scarecrow",
-  "aboutLink": "เกี่ยวกับ Scarecrow →"
+  "aboutLink": "เกี่ยวกับ Scarecrow →",
+  "aboutTitle": "เกี่ยวกับ SCARECROW",
+  "aboutSub": "เราคือใคร และรักษาความเป็นอิสระอย่างไร"
  },
  "id": {
   "lede": "Dasbor peringatan dini gratis untuk pemerintah, masyarakat sipil, dan LSM. Skor risiko yang dinilai Lab ditampilkan bersama data publik yang diperbarui otomatis setiap hari.",
@@ -344,7 +348,9 @@ window.T={
   "kindIgo": "Antarpemerintah",
   "showMore": "Tampilkan lebih banyak",
   "curatedNote": "Sumber terkurasi adalah penerbit masyarakat sipil, media, dan antarpemerintah yang diikuti Lab karena melaporkan HAM di ASEAN. Tercantum di sini tidak berarti bermitra dengan atau mendukung Scarecrow.",
-  "aboutLink": "Tentang Scarecrow →"
+  "aboutLink": "Tentang Scarecrow →",
+  "aboutTitle": "TENTANG SCARECROW",
+  "aboutSub": "Siapa kami dan bagaimana kami tetap independen"
  },
  "vi": {
   "lede": "Bảng cảnh báo sớm miễn phí cho chính phủ, xã hội dân sự và các tổ chức phi chính phủ. Điểm rủi ro do Lab đánh giá được hiển thị cùng dữ liệu công khai tự động cập nhật hằng ngày.",
@@ -459,7 +465,9 @@ window.T={
   "kindIgo": "Liên chính phủ",
   "showMore": "Xem thêm",
   "curatedNote": "Nguồn được chọn lọc là các tổ chức xã hội dân sự, truyền thông và liên chính phủ mà Lab theo dõi vì họ đưa tin về nhân quyền tại ASEAN. Việc có tên ở đây không có nghĩa là đối tác hay ủng hộ Scarecrow.",
-  "aboutLink": "Giới thiệu Scarecrow →"
+  "aboutLink": "Giới thiệu Scarecrow →",
+  "aboutTitle": "VỀ SCARECROW",
+  "aboutSub": "Chúng tôi là ai và cách giữ tính độc lập"
  },
  "ms": {
   "lede": "Papan pemuka amaran awal percuma untuk kerajaan, masyarakat sivil dan NGO. Skor risiko yang dinilai Lab dipaparkan bersama data awam yang dikemas kini secara automatik setiap hari.",
@@ -574,7 +582,9 @@ window.T={
   "kindIgo": "Antara kerajaan",
   "showMore": "Tunjuk lagi",
   "curatedNote": "Sumber pilihan ialah penerbit masyarakat sivil, media dan antara kerajaan yang diikuti Lab kerana melaporkan hak asasi manusia di ASEAN. Disenaraikan tidak bermaksud bekerjasama dengan atau menyokong Scarecrow.",
-  "aboutLink": "Tentang Scarecrow →"
+  "aboutLink": "Tentang Scarecrow →",
+  "aboutTitle": "TENTANG SCARECROW",
+  "aboutSub": "Siapa kami dan cara kami kekal bebas"
  },
  "tl": {
   "lede": "Isang libreng dashboard ng maagang babala para sa mga pamahalaan, civil society at NGO. Ang mga risk score na tinasa ng Lab ay katabi ng pampublikong datos na awtomatikong ina-update araw-araw.",
@@ -689,7 +699,9 @@ window.T={
   "kindIgo": "Intergovernmental",
   "showMore": "Ipakita pa",
   "curatedNote": "Ang mga piniling source ay mga publisher mula sa civil society, media at intergovernmental na sinusubaybayan ng Lab dahil nag-uulat sila tungkol sa karapatang pantao sa ASEAN. Ang pagkakalista ay hindi nangangahulugang partner o nag-eendorso sila sa Scarecrow.",
-  "aboutLink": "Tungkol sa Scarecrow →"
+  "aboutLink": "Tungkol sa Scarecrow →",
+  "aboutTitle": "TUNGKOL SA SCARECROW",
+  "aboutSub": "Sino kami at paano kami nananatiling malaya"
  },
  "my": {
   "lede": "အစိုးရများ၊ အရပ်ဘက်လူ့အဖွဲ့အစည်းများနှင့် NGO များအတွက် အခမဲ့ ကြိုတင်သတိပေးဒက်ရှ်ဘုတ်။ Lab ၏ အန္တရာယ်အမှတ်များကို နေ့စဉ် အလိုအလျောက် အပ်ဒိတ်လုပ်သော အများပြည်သူဒေတာနှင့်အတူ ပြသထားသည်။",
@@ -804,7 +816,9 @@ window.T={
   "kindIgo": "အစိုးရအချင်းချင်း",
   "showMore": "ထပ်ကြည့်ရန်",
   "curatedNote": "ရွေးချယ်ထားသော ရင်းမြစ်များမှာ အာဆီယံ လူ့အခွင့်အရေးအကြောင်း သတင်းထုတ်ပြန်သဖြင့် Lab က လိုက်ကြည့်သော အရပ်ဘက်၊ မီဒီယာနှင့် အစိုးရအချင်းချင်း အဖွဲ့များဖြစ်သည်။ စာရင်းတွင်ပါဝင်ခြင်းသည် Scarecrow နှင့် မိတ်ဖက်ဖြစ်ခြင်း သို့မဟုတ် ထောက်ခံခြင်းကို မဆိုလိုပါ။",
-  "aboutLink": "Scarecrow အကြောင်း →"
+  "aboutLink": "Scarecrow အကြောင်း →",
+  "aboutTitle": "SCARECROW အကြောင်း",
+  "aboutSub": "ကျွန်ုပ်တို့ မည်သူဖြစ်ပြီး လွတ်လပ်မှုကို မည်သို့ ထိန်းသိမ်းသနည်း"
  },
  "km": {
   "lede": "ផ្ទាំងព្រមានជាមុនដោយឥតគិតថ្លៃ សម្រាប់រដ្ឋាភិបាល សង្គមស៊ីវិល និងអង្គការក្រៅរដ្ឋាភិបាល។ ពិន្ទុហានិភ័យដែល Lab វាយតម្លៃ បង្ហាញជាមួយទិន្នន័យសាធារណៈដែលធ្វើបច្ចុប្បន្នភាពដោយស្វ័យប្រវត្តិរៀងរាល់ថ្ងៃ។",
@@ -919,7 +933,9 @@ window.T={
   "kindIgo": "អន្តររដ្ឋាភិបាល",
   "showMore": "បង្ហាញបន្ថែម",
   "curatedNote": "ប្រភពដែលបានជ្រើសរើស គឺជាអ្នកផ្សព្វផ្សាយពីសង្គមស៊ីវិល ប្រព័ន្ធផ្សព្វផ្សាយ និងអន្តររដ្ឋាភិបាល ដែល Lab តាមដាន ព្រោះពួកគេរាយការណ៍អំពីសិទ្ធិមនុស្សនៅអាស៊ាន។ ការស្ថិតក្នុងបញ្ជីមិនមានន័យថាជាដៃគូ ឬគាំទ្រ Scarecrow ទេ។",
-  "aboutLink": "អំពី Scarecrow →"
+  "aboutLink": "អំពី Scarecrow →",
+  "aboutTitle": "អំពី SCARECROW",
+  "aboutSub": "យើងជានរណា និងរក្សាឯករាជ្យភាពយ៉ាងដូចម្តេច"
  },
  "lo": {
   "lede": "ແດຊບອດເຕືອນໄພລ່ວງໜ້າທີ່ໃຊ້ຟຣີ ສຳລັບລັດຖະບານ ສັງຄົມພົນລະເຮືອນ ແລະ NGO. ຄະແນນຄວາມສ່ຽງທີ່ Lab ປະເມີນ ສະແດງຄູ່ກັບຂໍ້ມູນສາທາລະນະທີ່ອັບເດດອັດຕະໂນມັດທຸກມື້.",
@@ -1034,7 +1050,9 @@ window.T={
   "kindIgo": "ລະຫວ່າງລັດຖະບານ",
   "showMore": "ເບິ່ງເພີ່ມເຕີມ",
   "curatedNote": "ແຫຼ່ງຂ່າວທີ່ຄັດສັນ ແມ່ນອົງການພາກປະຊາສັງຄົມ ສື່ ແລະ ອົງການລະຫວ່າງລັດຖະບານທີ່ Lab ຕິດຕາມ ເພາະເຜີຍແຜ່ຂໍ້ມູນດ້ານສິດທິມະນຸດໃນອາຊຽນ. ການຢູ່ໃນລາຍຊື່ບໍ່ໄດ້ໝາຍເຖິງການເປັນພາຄີ ຫຼື ການຮັບຮອງ Scarecrow.",
-  "aboutLink": "ກ່ຽວກັບ Scarecrow →"
+  "aboutLink": "ກ່ຽວກັບ Scarecrow →",
+  "aboutTitle": "ກ່ຽວກັບ SCARECROW",
+  "aboutSub": "ພວກເຮົາແມ່ນໃຜ ແລະ ຮັກສາຄວາມເປັນອິດສະຫຼະແນວໃດ"
  },
  "tet": {
   "lede": "Painel avizu sedu gratuitu ba governu, sosiedade sivíl no ONG sira. Pontuasaun risku husi Lab hatudu hamutuk ho dadus públiku ne'ebé atualiza automátiku loroloron.",
@@ -1149,6 +1167,8 @@ window.T={
   "kindIgo": "Intergovernamentál",
   "showMore": "Haree tan",
   "curatedNote": "Fonte kuradu mak publikadór sosiedade sivíl, média no intergovernamentál ne'ebé Lab tuir tanba sira relata kona-ba direitu umanu iha ASEAN. Iha lista la signifika parseria ka apoiu ba Scarecrow.",
-  "aboutLink": "Kona-ba Scarecrow →"
+  "aboutLink": "Kona-ba Scarecrow →",
+  "aboutTitle": "KONA-BA SCARECROW",
+  "aboutSub": "Ami mak se no oinsá ami mantein independénsia"
  }
 };
