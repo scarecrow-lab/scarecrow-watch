@@ -312,6 +312,6 @@ document.getElementById("themeBtn").onclick = () => {
   r.dataset.theme = light ? "dark" : "light";
 };
 </script>
-<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}</script>
+<script>if("serviceWorker" in navigator){var _had=!!navigator.serviceWorker.controller,_rf=false;navigator.serviceWorker.addEventListener("controllerchange",function(){if(_rf||!_had)return;_rf=true;location.reload();});addEventListener("load",function(){navigator.serviceWorker.register("sw.js").then(function(r){try{r.update();}catch(e){}}).catch(function(){});});}</script>
 </body>
 </html>
