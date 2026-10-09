@@ -84,6 +84,8 @@ footer{ margin-top:56px; padding-top:20px; border-top:1px solid var(--line); fon
 .figure .only-wide{ display:block; } .figure .only-narrow{ display:none; }
 @media (max-width:640px){ .figure .only-wide{ display:none; } .figure .only-narrow{ display:block; max-width:420px; margin:0 auto; } .figure{ padding:14px; } }
 [hidden]{ display:none !important; }
+.mail{ display:inline-block; margin:18px 0 0; padding:10px 22px; border:1.5px solid var(--gold); border-radius:999px; background:var(--gold-soft);
+  font:800 clamp(18px,2.6vw,24px)/1.2 var(--brand); letter-spacing:.03em; color:var(--ink); user-select:all; overflow-wrap:anywhere; max-width:100%; }
 .placeholder{ color:var(--red); font-family:var(--mono); font-size:.92em; }
 @media (prefers-reduced-motion: no-preference){ .reveal{ animation:rise .6s ease-out both; } }
 @keyframes rise{ from{ opacity:0; transform:translateY(10px); } to{ opacity:1; transform:none; } }
@@ -336,7 +338,7 @@ footer{ margin-top:56px; padding-top:20px; border-top:1px solid var(--line); fon
         <a class="btn primary" id="mailBtn" href="mailto:scarecrowlab@proton.me?subject=Scarecrow%20%E2%80%94%20getting%20involved">Email the team</a>
         <a class="btn" href="./">Explore the dashboard</a>
       </div>
-      <p style="margin:14px 0 0; font:600 17px var(--mono); user-select:all" id="mailText">scarecrowlab@proton.me</p>
+      <p class="mail" id="mailText">scarecrowlab@proton.me</p>
       <p class="caption" style="margin-top:8px">Email is not anonymous. Writing from a Proton Mail address encrypts the message end to end. For sensitive information, write first to ask for a secure channel.</p>
     </div>
   </section>
