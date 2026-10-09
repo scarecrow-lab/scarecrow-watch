@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T02:42:38+00:00",
+  "generated": "2026-10-09T02:57:03+00:00",
   "source": "World Bank WDI",
   "countries": {
     "Brunei": {
@@ -17,7 +17,7 @@
       },
       "area": {
         "value": 5770.0,
-        "year": 2023
+        "year": 2024
       }
     },
     "Indonesia": {
@@ -34,8 +34,8 @@
         "year": 2025
       },
       "area": {
-        "value": 1916906.77,
-        "year": 2023
+        "value": 1916906.8,
+        "year": 2024
       }
     },
     "Cambodia": {
@@ -52,8 +52,8 @@
         "year": 2025
       },
       "area": {
-        "value": 181040.0,
-        "year": 2023
+        "value": 181035.0,
+        "year": 2024
       }
     },
     "Laos": {
@@ -71,7 +71,7 @@
       },
       "area": {
         "value": 236800.0,
-        "year": 2023
+        "year": 2024
       }
     },
     "Myanmar": {
@@ -88,8 +88,8 @@
         "year": 2025
       },
       "area": {
-        "value": 676590.0,
-        "year": 2023
+        "value": 676578.0,
+        "year": 2024
       }
     },
     "Malaysia": {
@@ -106,8 +106,8 @@
         "year": 2025
       },
       "area": {
-        "value": 330411.0,
-        "year": 2023
+        "value": 330534.0,
+        "year": 2024
       }
     },
     "Philippines": {
@@ -125,7 +125,7 @@
       },
       "area": {
         "value": 300000.0,
-        "year": 2023
+        "year": 2024
       }
     },
     "Singapore": {
@@ -142,8 +142,8 @@
         "year": 2025
       },
       "area": {
-        "value": 728.0,
-        "year": 2023
+        "value": 735.6,
+        "year": 2024
       }
     },
     "Thailand": {
@@ -160,8 +160,8 @@
         "year": 2025
       },
       "area": {
-        "value": 513115.021,
-        "year": 2023
+        "value": 513115.0,
+        "year": 2024
       }
     },
     "Timor-Leste": {
@@ -179,7 +179,7 @@
       },
       "area": {
         "value": 14870.0,
-        "year": 2023
+        "year": 2024
       }
     },
     "Vietnam": {
@@ -197,7 +197,7 @@
       },
       "area": {
         "value": 331338.31,
-        "year": 2023
+        "year": 2024
       }
     }
   }
