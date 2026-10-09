@@ -1,7 +1,25 @@
 {
-  "generated": "2026-10-09T02:57:03+00:00",
+  "generated": "2026-10-09T06:35:44+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Singapore",
+      "date": "2026-10-08",
+      "title": "Singapore: Drop New Wave of Charges Against Human Rights Defenders, End Criminalization of Freedom of Expression and Peaceful Assembly",
+      "url": "https://forum-asia.org/singapore-drop-charges-human-rights-defenders-end-criminalization-peaceful-assembly/?utm_source=rss&utm_medium=rss&utm_campaign=singapore-drop-charges-human-rights-defenders-end-criminalization-peaceful-assembly",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-07",
+      "title": "CIVICUS Monitor: Cambodia Activists, Journalists and Opposition Members Face Growing Criminalisation",
+      "url": "https://forum-asia.org/cambodia-activists-journalists-opposition-online-commentary-criminalised/?utm_source=rss&utm_medium=rss&utm_campaign=cambodia-activists-journalists-opposition-online-commentary-criminalised",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
+      "via": "Curated sources"
+    },
     {
       "country": "Thailand",
       "date": "2026-10-06",
@@ -19,6 +37,15 @@
       "source": "wiky.com",
       "kind": "News",
       "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-02",
+      "title": "Myanmar junta airstrikes target civilians to coerce Arakan Army into peace talks",
+      "url": "https://rfa.org/english/myanmar/2026/10/02/myanmar-rakhine-air-strike-civilians/",
+      "source": "Radio Free Asia",
+      "kind": "media",
+      "via": "Curated sources"
     },
     {
       "country": "Thailand",
@@ -107,33 +134,6 @@
       "title": "1win Charity Directs Over $170 , 000 to Charitable Purposes in India",
       "url": "https://www.thailand-business-news.com/pr-news/1win-charity-directs-over-170000-to-charitable-purposes-in-india",
       "source": "thailand-business-news.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Arab News | World powers gather in Pacific to chart climate battle",
-      "url": "https://www.arabnews.com/world/world-powers-gather-in-pacific-to-chart-climate-battle-3004199",
-      "source": "arabnews.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Malaysia - Myanmar deportations : Concerns mount as hundreds of refugees and migrants are returned to military - ruled nation",
-      "url": "https://www.smh.com.au/world/asia/sending-them-to-their-deaths-malaysia-s-deal-with-the-devil-20261002-p611yy.html",
-      "source": "smh.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Malaysia - Myanmar deportations : Concerns mount as hundreds of refugees and migrants are returned to military - ruled nation",
-      "url": "https://www.theage.com.au/world/asia/sending-them-to-their-deaths-malaysia-s-deal-with-the-devil-20261002-p611yy.html",
-      "source": "theage.com.au",
       "kind": "News",
       "via": "GDELT"
     },
@@ -453,6 +453,15 @@
       "via": "GDELT"
     },
     {
+      "country": "Thailand",
+      "date": "2026-10-01",
+      "title": "Civil Society Strongly Urges GANHRI-SCA to Uphold Downgrade Recommendation Against NHRC India in Critical November Review",
+      "url": "https://forum-asia.org/civil-society-urges-ganhri-sca-uphold-downgrade-nhrc-india/?utm_source=rss&utm_medium=rss&utm_campaign=civil-society-urges-ganhri-sca-uphold-downgrade-nhrc-india",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
+      "via": "Curated sources"
+    },
+    {
       "country": "Myanmar",
       "date": "2026-10-01",
       "title": "Bruno Agaba books main draw berth as Uganda International Series serves off",
@@ -678,6 +687,15 @@
       "via": "GDELT"
     },
     {
+      "country": "Myanmar",
+      "date": "2026-09-30",
+      "title": "Expert Voices on Atrocity Prevention APR2P Director Dr Sarah Teitt",
+      "url": "https://r2pasiapacific.org/article/2026/10/expert-voices-atrocity-prevention-apr2p-director-dr-sarah-teitt",
+      "source": "Asia Pacific Centre for the Responsibility to Protect (APR2P)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
       "country": "Timor-Leste",
       "date": "2026-09-30",
       "title": "Indonesia Worst - Ever Forest Fires Caused by Plantations , El Nino",
@@ -739,6 +757,105 @@
       "source": "liberianobserver.com",
       "kind": "News",
       "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-09-29",
+      "title": "[Repost] Singapore supports 243 human rights recommendations, including stronger migrant worker protections – Channel News Asia",
+      "url": "http://maruah.org/2026/09/29/repost-singapore-supports-243-human-rights-recommendations-including-stronger-migrant-worker-protections-channel-news-asia/",
+      "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
+      "kind": "cso",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-09-29",
+      "title": "China pressure accelerates Philippines-Taiwan ties, analysts say",
+      "url": "https://rfa.org/english/china/2026/09/29/taiwan-philippines-trade-office/",
+      "source": "Radio Free Asia",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-09-29",
+      "title": "[PRESS STATEMENT] Society Welcomes SEANF Review of MNHRC Membership, Significant Step Towards Accountability",
+      "url": "https://forum-asia.org/civil-society-welcomes-seanf-review-mnhrc-membership-accountability/?utm_source=rss&utm_medium=rss&utm_campaign=civil-society-welcomes-seanf-review-mnhrc-membership-accountability",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-09-29",
+      "title": "The Queen Mother Library: A Visit from the Ambassadors’ Spouses.",
+      "url": "https://www.dccam.org/the-queen-mother-library/the-queen-mother-library-a-visit-from-the-ambassadors-spouses/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-09-28",
+      "title": "Statement on the Recent Charging of Human Rights Defenders in Singapore",
+      "url": "http://maruah.org/2026/09/28/statement-on-the-recent-charging-of-human-rights-defenders-in-singapore/",
+      "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
+      "kind": "cso",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-09-28",
+      "title": "[Statements] South Korea: NHRCK Must Demonstrate Meaningful Progress Ahead of GANHRI Review",
+      "url": "https://forum-asia.org/statements-south-korea-nhrck-must-demonstrate-meaningful-progress-ahead-of-ganhri-review/?utm_source=rss&utm_medium=rss&utm_campaign=statements-south-korea-nhrck-must-demonstrate-meaningful-progress-ahead-of-ganhri-review",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-09-28",
+      "title": "Koh Thma Documentation Center: Students (4 Females) from Bun Rany Hun Sen Kdol Phsar Primary School Visited the Praying House of The S’tieng Ethnic Village to Read History Books on Democratic Kampuchea (1975–1979). September 28,2026.",
+      "url": "https://www.dccam.org/koh-thma-documentation-center/koh-thma-documentation-center-students-4-females-from-bun-rany-hun-sen-kdol-phsar-primary-school-visited-the-praying-house-of-the-stieng-ethnic-village-to-read-history-books-on-democratic-kampuch/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-09-28",
+      "title": "Stung Treng Documentation Center: Spirit of Youth Loving Their Hometown: Grade 10 Students of Borei O’Svay Sen Chey High School Enhance Community Beauty and Tourism Through Stone Bench Donation",
+      "url": "https://www.dccam.org/stung-treng-documentation-center/stung-treng-documentation-center-spirit-of-youth-loving-their-hometown-grade-10-students-of-borei-osvay-sen-chey-high-school-enhance-community-beauty-and-tourism-through-stone-bench-donatio/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-09-28",
+      "title": "The Queen Mother Library: Singaporean Students from Abundant Life International School.",
+      "url": "https://www.dccam.org/the-queen-mother-library/the-queen-mother-library-singaporean-students-from-abundant-life-international-school-2/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-09-25",
+      "title": "Lao migrant’s disappearance in Thailand seems like transnational repression, NGO says",
+      "url": "https://rfa.org/english/laos/2026/09/25/khieo-lapchanh-laos-thailand-missing/",
+      "source": "Radio Free Asia",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-09-25",
+      "title": "[Statements] Joint Civil Society Statement on Malaysia’s Plan to Refoule Rohingya",
+      "url": "https://forum-asia.org/joint-civil-society-statement-malaysia-plan-refoule-rohingya/?utm_source=rss&utm_medium=rss&utm_campaign=joint-civil-society-statement-malaysia-plan-refoule-rohingya",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
+      "via": "Curated sources"
     }
   ]
 }
