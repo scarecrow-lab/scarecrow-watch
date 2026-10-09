@@ -1,7 +1,88 @@
 {
-  "generated": "2026-10-09T06:35:44+00:00",
+  "generated": "2026-10-09T15:05:01+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Myanmar",
+      "date": "2026-10-09",
+      "title": "Over Two-Thirds of Myanmar’s Population Poor or at Risk of Poverty: UN",
+      "url": "https://www.irrawaddy.com/news/burma/over-two-thirds-of-myanmars-population-poor-or-at-risk-of-poverty-un.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-09",
+      "title": "Regime Shuts Down Myanmar’s Surging Online Gold Market",
+      "url": "https://www.irrawaddy.com/business/regime-shuts-down-myanmars-surging-online-gold-market.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-09",
+      "title": "China Takes Top Investor Crown in Myanmar, and More",
+      "url": "https://www.irrawaddy.com/news/china-briefing/china-takes-top-investor-crown-in-myanmar-and-more.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-09",
+      "title": "Myanmar Regime Leader Says Will Take Back Migrants From Malaysia ‘as Soon as Possible’",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/myanmar-regime-leader-says-will-take-back-migrants-from-malaysia-as-soon-as-possible.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-09",
+      "title": "From Refuge to Repatriations: Malaysia’s Myanmar U-Turn",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/from-refuge-to-repatriations-malaysias-myanmar-u-turn.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-08",
+      "title": "Malaysian Firms Linked to Myanmar Military Aviation Supply Chain: JFM",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/malaysian-firms-linked-to-myanmar-military-aviation-supply-chain-jfm.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-08",
+      "title": "Chinese Docuseries Hails Scam Victory as Myanmar Fraud Empire Rebuilds",
+      "url": "https://www.irrawaddy.com/news/burma/chinese-docuseries-hails-scam-victory-as-myanmar-fraud-empire-rebuilds.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-08",
+      "title": "Myanmar Regime’s New Labor Minister Outlines Mission: Milking Migrants",
+      "url": "https://www.irrawaddy.com/news/burma/myanmar-regimes-new-labor-minister-outlines-mission-milking-migrants.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-08",
+      "title": "Arakan Under the Myanmar Regime’s Air War",
+      "url": "https://www.irrawaddy.com/opinion/guest-column/arakan-under-the-myanmar-regimes-air-war.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
     {
       "country": "Singapore",
       "date": "2026-10-08",
@@ -9,6 +90,15 @@
       "url": "https://forum-asia.org/singapore-drop-charges-human-rights-defenders-end-criminalization-peaceful-assembly/?utm_source=rss&utm_medium=rss&utm_campaign=singapore-drop-charges-human-rights-defenders-end-criminalization-peaceful-assembly",
       "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
       "kind": "network",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-07",
+      "title": "Beijing’s Docuseries on Myanmar Scams Implicates Junta But Glosses Chinese Financing",
+      "url": "https://www.irrawaddy.com/news/burma/beijings-docuseries-on-myanmar-scams-implicates-junta-but-glosses-chinese-financing.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
       "via": "Curated sources"
     },
     {
@@ -237,51 +327,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-10-02",
-      "title": "Myanmar ships with returnees from Malaysia enter home waters , state media says",
-      "url": "https://bdnews24.com/neighbours/zgeb3hv7zv",
-      "source": "bdnews24.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-02",
-      "title": "Myanmar Junta Airstrike Hits NUG Special Military Command Office in KNU Territory",
-      "url": "https://www.bnionline.net/en/news/myanmar-junta-airstrike-hits-nug-special-military-command-office-knu-territory",
-      "source": "bnionline.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-02",
-      "title": "Malaysia deports 1476 refugees to Myanmar",
-      "url": "https://www.greenleft.org.au/2026/1463/world/malaysia-deports-1476-refugees-myanmar",
-      "source": "greenleft.org.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-02",
-      "title": "Death of Indonesian recruited by Russian military leaves family bereft",
-      "url": "https://asianews.network/death-of-indonesian-recruited-by-russian-military-leaves-family-bereft/",
-      "source": "asianews.network",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-02",
-      "title": "8 Near - Perfect Spy Thrillers For Fans Of Jack Ryan & Jason Bourne",
-      "url": "https://screenrant.com/near-perfect-spy-thrillers-like-jason-bourne-jack-ryan/",
-      "source": "screenrant.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Malaysia",
       "date": "2026-10-02",
       "title": "Over 200 organizations unite to protest against Israel on anniversary of Gaza genocide",
@@ -462,51 +507,6 @@
       "via": "Curated sources"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-10-01",
-      "title": "Bruno Agaba books main draw berth as Uganda International Series serves off",
-      "url": "https://kawowo.com/2026/10/01/bruno-agaba-books-main-draw-berth-as-uganda-international-series-serves-off-in-kampala/",
-      "source": "kawowo.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-01",
-      "title": "UN Expert Urges Malaysian Govt To Stop Repatriation Of Myanmar Nationals , Deplores Myanmar Military Latest Airstrikes",
-      "url": "https://www.scoop.co.nz/stories/WO2610/S00009/un-expert-urges-malaysian-govt-to-stop-repatriation-of-myanmar-nationals-deplores-myanmar-militarys-latest-airstrikes.htm",
-      "source": "scoop.co.nz",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-01",
-      "title": "Children and Armed Conflict",
-      "url": "https://www.securitycouncilreport.org/monthly-forecast/2026-10/children-and-armed-conflict-13.php",
-      "source": "securitycouncilreport.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-01",
-      "title": "Women , Peace and Security",
-      "url": "https://www.securitycouncilreport.org/monthly-forecast/2026-10/women-peace-and-security-22.php",
-      "source": "securitycouncilreport.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-01",
-      "title": "Former Myanmar American Chamber of Commerce board member detained in Spain",
-      "url": "https://mymotherlode.com/news/world/11184417/former-myanmar-american-chamber-of-commerce-board-member-detained-in-spain.html",
-      "source": "mymotherlode.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Singapore",
       "date": "2026-10-01",
       "title": "Wall Street directionless on first October trading day",
@@ -566,24 +566,6 @@
       "title": "Wall Street directionless on first October trading day",
       "url": "http://www.stlouisstar.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
       "source": "stlouisstar.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-01",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.neworleanssun.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "neworleanssun.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-01",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.vietnamtribune.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "vietnamtribune.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -762,7 +744,7 @@
       "country": "Singapore",
       "date": "2026-09-29",
       "title": "[Repost] Singapore supports 243 human rights recommendations, including stronger migrant worker protections – Channel News Asia",
-      "url": "http://maruah.org/2026/09/29/repost-singapore-supports-243-human-rights-recommendations-including-stronger-migrant-worker-protections-channel-news-asia/",
+      "url": "https://maruah.org/2026/09/29/repost-singapore-supports-243-human-rights-recommendations-including-stronger-migrant-worker-protections-channel-news-asia/",
       "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
       "kind": "cso",
       "via": "Curated sources"
@@ -796,9 +778,18 @@
     },
     {
       "country": "Singapore",
+      "date": "2026-09-29",
+      "title": "[Repost] Singapore supports 243 human rights recommendations, including stronger migrant worker protections – Channel News Asia",
+      "url": "http://maruah.org/2026/09/29/repost-singapore-supports-243-human-rights-recommendations-including-stronger-migrant-worker-protections-channel-news-asia/",
+      "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
+      "kind": "cso",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Singapore",
       "date": "2026-09-28",
       "title": "Statement on the Recent Charging of Human Rights Defenders in Singapore",
-      "url": "http://maruah.org/2026/09/28/statement-on-the-recent-charging-of-human-rights-defenders-in-singapore/",
+      "url": "https://maruah.org/2026/09/28/statement-on-the-recent-charging-of-human-rights-defenders-in-singapore/",
       "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
       "kind": "cso",
       "via": "Curated sources"
@@ -837,6 +828,15 @@
       "url": "https://www.dccam.org/the-queen-mother-library/the-queen-mother-library-singaporean-students-from-abundant-life-international-school-2/",
       "source": "Documentation Center of Cambodia (DC-Cam)",
       "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-09-28",
+      "title": "Statement on the Recent Charging of Human Rights Defenders in Singapore",
+      "url": "http://maruah.org/2026/09/28/statement-on-the-recent-charging-of-human-rights-defenders-in-singapore/",
+      "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
+      "kind": "cso",
       "via": "Curated sources"
     },
     {
