@@ -23,7 +23,7 @@ jobs:
           python-version: "3.12"
       - name: Fetch public data
         env:
-          RELIEFWEB_APPNAME: ${{ secrets.RELIEFWEB_APPNAME }}
+          RELIEFWEB_APPNAME: scarecrow-lab.github.io
           UCDP_TOKEN: ${{ secrets.UCDP_TOKEN }}
         run: python scripts/fetch_data.py
       - name: Commit if anything changed
