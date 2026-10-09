@@ -1,4 +1,4 @@
 {
-  "contact_email": "CHANGE-ME@example.org",
-  "note": "Replace contact_email with the Scarecrow team's real address before launch. The dashboard hides the feedback button while it still says CHANGE-ME."
+  "contact_email": "scarecrowlab@proton.me",
+  "note": "Public contact address shown on the About page and used by the dashboard's feedback button."
 }

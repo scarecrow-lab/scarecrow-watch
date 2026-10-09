@@ -333,11 +333,11 @@ footer{ margin-top:56px; padding-top:20px; border-top:1px solid var(--line); fon
         <span class="chip"><b>Funders &amp; legal advisers</b></span>
       </div>
       <div class="row">
-        <a class="btn primary" id="mailBtn" href="#" hidden>Email the team</a>
-        <span class="placeholder" id="mailMissing">[CONTACT EMAIL: set it in data/site.json]</span>
+        <a class="btn primary" id="mailBtn" href="mailto:scarecrowlab@proton.me?subject=Scarecrow%20%E2%80%94%20getting%20involved">Email the team</a>
         <a class="btn" href="./">Explore the dashboard</a>
       </div>
-      <p class="caption" style="margin-top:16px">Email is not anonymous. For sensitive information, write first to ask for a secure channel.</p>
+      <p style="margin:14px 0 0; font:600 17px var(--mono); user-select:all" id="mailText">scarecrowlab@proton.me</p>
+      <p class="caption" style="margin-top:8px">Email is not anonymous. Writing from a Proton Mail address encrypts the message end to end. For sensitive information, write first to ask for a secure channel.</p>
     </div>
   </section>
 
@@ -355,8 +355,8 @@ document.getElementById("themeBtn").onclick = () => {
 fetch("data/site.json", {cache:"no-store"}).then(r => r.ok ? r.json() : {}).then(s => {
   const e = (s && s.contact_email) || "";
   if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e) && !/CHANGE-ME/i.test(e)){
-    const b = document.getElementById("mailBtn"); b.href = "mailto:" + e + "?subject=" + encodeURIComponent("Scarecrow — getting involved"); b.hidden = false;
-    document.getElementById("mailMissing").hidden = true;
+    const b = document.getElementById("mailBtn"); b.href = "mailto:" + e + "?subject=" + encodeURIComponent("Scarecrow — getting involved");
+    document.getElementById("mailText").textContent = e;
   }
 }).catch(() => {});
 </script>
