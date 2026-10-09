@@ -6,6 +6,13 @@
 <title>Scarecrow Watch — ASEAN Atrocity Risk Monitor</title>
 <meta name="description" content="Free early-warning dashboard for mass-atrocity risk across the 11 ASEAN states, with daily public-data updates.">
 <link rel="icon" href="assets/logo-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#14181f">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Scarecrow">
+<meta name="mobile-web-app-capable" content="yes">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -770,5 +777,6 @@ setTimeout(initBgMap, 300);
   document.addEventListener("keydown", function(e){ if(e.key==="Escape" && cover.style.display!=="none") enter(); });
 })();
 </script>
+<script>if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}</script>
 </body>
 </html>

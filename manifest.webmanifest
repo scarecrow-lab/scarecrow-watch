@@ -1,0 +1,20 @@
+{
+  "name": "Scarecrow Watch — ASEAN Atrocity Risk Monitor",
+  "short_name": "Scarecrow",
+  "description": "Free early-warning dashboard for mass-atrocity risk across the eleven ASEAN states, updated daily from public data.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "./",
+  "display": "standalone",
+  "background_color": "#0d0d0f",
+  "theme_color": "#14181f",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["news", "education", "utilities"],
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
