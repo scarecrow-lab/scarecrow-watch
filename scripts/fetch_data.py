@@ -14,7 +14,8 @@ Pulls public data for the 11 ASEAN states and writes JSON files the dashboard re
 Lab assessments (data/assessments.json) are edited by hand and never touched here.
 Standard library only. If a source fails, its previous data is kept and the error is logged in meta.json.
 """
-import csv, io, json, math, os, sys, time, urllib.parse, urllib.request
+import csv, email.utils, html, io, json, math, os, re, sys, time, urllib.parse, urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,6 +31,7 @@ COUNTRIES = {  # name -> ISO3
 ISO_TO_NAME = {v: k for k, v in COUNTRIES.items()}
 SIGNAL_DAYS = 14
 PER_COUNTRY = 15
+CURATED = "Curated sources"
 
 # Words that make a news item worth an analyst's attention. Kept narrow on purpose.
 GDELT_TERMS = ('(airstrike OR massacre OR killed OR displaced OR refugees OR "human rights" '
@@ -519,6 +521,120 @@ def review_leaders(current):
     return pending
 
 
+# ---------- Curated sources (RSS/Atom): chosen by the Lab; listing implies no partnership ----------
+COUNTRY_TERMS = {
+    "Myanmar": ["myanmar", "burma", "burmese", "rakhine", "rohingya", "arakan", "kachin", "kayin", "karenni", "kayah", "sagaing",
+                "magway", "mandalay", "yangon", "naypyidaw", "nay pyi taw", "chin state", "shan state", "tatmadaw"],
+    "Thailand": ["thailand", "thai", "bangkok", "pattani", "yala", "narathiwat", "mae sot"],
+    "Cambodia": ["cambodia", "cambodian", "khmer", "phnom penh", "hun manet", "hun sen"],
+    "Laos": ["laos", "lao pdr", "vientiane"],
+    "Vietnam": ["vietnam", "viet nam", "vietnamese", "hanoi", "ho chi minh", "montagnard"],
+    "Malaysia": ["malaysia", "malaysian", "kuala lumpur", "sabah", "sarawak"],
+    "Singapore": ["singapore", "singaporean"],
+    "Brunei": ["brunei"],
+    "Philippines": ["philippines", "philippine", "filipino", "manila", "mindanao", "bangsamoro", "barmm", "duterte", "marcos"],
+    "Indonesia": ["indonesia", "indonesian", "jakarta", "papua", "aceh", "prabowo"],
+    "Timor-Leste": ["timor-leste", "east timor", "timorese", "dili"],
+}
+TERM_RE = {c: re.compile(r"\b(" + "|".join(re.escape(t) for t in ts) + r")\b", re.I) for c, ts in COUNTRY_TERMS.items()}
+FEED_GUESSES = ["feed/", "rss.xml", "feed", "rss", "index.xml", "atom.xml"]
+
+
+def strip_html(t):
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", t or ""))).strip()
+
+
+def parse_feed(xml_text):
+    root = ET.fromstring(xml_text.encode("utf-8", "ignore"))
+    items = []
+    for it in root.iter():
+        if it.tag.split("}")[-1] not in ("item", "entry"):
+            continue
+        def get(*names):
+            for c in it:
+                if c.tag.split("}")[-1] in names:
+                    return c
+            return None
+        t = get("title"); title = (t.text if t is not None else "") or ""
+        link_el, link = get("link"), ""
+        if link_el is not None:
+            link = link_el.get("href") or (link_el.text or "")
+        date_el, d = get("pubDate", "published", "updated", "date"), ""
+        if date_el is not None and date_el.text:
+            try:
+                d = email.utils.parsedate_to_datetime(date_el.text).strftime("%Y-%m-%d")
+            except Exception:
+                d = date_el.text.strip()[:10]
+        desc_el = get("description", "summary", "encoded")
+        items.append({"title": strip_html(title), "url": link.strip(), "date": d,
+                      "text": strip_html(desc_el.text if desc_el is not None else "")[:1500]})
+    return items
+
+
+def find_feed(src, known):
+    if src.get("feed"):
+        return [src["feed"]]
+    cands = [known] if known else []
+    try:
+        page = http_text(src["home"], tries=1, timeout=25)
+        for m in re.finditer(r"<link[^>]+>", page, re.I):
+            tag = m.group(0)
+            if re.search(r"application/(rss|atom)\+xml", tag, re.I):
+                h = re.search(r'href=["\']([^"\']+)', tag)
+                if h:
+                    cands.append(urllib.parse.urljoin(src["home"], html.unescape(h.group(1))))
+    except Exception as e:
+        log("curated home", src["id"], e)
+    cands += [urllib.parse.urljoin(src["home"], g) for g in FEED_GUESSES]
+    seen, out = set(), []
+    for c in cands:
+        if c and c not in seen:
+            seen.add(c); out.append(c)
+    return out
+
+
+def partner_sources():
+    cfg = read("sources.json", {}).get("sources", [])
+    status = read("sources_status.json", {"sources": {}})["sources"]
+    cutoff = (NOW - timedelta(days=SIGNAL_DAYS)).strftime("%Y-%m-%d")
+    out, ok = [], 0
+    for src in cfg:
+        sid, prev = src["id"], status.get(src["id"], {})
+        got, used, err = None, None, None
+        for feed in find_feed(src, prev.get("feed")):
+            try:
+                txt = http_text(feed, {"Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml"}, tries=1, timeout=25)
+                items = parse_feed(txt)
+                if items:
+                    got, used = items, feed
+                    break
+            except Exception as e:
+                err = str(e)[:200]
+        if got is None:
+            status[sid] = {**prev, "status": "error", "checked": NOW.isoformat(timespec="seconds"), "error": err or "no RSS/Atom feed found"}
+            continue
+        ok += 1
+        n = 0
+        for it in got:
+            url = safe_url(it["url"])
+            if not url or not it["title"] or (it["date"] and it["date"] < cutoff):
+                continue
+            blob = f'{it["title"]} {it["text"]}'
+            countries = [c for c, rx in TERM_RE.items() if rx.search(blob)]
+            if not countries and src.get("default_country"):
+                countries = [src["default_country"]]
+            for c in countries[:3]:  # an item about several countries appears under each, up to three
+                out.append({"country": c, "date": it["date"] or NOW.strftime("%Y-%m-%d"), "title": it["title"][:300], "url": url,
+                            "source": src["name"][:80], "kind": src.get("kind", ""), "via": CURATED})
+                n += 1
+        status[sid] = {"status": "ok", "feed": used, "updated": NOW.isoformat(timespec="seconds"), "items": n, "error": None}
+        time.sleep(1)
+    write("sources_status.json", {"generated": NOW.isoformat(timespec="seconds"), "sources": status})
+    if not ok:
+        raise RuntimeError("no curated source could be read")
+    return out
+
+
 def merge_signals(new_items, old_items):
     cutoff = (NOW - timedelta(days=SIGNAL_DAYS)).strftime("%Y-%m-%d")
     seen, merged = set(), []
@@ -528,12 +644,16 @@ def merge_signals(new_items, old_items):
             continue
         seen.add(key)
         merged.append(it)
+    for it in merged:  # older runs labelled curated items differently
+        if it.get("via") == "Partner sources":
+            it["via"] = CURATED
+    # Per country, curated sources take the slots first, then broad news (GDELT, ReliefWeb).
     per, final = {}, []
-    for it in merged:
+    for it in sorted(merged, key=lambda x: x.get("via") != CURATED):
         per[it["country"]] = per.get(it["country"], 0) + 1
         if per[it["country"]] <= PER_COUNTRY:
             final.append(it)
-    return final
+    return sorted(final, key=lambda x: x.get("date", ""), reverse=True)
 
 
 def main():
@@ -544,7 +664,7 @@ def main():
     stamp = NOW.isoformat(timespec="seconds")
     fresh = []
 
-    for key, fn in (("reliefweb", reliefweb), ("gdelt", gdelt)):
+    for key, fn in (("reliefweb", reliefweb), ("gdelt", gdelt), ("partners", partner_sources)):
         try:
             items = fn()
             fresh += items

@@ -1,0 +1,185 @@
+{
+  "note": "Curated sources read daily for the automated signals feed. They are listed because they publish on human rights and atrocity risk in ASEAN; listing does not imply partnership with or endorsement of Scarecrow. 'feed' is optional: when empty the updater discovers the RSS/Atom feed from the homepage. 'default_country' tags items from single-country sources that don't name a country. Everything they publish is a signal for analysts, never a Lab finding.",
+  "sources": [
+    {
+      "id": "crca",
+      "name": "Child Rights Coalition Asia",
+      "home": "https://www.crcasia.org/",
+      "feed": null,
+      "kind": "network",
+      "default_country": null,
+      "note": ""
+    },
+    {
+      "id": "maruah",
+      "name": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
+      "home": "https://maruah.org/",
+      "feed": null,
+      "kind": "cso",
+      "default_country": "Singapore",
+      "note": ""
+    },
+    {
+      "id": "ppdi",
+      "name": "Persatuan Penyandang Disabilitas Indonesia (PPDI)",
+      "home": "https://ppdi.or.id/",
+      "feed": null,
+      "kind": "cso",
+      "default_country": "Indonesia",
+      "note": "Mostly Indonesian-language posts."
+    },
+    {
+      "id": "stc",
+      "name": "Save the Children",
+      "home": "https://www.savethechildren.net/",
+      "feed": null,
+      "kind": "ingo",
+      "default_country": null,
+      "note": "Global organisation: only items that name an ASEAN country are kept."
+    },
+    {
+      "id": "vpdf",
+      "name": "Viet Nam Peace and Development Foundation (VPDF)",
+      "home": "https://vpdf.org.vn/",
+      "feed": null,
+      "kind": "state-linked",
+      "default_country": "Vietnam",
+      "note": "Operates under the Viet Nam Union of Friendship Organizations; its stated mandate includes disseminating the Party and State's perspectives. Treat as an official viewpoint, not independent verification."
+    },
+    {
+      "id": "aichr",
+      "name": "ASEAN Intergovernmental Commission on Human Rights (AICHR)",
+      "home": "https://aichr.org/",
+      "feed": null,
+      "kind": "intergovernmental",
+      "default_country": null,
+      "note": "Intergovernmental body: official statements."
+    },
+    {
+      "id": "apr2p",
+      "name": "Asia Pacific Centre for the Responsibility to Protect (APR2P)",
+      "home": "https://r2pasiapacific.org/",
+      "feed": null,
+      "kind": "research",
+      "default_country": null,
+      "note": ""
+    },
+    {
+      "id": "irrawaddy",
+      "name": "The Irrawaddy",
+      "home": "https://www.irrawaddy.com/",
+      "feed": null,
+      "kind": "media",
+      "default_country": "Myanmar",
+      "note": ""
+    },
+    {
+      "id": "rfa",
+      "name": "Radio Free Asia",
+      "home": "https://www.rfa.org/english/",
+      "feed": null,
+      "kind": "media",
+      "default_country": null,
+      "note": "Services were suspended in late 2025 and only partly restored in 2026; output may be limited. Only items that name an ASEAN country are kept."
+    },
+    {
+      "id": "gaamac",
+      "name": "GAAMAC (Asia Pacific Working Group)",
+      "home": "https://www.gaamac.org/",
+      "feed": null,
+      "kind": "network",
+      "default_country": null,
+      "note": "Global network: only items that name an ASEAN country are kept."
+    },
+    {
+      "id": "ajc",
+      "name": "Asia Justice Coalition",
+      "home": "https://asiajusticecoalition.org/",
+      "feed": null,
+      "kind": "network",
+      "default_country": null,
+      "note": ""
+    },
+    {
+      "id": "forumasia",
+      "name": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "home": "https://forum-asia.org/",
+      "feed": null,
+      "kind": "network",
+      "default_country": null,
+      "note": ""
+    },
+    {
+      "id": "ajar",
+      "name": "Asia Justice and Rights (AJAR)",
+      "home": "https://asia-ajar.org/",
+      "feed": null,
+      "kind": "cso",
+      "default_country": null,
+      "note": ""
+    },
+    {
+      "id": "aphr",
+      "name": "ASEAN Parliamentarians for Human Rights (APHR)",
+      "home": "https://aseanmp.org/",
+      "feed": null,
+      "kind": "network",
+      "default_country": null,
+      "note": ""
+    },
+    {
+      "id": "fortify",
+      "name": "Fortify Rights",
+      "home": "https://www.fortifyrights.org/",
+      "feed": null,
+      "kind": "cso",
+      "default_country": null,
+      "note": ""
+    },
+    {
+      "id": "ndburma",
+      "name": "Network for Human Rights Documentation-Burma (ND-Burma)",
+      "home": "https://www.nd-burma.org/",
+      "feed": null,
+      "kind": "cso",
+      "default_country": "Myanmar",
+      "note": ""
+    },
+    {
+      "id": "karapatan",
+      "name": "Karapatan",
+      "home": "https://www.karapatan.org/",
+      "feed": null,
+      "kind": "cso",
+      "default_country": "Philippines",
+      "note": ""
+    },
+    {
+      "id": "dccam",
+      "name": "Documentation Center of Cambodia (DC-Cam)",
+      "home": "https://dccam.org/",
+      "feed": null,
+      "kind": "research",
+      "default_country": "Cambodia",
+      "note": ""
+    },
+    {
+      "id": "asylum",
+      "name": "Asylum Access",
+      "home": "https://asylumaccess.org/",
+      "feed": null,
+      "kind": "ingo",
+      "default_country": null,
+      "note": "Global organisation: only items that name an ASEAN country are kept."
+    },
+    {
+      "id": "bellingcat",
+      "name": "Bellingcat",
+      "home": "https://www.bellingcat.com/",
+      "feed": null,
+      "kind": "media",
+      "default_country": null,
+      "note": "Global outlet: only items that name an ASEAN country are kept."
+    }
+  ]
+}

@@ -204,7 +204,7 @@ footer p{ margin:0 0 10px; }
 <script src="assets/i18n.js"></script>
 <script>
 "use strict";
-const SOURCE_NAMES = {reliefweb:"ReliefWeb", gdelt:"GDELT", unhcr:"UNHCR", worldbank:"World Bank", vdem:"V-Dem", ucdp:"UCDP", wikidata:"Wikidata"};
+const SOURCE_NAMES = {reliefweb:"ReliefWeb", gdelt:"GDELT", unhcr:"UNHCR", worldbank:"World Bank", vdem:"V-Dem", ucdp:"UCDP", wikidata:"Wikidata", partners:"Curated sources"};
 let lang = "en", D = null, current = null, srcFilter = "";
 const $ = s => document.querySelector(s);
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
@@ -263,7 +263,15 @@ function renderFresh(){
   }
 }
 
-function signalsFor(name){ return (D.s.items || []).filter(i => i.country === name); }
+// Curated sources first, then broad news; newest first within each.
+const CURATED = "Curated sources";
+const viaOf = i => i.via === "Partner sources" ? CURATED : i.via;
+const rankSignals = list => list.slice().sort((a,b) => ((viaOf(a) !== CURATED) - (viaOf(b) !== CURATED)) || (b.date||"").localeCompare(a.date||""));
+function signalsFor(name){ return rankSignals((D.s.items || []).filter(i => i.country === name)); }
+let showAllRegional = false, showAllCountry = false;
+function moreButton(shown, total, onClick){
+  const b = el("button","btn",`${t("showMore")} (${total - shown})`); b.style.marginTop = "10px"; b.onclick = onClick; return b;
+}
 
 // On phones the country details open directly under the tapped country, like an accordion.
 const mq = matchMedia("(max-width: 820px)");
@@ -297,7 +305,7 @@ function renderList(){
     if (isMobile()) b.setAttribute("aria-expanded", c.name === current && open);
     b.onclick = () => {
       if (isMobile() && c.name === current && open){ open = false; renderList(); placeDetail(); return; }  // tap again to close
-      current = c.name; open = true; history.replaceState(null, "", "#country=" + encodeURIComponent(c.name));
+      current = c.name; open = true; showAllCountry = false; history.replaceState(null, "", "#country=" + encodeURIComponent(c.name));
       renderList(); placeDetail(); renderDetail(); highlightBg();
       if (isMobile()){ const r = document.querySelector('#list .row[aria-current="true"]'); if (r) r.scrollIntoView({block:"start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); }
     };
@@ -311,7 +319,10 @@ function sigRow(i, showCountry){
   const meta = el("div","meta");
   meta.append(el("span","chip",t("unverified")));
   if (showCountry) meta.append(el("span","chip",i.country));
-  meta.append(document.createTextNode([i.source, i.kind, "via " + i.via].filter(Boolean).join(" · ")));
+  if (i.kind === "state-linked") meta.append(Object.assign(el("span","chip",t("kindState")), {style:"color:var(--med);border-color:var(--med)"}));
+  if (i.kind === "intergovernmental") meta.append(el("span","chip",t("kindIgo")));
+  const kindText = ["state-linked","intergovernmental"].includes(i.kind) ? "" : i.kind;
+  meta.append(document.createTextNode([i.source, kindText, "via " + viaOf(i)].filter(Boolean).join(" · ")));
   body.append(meta); r.append(d, body); return r;
 }
 
@@ -553,8 +564,10 @@ function renderDetail(){
 
   if (tab === "signals"){
     body.append(el("p","muted",t("sigNote")));
-    const sg = signalsFor(c.name);
-    if (sg.length) sg.forEach(i => body.append(sigRow(i,false))); else body.append(el("p","muted",t("sigNone")));
+    const sg = signalsFor(c.name), lim = showAllCountry ? sg.length : 10;
+    if (sg.length) sg.slice(0, lim).forEach(i => body.append(sigRow(i,false))); else body.append(el("p","muted",t("sigNone")));
+    if (sg.length > lim) body.append(moreButton(lim, sg.length, () => { showAllCountry = true; renderDetail(); }));
+    if (sg.some(i => viaOf(i) === CURATED)) body.append(el("p","muted",t("curatedNote")));
   }
 }
 
@@ -575,12 +588,14 @@ function renderContact(){
 
 function renderRegional(){
   const F = $("#filters"); F.replaceChildren();
-  const vias = [...new Set((D.s.items || []).map(i => i.via))];
-  [""].concat(vias).forEach(v => { const b = el("button","btn",v || t("all")); b.setAttribute("aria-pressed", v === srcFilter); b.onclick = () => { srcFilter = v; renderRegional(); }; F.append(b); });
+  const vias = [...new Set((D.s.items || []).map(viaOf))].sort((a,b) => (a !== CURATED) - (b !== CURATED));
+  [""].concat(vias).forEach(v => { const b = el("button","btn",v || t("all")); b.setAttribute("aria-pressed", v === srcFilter); b.onclick = () => { srcFilter = v; showAllRegional = false; renderRegional(); }; F.append(b); });
   const R = $("#regional"); R.replaceChildren();
-  const items = (D.s.items || []).filter(i => !srcFilter || i.via === srcFilter).slice(0, 30);
-  if (!items.length) R.append(el("p","muted",t("sigNone")));
-  items.forEach(i => R.append(sigRow(i,true)));
+  const all = rankSignals((D.s.items || []).filter(i => !srcFilter || viaOf(i) === srcFilter)), lim = showAllRegional ? Math.min(all.length, 40) : 8;
+  if (!all.length) R.append(el("p","muted",t("sigNone")));
+  all.slice(0, lim).forEach(i => R.append(sigRow(i,true)));
+  if (all.length > lim && !showAllRegional) R.append(moreButton(lim, Math.min(all.length, 40), () => { showAllRegional = true; renderRegional(); }));
+  if (all.some(i => viaOf(i) === CURATED)) R.append(el("p","muted",t("curatedNote")));
 }
 
 // ---------- ambient ASEAN background map ----------

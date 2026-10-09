@@ -109,7 +109,11 @@ window.T={
   "catN": "Neighbouring instability & international factors",
   "prevHeld": "change awaiting Lab review",
   "prevLabUntil": "Lab score until automated data arrives",
-  "prevElection": "Upcoming election"
+  "prevElection": "Upcoming election",
+  "kindState": "State-linked",
+  "kindIgo": "Intergovernmental",
+  "showMore": "Show more",
+  "curatedNote": "Curated sources are civil-society, media and intergovernmental publishers the Lab follows because they report on human rights in ASEAN. Being listed does not imply partnership with or endorsement of Scarecrow."
  },
  "th": {
   "lede": "แดชบอร์ดเตือนภัยล่วงหน้าที่ใช้ฟรี สำหรับรัฐบาล ภาคประชาสังคม และ NGO แสดงคะแนนความเสี่ยงที่ Lab ประเมิน คู่กับข้อมูลสาธารณะที่อัปเดตอัตโนมัติทุกวัน",
@@ -219,7 +223,11 @@ window.T={
   "catN": "ความไม่มั่นคงของเพื่อนบ้านและปัจจัยระหว่างประเทศ",
   "prevHeld": "การเปลี่ยนแปลงรอ Lab ตรวจสอบ",
   "prevLabUntil": "ใช้คะแนน Lab จนกว่าข้อมูลอัตโนมัติจะเข้ามา",
-  "prevElection": "การเลือกตั้งที่กำลังจะมาถึง"
+  "prevElection": "การเลือกตั้งที่กำลังจะมาถึง",
+  "kindState": "เชื่อมโยงกับรัฐ",
+  "kindIgo": "องค์กรระหว่างรัฐบาล",
+  "showMore": "ดูเพิ่มเติม",
+  "curatedNote": "แหล่งข่าวที่คัดสรร คือองค์กรภาคประชาสังคม สื่อ และองค์กรระหว่างรัฐบาลที่ Lab ติดตาม เพราะเผยแพร่ข้อมูลด้านสิทธิมนุษยชนในอาเซียน การอยู่ในรายชื่อไม่ได้หมายถึงความเป็นภาคีหรือการรับรอง Scarecrow"
  },
  "id": {
   "lede": "Dasbor peringatan dini gratis untuk pemerintah, masyarakat sipil, dan LSM. Skor risiko yang dinilai Lab ditampilkan bersama data publik yang diperbarui otomatis setiap hari.",
@@ -329,7 +337,11 @@ window.T={
   "catN": "Ketidakstabilan tetangga & faktor internasional",
   "prevHeld": "perubahan menunggu tinjauan Lab",
   "prevLabUntil": "Skor Lab hingga data otomatis tersedia",
-  "prevElection": "Pemilu mendatang"
+  "prevElection": "Pemilu mendatang",
+  "kindState": "Terkait negara",
+  "kindIgo": "Antarpemerintah",
+  "showMore": "Tampilkan lebih banyak",
+  "curatedNote": "Sumber terkurasi adalah penerbit masyarakat sipil, media, dan antarpemerintah yang diikuti Lab karena melaporkan HAM di ASEAN. Tercantum di sini tidak berarti bermitra dengan atau mendukung Scarecrow."
  },
  "vi": {
   "lede": "Bảng cảnh báo sớm miễn phí cho chính phủ, xã hội dân sự và các tổ chức phi chính phủ. Điểm rủi ro do Lab đánh giá được hiển thị cùng dữ liệu công khai tự động cập nhật hằng ngày.",
@@ -439,7 +451,11 @@ window.T={
   "catN": "Bất ổn láng giềng & yếu tố quốc tế",
   "prevHeld": "thay đổi đang chờ Lab xem xét",
   "prevLabUntil": "Dùng điểm Lab cho đến khi có dữ liệu tự động",
-  "prevElection": "Bầu cử sắp tới"
+  "prevElection": "Bầu cử sắp tới",
+  "kindState": "Liên kết nhà nước",
+  "kindIgo": "Liên chính phủ",
+  "showMore": "Xem thêm",
+  "curatedNote": "Nguồn được chọn lọc là các tổ chức xã hội dân sự, truyền thông và liên chính phủ mà Lab theo dõi vì họ đưa tin về nhân quyền tại ASEAN. Việc có tên ở đây không có nghĩa là đối tác hay ủng hộ Scarecrow."
  },
  "ms": {
   "lede": "Papan pemuka amaran awal percuma untuk kerajaan, masyarakat sivil dan NGO. Skor risiko yang dinilai Lab dipaparkan bersama data awam yang dikemas kini secara automatik setiap hari.",
@@ -549,7 +565,11 @@ window.T={
   "catN": "Ketidakstabilan jiran & faktor antarabangsa",
   "prevHeld": "perubahan menunggu semakan Lab",
   "prevLabUntil": "Skor Lab sehingga data automatik tiba",
-  "prevElection": "Pilihan raya akan datang"
+  "prevElection": "Pilihan raya akan datang",
+  "kindState": "Berkaitan negara",
+  "kindIgo": "Antara kerajaan",
+  "showMore": "Tunjuk lagi",
+  "curatedNote": "Sumber pilihan ialah penerbit masyarakat sivil, media dan antara kerajaan yang diikuti Lab kerana melaporkan hak asasi manusia di ASEAN. Disenaraikan tidak bermaksud bekerjasama dengan atau menyokong Scarecrow."
  },
  "tl": {
   "lede": "Isang libreng dashboard ng maagang babala para sa mga pamahalaan, civil society at NGO. Ang mga risk score na tinasa ng Lab ay katabi ng pampublikong datos na awtomatikong ina-update araw-araw.",
@@ -659,7 +679,11 @@ window.T={
   "catN": "Kawalang-tatag ng kapitbahay at mga salik na internasyonal",
   "prevHeld": "pagbabagong hinihintay ang pagrepaso ng Lab",
   "prevLabUntil": "Score ng Lab hanggang dumating ang awtomatikong datos",
-  "prevElection": "Darating na halalan"
+  "prevElection": "Darating na halalan",
+  "kindState": "Kaugnay ng estado",
+  "kindIgo": "Intergovernmental",
+  "showMore": "Ipakita pa",
+  "curatedNote": "Ang mga piniling source ay mga publisher mula sa civil society, media at intergovernmental na sinusubaybayan ng Lab dahil nag-uulat sila tungkol sa karapatang pantao sa ASEAN. Ang pagkakalista ay hindi nangangahulugang partner o nag-eendorso sila sa Scarecrow."
  },
  "my": {
   "lede": "အစိုးရများ၊ အရပ်ဘက်လူ့အဖွဲ့အစည်းများနှင့် NGO များအတွက် အခမဲ့ ကြိုတင်သတိပေးဒက်ရှ်ဘုတ်။ Lab ၏ အန္တရာယ်အမှတ်များကို နေ့စဉ် အလိုအလျောက် အပ်ဒိတ်လုပ်သော အများပြည်သူဒေတာနှင့်အတူ ပြသထားသည်။",
@@ -769,7 +793,11 @@ window.T={
   "catN": "အိမ်နီးချင်း မတည်ငြိမ်မှုနှင့် နိုင်ငံတကာ အချက်များ",
   "prevHeld": "Lab စိစစ်ရန် စောင့်ဆိုင်းနေသော ပြောင်းလဲမှု",
   "prevLabUntil": "အလိုအလျောက်ဒေတာ မရောက်မချင်း Lab အမှတ်",
-  "prevElection": "လာမည့် ရွေးကောက်ပွဲ"
+  "prevElection": "လာမည့် ရွေးကောက်ပွဲ",
+  "kindState": "နိုင်ငံတော်နှင့် ဆက်စပ်",
+  "kindIgo": "အစိုးရအချင်းချင်း",
+  "showMore": "ထပ်ကြည့်ရန်",
+  "curatedNote": "ရွေးချယ်ထားသော ရင်းမြစ်များမှာ အာဆီယံ လူ့အခွင့်အရေးအကြောင်း သတင်းထုတ်ပြန်သဖြင့် Lab က လိုက်ကြည့်သော အရပ်ဘက်၊ မီဒီယာနှင့် အစိုးရအချင်းချင်း အဖွဲ့များဖြစ်သည်။ စာရင်းတွင်ပါဝင်ခြင်းသည် Scarecrow နှင့် မိတ်ဖက်ဖြစ်ခြင်း သို့မဟုတ် ထောက်ခံခြင်းကို မဆိုလိုပါ။"
  },
  "km": {
   "lede": "ផ្ទាំងព្រមានជាមុនដោយឥតគិតថ្លៃ សម្រាប់រដ្ឋាភិបាល សង្គមស៊ីវិល និងអង្គការក្រៅរដ្ឋាភិបាល។ ពិន្ទុហានិភ័យដែល Lab វាយតម្លៃ បង្ហាញជាមួយទិន្នន័យសាធារណៈដែលធ្វើបច្ចុប្បន្នភាពដោយស្វ័យប្រវត្តិរៀងរាល់ថ្ងៃ។",
@@ -879,7 +907,11 @@ window.T={
   "catN": "អស្ថិរភាពប្រទេសជិតខាង និងកត្តាអន្តរជាតិ",
   "prevHeld": "ការផ្លាស់ប្តូរកំពុងរង់ចាំ Lab ពិនិត្យ",
   "prevLabUntil": "ពិន្ទុ Lab រហូតដល់ទិន្នន័យស្វ័យប្រវត្តិមកដល់",
-  "prevElection": "ការបោះឆ្នោតខាងមុខ"
+  "prevElection": "ការបោះឆ្នោតខាងមុខ",
+  "kindState": "ភ្ជាប់ជាមួយរដ្ឋ",
+  "kindIgo": "អន្តររដ្ឋាភិបាល",
+  "showMore": "បង្ហាញបន្ថែម",
+  "curatedNote": "ប្រភពដែលបានជ្រើសរើស គឺជាអ្នកផ្សព្វផ្សាយពីសង្គមស៊ីវិល ប្រព័ន្ធផ្សព្វផ្សាយ និងអន្តររដ្ឋាភិបាល ដែល Lab តាមដាន ព្រោះពួកគេរាយការណ៍អំពីសិទ្ធិមនុស្សនៅអាស៊ាន។ ការស្ថិតក្នុងបញ្ជីមិនមានន័យថាជាដៃគូ ឬគាំទ្រ Scarecrow ទេ។"
  },
  "lo": {
   "lede": "ແດຊບອດເຕືອນໄພລ່ວງໜ້າທີ່ໃຊ້ຟຣີ ສຳລັບລັດຖະບານ ສັງຄົມພົນລະເຮືອນ ແລະ NGO. ຄະແນນຄວາມສ່ຽງທີ່ Lab ປະເມີນ ສະແດງຄູ່ກັບຂໍ້ມູນສາທາລະນະທີ່ອັບເດດອັດຕະໂນມັດທຸກມື້.",
@@ -989,7 +1021,11 @@ window.T={
   "catN": "ຄວາມບໍ່ໝັ້ນຄົງຂອງເພື່ອນບ້ານ ແລະ ປັດໄຈສາກົນ",
   "prevHeld": "ການປ່ຽນແປງລໍຖ້າ Lab ກວດສອບ",
   "prevLabUntil": "ໃຊ້ຄະແນນ Lab ຈົນກວ່າຂໍ້ມູນອັດຕະໂນມັດຈະມາ",
-  "prevElection": "ການເລືອກຕັ້ງທີ່ຈະມາເຖິງ"
+  "prevElection": "ການເລືອກຕັ້ງທີ່ຈະມາເຖິງ",
+  "kindState": "ເຊື່ອມໂຍງກັບລັດ",
+  "kindIgo": "ລະຫວ່າງລັດຖະບານ",
+  "showMore": "ເບິ່ງເພີ່ມເຕີມ",
+  "curatedNote": "ແຫຼ່ງຂ່າວທີ່ຄັດສັນ ແມ່ນອົງການພາກປະຊາສັງຄົມ ສື່ ແລະ ອົງການລະຫວ່າງລັດຖະບານທີ່ Lab ຕິດຕາມ ເພາະເຜີຍແຜ່ຂໍ້ມູນດ້ານສິດທິມະນຸດໃນອາຊຽນ. ການຢູ່ໃນລາຍຊື່ບໍ່ໄດ້ໝາຍເຖິງການເປັນພາຄີ ຫຼື ການຮັບຮອງ Scarecrow."
  },
  "tet": {
   "lede": "Painel avizu sedu gratuitu ba governu, sosiedade sivíl no ONG sira. Pontuasaun risku husi Lab hatudu hamutuk ho dadus públiku ne'ebé atualiza automátiku loroloron.",
@@ -1099,6 +1135,10 @@ window.T={
   "catN": "Instabilidade viziñu no fatór internasionál",
   "prevHeld": "mudansa hein revizaun Lab",
   "prevLabUntil": "Pontuasaun Lab to'o dadus automátiku to'o",
-  "prevElection": "Eleisaun tuir mai"
+  "prevElection": "Eleisaun tuir mai",
+  "kindState": "Liga ho estadu",
+  "kindIgo": "Intergovernamentál",
+  "showMore": "Haree tan",
+  "curatedNote": "Fonte kuradu mak publikadór sosiedade sivíl, média no intergovernamentál ne'ebé Lab tuir tanba sira relata kona-ba direitu umanu iha ASEAN. Iha lista la signifika parseria ka apoiu ba Scarecrow."
  }
 };
