@@ -105,6 +105,9 @@ section.panel{ margin-top:18px; }
 footer{ margin-top:30px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-dim); max-width:820px; }
 footer p{ margin:0 0 10px; }
 #err{ display:none; }
+.flagimg{ display:inline-block; vertical-align:-3px; margin-right:9px; border-radius:3px; box-shadow:0 0 0 1px rgba(0,0,0,.18); object-fit:cover; background:var(--panel-2); }
+.flagimg.big{ vertical-align:-4px; margin-right:12px; border-radius:4px; }
+.flagcode{ display:inline-block; font:600 10px var(--mono); padding:1px 4px; margin-right:8px; border:1px solid var(--line); border-radius:3px; color:var(--ink-faint); vertical-align:2px; }
 .about-cta{ display:flex; align-items:center; gap:16px; max-width:520px; margin:6px 0 22px; padding:16px 20px; border-radius:14px; text-decoration:none; color:var(--ink);
   background:linear-gradient(135deg, rgba(201,154,75,.22), rgba(201,154,75,.06)); border:1.5px solid var(--gold); box-shadow:var(--shadow); transition:transform .15s, box-shadow .15s; }
 .about-cta:hover{ transform:translateY(-2px); box-shadow:0 2px 4px rgba(0,0,0,.2), 0 16px 36px rgba(0,0,0,.22); }
@@ -284,6 +287,17 @@ function renderFresh(){
 const CURATED = "Curated sources";
 const viaOf = i => i.via === "Partner sources" ? CURATED : i.via;
 const rankSignals = list => list.slice().sort((a,b) => ((viaOf(a) !== CURATED) - (viaOf(b) !== CURATED)) || (b.date||"").localeCompare(a.date||""));
+// Flags as SVG images (flag-icons, MIT licence): emoji flags don't render on Windows.
+const ISO2 = {"Myanmar":"mm","Thailand":"th","Cambodia":"kh","Laos":"la","Vietnam":"vn","Malaysia":"my","Singapore":"sg","Brunei":"bn","Philippines":"ph","Indonesia":"id","Timor-Leste":"tl"};
+function flagImg(name, big){
+  const code = ISO2[name]; const w = big ? 36 : 22, h = Math.round(w * 3 / 4);
+  if (!code) return document.createTextNode("");
+  const img = document.createElement("img");
+  img.src = `https://cdn.jsdelivr.net/npm/flag-icons@7/flags/4x3/${code}.svg`; img.alt = ""; img.width = w; img.height = h;
+  img.className = "flagimg" + (big ? " big" : ""); img.loading = "lazy"; img.decoding = "async";
+  img.onerror = () => { const t = el("span","flagcode",code.toUpperCase()); img.replaceWith(t); };
+  return img;
+}
 function signalsFor(name){ return rankSignals((D.s.items || []).filter(i => i.country === name)); }
 let showAllRegional = false, showAllCountry = false;
 function moreButton(shown, total, onClick){
@@ -318,7 +332,8 @@ function renderList(){
     const meta = el("span","m"); meta.append(bandChip(a));
     const pi = preventFor(c.name); if (pi && pi.index != null) meta.append(document.createTextNode("  PREVENT " + pi.index.toFixed(1)));
     meta.append(document.createTextNode("  ·  " + nSignals(signalsFor(c.name).length)));
-    b.append(el("span","n",((D.cx.flags||{})[c.name] ? D.cx.flags[c.name] + " " : "") + c.name), s, meta);
+    const nm = el("span","n"); nm.append(flagImg(c.name), document.createTextNode(c.name));
+    b.append(nm, s, meta);
     if (isMobile()) b.setAttribute("aria-expanded", c.name === current && open);
     b.onclick = () => {
       if (isMobile() && c.name === current && open){ open = false; renderList(); placeDetail(); return; }  // tap again to close
@@ -491,8 +506,7 @@ function orgRow(o){ const r = el("div","org"); r.append(link(o.url, o.name), doc
 function renderDetail(){
   const c = D.a.countries.find(x => x.name === current), a = avg(c.scores), box = $("#detail");
   box.replaceChildren();
-  const flag = (D.cx.flags||{})[c.name];
-  const h = el("h2"); if (flag) h.append(el("span","flag",flag)); h.append(document.createTextNode(c.name));
+  const h = el("h2"); h.append(flagImg(c.name, true), document.createTextNode(c.name));
   const top = el("div"); top.append(bandChip(a), el("span","muted","  " + t("avg") + " " + a.toFixed(2)));
   box.append(h, top);
   const tabs = el("div","tabs"); tabs.setAttribute("role","tablist");
