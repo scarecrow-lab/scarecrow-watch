@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The PREVENT Framework</title>
+<meta name="description" content="A plain-language guide to the AIPG PREVENT framework for assessing mass-atrocity risk, and how Scarecrow Watch uses it.">
+<link rel="icon" href="assets/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+/* Layout: letter-tile hero spelling PREVENT, then fuel-and-spark diagram, seven category cards, a modifiable/fixed split, and Scarecrow's scoring pipeline. */
+:root{
+  --bg:#13171e; --panel:#1b212b; --panel-2:#232a35; --line:#333d4b; --ink:#ebe7df; --dim:#aab1bc; --faint:#8a93a1;
+  --gold:#d3a554; --gold-soft:rgba(211,165,84,.14); --green:#62ad95; --green-soft:rgba(98,173,149,.14); --red:#df6b7b; --red-soft:rgba(223,107,123,.13);
+  --c1:#c2414f; --c2:#d0743c; --c3:#c99a4b; --c4:#7aa35a; --c5:#3f9a8c; --c6:#4c7fb8; --c7:#8a62b3;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 14px 32px rgba(0,0,0,.28);
+  --display:'Montserrat','Segoe UI',system-ui,sans-serif; --body:'IBM Plex Sans','Segoe UI',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  color-scheme:dark; box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){
+  --bg:#f3efe7; --panel:#fffdf8; --panel-2:#f7f2e8; --line:#ddd5c4; --ink:#1f2530; --dim:#4d5560; --faint:#6d7480;
+  --gold:#8f6520; --gold-soft:rgba(168,122,47,.12); --green:#36705f; --green-soft:rgba(54,112,95,.11); --red:#a83a48; --red-soft:rgba(168,58,72,.09);
+  --c1:#b13544; --c2:#b9612a; --c3:#a07527; --c4:#5b8a3c; --c5:#2c7f72; --c6:#3a6aa3; --c7:#73499e;
+  --shadow:0 1px 2px rgba(31,37,48,.06), 0 14px 32px rgba(31,37,48,.08); color-scheme:light; } }
+:root[data-theme="light"]{
+  --bg:#f3efe7; --panel:#fffdf8; --panel-2:#f7f2e8; --line:#ddd5c4; --ink:#1f2530; --dim:#4d5560; --faint:#6d7480;
+  --gold:#8f6520; --gold-soft:rgba(168,122,47,.12); --green:#36705f; --green-soft:rgba(54,112,95,.11); --red:#a83a48; --red-soft:rgba(168,58,72,.09);
+  --c1:#b13544; --c2:#b9612a; --c3:#a07527; --c4:#5b8a3c; --c5:#2c7f72; --c6:#3a6aa3; --c7:#73499e;
+  --shadow:0 1px 2px rgba(31,37,48,.06), 0 14px 32px rgba(31,37,48,.08); color-scheme:light; }
+*,*::before,*::after{ box-sizing:inherit; }
+body{ margin:0; background:radial-gradient(1000px 600px at 85% -10%, rgba(211,165,84,.10), transparent 60%), var(--bg); background-attachment:fixed; color:var(--ink); font:16px/1.6 var(--body); }
+a{ color:var(--gold); }
+a:focus-visible,button:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; border-radius:6px; }
+.wrap{ max-width:1080px; margin:0 auto; padding-inline:20px; padding-block:22px 64px; }
+.top{ display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+.wordmark{ display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--ink); }
+.logo-mark{ width:32px; height:33px; background:var(--ink); -webkit-mask:url(assets/logo-icon.png) center/contain no-repeat; mask:url(assets/logo-icon.png) center/contain no-repeat; }
+.brand{ font:800 18px var(--display); letter-spacing:.05em; } .brand em{ font-style:normal; color:var(--gold); margin-left:.3em; font-weight:700; }
+.btn{ display:inline-flex; align-items:center; gap:6px; min-height:40px; padding:8px 16px; border-radius:999px; border:1px solid var(--line); background:var(--panel-2); color:var(--ink); font:500 14px var(--body); text-decoration:none; cursor:pointer; }
+.btn:hover{ border-color:var(--gold); color:var(--gold); }
+
+/* hero */
+.hero{ padding:44px 0 8px; }
+.kicker{ font:600 12px var(--mono); letter-spacing:.14em; text-transform:uppercase; color:var(--gold); }
+.letters{ display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:10px; margin:18px 0 26px; }
+.L{ aspect-ratio:1/1.12; border-radius:14px; display:flex; flex-direction:column; justify-content:space-between; padding:10px 10px 12px; color:#fff; box-shadow:var(--shadow); text-decoration:none; transition:transform .2s; min-width:0; }
+.L:hover{ transform:translateY(-3px); }
+.L b{ font:900 clamp(34px,7vw,72px)/1 var(--display); }
+.L span{ font:600 clamp(9px,1.25vw,12.5px)/1.25 var(--body); opacity:.95; }
+.L.t{ outline:2px dashed rgba(255,255,255,.55); outline-offset:-6px; }
+@media (max-width:620px){ .letters{ gap:6px; } .L{ border-radius:10px; padding:6px; } .L span{ display:none; } }
+h1{ font:800 clamp(30px,4.8vw,48px)/1.08 var(--display); letter-spacing:-.015em; margin:8px 0 12px; text-wrap:balance; max-width:22ch; }
+.lede{ font-size:18px; color:var(--dim); max-width:62ch; margin:0 0 10px; text-wrap:pretty; }
+.credit{ font-size:13px; color:var(--faint); }
+
+section{ margin-top:64px; }
+h2{ font:800 clamp(23px,3.2vw,30px)/1.15 var(--display); margin:6px 0 10px; text-wrap:balance; }
+.intro{ color:var(--dim); max-width:66ch; margin:0 0 24px; }
+.card{ background:var(--panel); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow); padding:22px; min-width:0; }
+.fig svg{ width:100%; height:auto; display:block; }
+.fig .narrow{ display:none; }
+@media (max-width:640px){ .fig .wide{ display:none; } .fig .narrow{ display:block; max-width:420px; margin:0 auto; } }
+
+/* categories */
+.cats{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+@media (max-width:760px){ .cats{ grid-template-columns:1fr; } }
+.cat{ display:grid; grid-template-columns:64px minmax(0,1fr); gap:16px; scroll-margin-top:16px; }
+.cat .big{ width:64px; height:72px; border-radius:12px; display:grid; place-items:center; font:900 38px var(--display); color:#fff; }
+.cat h3{ font:800 18px/1.25 var(--display); margin:2px 0 6px; }
+.cat p{ margin:0 0 10px; color:var(--dim); font-size:15px; }
+.chips{ display:flex; flex-wrap:wrap; gap:6px; }
+.chip{ font-size:12.5px; padding:3px 10px; border-radius:999px; border:1px solid var(--line); background:var(--panel-2); color:var(--ink); }
+.chip.fixed{ border-style:dashed; color:var(--faint); }
+.why{ margin-top:10px; font-size:13.5px; color:var(--ink); padding-left:12px; border-left:3px solid var(--gold); }
+.cat.trigger{ grid-column:1/-1; background:linear-gradient(var(--red-soft),var(--red-soft)), var(--panel); border-color:var(--c7); }
+
+/* split */
+.split{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+@media (max-width:640px){ .split{ grid-template-columns:1fr; } }
+.split h3{ font:800 17px var(--display); margin:0 0 8px; display:flex; gap:8px; align-items:center; }
+.split ul{ margin:0; padding-left:18px; color:var(--dim); }
+.split li{ margin:4px 0; }
+.mod{ border-color:var(--green); background:linear-gradient(var(--green-soft),var(--green-soft)), var(--panel); }
+
+/* scale */
+.scale{ display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:6px; margin:6px 0 4px; }
+.scale div{ padding:10px 6px; border-radius:8px; text-align:center; font:800 20px var(--display); color:#fff; }
+.scale small{ display:block; font:500 11px var(--body); opacity:.95; margin-top:2px; }
+.note{ font-size:13.5px; color:var(--faint); margin-top:14px; }
+.cta{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-top:16px; }
+footer{ margin-top:56px; padding-top:18px; border-top:1px solid var(--line); font-size:13px; color:var(--faint); display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+@media (prefers-reduced-motion: reduce){ .L{ transition:none; } .L:hover{ transform:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="wordmark" href="./"><span class="logo-mark" role="img" aria-label="Scarecrow"></span><span class="brand">SCARECROW<em>WATCH</em></span></a>
+    <div style="display:flex; gap:8px; flex-wrap:wrap">
+      <a class="btn" href="./">← Back to the dashboard</a>
+      <button class="btn" id="themeBtn" type="button">Theme</button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="kicker">Method explainer</div>
+    <nav class="letters" aria-label="The seven PREVENT categories">
+      <a class="L" href="#P" style="background:var(--c1)"><b>P</b><span>Prior atrocities</span></a>
+      <a class="L" href="#R" style="background:var(--c2)"><b>R</b><span>Regime upheaval</span></a>
+      <a class="L" href="#E1" style="background:var(--c3)"><b>E</b><span>Executive overreach</span></a>
+      <a class="L" href="#V" style="background:var(--c4)"><b>V</b><span>Volatility</span></a>
+      <a class="L" href="#E2" style="background:var(--c5)"><b>E</b><span>Exclusion</span></a>
+      <a class="L" href="#N" style="background:var(--c6)"><b>N</b><span>Neighbours</span></a>
+      <a class="L t" href="#T" style="background:var(--c7)"><b>T</b><span>Triggers</span></a>
+    </nav>
+    <h1>Seven signs that a country is moving toward mass atrocities</h1>
+    <p class="lede">PREVENT is a risk assessment framework from the Auschwitz Institute for the Prevention of Genocide and Mass Atrocities (AIPG). It groups the warning signs into seven categories, one per letter, and leans on indicators that can be measured, so anyone can apply it to any country.</p>
+    <p class="credit">Framework by AIPG. This page is Scarecrow's plain-language summary; it is not an official AIPG publication.</p>
+  </header>
+
+  <!-- FUEL AND SPARK -->
+  <section aria-labelledby="h-fuel">
+    <div class="kicker">The big idea</div>
+    <h2 id="h-fuel">Dry field, then a spark</h2>
+    <p class="intro">Atrocities rarely come from nowhere. Six categories describe slow-moving conditions that build up over years, like a field drying out. The seventh describes sudden events that can set it alight. What decides the outcome is how those in power respond.</p>
+    <div class="card fig">
+      <svg class="wide" viewBox="0 0 960 310" role="img" aria-label="Six structural categories build up like a dry field. A trigger is the spark. Risk becomes violence when those in power respond with force.">
+        <defs><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--faint)"/></marker></defs>
+        <g font-family="IBM Plex Sans, sans-serif">
+          <text x="30" y="26" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--gold)" letter-spacing="1.5">STRUCTURAL RISK · BUILDS OVER YEARS</text>
+          <rect x="30" y="262" width="340" height="34" rx="6" fill="var(--c1)"/><text x="44" y="285" font-size="14.5" font-weight="600" fill="#fff">P · a history of atrocities</text><rect x="42" y="224" width="316" height="34" rx="6" fill="var(--c2)"/><text x="56" y="247" font-size="14.5" font-weight="600" fill="#fff">R · upheaval at the top</text><rect x="54" y="186" width="292" height="34" rx="6" fill="var(--c3)"/><text x="68" y="209" font-size="14.5" font-weight="600" fill="#fff">E · unchecked power</text><rect x="66" y="148" width="268" height="34" rx="6" fill="var(--c4)"/><text x="80" y="171" font-size="14.5" font-weight="600" fill="#fff">V · economic &amp; climate stress</text><rect x="78" y="110" width="244" height="34" rx="6" fill="var(--c5)"/><text x="92" y="133" font-size="14.5" font-weight="600" fill="#fff">E · groups shut out</text><rect x="90" y="72" width="220" height="34" rx="6" fill="var(--c6)"/><text x="104" y="95" font-size="14.5" font-weight="600" fill="#fff">N · violence next door</text>
+          <text x="402" y="176" font-size="44" font-weight="800" fill="var(--faint)" font-family="Montserrat, sans-serif">+</text>
+          <path d="M520 70 L486 160 L512 160 L494 236 L562 130 L534 130 L556 70 Z" fill="var(--c7)"/>
+          <text x="522" y="270" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--gold)" letter-spacing="1.5">T · TRIGGER</text>
+          <text x="522" y="290" text-anchor="middle" font-size="13" fill="var(--dim)">coup attempt, disputed vote, protest</text>
+          <path d="M600 160 H682" stroke="var(--faint)" stroke-width="2.4" marker-end="url(#a1)"/>
+          <rect x="694" y="80" width="252" height="160" rx="14" fill="var(--red-soft)" stroke="var(--c1)" stroke-width="1.5"/>
+          <text x="714" y="114" font-family="Montserrat, sans-serif" font-weight="800" font-size="18" fill="var(--ink)">The deciding moment</text>
+          <text x="714" y="142" font-size="14" fill="var(--dim)">Do those in power answer the</text>
+          <text x="714" y="162" font-size="14" fill="var(--dim)">trigger with dialogue, or by</text>
+          <text x="714" y="182" font-size="14" fill="var(--dim)">targeting a group of people?</text>
+          <text x="714" y="216" font-size="13" font-weight="600" fill="var(--c1)">This is where prevention acts.</text>
+        </g>
+      </svg>
+      <svg class="narrow" viewBox="0 0 360 560" role="img" aria-label="Six structural categories build up. A trigger is the spark. Risk becomes violence when those in power respond with force.">
+        <defs><marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--faint)"/></marker></defs>
+        <g font-family="IBM Plex Sans, sans-serif">
+          <text x="10" y="20" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--gold)" letter-spacing="1.5">STRUCTURAL RISK</text>
+          <rect x="10" y="32" width="340" height="32" rx="6" fill="var(--c6)"/><text x="24" y="53" font-size="14" font-weight="600" fill="#fff">N · violence next door</text>
+          <rect x="10" y="68" width="340" height="32" rx="6" fill="var(--c5)"/><text x="24" y="89" font-size="14" font-weight="600" fill="#fff">E · groups shut out</text>
+          <rect x="10" y="104" width="340" height="32" rx="6" fill="var(--c4)"/><text x="24" y="125" font-size="14" font-weight="600" fill="#fff">V · economic &amp; climate stress</text>
+          <rect x="10" y="140" width="340" height="32" rx="6" fill="var(--c3)"/><text x="24" y="161" font-size="14" font-weight="600" fill="#fff">E · unchecked power</text>
+          <rect x="10" y="176" width="340" height="32" rx="6" fill="var(--c2)"/><text x="24" y="197" font-size="14" font-weight="600" fill="#fff">R · upheaval at the top</text>
+          <rect x="10" y="212" width="340" height="32" rx="6" fill="var(--c1)"/><text x="24" y="233" font-size="14" font-weight="600" fill="#fff">P · a history of atrocities</text>
+          <text x="180" y="282" text-anchor="middle" font-size="34" font-weight="800" fill="var(--faint)" font-family="Montserrat, sans-serif">+</text>
+          <path d="M190 296 L166 352 L184 352 L172 400 L218 334 L198 334 L212 296 Z" fill="var(--c7)"/>
+          <text x="180" y="422" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--gold)" letter-spacing="1.5">T · TRIGGER</text>
+          <path d="M180 432 V458" stroke="var(--faint)" stroke-width="2.2" marker-end="url(#a2)"/>
+          <rect x="10" y="464" width="340" height="88" rx="12" fill="var(--red-soft)" stroke="var(--c1)" stroke-width="1.5"/>
+          <text x="26" y="490" font-family="Montserrat, sans-serif" font-weight="800" font-size="16" fill="var(--ink)">The deciding moment</text>
+          <text x="26" y="512" font-size="13" fill="var(--dim)">Dialogue, or targeting a group?</text>
+          <text x="26" y="536" font-size="13" font-weight="600" fill="var(--c1)">This is where prevention acts.</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- SEVEN CATEGORIES -->
+  <section aria-labelledby="h-cats">
+    <div class="kicker">The seven categories</div>
+    <h2 id="h-cats">What each letter looks at</h2>
+    <p class="intro">Chips with a dashed border are things a country cannot change, such as its history or geography. They still raise risk, but prevention concentrates on the rest.</p>
+    <div class="cats">
+      <article class="card cat" id="P"><div class="big" style="background:var(--c1)">P</div><div>
+        <h3>Prior atrocities &amp; human rights abuses</h3>
+        <p>Has this happened here before? Past mass violence, past armed conflict and past widespread abuse.</p>
+        <div class="chips"><span class="chip fixed">Past atrocities</span><span class="chip fixed">Past armed conflict</span><span class="chip fixed">Past widespread abuses</span></div>
+        <div class="why">The strongest single predictor. History can't be undone, but truth-telling, justice and redress can weaken its pull.</div></div></article>
+      <article class="card cat" id="R"><div class="big" style="background:var(--c2)">R</div><div>
+        <h3>Regime upheaval</h3>
+        <p>Is power changing hands by force or outside the rules?</p>
+        <div class="chips"><span class="chip">Armed conflict</span><span class="chip">Revolution</span><span class="chip">Successful coup</span><span class="chip">Assassination of a leader</span><span class="chip">Other unlawful takeovers</span></div>
+        <div class="why">The next biggest predictor after history: new rulers who took power by force often use force to keep it.</div></div></article>
+      <article class="card cat" id="E1"><div class="big" style="background:var(--c3)">E</div><div>
+        <h3>Executive overreach &amp; non-democratic rule</h3>
+        <p>Can anyone stop the government from doing what it wants?</p>
+        <div class="chips"><span class="chip">Weak state (infant mortality)</span><span class="chip">Electoral democracy</span><span class="chip">Unlimited executive power</span><span class="chip">Courts under pressure</span><span class="chip">Media censorship</span><span class="chip">Factionalism</span><span class="chip">Regime durability</span><span class="chip">Women in parliament</span></div>
+        <div class="why">Mixed regimes, neither full democracies nor full autocracies, tend to carry the highest risk.</div></div></article>
+      <article class="card cat" id="V"><div class="big" style="background:var(--c4)">V</div><div>
+        <h3>Volatility in the economy &amp; environment</h3>
+        <p>Is daily life getting harder, and is the hardship shared unfairly?</p>
+        <div class="chips"><span class="chip">Low development</span><span class="chip">Economic downturns</span><span class="chip">Economic discrimination between groups</span><span class="chip">Climate stress &amp; displacement</span></div>
+        <div class="why">The type of economy matters too: tourism-based economies tend to lower risk, while oil and mining economies do not.</div></div></article>
+      <article class="card cat" id="E2"><div class="big" style="background:var(--c5)">E</div><div>
+        <h3>Exclusion &amp; social fragmentation</h3>
+        <p>Are some groups treated as outsiders by law, by ideology or by those in power?</p>
+        <div class="chips"><span class="chip">Exclusionary ideology</span><span class="chip">State-led discrimination</span><span class="chip">Elite drawn from one ethnic group</span><span class="chip">Limits on women in politics</span><span class="chip">Limits on religious freedom</span><span class="chip fixed">Population size, density &amp; growth</span></div>
+        <div class="why">Exclusion is how a group gets marked as a target long before violence starts.</div></div></article>
+      <article class="card cat" id="N"><div class="big" style="background:var(--c6)">N</div><div>
+        <h3>Neighbouring instability &amp; international factors</h3>
+        <p>Is violence spilling over the border, and how connected is the country to the world?</p>
+        <div class="chips"><span class="chip">Violence in neighbouring countries</span><span class="chip">Within ~200 km of the border</span><span class="chip">Trade openness</span><span class="chip fixed">Geography &amp; history</span></div>
+        <div class="why">Countries that trade more with the world tend to face lower risk; conflict close to the border raises it.</div></div></article>
+      <article class="card cat trigger" id="T"><div class="big" style="background:var(--c7)">T</div><div>
+        <h3>Threats to those in power &amp; triggers</h3>
+        <p>What could set things off in the coming months? These are events, not conditions, so they are watched separately.</p>
+        <div class="chips"><span class="chip">Anti-government protests &amp; action</span><span class="chip">Attempted coups (especially in the last 5 years)</span><span class="chip">Attempted revolutions</span><span class="chip">Upcoming or disputed elections</span><span class="chip">Peace talks</span><span class="chip">International pressure</span></div>
+        <div class="why">The event itself is not the danger. The danger is a regime that answers it by turning on a group of people. International pressure can push either way.</div></div></article>
+    </div>
+  </section>
+
+  <!-- CHANGEABLE -->
+  <section aria-labelledby="h-mod">
+    <div class="kicker">Where prevention works</div>
+    <h2 id="h-mod">What can change, and what can't</h2>
+    <p class="intro">PREVENT separates indicators that policy can move from those it can't. Fixed factors explain why a country starts out at higher risk; changeable ones are where governments, civil society and partners can actually lower it.</p>
+    <div class="split">
+      <div class="card mod"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Can change</h3>
+        <ul><li>Checks on executive power, independent courts, a free press</li><li>Discrimination in law and in the economy</li><li>Women's political participation and religious freedom</li><li>How the state responds to protests, elections and coups</li><li>Justice and redress for past abuses</li></ul></div>
+      <div class="card"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--faint)" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Fixed or very slow</h3>
+        <ul><li>A history of atrocities or war</li><li>Geography and neighbours</li><li>Population size, density and growth</li></ul></div>
+    </div>
+  </section>
+
+  <!-- SCARECROW -->
+  <section aria-labelledby="h-sc">
+    <div class="kicker">On Scarecrow Watch</div>
+    <h2 id="h-sc">How we turn PREVENT into a score</h2>
+    <p class="intro">AIPG's framework names the categories and indicators but does not set scales, weights or cut-offs. The scoring below is Scarecrow's own adaptation, published so anyone can check it.</p>
+    <div class="card">
+      <div class="kicker" style="margin-bottom:6px">Every indicator is rated 1 to 5</div>
+      <div class="scale" aria-label="Scale from 1 low to 5 severe">
+        <div style="background:#4d8b78">1<small>Low</small></div><div style="background:#7a9a52">2<small>Some</small></div><div style="background:#c98a3e">3<small>Moderate</small></div><div style="background:#b5533c">4<small>High</small></div><div style="background:#c2414f">5<small>Severe</small></div>
+      </div>
+      <div class="fig" style="margin-top:20px">
+        <svg class="wide" viewBox="0 0 960 230" role="img" aria-label="Indicators, automated or judged by the Lab, average into category scores, which average into the structural index. Triggers are shown as separate flags.">
+          <defs><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--gold)"/></marker></defs>
+          <g font-family="IBM Plex Sans, sans-serif">
+            <rect x="10" y="20" width="250" height="150" rx="12" fill="var(--panel-2)" stroke="var(--line)"/>
+            <text x="28" y="50" font-family="Montserrat, sans-serif" font-weight="800" font-size="16" fill="var(--ink)">Indicators</text>
+            <rect x="28" y="66" width="62" height="22" rx="11" fill="var(--green-soft)" stroke="var(--green)"/><text x="59" y="81" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--green)">Auto</text>
+            <text x="100" y="81" font-size="12.5" fill="var(--dim)">World Bank, V-Dem, UCDP</text>
+            <rect x="28" y="100" width="62" height="22" rx="11" fill="var(--gold-soft)" stroke="var(--gold)"/><text x="59" y="115" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--gold)">Lab</text>
+            <text x="100" y="115" font-size="12.5" fill="var(--dim)">judged by analysts</text>
+            <text x="28" y="150" font-size="12" fill="var(--faint)">Big automated jumps wait for a human</text>
+            <path d="M266 95 H318" stroke="var(--gold)" stroke-width="2.2" marker-end="url(#a3)"/>
+            <rect x="326" y="20" width="250" height="150" rx="12" fill="var(--panel-2)" stroke="var(--line)"/>
+            <text x="344" y="50" font-family="Montserrat, sans-serif" font-weight="800" font-size="16" fill="var(--ink)">6 category scores</text>
+            <g><rect x="344" y="68" width="30" height="80" rx="4" fill="var(--c1)"/><rect x="380" y="88" width="30" height="60" rx="4" fill="var(--c2)"/><rect x="416" y="78" width="30" height="70" rx="4" fill="var(--c3)"/><rect x="452" y="104" width="30" height="44" rx="4" fill="var(--c4)"/><rect x="488" y="84" width="30" height="64" rx="4" fill="var(--c5)"/><rect x="524" y="96" width="30" height="52" rx="4" fill="var(--c6)"/></g>
+            <text x="344" y="164" font-size="12" fill="var(--faint)">average of each category's indicators</text>
+            <path d="M582 95 H634" stroke="var(--gold)" stroke-width="2.2" marker-end="url(#a3)"/>
+            <rect x="642" y="20" width="308" height="96" rx="12" fill="var(--gold-soft)" stroke="var(--gold)" stroke-width="1.5"/>
+            <text x="662" y="52" font-family="Montserrat, sans-serif" font-weight="800" font-size="16" fill="var(--ink)">Structural index</text>
+            <text x="662" y="78" font-size="13" fill="var(--dim)">average of the six categories,</text>
+            <text x="662" y="98" font-size="13" fill="var(--dim)">shown next to the UN framework score</text>
+            <rect x="642" y="128" width="308" height="80" rx="12" fill="var(--red-soft)" stroke="var(--c7)" stroke-width="1.5"/>
+            <path d="M672 142 L660 170 L670 170 L664 196 L686 162 L676 162 L684 142 Z" fill="var(--c7)"/>
+            <text x="700" y="160" font-family="Montserrat, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">Triggers stay separate</text>
+            <text x="700" y="182" font-size="13" fill="var(--dim)">listed as dated flags with sources,</text>
+            <text x="700" y="200" font-size="13" fill="var(--dim)">never averaged into the index</text>
+          </g>
+        </svg>
+        <svg class="narrow" viewBox="0 0 360 470" role="img" aria-label="Indicators average into category scores, which average into the structural index. Triggers are shown as separate flags.">
+          <defs><marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--gold)"/></marker></defs>
+          <g font-family="IBM Plex Sans, sans-serif">
+            <rect x="10" y="6" width="340" height="104" rx="12" fill="var(--panel-2)" stroke="var(--line)"/>
+            <text x="26" y="34" font-family="Montserrat, sans-serif" font-weight="800" font-size="16" fill="var(--ink)">Indicators</text>
+            <rect x="26" y="46" width="58" height="22" rx="11" fill="var(--green-soft)" stroke="var(--green)"/><text x="55" y="61" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--green)">Auto</text><text x="94" y="61" font-size="13" fill="var(--dim)">World Bank, V-Dem, UCDP</text>
+            <rect x="26" y="76" width="58" height="22" rx="11" fill="var(--gold-soft)" stroke="var(--gold)"/><text x="55" y="91" text-anchor="middle" font-size="11.5" font-weight="600" fill="var(--gold)">Lab</text><text x="94" y="91" font-size="13" fill="var(--dim)">judged by analysts</text>
+            <path d="M180 114 V136" stroke="var(--gold)" stroke-width="2.2" marker-end="url(#a4)"/>
+            <rect x="10" y="142" width="340" height="104" rx="12" fill="var(--panel-2)" stroke="var(--line)"/>
+            <text x="26" y="170" font-family="Montserrat, sans-serif" font-weight="800" font-size="16" fill="var(--ink)">6 category scores</text>
+            <g><rect x="26" y="184" width="44" height="50" rx="4" fill="var(--c1)"/><rect x="78" y="196" width="44" height="38" rx="4" fill="var(--c2)"/><rect x="130" y="190" width="44" height="44" rx="4" fill="var(--c3)"/><rect x="182" y="206" width="44" height="28" rx="4" fill="var(--c4)"/><rect x="234" y="194" width="44" height="40" rx="4" fill="var(--c5)"/><rect x="286" y="200" width="44" height="34" rx="4" fill="var(--c6)"/></g>
+            <path d="M180 250 V272" stroke="var(--gold)" stroke-width="2.2" marker-end="url(#a4)"/>
+            <rect x="10" y="278" width="340" height="80" rx="12" fill="var(--gold-soft)" stroke="var(--gold)" stroke-width="1.5"/>
+            <text x="26" y="306" font-family="Montserrat, sans-serif" font-weight="800" font-size="16" fill="var(--ink)">Structural index</text>
+            <text x="26" y="330" font-size="13" fill="var(--dim)">average of the six categories</text>
+            <rect x="10" y="372" width="340" height="88" rx="12" fill="var(--red-soft)" stroke="var(--c7)" stroke-width="1.5"/>
+            <path d="M38 386 L26 414 L36 414 L30 440 L52 406 L42 406 L50 386 Z" fill="var(--c7)"/>
+            <text x="66" y="402" font-family="Montserrat, sans-serif" font-weight="800" font-size="15" fill="var(--ink)">Triggers stay separate</text>
+            <text x="66" y="424" font-size="13" fill="var(--dim)">dated flags with sources,</text>
+            <text x="66" y="444" font-size="13" fill="var(--dim)">never averaged into the index</text>
+          </g>
+        </svg>
+      </div>
+      <p class="note">Example of an automated cut-off: infant mortality, a common measure of state weakness, scores 1 below 10 deaths per 1,000 births and 5 at 55 or more. All cut-offs live in the open data file <code>data/prevent.json</code> on GitHub.</p>
+      <div class="cta">
+        <a class="btn" href="./">See PREVENT scores for each country →</a>
+        <a class="btn" href="https://www.auschwitzinstitute.org/" target="_blank" rel="noopener noreferrer">About AIPG ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Scarecrow — ASEAN Intelligence &amp; Atrocities Monitor</span>
+    <a href="about.html">About Scarecrow</a>
+  </footer>
+</div>
+<script>
+"use strict";
+document.getElementById("themeBtn").onclick = () => {
+  const r = document.documentElement, light = r.dataset.theme ? r.dataset.theme === "light" : matchMedia("(prefers-color-scheme: light)").matches;
+  r.dataset.theme = light ? "dark" : "light";
+};
+</script>
+</body>
+</html>

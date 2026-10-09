@@ -105,6 +105,10 @@ section.panel{ margin-top:18px; }
 footer{ margin-top:30px; padding-top:22px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-dim); max-width:820px; }
 footer p{ margin:0 0 10px; }
 #err{ display:none; }
+.learn-prevent{ display:inline-flex; align-items:center; gap:12px; margin:0 0 18px; padding:10px 16px; border-radius:12px; border:1px solid var(--gold); background:rgba(201,154,75,.10); color:var(--ink); text-decoration:none; font-size:14px; font-weight:500; }
+.learn-prevent:hover{ background:rgba(201,154,75,.18); }
+.learn-prevent .lp-letters{ font:800 13px var(--brand); letter-spacing:.12em; color:var(--gold); }
+.learn-prevent .lp-arrow{ color:var(--gold); font-weight:800; }
 .staff{ margin:28px 0 0; text-align:right; font-size:12px; }
 .staff a{ color:var(--ink-faint); text-decoration:none; }
 .staff a:hover,.staff a:focus-visible{ color:var(--gold); text-decoration:underline; }
@@ -469,6 +473,9 @@ function renderPrevent(body, c){
   if (!pi){ body.append(el("p","muted",t("prevNoData"))); return; }
   if (P.status !== "reviewed") body.append(Object.assign(el("div","warn",t("prevDraft")), {style:"margin-top:14px"}));
   body.append(el("p","note",t("prevIntro")));
+  const learn = el("a","learn-prevent"); learn.href = "prevent.html";
+  learn.append(el("span","lp-letters","PREVENT"), el("span",null,t("prevLearn")), el("span","lp-arrow","→"));
+  body.append(learn);
   const top = el("div","stats");
   const s1 = el("div","stat"); const b1 = el("b",null,pi.index != null ? pi.index.toFixed(2) : "—"); if (pi.index != null) b1.style.color = band(pi.index)[1]; s1.append(b1, el("span",null,t("prevIndex")));
   const s2 = el("div","stat"); s2.append(el("b",null,avg(c.scores).toFixed(2)), el("span",null,t("prevCompare")));
