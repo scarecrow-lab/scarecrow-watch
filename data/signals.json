@@ -1,7 +1,25 @@
 {
-  "generated": "2026-10-09T15:05:01+00:00",
+  "generated": "2026-10-10T02:22:19+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Myanmar",
+      "date": "2026-10-10",
+      "title": "The Regime Is Laying a Trap for the US. Will Washington Fall for It?",
+      "url": "https://www.irrawaddy.com/opinion/guest-column/the-regime-is-laying-a-trap-for-the-us-will-washington-fall-for-it.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-09",
+      "title": "[Repost] Nobel Peace Prize for 2026 – Navi Pillay",
+      "url": "https://maruah.org/2026/10/09/repost-nobel-peace-prize-for-2026-navi-pillay/",
+      "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
+      "kind": "cso",
+      "via": "Curated sources"
+    },
     {
       "country": "Myanmar",
       "date": "2026-10-09",
@@ -45,6 +63,15 @@
       "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/from-refuge-to-repatriations-malaysias-myanmar-u-turn.html",
       "source": "The Irrawaddy",
       "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-09",
+      "title": "Singapore’s Brand of Pragmatism Sweeps Fundamental Freedoms Under the Rug, Again",
+      "url": "https://forum-asia.org/singapore-pragmatism-fundamental-freedoms-fourth-upr/?utm_source=rss&utm_medium=rss&utm_campaign=singapore-pragmatism-fundamental-freedoms-fourth-upr",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
       "via": "Curated sources"
     },
     {
@@ -93,21 +120,21 @@
       "via": "Curated sources"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-10-07",
-      "title": "Beijing’s Docuseries on Myanmar Scams Implicates Junta But Glosses Chinese Financing",
-      "url": "https://www.irrawaddy.com/news/burma/beijings-docuseries-on-myanmar-scams-implicates-junta-but-glosses-chinese-financing.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
       "country": "Cambodia",
       "date": "2026-10-07",
       "title": "CIVICUS Monitor: Cambodia Activists, Journalists and Opposition Members Face Growing Criminalisation",
       "url": "https://forum-asia.org/cambodia-activists-journalists-opposition-online-commentary-criminalised/?utm_source=rss&utm_medium=rss&utm_campaign=cambodia-activists-journalists-opposition-online-commentary-criminalised",
       "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
       "kind": "network",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-07",
+      "title": "Beijing’s Docuseries on Myanmar Scams Implicates Junta But Glosses Chinese Financing",
+      "url": "https://www.irrawaddy.com/news/burma/beijings-docuseries-on-myanmar-scams-implicates-junta-but-glosses-chinese-financing.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
       "via": "Curated sources"
     },
     {
@@ -552,24 +579,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Singapore",
-      "date": "2026-10-01",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.russiaherald.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "russiaherald.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-01",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.stlouisstar.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "stlouisstar.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Timor-Leste",
       "date": "2026-10-01",
       "title": "Pacific . scoop . co . nz » UN CRC Publishes Findings On Kazakhstan , Lesotho , Slovenia , Tajikistan , Timor - Leste , Uganda And Tanzania",
@@ -837,24 +846,6 @@
       "url": "http://maruah.org/2026/09/28/statement-on-the-recent-charging-of-human-rights-defenders-in-singapore/",
       "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
       "kind": "cso",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-09-25",
-      "title": "Lao migrant’s disappearance in Thailand seems like transnational repression, NGO says",
-      "url": "https://rfa.org/english/laos/2026/09/25/khieo-lapchanh-laos-thailand-missing/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-09-25",
-      "title": "[Statements] Joint Civil Society Statement on Malaysia’s Plan to Refoule Rohingya",
-      "url": "https://forum-asia.org/joint-civil-society-statement-malaysia-plan-refoule-rohingya/?utm_source=rss&utm_medium=rss&utm_campaign=joint-civil-society-statement-malaysia-plan-refoule-rohingya",
-      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
-      "kind": "network",
       "via": "Curated sources"
     }
   ]
