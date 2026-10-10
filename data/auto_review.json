@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T02:22:19+00:00",
+  "generated": "2026-10-10T13:13:21+00:00",
   "pending": [
     {
       "country": "Thailand",
@@ -19,6 +19,26 @@
       "value": 0.571,
       "year": 2025,
       "source": "V-Dem via Our World in Data",
+      "status": "pending"
+    },
+    {
+      "country": "Philippines",
+      "indicator": "armed_conflict",
+      "published": 3,
+      "proposed": 1,
+      "value": 0,
+      "year": "12 months to 2026-10",
+      "source": "UCDP GED Candidate",
+      "status": "pending"
+    },
+    {
+      "country": "Indonesia",
+      "indicator": "armed_conflict",
+      "published": 3,
+      "proposed": 1,
+      "value": 0,
+      "year": "12 months to 2026-10",
+      "source": "UCDP GED Candidate",
       "status": "pending"
     },
     {

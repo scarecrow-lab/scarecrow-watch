@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T02:22:19+00:00",
+  "generated": "2026-10-10T13:13:21+00:00",
   "window_days": 14,
   "items": [
     {
@@ -12,12 +12,30 @@
       "via": "Curated sources"
     },
     {
+      "country": "Myanmar",
+      "date": "2026-10-10",
+      "title": "South African - born jurist Navi Pillay wins Nobel Peace Prize for her work in international justice",
+      "url": "https://isp.netscape.com:443/news/world/story/0001/20261010/f60744c07df969e50e9e69786fdb7de1",
+      "source": "isp.netscape.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
       "country": "Singapore",
       "date": "2026-10-09",
       "title": "[Repost] Nobel Peace Prize for 2026 – Navi Pillay",
       "url": "https://maruah.org/2026/10/09/repost-nobel-peace-prize-for-2026-navi-pillay/",
       "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
       "kind": "cso",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-09",
+      "title": "Singapore’s Brand of Pragmatism Sweeps Fundamental Freedoms Under the Rug, Again",
+      "url": "https://forum-asia.org/singapore-pragmatism-fundamental-freedoms-fourth-upr/?utm_source=rss&utm_medium=rss&utm_campaign=singapore-pragmatism-fundamental-freedoms-fourth-upr",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
       "via": "Curated sources"
     },
     {
@@ -67,9 +85,9 @@
     },
     {
       "country": "Singapore",
-      "date": "2026-10-09",
-      "title": "Singapore’s Brand of Pragmatism Sweeps Fundamental Freedoms Under the Rug, Again",
-      "url": "https://forum-asia.org/singapore-pragmatism-fundamental-freedoms-fourth-upr/?utm_source=rss&utm_medium=rss&utm_campaign=singapore-pragmatism-fundamental-freedoms-fourth-upr",
+      "date": "2026-10-08",
+      "title": "Singapore: Drop New Wave of Charges Against Human Rights Defenders, End Criminalization of Freedom of Expression and Peaceful Assembly",
+      "url": "https://forum-asia.org/singapore-drop-charges-human-rights-defenders-end-criminalization-peaceful-assembly/?utm_source=rss&utm_medium=rss&utm_campaign=singapore-drop-charges-human-rights-defenders-end-criminalization-peaceful-assembly",
       "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
       "kind": "network",
       "via": "Curated sources"
@@ -108,15 +126,6 @@
       "url": "https://www.irrawaddy.com/opinion/guest-column/arakan-under-the-myanmar-regimes-air-war.html",
       "source": "The Irrawaddy",
       "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-08",
-      "title": "Singapore: Drop New Wave of Charges Against Human Rights Defenders, End Criminalization of Freedom of Expression and Peaceful Assembly",
-      "url": "https://forum-asia.org/singapore-drop-charges-human-rights-defenders-end-criminalization-peaceful-assembly/?utm_source=rss&utm_medium=rss&utm_campaign=singapore-drop-charges-human-rights-defenders-end-criminalization-peaceful-assembly",
-      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
-      "kind": "network",
       "via": "Curated sources"
     },
     {
@@ -341,15 +350,6 @@
       "title": "Midwest Honor Flight Mission 33 : Moments at the Vietnam Memorial Wall",
       "url": "https://www.ktiv.com/2026/10/01/midwest-honor-flight-mission-33-moments-vietnam-memorial-wall/",
       "source": "ktiv.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-02",
-      "title": "Airstrike - Devastated Villages in Shwegu Township Urgently Need Reconstruction Aid",
-      "url": "https://www.bnionline.net/en/news/airstrike-devastated-villages-shwegu-township-urgently-need-reconstruction-aid",
-      "source": "bnionline.net",
       "kind": "News",
       "via": "GDELT"
     },

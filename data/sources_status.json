@@ -1,131 +1,133 @@
 {
-  "generated": "2026-10-10T02:22:19+00:00",
+  "generated": "2026-10-10T13:13:21+00:00",
   "sources": {
     "crca": {
       "status": "ok",
       "feed": "https://www.crcasia.org/feed/",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 0,
       "error": null
     },
     "maruah": {
       "status": "ok",
       "feed": "https://maruah.org/feed/",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 3,
       "error": null
     },
     "ppdi": {
       "status": "error",
-      "checked": "2026-10-10T02:22:19+00:00",
+      "checked": "2026-10-10T13:13:21+00:00",
       "error": "https://ppdi.or.id/atom.xml: HTTP Error 404: Not Found"
     },
     "stc": {
       "status": "error",
-      "checked": "2026-10-10T02:22:19+00:00",
+      "checked": "2026-10-10T13:13:21+00:00",
       "error": "https://www.savethechildren.net/atom.xml: HTTP Error 404: Not Found"
     },
     "vpdf": {
       "status": "error",
-      "checked": "2026-10-10T02:22:19+00:00",
+      "checked": "2026-10-10T13:13:21+00:00",
       "error": "not well-formed (invalid token): line 124, column 27"
     },
     "aichr": {
-      "status": "ok",
+      "status": "error",
       "feed": "https://aichr.org/feed/",
       "updated": "2026-10-10T02:22:19+00:00",
       "items": 0,
-      "error": null
+      "error": "https://aichr.org/atom.xml: <urlopen error timed out>",
+      "checked": "2026-10-10T13:13:21+00:00"
     },
     "apr2p": {
       "status": "ok",
       "feed": "https://r2pasiapacific.org/rss.xml",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 1,
       "error": null
     },
     "irrawaddy": {
-      "status": "ok",
+      "status": "error",
       "feed": "https://www.irrawaddy.com/feed",
       "updated": "2026-10-10T02:22:19+00:00",
       "items": 13,
-      "error": null
+      "error": "https://www.irrawaddy.com/atom.xml: HTTP Error 404: Not Found",
+      "checked": "2026-10-10T13:13:21+00:00"
     },
     "rfa": {
       "status": "ok",
       "feed": "https://www.rfa.org/english/rss",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 2,
       "error": null
     },
     "gaamac": {
       "status": "ok",
       "feed": "https://gaamac.org/feed/",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 0,
       "error": null
     },
     "ajc": {
       "status": "ok",
       "feed": "https://www.asiajusticecoalition.org/blog-feed.xml",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 0,
       "error": null
     },
     "forumasia": {
       "status": "ok",
       "feed": "https://forum-asia.org/feed/",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 7,
       "error": null
     },
     "ajar": {
       "status": "ok",
       "feed": "https://asia-ajar.org/feed/",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 0,
       "error": null
     },
     "aphr": {
       "status": "error",
-      "checked": "2026-10-10T02:22:19+00:00",
+      "checked": "2026-10-10T13:13:21+00:00",
       "error": "https://aseanmp.org/atom.xml: HTTP Error 403: Forbidden"
     },
     "fortify": {
       "status": "error",
-      "checked": "2026-10-10T02:22:19+00:00",
+      "checked": "2026-10-10T13:13:21+00:00",
       "error": "https://www.fortifyrights.org/atom.xml: HTTP Error 404: Not Found"
     },
     "ndburma": {
       "status": "error",
-      "checked": "2026-10-10T02:22:19+00:00",
+      "checked": "2026-10-10T13:13:21+00:00",
       "error": "https://www.nd-burma.org/atom.xml: HTTP Error 404: Not Found"
     },
     "karapatan": {
       "status": "ok",
       "feed": "https://www.karapatan.org/feed/",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 0,
       "error": null
     },
     "dccam": {
       "status": "ok",
       "feed": "https://www.dccam.org/feed/",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 7,
       "error": null
     },
     "asylum": {
       "status": "ok",
       "feed": "https://asylumaccess.org/feed/",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 0,
       "error": null
     },
     "bellingcat": {
       "status": "ok",
       "feed": "https://www.bellingcat.com/feed/",
-      "updated": "2026-10-10T02:22:19+00:00",
+      "updated": "2026-10-10T13:13:21+00:00",
       "items": 0,
       "error": null
     }
