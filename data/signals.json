@@ -1,7 +1,16 @@
 {
-  "generated": "2026-10-11T01:56:22+00:00",
+  "generated": "2026-10-12T02:26:22+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Myanmar",
+      "date": "2026-10-11",
+      "title": "September 2026",
+      "url": "https://www.asiajusticecoalition.org/post/september-2026",
+      "source": "Asia Justice Coalition",
+      "kind": "network",
+      "via": "Curated sources"
+    },
     {
       "country": "Myanmar",
       "date": "2026-10-10",
@@ -12,11 +21,38 @@
       "via": "Curated sources"
     },
     {
-      "country": "Myanmar",
+      "country": "Cambodia",
       "date": "2026-10-10",
-      "title": "South African - born jurist Navi Pillay wins Nobel Peace Prize for her work in international justice",
-      "url": "https://isp.netscape.com:443/news/world/story/0001/20261010/f60744c07df969e50e9e69786fdb7de1",
-      "source": "isp.netscape.com",
+      "title": "  I should have won 8 Nobel Peace Prizes : Trump slams Nobel Committee for awarding Navi Pillay",
+      "url": "http://www.pakistantelegraph.com/news/279363161/i-should-have-won-8-nobel-peace-prizes-trump-slams-nobel-committee-for-awarding-navi-pillay",
+      "source": "pakistantelegraph.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-10",
+      "title": "A U . S .- brokered ceasefire was supposed to end the war in Gaza . A year later , progress has stalled",
+      "url": "https://japantoday.com/category/world/a-us-brokered-ceasefire-was-supposed-to-end-the-war-in-gaza.-a-year-later-progress-has-stalled",
+      "source": "japantoday.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-10",
+      "title": "When will El Niño peak and end ? A full timeline of the weather phenomenon taking the world by storm",
+      "url": "https://www.euronews.com/2026/10/10/when-will-el-nino-peak-and-end-a-full-timeline-of-the-weather-phenomenon-taking-the-world-",
+      "source": "euronews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-10",
+      "title": "A US - brokered ceasefire was supposed to end the war in Gaza . A year later , progress has stalled",
+      "url": "https://www.newsday.com/news/nation/israel-palestinians-hamas-war-gaza-ceasefire-explainer-p59012",
+      "source": "newsday.com",
       "kind": "News",
       "via": "GDELT"
     },
