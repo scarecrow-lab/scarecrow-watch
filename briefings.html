@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Briefings · Scarecrow Watch</title>
+<meta name="description" content="Published statements, open letters and policy briefs from Scarecrow Watch — an independent, open-source early-warning watch for Southeast Asia.">
+<meta name="theme-color" content="#14181f">
+<link rel="icon" href="assets/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Montserrat:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14181f; --panel:#1c222c; --panel-2:#232a35; --line:#333d4b;
+  --ink:#e9e6df; --ink-dim:#a9b0bc; --ink-faint:#6f7889; --gold:#c99a4b;
+  --glass:rgba(28,34,44,.72); --shadow:0 1px 2px rgba(0,0,0,.2), 0 12px 34px rgba(0,0,0,.28);
+  --serif:'Source Serif 4', Georgia, serif;
+  --sans:'IBM Plex Sans','IBM Plex Sans Thai',-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --brand:'Montserrat','Chakra Petch',var(--sans);
+}
+:root[data-theme="light"]{ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#8a8f98; --gold:#a87a2f; --glass:rgba(255,255,255,.84); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); }
+@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#8a8f98; --gold:#a87a2f; --glass:rgba(255,255,255,.84); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); } }
+*{ box-sizing:border-box; }
+body{ margin:0; background:radial-gradient(1200px 700px at 85% -10%, rgba(201,154,75,.10), transparent 60%), radial-gradient(900px 600px at -10% 110%, rgba(77,139,120,.08), transparent 60%), var(--bg); background-attachment:fixed; color:var(--ink); font-family:var(--sans); line-height:1.5; }
+a{ color:var(--gold); }
+.wrap{ max-width:1040px; margin:0 auto; padding:28px 22px 60px; }
+.logo-mark{ display:inline-block; width:36px; height:37px; background:var(--ink); -webkit-mask:url(assets/logo-icon.png) center/contain no-repeat; mask:url(assets/logo-icon.png) center/contain no-repeat; flex:none; }
+header{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; align-items:flex-end; padding-bottom:20px; border-bottom:1px solid var(--line); margin-bottom:22px; }
+.wordmark{ display:flex; align-items:center; gap:11px; margin-bottom:12px; }
+.brand{ font-family:var(--brand); font-weight:800; font-size:21px; letter-spacing:.05em; color:var(--ink); line-height:1; }
+.brand em{ font-style:normal; font-weight:700; color:var(--gold); margin-left:.3em; }
+h1{ font-family:var(--serif); font-size:clamp(26px,4vw,34px); margin:0 0 6px; line-height:1.15; }
+.lede{ color:var(--ink-dim); margin:0; max-width:60ch; font-size:14.5px; }
+.controls{ display:flex; gap:8px; align-items:center; }
+.navlink,.btn{ background:var(--panel-2); color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font:500 12px var(--mono); cursor:pointer; text-decoration:none; transition:border-color .15s, color .15s; white-space:nowrap; }
+.navlink:hover,.btn:hover{ border-color:var(--gold); color:var(--gold); }
+.navlink.here{ border-color:var(--gold); color:var(--gold); }
+.filters{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px; }
+.chip{ background:transparent; color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:6px 13px; font:500 12.5px var(--sans); cursor:pointer; transition:all .15s; }
+.chip:hover{ border-color:var(--gold); color:var(--ink); }
+.chip.on{ background:var(--gold); color:#13161d; border-color:var(--gold); font-weight:600; }
+.count{ color:var(--ink-faint); font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; margin:0 0 14px; }
+.grid{ display:grid; gap:14px; }
+.card{ display:block; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; text-decoration:none; color:inherit; box-shadow:var(--shadow); transition:border-color .15s, transform .15s; }
+.card:hover{ border-color:var(--gold); transform:translateY(-1px); }
+.card .meta{ display:flex; flex-wrap:wrap; gap:8px 12px; align-items:center; margin-bottom:9px; }
+.badge{ font:600 10.5px var(--mono); letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:999px; border:1px solid var(--gold); color:var(--gold); }
+.badge.statement{ border-color:#4d8b78; color:#6fb79f; } :root[data-theme="light"] .badge.statement{ color:#3b7a63; }
+.badge.letter{ border-color:#3b97ad; color:#5bb8cc; } :root[data-theme="light"] .badge.letter{ color:#2d7d90; }
+.cdate{ font:500 12px var(--mono); color:var(--ink-faint); }
+.ccountry{ font:600 12.5px var(--sans); color:var(--ink-dim); }
+.risk{ margin-left:auto; font:600 11px var(--mono); letter-spacing:.04em; text-transform:uppercase; color:var(--ink-faint); }
+.risk b{ color:#d98a6a; } :root[data-theme="light"] .risk b{ color:#b85c3a; }
+.card h2{ font-family:var(--serif); font-size:19px; line-height:1.3; margin:0 0 6px; color:var(--ink); }
+.card p{ margin:0; color:var(--ink-dim); font-size:13.5px; }
+.card .go{ display:inline-flex; align-items:center; gap:6px; margin-top:12px; font:600 12.5px var(--sans); color:var(--gold); }
+.card .pending{ display:inline-block; margin-top:12px; font:500 12px var(--mono); color:var(--ink-faint); }
+.empty{ background:var(--panel); border:1px dashed var(--line); border-radius:12px; padding:40px 24px; text-align:center; color:var(--ink-dim); }
+.empty b{ color:var(--ink); display:block; margin-bottom:6px; font-size:15px; }
+.note{ margin-top:28px; padding-top:18px; border-top:1px solid var(--line); color:var(--ink-faint); font-size:12px; max-width:70ch; }
+footer{ max-width:1040px; margin:0 auto; padding:0 22px 40px; color:var(--ink-faint); font-size:12px; }
+footer a{ color:var(--ink-dim); }
+@media (max-width:620px){ .risk{ margin-left:0; } header{ align-items:flex-start; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="wordmark"><span class="logo-mark" role="img" aria-label="Scarecrow"></span><span class="brand">SCARECROW<em>WATCH</em></span></div>
+      <h1>Briefings</h1>
+      <p class="lede">Published statements, open letters and policy briefs from Scarecrow Watch. Every item is verified, public-data analysis that has passed the Lab's review.</p>
+    </div>
+    <nav class="controls" aria-label="Sections">
+      <a class="navlink" href="index.html">← Dashboard</a>
+      <a class="navlink here" href="briefings.html" aria-current="page">Briefings</a>
+      <a class="navlink" href="about.html">About</a>
+      <button class="btn" id="theme" type="button">Theme</button>
+    </nav>
+  </header>
+
+  <div class="filters" id="filters"></div>
+  <p class="count" id="count"></p>
+  <div class="grid" id="grid"></div>
+
+  <p class="note">Briefings reflect Scarecrow Watch's independent analysis of public, verified information. We document patterns and data — not graphic images of victims. Where we cite advocacy organisations, we do so as an attributed signal, and our findings stand on independently verified evidence.</p>
+</div>
+
+<footer>
+  <p>Scarecrow Watch — an independent, non-profit, open-source early-warning watch for Southeast Asia. <a href="about.html">About &amp; independence</a> · <a href="index.html">Live dashboard</a></p>
+</footer>
+
+<script>
+"use strict";
+var $ = function(s){ return document.querySelector(s); };
+function el(tag, cls, text){ var e = document.createElement(tag); if(cls) e.className = cls; if(text != null) e.textContent = text; return e; }
+function safeUrl(u){ return (typeof u === "string" && /^(https?:\/\/|briefings\/|data\/)/i.test(u)) ? u : null; }
+
+$("#theme").onclick = function(){
+  var r = document.documentElement;
+  var dark = r.dataset.theme ? r.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
+  r.dataset.theme = dark ? "light" : "dark";
+};
+
+var ALL = [], activeCountry = "All";
+var BADGE = { "Policy brief":"", "Recommendations":"", "Statement":"statement", "Press statement":"statement", "Open letter":"letter" };
+
+function fmtDate(s){
+  var d = new Date(s + "T00:00:00");
+  if (isNaN(d)) return s || "";
+  return d.toLocaleDateString("en-GB", { day:"numeric", month:"short", year:"numeric" });
+}
+
+function render(){
+  var grid = $("#grid"), count = $("#count");
+  grid.innerHTML = "";
+  var items = ALL.filter(function(b){ return activeCountry === "All" || b.country === activeCountry; });
+  items.sort(function(a,b){ return (b.date||"").localeCompare(a.date||""); });
+
+  count.textContent = items.length === 1 ? "1 briefing" : items.length + " briefings";
+
+  if (!items.length){
+    var e = el("div","empty");
+    e.appendChild(el("b", null, "No briefings published yet"));
+    e.appendChild(el("span", null, "Published statements, open letters and policy briefs will appear here as the Lab issues them."));
+    grid.appendChild(e);
+    return;
+  }
+
+  items.forEach(function(b){
+    var url = safeUrl(b.url);
+    var card = url ? el("a","card") : el("div","card");
+    if (url){ card.href = url; card.target = "_blank"; card.rel = "noopener noreferrer"; }
+
+    var meta = el("div","meta");
+    var type = b.type || "Briefing";
+    meta.appendChild(el("span","badge " + (BADGE[type] || ""), type));
+    if (b.date) meta.appendChild(el("span","cdate", fmtDate(b.date)));
+    if (b.country) meta.appendChild(el("span","ccountry", b.country));
+    if (b.risk){ var r = el("span","risk"); r.append("Risk: "); r.appendChild(el("b", null, b.risk)); meta.appendChild(r); }
+    card.appendChild(meta);
+
+    card.appendChild(el("h2", null, b.title || "Untitled briefing"));
+    if (b.summary) card.appendChild(el("p", null, b.summary));
+
+    if (url){
+      var go = el("span","go"); go.append("Read");
+      var arr = el("span", null, "→"); go.appendChild(arr); card.appendChild(go);
+    } else {
+      card.appendChild(el("span","pending", "Document link coming soon"));
+    }
+    grid.appendChild(card);
+  });
+}
+
+function buildFilters(){
+  var set = {}; ALL.forEach(function(b){ if (b.country) set[b.country] = 1; });
+  var countries = ["All"].concat(Object.keys(set).sort());
+  var box = $("#filters"); box.innerHTML = "";
+  if (countries.length <= 2){ box.style.display = "none"; return; }
+  countries.forEach(function(c){
+    var chip = el("button","chip" + (c === activeCountry ? " on" : ""), c);
+    chip.type = "button";
+    chip.onclick = function(){ activeCountry = c; buildFilters(); render(); };
+    box.appendChild(chip);
+  });
+}
+
+fetch("data/briefings.json?v=" + Date.now())
+  .then(function(r){ return r.ok ? r.json() : []; })
+  .then(function(data){ ALL = Array.isArray(data) ? data : []; buildFilters(); render(); })
+  .catch(function(){ ALL = []; buildFilters(); render(); });
+</script>
+</body>
+</html>
