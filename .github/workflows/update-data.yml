@@ -16,15 +16,21 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      DTM_KEY: ${{ secrets.DTMAPI_SUBSCRIPTION_KEY }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+      - name: Install DTM client (only when the key is set)
+        if: env.DTM_KEY != ''
+        run: pip install --quiet dtmapi
       - name: Fetch public data
         env:
           RELIEFWEB_APPNAME: scarecrow-lab.github.io
           UCDP_TOKEN: ${{ secrets.UCDP_TOKEN }}
+          DTMAPI_SUBSCRIPTION_KEY: ${{ secrets.DTMAPI_SUBSCRIPTION_KEY }}
         run: python scripts/fetch_data.py
       - name: Commit if anything changed
         run: |

@@ -9,6 +9,7 @@ Pulls public data for the 11 ASEAN states and writes JSON files the dashboard re
   data/auto_review.json   automated changes held for Lab approval (scores and leader changes)
   data/factbook_auto.json population, GDP, GDP per capita and area (World Bank)
   data/leaders_seen.json  last confirmed leaders from Wikidata
+  data/dtm.json           IOM DTM IDP figures (conflict/disaster) — only when a DTM key is set
   data/meta.json          when each source last succeeded, and any error
 
 Lab assessments (data/assessments.json) are edited by hand and never touched here.
@@ -656,6 +657,59 @@ def merge_signals(new_items, old_items):
     return sorted(final, key=lambda x: x.get("date", ""), reverse=True)
 
 
+def dtm():
+    """IOM DTM — Internally Displaced Persons (IDP), Admin 0, DTM API v3.
+    Needs a free subscription key (register at the DTM API portal) in DTMAPI_SUBSCRIPTION_KEY,
+    and the `dtmapi` package (installed by the workflow only when the key is set).
+    Writes the latest reporting round's total IDPs per ASEAN country, split by displacement
+    reason (conflict vs disaster). Non-sensitive aggregated figures only. Cite: IOM DTM.
+    Note: rows coded 'Conflict; Natural disaster' count toward both buckets (overlap) — refine
+    once validated against the live response.
+    """
+    key = os.environ.get("DTMAPI_SUBSCRIPTION_KEY", "").strip()
+    if not key:
+        raise RuntimeError("DTMAPI_SUBSCRIPTION_KEY is not set (register for a free key at the DTM API portal)")
+    try:
+        from dtmapi import DTMApi
+    except Exception as e:
+        raise RuntimeError("dtmapi package not available: " + str(e))
+    api = DTMApi(subscription_key=key)
+    out = {}
+    for name, iso in COUNTRIES.items():
+        try:
+            rows = api.get_idp_admin0_data(Admin0Pcode=iso, to_pandas=False)
+        except Exception:
+            continue
+        if isinstance(rows, dict):
+            rows = rows.get("result") or rows.get("data") or rows.get("value") or []
+        rows = [r for r in (rows or []) if isinstance(r, dict) and r.get("numPresentIdpInd") is not None]
+        if not rows:
+            continue
+        latest = max((str(r.get("reportingDate") or "") for r in rows), default="")
+        cur = [r for r in rows if str(r.get("reportingDate") or "") == latest] or rows
+
+        def n(r):
+            try:
+                return int(float(r.get("numPresentIdpInd") or 0))
+            except (TypeError, ValueError):
+                return 0
+
+        total = sum(n(r) for r in cur)
+        reasons = {}
+        for r in cur:
+            k = str(r.get("displacementReason") or "Unknown")
+            reasons[k] = reasons.get(k, 0) + n(r)
+        conflict = sum(v for k, v in reasons.items() if "conflict" in k.lower())
+        disaster = sum(v for k, v in reasons.items() if "disaster" in k.lower())
+        out[name] = {"idp": total, "conflict": conflict, "disaster": disaster,
+                     "round": cur[0].get("roundNumber"), "date": (latest or "")[:10],
+                     "reasons": reasons}
+        time.sleep(0.3)
+    if not out:
+        raise RuntimeError("no DTM data returned (check the key, or there is no DTM coverage for these countries)")
+    return out
+
+
 def main():
     os.makedirs(DATA, exist_ok=True)
     meta = read("meta.json", {"sources": {}})
@@ -712,6 +766,16 @@ def main():
             prev = meta["sources"].get(key, {})
             meta["sources"][key] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
             log(key, "FAILED", e)
+
+    try:
+        d = dtm()
+        write("dtm.json", {"generated": stamp, "source": "IOM DTM (IDP, Admin 0)", "countries": d})
+        meta["sources"]["dtm"] = {"status": "ok", "updated": stamp, "count": len(d), "error": None}
+        log("dtm ok", len(d))
+    except Exception as e:
+        prev = meta["sources"].get("dtm", {})
+        meta["sources"]["dtm"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
+        log("dtm FAILED", e)
 
     try:
         held = review_auto(read("indicators.json", {}).get("indicators", {}))
