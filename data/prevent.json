@@ -1,1099 +1,1253 @@
 {
-  "status": "draft",
-  "status_note": "Lab-judged scores were drafted by Claude from public knowledge on 2026-10-05 and must be reviewed by the Scarecrow Lab. Set status to \"reviewed\" after review to remove the draft banner.",
-  "reviewed": null,
-  "method": {
-    "scale": "Every indicator is scored 1 (low) to 5 (severe). A category score is the average of its indicators. The PREVENT structural index is the average of the six structural categories (P, R, E, V, E, N). Triggers (T) are listed as flags and never averaged in, because the framework locates the risk in how those in power respond to them.",
-    "auto": "World Bank and V-Dem (via Our World in Data) indicators refresh daily; UCDP conflict events refresh monthly once a UCDP token is configured. Each is scored against thresholds stored in data/prevent.json. Neighbouring violence counts UCDP deaths in other countries within about 200 km of approximate border points; until UCDP data is available it falls back to the highest Lab conflict score among ASEAN neighbours.",
-    "adaptation": "Adapted by Scarecrow from the AIPG PREVENT Risk Assessment Framework. The framework does not prescribe scales, weights or thresholds; these are Scarecrow's choices.",
-    "review": "Exception-based review: an automated score that moves by more than one step from the last published score is held, and the previous score stays public until the Lab approves the change in the Review Room. Upcoming elections recorded by the Lab appear automatically as triggers from 180 days before to 30 days after the vote."
-  },
-  "categories": [
-    {
-      "key": "P",
-      "name": {
-        "en": "Prior atrocities & human rights abuses",
-        "th": "ประวัติอาชญากรรมโหดร้ายและการละเมิดสิทธิ"
-      },
-      "indicators": [
-        "prior_atrocity",
-        "prior_conflict",
-        "prior_hr"
-      ]
-    },
-    {
-      "key": "R",
-      "name": {
-        "en": "Regime upheaval",
-        "th": "ความปั่นป่วนของระบอบ"
-      },
-      "indicators": [
-        "armed_conflict",
-        "coup_extralegal"
-      ]
-    },
-    {
-      "key": "E1",
-      "letter": "E",
-      "name": {
-        "en": "Executive overreach & non-democratic governance",
-        "th": "อำนาจบริหารล้นเกินและการปกครองที่ไม่เป็นประชาธิปไตย"
-      },
-      "indicators": [
-        "infant_mortality",
-        "electoral_democracy",
-        "exec_constraints",
-        "judicial_independence",
-        "media_censorship",
-        "factionalism",
-        "regime_durability",
-        "women_parliament"
-      ]
-    },
-    {
-      "key": "V",
-      "name": {
-        "en": "Volatility in the economy & environment",
-        "th": "ความผันผวนทางเศรษฐกิจและสิ่งแวดล้อม"
-      },
-      "indicators": [
-        "gdp_per_capita",
-        "gdp_growth",
-        "economic_discrimination",
-        "environmental_stress"
-      ]
-    },
-    {
-      "key": "E2",
-      "letter": "E",
-      "name": {
-        "en": "Exclusion & social fragmentation",
-        "th": "การกีดกันและความแตกแยกทางสังคม"
-      },
-      "indicators": [
-        "exclusionary_ideology",
-        "state_discrimination",
-        "elite_ethnicity",
-        "religious_restrictions",
-        "population_growth"
-      ]
-    },
-    {
-      "key": "N",
-      "name": {
-        "en": "Neighbouring instability & international factors",
-        "th": "ความไม่มั่นคงของเพื่อนบ้านและปัจจัยระหว่างประเทศ"
-      },
-      "indicators": [
-        "neighbor_violence",
-        "trade_openness"
-      ]
-    }
-  ],
-  "indicators": {
-    "prior_atrocity": {
-      "en": "Prior atrocity",
-      "th": "เคยเกิดอาชญากรรมโหดร้าย",
-      "type": "lab"
-    },
-    "prior_conflict": {
-      "en": "Prior armed conflict",
-      "th": "เคยมีความขัดแย้งด้วยอาวุธ",
-      "type": "lab"
-    },
-    "prior_hr": {
-      "en": "Prior widespread human rights violations",
-      "th": "เคยละเมิดสิทธิมนุษยชนอย่างกว้างขวาง",
-      "type": "lab"
-    },
-    "armed_conflict": {
-      "en": "Current armed conflict (UCDP deaths, 12 months)",
-      "th": "ความขัดแย้งด้วยอาวุธในปัจจุบัน (ผู้เสียชีวิตตาม UCDP 12 เดือน)",
-      "type": "auto",
-      "source": "ucdp",
-      "unit": "deaths from organized violence, last 12 months",
-      "higher_is_worse": true,
-      "thresholds": [
-        1,
-        25,
-        250,
-        1000
-      ],
-      "fallback": "lab"
-    },
-    "coup_extralegal": {
-      "en": "Coups or extralegal leadership change",
-      "th": "รัฐประหารหรือการเปลี่ยนผู้นำนอกกฎหมาย",
-      "type": "lab"
-    },
-    "infant_mortality": {
-      "en": "Infant mortality (weak state proxy)",
-      "th": "อัตราการตายของทารก (ตัวแทนความอ่อนแอของรัฐ)",
-      "type": "auto",
-      "wb": "SP.DYN.IMRT.IN",
-      "unit": "per 1,000 births",
-      "thresholds": [
-        10,
-        20,
-        35,
-        55
-      ],
-      "higher_is_worse": true
-    },
-    "electoral_democracy": {
-      "en": "Lack of electoral democracy (V-Dem)",
-      "th": "การขาดประชาธิปไตยผ่านการเลือกตั้ง (V-Dem)",
-      "type": "auto",
-      "source": "owid",
-      "unit": "V-Dem index, 0–1 (higher is freer)",
-      "higher_is_worse": false,
-      "fallback": "lab",
-      "owid": "electoral-democracy-index",
-      "thresholds": [
-        0.7,
-        0.5,
-        0.35,
-        0.2
-      ]
-    },
-    "exec_constraints": {
-      "en": "Unlimited executive authority (V-Dem legislative constraints)",
-      "th": "อำนาจบริหารไม่มีการถ่วงดุล (ดัชนีการถ่วงดุลโดยสภาของ V-Dem)",
-      "type": "auto",
-      "source": "owid",
-      "unit": "V-Dem index, 0–1 (higher is freer)",
-      "higher_is_worse": false,
-      "fallback": "lab",
-      "owid": "legislative-constraints-on-the-executive-index",
-      "thresholds": [
-        0.8,
-        0.6,
-        0.4,
-        0.2
-      ]
-    },
-    "judicial_independence": {
-      "en": "Weak judicial constraints (V-Dem)",
-      "th": "ตุลาการถ่วงดุลอำนาจบริหารได้น้อย (V-Dem)",
-      "type": "auto",
-      "source": "owid",
-      "unit": "V-Dem index, 0–1 (higher is freer)",
-      "higher_is_worse": false,
-      "fallback": "lab",
-      "owid": "judicial-constraints-on-the-executive-index",
-      "thresholds": [
-        0.8,
-        0.6,
-        0.4,
-        0.2
-      ]
-    },
-    "media_censorship": {
-      "en": "Media censorship (V-Dem freedom of expression)",
-      "th": "การเซ็นเซอร์สื่อ (ดัชนีเสรีภาพการแสดงออกของ V-Dem)",
-      "type": "auto",
-      "source": "owid",
-      "unit": "V-Dem index, 0–1 (higher is freer)",
-      "higher_is_worse": false,
-      "fallback": "lab",
-      "owid": "freedom-of-expression-index",
-      "thresholds": [
-        0.8,
-        0.6,
-        0.4,
-        0.2
-      ]
-    },
-    "factionalism": {
-      "en": "Factionalism",
-      "th": "การผูกขาดอำนาจโดยกลุ่มเดียว",
-      "type": "lab"
-    },
-    "regime_durability": {
-      "en": "Low regime durability",
-      "th": "ความไม่มั่นคงของระบอบ",
-      "type": "lab"
-    },
-    "women_parliament": {
-      "en": "Women in parliament",
-      "th": "สัดส่วนสมาชิกรัฐสภาหญิง",
-      "type": "auto",
-      "wb": "SG.GEN.PARL.ZS",
-      "unit": "% of seats",
-      "thresholds": [
-        30,
-        20,
-        15,
-        10
-      ],
-      "higher_is_worse": false
-    },
-    "gdp_per_capita": {
-      "en": "Low economic development",
-      "th": "ระดับการพัฒนาเศรษฐกิจต่ำ",
-      "type": "auto",
-      "wb": "NY.GDP.PCAP.PP.CD",
-      "unit": "GDP per capita, PPP $",
-      "thresholds": [
-        40000,
-        20000,
-        10000,
-        5000
-      ],
-      "higher_is_worse": false
-    },
-    "gdp_growth": {
-      "en": "Economic downturn",
-      "th": "เศรษฐกิจถดถอย",
-      "type": "auto",
-      "wb": "NY.GDP.MKTP.KD.ZG",
-      "unit": "% GDP growth",
-      "thresholds": [
-        4,
-        2,
-        0,
-        -3
-      ],
-      "higher_is_worse": false
-    },
-    "economic_discrimination": {
-      "en": "Economic discrimination between groups",
-      "th": "การเลือกปฏิบัติทางเศรษฐกิจระหว่างกลุ่ม",
-      "type": "lab"
-    },
-    "environmental_stress": {
-      "en": "Environmental and climate stress",
-      "th": "ความเครียดด้านสิ่งแวดล้อมและสภาพภูมิอากาศ",
-      "type": "lab"
-    },
-    "exclusionary_ideology": {
-      "en": "Exclusionary ideology",
-      "th": "อุดมการณ์กีดกัน",
-      "type": "lab"
-    },
-    "state_discrimination": {
-      "en": "State-led discrimination",
-      "th": "การเลือกปฏิบัติโดยรัฐ",
-      "type": "lab"
-    },
-    "elite_ethnicity": {
-      "en": "Salient elite ethnicity",
-      "th": "ชนชั้นนำมาจากชาติพันธุ์เดียว",
-      "type": "lab"
-    },
-    "religious_restrictions": {
-      "en": "Restrictions on religious freedom",
-      "th": "การจำกัดเสรีภาพทางศาสนา",
-      "type": "lab"
-    },
-    "population_growth": {
-      "en": "Population growth (not modifiable)",
-      "th": "การเติบโตของประชากร (เปลี่ยนไม่ได้)",
-      "type": "auto",
-      "wb": "SP.POP.GROW",
-      "unit": "% per year",
-      "thresholds": [
-        0.5,
-        1,
-        1.5,
-        2.5
-      ],
-      "higher_is_worse": true
-    },
-    "neighbor_violence": {
-      "en": "Violence in neighbouring countries (~200 km of border)",
-      "th": "ความรุนแรงในประเทศเพื่อนบ้าน (ในรัศมี ~200 กม. จากชายแดน)",
-      "type": "auto",
-      "source": "ucdp",
-      "unit": "deaths in neighbouring countries within ~200 km of the border, last 12 months",
-      "higher_is_worse": true,
-      "thresholds": [
-        1,
-        25,
-        100,
-        500
-      ],
-      "fallback": "derived"
-    },
-    "trade_openness": {
-      "en": "Low trade openness",
-      "th": "ความเปิดทางการค้าต่ำ",
-      "type": "auto",
-      "wb": "NE.TRD.GNFS.ZS",
-      "unit": "trade, % of GDP",
-      "thresholds": [
-        150,
-        100,
-        60,
-        40
-      ],
-      "higher_is_worse": false
-    }
-  },
-  "neighbors": {
-    "Myanmar": [
-      "Thailand",
-      "Laos"
-    ],
-    "Thailand": [
-      "Myanmar",
-      "Laos",
-      "Cambodia",
-      "Malaysia"
-    ],
-    "Cambodia": [
-      "Thailand",
-      "Laos",
-      "Vietnam"
-    ],
-    "Laos": [
-      "Myanmar",
-      "Thailand",
-      "Cambodia",
-      "Vietnam"
-    ],
-    "Vietnam": [
-      "Laos",
-      "Cambodia"
-    ],
-    "Malaysia": [
-      "Thailand",
-      "Indonesia",
-      "Brunei",
-      "Singapore"
-    ],
-    "Singapore": [
-      "Malaysia",
-      "Indonesia"
-    ],
-    "Brunei": [
-      "Malaysia"
-    ],
-    "Indonesia": [
-      "Malaysia",
-      "Timor-Leste"
-    ],
-    "Timor-Leste": [
-      "Indonesia"
-    ],
-    "Philippines": [
-      "Malaysia",
-      "Indonesia"
-    ]
-  },
-  "countries": {
-    "Myanmar": {
-      "lab": {
-        "prior_atrocity": 5,
-        "prior_conflict": 5,
-        "prior_hr": 5,
-        "armed_conflict": 5,
-        "coup_extralegal": 5,
-        "electoral_democracy": 5,
-        "exec_constraints": 5,
-        "judicial_independence": 5,
-        "media_censorship": 5,
-        "factionalism": 4,
-        "regime_durability": 4,
-        "economic_discrimination": 4,
-        "environmental_stress": 4,
-        "exclusionary_ideology": 5,
-        "state_discrimination": 5,
-        "elite_ethnicity": 4,
-        "religious_restrictions": 4
-      },
-      "basis": "2017 Rohingya clearance operations (ICJ genocide case), decades of armed conflict, 2021 coup and ongoing civil war; military rule with no meaningful checks; Rohingya denied citizenship; cyclone and 2025 earthquake stress.",
-      "triggers": [
-        {
-          "label": "ICJ judgment in The Gambia v. Myanmar expected October 2026 (international pressure)",
-          "date": "2026-10",
-          "source": "The Business Standard",
-          "url": "https://www.tbsnews.net/bangladesh/court/icj-may-deliver-rohingya-genocide-verdict-next-month-1548711"
-        },
-        {
-          "label": "Escalating airstrikes on civilians, incl. Kyauktaw market strike",
-          "date": "2026-09-28",
-          "source": "AP via NBC News",
-          "url": "https://www.nbcnews.com/world/myanmar/deadly-airstrike-market-myanmar-rakhine-state-rcna600408"
-        }
-      ],
-      "elections": []
-    },
-    "Philippines": {
-      "lab": {
-        "prior_atrocity": 4,
-        "prior_conflict": 4,
-        "prior_hr": 4,
-        "armed_conflict": 3,
-        "coup_extralegal": 1,
-        "electoral_democracy": 2,
-        "exec_constraints": 2,
-        "judicial_independence": 2,
-        "media_censorship": 3,
-        "factionalism": 2,
-        "regime_durability": 2,
-        "economic_discrimination": 3,
-        "environmental_stress": 4,
-        "exclusionary_ideology": 2,
-        "state_discrimination": 2,
-        "elite_ethnicity": 2,
-        "religious_restrictions": 1
-      },
-      "basis": "Drug-war killings under ICC crimes-against-humanity case; long Mindanao and communist insurgencies; electoral democracy with media-safety and dynastic concerns; high typhoon exposure.",
-      "triggers": [
-        {
-          "label": "Duterte crimes-against-humanity trial opens at the ICC",
-          "date": "2026-11-30",
-          "source": "Anadolu",
-          "url": "https://aa.com.tr/en/asia-pacific/icc-rules-philippines-ex-president-duterte-to-remain-detained/4058996"
-        }
-      ],
-      "elections": []
-    },
-    "Thailand": {
-      "lab": {
-        "prior_atrocity": 3,
-        "prior_conflict": 4,
-        "prior_hr": 3,
-        "armed_conflict": 3,
-        "coup_extralegal": 4,
-        "electoral_democracy": 3,
-        "exec_constraints": 3,
-        "judicial_independence": 3,
-        "media_censorship": 3,
-        "factionalism": 3,
-        "regime_durability": 2,
-        "economic_discrimination": 2,
-        "environmental_stress": 3,
-        "exclusionary_ideology": 2,
-        "state_discrimination": 3,
-        "elite_ethnicity": 3,
-        "religious_restrictions": 2
-      },
-      "basis": "Deep South insurgency since 2004 and past crackdowns (1976, 2004 Tak Bai, 2010); successful coups in 2006 and 2014 and court removals of prime ministers; lese-majeste limits on speech; 2025 border fighting with Cambodia.",
-      "triggers": [
-        {
-          "label": "Talks with Cambodia over border and maritime claims (peace talks)",
-          "date": "2026-09-15",
-          "source": "Nikkei Asia",
-          "url": "https://asia.nikkei.com/politics/international-relations/thailand-cambodia-conflict"
-        }
-      ],
-      "elections": []
-    },
-    "Cambodia": {
-      "lab": {
-        "prior_atrocity": 5,
-        "prior_conflict": 4,
-        "prior_hr": 4,
-        "armed_conflict": 3,
-        "coup_extralegal": 2,
-        "electoral_democracy": 5,
-        "exec_constraints": 5,
-        "judicial_independence": 5,
-        "media_censorship": 5,
-        "factionalism": 3,
-        "regime_durability": 2,
-        "economic_discrimination": 3,
-        "environmental_stress": 3,
-        "exclusionary_ideology": 3,
-        "state_discrimination": 3,
-        "elite_ethnicity": 2,
-        "religious_restrictions": 1
-      },
-      "basis": "Khmer Rouge genocide 1975–79; dominant-party rule with opposition dissolved and media closed; durable regime; anti-Vietnamese rhetoric; 2025 border fighting with Thailand.",
-      "triggers": [
-        {
-          "label": "Talks with Thailand over border and maritime claims (peace talks)",
-          "date": "2026-09-15",
-          "source": "Nikkei Asia",
-          "url": "https://asia.nikkei.com/politics/international-relations/thailand-cambodia-conflict"
-        }
-      ],
-      "elections": []
-    },
-    "Indonesia": {
-      "lab": {
-        "prior_atrocity": 5,
-        "prior_conflict": 4,
-        "prior_hr": 4,
-        "armed_conflict": 3,
-        "coup_extralegal": 1,
-        "electoral_democracy": 2,
-        "exec_constraints": 3,
-        "judicial_independence": 3,
-        "media_censorship": 3,
-        "factionalism": 2,
-        "regime_durability": 2,
-        "economic_discrimination": 3,
-        "environmental_stress": 4,
-        "exclusionary_ideology": 3,
-        "state_discrimination": 3,
-        "elite_ethnicity": 2,
-        "religious_restrictions": 3
-      },
-      "basis": "1965–66 mass killings and East Timor atrocities; Aceh and ongoing Papua conflict; electoral democracy with expanding military role; blasphemy law and pressure on religious minorities; high climate exposure.",
-      "triggers": [
-        {
-          "label": "Intensified military operations in West Papua; 125,000+ displaced",
-          "date": "2026-09-25",
-          "source": "Asia Pacific Report",
-          "url": "https://asiapacificreport.nz/2026/09/25/they-just-have-to-get-out-civilians-pay-the-price-for-west-papua-conflict/"
-        }
-      ],
-      "elections": []
-    },
-    "Laos": {
-      "lab": {
-        "prior_atrocity": 3,
-        "prior_conflict": 3,
-        "prior_hr": 3,
-        "armed_conflict": 1,
-        "coup_extralegal": 1,
-        "electoral_democracy": 5,
-        "exec_constraints": 5,
-        "judicial_independence": 5,
-        "media_censorship": 5,
-        "factionalism": 3,
-        "regime_durability": 1,
-        "economic_discrimination": 3,
-        "environmental_stress": 3,
-        "exclusionary_ideology": 2,
-        "state_discrimination": 3,
-        "elite_ethnicity": 2,
-        "religious_restrictions": 3
-      },
-      "basis": "Post-1975 persecution of Hmong; one-party state with no free media or independent courts; very durable regime; economic and debt stress.",
-      "triggers": [],
-      "elections": []
-    },
-    "Vietnam": {
-      "lab": {
-        "prior_atrocity": 3,
-        "prior_conflict": 3,
-        "prior_hr": 3,
-        "armed_conflict": 1,
-        "coup_extralegal": 1,
-        "electoral_democracy": 5,
-        "exec_constraints": 4,
-        "judicial_independence": 5,
-        "media_censorship": 5,
-        "factionalism": 2,
-        "regime_durability": 1,
-        "economic_discrimination": 2,
-        "environmental_stress": 4,
-        "exclusionary_ideology": 2,
-        "state_discrimination": 3,
-        "elite_ethnicity": 2,
-        "religious_restrictions": 3
-      },
-      "basis": "Historical wars; one-party state with tight media and religious controls; very durable regime; Mekong Delta climate stress.",
-      "triggers": [],
-      "elections": []
-    },
-    "Malaysia": {
-      "lab": {
-        "prior_atrocity": 2,
-        "prior_conflict": 2,
-        "prior_hr": 2,
-        "armed_conflict": 1,
-        "coup_extralegal": 1,
-        "electoral_democracy": 2,
-        "exec_constraints": 2,
-        "judicial_independence": 2,
-        "media_censorship": 2,
-        "factionalism": 3,
-        "regime_durability": 2,
-        "economic_discrimination": 3,
-        "environmental_stress": 2,
-        "exclusionary_ideology": 3,
-        "state_discrimination": 3,
-        "elite_ethnicity": 3,
-        "religious_restrictions": 3
-      },
-      "basis": "1969 race riots; competitive elections with judicial and media independence improving; race and religion remain politically charged under bumiputera policy.",
-      "triggers": [],
-      "elections": []
-    },
-    "Singapore": {
-      "lab": {
-        "prior_atrocity": 1,
-        "prior_conflict": 1,
-        "prior_hr": 2,
-        "armed_conflict": 1,
-        "coup_extralegal": 1,
-        "electoral_democracy": 3,
-        "exec_constraints": 2,
-        "judicial_independence": 2,
-        "media_censorship": 3,
-        "factionalism": 2,
-        "regime_durability": 1,
-        "economic_discrimination": 1,
-        "environmental_stress": 2,
-        "exclusionary_ideology": 1,
-        "state_discrimination": 1,
-        "elite_ethnicity": 2,
-        "religious_restrictions": 1
-      },
-      "basis": "No recent atrocity or conflict; dominant-party system with strong state capacity and some media limits.",
-      "triggers": [],
-      "elections": []
-    },
-    "Brunei": {
-      "lab": {
-        "prior_atrocity": 1,
-        "prior_conflict": 1,
-        "prior_hr": 2,
-        "armed_conflict": 1,
-        "coup_extralegal": 1,
-        "electoral_democracy": 5,
-        "exec_constraints": 5,
-        "judicial_independence": 3,
-        "media_censorship": 4,
-        "factionalism": 3,
-        "regime_durability": 1,
-        "economic_discrimination": 2,
-        "environmental_stress": 1,
-        "exclusionary_ideology": 2,
-        "state_discrimination": 3,
-        "elite_ethnicity": 3,
-        "religious_restrictions": 4
-      },
-      "basis": "Absolute monarchy without elections; Sharia penal code restricts religious freedom; stable and durable.",
-      "triggers": [],
-      "elections": []
-    },
-    "Timor-Leste": {
-      "lab": {
-        "prior_atrocity": 5,
-        "prior_conflict": 4,
-        "prior_hr": 3,
-        "armed_conflict": 1,
-        "coup_extralegal": 2,
-        "electoral_democracy": 2,
-        "exec_constraints": 2,
-        "judicial_independence": 3,
-        "media_censorship": 2,
-        "factionalism": 2,
-        "regime_durability": 3,
-        "economic_discrimination": 3,
-        "environmental_stress": 3,
-        "exclusionary_ideology": 1,
-        "state_discrimination": 1,
-        "elite_ethnicity": 2,
-        "religious_restrictions": 1
-      },
-      "basis": "Indonesian occupation atrocities 1975–99; 2006 crisis and 2008 attacks on leaders; electoral democracy with weak state capacity.",
-      "triggers": [],
-      "elections": []
-    }
-  },
-  "review_rules": {
-    "max_auto_step": 1,
-    "note": "An automated score that moves by more than max_auto_step from the last published score is held for Lab review instead of being published."
-  },
-  "election_window_days": {
-    "before": 180,
-    "after": 30
-  },
-  "border_points": {
-    "Myanmar": [
-      [
-        20.4,
-        99.9
-      ],
-      [
-        19.0,
-        97.9
-      ],
-      [
-        17.2,
-        98.3
-      ],
-      [
-        15.0,
-        98.5
-      ],
-      [
-        12.6,
-        99.1
-      ],
-      [
-        10.0,
-        98.5
-      ],
-      [
-        21.0,
-        100.9
-      ],
-      [
-        21.2,
-        92.4
-      ],
-      [
-        24.0,
-        94.2
-      ],
-      [
-        22.9,
-        93.3
-      ],
-      [
-        24.0,
-        97.8
-      ],
-      [
-        23.4,
-        98.9
-      ],
-      [
-        25.8,
-        98.7
-      ]
-    ],
-    "Thailand": [
-      [
-        20.4,
-        99.9
-      ],
-      [
-        19.0,
-        97.9
-      ],
-      [
-        17.2,
-        98.3
-      ],
-      [
-        15.0,
-        98.5
-      ],
-      [
-        12.6,
-        99.1
-      ],
-      [
-        10.0,
-        98.5
-      ],
-      [
-        19.9,
-        100.5
-      ],
-      [
-        17.9,
-        102.6
-      ],
-      [
-        16.6,
-        104.7
-      ],
-      [
-        15.1,
-        105.5
-      ],
-      [
-        14.4,
-        103.0
-      ],
-      [
-        14.3,
-        104.5
-      ],
-      [
-        13.6,
-        102.5
-      ],
-      [
-        12.6,
-        102.3
-      ],
-      [
-        6.5,
-        100.2
-      ],
-      [
-        6.0,
-        101.9
-      ],
-      [
-        5.7,
-        101.0
-      ]
-    ],
-    "Cambodia": [
-      [
-        14.4,
-        103.0
-      ],
-      [
-        14.3,
-        104.5
-      ],
-      [
-        13.6,
-        102.5
-      ],
-      [
-        12.6,
-        102.3
-      ],
-      [
-        13.9,
-        105.9
-      ],
-      [
-        10.9,
-        105.1
-      ],
-      [
-        11.6,
-        106.2
-      ],
-      [
-        12.9,
-        107.4
-      ],
-      [
-        13.9,
-        107.5
-      ]
-    ],
-    "Laos": [
-      [
-        21.0,
-        100.9
-      ],
-      [
-        19.9,
-        100.5
-      ],
-      [
-        17.9,
-        102.6
-      ],
-      [
-        16.6,
-        104.7
-      ],
-      [
-        15.1,
-        105.5
-      ],
-      [
-        13.9,
-        105.9
-      ],
-      [
-        21.6,
-        101.6
-      ],
-      [
-        22.4,
-        102.5
-      ],
-      [
-        20.6,
-        104.4
-      ],
-      [
-        18.3,
-        105.5
-      ],
-      [
-        16.6,
-        106.6
-      ],
-      [
-        15.3,
-        107.3
-      ]
-    ],
-    "Vietnam": [
-      [
-        22.4,
-        102.5
-      ],
-      [
-        20.6,
-        104.4
-      ],
-      [
-        18.3,
-        105.5
-      ],
-      [
-        16.6,
-        106.6
-      ],
-      [
-        15.3,
-        107.3
-      ],
-      [
-        10.9,
-        105.1
-      ],
-      [
-        11.6,
-        106.2
-      ],
-      [
-        12.9,
-        107.4
-      ],
-      [
-        13.9,
-        107.5
-      ],
-      [
-        22.8,
-        104.0
-      ],
-      [
-        22.5,
-        106.7
-      ],
-      [
-        21.5,
-        107.9
-      ]
-    ],
-    "Malaysia": [
-      [
-        6.5,
-        100.2
-      ],
-      [
-        6.0,
-        101.9
-      ],
-      [
-        5.7,
-        101.0
-      ],
-      [
-        1.45,
-        103.77
-      ],
-      [
-        1.5,
-        110.3
-      ],
-      [
-        1.2,
-        112.4
-      ],
-      [
-        2.6,
-        115.5
-      ],
-      [
-        4.3,
-        117.5
-      ],
-      [
-        4.6,
-        114.6
-      ],
-      [
-        4.8,
-        115.1
-      ],
-      [
-        5.9,
-        119.3
-      ]
-    ],
-    "Singapore": [
-      [
-        1.45,
-        103.77
-      ],
-      [
-        1.2,
-        104.0
-      ]
-    ],
-    "Brunei": [
-      [
-        4.6,
-        114.6
-      ],
-      [
-        4.8,
-        115.1
-      ],
-      [
-        4.0,
-        114.8
-      ]
-    ],
-    "Indonesia": [
-      [
-        1.5,
-        110.3
-      ],
-      [
-        1.2,
-        112.4
-      ],
-      [
-        2.6,
-        115.5
-      ],
-      [
-        4.3,
-        117.5
-      ],
-      [
-        -9.1,
-        125.0
-      ],
-      [
-        -9.4,
-        125.1
-      ],
-      [
-        -9.3,
-        124.4
-      ],
-      [
-        -2.6,
-        141.0
-      ],
-      [
-        -6.0,
-        141.0
-      ],
-      [
-        -8.9,
-        141.0
-      ]
-    ],
-    "Timor-Leste": [
-      [
-        -9.1,
-        125.0
-      ],
-      [
-        -9.4,
-        125.1
-      ],
-      [
-        -9.3,
-        124.4
-      ]
-    ],
-    "Philippines": [
-      [
-        5.9,
-        119.3
-      ],
-      [
-        6.0,
-        120.5
-      ]
-    ]
-  }
+"status": "draft",
+"status_note": "Lab-judged scores were drafted by Claude from public knowledge on 2026-10-05 and must be reviewed by the Scarecrow Lab. Set status to \"reviewed\" after review to remove the draft banner.",
+"reviewed": null,
+"method": {
+"scale": "Every indicator is scored 1 (low) to 5 (severe). A category score is the average of its indicators. The PREVENT structural index is the average of the six structural categories (P, R, E, V, E, N). Triggers (T) are listed as flags and never averaged in, because the framework locates the risk in how those in power respond to them.",
+"auto": "World Bank and V-Dem (via Our World in Data) indicators refresh daily; UCDP conflict events refresh monthly once a UCDP token is configured. Each is scored against thresholds stored in data/prevent.json. Neighbouring violence counts UCDP deaths in other countries within about 200 km of approximate border points; until UCDP data is available it falls back to the highest Lab conflict score among ASEAN neighbours.",
+"adaptation": "Adapted by Scarecrow from the AIPG PREVENT Risk Assessment Framework. The framework does not prescribe scales, weights or thresholds; these are Scarecrow's choices.",
+"review": "Exception-based review: an automated score that moves by more than one step from the last published score is held, and the previous score stays public until the Lab approves the change in the Review Room. Upcoming elections recorded by the Lab appear automatically as triggers from 180 days before to 30 days after the vote."
+},
+"categories": [
+{
+"key": "P",
+"name": {
+"en": "Prior atrocities & human rights abuses",
+"th": "ประวัติอาชญากรรมโหดร้ายและการละเมิดสิทธิ"
+},
+"indicators": [
+"prior_atrocity",
+"prior_conflict",
+"prior_hr"
+]
+},
+{
+"key": "R",
+"name": {
+"en": "Regime upheaval",
+"th": "ความปั่นป่วนของระบอบ"
+},
+"indicators": [
+"armed_conflict",
+"coup_extralegal"
+]
+},
+{
+"key": "E1",
+"letter": "E",
+"name": {
+"en": "Executive overreach & non-democratic governance",
+"th": "อำนาจบริหารล้นเกินและการปกครองที่ไม่เป็นประชาธิปไตย"
+},
+"indicators": [
+"infant_mortality",
+"electoral_democracy",
+"exec_constraints",
+"judicial_independence",
+"media_censorship",
+"factionalism",
+"regime_durability",
+"women_parliament"
+]
+},
+{
+"key": "V",
+"name": {
+"en": "Volatility in the economy & environment",
+"th": "ความผันผวนทางเศรษฐกิจและสิ่งแวดล้อม"
+},
+"indicators": [
+"gdp_per_capita",
+"gdp_growth",
+"economic_discrimination",
+"environmental_stress"
+]
+},
+{
+"key": "E2",
+"letter": "E",
+"name": {
+"en": "Exclusion & social fragmentation",
+"th": "การกีดกันและความแตกแยกทางสังคม"
+},
+"indicators": [
+"exclusionary_ideology",
+"state_discrimination",
+"elite_ethnicity",
+"religious_restrictions",
+"population_growth"
+]
+},
+{
+"key": "N",
+"name": {
+"en": "Neighbouring instability & international factors",
+"th": "ความไม่มั่นคงของเพื่อนบ้านและปัจจัยระหว่างประเทศ"
+},
+"indicators": [
+"neighbor_violence",
+"trade_openness"
+]
+}
+],
+"indicators": {
+"prior_atrocity": {
+"en": "Prior atrocity",
+"th": "เคยเกิดอาชญากรรมโหดร้าย",
+"type": "lab"
+},
+"prior_conflict": {
+"en": "Prior armed conflict",
+"th": "เคยมีความขัดแย้งด้วยอาวุธ",
+"type": "lab"
+},
+"prior_hr": {
+"en": "Prior widespread human rights violations",
+"th": "เคยละเมิดสิทธิมนุษยชนอย่างกว้างขวาง",
+"type": "lab"
+},
+"armed_conflict": {
+"en": "Current armed conflict (UCDP deaths, 12 months)",
+"th": "ความขัดแย้งด้วยอาวุธในปัจจุบัน (ผู้เสียชีวิตตาม UCDP 12 เดือน)",
+"type": "auto",
+"source": "ucdp",
+"unit": "deaths from organized violence, last 12 months",
+"higher_is_worse": true,
+"thresholds": [
+1,
+25,
+250,
+1000
+],
+"fallback": "lab"
+},
+"coup_extralegal": {
+"en": "Coups or extralegal leadership change",
+"th": "รัฐประหารหรือการเปลี่ยนผู้นำนอกกฎหมาย",
+"type": "lab"
+},
+"infant_mortality": {
+"en": "Infant mortality (weak state proxy)",
+"th": "อัตราการตายของทารก (ตัวแทนความอ่อนแอของรัฐ)",
+"type": "auto",
+"wb": "SP.DYN.IMRT.IN",
+"unit": "per 1,000 births",
+"thresholds": [
+10,
+20,
+35,
+55
+],
+"higher_is_worse": true
+},
+"electoral_democracy": {
+"en": "Lack of electoral democracy (V-Dem)",
+"th": "การขาดประชาธิปไตยผ่านการเลือกตั้ง (V-Dem)",
+"type": "auto",
+"source": "owid",
+"unit": "V-Dem index, 0–1 (higher is freer)",
+"higher_is_worse": false,
+"fallback": "lab",
+"owid": "electoral-democracy-index",
+"thresholds": [
+0.7,
+0.5,
+0.35,
+0.2
+]
+},
+"exec_constraints": {
+"en": "Unlimited executive authority (V-Dem legislative constraints)",
+"th": "อำนาจบริหารไม่มีการถ่วงดุล (ดัชนีการถ่วงดุลโดยสภาของ V-Dem)",
+"type": "auto",
+"source": "owid",
+"unit": "V-Dem index, 0–1 (higher is freer)",
+"higher_is_worse": false,
+"fallback": "lab",
+"owid": "legislative-constraints-on-the-executive-index",
+"thresholds": [
+0.8,
+0.6,
+0.4,
+0.2
+]
+},
+"judicial_independence": {
+"en": "Weak judicial constraints (V-Dem)",
+"th": "ตุลาการถ่วงดุลอำนาจบริหารได้น้อย (V-Dem)",
+"type": "auto",
+"source": "owid",
+"unit": "V-Dem index, 0–1 (higher is freer)",
+"higher_is_worse": false,
+"fallback": "lab",
+"owid": "judicial-constraints-on-the-executive-index",
+"thresholds": [
+0.8,
+0.6,
+0.4,
+0.2
+]
+},
+"media_censorship": {
+"en": "Media censorship (V-Dem freedom of expression)",
+"th": "การเซ็นเซอร์สื่อ (ดัชนีเสรีภาพการแสดงออกของ V-Dem)",
+"type": "auto",
+"source": "owid",
+"unit": "V-Dem index, 0–1 (higher is freer)",
+"higher_is_worse": false,
+"fallback": "lab",
+"owid": "freedom-of-expression-index",
+"thresholds": [
+0.8,
+0.6,
+0.4,
+0.2
+]
+},
+"factionalism": {
+"en": "Factionalism",
+"th": "การผูกขาดอำนาจโดยกลุ่มเดียว",
+"type": "lab"
+},
+"regime_durability": {
+"en": "Low regime durability",
+"th": "ความไม่มั่นคงของระบอบ",
+"type": "lab"
+},
+"women_parliament": {
+"en": "Women in parliament",
+"th": "สัดส่วนสมาชิกรัฐสภาหญิง",
+"type": "auto",
+"wb": "SG.GEN.PARL.ZS",
+"unit": "% of seats",
+"thresholds": [
+30,
+20,
+15,
+10
+],
+"higher_is_worse": false
+},
+"gdp_per_capita": {
+"en": "Low economic development",
+"th": "ระดับการพัฒนาเศรษฐกิจต่ำ",
+"type": "auto",
+"wb": "NY.GDP.PCAP.PP.CD",
+"unit": "GDP per capita, PPP $",
+"thresholds": [
+40000,
+20000,
+10000,
+5000
+],
+"higher_is_worse": false
+},
+"gdp_growth": {
+"en": "Economic downturn",
+"th": "เศรษฐกิจถดถอย",
+"type": "auto",
+"wb": "NY.GDP.MKTP.KD.ZG",
+"unit": "% GDP growth",
+"thresholds": [
+4,
+2,
+0,
+-3
+],
+"higher_is_worse": false
+},
+"economic_discrimination": {
+"en": "Economic discrimination between groups",
+"th": "การเลือกปฏิบัติทางเศรษฐกิจระหว่างกลุ่ม",
+"type": "lab"
+},
+"environmental_stress": {
+"en": "Environmental and climate stress",
+"th": "ความเครียดด้านสิ่งแวดล้อมและสภาพภูมิอากาศ",
+"type": "lab"
+},
+"exclusionary_ideology": {
+"en": "Exclusionary ideology",
+"th": "อุดมการณ์กีดกัน",
+"type": "lab"
+},
+"state_discrimination": {
+"en": "State-led discrimination",
+"th": "การเลือกปฏิบัติโดยรัฐ",
+"type": "lab"
+},
+"elite_ethnicity": {
+"en": "Salient elite ethnicity",
+"th": "ชนชั้นนำมาจากชาติพันธุ์เดียว",
+"type": "lab"
+},
+"religious_restrictions": {
+"en": "Restrictions on religious freedom",
+"th": "การจำกัดเสรีภาพทางศาสนา",
+"type": "lab"
+},
+"population_growth": {
+"en": "Population growth (not modifiable)",
+"th": "การเติบโตของประชากร (เปลี่ยนไม่ได้)",
+"type": "auto",
+"wb": "SP.POP.GROW",
+"unit": "% per year",
+"thresholds": [
+0.5,
+1,
+1.5,
+2.5
+],
+"higher_is_worse": true
+},
+"neighbor_violence": {
+"en": "Violence in neighbouring countries (~200 km of border)",
+"th": "ความรุนแรงในประเทศเพื่อนบ้าน (ในรัศมี ~200 กม. จากชายแดน)",
+"type": "auto",
+"source": "ucdp",
+"unit": "deaths in neighbouring countries within ~200 km of the border, last 12 months",
+"higher_is_worse": true,
+"thresholds": [
+1,
+25,
+100,
+500
+],
+"fallback": "derived"
+},
+"trade_openness": {
+"en": "Low trade openness",
+"th": "ความเปิดทางการค้าต่ำ",
+"type": "auto",
+"wb": "NE.TRD.GNFS.ZS",
+"unit": "trade, % of GDP",
+"thresholds": [
+150,
+100,
+60,
+40
+],
+"higher_is_worse": false
+}
+},
+"neighbors": {
+"Myanmar": [
+"Thailand",
+"Laos"
+],
+"Thailand": [
+"Myanmar",
+"Laos",
+"Cambodia",
+"Malaysia"
+],
+"Cambodia": [
+"Thailand",
+"Laos",
+"Vietnam"
+],
+"Laos": [
+"Myanmar",
+"Thailand",
+"Cambodia",
+"Vietnam"
+],
+"Vietnam": [
+"Laos",
+"Cambodia"
+],
+"Malaysia": [
+"Thailand",
+"Indonesia",
+"Brunei",
+"Singapore"
+],
+"Singapore": [
+"Malaysia",
+"Indonesia"
+],
+"Brunei": [
+"Malaysia"
+],
+"Indonesia": [
+"Malaysia",
+"Timor-Leste"
+],
+"Timor-Leste": [
+"Indonesia"
+],
+"Philippines": [
+"Malaysia",
+"Indonesia"
+]
+},
+"countries": {
+"Myanmar": {
+"lab": {
+"prior_atrocity": 5,
+"prior_conflict": 5,
+"prior_hr": 5,
+"armed_conflict": 5,
+"coup_extralegal": 5,
+"electoral_democracy": 5,
+"exec_constraints": 5,
+"judicial_independence": 5,
+"media_censorship": 5,
+"factionalism": 4,
+"regime_durability": 4,
+"economic_discrimination": 4,
+"environmental_stress": 4,
+"exclusionary_ideology": 5,
+"state_discrimination": 5,
+"elite_ethnicity": 4,
+"religious_restrictions": 4
+},
+"basis": "2017 Rohingya clearance operations (ICJ genocide case), decades of armed conflict, 2021 coup and ongoing civil war; military rule with no meaningful checks; Rohingya denied citizenship; cyclone and 2025 earthquake stress.",
+"triggers": [
+{
+"label": "ICJ judgment in The Gambia v. Myanmar expected October 2026 (international pressure)",
+"date": "2026-10",
+"source": "The Business Standard",
+"url": "https://www.tbsnews.net/bangladesh/court/icj-may-deliver-rohingya-genocide-verdict-next-month-1548711"
+},
+{
+"label": "Escalating airstrikes on civilians, incl. Kyauktaw market strike",
+"date": "2026-09-28",
+"source": "AP via NBC News",
+"url": "https://www.nbcnews.com/world/myanmar/deadly-airstrike-market-myanmar-rakhine-state-rcna600408"
+}
+],
+"elections": [],
+"lab_notes": {
+"prior_atrocity": "2017 Rohingya clearance operations are the subject of an ICJ genocide case.",
+"prior_conflict": "Civil war since the 2021 coup, on top of decades of ethnic armed conflict.",
+"prior_hr": "Long, documented record of widespread violations by the military (UN IIMM, OHCHR).",
+"coup_extralegal": "Military seized power in the February 2021 coup.",
+"factionalism": "Politics split sharply between the junta, the NUG and ethnic armed organisations.",
+"regime_durability": "Junta control contested across much of the country; rule rests on force, not legitimacy.",
+"economic_discrimination": "Conflict economy and sanctions; ethnic and Rohingya communities economically marginalised.",
+"environmental_stress": "Cyclone Mocha and the 2025 earthquake compounded conflict displacement.",
+"exclusionary_ideology": "State narrative denies Rohingya identity and frames minorities as threats.",
+"state_discrimination": "Rohingya denied citizenship under the 1982 law; movement and rights heavily restricted.",
+"elite_ethnicity": "Power concentrated in a Bamar-dominated military elite.",
+"religious_restrictions": "Muslim and some Christian communities face restrictions and targeting."
+}
+},
+"Philippines": {
+"lab": {
+"prior_atrocity": 4,
+"prior_conflict": 4,
+"prior_hr": 4,
+"armed_conflict": 3,
+"coup_extralegal": 1,
+"electoral_democracy": 2,
+"exec_constraints": 2,
+"judicial_independence": 2,
+"media_censorship": 3,
+"factionalism": 2,
+"regime_durability": 2,
+"economic_discrimination": 3,
+"environmental_stress": 4,
+"exclusionary_ideology": 2,
+"state_discrimination": 2,
+"elite_ethnicity": 2,
+"religious_restrictions": 1
+},
+"basis": "Drug-war killings under ICC crimes-against-humanity case; long Mindanao and communist insurgencies; electoral democracy with media-safety and dynastic concerns; high typhoon exposure.",
+"triggers": [
+{
+"label": "Duterte crimes-against-humanity trial opens at the ICC",
+"date": "2026-11-30",
+"source": "Anadolu",
+"url": "https://aa.com.tr/en/asia-pacific/icc-rules-philippines-ex-president-duterte-to-remain-detained/4058996"
+}
+],
+"elections": [],
+"lab_notes": {
+"prior_atrocity": "'Drug war' killings are the subject of an ICC crimes-against-humanity case.",
+"prior_conflict": "Long Mindanao (Moro) and communist (NPA) insurgencies.",
+"prior_hr": "Extrajudicial killings and red-tagging documented by UN and rights groups.",
+"coup_extralegal": "Constitutional transfers of power; no recent coup.",
+"factionalism": "Competitive, dynastic politics; polarised but not identity-based blocs.",
+"regime_durability": "Established elected government; broadly stable institutions.",
+"economic_discrimination": "Regional and Moro-area disparities; uneven development.",
+"environmental_stress": "Among the world's most typhoon- and disaster-exposed states.",
+"exclusionary_ideology": "No dominant exclusionary ideology; tensions are localised.",
+"state_discrimination": "Broadly equal in law; concerns centre on drug-war targeting of the poor.",
+"elite_ethnicity": "Power shared across regional elites, not one ethnic group.",
+"religious_restrictions": "Constitutional religious freedom, generally respected."
+}
+},
+"Thailand": {
+"lab": {
+"prior_atrocity": 3,
+"prior_conflict": 4,
+"prior_hr": 3,
+"armed_conflict": 3,
+"coup_extralegal": 4,
+"electoral_democracy": 3,
+"exec_constraints": 3,
+"judicial_independence": 3,
+"media_censorship": 3,
+"factionalism": 3,
+"regime_durability": 2,
+"economic_discrimination": 2,
+"environmental_stress": 3,
+"exclusionary_ideology": 2,
+"state_discrimination": 3,
+"elite_ethnicity": 3,
+"religious_restrictions": 2
+},
+"basis": "Deep South insurgency since 2004 and past crackdowns (1976, 2004 Tak Bai, 2010); successful coups in 2006 and 2014 and court removals of prime ministers; lese-majeste limits on speech; 2025 border fighting with Cambodia.",
+"triggers": [
+{
+"label": "Talks with Cambodia over border and maritime claims (peace talks)",
+"date": "2026-09-15",
+"source": "Nikkei Asia",
+"url": "https://asia.nikkei.com/politics/international-relations/thailand-cambodia-conflict"
+}
+],
+"elections": [],
+"lab_notes": {
+"prior_atrocity": "Past crackdowns (1976, 2004 Tak Bai, 2010) caused deaths, below genocide scale.",
+"prior_conflict": "Deep South (Patani) insurgency since 2004; 2025 border clashes with Cambodia.",
+"prior_hr": "Periodic serious violations around protests and in the Deep South.",
+"coup_extralegal": "Successful coups in 2006 and 2014; courts have removed prime ministers.",
+"factionalism": "Enduring split between royalist-military and reformist camps.",
+"regime_durability": "Institutions established but prone to coups and court intervention.",
+"economic_discrimination": "Regional disparities; no systematic group-based exclusion.",
+"environmental_stress": "Flood and drought exposure, manageable with state capacity.",
+"exclusionary_ideology": "No dominant exclusionary ideology nationally.",
+"state_discrimination": "Rights concerns for the Malay-Muslim south and some stateless groups.",
+"elite_ethnicity": "Central Thai-Bangkok elite dominant over the peripheries.",
+"religious_restrictions": "Broad religious freedom; tension concentrated in the Deep South."
+}
+},
+"Cambodia": {
+"lab": {
+"prior_atrocity": 5,
+"prior_conflict": 4,
+"prior_hr": 4,
+"armed_conflict": 3,
+"coup_extralegal": 2,
+"electoral_democracy": 5,
+"exec_constraints": 5,
+"judicial_independence": 5,
+"media_censorship": 5,
+"factionalism": 3,
+"regime_durability": 2,
+"economic_discrimination": 3,
+"environmental_stress": 3,
+"exclusionary_ideology": 3,
+"state_discrimination": 3,
+"elite_ethnicity": 2,
+"religious_restrictions": 1
+},
+"basis": "Khmer Rouge genocide 1975–79; dominant-party rule with opposition dissolved and media closed; durable regime; anti-Vietnamese rhetoric; 2025 border fighting with Thailand.",
+"triggers": [
+{
+"label": "Talks with Thailand over border and maritime claims (peace talks)",
+"date": "2026-09-15",
+"source": "Nikkei Asia",
+"url": "https://asia.nikkei.com/politics/international-relations/thailand-cambodia-conflict"
+}
+],
+"elections": [],
+"lab_notes": {
+"prior_atrocity": "Khmer Rouge genocide, 1975–79 (ECCC convictions).",
+"prior_conflict": "Civil war into the 1990s; 2025 border fighting with Thailand.",
+"prior_hr": "Sustained crackdown on opposition, unions and independent media.",
+"coup_extralegal": "2017 de facto one-party consolidation; no outright coup.",
+"factionalism": "Opposition dissolved; politics dominated by the ruling party and one family.",
+"regime_durability": "Durable ruling party, but succession and legitimacy pressures.",
+"economic_discrimination": "Land-grab and patronage-driven disparities.",
+"environmental_stress": "Mekong and flood stress; moderate.",
+"exclusionary_ideology": "Periodic anti-Vietnamese rhetoric in politics.",
+"state_discrimination": "Ethnic Vietnamese face citizenship and land insecurity.",
+"elite_ethnicity": "Power concentrated in a party elite rather than one ethnicity.",
+"religious_restrictions": "Broad religious freedom in practice."
+}
+},
+"Indonesia": {
+"lab": {
+"prior_atrocity": 5,
+"prior_conflict": 4,
+"prior_hr": 4,
+"armed_conflict": 3,
+"coup_extralegal": 1,
+"electoral_democracy": 2,
+"exec_constraints": 3,
+"judicial_independence": 3,
+"media_censorship": 3,
+"factionalism": 2,
+"regime_durability": 2,
+"economic_discrimination": 3,
+"environmental_stress": 4,
+"exclusionary_ideology": 3,
+"state_discrimination": 3,
+"elite_ethnicity": 2,
+"religious_restrictions": 3
+},
+"basis": "1965–66 mass killings and East Timor atrocities; Aceh and ongoing Papua conflict; electoral democracy with expanding military role; blasphemy law and pressure on religious minorities; high climate exposure.",
+"triggers": [
+{
+"label": "Intensified military operations in West Papua; 125,000+ displaced",
+"date": "2026-09-25",
+"source": "Asia Pacific Report",
+"url": "https://asiapacificreport.nz/2026/09/25/they-just-have-to-get-out-civilians-pay-the-price-for-west-papua-conflict/"
+}
+],
+"elections": [],
+"lab_notes": {
+"prior_atrocity": "1965–66 mass killings and East Timor-era atrocities.",
+"prior_conflict": "Aceh conflict (ended 2005) and the ongoing Papua conflict.",
+"prior_hr": "Papua operations and past impunity documented by rights groups.",
+"coup_extralegal": "Stable democratic transfers since 1998.",
+"factionalism": "Pluralist party politics; coalitions cut across identity.",
+"regime_durability": "Consolidated democracy, broadly stable.",
+"economic_discrimination": "Papua and outer-island disparities.",
+"environmental_stress": "High earthquake, volcano, flood and climate exposure.",
+"exclusionary_ideology": "Rising hardline religious politics in places.",
+"state_discrimination": "Papuans and some religious minorities face discrimination.",
+"elite_ethnicity": "Power shared across a diverse national elite.",
+"religious_restrictions": "Blasphemy law and pressure on Ahmadiyya, Shia and others."
+}
+},
+"Laos": {
+"lab": {
+"prior_atrocity": 3,
+"prior_conflict": 3,
+"prior_hr": 3,
+"armed_conflict": 1,
+"coup_extralegal": 1,
+"electoral_democracy": 5,
+"exec_constraints": 5,
+"judicial_independence": 5,
+"media_censorship": 5,
+"factionalism": 3,
+"regime_durability": 1,
+"economic_discrimination": 3,
+"environmental_stress": 3,
+"exclusionary_ideology": 2,
+"state_discrimination": 3,
+"elite_ethnicity": 2,
+"religious_restrictions": 3
+},
+"basis": "Post-1975 persecution of Hmong; one-party state with no free media or independent courts; very durable regime; economic and debt stress.",
+"triggers": [],
+"elections": [],
+"lab_notes": {
+"prior_atrocity": "Post-1975 persecution of Hmong who had fought alongside the US.",
+"prior_conflict": "Insurgency remnants, largely dormant now.",
+"prior_hr": "Enforced disappearances and tight repression documented.",
+"coup_extralegal": "Single-party continuity since 1975; no coups.",
+"factionalism": "Party-internal factions, opaque to outside observers.",
+"regime_durability": "Highly durable one-party state.",
+"economic_discrimination": "Highland ethnic groups economically marginalised.",
+"environmental_stress": "Dam, drought and debt-driven stress.",
+"exclusionary_ideology": "No dominant exclusionary ideology.",
+"state_discrimination": "Hmong and highland minorities face discrimination.",
+"elite_ethnicity": "Lowland Lao party elite dominant.",
+"religious_restrictions": "Christians and some groups face restrictions."
+}
+},
+"Vietnam": {
+"lab": {
+"prior_atrocity": 3,
+"prior_conflict": 3,
+"prior_hr": 3,
+"armed_conflict": 1,
+"coup_extralegal": 1,
+"electoral_democracy": 5,
+"exec_constraints": 4,
+"judicial_independence": 5,
+"media_censorship": 5,
+"factionalism": 2,
+"regime_durability": 1,
+"economic_discrimination": 2,
+"environmental_stress": 4,
+"exclusionary_ideology": 2,
+"state_discrimination": 3,
+"elite_ethnicity": 2,
+"religious_restrictions": 3
+},
+"basis": "Historical wars; one-party state with tight media and religious controls; very durable regime; Mekong Delta climate stress.",
+"triggers": [],
+"elections": [],
+"lab_notes": {
+"prior_atrocity": "Wartime atrocities; post-1975 re-education and reprisals.",
+"prior_conflict": "Major past wars; internally at peace now.",
+"prior_hr": "Suppression of dissent, religion and speech documented.",
+"coup_extralegal": "Single-party continuity; no coups.",
+"factionalism": "Managed party factions; no open blocs.",
+"regime_durability": "Highly durable one-party state.",
+"economic_discrimination": "Broad-based growth; some highland disparities.",
+"environmental_stress": "Mekong Delta salinity, flooding and climate exposure.",
+"exclusionary_ideology": "No dominant exclusionary ideology.",
+"state_discrimination": "Montagnard and Hmong Christians and some minorities face pressure.",
+"elite_ethnicity": "Kinh-majority party elite dominant.",
+"religious_restrictions": "Unregistered religious groups restricted."
+}
+},
+"Malaysia": {
+"lab": {
+"prior_atrocity": 2,
+"prior_conflict": 2,
+"prior_hr": 2,
+"armed_conflict": 1,
+"coup_extralegal": 1,
+"electoral_democracy": 2,
+"exec_constraints": 2,
+"judicial_independence": 2,
+"media_censorship": 2,
+"factionalism": 3,
+"regime_durability": 2,
+"economic_discrimination": 3,
+"environmental_stress": 2,
+"exclusionary_ideology": 3,
+"state_discrimination": 3,
+"elite_ethnicity": 3,
+"religious_restrictions": 3
+},
+"basis": "1969 race riots; competitive elections with judicial and media independence improving; race and religion remain politically charged under bumiputera policy.",
+"triggers": [],
+"elections": [],
+"lab_notes": {
+"prior_atrocity": "1969 race riots; no mass atrocity since.",
+"prior_conflict": "Communist insurgency ended in 1989; peaceful since.",
+"prior_hr": "Rights concerns around detention and speech, not mass violations.",
+"coup_extralegal": "Electoral transfers of power, including the 2018 alternation.",
+"factionalism": "Politics organised heavily along ethnic and religious lines.",
+"regime_durability": "Competitive, but coalition instability since 2018.",
+"economic_discrimination": "Bumiputera affirmative-action policy disadvantages minorities.",
+"environmental_stress": "Flooding exposure; manageable.",
+"exclusionary_ideology": "Ethno-religious 'Ketuanan Melayu' politics.",
+"state_discrimination": "Non-Malays and non-Muslims face legal and policy disadvantages.",
+"elite_ethnicity": "Malay-Muslim political primacy is institutionalised.",
+"religious_restrictions": "Islamic-law constraints; limits on non-Sunni practice and conversion."
+}
+},
+"Singapore": {
+"lab": {
+"prior_atrocity": 1,
+"prior_conflict": 1,
+"prior_hr": 2,
+"armed_conflict": 1,
+"coup_extralegal": 1,
+"electoral_democracy": 3,
+"exec_constraints": 2,
+"judicial_independence": 2,
+"media_censorship": 3,
+"factionalism": 2,
+"regime_durability": 1,
+"economic_discrimination": 1,
+"environmental_stress": 2,
+"exclusionary_ideology": 1,
+"state_discrimination": 1,
+"elite_ethnicity": 2,
+"religious_restrictions": 1
+},
+"basis": "No recent atrocity or conflict; dominant-party system with strong state capacity and some media limits.",
+"triggers": [],
+"elections": [],
+"lab_notes": {
+"prior_atrocity": "No modern atrocity.",
+"prior_conflict": "No armed conflict.",
+"prior_hr": "Limits on speech, assembly and the press, not mass violations.",
+"coup_extralegal": "Orderly dominant-party governance; no coups.",
+"factionalism": "Low factionalism; dominant-party consensus.",
+"regime_durability": "Highly durable and capable state.",
+"economic_discrimination": "Strong multiracial equality framework.",
+"environmental_stress": "Low direct hazard; sea-level and heat exposure.",
+"exclusionary_ideology": "State multiracialism; no exclusionary ideology.",
+"state_discrimination": "Equal treatment in law and practice.",
+"elite_ethnicity": "Chinese-majority but deliberately multiracial governance.",
+"religious_restrictions": "Managed but broadly free religious practice."
+}
+},
+"Brunei": {
+"lab": {
+"prior_atrocity": 1,
+"prior_conflict": 1,
+"prior_hr": 2,
+"armed_conflict": 1,
+"coup_extralegal": 1,
+"electoral_democracy": 5,
+"exec_constraints": 5,
+"judicial_independence": 3,
+"media_censorship": 4,
+"factionalism": 3,
+"regime_durability": 1,
+"economic_discrimination": 2,
+"environmental_stress": 1,
+"exclusionary_ideology": 2,
+"state_discrimination": 3,
+"elite_ethnicity": 3,
+"religious_restrictions": 4
+},
+"basis": "Absolute monarchy without elections; Sharia penal code restricts religious freedom; stable and durable.",
+"triggers": [],
+"elections": [],
+"lab_notes": {
+"prior_atrocity": "No modern atrocity.",
+"prior_conflict": "No armed conflict since the 1962 revolt.",
+"prior_hr": "Restrictions on speech and assembly, not mass violations.",
+"coup_extralegal": "Hereditary absolute monarchy; stable.",
+"factionalism": "No party politics; limited public information on internal divisions.",
+"regime_durability": "Highly durable monarchy.",
+"economic_discrimination": "Stateless and some non-Malay residents face disadvantage.",
+"environmental_stress": "Low hazard exposure; oil-wealthy.",
+"exclusionary_ideology": "Malay Islamic Monarchy ideology, non-violent.",
+"state_discrimination": "Stateless Chinese and non-Muslims face legal disadvantages.",
+"elite_ethnicity": "Malay-Muslim monarchy and elite dominant.",
+"religious_restrictions": "Sharia penal code; non-Muslim practice tightly restricted."
+}
+},
+"Timor-Leste": {
+"lab": {
+"prior_atrocity": 5,
+"prior_conflict": 4,
+"prior_hr": 3,
+"armed_conflict": 1,
+"coup_extralegal": 2,
+"electoral_democracy": 2,
+"exec_constraints": 2,
+"judicial_independence": 3,
+"media_censorship": 2,
+"factionalism": 2,
+"regime_durability": 3,
+"economic_discrimination": 3,
+"environmental_stress": 3,
+"exclusionary_ideology": 1,
+"state_discrimination": 1,
+"elite_ethnicity": 2,
+"religious_restrictions": 1
+},
+"basis": "Indonesian occupation atrocities 1975–99; 2006 crisis and 2008 attacks on leaders; electoral democracy with weak state capacity.",
+"triggers": [],
+"elections": [],
+"lab_notes": {
+"prior_atrocity": "Mass atrocities under Indonesian occupation, 1975–99 (CAVR report).",
+"prior_conflict": "Independence war; 2006 internal crisis.",
+"prior_hr": "Post-independence improvement; legacy accountability gaps.",
+"coup_extralegal": "2006 crisis and 2008 attacks on leaders; constitutional since.",
+"factionalism": "Competitive politics with largely peaceful alternation.",
+"regime_durability": "Young democracy with limited state capacity.",
+"economic_discrimination": "Oil-dependent economy; regional disparities.",
+"environmental_stress": "Drought, flooding and food-security stress.",
+"exclusionary_ideology": "No exclusionary ideology.",
+"state_discrimination": "Broadly equal treatment.",
+"elite_ethnicity": "Power shared; the independence-generation elite is prominent.",
+"religious_restrictions": "Strong religious freedom (Catholic-majority, tolerant)."
+}
+}
+},
+"review_rules": {
+"max_auto_step": 1,
+"note": "An automated score that moves by more than max_auto_step from the last published score is held for Lab review instead of being published."
+},
+"election_window_days": {
+"before": 180,
+"after": 30
+},
+"border_points": {
+"Myanmar": [
+[
+20.4,
+99.9
+],
+[
+19.0,
+97.9
+],
+[
+17.2,
+98.3
+],
+[
+15.0,
+98.5
+],
+[
+12.6,
+99.1
+],
+[
+10.0,
+98.5
+],
+[
+21.0,
+100.9
+],
+[
+21.2,
+92.4
+],
+[
+24.0,
+94.2
+],
+[
+22.9,
+93.3
+],
+[
+24.0,
+97.8
+],
+[
+23.4,
+98.9
+],
+[
+25.8,
+98.7
+]
+],
+"Thailand": [
+[
+20.4,
+99.9
+],
+[
+19.0,
+97.9
+],
+[
+17.2,
+98.3
+],
+[
+15.0,
+98.5
+],
+[
+12.6,
+99.1
+],
+[
+10.0,
+98.5
+],
+[
+19.9,
+100.5
+],
+[
+17.9,
+102.6
+],
+[
+16.6,
+104.7
+],
+[
+15.1,
+105.5
+],
+[
+14.4,
+103.0
+],
+[
+14.3,
+104.5
+],
+[
+13.6,
+102.5
+],
+[
+12.6,
+102.3
+],
+[
+6.5,
+100.2
+],
+[
+6.0,
+101.9
+],
+[
+5.7,
+101.0
+]
+],
+"Cambodia": [
+[
+14.4,
+103.0
+],
+[
+14.3,
+104.5
+],
+[
+13.6,
+102.5
+],
+[
+12.6,
+102.3
+],
+[
+13.9,
+105.9
+],
+[
+10.9,
+105.1
+],
+[
+11.6,
+106.2
+],
+[
+12.9,
+107.4
+],
+[
+13.9,
+107.5
+]
+],
+"Laos": [
+[
+21.0,
+100.9
+],
+[
+19.9,
+100.5
+],
+[
+17.9,
+102.6
+],
+[
+16.6,
+104.7
+],
+[
+15.1,
+105.5
+],
+[
+13.9,
+105.9
+],
+[
+21.6,
+101.6
+],
+[
+22.4,
+102.5
+],
+[
+20.6,
+104.4
+],
+[
+18.3,
+105.5
+],
+[
+16.6,
+106.6
+],
+[
+15.3,
+107.3
+]
+],
+"Vietnam": [
+[
+22.4,
+102.5
+],
+[
+20.6,
+104.4
+],
+[
+18.3,
+105.5
+],
+[
+16.6,
+106.6
+],
+[
+15.3,
+107.3
+],
+[
+10.9,
+105.1
+],
+[
+11.6,
+106.2
+],
+[
+12.9,
+107.4
+],
+[
+13.9,
+107.5
+],
+[
+22.8,
+104.0
+],
+[
+22.5,
+106.7
+],
+[
+21.5,
+107.9
+]
+],
+"Malaysia": [
+[
+6.5,
+100.2
+],
+[
+6.0,
+101.9
+],
+[
+5.7,
+101.0
+],
+[
+1.45,
+103.77
+],
+[
+1.5,
+110.3
+],
+[
+1.2,
+112.4
+],
+[
+2.6,
+115.5
+],
+[
+4.3,
+117.5
+],
+[
+4.6,
+114.6
+],
+[
+4.8,
+115.1
+],
+[
+5.9,
+119.3
+]
+],
+"Singapore": [
+[
+1.45,
+103.77
+],
+[
+1.2,
+104.0
+]
+],
+"Brunei": [
+[
+4.6,
+114.6
+],
+[
+4.8,
+115.1
+],
+[
+4.0,
+114.8
+]
+],
+"Indonesia": [
+[
+1.5,
+110.3
+],
+[
+1.2,
+112.4
+],
+[
+2.6,
+115.5
+],
+[
+4.3,
+117.5
+],
+[
+-9.1,
+125.0
+],
+[
+-9.4,
+125.1
+],
+[
+-9.3,
+124.4
+],
+[
+-2.6,
+141.0
+],
+[
+-6.0,
+141.0
+],
+[
+-8.9,
+141.0
+]
+],
+"Timor-Leste": [
+[
+-9.1,
+125.0
+],
+[
+-9.4,
+125.1
+],
+[
+-9.3,
+124.4
+]
+],
+"Philippines": [
+[
+5.9,
+119.3
+],
+[
+6.0,
+120.5
+]
+]
+}
 }
