@@ -784,40 +784,54 @@ def views():
     looking layer and is NOT merged into the PREVENT index. Cite: VIEWS, viewsforecasting.org.
     """
     isos = "".join("&iso=" + i for i in COUNTRIES.values())
-    q = ("?" + isos[1:]) if isos else ""  # "?iso=...&iso=..."
-    # Try a few valid query forms (first that returns data wins). A large pagesize
-    # fails FastAPI validation with HTTP 422, so we page with a conservative size.
-    candidates = [
-        f"{VIEWS_API}/current/cm/sb?pagesize=1000{isos}",      # all state-based models
-        f"{VIEWS_API}/current/cm/sb{q}",                        # default pagesize
-        f"{VIEWS_API}/current/cm/sb/sc_cm_sb_main?pagesize=1000{isos}",  # main ensemble only
-    ]
-    rows, run, used, errors = [], "", "", []
-    for base in candidates:
+
+    def one_get(url, timeout=90):
+        # single attempt, no retry — so a 422/404 on a non-existent run fails fast
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read().decode("utf-8", "replace"))
+
+    # The alpha API rejects the 'current' alias (HTTP 422); runs must be named
+    # concretely, e.g. fatalities003_2026_08_t01 (model version 003, input-data
+    # month, try sequence). A run is released ~end of the following month, so we
+    # probe real run labels newest-first and take the first that returns data.
+    runs = ["current"]
+    y, m = NOW.year, NOW.month
+    for _ in range(14):
+        for ver, t in (("003", "t01"), ("003", "t02"), ("002", "t01")):
+            runs.append(f"fatalities{ver}_{y:04d}_{m:02d}_{t}")
+        m -= 1
+        if m == 0:
+            y -= 1
+            m = 12
+
+    rows, run, used, errors, tried = [], "", "", [], 0
+    for rn in runs:
+        base = f"{VIEWS_API}/{rn}/cm/sb?pagesize=1000{isos}"
+        tried += 1
         try:
             page, got = base, []
             for _ in range(30):  # follow paging defensively
-                js = http_json(page, timeout=90)
+                js = one_get(page)
                 if not isinstance(js, dict):
                     break
-                md = js.get("metadata") or {}
-                if not run:
-                    run = str(md.get("run") or md.get("run_id") or "")
                 data = js.get("data") or []
                 if isinstance(data, list):
                     got += data
-                nxt = md.get("next_page")
+                nxt = (js.get("metadata") or {}).get("next_page")
                 if not nxt or nxt == page:
                     break
                 page = nxt
             if got:
-                rows, used = got, base.split("?")[0]
+                rows, run, used = got, rn, base.split("?")[0]
                 break
-            errors.append(base.split("?")[0] + " -> no data")
         except Exception as e:
-            errors.append(str(e)[:160])
+            msg = str(e)
+            # 422/404 just means that run label doesn't exist — keep only a few for the log
+            if len(errors) < 4:
+                errors.append(f"{rn}: {msg[:80]}")
     if not rows:
-        raise RuntimeError("VIEWS: all query forms failed — " + " | ".join(errors))
+        raise RuntimeError(f"VIEWS: no run returned data after {tried} tries — " + " | ".join(errors))
     sample_keys = sorted(rows[0].keys()) if isinstance(rows[0], dict) else ["<row is not a dict>"]
 
     by = {}
