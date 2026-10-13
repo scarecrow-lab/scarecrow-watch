@@ -541,13 +541,14 @@ function preventFor(name){
   return {cats, index: meanOf(cats.map(c => c.score)), triggers: elections.concat(C.triggers || []), basis: C.basis || ""};
 }
 function viewsSpark(monthly){
-  const pts = (monthly || []).map(x => x.prob).filter(v => v != null);
-  if (pts.length < 2) return null;
+  // Track projected fatalities — the discriminating series (the ≥1-death probability
+  // saturates near 1.0 for any country with ongoing conflict, so it reads flat).
+  const pts = (monthly || []).map(x => x.fatalities).filter(v => v != null);
+  if (pts.length < 2 || Math.max(...pts) <= 0) return null;
   const W = 300, H = 34, max = Math.max(...pts, 0.001), step = W / (pts.length - 1);
-  const xy = v => [0, (H - 3 - (v / max) * (H - 6))];
   const poly = pts.map((v, i) => `${(i * step).toFixed(1)},${(H - 3 - (v / max) * (H - 6)).toFixed(1)}`).join(" ");
   const last = pts[pts.length - 1], ly = (H - 3 - (last / max) * (H - 6)).toFixed(1);
-  return svgEl(`<svg class="vw-spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="12-month forecast trend"><polyline points="${poly}" fill="none" stroke="var(--gold)" stroke-width="2" vector-effect="non-scaling-stroke"/><circle cx="${W}" cy="${ly}" r="2.6" fill="var(--gold)"/></svg>`);
+  return svgEl(`<svg class="vw-spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Projected fatalities, next 12 months"><polyline points="${poly}" fill="none" stroke="var(--gold)" stroke-width="2" vector-effect="non-scaling-stroke"/><circle cx="${W}" cy="${ly}" r="2.6" fill="var(--gold)"/></svg>`);
 }
 function viewsCard(c){
   const v = (D.vw || {})[c.name];
@@ -557,8 +558,9 @@ function viewsCard(c){
   top.append(el("span","vw-eyebrow", t("vwEyebrow")), el("span","vw-src", t("vwSrc")));
   card.append(top);
   const stats = el("div","vw-stats");
-  if (v.prob_peak_12m != null){ const s = el("div","vw-s"); s.append(el("b",null, Math.round(v.prob_peak_12m * 100) + "%"), el("span",null, t("vwProb"))); stats.append(s); }
+  // Lead with projected fatalities (the metric that discriminates), probability second.
   if (v.fatalities_sum_12m != null){ const s = el("div","vw-s"); s.append(el("b",null, fmt(v.fatalities_sum_12m)), el("span",null, t("vwFat"))); stats.append(s); }
+  if (v.prob_peak_12m != null){ const s = el("div","vw-s"); s.append(el("b",null, Math.round(v.prob_peak_12m * 100) + "%"), el("span",null, t("vwProb"))); stats.append(s); }
   const arrow = v.trend === "rising" ? "↗" : v.trend === "falling" ? "↘" : "→";
   const ts = el("div","vw-s"); ts.append(el("b",null, arrow), el("span",null, t("vw_" + v.trend) || t("vwTrend"))); stats.append(ts);
   card.append(stats);

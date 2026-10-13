@@ -866,14 +866,16 @@ def views():
 
         def seg(side):
             picks = nxt12[:3] if side == "early" else nxt12[-3:]
-            vals = [x[4] for x in picks if x[4] is not None] or [x[3] for x in picks if x[3] is not None]
+            # trend from projected fatalities (x[3]); the ≥1-death probability (x[4])
+            # saturates near 1.0 for conflict-affected states, so it can't show a trend
+            vals = [x[3] for x in picks if x[3] is not None] or [x[4] for x in picks if x[4] is not None]
             return (sum(vals) / len(vals)) if vals else None
 
         early, late, trend = seg("early"), seg("late"), "flat"
         if early is not None and late is not None:
-            if late > early * 1.15 and (late - early) > 0.02:
+            if late > early * 1.15 and (late - early) > 0.5:
                 trend = "rising"
-            elif late < early * 0.85 and (early - late) > 0.02:
+            elif late < early * 0.85 and (early - late) > 0.5:
                 trend = "falling"
 
         out[name] = {
