@@ -636,7 +636,10 @@ function renderPrevent(body, c){
   body.append(el("h3",null,t("prevTriggers")));
   if (pi.triggers.length) pi.triggers.forEach(tg => { const r = el("div","case"); r.style.borderLeftColor = "var(--med)"; r.append(el("div",null,(tg.date ? tg.date + " · " : "") + tg.label)); const src = el("div","src"); src.append(link(tg.url, tg.source)); r.append(src); body.append(r); });
   else body.append(el("p","muted",t("prevNoTriggers")));
-  // Pointer to the separate Forecast tab (the VIEWS conflict forecast lives there, kept out of the PREVENT index)
+  body.append(el("h3",null,t("prevBasis")), el("p","note",pi.basis));
+  body.append(el("h3",null,t("prevMethod")));
+  ["scale","auto","review","adaptation"].forEach(k => P.method && P.method[k] && body.append(el("p","muted",P.method[k])));
+  // Pointer to the separate Forecast tab — placed at the very bottom, after Method
   const vf = (D.vw || {})[c.name];
   if (vf && (vf.fatalities_sum_12m != null || vf.prob_peak_12m != null)){
     const pf = el("button","prev-forecast-link"); pf.type = "button";
@@ -646,9 +649,6 @@ function renderPrevent(body, c){
     pf.onclick = () => { tab = "forecast"; renderDetail(); };
     body.append(pf);
   }
-  body.append(el("h3",null,t("prevBasis")), el("p","note",pi.basis));
-  body.append(el("h3",null,t("prevMethod")));
-  ["scale","auto","review","adaptation"].forEach(k => P.method && P.method[k] && body.append(el("p","muted",P.method[k])));
 }
 
 function orgRow(o){ const r = el("div","org"); r.append(link(o.url, o.name), document.createTextNode(" — " + (o.desc||""))); return r; }
