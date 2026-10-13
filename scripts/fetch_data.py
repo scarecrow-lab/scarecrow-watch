@@ -784,24 +784,41 @@ def views():
     looking layer and is NOT merged into the PREVENT index. Cite: VIEWS, viewsforecasting.org.
     """
     isos = "".join("&iso=" + i for i in COUNTRIES.values())
-    page = f"{VIEWS_API}/current/cm/sb?pagesize=20000{isos}"
-    rows, run = [], ""
-    for i in range(12):  # follow paging defensively
-        js = http_json(page, timeout=90)
-        if not isinstance(js, dict):
-            break
-        md = js.get("metadata") or {}
-        if not run:
-            run = str(md.get("run") or md.get("run_id") or "")
-        data = js.get("data") or []
-        if isinstance(data, list):
-            rows += data
-        nxt = md.get("next_page")
-        if not nxt or nxt == page:
-            break
-        page = nxt
+    q = ("?" + isos[1:]) if isos else ""  # "?iso=...&iso=..."
+    # Try a few valid query forms (first that returns data wins). A large pagesize
+    # fails FastAPI validation with HTTP 422, so we page with a conservative size.
+    candidates = [
+        f"{VIEWS_API}/current/cm/sb?pagesize=1000{isos}",      # all state-based models
+        f"{VIEWS_API}/current/cm/sb{q}",                        # default pagesize
+        f"{VIEWS_API}/current/cm/sb/sc_cm_sb_main?pagesize=1000{isos}",  # main ensemble only
+    ]
+    rows, run, used, errors = [], "", "", []
+    for base in candidates:
+        try:
+            page, got = base, []
+            for _ in range(30):  # follow paging defensively
+                js = http_json(page, timeout=90)
+                if not isinstance(js, dict):
+                    break
+                md = js.get("metadata") or {}
+                if not run:
+                    run = str(md.get("run") or md.get("run_id") or "")
+                data = js.get("data") or []
+                if isinstance(data, list):
+                    got += data
+                nxt = md.get("next_page")
+                if not nxt or nxt == page:
+                    break
+                page = nxt
+            if got:
+                rows, used = got, base.split("?")[0]
+                break
+            errors.append(base.split("?")[0] + " -> no data")
+        except Exception as e:
+            errors.append(str(e)[:160])
     if not rows:
-        raise RuntimeError("VIEWS returned no data (check the 'current' run and the cm/sb node)")
+        raise RuntimeError("VIEWS: all query forms failed — " + " | ".join(errors))
+    sample_keys = sorted(rows[0].keys()) if isinstance(rows[0], dict) else ["<row is not a dict>"]
 
     by = {}
     for r in rows:
@@ -855,8 +872,8 @@ def views():
             "monthly": monthly,
         }
     if not out:
-        raise RuntimeError("VIEWS returned rows but none matched ASEAN ISO codes")
-    return {"run": run, "countries": out}
+        raise RuntimeError("VIEWS rows didn't match ASEAN ISO codes. node=%s keys=%s" % (used, sample_keys[:40]))
+    return {"run": run, "node": used, "field_keys": sample_keys[:60], "countries": out}
 
 
 def main():
@@ -932,10 +949,11 @@ def main():
                              "source": "VIEWS (Violence & Impacts Early-Warning System)",
                              "url": "https://viewsforecasting.org",
                              "model": "fatalities — state-based armed conflict, country-month",
-                             "node": "current/cm/sb", "run": v.get("run", ""),
+                             "node": v.get("node", "current/cm/sb"), "run": v.get("run", ""),
                              "note": "Forward-looking forecast layer; shown alongside PREVENT, never averaged into it.",
                              "countries": v.get("countries", {})})
-        meta["sources"]["views"] = {"status": "ok", "updated": stamp, "count": len(v.get("countries", {})), "error": None}
+        meta["sources"]["views"] = {"status": "ok", "updated": stamp, "count": len(v.get("countries", {})),
+                                    "node": v.get("node", ""), "field_keys": v.get("field_keys", []), "error": None}
         log("views ok", len(v.get("countries", {})))
     except Exception as e:
         prev = meta["sources"].get("views", {})
