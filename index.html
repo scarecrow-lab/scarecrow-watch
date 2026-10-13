@@ -474,12 +474,12 @@ function drawMap(box, name, pts){
   const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
   // maxZoom kept low on purpose: hotspot locations are approximate and must not imply precise sites.
   mapObj = L.map(box, {scrollWheelZoom:false, maxZoom:9, minZoom:3, worldCopyJump:true});
-  // Esri World Street Map: labels are in English / romanised script (no API key needed). Dark mode inverts the tiles with CSS.
+  // OpenStreetMap standard tiles: no API key needed. Dark mode inverts the tiles with CSS.
   box.classList.toggle("dark", dark);
   let tileErrors = 0;
-  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom:9, crossOrigin:true,
-    attribution:'Tiles &copy; <a href="https://www.esri.com/" target="_blank" rel="noopener">Esri</a> — Esri, HERE, Garmin, &copy; OpenStreetMap contributors'
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'
   }).on("tileerror", () => {
     // If the tile server is unreachable, fall back to the schematic view instead of a grey box.
     if (++tileErrors === 6 && mapObj){ try { mapObj.remove(); } catch(e){} mapObj = null; box.replaceChildren(); box.classList.remove("map","dark"); box.append(hotspotSVG(pts)); }
