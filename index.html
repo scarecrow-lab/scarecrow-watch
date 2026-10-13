@@ -131,7 +131,7 @@ footer p{ margin:0 0 10px; }
 .vw-caveat{ margin:16px 0 0; padding:12px 16px; border-radius:10px; border:1px solid var(--line); border-left:4px solid var(--gold); background:rgba(201,154,75,.06); font-size:12.5px; line-height:1.5; color:var(--ink-dim); }
 .prev-forecast-link{ display:flex; align-items:center; gap:12px; margin:22px 0 0; padding:12px 16px; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:12px; background:var(--panel-2); color:var(--ink); text-decoration:none; cursor:pointer; font-size:14px; font-weight:500; text-align:left; width:100%; }
 .prev-forecast-link:hover{ background:rgba(201,154,75,.08); }
-.prev-forecast-link .pf-lead{ font:800 13px var(--brand); letter-spacing:.12em; text-transform:uppercase; color:var(--gold); }
+.prev-forecast-link .pf-lead{ font:800 11px var(--brand); letter-spacing:.1em; text-transform:uppercase; color:var(--gold); }
 .prev-forecast-link .pf-sum{ margin-left:auto; font-size:14px; color:var(--ink-dim); white-space:nowrap; }
 .staff{ margin:28px 0 0; text-align:right; font-size:12px; }
 .staff a{ color:var(--ink-faint); text-decoration:none; }
@@ -643,7 +643,7 @@ function renderPrevent(body, c){
   const vf = (D.vw || {})[c.name];
   if (vf && (vf.fatalities_sum_12m != null || vf.prob_peak_12m != null)){
     const pf = el("button","prev-forecast-link"); pf.type = "button";
-    pf.append(el("span","pf-lead", t("vwEyebrow")));
+    pf.append(el("span","pf-lead", (t("vwEyebrow") || "").split(/\s*—\s*/)[0]));
     const sum = (vf.fatalities_sum_12m != null ? fmt(vf.fatalities_sum_12m) + " " + t("vwFatShort") + "  " : "") + "→";
     pf.append(el("span","pf-sum", sum));
     pf.onclick = () => { tab = "forecast"; renderDetail(); const d = $("#detail"); if (d) d.scrollIntoView({ behavior: "smooth", block: "start" }); };
