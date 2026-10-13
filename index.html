@@ -646,7 +646,7 @@ function renderPrevent(body, c){
     pf.append(el("span","pf-lead", t("vwEyebrow")));
     const sum = (vf.fatalities_sum_12m != null ? fmt(vf.fatalities_sum_12m) + " " + t("vwFatShort") + "  " : "") + "→";
     pf.append(el("span","pf-sum", sum));
-    pf.onclick = () => { tab = "forecast"; renderDetail(); };
+    pf.onclick = () => { tab = "forecast"; renderDetail(); const d = $("#detail"); if (d) d.scrollIntoView({ behavior: "smooth", block: "start" }); };
     body.append(pf);
   }
 }
