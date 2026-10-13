@@ -56,6 +56,9 @@ body{ background:radial-gradient(1200px 700px at 85% -10%, rgba(201,154,75,.10),
 header{ border-bottom:0 !important; padding-bottom:8px !important; }
 .btn,.lang{ border-radius:999px !important; padding:7px 14px !important; transition:border-color .15s, color .15s, background .15s; }
 .btn:hover,.lang:hover{ border-color:var(--gold); color:var(--gold); }
+#briefingsLink{ background:var(--gold) !important; color:#13161d !important; border-color:var(--gold) !important; font-weight:700 !important; gap:6px; box-shadow:0 1px 7px rgba(201,154,75,.40); }
+#briefingsLink:hover{ background:#e0b063 !important; color:#13161d !important; border-color:#e0b063 !important; }
+#briefingsLink svg{ width:14px; height:14px; }
 @media (min-width:821px){ .list{ position:sticky; top:16px; max-height:calc(100vh - 32px); overflow:auto; } }
 .row{ transition:background .15s; }
 .tab{ border-radius:8px 8px 0 0; transition:color .15s, background .15s; }
@@ -242,7 +245,7 @@ footer p{ margin:0 0 10px; }
       <p class="lede" data-i="lede"></p>
     </div>
     <div class="controls">
-      <a class="btn" id="briefingsLink" href="briefings.html" style="text-decoration:none;display:inline-flex;align-items:center">Briefings</a>
+      <a class="btn" id="briefingsLink" href="briefings.html" style="text-decoration:none;display:inline-flex;align-items:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v13a2 2 0 0 0 2 2H6a2 2 0 0 1-2-2V5z"></path><path d="M8 8h6"></path><path d="M8 12h6"></path><path d="M8 16h4"></path></svg>Briefings</a>
       <label style="position:absolute;left:-9999px" for="langSel">Language</label>
       <select class="lang" id="langSel"></select>
       <button class="btn" id="theme" data-i="theme">Theme</button>
@@ -471,12 +474,12 @@ function drawMap(box, name, pts){
   const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
   // maxZoom kept low on purpose: hotspot locations are approximate and must not imply precise sites.
   mapObj = L.map(box, {scrollWheelZoom:false, maxZoom:9, minZoom:3, worldCopyJump:true});
-  // OpenStreetMap standard tiles: no API key needed. Dark mode inverts the tiles with CSS.
+  // Esri World Street Map: labels are in English / romanised script (no API key needed). Dark mode inverts the tiles with CSS.
   box.classList.toggle("dark", dark);
   let tileErrors = 0;
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", {
     maxZoom:9, crossOrigin:true,
-    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'
+    attribution:'Tiles &copy; <a href="https://www.esri.com/" target="_blank" rel="noopener">Esri</a> — Esri, HERE, Garmin, &copy; OpenStreetMap contributors'
   }).on("tileerror", () => {
     // If the tile server is unreachable, fall back to the schematic view instead of a grey box.
     if (++tileErrors === 6 && mapObj){ try { mapObj.remove(); } catch(e){} mapObj = null; box.replaceChildren(); box.classList.remove("map","dark"); box.append(hotspotSVG(pts)); }
