@@ -590,7 +590,10 @@ function renderDetail(){
 
   if (tab === "overview"){
     body.append(el("h3",null,t("lab")), el("p","note",c.note || ""));
-    body.append(el("h3",null,t("factors")));
+    const fh = el("h3");
+    const fa = el("a", null, t("factors")); fa.href = "prevent.html#h-rubric"; fa.target = "_blank"; fa.rel = "noopener"; fa.title = "How we rate each factor 1–5"; fa.style.textDecoration = "none";
+    const fhint = el("span", null, "  ↗"); fhint.style.cssText = "font-size:12px; vertical-align:1px; color:var(--ink-faint)"; fa.append(fhint);
+    fh.append(fa); body.append(fh);
     const row = el("div","chart-row"), bars = el("div","bars");
     D.a.factors.forEach((f,i) => {
       const v = Number(c.scores[f.key] || 0), r = el("div","bar"), tr = el("div","track"), fill = el("div","fill");
