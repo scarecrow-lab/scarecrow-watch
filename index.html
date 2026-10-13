@@ -119,6 +119,15 @@ footer p{ margin:0 0 10px; }
 .learn-prevent:hover{ background:rgba(201,154,75,.18); }
 .learn-prevent .lp-letters{ font:800 13px var(--brand); letter-spacing:.12em; color:var(--gold); }
 .learn-prevent .lp-arrow{ color:var(--gold); font-weight:800; }
+.vw-card{ border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:12px; background:var(--panel-2); padding:16px 18px; margin:16px 0 2px; }
+.vw-top{ display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:6px; }
+.vw-eyebrow{ font:700 11px var(--mono); letter-spacing:.07em; text-transform:uppercase; color:var(--gold); }
+.vw-src{ font-size:11.5px; color:var(--ink-faint); }
+.vw-stats{ display:flex; flex-wrap:wrap; gap:14px 28px; margin:12px 0 8px; }
+.vw-s b{ font:800 22px var(--serif); display:block; line-height:1.1; }
+.vw-s span{ font-size:12px; color:var(--ink-dim); }
+.vw-spark{ display:block; width:100%; height:34px; margin:2px 0 8px; }
+.vw-note{ font-size:12px; line-height:1.45; color:var(--ink-faint); }
 .staff{ margin:28px 0 0; text-align:right; font-size:12px; }
 .staff a{ color:var(--ink-faint); text-decoration:none; }
 .staff a:hover,.staff a:focus-visible{ color:var(--gold); text-decoration:underline; }
@@ -324,8 +333,8 @@ async function getJSON(path){
 
 async function load(){
   try{
-    const [a, s, d, m, cx, site, pv, ind, apub, arev, fba] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json","data/context.json","data/site.json","data/prevent.json","data/indicators.json","data/auto_published.json","data/auto_review.json","data/factbook_auto.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
-    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}, cx: cx || {}, site: site || {}, pv, ind: (ind && ind.indicators) || {}, apub: (apub && apub.countries) || {}, arev: (arev && arev.pending) || [], fba: (fba && fba.countries) || {}};
+    const [a, s, d, m, cx, site, pv, ind, apub, arev, fba, vw] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json","data/context.json","data/site.json","data/prevent.json","data/indicators.json","data/auto_published.json","data/auto_review.json","data/factbook_auto.json","data/views.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
+    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}, cx: cx || {}, site: site || {}, pv, ind: (ind && ind.indicators) || {}, apub: (apub && apub.countries) || {}, arev: (arev && arev.pending) || [], fba: (fba && fba.countries) || {}, vw: (vw && vw.countries) || {}};
     D.a.countries.sort((x,y) => avg(y.scores) - avg(x.scores));
     const fromHash = decodeURIComponent((location.hash.match(/country=([^&]+)/) || [])[1] || "");
     current = D.a.countries.find(c => c.name === fromHash) ? fromHash : D.a.countries[0].name;
@@ -531,6 +540,32 @@ function preventFor(name){
     .map(e => ({date:e.date, label:(t("prevElection") || "Election") + ": " + e.label, source:e.source, url:e.url}));
   return {cats, index: meanOf(cats.map(c => c.score)), triggers: elections.concat(C.triggers || []), basis: C.basis || ""};
 }
+function viewsSpark(monthly){
+  const pts = (monthly || []).map(x => x.prob).filter(v => v != null);
+  if (pts.length < 2) return null;
+  const W = 300, H = 34, max = Math.max(...pts, 0.001), step = W / (pts.length - 1);
+  const xy = v => [0, (H - 3 - (v / max) * (H - 6))];
+  const poly = pts.map((v, i) => `${(i * step).toFixed(1)},${(H - 3 - (v / max) * (H - 6)).toFixed(1)}`).join(" ");
+  const last = pts[pts.length - 1], ly = (H - 3 - (last / max) * (H - 6)).toFixed(1);
+  return svgEl(`<svg class="vw-spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="12-month forecast trend"><polyline points="${poly}" fill="none" stroke="var(--gold)" stroke-width="2" vector-effect="non-scaling-stroke"/><circle cx="${W}" cy="${ly}" r="2.6" fill="var(--gold)"/></svg>`);
+}
+function viewsCard(c){
+  const v = (D.vw || {})[c.name];
+  if (!v || (v.prob_peak_12m == null && v.fatalities_sum_12m == null)) return null;
+  const card = el("div","vw-card");
+  const top = el("div","vw-top");
+  top.append(el("span","vw-eyebrow", t("vwEyebrow")), el("span","vw-src", t("vwSrc")));
+  card.append(top);
+  const stats = el("div","vw-stats");
+  if (v.prob_peak_12m != null){ const s = el("div","vw-s"); s.append(el("b",null, Math.round(v.prob_peak_12m * 100) + "%"), el("span",null, t("vwProb"))); stats.append(s); }
+  if (v.fatalities_sum_12m != null){ const s = el("div","vw-s"); s.append(el("b",null, fmt(v.fatalities_sum_12m)), el("span",null, t("vwFat"))); stats.append(s); }
+  const arrow = v.trend === "rising" ? "↗" : v.trend === "falling" ? "↘" : "→";
+  const ts = el("div","vw-s"); ts.append(el("b",null, arrow), el("span",null, t("vw_" + v.trend) || t("vwTrend"))); stats.append(ts);
+  card.append(stats);
+  const sp = viewsSpark(v.monthly); if (sp) card.append(sp);
+  card.append(el("div","vw-note", t("vwNote")));
+  return card;
+}
 function renderPrevent(body, c){
   const P = D.pv, pi = preventFor(c.name);
   if (!pi){ body.append(el("p","muted",t("prevNoData"))); return; }
@@ -544,6 +579,7 @@ function renderPrevent(body, c){
   const s2 = el("div","stat"); s2.append(el("b",null,avg(c.scores).toFixed(2)), el("span",null,t("prevCompare")));
   const s3 = el("div","stat"); s3.append(el("b",null,String(pi.triggers.length)), el("span",null,t("prevTriggers")));
   top.append(s1,s2,s3); body.append(top);
+  const vc = viewsCard(c); if (vc) body.append(vc);
   for (const {cat, rows, score} of pi.cats){
     const head = el("div","bar"); head.style.marginTop = "18px";
     const nm = el("span"); nm.append(el("b",null,(cat.letter || cat.key) + "  "), document.createTextNode(t("cat" + cat.key) || cat.name.en));
