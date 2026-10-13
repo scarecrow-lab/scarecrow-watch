@@ -1,0 +1,814 @@
+{
+  "generated": "2026-10-13T10:16:38+00:00",
+  "source": "VIEWS (Violence & Impacts Early-Warning System)",
+  "url": "https://viewsforecasting.org",
+  "model": "fatalities — state-based armed conflict, country-month",
+  "node": "https://api.viewsforecasting.org/fatalities003_2026_08_t01/cm/sb",
+  "run": "fatalities003_2026_08_t01",
+  "note": "Forward-looking forecast layer; shown alongside PREVENT, never averaged into it.",
+  "countries": {
+    "Brunei": {
+      "iso": "BRN",
+      "prob_peak_12m": 0.0,
+      "fatalities_sum_12m": 0,
+      "fatalities_peak_12m": 0.0,
+      "trend": "flat",
+      "window": {
+        "start": "2026-10",
+        "end": "2027-09"
+      },
+      "monthly": [
+        {
+          "date": "2026-10",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-11",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-12",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-01",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-02",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-03",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-04",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-05",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-06",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-07",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-08",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-09",
+          "prob": 0.0,
+          "fatalities": 0.0
+        }
+      ]
+    },
+    "Philippines": {
+      "iso": "PHL",
+      "prob_peak_12m": 1.0,
+      "fatalities_sum_12m": 810,
+      "fatalities_peak_12m": 124.9,
+      "trend": "rising",
+      "window": {
+        "start": "2026-10",
+        "end": "2027-09"
+      },
+      "monthly": [
+        {
+          "date": "2026-10",
+          "prob": 0.8085,
+          "fatalities": 30.1
+        },
+        {
+          "date": "2026-11",
+          "prob": 0.6956,
+          "fatalities": 27.6
+        },
+        {
+          "date": "2026-12",
+          "prob": 0.9944,
+          "fatalities": 50.8
+        },
+        {
+          "date": "2027-01",
+          "prob": 1.0,
+          "fatalities": 100.0
+        },
+        {
+          "date": "2027-02",
+          "prob": 0.9999,
+          "fatalities": 95.0
+        },
+        {
+          "date": "2027-03",
+          "prob": 0.9997,
+          "fatalities": 75.9
+        },
+        {
+          "date": "2027-04",
+          "prob": 1.0,
+          "fatalities": 124.9
+        },
+        {
+          "date": "2027-05",
+          "prob": 0.9964,
+          "fatalities": 54.0
+        },
+        {
+          "date": "2027-06",
+          "prob": 0.9947,
+          "fatalities": 51.2
+        },
+        {
+          "date": "2027-07",
+          "prob": 0.9906,
+          "fatalities": 47.2
+        },
+        {
+          "date": "2027-08",
+          "prob": 1.0,
+          "fatalities": 106.8
+        },
+        {
+          "date": "2027-09",
+          "prob": 0.99,
+          "fatalities": 46.8
+        }
+      ]
+    },
+    "Cambodia": {
+      "iso": "KHM",
+      "prob_peak_12m": 0.0,
+      "fatalities_sum_12m": 3,
+      "fatalities_peak_12m": 0.4,
+      "trend": "flat",
+      "window": {
+        "start": "2026-10",
+        "end": "2027-09"
+      },
+      "monthly": [
+        {
+          "date": "2026-10",
+          "prob": 0.0,
+          "fatalities": 0.2
+        },
+        {
+          "date": "2026-11",
+          "prob": 0.0,
+          "fatalities": 0.2
+        },
+        {
+          "date": "2026-12",
+          "prob": 0.0,
+          "fatalities": 0.2
+        },
+        {
+          "date": "2027-01",
+          "prob": 0.0,
+          "fatalities": 0.2
+        },
+        {
+          "date": "2027-02",
+          "prob": 0.0,
+          "fatalities": 0.3
+        },
+        {
+          "date": "2027-03",
+          "prob": 0.0,
+          "fatalities": 0.3
+        },
+        {
+          "date": "2027-04",
+          "prob": 0.0,
+          "fatalities": 0.3
+        },
+        {
+          "date": "2027-05",
+          "prob": 0.0,
+          "fatalities": 0.3
+        },
+        {
+          "date": "2027-06",
+          "prob": 0.0,
+          "fatalities": 0.3
+        },
+        {
+          "date": "2027-07",
+          "prob": 0.0,
+          "fatalities": 0.3
+        },
+        {
+          "date": "2027-08",
+          "prob": 0.0,
+          "fatalities": 0.4
+        },
+        {
+          "date": "2027-09",
+          "prob": 0.0,
+          "fatalities": 0.4
+        }
+      ]
+    },
+    "Laos": {
+      "iso": "LAO",
+      "prob_peak_12m": 0.0,
+      "fatalities_sum_12m": 0,
+      "fatalities_peak_12m": 0.0,
+      "trend": "flat",
+      "window": {
+        "start": "2026-10",
+        "end": "2027-09"
+      },
+      "monthly": [
+        {
+          "date": "2026-10",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-11",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-12",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-01",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-02",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-03",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-04",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-05",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-06",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-07",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-08",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-09",
+          "prob": 0.0,
+          "fatalities": 0.0
+        }
+      ]
+    },
+    "Myanmar": {
+      "iso": "MMR",
+      "prob_peak_12m": 1.0,
+      "fatalities_sum_12m": 1034,
+      "fatalities_peak_12m": 131.9,
+      "trend": "flat",
+      "window": {
+        "start": "2026-10",
+        "end": "2027-09"
+      },
+      "monthly": [
+        {
+          "date": "2026-10",
+          "prob": 1.0,
+          "fatalities": 117.9
+        },
+        {
+          "date": "2026-11",
+          "prob": 1.0,
+          "fatalities": 101.5
+        },
+        {
+          "date": "2026-12",
+          "prob": 0.9999,
+          "fatalities": 86.5
+        },
+        {
+          "date": "2027-01",
+          "prob": 0.9994,
+          "fatalities": 69.3
+        },
+        {
+          "date": "2027-02",
+          "prob": 0.9997,
+          "fatalities": 76.2
+        },
+        {
+          "date": "2027-03",
+          "prob": 0.9996,
+          "fatalities": 74.6
+        },
+        {
+          "date": "2027-04",
+          "prob": 0.9992,
+          "fatalities": 66.1
+        },
+        {
+          "date": "2027-05",
+          "prob": 0.9986,
+          "fatalities": 61.5
+        },
+        {
+          "date": "2027-06",
+          "prob": 0.9997,
+          "fatalities": 75.1
+        },
+        {
+          "date": "2027-07",
+          "prob": 0.9988,
+          "fatalities": 63.2
+        },
+        {
+          "date": "2027-08",
+          "prob": 1.0,
+          "fatalities": 109.9
+        },
+        {
+          "date": "2027-09",
+          "prob": 1.0,
+          "fatalities": 131.9
+        }
+      ]
+    },
+    "Thailand": {
+      "iso": "THA",
+      "prob_peak_12m": 1.0,
+      "fatalities_sum_12m": 547,
+      "fatalities_peak_12m": 125.1,
+      "trend": "rising",
+      "window": {
+        "start": "2026-10",
+        "end": "2027-09"
+      },
+      "monthly": [
+        {
+          "date": "2026-10",
+          "prob": 0.7719,
+          "fatalities": 29.2
+        },
+        {
+          "date": "2026-11",
+          "prob": 0.8554,
+          "fatalities": 31.6
+        },
+        {
+          "date": "2026-12",
+          "prob": 0.3804,
+          "fatalities": 22.9
+        },
+        {
+          "date": "2027-01",
+          "prob": 0.1434,
+          "fatalities": 19.0
+        },
+        {
+          "date": "2027-02",
+          "prob": 0.6195,
+          "fatalities": 26.3
+        },
+        {
+          "date": "2027-03",
+          "prob": 0.9635,
+          "fatalities": 38.9
+        },
+        {
+          "date": "2027-04",
+          "prob": 0.9871,
+          "fatalities": 45.2
+        },
+        {
+          "date": "2027-05",
+          "prob": 0.999,
+          "fatalities": 64.3
+        },
+        {
+          "date": "2027-06",
+          "prob": 0.995,
+          "fatalities": 51.6
+        },
+        {
+          "date": "2027-07",
+          "prob": 0.8745,
+          "fatalities": 32.3
+        },
+        {
+          "date": "2027-08",
+          "prob": 0.9985,
+          "fatalities": 60.8
+        },
+        {
+          "date": "2027-09",
+          "prob": 1.0,
+          "fatalities": 125.1
+        }
+      ]
+    },
+    "Vietnam": {
+      "iso": "VNM",
+      "prob_peak_12m": 0.0,
+      "fatalities_sum_12m": 0,
+      "fatalities_peak_12m": 0.1,
+      "trend": "flat",
+      "window": {
+        "start": "2026-10",
+        "end": "2027-09"
+      },
+      "monthly": [
+        {
+          "date": "2026-10",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-11",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-12",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-01",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-02",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-03",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-04",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-05",
+          "prob": 0.0,
+          "fatalities": 0.1
+        },
+        {
+          "date": "2027-06",
+          "prob": 0.0,
+          "fatalities": 0.1
+        },
+        {
+          "date": "2027-07",
+          "prob": 0.0,
+          "fatalities": 0.1
+        },
+        {
+          "date": "2027-08",
+          "prob": 0.0,
+          "fatalities": 0.1
+        },
+        {
+          "date": "2027-09",
+          "prob": 0.0,
+          "fatalities": 0.1
+        }
+      ]
+    },
+    "Timor-Leste": {
+      "iso": "TLS",
+      "prob_peak_12m": 0.0,
+      "fatalities_sum_12m": 0,
+      "fatalities_peak_12m": 0.0,
+      "trend": "flat",
+      "window": {
+        "start": "2026-10",
+        "end": "2027-09"
+      },
+      "monthly": [
+        {
+          "date": "2026-10",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-11",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-12",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-01",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-02",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-03",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-04",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-05",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-06",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-07",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-08",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-09",
+          "prob": 0.0,
+          "fatalities": 0.0
+        }
+      ]
+    },
+    "Malaysia": {
+      "iso": "MYS",
+      "prob_peak_12m": 0.0,
+      "fatalities_sum_12m": 0,
+      "fatalities_peak_12m": 0.0,
+      "trend": "flat",
+      "window": {
+        "start": "2026-10",
+        "end": "2027-09"
+      },
+      "monthly": [
+        {
+          "date": "2026-10",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-11",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-12",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-01",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-02",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-03",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-04",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-05",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-06",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-07",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-08",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-09",
+          "prob": 0.0,
+          "fatalities": 0.0
+        }
+      ]
+    },
+    "Singapore": {
+      "iso": "SGP",
+      "prob_peak_12m": 0.0,
+      "fatalities_sum_12m": 0,
+      "fatalities_peak_12m": 0.1,
+      "trend": "flat",
+      "window": {
+        "start": "2026-10",
+        "end": "2027-09"
+      },
+      "monthly": [
+        {
+          "date": "2026-10",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-11",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2026-12",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-01",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-02",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-03",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-04",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-05",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-06",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-07",
+          "prob": 0.0,
+          "fatalities": 0.0
+        },
+        {
+          "date": "2027-08",
+          "prob": 0.0,
+          "fatalities": 0.1
+        },
+        {
+          "date": "2027-09",
+          "prob": 0.0,
+          "fatalities": 0.1
+        }
+      ]
+    },
+    "Indonesia": {
+      "iso": "IDN",
+      "prob_peak_12m": 0.9987,
+      "fatalities_sum_12m": 354,
+      "fatalities_peak_12m": 62.2,
+      "trend": "flat",
+      "window": {
+        "start": "2026-10",
+        "end": "2027-09"
+      },
+      "monthly": [
+        {
+          "date": "2026-10",
+          "prob": 0.1472,
+          "fatalities": 19.1
+        },
+        {
+          "date": "2026-11",
+          "prob": 0.9415,
+          "fatalities": 36.3
+        },
+        {
+          "date": "2026-12",
+          "prob": 0.9586,
+          "fatalities": 38.2
+        },
+        {
+          "date": "2027-01",
+          "prob": 0.8955,
+          "fatalities": 33.3
+        },
+        {
+          "date": "2027-02",
+          "prob": 0.2684,
+          "fatalities": 21.3
+        },
+        {
+          "date": "2027-03",
+          "prob": 0.1145,
+          "fatalities": 18.3
+        },
+        {
+          "date": "2027-04",
+          "prob": 0.6299,
+          "fatalities": 26.5
+        },
+        {
+          "date": "2027-05",
+          "prob": 0.9987,
+          "fatalities": 62.2
+        },
+        {
+          "date": "2027-06",
+          "prob": 0.252,
+          "fatalities": 21.0
+        },
+        {
+          "date": "2027-07",
+          "prob": 0.4049,
+          "fatalities": 23.2
+        },
+        {
+          "date": "2027-08",
+          "prob": 0.6751,
+          "fatalities": 27.2
+        },
+        {
+          "date": "2027-09",
+          "prob": 0.679,
+          "fatalities": 27.3
+        }
+      ]
+    }
+  }
+}
