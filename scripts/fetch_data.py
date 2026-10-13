@@ -33,6 +33,7 @@ ISO_TO_NAME = {v: k for k, v in COUNTRIES.items()}
 SIGNAL_DAYS = 14
 PER_COUNTRY = 15
 CURATED = "Curated sources"
+VIEWS_API = "https://api.viewsforecasting.org"
 
 # Words that make a news item worth an analyst's attention. Kept narrow on purpose.
 GDELT_TERMS = ('(airstrike OR massacre OR killed OR displaced OR refugees OR "human rights" '
@@ -710,6 +711,154 @@ def dtm():
     return out
 
 
+def _views_num(v):
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
+def _views_fat(row):
+    """Main ensemble predicted (mean) fatalities. Handles both naming schemes:
+    codebook key `main_mean` and original `sc_cm_sb_main`; excludes log and probability columns."""
+    for k, v in row.items():
+        lk = str(k).lower()
+        if lk.endswith("_ln") or "dich" in lk:
+            continue
+        if "main" in lk and "mean" in lk:
+            return v
+    for k, v in row.items():
+        lk = str(k).lower()
+        if lk.endswith("_ln") or "dich" in lk or "mean" in lk:
+            continue
+        if lk == "sc_cm_sb_main" or lk.endswith("_main"):
+            return v
+    return None
+
+
+def _views_prob(row):
+    """Main ensemble probability of state-based conflict (dichotomous): `main_dich` / `sc_cm_sb_dich_main`."""
+    for k, v in row.items():
+        lk = str(k).lower()
+        if lk.endswith("_ln"):
+            continue
+        if "dich" in lk and "main" in lk:
+            return v
+    for k, v in row.items():
+        if "dich" in str(k).lower():
+            return v
+    return None
+
+
+def _views_iso(row):
+    for k in ("isoab", "iso", "iso3", "country_iso", "gw_iso", "isocode"):
+        v = row.get(k)
+        if isinstance(v, str) and v.upper() in ISO_TO_NAME:
+            return v.upper()
+    nm = row.get("name") or row.get("country") or row.get("country_name")
+    if isinstance(nm, str) and nm in COUNTRIES:
+        return COUNTRIES[nm]
+    return None
+
+
+def _views_ym(row):
+    y, m = row.get("year"), row.get("month")
+    try:
+        if y and m:
+            return int(y), int(m)
+    except (TypeError, ValueError):
+        pass
+    mid = row.get("month_id")
+    try:
+        mid = int(mid)
+        return 1980 + (mid - 1) // 12, ((mid - 1) % 12) + 1
+    except (TypeError, ValueError):
+        return None, None
+
+
+def views():
+    """VIEWS (viewsforecasting.org) — machine-learning forecasts of state-based armed conflict,
+    country-month level. Open data (the 'fatalities' model), no API key needed. Writes a
+    12-month-ahead forecast per ASEAN country: peak monthly probability of conflict (main_dich)
+    and expected fatalities (main_mean), plus the monthly series. This is a separate, forward-
+    looking layer and is NOT merged into the PREVENT index. Cite: VIEWS, viewsforecasting.org.
+    """
+    isos = "".join("&iso=" + i for i in COUNTRIES.values())
+    page = f"{VIEWS_API}/current/cm/sb?pagesize=20000{isos}"
+    rows, run = [], ""
+    for i in range(12):  # follow paging defensively
+        js = http_json(page, timeout=90)
+        if not isinstance(js, dict):
+            break
+        md = js.get("metadata") or {}
+        if not run:
+            run = str(md.get("run") or md.get("run_id") or "")
+        data = js.get("data") or []
+        if isinstance(data, list):
+            rows += data
+        nxt = md.get("next_page")
+        if not nxt or nxt == page:
+            break
+        page = nxt
+    if not rows:
+        raise RuntimeError("VIEWS returned no data (check the 'current' run and the cm/sb node)")
+
+    by = {}
+    for r in rows:
+        if not isinstance(r, dict):
+            continue
+        iso = _views_iso(r)
+        if not iso:
+            continue
+        y, m = _views_ym(r)
+        if not y:
+            continue
+        fat = _views_num(_views_fat(r))
+        prob = _views_num(_views_prob(r))
+        by.setdefault(iso, []).append((y * 12 + m, y, m, fat, prob))
+
+    out = {}
+    cutoff = NOW.year * 12 + NOW.month  # current month onward
+    for iso, lst in by.items():
+        name = ISO_TO_NAME.get(iso)
+        lst.sort()
+        future = [x for x in lst if x[0] >= cutoff] or lst
+        nxt12 = future[:12]
+        if not nxt12:
+            continue
+        probs = [x[4] for x in nxt12 if x[4] is not None]
+        fats = [x[3] for x in nxt12 if x[3] is not None]
+        monthly = [{"date": f"{y:04d}-{m:02d}",
+                    "prob": (round(p, 4) if p is not None else None),
+                    "fatalities": (round(f, 1) if f is not None else None)}
+                   for (_, y, m, f, p) in nxt12]
+
+        def seg(side):
+            picks = nxt12[:3] if side == "early" else nxt12[-3:]
+            vals = [x[4] for x in picks if x[4] is not None] or [x[3] for x in picks if x[3] is not None]
+            return (sum(vals) / len(vals)) if vals else None
+
+        early, late, trend = seg("early"), seg("late"), "flat"
+        if early is not None and late is not None:
+            if late > early * 1.15 and (late - early) > 0.02:
+                trend = "rising"
+            elif late < early * 0.85 and (early - late) > 0.02:
+                trend = "falling"
+
+        out[name] = {
+            "iso": iso,
+            "prob_peak_12m": (round(max(probs), 4) if probs else None),
+            "fatalities_sum_12m": (round(sum(fats)) if fats else None),
+            "fatalities_peak_12m": (round(max(fats), 1) if fats else None),
+            "trend": trend,
+            "window": {"start": monthly[0]["date"], "end": monthly[-1]["date"]},
+            "monthly": monthly,
+        }
+    if not out:
+        raise RuntimeError("VIEWS returned rows but none matched ASEAN ISO codes")
+    return {"run": run, "countries": out}
+
+
 def main():
     os.makedirs(DATA, exist_ok=True)
     meta = read("meta.json", {"sources": {}})
@@ -776,6 +925,22 @@ def main():
         prev = meta["sources"].get("dtm", {})
         meta["sources"]["dtm"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
         log("dtm FAILED", e)
+
+    try:
+        v = views()
+        write("views.json", {"generated": stamp,
+                             "source": "VIEWS (Violence & Impacts Early-Warning System)",
+                             "url": "https://viewsforecasting.org",
+                             "model": "fatalities — state-based armed conflict, country-month",
+                             "node": "current/cm/sb", "run": v.get("run", ""),
+                             "note": "Forward-looking forecast layer; shown alongside PREVENT, never averaged into it.",
+                             "countries": v.get("countries", {})})
+        meta["sources"]["views"] = {"status": "ok", "updated": stamp, "count": len(v.get("countries", {})), "error": None}
+        log("views ok", len(v.get("countries", {})))
+    except Exception as e:
+        prev = meta["sources"].get("views", {})
+        meta["sources"]["views"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
+        log("views FAILED", e)
 
     try:
         held = review_auto(read("indicators.json", {}).get("indicators", {}))
