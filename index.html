@@ -690,6 +690,7 @@ function renderForecast(body, c){
   body.append(el("div","note", t("fcChartTitle")));
   const ch = viewsChart(v.monthly); if (ch) body.append(ch);
   const mk = (h, p) => { const s = el("div","vw-sec"); s.append(el("h4",null,h), el("p",null,p)); return s; };
+  body.append(mk(t("fcMovesH"), t("fcMoves")));
   body.append(mk(t("fcWhatH"), t("vwViolence")));
   body.append(mk(t("fcReadH"), t("fcRead")));
   body.append(mk(t("fcMethodH"), t("fcMethod")));
