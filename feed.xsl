@@ -20,7 +20,10 @@ h1{ font-size:28px; margin:0 0 6px; line-height:1.15; }
 .lede{ color:var(--ink-dim); margin:0 0 18px; font-size:14.5px; }
 .howto{ background:var(--panel-2); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:12px; padding:14px 16px; font-size:13.5px; color:var(--ink-dim); margin-bottom:26px; }
 .howto b{ color:var(--ink); }
-.howto code{ font:500 12px ui-monospace,monospace; color:var(--ink); background:rgba(201,154,75,.14); padding:2px 7px; border-radius:6px; word-break:break-all; }
+.howto code{ font:500 12.5px ui-monospace,monospace; color:var(--ink); background:rgba(201,154,75,.14); padding:5px 9px; border-radius:7px; word-break:break-all; }
+.feedurl{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+.feedurl #copybtn{ font:600 11px ui-monospace,monospace; color:#13161d; background:var(--gold); border:1px solid var(--gold); border-radius:7px; padding:5px 12px; cursor:pointer; white-space:nowrap; }
+.feedurl #copybtn:hover{ opacity:.9; }
 a{ color:var(--gold); }
 .item{ border-top:1px solid var(--line); padding:16px 0; }
 .item .meta{ font:500 11.5px ui-monospace,monospace; color:var(--ink-faint); margin-bottom:5px; }
@@ -36,7 +39,11 @@ a{ color:var(--gold); }
   <h1><xsl:value-of select="rss/channel/title"/></h1>
   <p class="lede"><xsl:value-of select="rss/channel/description"/></p>
   <div class="howto">
-    <p style="margin:0 0 8px"><b>This is a live feed, not a normal web page.</b> Copy this page's address and paste it into any RSS reader (Feedly, Inoreader, NetNewsWire, Thunderbird…) to get new alerts automatically — no account or email needed.</p>
+    <p style="margin:0 0 10px"><b>This is a live feed, not a normal web page.</b> To subscribe, copy the feed address below and paste it into any RSS reader (Feedly, Inoreader, NetNewsWire, Thunderbird…) to get new alerts automatically — no account or email needed.</p>
+    <p class="feedurl" style="margin:0 0 10px">
+      <code id="feedaddr"><xsl:value-of select="rss/channel/atom:link/@href"/></code>
+      <button type="button" id="copybtn">Copy</button>
+    </p>
     <p style="margin:0">Prefer to just read them? <a href="alerts.html">Open the Alerts page →</a></p>
   </div>
   <xsl:for-each select="rss/channel/item">
@@ -48,6 +55,15 @@ a{ color:var(--gold); }
   </xsl:for-each>
   <p class="foot"><a href="index.html">Scarecrow Watch dashboard</a> · <a href="alerts.html">All alerts</a></p>
 </div>
+<script>
+var cb = document.getElementById('copybtn');
+if (cb) cb.addEventListener('click', function(){
+  var u = document.getElementById('feedaddr').textContent;
+  if (navigator.clipboard &amp;&amp; navigator.clipboard.writeText) navigator.clipboard.writeText(u);
+  var b = this; b.textContent = 'Copied';
+  setTimeout(function(){ b.textContent = 'Copy'; }, 1500);
+});
+</script>
 </body>
 </html>
 </xsl:template>
