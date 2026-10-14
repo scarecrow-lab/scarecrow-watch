@@ -269,55 +269,56 @@ footer p{ margin:0 0 10px; }
   -webkit-mask:url(assets/logo-icon.png) center/contain no-repeat; mask:url(assets/logo-icon.png) center/contain no-repeat; }
 #cover .cbrand{ font-family:var(--brand); font-weight:800; font-size:17px; letter-spacing:.11em; color:#f3efe6; }
 #cover .cbrand em{ font-style:normal; font-weight:700; color:var(--gold); margin-left:.32em; }
-#cover .eyebrow{ font-family:var(--mono); font-size:12px; letter-spacing:.26em; text-transform:uppercase;
+#cover .eyebrow{ font-family:var(--mono); font-size:13.5px; letter-spacing:.26em; text-transform:uppercase;
   color:var(--gold); margin:0 0 18px; }
 #cover h1.cov{ font-family:var(--serif); font-weight:600; color:#f6f2ea;
-  font-size:clamp(27px,4vw,46px); line-height:1.1; letter-spacing:-.01em; margin:0; max-width:17ch;
+  font-size:clamp(32px,4.8vw,56px); line-height:1.1; letter-spacing:-.01em; margin:0; max-width:17ch;
   text-shadow:0 2px 30px rgba(0,0,0,.5); }
-#cover .story{ margin:22px 0 0; max-width:50ch; color:#d8d2c6; font-size:clamp(14.5px,1.5vw,17px); line-height:1.62; }
+#cover .story{ margin:22px 0 0; max-width:50ch; color:#d8d2c6; font-size:clamp(16.5px,1.8vw,20px); line-height:1.6; }
 #cover .story b{ color:#f3efe6; font-weight:600; }
-#cover .memory{ margin:16px 0 0; font-family:var(--mono); font-size:12.5px; letter-spacing:.04em;
+#cover .memory{ margin:16px 0 0; font-family:var(--mono); font-size:14px; letter-spacing:.04em;
   color:#b9a98c; display:flex; flex-wrap:wrap; gap:6px 14px; }
 #cover .memory span{ position:relative; padding-left:15px; white-space:nowrap; }
 #cover .memory span::before{ content:""; position:absolute; left:0; top:50%; width:6px; height:6px; margin-top:-3px;
   border-radius:50%; background:var(--crit); box-shadow:0 0 8px rgba(194,65,79,.7); }
 #cover .cov-cta{ margin:34px 0 0; display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
-#cover .enter{ font-family:var(--brand); font-weight:800; font-size:15px; letter-spacing:.03em;
-  color:#13161d; background:var(--gold); border:0; border-radius:999px; padding:15px 30px; cursor:pointer;
+#cover .enter{ font-family:var(--brand); font-weight:800; font-size:17px; letter-spacing:.03em;
+  color:#13161d; background:var(--gold); border:0; border-radius:999px; padding:16px 34px; cursor:pointer;
   display:inline-flex; align-items:center; gap:10px; transition:transform .15s, box-shadow .2s, background .2s;
   box-shadow:0 10px 34px rgba(201,154,75,.3); }
 #cover .enter:hover{ transform:translateY(-1px); background:#d9ab5e; box-shadow:0 14px 40px rgba(201,154,75,.42); }
 #cover .enter:focus-visible{ outline:3px solid #f3efe6; outline-offset:3px; }
 #cover .enter svg{ width:18px; height:18px; }
-#cover .subcta{ font-size:12.5px; color:#9aa0ab; font-family:var(--sans); }
-#cover .dignity{ margin:30px 0 0; font-size:11.5px; color:#7d8392; max-width:52ch; line-height:1.5; font-style:italic; }
+#cover .subcta{ font-size:14px; color:#9aa0ab; font-family:var(--sans); }
+#cover .dignity{ margin:28px 0 0; font-size:12.5px; color:#7d8392; max-width:52ch; line-height:1.5; font-style:italic; }
 #cover .birds{ animation:covdrift 26s linear infinite; }
 /* Fit the intro on one fixed screen (no scroll): shrink by viewport height so the Enter button is always visible, incl. at 100% zoom */
 @media (max-height:1000px){
-  #cover .inner{ padding-top:78px; padding-bottom:38px; }
-  #cover h1.cov{ font-size:clamp(23px,3.2vw,37px); }
-  #cover .story{ margin:15px 0 0; font-size:clamp(14px,1.4vw,16px); line-height:1.5; }
+  #cover .inner{ padding-top:66px; padding-bottom:34px; }
+  #cover h1.cov{ font-size:clamp(29px,4.2vw,48px); }
+  #cover .story{ margin:15px 0 0; font-size:clamp(16px,1.7vw,19px); line-height:1.5; }
   #cover .memory{ margin-top:12px; }
-  #cover .cov-cta{ margin-top:22px; }
-  #cover .dignity{ margin-top:16px; }
+  #cover .cov-cta{ margin-top:20px; }
+  #cover .dignity{ margin-top:14px; }
 }
 @media (max-height:820px){
-  #cover .inner{ padding-top:64px; padding-bottom:30px; }
+  #cover .inner{ padding-top:56px; padding-bottom:28px; }
   #cover .eyebrow{ margin-bottom:12px; }
-  #cover h1.cov{ font-size:clamp(20px,2.9vw,30px); line-height:1.08; }
-  #cover .story{ margin-top:12px; font-size:13px; line-height:1.46; max-width:64ch; }
-  #cover .memory{ margin-top:10px; font-size:12px; }
+  #cover h1.cov{ font-size:clamp(25px,3.6vw,40px); line-height:1.08; }
+  #cover .story{ margin-top:12px; font-size:clamp(15px,1.6vw,17px); line-height:1.46; max-width:64ch; }
+  #cover .memory{ margin-top:10px; font-size:13px; }
   #cover .cov-cta{ margin-top:16px; }
-  #cover .enter{ padding:13px 26px; font-size:14px; }
-  #cover .dignity{ margin-top:12px; font-size:11px; }
+  #cover .enter{ padding:14px 30px; font-size:16px; }
+  #cover .dignity{ margin-top:12px; font-size:12px; }
 }
 @media (max-height:680px){
-  #cover .inner{ padding-top:54px; padding-bottom:22px; }
+  #cover .inner{ padding-top:46px; padding-bottom:20px; }
   #cover .eyebrow{ margin-bottom:8px; }
-  #cover h1.cov{ font-size:clamp(18px,2.5vw,25px); }
-  #cover .story{ margin-top:9px; font-size:12.5px; line-height:1.4; }
-  #cover .memory{ margin-top:8px; }
+  #cover h1.cov{ font-size:clamp(22px,3.1vw,32px); }
+  #cover .story{ margin-top:9px; font-size:14px; line-height:1.4; }
+  #cover .memory{ margin-top:8px; font-size:12.5px; }
   #cover .cov-cta{ margin-top:13px; }
+  #cover .enter{ padding:13px 26px; font-size:15px; }
   #cover .dignity{ display:none; }
 }
 @media (max-width:640px){
