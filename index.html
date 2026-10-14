@@ -144,6 +144,15 @@ footer p{ margin:0 0 10px; }
 .hist-arrow{ display:inline-block; width:14px; font-weight:800; }
 .hist-arrow.up{ color:var(--crit); }
 .hist-arrow.down{ color:var(--low); }
+.dataexport{ margin:24px 0 0; padding:16px 18px; border:1px solid var(--line); border-radius:12px; background:var(--panel-2); }
+.dataexport h3{ margin:0 0 4px; }
+.dataexport p{ margin:0 0 12px; font-size:12.5px; }
+.dl-row{ display:flex; flex-wrap:wrap; align-items:center; gap:10px; }
+.dl-btn{ display:inline-flex; align-items:center; gap:5px; background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:999px; padding:7px 15px; font:600 12.5px var(--mono); cursor:pointer; transition:border-color .15s, color .15s; }
+.dl-btn:hover{ border-color:var(--gold); color:var(--gold); }
+.dl-raw{ margin-left:auto; font-size:12.5px; color:var(--gold); text-decoration:none; white-space:nowrap; }
+.dl-raw:hover{ text-decoration:underline; }
+@media (max-width:620px){ .dl-raw{ margin-left:0; } }
 .staff{ margin:28px 0 0; text-align:right; font-size:12px; }
 .staff a{ color:var(--ink-faint); text-decoration:none; }
 .staff a:hover,.staff a:focus-visible{ color:var(--gold); text-decoration:underline; }
@@ -558,6 +567,60 @@ function preventFor(name){
   return {cats, index: meanOf(cats.map(c => c.score)), triggers: elections.concat(C.triggers || []), basis: C.basis || ""};
 }
 function vwArrow(trend){ return trend === "rising" ? "↗" : trend === "falling" ? "↘" : "→"; }
+// ---- open data export (client-side, no backend) ----
+function downloadText(name, text, mime){
+  try{
+    const blob = new Blob([text], { type: mime || "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob), a = document.createElement("a");
+    a.href = url; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+  }catch(e){ /* ignore */ }
+}
+function buildCountryExport(c){
+  const pi = preventFor(c.name), vw = (D.vw || {})[c.name] || null, factors = {};
+  (D.a.factors || []).forEach(f => { factors[f.key] = { label: f.en, score: Number(c.scores[f.key] || 0) }; });
+  const prevent = pi ? {
+    index: pi.index, status: (D.pv && D.pv.status) || "draft",
+    categories: pi.cats.map(cc => ({
+      key: cc.cat.key, label: (cc.cat.name && cc.cat.name.en) || cc.cat.key, score: cc.score,
+      indicators: cc.rows.map(r => ({ key: r.k, label: r.spec.en || r.k, type: r.spec.type, score: r.score, value: r.value, year: r.year, note: r.note || undefined }))
+    })),
+    triggers: pi.triggers.map(x => ({ date: x.date, label: x.label, source: x.source, url: x.url }))
+  } : null;
+  return {
+    source: "Scarecrow Watch",
+    url: "https://scarecrow-lab.github.io/scarecrow-watch/#country=" + encodeURIComponent(c.name),
+    generated: new Date().toISOString(),
+    notice: "Open early-warning data aggregated from public sources. Cite Scarecrow Watch and the original data providers. Lab-judged scores are drafts pending the Lab's review where marked. VIEWS is a conflict forecast, not an atrocity prediction, and is never averaged into the risk score.",
+    country: c.name,
+    risk_assessment: { framework: "UN Framework of Analysis for Atrocity Crimes (8 factors, 1–5)", average: Number(avg(c.scores).toFixed(2)), factors: factors, lab_note: c.note || undefined, evidence: c.evidence || undefined },
+    prevent: prevent,
+    forecast_views: vw ? { source: "VIEWS (viewsforecasting.org)", run: (D.vwInfo || {}).run || undefined, prob_peak_12m: vw.prob_peak_12m, fatalities_sum_12m: vw.fatalities_sum_12m, trend: vw.trend, window: vw.window, monthly: vw.monthly } : null,
+    history: histSeries(c.name),
+    data_sources: (D.m && D.m.sources) || undefined
+  };
+}
+function buildHistoryCSV(c){
+  const se = histSeries(c.name), rows = [["month", "risk_score_avg", "views_projected_fatalities_12m"]];
+  se.forEach(x => rows.push([x.month, x.avg != null ? x.avg : "", x.views_fat != null ? x.views_fat : ""]));
+  return rows.map(r => r.join(",")).join("\r\n") + "\r\n";
+}
+function dlIcon(){ return svgEl('<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>'); }
+function renderDataExport(body, c){
+  const slug = c.name.toLowerCase().replace(/[^a-z0-9]+/g, "-"), d = new Date().toISOString().slice(0, 10);
+  const wrap = el("div", "dataexport");
+  wrap.append(el("h3", null, t("dlTitle")), el("p", "muted", t("dlNote")));
+  const row = el("div", "dl-row");
+  const bJson = el("button", "dl-btn"); bJson.type = "button"; bJson.append(dlIcon(), document.createTextNode(" JSON"));
+  bJson.onclick = () => downloadText(`scarecrow-${slug}-${d}.json`, JSON.stringify(buildCountryExport(c), null, 2), "application/json");
+  const bCsv = el("button", "dl-btn"); bCsv.type = "button"; bCsv.append(dlIcon(), document.createTextNode(" CSV"));
+  bCsv.onclick = () => downloadText(`scarecrow-${slug}-history-${d}.csv`, buildHistoryCSV(c), "text/csv;charset=utf-8");
+  row.append(bJson, bCsv);
+  const raw = el("a", "dl-raw", t("dlRaw")); raw.href = "https://github.com/scarecrow-lab/scarecrow-watch/tree/main/data"; raw.target = "_blank"; raw.rel = "noopener";
+  row.append(raw);
+  wrap.append(row);
+  body.append(wrap);
+}
 // ---- history / "what changed" ----
 function monthLabel(ym){
   const m = /^(\d{4})-(\d{2})$/.exec(ym || ""); if (!m) return ym || "";
@@ -800,6 +863,7 @@ function renderDetail(){
         const src = el("div","src"); (e.sources || []).forEach(s => src.append(link(s.url, s.label))); r.append(src); body.append(r);
       }
     }
+    renderDataExport(body, c);
   }
 
   if (tab === "prevent") renderPrevent(body, c);
