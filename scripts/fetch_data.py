@@ -1024,6 +1024,7 @@ def _write_feed(items):
     esc = lambda s: html.escape(str(s), quote=True)
     now = email.utils.format_datetime(NOW)
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<?xml-stylesheet type="text/xsl" href="feed.xsl"?>',
              '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>',
              '<title>Scarecrow Watch — Alerts</title>',
              f'<link>{base}/alerts.html</link>',
