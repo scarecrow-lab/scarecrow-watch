@@ -292,6 +292,34 @@ footer p{ margin:0 0 10px; }
 #cover .subcta{ font-size:12.5px; color:#9aa0ab; font-family:var(--sans); }
 #cover .dignity{ margin:30px 0 0; font-size:11.5px; color:#7d8392; max-width:52ch; line-height:1.5; font-style:italic; }
 #cover .birds{ animation:covdrift 26s linear infinite; }
+/* Fit the intro on one fixed screen (no scroll): shrink by viewport height so the Enter button is always visible, incl. at 100% zoom */
+@media (max-height:1000px){
+  #cover .inner{ padding-top:78px; padding-bottom:38px; }
+  #cover h1.cov{ font-size:clamp(23px,3.2vw,37px); }
+  #cover .story{ margin:15px 0 0; font-size:clamp(14px,1.4vw,16px); line-height:1.5; }
+  #cover .memory{ margin-top:12px; }
+  #cover .cov-cta{ margin-top:22px; }
+  #cover .dignity{ margin-top:16px; }
+}
+@media (max-height:820px){
+  #cover .inner{ padding-top:64px; padding-bottom:30px; }
+  #cover .eyebrow{ margin-bottom:12px; }
+  #cover h1.cov{ font-size:clamp(20px,2.9vw,30px); line-height:1.08; }
+  #cover .story{ margin-top:12px; font-size:13px; line-height:1.46; max-width:64ch; }
+  #cover .memory{ margin-top:10px; font-size:12px; }
+  #cover .cov-cta{ margin-top:16px; }
+  #cover .enter{ padding:13px 26px; font-size:14px; }
+  #cover .dignity{ margin-top:12px; font-size:11px; }
+}
+@media (max-height:680px){
+  #cover .inner{ padding-top:54px; padding-bottom:22px; }
+  #cover .eyebrow{ margin-bottom:8px; }
+  #cover h1.cov{ font-size:clamp(18px,2.5vw,25px); }
+  #cover .story{ margin-top:9px; font-size:12.5px; line-height:1.4; }
+  #cover .memory{ margin-top:8px; }
+  #cover .cov-cta{ margin-top:13px; }
+  #cover .dignity{ display:none; }
+}
 @media (max-width:640px){
   #cover .inner{ padding-bottom:calc(40px + env(safe-area-inset-bottom,0px)); }
   #cover .veil{ background:linear-gradient(0deg, rgba(8,10,14,.92) 8%, rgba(8,10,14,.35) 60%, rgba(8,10,14,.5) 100%); }
