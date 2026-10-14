@@ -892,6 +892,83 @@ def views():
     return {"run": run, "node": used, "field_keys": sample_keys[:60], "countries": out}
 
 
+def _views_get1(url, timeout=90):
+    """Single-attempt VIEWS fetch (no retry) so a non-existent run fails fast."""
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return json.loads(r.read().decode("utf-8", "replace"))
+
+
+def _views_run_sums(run):
+    """For one VIEWS run, return {country: predicted total fatalities over the run's
+    first 12 forecast months} — the 12-month-ahead projection as it stood at that vintage."""
+    isos = "".join("&iso=" + i for i in COUNTRIES.values())
+    page = f"{VIEWS_API}/{run}/cm/sb?pagesize=1000{isos}"
+    rows = []
+    for _ in range(30):
+        js = _views_get1(page)
+        if not isinstance(js, dict):
+            break
+        rows += js.get("data") or []
+        nxt = (js.get("metadata") or {}).get("next_page")
+        if not nxt or nxt == page:
+            break
+        page = nxt
+    by = {}
+    for r in rows:
+        if not isinstance(r, dict):
+            continue
+        iso = _views_iso(r)
+        y, m = _views_ym(r)
+        if not iso or not y:
+            continue
+        fat = _views_num(_views_fat(r))
+        by.setdefault(iso, []).append((y * 12 + m, fat))
+    out = {}
+    for iso, lst in by.items():
+        name = ISO_TO_NAME.get(iso)
+        if not name:
+            continue
+        lst.sort()
+        first12 = [f for _, f in lst[:12] if f is not None]
+        if first12:
+            out[name] = round(sum(first12))
+    return out
+
+
+def _ym_minus(y, m, k):
+    idx = y * 12 + (m - 1) - k
+    return idx // 12, idx % 12 + 1
+
+
+def backfill_views_history(hist):
+    """Fill PAST calendar months with the VIEWS forecast that was current at the time,
+    so the trend line has real history right away. Idempotent: only fills gaps, so after
+    the first run it fetches at most the one newly-available month. A run with input-month
+    M is released ~end of M+1, so during calendar month C the current run is input-month C-2."""
+    filled = 0
+    for back in range(1, 8):  # the previous 7 calendar months
+        cy, cm = _ym_minus(NOW.year, NOW.month, back)
+        cal = f"{cy:04d}-{cm:02d}"
+        if any("views_fat" in (hist["countries"].get(n, {}).get(cal, {})) for n in hist["countries"]):
+            continue  # month already has VIEWS history
+        iy, im = _ym_minus(cy, cm, 2)  # run input-month = calendar month minus 2
+        sums = None
+        for ver, t in (("003", "t01"), ("003", "t02"), ("002", "t01")):
+            try:
+                sums = _views_run_sums(f"fatalities{ver}_{iy:04d}_{im:02d}_{t}")
+                if sums:
+                    break
+            except Exception:
+                continue
+        if not sums:
+            continue
+        for name, fat in sums.items():
+            hist["countries"].setdefault(name, {}).setdefault(cal, {})["views_fat"] = fat
+        filled += 1
+    return filled
+
+
 def snapshot_history():
     """Append/refresh this month's snapshot of each country's headline risk score
     (the average of the 8 UN-framework factors), its per-factor scores, and the
@@ -915,6 +992,13 @@ def snapshot_history():
             snap["views_fat"] = v.get("fatalities_sum_12m")
             snap["views_trend"] = v.get("trend")
         hist["countries"].setdefault(name, {})[month] = snap
+    # one-time backfill of past months' VIEWS forecasts (fills gaps only)
+    try:
+        bf = backfill_views_history(hist)
+        if bf:
+            log("history backfill: filled", bf, "past VIEWS months")
+    except Exception as e:
+        log("history backfill skipped:", str(e)[:120])
     # recompute the month list and cap to the most recent 36
     months = set()
     for cm in hist["countries"].values():
