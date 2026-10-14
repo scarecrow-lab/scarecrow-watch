@@ -1020,7 +1020,7 @@ def _factor_labels():
 
 def _write_feed(items):
     """Write an RSS 2.0 feed so anyone can subscribe to alerts without an account."""
-    base = "https://scarecrow-lab.github.io/scarecrow-watch"
+    base = "https://scarecrowwatch.org"
     esc = lambda s: html.escape(str(s), quote=True)
     now = email.utils.format_datetime(NOW)
     parts = ['<?xml version="1.0" encoding="UTF-8"?>',
