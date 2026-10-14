@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alerts · Scarecrow Watch</title>
+<meta name="description" content="Early-warning alerts for the eleven ASEAN states — changes in mass-atrocity risk scores and conflict forecasts from Scarecrow Watch. Subscribe by RSS.">
+<meta name="theme-color" content="#14181f">
+<link rel="icon" href="assets/logo-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Scarecrow Watch — Alerts" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Montserrat:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14181f; --panel:#1c222c; --panel-2:#232a35; --line:#333d4b;
+  --ink:#e9e6df; --ink-dim:#a9b0bc; --ink-faint:#6f7889; --gold:#c99a4b;
+  --crit:#c2414f; --low:#4d8b78;
+  --shadow:0 1px 2px rgba(0,0,0,.2), 0 12px 34px rgba(0,0,0,.28);
+  --serif:'Source Serif 4', Georgia, serif;
+  --sans:'IBM Plex Sans','IBM Plex Sans Thai',-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --brand:'Montserrat','Chakra Petch',var(--sans);
+}
+:root[data-theme="light"]{ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#8a8f98; --gold:#a87a2f; --crit:#b5402f; --low:#3b7a63; --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); }
+@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#8a8f98; --gold:#a87a2f; --crit:#b5402f; --low:#3b7a63; --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); } }
+*{ box-sizing:border-box; }
+body{ margin:0; background:radial-gradient(1200px 700px at 85% -10%, rgba(201,154,75,.10), transparent 60%), radial-gradient(900px 600px at -10% 110%, rgba(77,139,120,.08), transparent 60%), var(--bg); background-attachment:fixed; color:var(--ink); font-family:var(--sans); line-height:1.5; }
+a{ color:var(--gold); }
+.wrap{ max-width:1040px; margin:0 auto; padding:28px 22px 60px; }
+.logo-mark{ display:inline-block; width:36px; height:37px; background:var(--ink); -webkit-mask:url(assets/logo-icon.png) center/contain no-repeat; mask:url(assets/logo-icon.png) center/contain no-repeat; flex:none; }
+header{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; align-items:flex-end; padding-bottom:20px; border-bottom:1px solid var(--line); margin-bottom:22px; }
+.wordmark{ display:flex; align-items:center; gap:11px; margin-bottom:12px; }
+.brand{ font-family:var(--brand); font-weight:800; font-size:21px; letter-spacing:.05em; color:var(--ink); line-height:1; }
+.brand em{ font-style:normal; font-weight:700; color:var(--gold); margin-left:.3em; }
+h1{ font-family:var(--serif); font-size:clamp(26px,4vw,34px); margin:0 0 6px; line-height:1.15; }
+.lede{ color:var(--ink-dim); margin:0; max-width:62ch; font-size:14.5px; }
+.controls{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.navlink,.btn{ background:var(--panel-2); color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font:500 12px var(--mono); cursor:pointer; text-decoration:none; transition:border-color .15s, color .15s; white-space:nowrap; }
+.navlink:hover,.btn:hover{ border-color:var(--gold); color:var(--gold); }
+.navlink.here{ border-color:var(--gold); color:var(--gold); }
+.rss{ display:inline-flex; align-items:center; gap:6px; background:var(--gold); color:#13161d !important; border-color:var(--gold); font-weight:700; }
+.rss:hover{ background:#e0b063; border-color:#e0b063; color:#13161d !important; }
+.rss svg{ width:13px; height:13px; }
+.subbar{ display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin:0 0 20px; padding:12px 16px; border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:12px; background:var(--panel-2); font-size:13px; color:var(--ink-dim); }
+.subbar code{ font:500 12px var(--mono); color:var(--ink); background:rgba(201,154,75,.12); padding:2px 7px; border-radius:6px; word-break:break-all; }
+.subbar .copy{ margin-left:auto; }
+.filters{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; }
+.chip{ background:transparent; color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:6px 13px; font:500 12.5px var(--sans); cursor:pointer; transition:all .15s; }
+.chip:hover{ border-color:var(--gold); color:var(--ink); }
+.chip.on{ background:var(--gold); color:#13161d; border-color:var(--gold); font-weight:600; }
+.count{ color:var(--ink-faint); font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; margin:0 0 14px; }
+.grid{ display:grid; gap:12px; }
+.acard{ display:block; background:var(--panel); border:1px solid var(--line); border-left:4px solid var(--line); border-radius:12px; padding:16px 20px; text-decoration:none; color:inherit; box-shadow:var(--shadow); transition:border-color .15s, transform .15s; }
+.acard:hover{ transform:translateY(-1px); }
+.acard.up{ border-left-color:var(--crit); }
+.acard.down{ border-left-color:var(--low); }
+.acard .meta{ display:flex; flex-wrap:wrap; gap:8px 12px; align-items:center; margin-bottom:7px; }
+.badge{ font:600 10.5px var(--mono); letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:999px; border:1px solid var(--gold); color:var(--gold); }
+.badge.forecast{ border-color:#3b97ad; color:#5bb8cc; } :root[data-theme="light"] .badge.forecast{ color:#2d7d90; }
+.cdate{ font:500 12px var(--mono); color:var(--ink-faint); }
+.ccountry{ font:600 12.5px var(--sans); color:var(--ink-dim); }
+.arrow{ margin-left:auto; font-weight:800; font-size:14px; }
+.arrow.up{ color:var(--crit); }
+.arrow.down{ color:var(--low); }
+.acard h2{ font-family:var(--serif); font-size:16px; line-height:1.35; margin:0 0 5px; color:var(--ink); }
+.acard p{ margin:0; color:var(--ink-dim); font-size:13px; }
+.empty{ background:var(--panel); border:1px dashed var(--line); border-radius:12px; padding:40px 24px; text-align:center; color:var(--ink-dim); }
+.empty b{ color:var(--ink); display:block; margin-bottom:6px; font-size:15px; }
+.note{ margin-top:28px; padding-top:18px; border-top:1px solid var(--line); color:var(--ink-faint); font-size:12px; max-width:72ch; }
+footer{ max-width:1040px; margin:0 auto; padding:0 22px 40px; color:var(--ink-faint); font-size:12px; }
+footer a{ color:var(--ink-dim); }
+@media (max-width:620px){ .arrow{ margin-left:0; } header{ align-items:flex-start; } .subbar .copy{ margin-left:0; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="wordmark"><span class="logo-mark" role="img" aria-label="Scarecrow"></span><span class="brand">SCARECROW<em>WATCH</em></span></div>
+      <h1>Alerts</h1>
+      <p class="lede">Automated early-warning alerts for the eleven ASEAN states — month-on-month changes in the Lab's risk scores and in the VIEWS conflict forecast. Subscribe by RSS; no account or email needed.</p>
+    </div>
+    <nav class="controls" aria-label="Sections">
+      <a class="navlink" href="index.html">← Dashboard</a>
+      <a class="navlink" href="briefings.html">Briefings</a>
+      <a class="navlink here" href="alerts.html" aria-current="page">Alerts</a>
+      <a class="navlink" href="about.html">About</a>
+      <a class="rss" href="feed.xml" id="rss"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1.4" fill="currentColor" stroke="none"></circle></svg>Subscribe (RSS)</a>
+      <button class="btn" id="theme" type="button">Theme</button>
+    </nav>
+  </header>
+
+  <div class="subbar">
+    <span>Paste this feed URL into any RSS reader to get alerts:</span>
+    <code id="feedurl">feed.xml</code>
+    <button class="btn copy" id="copy" type="button">Copy</button>
+  </div>
+
+  <div class="filters" id="filters"></div>
+  <p class="count" id="count"></p>
+  <div class="grid" id="grid"></div>
+
+  <p class="note">Alerts are generated automatically from public data: a change in the Lab's risk score for a country, or a significant move (≥15% and ≥50 projected fatalities) in the VIEWS state-based conflict forecast. VIEWS figures are a conflict forecast, not a prediction of mass atrocities, and are never averaged into the risk score. Alerts are signals to review, not verified findings.</p>
+</div>
+
+<footer>
+  <p>Scarecrow Watch — an independent, non-profit, open-source early-warning watch for Southeast Asia. <a href="about.html">About &amp; independence</a> · <a href="index.html">Live dashboard</a></p>
+</footer>
+
+<script>
+"use strict";
+var $ = function(s){ return document.querySelector(s); };
+function el(tag, cls, text){ var e = document.createElement(tag); if(cls) e.className = cls; if(text != null) e.textContent = text; return e; }
+function safeUrl(u){ return (typeof u === "string" && /^(index\.html#|https?:\/\/)/i.test(u)) ? u : null; }
+
+$("#theme").onclick = function(){
+  var r = document.documentElement;
+  var dark = r.dataset.theme ? r.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
+  r.dataset.theme = dark ? "light" : "dark";
+};
+
+// show the absolute feed URL and wire the copy button
+(function(){
+  var abs = new URL("feed.xml", location.href).href;
+  $("#feedurl").textContent = abs;
+  $("#rss").href = abs;
+  $("#copy").onclick = function(){
+    var done = function(){ $("#copy").textContent = "Copied"; setTimeout(function(){ $("#copy").textContent = "Copy"; }, 1500); };
+    if (navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(abs).then(done, done); }
+    else { try { var t=document.createElement("textarea"); t.value=abs; document.body.appendChild(t); t.select(); document.execCommand("copy"); t.remove(); done(); } catch(e){} }
+  };
+})();
+
+var ALL = [], activeCountry = "All";
+function fmtDate(s){
+  var d = new Date((s||"") + "T00:00:00");
+  if (isNaN(d)) return s || "";
+  return d.toLocaleDateString("en-GB", { day:"numeric", month:"short", year:"numeric" });
+}
+
+function render(){
+  var grid = $("#grid"), count = $("#count");
+  grid.innerHTML = "";
+  var items = ALL.filter(function(a){ return activeCountry === "All" || a.country === activeCountry; });
+  items.sort(function(a,b){ return (b.month||"").localeCompare(a.month||"") || (b.date||"").localeCompare(a.date||""); });
+
+  count.textContent = items.length === 1 ? "1 alert" : items.length + " alerts";
+
+  if (!items.length){
+    var e = el("div","empty");
+    e.appendChild(el("b", null, "No alerts yet"));
+    e.appendChild(el("span", null, "Alerts appear here when a country's risk score changes or its conflict forecast moves significantly."));
+    grid.appendChild(e);
+    return;
+  }
+
+  items.forEach(function(a){
+    var url = safeUrl(a.url);
+    var card = url ? el("a","acard " + (a.dir||"")) : el("div","acard " + (a.dir||""));
+    if (url){ card.href = url; }
+
+    var meta = el("div","meta");
+    meta.appendChild(el("span","badge " + (a.type === "views" ? "forecast" : ""), a.type === "views" ? "Forecast" : "Risk score"));
+    if (a.date) meta.appendChild(el("span","cdate", fmtDate(a.date)));
+    if (a.country) meta.appendChild(el("span","ccountry", a.country));
+    meta.appendChild(el("span","arrow " + (a.dir||""), a.dir === "up" ? "▲" : a.dir === "down" ? "▼" : ""));
+    card.appendChild(meta);
+
+    card.appendChild(el("h2", null, a.title || "Alert"));
+    if (a.detail) card.appendChild(el("p", null, a.detail));
+    grid.appendChild(card);
+  });
+}
+
+function buildFilters(){
+  var set = {}; ALL.forEach(function(a){ if (a.country) set[a.country] = 1; });
+  var countries = ["All"].concat(Object.keys(set).sort());
+  var box = $("#filters"); box.innerHTML = "";
+  if (countries.length <= 2){ box.style.display = "none"; return; }
+  countries.forEach(function(c){
+    var chip = el("button","chip" + (c === activeCountry ? " on" : ""), c);
+    chip.type = "button";
+    chip.onclick = function(){ activeCountry = c; buildFilters(); render(); };
+    box.appendChild(chip);
+  });
+}
+
+fetch("data/alerts.json?v=" + Date.now())
+  .then(function(r){ return r.ok ? r.json() : {}; })
+  .then(function(data){ ALL = (data && Array.isArray(data.items)) ? data.items : []; buildFilters(); render(); })
+  .catch(function(){ ALL = []; buildFilters(); render(); });
+</script>
+</body>
+</html>

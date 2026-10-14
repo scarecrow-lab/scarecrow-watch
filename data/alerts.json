@@ -1,0 +1,94 @@
+{
+  "generated": "2026-10-14T01:24:20+00:00",
+  "note": "Automated early-warning alerts from month-on-month changes in the risk scores and VIEWS forecasts.",
+  "items": [
+    {
+      "id": "views|Thailand|2026-09",
+      "date": "2026-10-14",
+      "month": "2026-09",
+      "country": "Thailand",
+      "type": "views",
+      "dir": "up",
+      "title": "Thailand: conflict forecast rose 381% (89→428)",
+      "detail": "VIEWS projected state-based conflict fatalities over the next 12 months moved from 89 to 428. This is a conflict forecast, not an atrocity prediction.",
+      "url": "index.html#country=Thailand"
+    },
+    {
+      "id": "views|Philippines|2026-09",
+      "date": "2026-10-14",
+      "month": "2026-09",
+      "country": "Philippines",
+      "type": "views",
+      "dir": "up",
+      "title": "Philippines: conflict forecast rose 217% (246→780)",
+      "detail": "VIEWS projected state-based conflict fatalities over the next 12 months moved from 246 to 780. This is a conflict forecast, not an atrocity prediction.",
+      "url": "index.html#country=Philippines"
+    },
+    {
+      "id": "views|Thailand|2026-08",
+      "date": "2026-10-14",
+      "month": "2026-08",
+      "country": "Thailand",
+      "type": "views",
+      "dir": "down",
+      "title": "Thailand: conflict forecast fell 73% (332→89)",
+      "detail": "VIEWS projected state-based conflict fatalities over the next 12 months moved from 332 to 89. This is a conflict forecast, not an atrocity prediction.",
+      "url": "index.html#country=Thailand"
+    },
+    {
+      "id": "views|Philippines|2026-08",
+      "date": "2026-10-14",
+      "month": "2026-08",
+      "country": "Philippines",
+      "type": "views",
+      "dir": "down",
+      "title": "Philippines: conflict forecast fell 50% (489→246)",
+      "detail": "VIEWS projected state-based conflict fatalities over the next 12 months moved from 489 to 246. This is a conflict forecast, not an atrocity prediction.",
+      "url": "index.html#country=Philippines"
+    },
+    {
+      "id": "views|Indonesia|2026-08",
+      "date": "2026-10-14",
+      "month": "2026-08",
+      "country": "Indonesia",
+      "type": "views",
+      "dir": "down",
+      "title": "Indonesia: conflict forecast fell 43% (366→209)",
+      "detail": "VIEWS projected state-based conflict fatalities over the next 12 months moved from 366 to 209. This is a conflict forecast, not an atrocity prediction.",
+      "url": "index.html#country=Indonesia"
+    },
+    {
+      "id": "views|Thailand|2026-07",
+      "date": "2026-10-14",
+      "month": "2026-07",
+      "country": "Thailand",
+      "type": "views",
+      "dir": "up",
+      "title": "Thailand: conflict forecast rose 403% (66→332)",
+      "detail": "VIEWS projected state-based conflict fatalities over the next 12 months moved from 66 to 332. This is a conflict forecast, not an atrocity prediction.",
+      "url": "index.html#country=Thailand"
+    },
+    {
+      "id": "views|Philippines|2026-07",
+      "date": "2026-10-14",
+      "month": "2026-07",
+      "country": "Philippines",
+      "type": "views",
+      "dir": "up",
+      "title": "Philippines: conflict forecast rose 130% (213→489)",
+      "detail": "VIEWS projected state-based conflict fatalities over the next 12 months moved from 213 to 489. This is a conflict forecast, not an atrocity prediction.",
+      "url": "index.html#country=Philippines"
+    },
+    {
+      "id": "views|Indonesia|2026-07",
+      "date": "2026-10-14",
+      "month": "2026-07",
+      "country": "Indonesia",
+      "type": "views",
+      "dir": "up",
+      "title": "Indonesia: conflict forecast rose 285% (95→366)",
+      "detail": "VIEWS projected state-based conflict fatalities over the next 12 months moved from 95 to 366. This is a conflict forecast, not an atrocity prediction.",
+      "url": "index.html#country=Indonesia"
+    }
+  ]
+}

@@ -1013,6 +1013,100 @@ def snapshot_history():
     return len(hist["countries"]), len(hist["months"])
 
 
+def _factor_labels():
+    a = read("assessments.json", {"factors": []})
+    return {f.get("key"): (f.get("en") or f.get("key")) for f in a.get("factors", []) if f.get("key")}
+
+
+def _write_feed(items):
+    """Write an RSS 2.0 feed so anyone can subscribe to alerts without an account."""
+    base = "https://scarecrow-lab.github.io/scarecrow-watch"
+    esc = lambda s: html.escape(str(s), quote=True)
+    now = email.utils.format_datetime(NOW)
+    parts = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>',
+             '<title>Scarecrow Watch — Alerts</title>',
+             f'<link>{base}/alerts.html</link>',
+             f'<atom:link href="{base}/feed.xml" rel="self" type="application/rss+xml"/>',
+             '<description>Mass-atrocity early-warning alerts for the eleven ASEAN states — changes in risk scores and conflict forecasts.</description>',
+             '<language>en</language>', f'<lastBuildDate>{now}</lastBuildDate>']
+    for it in items[:60]:
+        try:
+            pub = email.utils.format_datetime(datetime.strptime(it.get("date", "") + " +0000", "%Y-%m-%d %z"))
+        except Exception:
+            pub = now
+        link = base + "/" + it.get("url", "alerts.html")
+        parts.append("<item>"
+                     f"<title>{esc(it['title'])}</title>"
+                     f"<link>{esc(link)}</link>"
+                     f'<guid isPermaLink="false">{esc(it["id"])}</guid>'
+                     f"<pubDate>{pub}</pubDate>"
+                     f"<description>{esc(it.get('detail', ''))}</description>"
+                     "</item>")
+    parts.append("</channel></rss>")
+    with open(os.path.join(ROOT, "feed.xml"), "w", encoding="utf-8") as f:
+        f.write("\n".join(parts) + "\n")
+
+
+def build_alerts():
+    """Turn the score + forecast history into an alert feed (JSON for the page, RSS for
+    subscribers). Events: a lab risk-score change month-on-month, and a significant VIEWS
+    conflict-forecast move (>=15% and >=50 fatalities). Idempotent — each event has a stable
+    id and keeps its first-seen date, so daily runs don't duplicate or re-date it."""
+    hist = read("history.json", {"countries": {}})
+    prev = {it["id"]: it for it in read("alerts.json", {"items": []}).get("items", []) if it.get("id")}
+    labels = _factor_labels()
+    items = dict(prev)
+    today = NOW.strftime("%Y-%m-%d")
+
+    def qurl(name):
+        return "index.html#country=" + urllib.parse.quote(name)
+
+    for name, cm in hist.get("countries", {}).items():
+        months = sorted(cm.keys())
+        scored = [(m, cm[m].get("avg")) for m in months if cm[m].get("avg") is not None]
+        for (m0, a0), (m1, a1) in zip(scored, scored[1:]):
+            d = round(a1 - a0, 2)
+            if d == 0:
+                continue
+            _id = f"score|{name}|{m1}"
+            if _id in items:
+                continue
+            f0, f1 = cm[m0].get("factors", {}) or {}, cm[m1].get("factors", {}) or {}
+            moves = [f"{labels.get(k, k)} {f0[k]}→{f1[k]}" for k in f1 if k in f0 and f0[k] != f1[k]]
+            up = d > 0
+            items[_id] = {"id": _id, "date": today, "month": m1, "country": name, "type": "score",
+                          "dir": "up" if up else "down",
+                          "title": f"{name}: risk score {'rose' if up else 'fell'} to {a1:.2f} ({'+' if up else ''}{d:.2f})",
+                          "detail": ("Factors changed: " + "; ".join(moves) + ".") if moves else "Overall Lab assessment updated.",
+                          "url": qurl(name)}
+        vm = [(m, cm[m].get("views_fat")) for m in months if cm[m].get("views_fat") is not None]
+        for (m0, v0), (m1, v1) in zip(vm, vm[1:]):
+            if not v0:
+                continue
+            diff, pct = v1 - v0, (v1 - v0) / v0 * 100
+            # require a notable move in BOTH relative and absolute terms, so month-to-month
+            # vintage churn from a low base doesn't flood the feed with "+400%" non-events
+            if abs(pct) < 25 or abs(diff) < 150:
+                continue
+            _id = f"views|{name}|{m1}"
+            if _id in items:
+                continue
+            up = diff > 0
+            items[_id] = {"id": _id, "date": today, "month": m1, "country": name, "type": "views",
+                          "dir": "up" if up else "down",
+                          "title": f"{name}: conflict forecast {'rose' if up else 'fell'} {abs(pct):.0f}% ({v0:,}→{v1:,})",
+                          "detail": f"VIEWS projected state-based conflict fatalities over the next 12 months moved from {v0:,} to {v1:,}. This is a conflict forecast, not an atrocity prediction.",
+                          "url": qurl(name)}
+
+    out = sorted(items.values(), key=lambda x: (x.get("month", ""), x.get("type", ""), x.get("country", "")), reverse=True)[:150]
+    write("alerts.json", {"generated": NOW.isoformat(timespec="seconds"),
+                          "note": "Automated early-warning alerts from month-on-month changes in the risk scores and VIEWS forecasts.",
+                          "items": out})
+    _write_feed(out)
+    return len(out)
+
+
 def main():
     os.makedirs(DATA, exist_ok=True)
     meta = read("meta.json", {"sources": {}})
@@ -1105,6 +1199,15 @@ def main():
         prev = meta["sources"].get("history", {})
         meta["sources"]["history"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
         log("history FAILED", e)
+
+    try:
+        na = build_alerts()
+        meta["sources"]["alerts"] = {"status": "ok", "updated": stamp, "count": na, "error": None}
+        log("alerts ok", na)
+    except Exception as e:
+        prev = meta["sources"].get("alerts", {})
+        meta["sources"]["alerts"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
+        log("alerts FAILED", e)
 
     try:
         held = review_auto(read("indicators.json", {}).get("indicators", {}))
