@@ -173,6 +173,12 @@ footer p{ margin:0 0 10px; }
 .cmp-table tbody b{ font:700 15px var(--serif); }
 .cmp-table .cmp-sep td{ background:var(--panel-2); text-align:left; font:600 11px var(--mono); letter-spacing:.06em; text-transform:uppercase; color:var(--ink-faint); padding:7px 8px; }
 @media (max-width:620px){ .cmp-key{ grid-template-columns:1fr; } .cmp-table{ font-size:12.5px; } .cmp-table th,.cmp-table td{ padding:7px 5px; } }
+.navmenu{ position:relative; }
+.navmenu .navcaret{ transition:transform .15s ease; opacity:.8; }
+.navmenu-pop{ position:absolute; top:calc(100% + 7px); right:0; z-index:60; min-width:184px; padding:6px; background:var(--panel); border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:2px; }
+.navmenu-item{ display:flex; align-items:center; gap:10px; width:100%; text-align:left; background:transparent; border:0; border-radius:8px; padding:9px 11px; font:500 13px var(--sans); color:var(--ink); text-decoration:none; cursor:pointer; }
+.navmenu-item:hover,.navmenu-item:focus-visible{ background:var(--panel-2); color:var(--gold); outline:none; }
+.navmenu-item svg{ color:var(--gold); flex:none; }
 .staff{ margin:28px 0 0; text-align:right; font-size:12px; }
 .staff a{ color:var(--ink-faint); text-decoration:none; }
 .staff a:hover,.staff a:focus-visible{ color:var(--gold); text-decoration:underline; }
@@ -299,9 +305,14 @@ footer p{ margin:0 0 10px; }
       <p class="lede" data-i="lede"></p>
     </div>
     <div class="controls">
-      <button class="btn" id="compareLink" type="button" style="display:inline-flex;align-items:center;gap:6px"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="20" x2="6" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="18" y1="20" x2="18" y2="14"></line></svg><span data-i="cmpBtn">Compare</span></button>
-      <a class="btn" id="alertsLink" href="alerts.html" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>Alerts</a>
-      <a class="btn" id="briefingsLink" href="briefings.html" style="text-decoration:none;display:inline-flex;align-items:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v13a2 2 0 0 0 2 2H6a2 2 0 0 1-2-2V5z"></path><path d="M8 8h6"></path><path d="M8 12h6"></path><path d="M8 16h4"></path></svg>Briefings</a>
+      <div class="navmenu">
+        <button class="btn" id="menuBtn" type="button" aria-haspopup="true" aria-expanded="false" style="display:inline-flex;align-items:center;gap:6px"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg><span data-i="navMenu">Dashboard</span><svg class="navcaret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+        <div class="navmenu-pop" id="menuPop" role="menu" hidden>
+          <button class="navmenu-item" id="miCompare" type="button" role="menuitem"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="20" x2="6" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="18" y1="20" x2="18" y2="14"></line></svg><span data-i="cmpBtn">Compare</span></button>
+          <a class="navmenu-item" href="alerts.html" role="menuitem"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span data-i="navAlerts">Alerts</span></a>
+          <a class="navmenu-item" href="briefings.html" role="menuitem"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v13a2 2 0 0 0 2 2H6a2 2 0 0 1-2-2V5z"></path><path d="M8 8h6"></path><path d="M8 12h6"></path><path d="M8 16h4"></path></svg><span data-i="navBriefings">Briefings</span></a>
+        </div>
+      </div>
       <label style="position:absolute;left:-9999px" for="langSel">Language</label>
       <select class="lang" id="langSel"></select>
       <button class="btn" id="theme" data-i="theme">Theme</button>
@@ -1104,13 +1115,22 @@ $("#theme").onclick = () => {
   r.dataset.theme = dark ? "light" : "dark";
   if (D && (tab === "map" || compareMode)) renderDetail();
 };
-$("#compareLink").onclick = () => {
-  if (!D) return;
-  compareMode = true;
-  if (!compareSel.length) compareSel = D.a.countries.slice(0, 3).map(c => c.name);
-  renderList(); placeDetail(); renderDetail();
-  const d = $("#detail"); if (d) d.scrollIntoView({ behavior: "smooth", block: "start" });
-};
+(function(){
+  const btn = $("#menuBtn"), pop = $("#menuPop"), wrap = btn && btn.closest(".navmenu");
+  if (!btn || !pop) return;
+  const setOpen = (o) => { pop.hidden = !o; btn.setAttribute("aria-expanded", o ? "true" : "false"); const c = btn.querySelector(".navcaret"); if (c) c.style.transform = o ? "rotate(180deg)" : ""; };
+  btn.onclick = (e) => { e.stopPropagation(); setOpen(pop.hidden); };
+  document.addEventListener("click", (e) => { if (wrap && !wrap.contains(e.target)) setOpen(false); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") setOpen(false); });
+  $("#miCompare").onclick = () => {
+    setOpen(false);
+    if (!D) return;
+    compareMode = true;
+    if (!compareSel.length) compareSel = D.a.countries.slice(0, 3).map(c => c.name);
+    renderList(); placeDetail(); renderDetail();
+    const d = $("#detail"); if (d) d.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+})();
 (function(){
   let saved = null; try { saved = localStorage.getItem("sw-lang"); } catch(e){}
   const nav = (navigator.language || "en").toLowerCase().split("-")[0];
