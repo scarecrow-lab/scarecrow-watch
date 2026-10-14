@@ -153,6 +153,26 @@ footer p{ margin:0 0 10px; }
 .dl-raw{ margin-left:auto; font-size:12.5px; color:var(--gold); text-decoration:none; white-space:nowrap; }
 .dl-raw:hover{ text-decoration:underline; }
 @media (max-width:620px){ .dl-raw{ margin-left:0; } }
+.cmp-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.cmp-close{ background:var(--panel-2); color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:6px 14px; font:500 12px var(--mono); cursor:pointer; }
+.cmp-close:hover{ border-color:var(--gold); color:var(--gold); }
+.cmp-chips{ display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 10px; }
+.cmp-chip{ display:inline-flex; align-items:center; gap:6px; background:transparent; color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:6px 13px; font:500 12.5px var(--sans); cursor:pointer; transition:all .15s; }
+.cmp-chip:hover{ border-color:var(--gold); color:var(--ink); }
+.cmp-chip.on{ border-color:var(--gold); color:var(--ink); background:rgba(201,154,75,.10); font-weight:600; }
+.cmp-dot{ display:inline-block; width:9px; height:9px; border-radius:50%; flex:none; }
+.cmp-radar-row{ display:flex; flex-wrap:wrap; align-items:center; gap:20px 28px; margin:8px 0 22px; }
+.cmp-key{ display:grid; grid-template-columns:1fr 1fr; gap:4px 18px; font-size:12.5px; color:var(--ink-dim); }
+.cmp-keyrow{ display:flex; gap:7px; align-items:baseline; }
+.cmp-keynum{ font:700 10px var(--mono); color:var(--ink-faint); width:14px; flex:none; }
+.cmp-table{ width:100%; border-collapse:collapse; font-size:13.5px; }
+.cmp-table th,.cmp-table td{ text-align:center; padding:9px 8px; border-bottom:1px solid var(--line); }
+.cmp-table thead th{ font:600 13px var(--sans); color:var(--ink); vertical-align:bottom; }
+.cmp-table thead th .flagimg{ display:block; margin:0 auto 3px; }
+.cmp-table .cmp-k{ text-align:left; color:var(--ink-dim); font-size:12.5px; }
+.cmp-table tbody b{ font:700 15px var(--serif); }
+.cmp-table .cmp-sep td{ background:var(--panel-2); text-align:left; font:600 11px var(--mono); letter-spacing:.06em; text-transform:uppercase; color:var(--ink-faint); padding:7px 8px; }
+@media (max-width:620px){ .cmp-key{ grid-template-columns:1fr; } .cmp-table{ font-size:12.5px; } .cmp-table th,.cmp-table td{ padding:7px 5px; } }
 .staff{ margin:28px 0 0; text-align:right; font-size:12px; }
 .staff a{ color:var(--ink-faint); text-decoration:none; }
 .staff a:hover,.staff a:focus-visible{ color:var(--gold); text-decoration:underline; }
@@ -279,6 +299,7 @@ footer p{ margin:0 0 10px; }
       <p class="lede" data-i="lede"></p>
     </div>
     <div class="controls">
+      <button class="btn" id="compareLink" type="button" style="display:inline-flex;align-items:center;gap:6px"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="20" x2="6" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="18" y1="20" x2="18" y2="14"></line></svg><span data-i="cmpBtn">Compare</span></button>
       <a class="btn" id="alertsLink" href="alerts.html" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>Alerts</a>
       <a class="btn" id="briefingsLink" href="briefings.html" style="text-decoration:none;display:inline-flex;align-items:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v13a2 2 0 0 0 2 2H6a2 2 0 0 1-2-2V5z"></path><path d="M8 8h6"></path><path d="M8 12h6"></path><path d="M8 16h4"></path></svg>Briefings</a>
       <label style="position:absolute;left:-9999px" for="langSel">Language</label>
@@ -416,6 +437,7 @@ const isMobile = () => mq.matches;
 let open = !isMobile() || /country=/.test(location.hash);
 function placeDetail(){
   const detail = $("#detail"), list = $("#list"), layout = document.querySelector(".layout");
+  if (compareMode){ detail.hidden = false; detail.classList.remove("inline"); if (detail.parentNode !== layout) layout.append(detail); return; }
   if (isMobile()){
     const row = list.querySelector('.row[aria-current="true"]');
     if (open && row){ row.after(detail); detail.hidden = false; detail.classList.add("inline"); }
@@ -443,7 +465,7 @@ function renderList(){
     if (isMobile()) b.setAttribute("aria-expanded", c.name === current && open);
     b.onclick = () => {
       if (isMobile() && c.name === current && open){ open = false; renderList(); placeDetail(); return; }  // tap again to close
-      current = c.name; open = true; showAllCountry = false; history.replaceState(null, "", "#country=" + encodeURIComponent(c.name));
+      current = c.name; open = true; showAllCountry = false; compareMode = false; history.replaceState(null, "", "#country=" + encodeURIComponent(c.name));
       renderList(); placeDetail(); renderDetail(); highlightBg();
       if (isMobile()){ const r = document.querySelector('#list .row[aria-current="true"]'); if (r) r.scrollIntoView({block:"start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); }
     };
@@ -465,6 +487,8 @@ function sigRow(i, showCountry){
 }
 
 let tab = "overview";
+let compareMode = false, compareSel = [];
+const CMP_COLORS = ["#c99a4b", "#4d8b78", "#5b8fb0"];
 const esc = v => String(v == null ? "" : v).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[ch]);
 const svgEl = html => { const d = document.createElement("div"); d.innerHTML = html; return d.firstElementChild; };
 
@@ -824,7 +848,77 @@ function renderPrevent(body, c){
 
 function orgRow(o){ const r = el("div","org"); r.append(link(o.url, o.name), document.createTextNode(" — " + (o.desc||""))); return r; }
 
+function compareRadar(sel){
+  const F = D.a.factors, n = F.length, R = 92, cx = 110, cy = 110;
+  const pt = (i, r) => { const a = Math.PI * 2 * i / n - Math.PI / 2; return [cx + r * Math.cos(a), cy + r * Math.sin(a)]; };
+  const rings = [0.25, 0.5, 0.75, 1].map(f => `<polygon points="${F.map((_, i) => pt(i, f * R).join(",")).join(" ")}" fill="none" stroke="var(--line)"/>`).join("");
+  const spokes = F.map((_, i) => { const [x, y] = pt(i, R); return `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="var(--line)"/>`; }).join("");
+  const polys = sel.map((c, idx) => { const col = CMP_COLORS[idx % CMP_COLORS.length]; const poly = F.map((f, i) => pt(i, (Number(c.scores[f.key]) || 0) / 5 * R).join(",")).join(" "); return `<polygon points="${poly}" fill="${col}" fill-opacity="0.12" stroke="${col}" stroke-width="2"/>`; }).join("");
+  const nums = F.map((f, i) => { const [x, y] = pt(i, R + 11); return `<text x="${x}" y="${y + 3}" font-size="9" text-anchor="middle" fill="var(--ink-faint)" font-family="var(--mono)">${i + 1}</text>`; }).join("");
+  return svgEl(`<svg viewBox="-6 -6 232 232" width="230" height="230" role="img" aria-label="Comparison radar">${rings}${spokes}${polys}${nums}</svg>`);
+}
+function compareTable(sel){
+  const tbl = el("table", "cmp-table"), thead = el("thead"), htr = el("tr");
+  htr.append(el("th", null, ""));
+  sel.forEach((c, idx) => { const th = el("th"); const dot = el("span", "cmp-dot"); dot.style.background = CMP_COLORS[idx % CMP_COLORS.length]; th.append(dot, flagImg(c.name), document.createTextNode(c.name)); htr.append(th); });
+  thead.append(htr); tbl.append(thead);
+  const tb = el("tbody");
+  const rowNum = (label, fn, colorFn) => {
+    const tr = el("tr"); tr.append(el("td", "cmp-k", label));
+    sel.forEach(c => { const v = fn(c); const td = el("td"); const b = el("b", null, v == null ? "—" : v); if (colorFn && v != null){ const col = colorFn(c); if (col) b.style.color = col; } td.append(b); tr.append(td); });
+    tb.append(tr);
+  };
+  rowNum(t("cmpAvg"), c => avg(c.scores).toFixed(2), c => band(avg(c.scores))[1]);
+  rowNum(t("cmpPrevent"), c => { const pi = preventFor(c.name); return pi && pi.index != null ? pi.index.toFixed(2) : null; }, c => { const pi = preventFor(c.name); return pi && pi.index != null ? band(pi.index)[1] : null; });
+  rowNum(t("cmpViews"), c => { const v = (D.vw || {})[c.name]; return v && v.fatalities_sum_12m != null ? fmt(v.fatalities_sum_12m) : null; });
+  rowNum(t("vwTrend"), c => { const v = (D.vw || {})[c.name]; return v ? vwArrow(v.trend) + " " + (t("vw_" + v.trend) || "") : null; });
+  // spacer + factor rows
+  const sp = el("tr", "cmp-sep"); const spc = el("td"); spc.colSpan = sel.length + 1; spc.append(el("span", null, t("cmpFactorsH"))); sp.append(spc); tb.append(sp);
+  (D.a.factors || []).forEach((f, i) => {
+    const tr = el("tr"); tr.append(el("td", "cmp-k", (i + 1) + ". " + (f[lang] || f.en)));
+    sel.forEach(c => { const v = Number(c.scores[f.key] || 0); const td = el("td"); const b = el("b", null, String(v)); b.style.color = band(v)[1]; td.append(b); tr.append(td); });
+    tb.append(tr);
+  });
+  tbl.append(tb); return tbl;
+}
+function renderCompare(box){
+  box.replaceChildren();
+  const head = el("div", "cmp-head");
+  head.append(el("h2", null, t("cmpTitle")));
+  const close = el("button", "cmp-close", t("cmpClose")); close.type = "button";
+  close.onclick = () => { compareMode = false; renderList(); placeDetail(); renderDetail(); };
+  head.append(close);
+  box.append(head);
+  box.append(el("p", "note", t("cmpIntro")));
+  const chips = el("div", "cmp-chips");
+  D.a.countries.forEach(c => {
+    const on = compareSel.includes(c.name), chip = el("button", "cmp-chip" + (on ? " on" : "")); chip.type = "button";
+    const idx = compareSel.indexOf(c.name);
+    if (on){ const dot = el("span", "cmp-dot"); dot.style.background = CMP_COLORS[idx % CMP_COLORS.length]; chip.append(dot); }
+    chip.append(flagImg(c.name), document.createTextNode(c.name));
+    chip.onclick = () => {
+      const i = compareSel.indexOf(c.name);
+      if (i >= 0){ if (compareSel.length > 1) compareSel.splice(i, 1); }
+      else { if (compareSel.length >= 3) compareSel.shift(); compareSel.push(c.name); }
+      renderDetail();
+    };
+    chips.append(chip);
+  });
+  box.append(chips);
+  box.append(Object.assign(el("p", "muted", t("cmpPick")), { style: "margin:-6px 0 16px; font-size:12px" }));
+  const sel = compareSel.map(n => D.a.countries.find(c => c.name === n)).filter(Boolean);
+  if (!sel.length){ return; }
+  const radarWrap = el("div", "cmp-radar-row");
+  radarWrap.append(compareRadar(sel));
+  const key = el("div", "cmp-key");
+  (D.a.factors || []).forEach((f, i) => { const r = el("div", "cmp-keyrow"); r.append(el("span", "cmp-keynum", String(i + 1)), document.createTextNode(f[lang] || f.en)); key.append(r); });
+  radarWrap.append(key);
+  box.append(radarWrap);
+  box.append(compareTable(sel));
+}
 function renderDetail(){
+  const box0 = $("#detail");
+  if (compareMode){ renderCompare(box0); return; }
   const c = D.a.countries.find(x => x.name === current), a = avg(c.scores), box = $("#detail");
   box.replaceChildren();
   const h = el("h2"); h.append(flagImg(c.name, true), document.createTextNode(c.name));
@@ -1008,7 +1102,14 @@ const csel = document.getElementById("covLang"); if (csel){ LANGS.forEach(l => {
 $("#theme").onclick = () => {
   const r = document.documentElement, dark = r.dataset.theme ? r.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
   r.dataset.theme = dark ? "light" : "dark";
-  if (D && tab === "map") renderDetail();
+  if (D && (tab === "map" || compareMode)) renderDetail();
+};
+$("#compareLink").onclick = () => {
+  if (!D) return;
+  compareMode = true;
+  if (!compareSel.length) compareSel = D.a.countries.slice(0, 3).map(c => c.name);
+  renderList(); placeDetail(); renderDetail();
+  const d = $("#detail"); if (d) d.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 (function(){
   let saved = null; try { saved = localStorage.getItem("sw-lang"); } catch(e){}
