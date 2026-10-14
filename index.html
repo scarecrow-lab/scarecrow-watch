@@ -176,6 +176,7 @@ footer p{ margin:0 0 10px; }
 .navmenu{ position:relative; }
 .navmenu .navcaret{ transition:transform .15s ease; opacity:.8; }
 .navmenu-pop{ position:absolute; top:calc(100% + 7px); right:0; z-index:60; min-width:184px; padding:6px; background:var(--panel); border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:2px; }
+.navmenu-pop[hidden]{ display:none; }
 .navmenu-item{ display:flex; align-items:center; gap:10px; width:100%; text-align:left; background:transparent; border:0; border-radius:8px; padding:9px 11px; font:500 13px var(--sans); color:var(--ink); text-decoration:none; cursor:pointer; }
 .navmenu-item:hover,.navmenu-item:focus-visible{ background:var(--panel-2); color:var(--gold); outline:none; }
 .navmenu-item svg{ color:var(--gold); flex:none; }
