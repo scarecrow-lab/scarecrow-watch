@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T10:16:38+00:00",
+  "generated": "2026-10-14T01:04:09+00:00",
   "source": "VIEWS (Violence & Impacts Early-Warning System)",
   "url": "https://viewsforecasting.org",
   "model": "fatalities — state-based armed conflict, country-month",
@@ -742,7 +742,7 @@
       "prob_peak_12m": 0.9987,
       "fatalities_sum_12m": 354,
       "fatalities_peak_12m": 62.2,
-      "trend": "flat",
+      "trend": "falling",
       "window": {
         "start": "2026-10",
         "end": "2027-09"

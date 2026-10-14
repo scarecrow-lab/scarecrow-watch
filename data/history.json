@@ -15,6 +15,27 @@
         },
         "views_fat": 1034,
         "views_trend": "flat"
+      },
+      "2026-09": {
+        "views_fat": 1001
+      },
+      "2026-08": {
+        "views_fat": 1191
+      },
+      "2026-07": {
+        "views_fat": 1313
+      },
+      "2026-06": {
+        "views_fat": 1355
+      },
+      "2026-05": {
+        "views_fat": 1158
+      },
+      "2026-04": {
+        "views_fat": 1010
+      },
+      "2026-03": {
+        "views_fat": 1228
       }
     },
     "Philippines": {
@@ -32,6 +53,27 @@
         },
         "views_fat": 810,
         "views_trend": "rising"
+      },
+      "2026-09": {
+        "views_fat": 780
+      },
+      "2026-08": {
+        "views_fat": 246
+      },
+      "2026-07": {
+        "views_fat": 489
+      },
+      "2026-06": {
+        "views_fat": 213
+      },
+      "2026-05": {
+        "views_fat": 102
+      },
+      "2026-04": {
+        "views_fat": 220
+      },
+      "2026-03": {
+        "views_fat": 252
       }
     },
     "Thailand": {
@@ -49,6 +91,27 @@
         },
         "views_fat": 547,
         "views_trend": "rising"
+      },
+      "2026-09": {
+        "views_fat": 428
+      },
+      "2026-08": {
+        "views_fat": 89
+      },
+      "2026-07": {
+        "views_fat": 332
+      },
+      "2026-06": {
+        "views_fat": 66
+      },
+      "2026-05": {
+        "views_fat": 35
+      },
+      "2026-04": {
+        "views_fat": 40
+      },
+      "2026-03": {
+        "views_fat": 84
       }
     },
     "Cambodia": {
@@ -66,6 +129,27 @@
         },
         "views_fat": 3,
         "views_trend": "flat"
+      },
+      "2026-09": {
+        "views_fat": 21
+      },
+      "2026-08": {
+        "views_fat": 6
+      },
+      "2026-07": {
+        "views_fat": 10
+      },
+      "2026-06": {
+        "views_fat": 7
+      },
+      "2026-05": {
+        "views_fat": 8
+      },
+      "2026-04": {
+        "views_fat": 12
+      },
+      "2026-03": {
+        "views_fat": 93
       }
     },
     "Indonesia": {
@@ -82,7 +166,28 @@
           "trigger": 2
         },
         "views_fat": 354,
-        "views_trend": "flat"
+        "views_trend": "falling"
+      },
+      "2026-09": {
+        "views_fat": 279
+      },
+      "2026-08": {
+        "views_fat": 209
+      },
+      "2026-07": {
+        "views_fat": 366
+      },
+      "2026-06": {
+        "views_fat": 95
+      },
+      "2026-05": {
+        "views_fat": 100
+      },
+      "2026-04": {
+        "views_fat": 48
+      },
+      "2026-03": {
+        "views_fat": 124
       }
     },
     "Laos": {
@@ -100,6 +205,27 @@
         },
         "views_fat": 0,
         "views_trend": "flat"
+      },
+      "2026-09": {
+        "views_fat": 0
+      },
+      "2026-08": {
+        "views_fat": 0
+      },
+      "2026-07": {
+        "views_fat": 0
+      },
+      "2026-06": {
+        "views_fat": 0
+      },
+      "2026-05": {
+        "views_fat": 0
+      },
+      "2026-04": {
+        "views_fat": 0
+      },
+      "2026-03": {
+        "views_fat": 0
       }
     },
     "Vietnam": {
@@ -117,6 +243,27 @@
         },
         "views_fat": 0,
         "views_trend": "flat"
+      },
+      "2026-09": {
+        "views_fat": 0
+      },
+      "2026-08": {
+        "views_fat": 0
+      },
+      "2026-07": {
+        "views_fat": 1
+      },
+      "2026-06": {
+        "views_fat": 0
+      },
+      "2026-05": {
+        "views_fat": 0
+      },
+      "2026-04": {
+        "views_fat": 0
+      },
+      "2026-03": {
+        "views_fat": 0
       }
     },
     "Malaysia": {
@@ -134,6 +281,27 @@
         },
         "views_fat": 0,
         "views_trend": "flat"
+      },
+      "2026-09": {
+        "views_fat": 0
+      },
+      "2026-08": {
+        "views_fat": 0
+      },
+      "2026-07": {
+        "views_fat": 0
+      },
+      "2026-06": {
+        "views_fat": 0
+      },
+      "2026-05": {
+        "views_fat": 0
+      },
+      "2026-04": {
+        "views_fat": 0
+      },
+      "2026-03": {
+        "views_fat": 0
       }
     },
     "Singapore": {
@@ -151,6 +319,27 @@
         },
         "views_fat": 0,
         "views_trend": "flat"
+      },
+      "2026-09": {
+        "views_fat": 0
+      },
+      "2026-08": {
+        "views_fat": 0
+      },
+      "2026-07": {
+        "views_fat": 0
+      },
+      "2026-06": {
+        "views_fat": 0
+      },
+      "2026-05": {
+        "views_fat": 0
+      },
+      "2026-04": {
+        "views_fat": 0
+      },
+      "2026-03": {
+        "views_fat": 0
       }
     },
     "Brunei": {
@@ -168,6 +357,27 @@
         },
         "views_fat": 0,
         "views_trend": "flat"
+      },
+      "2026-09": {
+        "views_fat": 0
+      },
+      "2026-08": {
+        "views_fat": 0
+      },
+      "2026-07": {
+        "views_fat": 0
+      },
+      "2026-06": {
+        "views_fat": 0
+      },
+      "2026-05": {
+        "views_fat": 0
+      },
+      "2026-04": {
+        "views_fat": 0
+      },
+      "2026-03": {
+        "views_fat": 0
       }
     },
     "Timor-Leste": {
@@ -185,11 +395,39 @@
         },
         "views_fat": 0,
         "views_trend": "flat"
+      },
+      "2026-09": {
+        "views_fat": 0
+      },
+      "2026-08": {
+        "views_fat": 0
+      },
+      "2026-07": {
+        "views_fat": 0
+      },
+      "2026-06": {
+        "views_fat": 0
+      },
+      "2026-05": {
+        "views_fat": 0
+      },
+      "2026-04": {
+        "views_fat": 0
+      },
+      "2026-03": {
+        "views_fat": 0
       }
     }
   },
   "months": [
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09",
     "2026-10"
   ],
-  "generated": "2026-10-14T01:01:23+00:00"
+  "generated": "2026-10-14T01:04:09+00:00"
 }

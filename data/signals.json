@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T10:16:38+00:00",
+  "generated": "2026-10-14T01:04:09+00:00",
   "window_days": 14,
   "items": [
     {
@@ -793,51 +793,6 @@
       "source": "liberianobserver.com",
       "kind": "News",
       "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-09-29",
-      "title": "[Repost] Singapore supports 243 human rights recommendations, including stronger migrant worker protections – Channel News Asia",
-      "url": "https://maruah.org/2026/09/29/repost-singapore-supports-243-human-rights-recommendations-including-stronger-migrant-worker-protections-channel-news-asia/",
-      "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
-      "kind": "cso",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-09-29",
-      "title": "China pressure accelerates Philippines-Taiwan ties, analysts say",
-      "url": "https://rfa.org/english/china/2026/09/29/taiwan-philippines-trade-office/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-09-29",
-      "title": "[PRESS STATEMENT] Society Welcomes SEANF Review of MNHRC Membership, Significant Step Towards Accountability",
-      "url": "https://forum-asia.org/civil-society-welcomes-seanf-review-mnhrc-membership-accountability/?utm_source=rss&utm_medium=rss&utm_campaign=civil-society-welcomes-seanf-review-mnhrc-membership-accountability",
-      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
-      "kind": "network",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-09-29",
-      "title": "The Queen Mother Library: A Visit from the Ambassadors’ Spouses.",
-      "url": "https://www.dccam.org/the-queen-mother-library/the-queen-mother-library-a-visit-from-the-ambassadors-spouses/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-09-29",
-      "title": "[Repost] Singapore supports 243 human rights recommendations, including stronger migrant worker protections – Channel News Asia",
-      "url": "http://maruah.org/2026/09/29/repost-singapore-supports-243-human-rights-recommendations-including-stronger-migrant-worker-protections-channel-news-asia/",
-      "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
-      "kind": "cso",
-      "via": "Curated sources"
     }
   ]
 }
