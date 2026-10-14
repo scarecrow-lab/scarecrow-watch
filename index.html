@@ -179,8 +179,9 @@ footer p{ margin:0 0 10px; }
 :root[data-theme="light"] #menuBtn,[data-theme="light"] #menuBtn:hover{ color:#1b1205; }
 .navmenu .navcaret{ display:inline-block; font-size:9px; vertical-align:1px; transition:transform .15s ease; }
 #menuBtn[aria-expanded="true"] .navcaret{ transform:rotate(180deg); }
-.navmenu-pop{ position:absolute; top:calc(100% + 7px); right:0; z-index:60; min-width:184px; padding:6px; background:var(--panel); border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:2px; }
+.navmenu-pop{ position:absolute; top:calc(100% + 7px); right:0; z-index:60; min-width:184px; max-width:calc(100vw - 32px); padding:6px; background:var(--panel); border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:2px; }
 .navmenu-pop[hidden]{ display:none; }
+@media (max-width:820px){ .navmenu-pop{ left:0; right:auto; } }
 .navmenu-item{ display:flex; align-items:center; gap:10px; width:100%; text-align:left; background:transparent; border:0; border-radius:8px; padding:9px 11px; font:500 13px var(--sans); color:var(--ink); text-decoration:none; cursor:pointer; }
 .navmenu-item:hover,.navmenu-item:focus-visible{ background:var(--panel-2); color:var(--gold); outline:none; }
 .navmenu-item svg{ color:var(--gold); flex:none; }
