@@ -173,8 +173,12 @@ footer p{ margin:0 0 10px; }
 .cmp-table tbody b{ font:700 15px var(--serif); }
 .cmp-table .cmp-sep td{ background:var(--panel-2); text-align:left; font:600 11px var(--mono); letter-spacing:.06em; text-transform:uppercase; color:var(--ink-faint); padding:7px 8px; }
 @media (max-width:620px){ .cmp-key{ grid-template-columns:1fr; } .cmp-table{ font-size:12.5px; } .cmp-table th,.cmp-table td{ padding:7px 5px; } }
-.navmenu{ position:relative; }
-.navmenu .navcaret{ transition:transform .15s ease; opacity:.8; }
+.navmenu{ position:relative; display:flex; }
+#menuBtn{ background:var(--gold); color:#13161d; border-color:var(--gold); font-weight:700; }
+#menuBtn:hover,#menuBtn[aria-expanded="true"]{ background:#d9ab5e; border-color:#d9ab5e; color:#13161d; }
+:root[data-theme="light"] #menuBtn,[data-theme="light"] #menuBtn:hover{ color:#1b1205; }
+.navmenu .navcaret{ display:inline-block; font-size:9px; vertical-align:1px; transition:transform .15s ease; }
+#menuBtn[aria-expanded="true"] .navcaret{ transform:rotate(180deg); }
 .navmenu-pop{ position:absolute; top:calc(100% + 7px); right:0; z-index:60; min-width:184px; padding:6px; background:var(--panel); border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:2px; }
 .navmenu-pop[hidden]{ display:none; }
 .navmenu-item{ display:flex; align-items:center; gap:10px; width:100%; text-align:left; background:transparent; border:0; border-radius:8px; padding:9px 11px; font:500 13px var(--sans); color:var(--ink); text-decoration:none; cursor:pointer; }
@@ -307,7 +311,7 @@ footer p{ margin:0 0 10px; }
     </div>
     <div class="controls">
       <div class="navmenu">
-        <button class="btn" id="menuBtn" type="button" aria-haspopup="true" aria-expanded="false" style="display:inline-flex;align-items:center;gap:6px"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg><span data-i="navMenu">Dashboard</span><svg class="navcaret" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg></button>
+        <button class="btn" id="menuBtn" type="button" aria-haspopup="true" aria-expanded="false"><span data-i="navMenu">Dashboard</span> <span class="navcaret" aria-hidden="true">▾</span></button>
         <div class="navmenu-pop" id="menuPop" role="menu" hidden>
           <button class="navmenu-item" id="miCompare" type="button" role="menuitem"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="20" x2="6" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="18" y1="20" x2="18" y2="14"></line></svg><span data-i="cmpBtn">Compare</span></button>
           <a class="navmenu-item" href="alerts.html" role="menuitem"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span data-i="navAlerts">Alerts</span></a>
