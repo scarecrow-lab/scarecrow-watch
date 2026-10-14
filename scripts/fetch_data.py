@@ -892,6 +892,43 @@ def views():
     return {"run": run, "node": used, "field_keys": sample_keys[:60], "countries": out}
 
 
+def snapshot_history():
+    """Append/refresh this month's snapshot of each country's headline risk score
+    (the average of the 8 UN-framework factors), its per-factor scores, and the
+    VIEWS forecast. Monthly cadence: the current month's entry refreshes on each
+    run and past months freeze at their last recorded value. This powers the
+    'what changed' and trend views. History is capped at the last 36 months."""
+    month = NOW.strftime("%Y-%m")
+    a = read("assessments.json", {"countries": []})
+    vw = read("views.json", {"countries": {}}).get("countries", {})
+    hist = read("history.json", {"countries": {}, "months": []})
+    hist.setdefault("countries", {})
+    for c in a.get("countries", []):
+        name = c.get("name")
+        scores = c.get("scores", {}) or {}
+        vals = [float(v) for v in scores.values() if isinstance(v, (int, float))]
+        if not name or not vals:
+            continue
+        snap = {"avg": round(sum(vals) / len(vals), 2), "factors": dict(scores)}
+        v = vw.get(name) or {}
+        if v:
+            snap["views_fat"] = v.get("fatalities_sum_12m")
+            snap["views_trend"] = v.get("trend")
+        hist["countries"].setdefault(name, {})[month] = snap
+    # recompute the month list and cap to the most recent 36
+    months = set()
+    for cm in hist["countries"].values():
+        months.update(cm.keys())
+    keep = set(sorted(months)[-36:])
+    for cm in hist["countries"].values():
+        for m in [x for x in cm if x not in keep]:
+            del cm[m]
+    hist["months"] = sorted(keep)
+    hist["generated"] = NOW.isoformat(timespec="seconds")
+    write("history.json", hist)
+    return len(hist["countries"]), len(hist["months"])
+
+
 def main():
     os.makedirs(DATA, exist_ok=True)
     meta = read("meta.json", {"sources": {}})
@@ -975,6 +1012,15 @@ def main():
         prev = meta["sources"].get("views", {})
         meta["sources"]["views"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
         log("views FAILED", e)
+
+    try:
+        nc, nm = snapshot_history()
+        meta["sources"]["history"] = {"status": "ok", "updated": stamp, "count": nc, "months": nm, "error": None}
+        log("history ok", nc, "countries,", nm, "months")
+    except Exception as e:
+        prev = meta["sources"].get("history", {})
+        meta["sources"]["history"] = {**prev, "status": "error", "checked": stamp, "error": str(e)[:300]}
+        log("history FAILED", e)
 
     try:
         held = review_auto(read("indicators.json", {}).get("indicators", {}))

@@ -1,0 +1,195 @@
+{
+  "countries": {
+    "Myanmar": {
+      "2026-10": {
+        "avg": 4.62,
+        "factors": {
+          "conflict": 5,
+          "violations": 5,
+          "state": 4,
+          "motive": 5,
+          "capacity": 4,
+          "mitigating": 5,
+          "enabling": 5,
+          "trigger": 4
+        },
+        "views_fat": 1034,
+        "views_trend": "flat"
+      }
+    },
+    "Philippines": {
+      "2026-10": {
+        "avg": 2.88,
+        "factors": {
+          "conflict": 3,
+          "violations": 3,
+          "state": 3,
+          "motive": 2,
+          "capacity": 3,
+          "mitigating": 4,
+          "enabling": 2,
+          "trigger": 3
+        },
+        "views_fat": 810,
+        "views_trend": "rising"
+      }
+    },
+    "Thailand": {
+      "2026-10": {
+        "avg": 2.88,
+        "factors": {
+          "conflict": 4,
+          "violations": 3,
+          "state": 2,
+          "motive": 3,
+          "capacity": 3,
+          "mitigating": 2,
+          "enabling": 2,
+          "trigger": 4
+        },
+        "views_fat": 547,
+        "views_trend": "rising"
+      }
+    },
+    "Cambodia": {
+      "2026-10": {
+        "avg": 3.12,
+        "factors": {
+          "conflict": 4,
+          "violations": 3,
+          "state": 3,
+          "motive": 3,
+          "capacity": 2,
+          "mitigating": 5,
+          "enabling": 2,
+          "trigger": 3
+        },
+        "views_fat": 3,
+        "views_trend": "flat"
+      }
+    },
+    "Indonesia": {
+      "2026-10": {
+        "avg": 2.25,
+        "factors": {
+          "conflict": 3,
+          "violations": 3,
+          "state": 2,
+          "motive": 2,
+          "capacity": 2,
+          "mitigating": 2,
+          "enabling": 2,
+          "trigger": 2
+        },
+        "views_fat": 354,
+        "views_trend": "flat"
+      }
+    },
+    "Laos": {
+      "2026-10": {
+        "avg": 2.0,
+        "factors": {
+          "conflict": 1,
+          "violations": 2,
+          "state": 3,
+          "motive": 1,
+          "capacity": 2,
+          "mitigating": 5,
+          "enabling": 1,
+          "trigger": 1
+        },
+        "views_fat": 0,
+        "views_trend": "flat"
+      }
+    },
+    "Vietnam": {
+      "2026-10": {
+        "avg": 2.12,
+        "factors": {
+          "conflict": 2,
+          "violations": 2,
+          "state": 2,
+          "motive": 2,
+          "capacity": 2,
+          "mitigating": 4,
+          "enabling": 1,
+          "trigger": 2
+        },
+        "views_fat": 0,
+        "views_trend": "flat"
+      }
+    },
+    "Malaysia": {
+      "2026-10": {
+        "avg": 1.12,
+        "factors": {
+          "conflict": 1,
+          "violations": 1,
+          "state": 1,
+          "motive": 1,
+          "capacity": 1,
+          "mitigating": 2,
+          "enabling": 1,
+          "trigger": 1
+        },
+        "views_fat": 0,
+        "views_trend": "flat"
+      }
+    },
+    "Singapore": {
+      "2026-10": {
+        "avg": 1.25,
+        "factors": {
+          "conflict": 1,
+          "violations": 1,
+          "state": 1,
+          "motive": 1,
+          "capacity": 1,
+          "mitigating": 3,
+          "enabling": 1,
+          "trigger": 1
+        },
+        "views_fat": 0,
+        "views_trend": "flat"
+      }
+    },
+    "Brunei": {
+      "2026-10": {
+        "avg": 1.38,
+        "factors": {
+          "conflict": 1,
+          "violations": 1,
+          "state": 1,
+          "motive": 1,
+          "capacity": 1,
+          "mitigating": 4,
+          "enabling": 1,
+          "trigger": 1
+        },
+        "views_fat": 0,
+        "views_trend": "flat"
+      }
+    },
+    "Timor-Leste": {
+      "2026-10": {
+        "avg": 1.62,
+        "factors": {
+          "conflict": 2,
+          "violations": 2,
+          "state": 3,
+          "motive": 1,
+          "capacity": 1,
+          "mitigating": 1,
+          "enabling": 1,
+          "trigger": 2
+        },
+        "views_fat": 0,
+        "views_trend": "flat"
+      }
+    }
+  },
+  "months": [
+    "2026-10"
+  ],
+  "generated": "2026-10-14T00:48:08+00:00"
+}

@@ -133,6 +133,17 @@ footer p{ margin:0 0 10px; }
 .prev-forecast-link:hover{ background:rgba(201,154,75,.08); }
 .prev-forecast-link .pf-lead{ font:800 12px var(--brand); letter-spacing:.1em; text-transform:uppercase; color:var(--gold); }
 .prev-forecast-link .pf-sum{ margin-left:auto; font-size:14px; color:var(--ink-dim); white-space:nowrap; }
+.hist-chip{ display:inline-block; margin-left:10px; padding:1px 8px; border-radius:20px; font:700 12px var(--mono); vertical-align:1px; }
+.hist-chip.up{ color:var(--crit); background:rgba(194,65,79,.12); }
+.hist-chip.down{ color:var(--low); background:rgba(77,139,120,.14); }
+.whatchanged{ margin:24px 0 0; padding:16px 18px; border:1px solid var(--line); border-radius:12px; background:var(--panel-2); }
+.whatchanged h3{ margin:0 0 8px; }
+.hist-moves{ display:flex; flex-direction:column; gap:5px; margin:8px 0 2px; }
+.hist-move{ font-size:13px; color:var(--ink-dim); }
+.hist-move b{ color:var(--ink); }
+.hist-arrow{ display:inline-block; width:14px; font-weight:800; }
+.hist-arrow.up{ color:var(--crit); }
+.hist-arrow.down{ color:var(--low); }
 .staff{ margin:28px 0 0; text-align:right; font-size:12px; }
 .staff a{ color:var(--ink-faint); text-decoration:none; }
 .staff a:hover,.staff a:focus-visible{ color:var(--gold); text-decoration:underline; }
@@ -338,8 +349,8 @@ async function getJSON(path){
 
 async function load(){
   try{
-    const [a, s, d, m, cx, site, pv, ind, apub, arev, fba, vw] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json","data/context.json","data/site.json","data/prevent.json","data/indicators.json","data/auto_published.json","data/auto_review.json","data/factbook_auto.json","data/views.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
-    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}, cx: cx || {}, site: site || {}, pv, ind: (ind && ind.indicators) || {}, apub: (apub && apub.countries) || {}, arev: (arev && arev.pending) || [], fba: (fba && fba.countries) || {}, vw: (vw && vw.countries) || {}, vwInfo: vw || {}};
+    const [a, s, d, m, cx, site, pv, ind, apub, arev, fba, vw, hist] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json","data/context.json","data/site.json","data/prevent.json","data/indicators.json","data/auto_published.json","data/auto_review.json","data/factbook_auto.json","data/views.json","data/history.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
+    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}, cx: cx || {}, site: site || {}, pv, ind: (ind && ind.indicators) || {}, apub: (apub && apub.countries) || {}, arev: (arev && arev.pending) || [], fba: (fba && fba.countries) || {}, vw: (vw && vw.countries) || {}, vwInfo: vw || {}, hist: (hist && hist.countries) || {}, histMonths: (hist && hist.months) || []};
     D.a.countries.sort((x,y) => avg(y.scores) - avg(x.scores));
     const fromHash = decodeURIComponent((location.hash.match(/country=([^&]+)/) || [])[1] || "");
     current = D.a.countries.find(c => c.name === fromHash) ? fromHash : D.a.countries[0].name;
@@ -546,6 +557,86 @@ function preventFor(name){
   return {cats, index: meanOf(cats.map(c => c.score)), triggers: elections.concat(C.triggers || []), basis: C.basis || ""};
 }
 function vwArrow(trend){ return trend === "rising" ? "↗" : trend === "falling" ? "↘" : "→"; }
+// ---- history / "what changed" ----
+function monthLabel(ym){
+  const m = /^(\d{4})-(\d{2})$/.exec(ym || ""); if (!m) return ym || "";
+  const d = new Date(Number(m[1]), Number(m[2]) - 1, 1);
+  const loc = ((window.LANGS || []).find(L => L.code === lang) || {}).locale || "en-US";
+  try { return d.toLocaleDateString(loc, { month: "short", year: "numeric" }); }
+  catch(e){ try { return d.toLocaleDateString("en-US", { month: "short", year: "numeric" }); } catch(_){ return ym; } }
+}
+function histSeries(name){
+  const cm = (D.hist || {})[name] || {};
+  return (D.histMonths || []).filter(m => cm[m]).map(m => ({ month: m, ...cm[m] }));
+}
+function histSpark(series, key){
+  const pts = series.map(x => x[key]).filter(v => v != null);
+  if (pts.length < 2) return null;
+  const W = 300, H = 34, min = Math.min(...pts), max = Math.max(...pts), rng = (max - min) || 1, step = W / (pts.length - 1);
+  const poly = pts.map((v, i) => `${(i * step).toFixed(1)},${(H - 3 - ((v - min) / rng) * (H - 6)).toFixed(1)}`).join(" ");
+  const ly = (H - 3 - ((pts[pts.length - 1] - min) / rng) * (H - 6)).toFixed(1);
+  return svgEl(`<svg class="vw-spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="trend"><polyline points="${poly}" fill="none" stroke="var(--gold)" stroke-width="2" vector-effect="non-scaling-stroke"/><circle cx="${W}" cy="${ly}" r="2.6" fill="var(--gold)"/></svg>`);
+}
+// change chip for the header: Δ in the headline risk score vs the previous month (higher = worse)
+function histChip(name){
+  const se = histSeries(name); if (se.length < 2) return null;
+  const cur = se[se.length - 1], prev = se[se.length - 2];
+  if (cur.avg == null || prev.avg == null) return null;
+  const d = Math.round((cur.avg - prev.avg) * 100) / 100;
+  if (d === 0) return null;
+  const up = d > 0; // higher risk score = worse
+  const chip = el("span", "hist-chip " + (up ? "up" : "down"));
+  chip.append(document.createTextNode((up ? "▲ +" : "▼ ") + d.toFixed(2)));
+  chip.title = t("histSince") + " " + monthLabel(prev.month);
+  return chip;
+}
+function renderWhatChanged(body, c){
+  const se = histSeries(c.name);
+  const wrap = el("div", "whatchanged");
+  wrap.append(el("h3", null, t("histChangedH")));
+  if (se.length < 2){
+    wrap.append(el("p", "muted", t("histBaseline")));
+    body.append(wrap);
+    return;
+  }
+  const cur = se[se.length - 1], prev = se[se.length - 2];
+  const line = el("p", "note"); line.style.marginTop = "0";
+  const dAvg = Math.round((cur.avg - prev.avg) * 100) / 100;
+  line.append(document.createTextNode(t("histHeadline") + " "));
+  const b = el("b", null, cur.avg.toFixed(2)); b.style.color = band(cur.avg)[1]; line.append(b);
+  if (dAvg !== 0){ const s = el("span", "hist-chip " + (dAvg > 0 ? "up" : "down"), (dAvg > 0 ? "▲ +" : "▼ ") + dAvg.toFixed(2)); s.style.marginLeft = "8px"; line.append(s); }
+  line.append(el("span", "muted", "  " + t("histSince") + " " + monthLabel(prev.month)));
+  wrap.append(line);
+  // per-factor movements
+  const moved = [];
+  (D.a.factors || []).forEach(f => {
+    const a0 = (prev.factors || {})[f.key], a1 = (cur.factors || {})[f.key];
+    if (a0 != null && a1 != null && a0 !== a1) moved.push({ f, from: a0, to: a1 });
+  });
+  if (moved.length){
+    const ul = el("div", "hist-moves");
+    moved.forEach(mv => {
+      const up = mv.to > mv.from, row = el("div", "hist-move");
+      row.append(el("span", "hist-arrow " + (up ? "up" : "down"), up ? "▲" : "▼"));
+      row.append(el("span", null, (mv.f[lang] || mv.f.en) + ": "));
+      row.append(el("b", null, mv.from + " → " + mv.to));
+      ul.append(row);
+    });
+    wrap.append(ul);
+  } else {
+    wrap.append(el("p", "muted", t("histNoChange")));
+  }
+  // VIEWS change
+  if (cur.views_fat != null && prev.views_fat != null && cur.views_fat !== prev.views_fat){
+    const dv = cur.views_fat - prev.views_fat, up = dv > 0;
+    const p = el("p", "muted"); p.append(el("span", "hist-arrow " + (up ? "up" : "down"), up ? "▲" : "▼"), document.createTextNode(" " + t("histViews") + ": " + fmt(prev.views_fat) + " → " + fmt(cur.views_fat)));
+    wrap.append(p);
+  }
+  // trend sparkline of the headline score
+  const sp = histSpark(se, "avg");
+  if (sp){ wrap.append(Object.assign(el("div", "note", t("histTrendH")), { style: "margin:14px 0 2px" })); wrap.append(sp); }
+  body.append(wrap);
+}
 function viewsChart(monthly){
   const rows = (monthly || []).filter(x => x.fatalities != null);
   if (rows.length < 2) return null;
@@ -658,6 +749,7 @@ function renderDetail(){
   box.replaceChildren();
   const h = el("h2"); h.append(flagImg(c.name, true), document.createTextNode(c.name));
   const top = el("div"); top.append(bandChip(a), el("span","muted","  " + t("avg") + " " + a.toFixed(2)));
+  const chip = histChip(c.name); if (chip) top.append(chip);
   box.append(h, top);
   const tabs = el("div","tabs"); tabs.setAttribute("role","tablist");
   [["overview","tabOverview"],["prevent","tabPrevent"],["forecast","tabForecast"],["factbook","tabFactbook"],["map","tabMap"],["signals","signals"]].forEach(([k,lab]) => {
@@ -681,6 +773,7 @@ function renderDetail(){
     });
     row.append(radarSVG(c.scores), bars); body.append(row);
     const rd = el("div","reading"); rd.append(el("b",null,t("readingThisLabel") + " "), document.createTextNode(t("readingThisText"))); body.append(rd);
+    renderWhatChanged(body, c);
     const ev = Object.entries(c.evidence || {});
     if (ev.length){
       body.append(el("h3",null,t("evidence")));
