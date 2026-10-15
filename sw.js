@@ -1,5 +1,5 @@
 /* Scarecrow Watch service worker — offline app shell + fresh data */
-const VERSION = '2026-10-16-31';
+const VERSION = '2026-10-16-32';
 const SHELL = 'sw-shell-' + VERSION;
 const RUNTIME = 'sw-runtime-' + VERSION;
 
@@ -11,6 +11,7 @@ const SHELL_ASSETS = [
   './briefings.html',
   './alerts.html',
   './corrections.html',
+  './privacy.html',
   './assets/i18n.js',
   './assets/logo-icon.png',
   './assets/logo-full.png',

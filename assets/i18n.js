@@ -168,6 +168,7 @@ window.T={
   "navAlerts": "Alerts",
   "navBriefings": "Briefings",
   "navCorrections": "Corrections",
+  "navPrivacy": "Privacy & data",
   "cmpBtn": "Compare",
   "cmpTitle": "Compare countries",
   "cmpClose": "✕ Close",

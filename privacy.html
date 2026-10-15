@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy &amp; data · Scarecrow Watch</title>
+<meta name="description" content="How Scarecrow Watch handles data: no accounts, no server, no cookies, no third-party trackers. Only your language and theme choice are stored, in your own browser.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Scarecrow Watch">
+<meta property="og:title" content="Privacy &amp; data — Scarecrow Watch">
+<meta property="og:description" content="No accounts, no server, no cookies, no third-party trackers. Only your language and theme choice are stored, in your own browser.">
+<meta property="og:url" content="https://scarecrowwatch.org/privacy.html">
+<meta property="og:image" content="https://scarecrowwatch.org/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Scarecrow Watch — early warning for mass-atrocity risk across the eleven ASEAN states">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy &amp; data — Scarecrow Watch">
+<meta name="twitter:description" content="No accounts, no server, no cookies, no third-party trackers.">
+<meta name="twitter:image" content="https://scarecrowwatch.org/assets/og-image.png">
+<meta name="theme-color" content="#14181f">
+<link rel="icon" href="assets/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Montserrat:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14181f; --panel:#1c222c; --panel-2:#232a35; --line:#333d4b;
+  --ink:#e9e6df; --ink-dim:#a9b0bc; --ink-faint:#8f98a7; --gold:#c99a4b;
+  --glass:rgba(28,34,44,.72); --shadow:0 1px 2px rgba(0,0,0,.2), 0 12px 34px rgba(0,0,0,.28);
+  --serif:'Source Serif 4', Georgia, serif;
+  --sans:'IBM Plex Sans','IBM Plex Sans Thai',-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --brand:'Montserrat','Chakra Petch',var(--sans);
+}
+:root[data-theme="light"]{ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#62676f; --gold:#916418; --glass:rgba(255,255,255,.84); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); }
+@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#62676f; --gold:#916418; --glass:rgba(255,255,255,.84); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); } }
+*{ box-sizing:border-box; }
+body{ margin:0; background:radial-gradient(1200px 700px at 85% -10%, rgba(201,154,75,.10), transparent 60%), radial-gradient(900px 600px at -10% 110%, rgba(77,139,120,.08), transparent 60%), var(--bg); background-attachment:fixed; color:var(--ink); font-family:var(--sans); line-height:1.55; }
+a{ color:var(--gold); }
+.wrap{ max-width:760px; margin:0 auto; padding:28px 22px 60px; }
+.logo-mark{ display:inline-block; width:36px; height:37px; background:var(--ink); -webkit-mask:url(assets/logo-icon.png) center/contain no-repeat; mask:url(assets/logo-icon.png) center/contain no-repeat; flex:none; }
+header{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; align-items:flex-end; padding-bottom:20px; border-bottom:1px solid var(--line); margin-bottom:22px; }
+.wordmark{ display:flex; align-items:center; gap:11px; margin-bottom:12px; }
+.brand{ font-family:var(--brand); font-weight:800; font-size:21px; letter-spacing:.05em; color:var(--ink); line-height:1; }
+.brand em{ font-style:normal; font-weight:700; color:var(--gold); margin-left:.3em; }
+h1{ font-family:var(--serif); font-size:clamp(26px,4vw,34px); margin:0 0 6px; line-height:1.15; }
+.lede{ color:var(--ink-dim); margin:0; max-width:62ch; font-size:14.5px; }
+.controls{ display:flex; gap:8px; align-items:center; }
+.navlink,.btn{ background:var(--panel-2); color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font:500 12px var(--mono); cursor:pointer; text-decoration:none; transition:border-color .15s, color .15s; white-space:nowrap; }
+.navlink:hover,.btn:hover{ border-color:var(--gold); color:var(--gold); }
+.navlink.here{ border-color:var(--gold); color:var(--gold); }
+h2{ font-family:var(--serif); font-size:19px; margin:26px 0 8px; }
+p{ font-size:14.5px; color:var(--ink-dim); margin:0 0 12px; }
+ul{ margin:0 0 12px; padding-left:20px; color:var(--ink-dim); font-size:14.5px; }
+li{ margin:0 0 7px; }
+b{ color:var(--ink); font-weight:600; }
+.tldr{ background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--gold); border-radius:12px; padding:16px 18px; margin:0 0 22px; box-shadow:var(--shadow); }
+.tldr p{ margin:0; color:var(--ink); font-size:14.5px; }
+.updated{ margin-top:28px; padding-top:16px; border-top:1px solid var(--line); color:var(--ink-faint); font-size:12.5px; }
+a:focus-visible,button:focus-visible,.navlink:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; border-radius:5px; }
+.skip-link{ position:absolute; left:-9999px; top:0; z-index:200; background:var(--gold); color:#13161d; padding:10px 16px; border-radius:0 0 8px 0; font:600 13px var(--sans); text-decoration:none; }
+.skip-link:focus{ left:0; }
+footer{ max-width:760px; margin:0 auto; padding:0 22px 40px; color:var(--ink-faint); font-size:12px; }
+footer a{ color:var(--ink-dim); }
+@media (max-width:620px){ header{ align-items:flex-start; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="wordmark"><span class="logo-mark" role="img" aria-label="Scarecrow"></span><span class="brand">SCARECROW<em>WATCH</em></span></div>
+      <h1>Privacy &amp; data</h1>
+      <p class="lede">Scarecrow Watch is built to need as little of your data as possible — ideally none.</p>
+    </div>
+    <nav class="controls" aria-label="Sections">
+      <a class="navlink" href="index.html">← Dashboard</a>
+      <a class="navlink here" href="privacy.html" aria-current="page">Privacy</a>
+      <a class="navlink" href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main id="main">
+  <div class="tldr">
+    <p><b>In short:</b> no accounts, no server, no cookies, and no third-party trackers or analytics. We don't collect personal data about you. The only things stored are your language and theme choices — kept in your own browser, never sent to us.</p>
+  </div>
+
+  <h2>What we store</h2>
+  <ul>
+    <li><b>Your preferences,</b> in your browser only. Your chosen language and light/dark theme, and whether you've seen the intro screen, are saved in your browser's local storage. They never leave your device and are cleared when you clear your browser's site data.</li>
+    <li><b>No cookies, no tracking.</b> We set no cookies and run no analytics, advertising, or third-party tracking scripts. We don't profile visitors or build audiences.</li>
+    <li><b>No sign-in.</b> There are no accounts and no login, so there's nothing to collect about who you are.</li>
+  </ul>
+
+  <h2>The feedback button</h2>
+  <p>The site has no server to receive form submissions. The <b>Feedback &amp; grievances</b> button simply opens your own email app with a pre-filled draft — we only ever receive what you choose to write and send. Email is <b>not anonymous</b>: please don't include names, exact locations, or details that could put you or others at risk. For anything sensitive, ask us for a secure channel first.</p>
+
+  <h2>Hosting &amp; logs</h2>
+  <p>The site is a set of static files hosted on GitHub Pages. Like any website, the hosting provider may automatically log standard technical request information (such as IP address and browser type) for security and operations. We don't control, use, or combine those logs, and we add no tracking of our own on top. External resources we load (map tiles, fonts, flag icons) are served by their providers under their own terms.</p>
+
+  <h2>The data we show</h2>
+  <p>Risk assessments combine the Lab's judgement with public data aggregated from sources such as UCDP, UNHCR, the World Bank, V-Dem, ReliefWeb and GDELT, each attributed. We document patterns and verified public information — <b>not</b> graphic imagery of victims, and not personal data about private individuals. Protected material (tips, witnesses, case files) is never published here; map hotspots are shown at province level only.</p>
+
+  <h2>Open by default</h2>
+  <p>The code and the published data are open source on <a href="https://github.com/scarecrow-lab/scarecrow-watch" target="_blank" rel="noopener">GitHub</a>, and the data is downloadable from the dashboard. Anyone can inspect how the site works and what it stores.</p>
+
+  <h2>Contact &amp; changes</h2>
+  <p>Questions about privacy or data can be sent through the feedback channel on the dashboard. If we make a material change to how the site handles data, we'll note it here.</p>
+  </main>
+
+  <p class="updated">Last updated: 2026-10-16 · Scarecrow Watch is an independent, non-profit, open-source early-warning watch for Southeast Asia.</p>
+</div>
+
+<footer>
+  <p>Scarecrow Watch. <a href="about.html">About &amp; independence</a> · <a href="corrections.html">Corrections</a> · <a href="index.html">Live dashboard</a></p>
+</footer>
+
+<script>
+"use strict";
+(function(){
+  try{
+    var saved = localStorage.getItem("sw-theme");
+    if (saved) document.documentElement.dataset.theme = saved;
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
