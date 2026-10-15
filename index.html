@@ -187,6 +187,18 @@ footer p{ margin:0 0 10px; }
 #printSheet .ps-caveat{ margin:6px 0 0; font-size:11px; font-style:italic; color:#6a7280; }
 #printSheet .ps-foot{ margin:22px 0 0; padding-top:10px; border-top:1px solid #d9d2c2; font-size:10.5px; line-height:1.5; color:#6a7280; }
 #printSheet .ps-foot b{ color:#4A505B; font-weight:600; }
+/* ---- data confidence ---- */
+.conf-chip{ display:inline-flex; align-items:center; gap:6px; margin-left:10px; font:600 11.5px var(--mono); letter-spacing:.02em; padding:3px 10px; border-radius:999px; border:1px solid var(--line); color:var(--ink-dim); vertical-align:middle; }
+.conf-dot{ width:8px; height:8px; border-radius:50%; background:var(--ink-faint); flex:none; }
+.conf-chip.high{ border-color:#4d8b78; color:#6fb79f; } .conf-chip.high .conf-dot{ background:#4d8b78; }
+.conf-chip.moderate{ border-color:#C08A2E; color:#d8a84e; } .conf-chip.moderate .conf-dot{ background:#C08A2E; }
+.conf-chip.limited{ border-color:#a7705f; color:#c8927f; } .conf-chip.limited .conf-dot{ background:#b06a5a; }
+:root[data-theme="light"] .conf-chip.high{ color:#3b7a63; } :root[data-theme="light"] .conf-chip.moderate{ color:#8a5f1c; } :root[data-theme="light"] .conf-chip.limited{ color:#9a4a3a; }
+.confbox{ margin:18px 0 0; padding:12px 15px; border:1px solid var(--line); border-left:3px solid var(--ink-faint); border-radius:10px; background:var(--panel-2); }
+.confbox.high{ border-left-color:#4d8b78; } .confbox.moderate{ border-left-color:#C08A2E; } .confbox.limited{ border-left-color:#b06a5a; }
+.confhead{ display:flex; align-items:center; gap:7px; font-size:13.5px; } .confhead b{ font-weight:600; }
+.confbits{ margin:5px 0 0; font:500 12px var(--mono); color:var(--ink-dim); }
+.confbox p.muted{ margin:7px 0 0; font-size:12px; }
 .cmp-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
 .cmp-close{ background:var(--panel-2); color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:6px 14px; font:500 12px var(--mono); cursor:pointer; }
 .cmp-close:hover{ border-color:var(--gold); color:var(--gold); }
@@ -677,6 +689,40 @@ function preventFor(name){
   return {cats, index: meanOf(cats.map(c => c.score)), triggers: elections.concat(C.triggers || []), basis: C.basis || ""};
 }
 function vwArrow(trend){ return trend === "rising" ? "↗" : trend === "falling" ? "↘" : "→"; }
+// ---- data confidence (freshness/completeness of the automated evidence base) ----
+function confidenceFor(name){
+  const pi = preventFor(name), sigs = signalsFor(name).length, nowY = new Date().getFullYear();
+  if (!pi || !pi.cats || !pi.cats.length) return { level:"limited", fresh:0, total:0, weak:0, sigs };
+  let total=0, fresh=0, weak=0, missing=0, stale=0, pending=0;
+  pi.cats.forEach(cat => cat.rows.forEach(r => {
+    total++;
+    if (r.score == null){ missing++; return; }
+    let ok = true;
+    if (r.fallback){ weak++; ok = false; }
+    if (r.held) pending++;
+    if (r.year && (nowY - Number(r.year)) >= 3){ stale++; ok = false; }
+    if (ok) fresh++;
+  }));
+  const penalty = missing*2 + weak + stale, ratio = total ? penalty/(total*2) : 1;
+  let level = ratio < 0.12 ? "high" : ratio < 0.30 ? "moderate" : "limited";
+  if (level === "high" && sigs === 0) level = "moderate";
+  return { level, fresh, total, weak: weak + stale + missing, missing, stale, pending, sigs };
+}
+function confLabelOf(level){ return level === "high" ? t("confHigh") : level === "moderate" ? t("confModerate") : t("confLimited"); }
+function confChip(name){
+  const c = confidenceFor(name); if (!c.total) return null;
+  const chip = el("span", "conf-chip " + c.level);
+  chip.append(el("span","conf-dot"), document.createTextNode(t("confLabel") + ": " + confLabelOf(c.level)));
+  chip.title = c.fresh + "/" + c.total + " " + t("confIndicators") + (c.weak ? " · " + c.weak + " " + t("confEstimate") : "");
+  return chip;
+}
+function renderConfidence(body, c){
+  const cf = confidenceFor(c.name); if (!cf.total) return;
+  const wrap = el("div", "confbox " + cf.level), head = el("div","confhead");
+  head.append(el("span","conf-dot"), el("b", null, t("confLabel") + ": " + confLabelOf(cf.level)));
+  wrap.append(head, el("div","confbits", cf.fresh + "/" + cf.total + " " + t("confIndicators") + (cf.weak ? " · " + cf.weak + " " + t("confEstimate") : "")), el("p","muted", t("confNote")));
+  body.append(wrap);
+}
 // ---- open data export (client-side, no backend) ----
 function downloadText(name, text, mime){
   try{
@@ -703,7 +749,7 @@ function buildCountryExport(c){
     generated: new Date().toISOString(),
     notice: "Open early-warning data aggregated from public sources. Cite Scarecrow Watch and the original data providers. Lab-judged scores are drafts pending the Lab's review where marked. VIEWS is a conflict forecast, not an atrocity prediction, and is never averaged into the risk score.",
     country: c.name,
-    risk_assessment: { framework: "UN Framework of Analysis for Atrocity Crimes (8 factors, 1–5)", average: Number(avg(c.scores).toFixed(2)), factors: factors, lab_note: c.note || undefined, evidence: c.evidence || undefined },
+    risk_assessment: { framework: "UN Framework of Analysis for Atrocity Crimes (8 factors, 1–5)", average: Number(avg(c.scores).toFixed(2)), confidence: (() => { const cf = confidenceFor(c.name); return { level: cf.level, indicators_total: cf.total, indicators_current: cf.fresh, indicators_estimated_or_old: cf.weak }; })(), factors: factors, lab_note: c.note || undefined, evidence: c.evidence || undefined },
     prevent: prevent,
     forecast_views: vw ? { source: "VIEWS (viewsforecasting.org)", run: (D.vwInfo || {}).run || undefined, prob_peak_12m: vw.prob_peak_12m, fatalities_sum_12m: vw.fatalities_sum_12m, trend: vw.trend, window: vw.window, monthly: vw.monthly } : null,
     history: histSeries(c.name),
@@ -730,6 +776,7 @@ function buildOnePager(c){
   const meta = el("div","ps-meta"); meta.append(el("span","ps-badge " + bk, t("bands")[bk]), el("span","ps-score", t("avg") + " " + a.toFixed(2) + " / 5"));
   const se = histSeries(c.name).filter(x => x.avg != null);
   if (se.length >= 2){ const d = Math.round((se[se.length-1].avg - se[se.length-2].avg)*100)/100; if (d !== 0) meta.append(el("span","ps-score", (d > 0 ? "▲ +" : "▼ ") + d.toFixed(2) + " " + (t("histSince") || "since") + " " + monthLabel(se[se.length-2].month))); }
+  const cf = confidenceFor(c.name); if (cf.total) meta.append(el("span","ps-score", "· " + t("confLabel") + ": " + confLabelOf(cf.level)));
   sheet.append(meta);
   if (c.note){ sheet.append(el("h4","ps-h", t("lab"))); const p = el("div","ps-note"); p.textContent = c.note; sheet.append(p); }
   sheet.append(el("h4","ps-h", t("factors")));
@@ -1044,6 +1091,7 @@ function renderDetail(){
   const h = el("h2"); h.append(flagImg(c.name, true), document.createTextNode(c.name));
   const top = el("div"); top.append(bandChip(a), el("span","muted","  " + t("avg") + " " + a.toFixed(2)));
   const chip = histChip(c.name); if (chip) top.append(chip);
+  const cchip = confChip(c.name); if (cchip) top.append(cchip);
   box.append(h, top);
   const tabs = el("div","tabs"); tabs.setAttribute("role","tablist");
   [["overview","tabOverview"],["prevent","tabPrevent"],["forecast","tabForecast"],["factbook","tabFactbook"],["map","tabMap"],["signals","signals"]].forEach(([k,lab]) => {
@@ -1067,6 +1115,7 @@ function renderDetail(){
     });
     row.append(radarSVG(c.scores), bars); body.append(row);
     const rd = el("div","reading"); rd.append(el("b",null,t("readingThisLabel") + " "), document.createTextNode(t("readingThisText"))); body.append(rd);
+    renderConfidence(body, c);
     renderWhatChanged(body, c);
     const ev = Object.entries(c.evidence || {});
     if (ev.length){
