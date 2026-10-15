@@ -163,6 +163,7 @@ window.T={
   "confIndicators": "early-warning indicators on current public data",
   "confEstimate": "on estimated or older data",
   "confNote": "Data confidence reflects how current and complete the automated evidence base is — not how severe the risk is. Lab-judged factors, fallbacks and sparse public data lower it.",
+  "skipToContent": "Skip to content",
   "navMenu": "Dashboard",
   "navAlerts": "Alerts",
   "navBriefings": "Briefings",

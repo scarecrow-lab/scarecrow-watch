@@ -99,6 +99,10 @@ h2{ font:800 clamp(23px,3.2vw,30px)/1.15 var(--display); margin:6px 0 10px; text
 .cta{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-top:16px; }
 footer{ margin-top:56px; padding-top:18px; border-top:1px solid var(--line); font-size:13px; color:var(--faint); display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
 @media (prefers-reduced-motion: reduce){ .L{ transition:none; } .L:hover{ transform:none; } }
+a:focus-visible,button:focus-visible,select:focus-visible,[tabindex]:focus-visible,.row:focus-visible,.tab:focus-visible,.chip:focus-visible,.navlink:focus-visible,.navmenu-item:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; border-radius:5px; }
+.skip-link{ position:absolute; left:-9999px; top:0; z-index:200; background:var(--gold); color:#13161d; padding:10px 16px; border-radius:0 0 8px 0; font:600 13px var(--sans,'IBM Plex Sans',sans-serif); text-decoration:none; }
+.skip-link:focus{ left:0; }
+@media (prefers-reduced-motion: reduce){ *{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; } }
 </style>
 </head>
 <body>
