@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Corrections · Scarecrow Watch</title>
+<meta name="description" content="How Scarecrow Watch corrects and retracts. A public, auditable record of changes to our published assessments and briefings.">
+<meta name="theme-color" content="#14181f">
+<link rel="icon" href="assets/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Montserrat:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14181f; --panel:#1c222c; --panel-2:#232a35; --line:#333d4b;
+  --ink:#e9e6df; --ink-dim:#a9b0bc; --ink-faint:#6f7889; --gold:#c99a4b;
+  --glass:rgba(28,34,44,.72); --shadow:0 1px 2px rgba(0,0,0,.2), 0 12px 34px rgba(0,0,0,.28);
+  --serif:'Source Serif 4', Georgia, serif;
+  --sans:'IBM Plex Sans','IBM Plex Sans Thai',-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --brand:'Montserrat','Chakra Petch',var(--sans);
+}
+:root[data-theme="light"]{ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#8a8f98; --gold:#a87a2f; --glass:rgba(255,255,255,.84); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); }
+@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#8a8f98; --gold:#a87a2f; --glass:rgba(255,255,255,.84); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); } }
+*{ box-sizing:border-box; }
+body{ margin:0; background:radial-gradient(1200px 700px at 85% -10%, rgba(201,154,75,.10), transparent 60%), radial-gradient(900px 600px at -10% 110%, rgba(77,139,120,.08), transparent 60%), var(--bg); background-attachment:fixed; color:var(--ink); font-family:var(--sans); line-height:1.5; }
+a{ color:var(--gold); }
+.wrap{ max-width:1040px; margin:0 auto; padding:28px 22px 60px; }
+.logo-mark{ display:inline-block; width:36px; height:37px; background:var(--ink); -webkit-mask:url(assets/logo-icon.png) center/contain no-repeat; mask:url(assets/logo-icon.png) center/contain no-repeat; flex:none; }
+header{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; align-items:flex-end; padding-bottom:20px; border-bottom:1px solid var(--line); margin-bottom:22px; }
+.wordmark{ display:flex; align-items:center; gap:11px; margin-bottom:12px; }
+.brand{ font-family:var(--brand); font-weight:800; font-size:21px; letter-spacing:.05em; color:var(--ink); line-height:1; }
+.brand em{ font-style:normal; font-weight:700; color:var(--gold); margin-left:.3em; }
+h1{ font-family:var(--serif); font-size:clamp(26px,4vw,34px); margin:0 0 6px; line-height:1.15; }
+.lede{ color:var(--ink-dim); margin:0; max-width:62ch; font-size:14.5px; }
+.controls{ display:flex; gap:8px; align-items:center; }
+.navlink,.btn{ background:var(--panel-2); color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font:500 12px var(--mono); cursor:pointer; text-decoration:none; transition:border-color .15s, color .15s; white-space:nowrap; }
+.navlink:hover,.btn:hover{ border-color:var(--gold); color:var(--gold); }
+.navlink.here{ border-color:var(--gold); color:var(--gold); }
+.policy{ background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--gold); border-radius:12px; padding:18px 20px; margin-bottom:24px; box-shadow:var(--shadow); }
+.policy h2{ font:700 12px var(--mono); letter-spacing:.08em; text-transform:uppercase; color:var(--gold); margin:0 0 10px; }
+.policy ul{ margin:0; padding-left:18px; color:var(--ink-dim); font-size:13.5px; }
+.policy li{ margin:0 0 7px; }
+.policy li b{ color:var(--ink); font-weight:600; }
+.count{ color:var(--ink-faint); font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; margin:0 0 14px; }
+.grid{ display:grid; gap:14px; }
+.card{ display:block; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; box-shadow:var(--shadow); }
+.card .meta{ display:flex; flex-wrap:wrap; gap:8px 12px; align-items:center; margin-bottom:9px; }
+.badge{ font:600 10.5px var(--mono); letter-spacing:.06em; text-transform:uppercase; padding:3px 9px; border-radius:999px; border:1px solid var(--gold); color:var(--gold); }
+.badge.retraction{ border-color:#d98a6a; color:#d98a6a; } :root[data-theme="light"] .badge.retraction{ color:#b85c3a; }
+.cdate{ font:500 12px var(--mono); color:var(--ink-faint); }
+.ccountry{ font:600 12.5px var(--sans); color:var(--ink-dim); }
+.card h2{ font-family:var(--serif); font-size:18px; line-height:1.3; margin:0 0 6px; color:var(--ink); }
+.card p{ margin:0 0 8px; color:var(--ink-dim); font-size:13.5px; }
+.card .chg{ margin:8px 0 0; padding:10px 12px; background:var(--panel-2); border-radius:8px; font-size:13px; color:var(--ink-dim); }
+.card .chg b{ color:var(--ink); font-weight:600; }
+.card .src a{ font-size:12px; margin-right:10px; }
+.empty{ background:var(--panel); border:1px dashed var(--line); border-radius:12px; padding:38px 24px; text-align:center; color:var(--ink-dim); }
+.empty b{ color:var(--ink); display:block; margin-bottom:6px; font-size:15px; }
+.empty span{ max-width:52ch; display:inline-block; font-size:13.5px; }
+.note{ margin-top:28px; padding-top:18px; border-top:1px solid var(--line); color:var(--ink-faint); font-size:12px; max-width:72ch; }
+footer{ max-width:1040px; margin:0 auto; padding:0 22px 40px; color:var(--ink-faint); font-size:12px; }
+footer a{ color:var(--ink-dim); }
+@media (max-width:620px){ header{ align-items:flex-start; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="wordmark"><span class="logo-mark" role="img" aria-label="Scarecrow"></span><span class="brand">SCARECROW<em>WATCH</em></span></div>
+      <h1>Corrections &amp; retractions</h1>
+      <p class="lede">When we get something wrong, we fix it openly. This is the public, auditable record of changes to our published assessments and briefings.</p>
+    </div>
+    <nav class="controls" aria-label="Sections">
+      <a class="navlink" href="index.html">← Dashboard</a>
+      <a class="navlink here" href="corrections.html" aria-current="page">Corrections</a>
+      <a class="navlink" href="about.html">About</a>
+      <button class="btn" id="theme" type="button">Theme</button>
+    </nav>
+  </header>
+
+  <div class="policy">
+    <h2>How we handle errors</h2>
+    <ul>
+      <li><b>We correct promptly and visibly.</b> If a published finding is wrong, we fix it, note what changed and when, and inform anyone materially affected.</li>
+      <li><b>Serious errors are retracted,</b> with an explanation — never quietly deleted.</li>
+      <li><b>Every change is on the record.</b> The platform already tracks score history month-on-month; substantive corrections are logged here so the history of an assessment is auditable.</li>
+      <li><b>Anyone can challenge a finding</b> by pointing to evidence. We review good-faith challenges against the same standard we use to publish, and respond on the merits — regardless of who raises them.</li>
+      <li><b>A correction is a sign the system is working,</b> not a failure to hide.</li>
+    </ul>
+  </div>
+
+  <p class="count" id="count"></p>
+  <div class="grid" id="grid"></div>
+
+  <p class="note">This log covers substantive corrections and retractions to published findings. Routine daily data refreshes from public sources are not listed here; month-on-month movements in each country's risk score are shown in the live dashboard under “What changed”. To report a possible error, use the feedback &amp; grievances channel on the dashboard.</p>
+</div>
+
+<footer>
+  <p>Scarecrow Watch — an independent, non-profit, open-source early-warning watch for Southeast Asia. <a href="about.html">About &amp; independence</a> · <a href="index.html">Live dashboard</a></p>
+</footer>
+
+<script>
+"use strict";
+var $ = function(s){ return document.querySelector(s); };
+function el(tag, cls, text){ var e = document.createElement(tag); if(cls) e.className = cls; if(text != null) e.textContent = text; return e; }
+function safeUrl(u){ return (typeof u === "string" && /^(https?:\/\/|data\/)/i.test(u)) ? u : null; }
+
+$("#theme").onclick = function(){
+  var r = document.documentElement;
+  var dark = r.dataset.theme ? r.dataset.theme === "dark" : !matchMedia("(prefers-color-scheme: light)").matches;
+  r.dataset.theme = dark ? "light" : "dark";
+};
+
+function fmtDate(s){
+  var d = new Date(s + "T00:00:00");
+  if (isNaN(d)) return s || "";
+  return d.toLocaleDateString("en-GB", { day:"numeric", month:"short", year:"numeric" });
+}
+
+function render(items){
+  var grid = $("#grid"), count = $("#count");
+  grid.innerHTML = "";
+  items = (items || []).slice().sort(function(a,b){ return (b.date||"").localeCompare(a.date||""); });
+  count.textContent = items.length === 0 ? "" : (items.length === 1 ? "1 correction on record" : items.length + " corrections on record");
+
+  if (!items.length){
+    var e = el("div","empty");
+    e.appendChild(el("b", null, "No corrections issued yet"));
+    e.appendChild(el("span", null, "We have not had to correct or retract a published finding. When we do, it will be recorded here in full — what changed, when, and why."));
+    grid.appendChild(e);
+    return;
+  }
+
+  items.forEach(function(it){
+    var card = el("div","card");
+    var meta = el("div","meta");
+    var type = (it.type === "retraction") ? "Retraction" : "Correction";
+    meta.appendChild(el("span","badge " + (it.type === "retraction" ? "retraction" : ""), type));
+    if (it.date) meta.appendChild(el("span","cdate", fmtDate(it.date)));
+    if (it.country) meta.appendChild(el("span","ccountry", it.country));
+    card.appendChild(meta);
+    card.appendChild(el("h2", null, it.title || "Correction"));
+    if (it.summary) card.appendChild(el("p", null, it.summary));
+    if (it.change){ var c = el("div","chg"); c.appendChild(el("b", null, "What changed: ")); c.appendChild(document.createTextNode(it.change)); card.appendChild(c); }
+    if (Array.isArray(it.sources) && it.sources.length){
+      var src = el("div","src");
+      it.sources.forEach(function(s){ var u = safeUrl(s.url); if (u){ var a = el("a", null, s.label || u); a.href = u; a.target = "_blank"; a.rel = "noopener noreferrer"; src.appendChild(a); } });
+      card.appendChild(src);
+    }
+    grid.appendChild(card);
+  });
+}
+
+fetch("data/corrections.json?v=" + Date.now())
+  .then(function(r){ return r.ok ? r.json() : []; })
+  .then(function(data){ render(Array.isArray(data) ? data : (data && data.corrections) || []); })
+  .catch(function(){ render([]); });
+</script>
+</body>
+</html>

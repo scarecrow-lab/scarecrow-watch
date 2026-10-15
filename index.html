@@ -153,6 +153,40 @@ footer p{ margin:0 0 10px; }
 .dl-raw{ margin-left:auto; font-size:12.5px; color:var(--gold); text-decoration:none; white-space:nowrap; }
 .dl-raw:hover{ text-decoration:underline; }
 @media (max-width:620px){ .dl-raw{ margin-left:0; } }
+/* ---- printable one-pager ---- */
+#printSheet{ display:none; }
+@media print{
+  @page{ size:A4 portrait; margin:14mm 15mm; }
+  html,body{ background:#fff !important; }
+  body > *{ display:none !important; }
+  #printSheet{ display:block !important; color:#1b1f27; font-family:'IBM Plex Sans',system-ui,sans-serif; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  #printSheet *{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+}
+#printSheet .ps-head{ display:flex; align-items:center; justify-content:space-between; border-bottom:2px solid #1F2530; padding-bottom:9px; }
+#printSheet .ps-brand{ display:flex; align-items:center; gap:10px; }
+#printSheet .ps-logo{ width:30px; height:30px; border-radius:7px; }
+#printSheet .ps-word{ font:800 16px 'Montserrat',sans-serif; letter-spacing:.04em; color:#1F2530; }
+#printSheet .ps-word em{ font-style:normal; color:#C08A2E; }
+#printSheet .ps-url{ font:600 12px 'IBM Plex Sans',sans-serif; color:#8A5F1C; }
+#printSheet .ps-title{ display:flex; align-items:center; gap:12px; margin:16px 0 2px; }
+#printSheet .ps-country{ font:700 27px 'Montserrat',sans-serif; color:#15181f; }
+#printSheet .ps-meta{ display:flex; align-items:center; gap:10px; margin:6px 0 0; }
+#printSheet .ps-badge{ font:700 11px 'IBM Plex Sans',sans-serif; letter-spacing:.05em; text-transform:uppercase; color:#fff; padding:3px 10px; border-radius:5px; }
+#printSheet .ps-badge.sev{ background:#b4442f; } #printSheet .ps-badge.elev{ background:#c0702a; } #printSheet .ps-badge.mod{ background:#C08A2E; } #printSheet .ps-badge.low{ background:#4d8b78; }
+#printSheet .ps-score{ font:600 15px 'IBM Plex Sans',sans-serif; color:#4A505B; }
+#printSheet .ps-note{ margin:12px 0 0; font-size:13px; line-height:1.5; color:#333a45; }
+#printSheet h4.ps-h{ font:700 11px 'IBM Plex Sans',sans-serif; letter-spacing:.09em; text-transform:uppercase; color:#8A5F1C; margin:18px 0 8px; }
+#printSheet .ps-bars{ display:grid; grid-template-columns:1fr 1fr; gap:7px 26px; }
+#printSheet .ps-bar{ display:grid; grid-template-columns:1fr 54px 18px; align-items:center; gap:9px; font-size:12px; color:#333a45; }
+#printSheet .ps-track{ height:7px; background:#e7e2d6; border-radius:4px; overflow:hidden; }
+#printSheet .ps-fill{ height:100%; border-radius:4px; }
+#printSheet .ps-bar b{ font:700 12px 'IBM Plex Sans',sans-serif; color:#15181f; text-align:right; }
+#printSheet .ps-fc{ margin:8px 0 0; display:flex; align-items:baseline; gap:12px; }
+#printSheet .ps-fc .big{ font:700 24px 'Montserrat',sans-serif; color:#15181f; }
+#printSheet .ps-fc .lab{ font-size:12.5px; color:#4A505B; }
+#printSheet .ps-caveat{ margin:6px 0 0; font-size:11px; font-style:italic; color:#6a7280; }
+#printSheet .ps-foot{ margin:22px 0 0; padding-top:10px; border-top:1px solid #d9d2c2; font-size:10.5px; line-height:1.5; color:#6a7280; }
+#printSheet .ps-foot b{ color:#4A505B; font-weight:600; }
 .cmp-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
 .cmp-close{ background:var(--panel-2); color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:6px 14px; font:500 12px var(--mono); cursor:pointer; }
 .cmp-close:hover{ border-color:var(--gold); color:var(--gold); }
@@ -351,6 +385,7 @@ footer p{ margin:0 0 10px; }
           <button class="navmenu-item" id="miCompare" type="button" role="menuitem"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="20" x2="6" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="18" y1="20" x2="18" y2="14"></line></svg><span data-i="cmpBtn">Compare</span></button>
           <a class="navmenu-item" href="alerts.html" role="menuitem"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span data-i="navAlerts">Alerts</span></a>
           <a class="navmenu-item" href="briefings.html" role="menuitem"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v13a2 2 0 0 0 2 2H6a2 2 0 0 1-2-2V5z"></path><path d="M8 8h6"></path><path d="M8 12h6"></path><path d="M8 16h4"></path></svg><span data-i="navBriefings">Briefings</span></a>
+          <a class="navmenu-item" href="corrections.html" role="menuitem"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9 9 0 0 0-6.4 2.6L3 8"></path><path d="M3 3v5h5"></path></svg><span data-i="navCorrections">Corrections</span></a>
         </div>
       </div>
       <label style="position:absolute;left:-9999px" for="langSel">Language</label>
@@ -681,6 +716,38 @@ function buildHistoryCSV(c){
   return rows.map(r => r.join(",")).join("\r\n") + "\r\n";
 }
 function dlIcon(){ return svgEl('<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>'); }
+function printIcon(){ return svgEl('<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>'); }
+function buildOnePager(c){
+  let sheet = document.getElementById("printSheet");
+  if (!sheet){ sheet = document.createElement("div"); sheet.id = "printSheet"; document.body.appendChild(sheet); }
+  sheet.replaceChildren();
+  const a = avg(c.scores), bk = band(a)[0];
+  const head = el("div","ps-head"), brand = el("div","ps-brand");
+  const logo = new Image(); logo.className = "ps-logo"; logo.src = "assets/icons/apple-touch-icon.png"; logo.alt = "";
+  const word = el("span","ps-word"); word.innerHTML = "SCARECROW <em>WATCH</em>";
+  brand.append(logo, word); head.append(brand, el("div","ps-url","scarecrowwatch.org")); sheet.append(head);
+  const title = el("div","ps-title"); title.append(flagImg(c.name, true), el("span","ps-country", c.name)); sheet.append(title);
+  const meta = el("div","ps-meta"); meta.append(el("span","ps-badge " + bk, t("bands")[bk]), el("span","ps-score", t("avg") + " " + a.toFixed(2) + " / 5"));
+  const se = histSeries(c.name).filter(x => x.avg != null);
+  if (se.length >= 2){ const d = Math.round((se[se.length-1].avg - se[se.length-2].avg)*100)/100; if (d !== 0) meta.append(el("span","ps-score", (d > 0 ? "▲ +" : "▼ ") + d.toFixed(2) + " " + (t("histSince") || "since") + " " + monthLabel(se[se.length-2].month))); }
+  sheet.append(meta);
+  if (c.note){ sheet.append(el("h4","ps-h", t("lab"))); const p = el("div","ps-note"); p.textContent = c.note; sheet.append(p); }
+  sheet.append(el("h4","ps-h", t("factors")));
+  const bars = el("div","ps-bars");
+  D.a.factors.forEach((f,i) => { const v = Number(c.scores[f.key] || 0), r = el("div","ps-bar"), tr = el("div","ps-track"), fl = el("div","ps-fill"); fl.style.width = (v/5*100) + "%"; fl.style.background = band(v)[1]; tr.append(fl); r.append(el("span",null,(i+1) + ". " + (f[lang] || f.en)), tr, el("b",null,String(v))); bars.append(r); });
+  sheet.append(bars);
+  const pi = preventFor(c.name);
+  if (pi && pi.index != null){ sheet.append(el("h4","ps-h", t("opPrevent"))); const p = el("div","ps-fc"); p.append(el("span","big", pi.index.toFixed(1) + " / 5")); sheet.append(p); }
+  const v = (D.vw || {})[c.name];
+  if (v && v.fatalities_sum_12m != null){ sheet.append(el("h4","ps-h", t("tabForecast"))); const p = el("div","ps-fc"); p.append(el("span","big", fmt(Math.round(v.fatalities_sum_12m))), el("span","lab", t("opForecastLine") + " · " + vwArrow(v.trend) + " " + (t("vw_" + v.trend) || ""))); sheet.append(p, el("div","ps-caveat", t("opCaveat"))); }
+  const foot = el("div","ps-foot");
+  foot.append(el("b",null, t("labReviewed") + ": " + (D.a.reviewed || "—") + "   ·   " + t("opGenerated") + " " + new Date().toISOString().slice(0,10)));
+  foot.append(document.createElement("br"));
+  foot.append(document.createTextNode(t("opMethod") + "  scarecrowwatch.org"));
+  sheet.append(foot);
+  return sheet;
+}
+function printOnePager(c){ buildOnePager(c); setTimeout(() => { try { window.print(); } catch(e){} }, 80); }
 function renderDataExport(body, c){
   const slug = c.name.toLowerCase().replace(/[^a-z0-9]+/g, "-"), d = new Date().toISOString().slice(0, 10);
   const wrap = el("div", "dataexport");
@@ -690,7 +757,9 @@ function renderDataExport(body, c){
   bJson.onclick = () => downloadText(`scarecrow-${slug}-${d}.json`, JSON.stringify(buildCountryExport(c), null, 2), "application/json");
   const bCsv = el("button", "dl-btn"); bCsv.type = "button"; bCsv.append(dlIcon(), document.createTextNode(" CSV"));
   bCsv.onclick = () => downloadText(`scarecrow-${slug}-history-${d}.csv`, buildHistoryCSV(c), "text/csv;charset=utf-8");
-  row.append(bJson, bCsv);
+  const bPdf = el("button", "dl-btn"); bPdf.type = "button"; bPdf.title = t("opHint"); bPdf.append(printIcon(), document.createTextNode(" " + t("opBtn")));
+  bPdf.onclick = () => printOnePager(c);
+  row.append(bJson, bCsv, bPdf);
   const raw = el("a", "dl-raw", t("dlRaw")); raw.href = "https://github.com/scarecrow-lab/scarecrow-watch/tree/main/data"; raw.target = "_blank"; raw.rel = "noopener";
   row.append(raw);
   wrap.append(row);
