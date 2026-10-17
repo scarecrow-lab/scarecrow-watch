@@ -1,94 +1,121 @@
 {
-  "generated": "2026-10-16T01:23:31+00:00",
+  "generated": "2026-10-17T01:19:58+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Singapore",
+      "date": "2026-10-17",
+      "title": "Maritime Piracy in 2026 Fell to 1992 Levels Despite Somalia - Yemen Surge",
+      "url": "https://maritime-executive.com/article/maritime-piracy-in-2026-fell-to-1992-levels-despite-somalia-yemen-surge",
+      "source": "maritime-executive.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-16",
+      "title": "Two Ships Sink Near Strait of Hormuz After  Projectile  Attacks",
+      "url": "https://www.breitbart.com/national-security/2026/10/15/two-ships-sink-near-strait-of-hormuz-after-projectile-attacks/",
+      "source": "breitbart.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-16",
+      "title": "The West Loses Escalation Dominance",
+      "url": "https://www.greanvillepost.com/the-west-loses-escalation-dominance/",
+      "source": "greanvillepost.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-16",
+      "title": "US$34 MILLION AND NOWHERE TO GO : Chivayo Gulfstream Sits at Harare Airport , Fuelled , Polished and Ownerless",
+      "url": "https://www.zimdaily.com/article/2026-10-14-chivayo-gulfstream-grounded/",
+      "source": "zimdaily.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-16",
+      "title": "The Week in Pictures - A colossal  jellyfish  cloud forms over Florida , and one campaign group makes a big stink on the Thames",
+      "url": "https://www.lbc.co.uk/article/the-week-in-pictures-friday-october-16-2026-5Hjdk27_2/",
+      "source": "lbc.co.uk",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-16",
+      "title": "Kim Kardashian reveals momager Kris Jenner warned her against being involved in new biography that  made her cry  when she read it",
+      "url": "https://www.dailymail.com/tvshowbiz/article-16214561/Kim-Kardashian-reveals-momager-Kris-Jenner-warned-against-involved-new-biography-cry-read-it.html",
+      "source": "dailymail.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-16",
+      "title": "A 5 - room HDB flat in Boon Keng just sold for a record $1 . 64m , surpassing previous high by $51k",
+      "url": "https://www.asiaone.com:443/money/5-room-hdb-flat-boon-keng-just-sold-record-164m-surpassing-previous-high-51k",
+      "source": "asiaone.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-16",
+      "title": "Indonesia president ready to accept foreign assistance to combat fires , foreign minister says",
+      "url": "https://www.asiaone.com:443/asia/haze-indonesia-accept-foreign-assistance",
+      "source": "asiaone.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-16",
+      "title": "West Asian War : Ansar Allah Hits Enemy HQ in Aden",
+      "url": "https://www.nakedcapitalism.com/2026/10/west-asian-war-ansar-allah-hit-al-maashiq-saudi-arabia-centcom-hormuz.html",
+      "source": "nakedcapitalism.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-16",
+      "title": "Indonesia president ready to accept foreign assistance to combat fires , foreign minister says",
+      "url": "https://www.asiaone.com/asia/haze-indonesia-accept-foreign-assistance",
+      "source": "asiaone.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-16",
+      "title": "  Clean air is not a favour : Indonesia neighbours fed up with acrid haze as Singapore threatens to prosecute | Indonesia",
+      "url": "https://www.theguardian.com/world/2026/oct/16/singapore-threatens-prosecute-indonesia-fires-toxic-haze-smoke",
+      "source": "theguardian.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Timor-Leste",
+      "date": "2026-10-16",
+      "title": "New book details sexual violence endured by Timorese women from Indonesian soldiers",
+      "url": "https://www.abc.net.au/news/2026-10-17/new-book-details-sexual-violence-endured-by-timorese-women/107154784",
+      "source": "abc.net.au",
+      "kind": "News",
+      "via": "GDELT"
+    },
     {
       "country": "Malaysia",
       "date": "2026-10-16",
       "title": "Leaderless haze control - Editorial - The Jakarta Post",
       "url": "http://www.thejakartapost.com/opinion/2026/10/16/leaderless-haze-control",
       "source": "thejakartapost.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
-      "title": "Houthis Strike Aden Palace , Kill 5 ; EU - Gulf Summit Postponed",
-      "url": "https://www.hngn.com/articles/273519/20261015/houthis-strike-aden-palace-kill-5-eu-gulf-summit-postponed.htm",
-      "source": "hngn.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
-      "title": "Two ships sink near Hormuz amid surge in attacks",
-      "url": "https://www.northerndailyleader.com.au/story/9369667/two-ships-sink-near-hormuz-amid-surge-in-attacks/",
-      "source": "northerndailyleader.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
-      "title": "Two ships sink near Hormuz amid surge in attacks",
-      "url": "https://www.illawarramercury.com.au/story/9369667/two-ships-sink-near-hormuz-amid-surge-in-attacks/",
-      "source": "illawarramercury.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
-      "title": "Two ships sink near Hormuz amid surge in attacks",
-      "url": "https://www.bordermail.com.au/story/9369667/two-ships-sink-near-hormuz-amid-surge-in-attacks/",
-      "source": "bordermail.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
-      "title": "Indonesian rescue centre takes in more orangutans as fires rage",
-      "url": "https://wtvbam.com/2026/10/15/indonesian-rescue-centre-takes-in-more-orangutans-as-fires-rage/",
-      "source": "wtvbam.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
-      "title": "Indonesian rescue centre takes in more orangutans as fires rage",
-      "url": "https://kelo.com/2026/10/15/indonesian-rescue-centre-takes-in-more-orangutans-as-fires-rage/",
-      "source": "kelo.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
-      "title": "Two ships sink near Hormuz amid surge in attacks",
-      "url": "https://www.westernadvocate.com.au/story/9369667/two-ships-sink-near-hormuz-amid-surge-in-attacks/",
-      "source": "westernadvocate.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
-      "title": "Two ships sink near Hormuz amid surge in attacks",
-      "url": "https://www.canberratimes.com.au/story/9369667/two-ships-sink-near-hormuz-amid-surge-in-attacks/",
-      "source": "canberratimes.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
-      "title": "Two ships sink near Hormuz amid surge in attacks",
-      "url": "https://www.standard.net.au/story/9369667/two-ships-sink-near-hormuz-amid-surge-in-attacks/",
-      "source": "standard.net.au",
       "kind": "News",
       "via": "GDELT"
     },
@@ -165,24 +192,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Singapore",
-      "date": "2026-10-15",
-      "title": "US stocks rebound from recent tech rout - Newsquawk Daily Asia - Pac Market Open",
-      "url": "http://www.zerohedge.com/markets/us-stocks-rebound-recent-tech-rout-newsquawk-daily-asia-pac-market-open",
-      "source": "zerohedge.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-15",
-      "title": "Singapore ship sinks in Strait of Hormuz after projectile attack",
-      "url": "https://voiceofvienna.org/singapore-ship-sinks-in-strait-of-hormuz-after-projectile-attack/",
-      "source": "voiceofvienna.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Myanmar",
       "date": "2026-10-11",
       "title": "September 2026",
@@ -240,7 +249,7 @@
       "country": "Singapore",
       "date": "2026-10-09",
       "title": "[Repost] Nobel Peace Prize for 2026 – Navi Pillay",
-      "url": "http://maruah.org/2026/10/09/repost-nobel-peace-prize-for-2026-navi-pillay/",
+      "url": "https://maruah.org/2026/10/09/repost-nobel-peace-prize-for-2026-navi-pillay/",
       "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
       "kind": "cso",
       "via": "Curated sources"
@@ -258,7 +267,7 @@
       "country": "Singapore",
       "date": "2026-10-09",
       "title": "[Repost] Nobel Peace Prize for 2026 – Navi Pillay",
-      "url": "https://maruah.org/2026/10/09/repost-nobel-peace-prize-for-2026-navi-pillay/",
+      "url": "http://maruah.org/2026/10/09/repost-nobel-peace-prize-for-2026-navi-pillay/",
       "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
       "kind": "cso",
       "via": "Curated sources"
@@ -386,303 +395,6 @@
       "title": "Thailand asks firms to cut egg exports after flood losses",
       "url": "https://wiky.com/2026/10/06/thailand-asks-firms-to-cut-egg-exports-after-flood-losses/",
       "source": "wiky.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-02",
-      "title": "Myanmar junta airstrikes target civilians to coerce Arakan Army into peace talks",
-      "url": "https://rfa.org/english/myanmar/2026/10/02/myanmar-rakhine-air-strike-civilians/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Pro - democracy activists increasingly vulnerable to authoritarian governments in Southeast Asia",
-      "url": "https://www.kasu.org/2026-10-02/pro-democracy-activists-increasingly-vulnerable-to-authoritarian-governments-in-southeast-asia",
-      "source": "kasu.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Canada child , forced labour risk imports hit $63B in 2025",
-      "url": "https://www.insideottawavalley.com/news/world-vision-canada-risky-imports-2026-report/article_31a4993f-1c7a-5910-9f1c-29e9789880d4.html",
-      "source": "insideottawavalley.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Pro - democracy activists increasingly vulnerable to authoritarian governments in Asia",
-      "url": "https://www.kacu.org/2026-10-02/pro-democracy-activists-increasingly-vulnerable-to-authoritarian-governments-in-asia",
-      "source": "kacu.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Pro - democracy activists increasingly vulnerable to authoritarian governments in Asia",
-      "url": "https://www.tspr.org/npr-news/2026-10-02/pro-democracy-activists-increasingly-vulnerable-to-authoritarian-governments-in-asia",
-      "source": "tspr.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Pro - democracy activists increasingly vulnerable to authoritarian governments in Asia",
-      "url": "https://www.wboi.org/npr-news/2026-10-02/pro-democracy-activists-increasingly-vulnerable-to-authoritarian-governments-in-asia",
-      "source": "wboi.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Pro - democracy activists increasingly vulnerable to authoritarian governments in Asia",
-      "url": "https://www.wsiu.org/2026-10-02/pro-democracy-activists-increasingly-vulnerable-to-authoritarian-governments-in-asia",
-      "source": "wsiu.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Pro - democracy activists increasingly vulnerable to authoritarian governments in Asia",
-      "url": "https://www.wglt.org/2026-10-02/pro-democracy-activists-increasingly-vulnerable-to-authoritarian-governments-in-asia",
-      "source": "wglt.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Switzerland bet on carbon offsets shows little payoff so far",
-      "url": "https://www.swissinfo.ch/eng/emissions-reduction/switzerlands-bet-on-carbon-offsets-shows-little-payoff-so-far/92015148",
-      "source": "swissinfo.ch",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "Thailand floods ease as water recedes in Bangkok",
-      "url": "http://www.thailandnews.net/news/279346804/thailand-floods-ease-as-water-recedes-in-bangkok",
-      "source": "thailandnews.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-02",
-      "title": "1win Charity Directs Over $170 , 000 to Charitable Purposes in India",
-      "url": "https://www.thailand-business-news.com/pr-news/1win-charity-directs-over-170000-to-charitable-purposes-in-india",
-      "source": "thailand-business-news.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-02",
-      "title": "A film about Tibet was delayed as Xi visited India",
-      "url": "https://www.wokv.com/entertainment/india-china-repair/A6TQAEXX6UY53AUAYUJJX3COVI/",
-      "source": "wokv.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-02",
-      "title": "Is  Islamophobia  irrational ? | Blaze Media",
-      "url": "https://www.theblaze.com/columns/opinion/is-islamophobia-irrational",
-      "source": "theblaze.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-02",
-      "title": "As India and China repair ties , a Tibet film tells the story of a forgotten resistance",
-      "url": "https://lethbridgeherald.com/entertainment/entertainment-news/2026/10/01/as-india-and-china-repair-ties-a-tibet-film-tells-the-story-of-a-forgotten-resistance/",
-      "source": "lethbridgeherald.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-02",
-      "title": "As India and China repair ties , a Tibet film tells the story of a forgotten resistance – Brandon Sun",
-      "url": "https://www.brandonsun.com/entertainment/2026/10/01/as-india-and-china-repair-ties-a-tibet-film-tells-the-story-of-a-forgotten-resistance",
-      "source": "brandonsun.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-02",
-      "title": "As India and China repair ties , a Tibet film tells the story of a forgotten resistance",
-      "url": "https://mymotherlode.com/news/world/11187259/as-india-and-china-repair-ties-a-tibet-film-tells-the-story-of-a-forgotten-resistance.html",
-      "source": "mymotherlode.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-02",
-      "title": "A film about Tibet was delayed as Xi visited India",
-      "url": "https://www.wsbradio.com/entertainment/india-china-repair/A6TQAEXX6UY53AUAYUJJX3COVI/",
-      "source": "wsbradio.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-02",
-      "title": "Ginger Journey : Natl Guard Partnership Program",
-      "url": "https://nebraska.tv/news/local/gingers-journey-natl-guard-partnership-program",
-      "source": "nebraska.tv",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-02",
-      "title": "As India and China repair ties , a Tibet film tells the story of a forgotten resistance",
-      "url": "https://www.wral.com/news/ap/929b1-as-india-and-china-repair-ties-a-tibet-film-tells-the-story-of-a-forgotten-resistance/",
-      "source": "wral.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-02",
-      "title": "Media as Punching Bag from Nixon to Trump",
-      "url": "https://flaglerlive.com/media-as-punching-bag-from-nixon-to-trump/",
-      "source": "flaglerlive.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-02",
-      "title": "Midwest Honor Flight Mission 33 : Moments at the Vietnam Memorial Wall",
-      "url": "https://www.ktiv.com/2026/10/01/midwest-honor-flight-mission-33-moments-vietnam-memorial-wall/",
-      "source": "ktiv.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-02",
-      "title": "Over 200 organizations unite to protest against Israel on anniversary of Gaza genocide",
-      "url": "https://www.presstv.co.uk/Detail/2026/10/02/777436/Over-200-organizations-unite-to-protest-against-Israel-on-anniversary-of-Gaza-genocide",
-      "source": "presstv.co.uk",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-02",
-      "title": "India medal tally rises to 65 - The Hitavada",
-      "url": "https://www.thehitavada.com/Encyc/2026/10/2/indias-medal-tally-rises-to-65.html",
-      "source": "thehitavada.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-02",
-      "title": "Flydubai incident raises a question : Should cockpit doors be locked from inside ? ",
-      "url": "https://www.businesstoday.in/latest/trends/story/flydubai-incident-raises-a-question-should-cockpit-doors-be-locked-from-inside-559197-2026-10-02",
-      "source": "businesstoday.in",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-02",
-      "title": "Does Sarawak have the moral right to bar Malaysians from entering ? ",
-      "url": "https://www.freemalaysiatoday.com/category/opinion/2026/10/02/does-sarawak-have-the-moral-right-to-bar-malaysians-from-entering",
-      "source": "freemalaysiatoday.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-02",
-      "title": "Let travellers check entry status before flying to Sarawak , state govt urged",
-      "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/02/let-travellers-check-entry-status-before-flying-to-sarawak-state-govt-urged",
-      "source": "freemalaysiatoday.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-02",
-      "title": "AI : Private ownership , collective risks",
-      "url": "https://aliran.com/web-specials/ai-private-ownership-collective-risks",
-      "source": "aliran.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-02",
-      "title": "U . S . stocks struggle for direction Thursday",
-      "url": "http://www.afghanistannews.net/news/279342264/u-s-stocks-struggle-for-direction-thursday",
-      "source": "afghanistannews.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.utahindependent.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "utahindependent.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.pakistantelegraph.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "pakistantelegraph.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.saltlakecitysun.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "saltlakecitysun.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-02",
-      "title": "Wall Street directionless on first October trading day",
-      "url": "http://www.ohiostandard.com/news/279342264/wall-street-directionless-on-first-october-trading-day",
-      "source": "ohiostandard.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Timor-Leste",
-      "date": "2026-10-02",
-      "title": "Beyond Treaties : How investment disputes trap Pacific nations",
-      "url": "https://pina.com.fj/2026/10/02/beyond-treaties-how-investment-disputes-trap-pacific-nations/",
-      "source": "pina.com.fj",
       "kind": "News",
       "via": "GDELT"
     }
