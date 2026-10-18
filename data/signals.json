@@ -1,13 +1,175 @@
 {
-  "generated": "2026-10-17T01:19:58+00:00",
+  "generated": "2026-10-18T01:05:16+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Malaysia",
+      "date": "2026-10-18",
+      "title": "Malaysia immigration problem : A question of law , responsibility and humanity",
+      "url": "https://www.thestar.com.my/opinion/columnists/through-many-windows/2026/10/18/malaysia039s-immigration-problem-a-question-of-law-responsibility-and-humanity",
+      "source": "thestar.com.my",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-17",
+      "title": "The Great Calcutta Riots : Challenging Communal Narratives Of 1946 - OpEd",
+      "url": "https://www.eurasiareview.com/16102026-the-great-calcutta-riots-challenging-communal-narratives-of-1946-oped/",
+      "source": "eurasiareview.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-17",
+      "title": "Salman refused to stay silent . His brother paid the price",
+      "url": "https://www.sbs.com.au/news/article/family-of-migrant-targeted-in-pakistan-reach-of-transnational-repression/ee4lshtux",
+      "source": "sbs.com.au",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-17",
+      "title": "Five suspected UNLF ( G - 5 ) members apprehended in Manipur",
+      "url": "https://morungexpress.com/five-suspected-unlf-g-5-members-apprehended-in-manipur",
+      "source": "morungexpress.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-17",
+      "title": "Just take 30 mins to settle Sirul extradition , says ex - AG",
+      "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/17/just-30mins-to-settle-sirul-s-extradition-says-ex-ag",
+      "source": "freemalaysiatoday.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-17",
+      "title": "Vytautas the Great invited Muslims to Lithuania  not because he was a leftist  – interview",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3080270/vytautas-the-great-invited-muslims-to-lithuania-not-because-he-was-a-leftist-interview",
+      "source": "lrt.lt",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-17",
+      "title": "Teen sisters die after fire breaks out at two adjourning homes in Perak",
+      "url": "https://www.asiaone.com:443/malaysia/teen-sisters-die-fire-breaks-out-two-homes-perak",
+      "source": "asiaone.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-17",
+      "title": "Teen sisters die after fire breaks out at two adjourning homes in Perak",
+      "url": "https://www.asiaone.com/malaysia/teen-sisters-die-fire-breaks-out-two-homes-perak",
+      "source": "asiaone.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-17",
+      "title": "Mark Oppenheimer  hatchet job on South Africa  ",
+      "url": "https://www.politicsweb.co.za/news/mark-oppenheimers-hatchet-job-on-south-africa",
+      "source": "politicsweb.co.za",
+      "kind": "News",
+      "via": "GDELT"
+    },
     {
       "country": "Singapore",
       "date": "2026-10-17",
       "title": "Maritime Piracy in 2026 Fell to 1992 Levels Despite Somalia - Yemen Surge",
       "url": "https://maritime-executive.com/article/maritime-piracy-in-2026-fell-to-1992-levels-despite-somalia-yemen-surge",
       "source": "maritime-executive.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-16",
+      "title": "A comforting hand for grieving families",
+      "url": "https://www.thestar.com.my/news/nation/2026/10/17/a-comforting-hand-for-grieving-families",
+      "source": "thestar.com.my",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-16",
+      "title": "Finding Silver Linings Amid Haze of Climatic Uncertainty",
+      "url": "https://www.globalissues.org/news/2026/10/16/44362",
+      "source": "globalissues.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-16",
+      "title": "Indonesia president ready to accept foreign assistance to combat fires , foreign minister says",
+      "url": "https://www.asiaone.com:443/asia/haze-indonesia-accept-foreign-assistance",
+      "source": "asiaone.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-16",
+      "title": "Indonesia president ready to accept foreign assistance to combat fires , foreign minister says",
+      "url": "https://www.asiaone.com/asia/haze-indonesia-accept-foreign-assistance",
+      "source": "asiaone.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-16",
+      "title": "  Clean air is not a favour : Indonesia neighbours fed up with acrid haze as Singapore threatens to prosecute | Indonesia",
+      "url": "https://www.theguardian.com/world/2026/oct/16/singapore-threatens-prosecute-indonesia-fires-toxic-haze-smoke",
+      "source": "theguardian.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-16",
+      "title": "Saudi Arabia flight suspension : Full list of Indian , Dubai , UAE , Qatar , US , Japan and European flights cancelled",
+      "url": "https://www.livemint.com/news/world/saudi-arabia-flight-suspension-full-list-of-indian-dubai-uae-qatar-us-japan-and-european-flights-cancelled-11792139092771.html",
+      "source": "livemint.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-16",
+      "title": "Haze is a human rights issue",
+      "url": "https://aliran.com/civil-society-voices/haze-is-a-human-rights-issue",
+      "source": "aliran.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-16",
+      "title": "  Clean air is not a favour : Indonesia neighbours fed up with acrid haze as Singapore threatens to prosecute",
+      "url": "https://www.aol.co.uk/articles/clean-air-not-favour-indonesia-083401000.html",
+      "source": "aol.co.uk",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-16",
+      "title": "Helicopter operator says CAAM did not flag any maintenance flaw",
+      "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/16/helicopter-operator-says-caam-flagged-no-aircraft-maintenance-flaws",
+      "source": "freemalaysiatoday.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -68,36 +230,9 @@
     {
       "country": "Singapore",
       "date": "2026-10-16",
-      "title": "Indonesia president ready to accept foreign assistance to combat fires , foreign minister says",
-      "url": "https://www.asiaone.com:443/asia/haze-indonesia-accept-foreign-assistance",
-      "source": "asiaone.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
       "title": "West Asian War : Ansar Allah Hits Enemy HQ in Aden",
       "url": "https://www.nakedcapitalism.com/2026/10/west-asian-war-ansar-allah-hit-al-maashiq-saudi-arabia-centcom-hormuz.html",
       "source": "nakedcapitalism.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
-      "title": "Indonesia president ready to accept foreign assistance to combat fires , foreign minister says",
-      "url": "https://www.asiaone.com/asia/haze-indonesia-accept-foreign-assistance",
-      "source": "asiaone.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-16",
-      "title": "  Clean air is not a favour : Indonesia neighbours fed up with acrid haze as Singapore threatens to prosecute | Indonesia",
-      "url": "https://www.theguardian.com/world/2026/oct/16/singapore-threatens-prosecute-indonesia-fires-toxic-haze-smoke",
-      "source": "theguardian.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -107,15 +242,6 @@
       "title": "New book details sexual violence endured by Timorese women from Indonesian soldiers",
       "url": "https://www.abc.net.au/news/2026-10-17/new-book-details-sexual-violence-endured-by-timorese-women/107154784",
       "source": "abc.net.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-16",
-      "title": "Leaderless haze control - Editorial - The Jakarta Post",
-      "url": "http://www.thejakartapost.com/opinion/2026/10/16/leaderless-haze-control",
-      "source": "thejakartapost.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -161,33 +287,6 @@
       "title": "Now … to work - BusinessWorld Online",
       "url": "http://bworldonline.com/opinion/2026/10/14/786940/now-to-work/",
       "source": "bworldonline.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-15",
-      "title": "Iran , 12 delegations walk out on Herzogs CICA address as Tehran demands Israels ouster",
-      "url": "https://www.presstv.co.uk/Detail/2026/10/15/778378/Iran,-12-countries-walk-out-during-Israeli-president%E2%80%99s-CICA-speech,-as-Iran-calls-for-Israel%E2%80%99s-expulsion-%20class=column-beyond-headlines-h-p",
-      "source": "presstv.co.uk",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-15",
-      "title": "F1 stringing fans along as deadline passes for season finale decision",
-      "url": "https://thejudge13.com/2026/10/15/f1-stringing-fans-along-as-deadline-passes-for-season-finale-decision/",
-      "source": "thejudge13.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-15",
-      "title": "People need to be treated equally - Navi Pillay",
-      "url": "https://aliran.com/web-specials/people-need-to-be-treated-equally-navi-pillay",
-      "source": "aliran.com",
       "kind": "News",
       "via": "GDELT"
     },
