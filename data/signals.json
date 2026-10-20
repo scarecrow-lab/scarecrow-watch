@@ -1,7 +1,493 @@
 {
-  "generated": "2026-10-19T01:18:36+00:00",
+  "generated": "2026-10-20T01:51:19+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Indonesia",
+      "date": "2026-10-20",
+      "title": "Indonesia Accepts Foreign Help As Deadly Wildfires Spread Haze Amid Corruption Scandal And Market Crash ( Worthy News In - Depth ) ",
+      "url": "https://www.worthynews.com/118306-indonesia-accepts-foreign-help-as-deadly-wildfires-spread-haze-amid-corruption-scandal-and-market-crash-worthy-news-in-depth",
+      "source": "worthynews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-20",
+      "title": "Other Sports : Bahrain sweep group at Asian tournament",
+      "url": "https://www.gdnonline.com:443/Details/1410233/Bahrain-sweep-group-at-Asian-tournament",
+      "source": "gdnonline.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-20",
+      "title": "modern geopolitics as minced by kitchen philosophers ..... ",
+      "url": "https://www.yourdemocracy.net.au/drupal/node/61484",
+      "source": "yourdemocracy.net.au",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-20",
+      "title": "The Geopolitics Of The Persian Gulf And War With Iran - Analysis",
+      "url": "https://www.eurasiareview.com/20102026-the-geopolitics-of-the-persian-gulf-and-war-with-iran-analysis/",
+      "source": "eurasiareview.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-20",
+      "title": "OUR  HUMAN STORIE : Lor & Bidania On The Hmong American ... ",
+      "url": "https://volumeone.org/articles/2026/10/19/406012-our-human-stories-lor-and-bidania-on-the-hmong-american-experience",
+      "source": "volumeone.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-20",
+      "title": "France : Partial curfews issued in Paris , Nice after unrest",
+      "url": "https://www.dw.com/en/france-partial-curfews-issued-in-paris-nice-after-unrest/live-79707186",
+      "source": "dw.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-19",
+      "title": "Rare photos of Aung San Suu Kyi spark renewed calls for her release",
+      "url": "https://rfa.org/english/myanmar/2026/10/19/myanmar-burma-aung-san-suu-kyi-king-charles/",
+      "source": "Radio Free Asia",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "2026 Warsaw Film Festival Recap : These 2 Documentaries Stood Out",
+      "url": "https://www.firstshowing.net/2026/2026-warsaw-film-festival-recap-2-documentaries-stood-out/",
+      "source": "firstshowing.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "Reflections from Saigon : Love of country as a driver of growth",
+      "url": "https://www.manilatimes.net/2026/10/20/opinion/columns/reflections-from-saigon-love-of-country-as-a-driver-of-growth/2448846",
+      "source": "manilatimes.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "Socialism Glossy Makeover Hides a Graveyard – One America News Network",
+      "url": "https://www.oann.com/commentary/socialisms-glossy-makeover-hides-a-graveyard/",
+      "source": "oann.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "Cambodia landmine , ERW casualties fall to 32 during Jan .- Sept . period",
+      "url": "http://www.cambodiantimes.com/news/279384523/cambodia-landmine-erw-casualties-fall-to-32-during-jan-sept-period",
+      "source": "cambodiantimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "Behind the Veil of Religious Harmony in Cambodia",
+      "url": "https://thediplomat.com/2026/10/behind-the-veil-of-religious-harmony-in-cambodia/",
+      "source": "thediplomat.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "Weekly Sanctions Update : October 5 , 2026",
+      "url": "https://www.mondaq.com:443/unitedstates/money-laundering/1856702/weekly-sanctions-update-october-5-2026",
+      "source": "mondaq.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "Angelina Jolie foundation has spent 20 years in a 150 , 720 - acre Cambodian forest where elephants and pangolins still roam , and its rangers pulled about 4 . 8 miles of wire snares out in 2025",
+      "url": "https://www.ecoticias.com/en/angelina-jolies-foundation-has-spent-20-years-in-a-150720-acre-cambodian-forest-where-elephants-and-pangolins-still-roam-and-its-rangers-pulled-about-4-8-miles-of-wire-snares-out-in-2025/52110/",
+      "source": "ecoticias.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "Will a Nobel solve the world Trump problem ? He thinks so",
+      "url": "https://www.dailymaverick.co.za/opinionista/2026-10-19-why-donald-trumps-quest-for-the-nobel-peace-prize-was-a-dangerous-delusion/",
+      "source": "dailymaverick.co.za",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "Thailand lets Myanmar refugees work to cope with labor gaps",
+      "url": "https://www.dw.com/en/myanmar-refugees-find-hope-in-thailands-work-program/a-79697921",
+      "source": "dw.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "Thailand lets Myanmar refugees work to cope with labor gaps",
+      "url": "https://www.dw.com/en/we-dont-have-to-wait-for-others-to-support-us-myanmar-refugees-find-hope-in-thailands-work-program/a-79697921",
+      "source": "dw.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "Marxists , Deception , And Violence",
+      "url": "https://www.americanthinker.com/articles/2026/10/marxists-deception-and-violence/",
+      "source": "americanthinker.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-19",
+      "title": "Sanctions Update : October 5 , 2026",
+      "url": "https://www.mondaq.com:443/unitedstates/export-controls-trade-investment-sanctions/1856408/sanctions-update-october-5-2026",
+      "source": "mondaq.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "Guterres honours Indonesian troops who paid  ultimate sacrifice  Global Issues",
+      "url": "https://www.globalissues.org/news/2026/10/19/44378",
+      "source": "globalissues.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "A future without a political surname | The Manila Times",
+      "url": "https://www.manilatimes.net/2026/10/20/opinion/columns/a-future-without-a-political-surname/2448876",
+      "source": "manilatimes.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "ICANN87 in Bali Puts DNS Abuse and New gTLD Implementation in Focus",
+      "url": "https://circleid.com/posts/icann87-in-bali-puts-dns-abuse-and-new-gtld-implementation-in-focus",
+      "source": "circleid.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "Drum - Tidbit",
+      "url": "https://www.postcourier.com.pg/drum201026/",
+      "source": "postcourier.com.pg",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "Resonance of Hope : The Philippine World March , Stirring Emotions and Connecting Hearts for Peace and Integral Regeneration",
+      "url": "http://www.philippinetimes.com/news/279384625/resonance-of-hope-the-philippine-world-march-stirring-emotions-and-connecting-hearts-for-peace-and-integral-regeneration",
+      "source": "philippinetimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "When diplomacy arrived in Jakarta and justice did not",
+      "url": "https://www.middleeastmonitor.com/20261019-when-diplomacy-arrived-in-jakarta-and-justice-did-not/",
+      "source": "middleeastmonitor.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "Almost all lawsuits brought in Chicago federal court over deadly Boeing 737 MAX crashes have been resolved",
+      "url": "https://chicago.suntimes.com/the-watchdogs/2026/10/19/boeing-737-max-indonesia-lion-air-ethiopia-fatal-crash-lawsuits-chicago",
+      "source": "chicago.suntimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "Resonance of Hope : The Philippine World March , Stirring Emotions and Connecting Hearts for Peace and Integral Regeneration",
+      "url": "https://www.pressenza.com/2026/10/resonance-of-hope-the-philippine-world-march-stirring-emotions-and-connecting-hearts-for-peace-and-integral-regeneration/",
+      "source": "pressenza.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "Voting open for Australian Story : Viewer Choice to decide 30 most unforgettable episodes",
+      "url": "https://www.abc.net.au/news/2026-10-19/australian-story-countdown-tofind-most-unforgettable-episodes/106086384",
+      "source": "abc.net.au",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "AI wildfire platform Satellites on Fire seeks Indonesia partnerships as regional haze worsens",
+      "url": "https://www.eco-business.com/news/ai-wildfire-platform-satellites-on-fire-seeks-indonesia-partnerships-as-regional-haze-worsens/",
+      "source": "eco-business.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "Australia and Indonesia conduct joint military exercises . Meanwhile in West Papua , the Indonesian security forces conduct military operations against Papuan civilians . – LiveNews . co . nz",
+      "url": "https://livenews.co.nz/2026/10/19/australia-and-indonesia-conduct-joint-military-exercises-meanwhile-in-west-papua-the-indonesian-security-forces-conduct-military-operations-against-papuan-civilians/",
+      "source": "livenews.co.nz",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": " [ Vantage Point ] JAZA painful question : Why arent we winning ? ",
+      "url": "https://www.rappler.com/voices/thought-leaders/vantage-point-jaza-painful-question-why-philippines-not-winning-investments/",
+      "source": "rappler.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-19",
+      "title": "Interview Question The Commentators Ignored : NZ And The EU",
+      "url": "https://www.scoop.co.nz/stories/HL2610/S00048/interview-question-the-commentators-ignored-nz-and-the-eu.htm",
+      "source": "scoop.co.nz",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "EGYPT WEIGHS DEPLOYMENT : Parliament To Debate Sending Troops To Saudi Arabia Amid Deadly Houthi Attacks",
+      "url": "https://www.theyeshivaworld.com/news/israel-news/2611640/egypt-weighs-deployment-parliament-to-debate-sending-troops-to-saudi-arabia-amid-deadly-houthi-attacks.html",
+      "source": "theyeshivaworld.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "Greybull man receives Congressional Gold Medal",
+      "url": "https://www.gillettenewsrecord.com/news/wyoming/article_ccb6bda6-fa06-4ccf-8ca3-4471f689d0c4.html",
+      "source": "gillettenewsrecord.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "Bishop Pham fled Vietnam as a refugee . Here how he found God amid his family treacherous journey . ",
+      "url": "https://www.americamagazine.org/podcasts/2026/10/19/bishop-pham-spiritual-life-james-martin-refugee/",
+      "source": "americamagazine.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "Jonathan Cook : The united kingdom Kremlin Finger - Pointing",
+      "url": "https://consortiumnews.com/2026/10/19/jonathan-cook-uks-laughable-kremlin-finger-pointing/",
+      "source": "consortiumnews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "What behind Egypt move towards possible military involvement in Saudi - Yemen conflict ? ",
+      "url": "https://www.al-monitor.com/originals/2026/10/whats-behind-egypts-move-towards-possible-military-involvement-saudi-yemen",
+      "source": "al-monitor.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "Explainer - What behind Egypt move towards possible military involvement in Saudi - Yemen conflict ? ",
+      "url": "https://www.al-monitor.com/originals/2026/10/explainer-whats-behind-egypts-move-towards-possible-military-involvement-saudi",
+      "source": "al-monitor.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "Egypt pledge to support Saudi Arabia against Houthis : What on the table ? ",
+      "url": "https://www.thenationalnews.com/news/mena/2026/10/19/egypts-pledge-to-support-saudi-arabia-against-houthis-whats-on-the-table/",
+      "source": "thenationalnews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "Why Britain liberal Zionists must watch NAZA",
+      "url": "https://www.middleeasteye.net/opinion/why-britains-liberal-zionists-must-watch-naza",
+      "source": "middleeasteye.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "Explainer - What behind Egypt move towards possible military involvement in Saudi - Yemen conflict ? ",
+      "url": "https://whbl.com/2026/10/19/explainer-whats-behind-egypts-move-towards-possible-military-involvement-in-saudi-yemen-conflict/",
+      "source": "whbl.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "Why Noah Went to the Woods",
+      "url": "https://www.outsideonline.com/outdoor-adventure/exploration-survival/why-noah-went-woods/",
+      "source": "outsideonline.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "North Korea barbecue boom and food divide | The Straits Times",
+      "url": "https://www.straitstimes.com/asia/east-asia/north-koreas-barbecue-boom-a-taste-of-prosperity-or-a-widening-divide",
+      "source": "straitstimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-19",
+      "title": "Fifty - six trips around the sun : First of 7 essays",
+      "url": "https://americanbazaaronline.com/2026/10/19/fifty-six-trips-around-the-sun-first-of-7-essays-490290/",
+      "source": "americanbazaaronline.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-19",
+      "title": "Saudi Arabia Tourism Crisis : Riyadh Airport and Vision 2030",
+      "url": "https://eturbonews.com/saudi-arabia-tourism-crisis-riyadh-airport/",
+      "source": "eturbonews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-19",
+      "title": "Japan : Amazon contractor reportedly dismisses 50 employees after offering choice between relocation to Malaysia and termination , with post - employment procedures delayed",
+      "url": "https://www.business-humanrights.org/en/latest-news/japan-amazon-contractor-reportedly-dismisses-50-employees-after-offering-choice-between-relocation-to-malaysia-and-termination-with-post-employment-procedures-delayed-incl-co-comment/",
+      "source": "business-humanrights.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-19",
+      "title": "Enforcement must not become intimidation - Suhakam",
+      "url": "https://aliran.com/civil-society-voices/enforcement-must-not-become-intimidation-suhakam",
+      "source": "aliran.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-19",
+      "title": "Malaysia Airlines Lifts Jeddah and Madinah Halt : Pilgrims Can Fly Again Despite Houthi Risk",
+      "url": "https://www.travelerstoday.com/articles/61138/20261018/malaysia-airlines-lifts-jeddah-madinah-halt-pilgrims-can-fly-again-despite-houthi-risk.htm",
+      "source": "travelerstoday.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-19",
+      "title": "COMMENT | What happened to Noorizwan could also befall you",
+      "url": "https://www.malaysiakini.com/columns/887349-comment-what-happened-to-noorizwan-could-also-befall-you",
+      "source": "malaysiakini.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-18",
+      "title": "WACC welcomes Laura Thornton",
+      "url": "https://www.postandcourier.com/moultrie-news/moultrie-news/news/wacc-welcomes-laura-thornton/article_c426df37-fcda-4b79-8dad-94393acd13db.html",
+      "source": "postandcourier.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-18",
+      "title": "LNG : Australia clashes with Asian energy giants over gas export crackdown",
+      "url": "https://www.brisbanetimes.com.au/business/companies/australia-clashes-with-asian-energy-giants-over-gas-export-crackdown-20261019-p61685.html",
+      "source": "brisbanetimes.com.au",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-18",
+      "title": "Jaghori or Pakistan ? Mystery surrounds Qurbani project",
+      "url": "https://pajhwok.com/2026/10/18/jaghori-or-pakistan-mystery-surrounds-qurbani-project/",
+      "source": "pajhwok.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-18",
+      "title": "10 Grim Separation Walls From Around The World",
+      "url": "https://listverse.com/2014/09/27/10-grim-separation-walls-from-around-the-world/",
+      "source": "listverse.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-18",
+      "title": "Malaysia immigration problem : A question of law , responsibility and humanity",
+      "url": "https://www.thestar.com.my/opinion/columnists/through-many-windows/2026/10/18/malaysia039s-immigration-problem-a-question-of-law-responsibility-and-humanity",
+      "source": "thestar.com.my",
+      "kind": "News",
+      "via": "GDELT"
+    },
     {
       "country": "Myanmar",
       "date": "2026-10-18",
@@ -17,24 +503,6 @@
       "title": "Manipur Gunfight : One Dead , Four Injured Amid Escalating Kuki - Naga Tensions",
       "url": "https://dailypioneer.com/india/manipur-gunfight-claims-one-life-leaves-four-injured-amid-kuki-naga-tensions",
       "source": "dailypioneer.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-18",
-      "title": "Solar energy increasingly becoming part of major disaster relief efforts | The Arkansas Democrat - Gazette",
-      "url": "https://www.arkansasonline.com/news/2026/oct/18/solar-energy-increasingly-becoming-part-of-major/",
-      "source": "arkansasonline.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-18",
-      "title": "WACC welcomes Laura Thornton",
-      "url": "https://www.postandcourier.com/moultrie-news/moultrie-news/news/wacc-welcomes-laura-thornton/article_c426df37-fcda-4b79-8dad-94393acd13db.html",
-      "source": "postandcourier.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -75,119 +543,56 @@
       "via": "GDELT"
     },
     {
-      "country": "Thailand",
-      "date": "2026-10-18",
-      "title": "10 Grim Separation Walls From Around The World",
-      "url": "https://listverse.com/2014/09/27/10-grim-separation-walls-from-around-the-world/",
-      "source": "listverse.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-18",
-      "title": "Drum - Tidbit",
-      "url": "https://www.postcourier.com.pg/drum191026/",
-      "source": "postcourier.com.pg",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-18",
-      "title": "  Otakus will save the world : Gen - Z anime fans take over France protests with One Piece flags , Gojo memes and cosplay",
-      "url": "https://www.indiatimes.com/trending/otakus-will-save-the-world-gen-z-anime-fans-take-over-frances-protests-with-one-piece-flags-gojo-memes-and-cosplay/articleshow/135031021.html",
-      "source": "indiatimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-18",
-      "title": "Netanyahu Fires Back at Obama :  Our Land Is Not Stolen Land  ",
-      "url": "https://legalinsurrection.com/2026/10/netanyahu-fires-back-at-obama-our-land-is-not-stolen-land/",
-      "source": "legalinsurrection.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-18",
-      "title": "Haze needs order , not confusion",
-      "url": "https://aliran.com/civil-society-voices/haze-needs-order-not-confusion",
-      "source": "aliran.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-18",
-      "title": "Nepal working on expediting death certs for missing Malaysians",
-      "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/18/nepal-working-on-expediting-death-certs-for-missing-malaysians",
-      "source": "freemalaysiatoday.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-18",
-      "title": "Fatalities reported in  disaster  fire at Canadian military base",
-      "url": "https://www.lbc.co.uk/article/fatalities-fire-canada-military-base-5Hjdk5H_2/",
-      "source": "lbc.co.uk",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-18",
-      "title": "Four killed while fighting wildfire in Indonesia Mount Bromo National Park",
-      "url": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/18/four-killed-while-fighting-wildfire-in-indonesias-mount-bromo-national-park",
-      "source": "thestar.com.my",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-18",
-      "title": "Indonesian rescue centre takes in more orangutans as fires rage",
-      "url": "https://www.texarkanagazette.com/news/2026/oct/17/indonesian-rescue-centre-takes-in-more-orangutans/",
-      "source": "texarkanagazette.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-18",
-      "title": "Inside the information war that is shaping the story of Gaza",
-      "url": "https://www.thenational.scot/news/26646675.inside-information-war-shaping-story-gaza/",
-      "source": "thenational.scot",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-18",
-      "title": "Watergate , A Hoax ? ",
-      "url": "https://www.zerohedge.com/geopolitical/watergate-hoax",
-      "source": "zerohedge.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-18",
-      "title": "Mikie Sherrill Upset About Planned Ft . Hood Terrorist Execution , but Her Reason Is Bananas",
-      "url": "https://redstate.com/bobhoge/2026/10/17/mikie-sherrills-upset-about-planned-ft-hood-terrorist-execution-but-her-reason-is-bananas-n2208281",
-      "source": "redstate.com",
+      "country": "Cambodia",
+      "date": "2026-10-17",
+      "title": "Agence Kampuchea Presse",
+      "url": "https://www.akp.gov.kh/post/detail/384110",
+      "source": "akp.gov.kh",
       "kind": "News",
       "via": "GDELT"
     },
     {
       "country": "Malaysia",
-      "date": "2026-10-18",
-      "title": "Malaysia immigration problem : A question of law , responsibility and humanity",
-      "url": "https://www.thestar.com.my/opinion/columnists/through-many-windows/2026/10/18/malaysia039s-immigration-problem-a-question-of-law-responsibility-and-humanity",
-      "source": "thestar.com.my",
+      "date": "2026-10-17",
+      "title": "The Great Calcutta Riots : Challenging Communal Narratives Of 1946 - OpEd",
+      "url": "https://www.eurasiareview.com/16102026-the-great-calcutta-riots-challenging-communal-narratives-of-1946-oped/",
+      "source": "eurasiareview.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-17",
+      "title": "Salman refused to stay silent . His brother paid the price",
+      "url": "https://www.sbs.com.au/news/article/family-of-migrant-targeted-in-pakistan-reach-of-transnational-repression/ee4lshtux",
+      "source": "sbs.com.au",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-17",
+      "title": "Just take 30 mins to settle Sirul extradition , says ex - AG",
+      "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/17/just-30mins-to-settle-sirul-s-extradition-says-ex-ag",
+      "source": "freemalaysiatoday.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-17",
+      "title": "Vytautas the Great invited Muslims to Lithuania  not because he was a leftist  – interview",
+      "url": "https://www.lrt.lt/en/news-in-english/19/3080270/vytautas-the-great-invited-muslims-to-lithuania-not-because-he-was-a-leftist-interview",
+      "source": "lrt.lt",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-17",
+      "title": "Teen sisters die after fire breaks out at two adjourning homes in Perak",
+      "url": "https://www.asiaone.com:443/malaysia/teen-sisters-die-fire-breaks-out-two-homes-perak",
+      "source": "asiaone.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -224,186 +629,6 @@
       "title": "Fed chief warns of  bumpy  AI ride as job impact unclear",
       "url": "http://europe.chinadaily.com.cn/a/202610/17/WS6ad2c1c4e4b06d4aa05634ba.html",
       "source": "europe.chinadaily.com.cn",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-17",
-      "title": "Colombia Opens Jerusalem Embassy and Restores Israel Trade Deal , Defying Arab Pressure",
-      "url": "https://www.latintimes.com/colombia-opens-jerusalem-embassy-restores-israel-trade-deal-defying-arab-pressure-600249",
-      "source": "latintimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-17",
-      "title": "Egypt Sisi pledges to leave office when term ends in 2030",
-      "url": "https://www.geo.tv/latest/687025-egypts-sisi-pledges-to-leave-office-when-term-ends-in-2030",
-      "source": "geo.tv",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-17",
-      "title": "State current path is familiar and crippling",
-      "url": "https://www.observertoday.com/opinion/commentary/2026/10/states-current-path-is-familiar-and-crippling/",
-      "source": "observertoday.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-17",
-      "title": "Vytautas the Great invited Muslims to Lithuania  not because he was a leftist  – interview",
-      "url": "https://www.lrt.lt/en/news-in-english/19/3080270/vytautas-the-great-invited-muslims-to-lithuania-not-because-he-was-a-leftist-interview",
-      "source": "lrt.lt",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-17",
-      "title": "State current path is familiar and crippling",
-      "url": "https://www.observertoday.com/opinion/commentary/2026/10/states-current-path-is-familiar-and-crippling-2/",
-      "source": "observertoday.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-17",
-      "title": "A 7am email to employer ,  I love you  on clothes and a chilling  leaving this world  note on wife birthday : What preceded Malayali techie couple deaths in Gurgaon flat | Gurgaon News",
-      "url": "https://timesofindia.indiatimes.com/city/gurgaon/a-7am-email-to-employer-i-love-you-on-clothes-and-a-chilling-leaving-this-world-note-on-wifes-birthday-what-preceded-malayali-techie-couples-deaths-in-gurgaon-flat/articleshow/135006150.cms",
-      "source": "timesofindia.indiatimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-17",
-      "title": "Guest Post : Max Harris | Kiwiblog",
-      "url": "https://www.kiwiblog.co.nz/2026/10/guest_post_max_harris.html",
-      "source": "kiwiblog.co.nz",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-17",
-      "title": "EXCLUSIVE : Delta Force Dale Comstock : Hamas is Playing Victim , No Genocide in Gaza",
-      "url": "https://www.vladtv.com/article/316248/delta-forces-dale-comstock-hamas-is-playing-victim-no-genocide-in-gaza",
-      "source": "vladtv.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-17",
-      "title": "Vietnamese students at Baylor celebrate cultural heritage with annual Autumn Moon",
-      "url": "https://baylorlariat.com/2026/10/17/vietnamese-students-at-baylor-celebrate-cultural-heritage-with-annual-autumn-moon/",
-      "source": "baylorlariat.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-17",
-      "title": "Greybull man receives Congressional Gold Medal",
-      "url": "https://www.wyomingnews.com/laramieboomerang/laramieboomerang/news/greybull-man-receives-congressional-gold-medal/article_6f84c86a-73b1-462c-b17b-8edf4501308e.html",
-      "source": "wyomingnews.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-17",
-      "title": "Are we ready to battle for the Gospel ? ",
-      "url": "https://news.crossmap.com/2026/10/17/are-we-ready-to-battle-for-the-gospel/",
-      "source": "news.crossmap.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-17",
-      "title": "How the US War in Afghanistan Began With Special Forces on Horses",
-      "url": "https://www.theepochtimes.com/article/how-the-us-war-in-afghanistan-began-with-special-forces-on-horses-6103272",
-      "source": "theepochtimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-17",
-      "title": "Watch live : Trump military parade kicks off",
-      "url": "https://www.akronnewsreporter.com/2025/06/14/watch-live-trump-parade-protests/",
-      "source": "akronnewsreporter.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-17",
-      "title": "Australia first Vietnamese heritage museum opens in Melbourne",
-      "url": "https://www.abc.net.au/news/2026-10-17/australia-first-vietnamese-museum-opens-in-melbourne/107274166",
-      "source": "abc.net.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-17",
-      "title": "BRIAN READE :  Americans must come to their senses before Trump sinks any lower  ",
-      "url": "https://www.mirror.co.uk/news/trump-tiger-ai-vote-america-37779827",
-      "source": "mirror.co.uk",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-17",
-      "title": "Best Political Bangs for Your Bucks : A Smorgasbord of Overperforming Dems and Sinking MAGAs",
-      "url": "https://www.villagevoice.com/best-political-bangs-for-your-bucks-a-smorgasbord-of-overperforming-dems-and-sinking-magas/",
-      "source": "villagevoice.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-17",
-      "title": "Just take 30 mins to settle Sirul extradition , says ex - AG",
-      "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/17/just-30mins-to-settle-sirul-s-extradition-says-ex-ag",
-      "source": "freemalaysiatoday.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-17",
-      "title": "Teen sisters die after fire breaks out at two adjourning homes in Perak",
-      "url": "https://www.asiaone.com:443/malaysia/teen-sisters-die-fire-breaks-out-two-homes-perak",
-      "source": "asiaone.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-17",
-      "title": "Teen sisters die after fire breaks out at two adjourning homes in Perak",
-      "url": "https://www.asiaone.com/malaysia/teen-sisters-die-fire-breaks-out-two-homes-perak",
-      "source": "asiaone.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-17",
-      "title": "Mark Oppenheimer  hatchet job on South Africa  ",
-      "url": "https://www.politicsweb.co.za/news/mark-oppenheimers-hatchet-job-on-south-africa",
-      "source": "politicsweb.co.za",
       "kind": "News",
       "via": "GDELT"
     },
@@ -458,105 +683,6 @@
       "title": "Two Christian groups were paid $62m to resettle tens of thousands of Somalis in Minnesota",
       "url": "https://nypost.com/2026/10/16/us-news/two-christian-groups-were-paid-62m-to-resettle-tens-of-thousands-of-somalis-in-minnesota/",
       "source": "nypost.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-16",
-      "title": "Heissatopia : Mega Hymn Book ( and talking in church ) ",
-      "url": "https://www.heissatopia.com/2026/10/mega-hymn-book-and-talking-in-church.html",
-      "source": "heissatopia.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-16",
-      "title": "Paranormal research team visits Vader to share stories from haunting investigations in the region",
-      "url": "http://www.chronline.com/stories/paranormal-research-team-visits-vader-to-share-stories-from-haunting-investigations-in-the-region,410190",
-      "source": "chronline.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-16",
-      "title": "The  Mother Of All Bomb and Iran : What could Trump be planning ? ",
-      "url": "https://english.pravda.ru/opinion/170184-trump-iran-moab-mother-of-all-bombs/",
-      "source": "english.pravda.ru",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-16",
-      "title": "A comforting hand for grieving families",
-      "url": "https://www.thestar.com.my/news/nation/2026/10/17/a-comforting-hand-for-grieving-families",
-      "source": "thestar.com.my",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-16",
-      "title": "Finding Silver Linings Amid Haze of Climatic Uncertainty",
-      "url": "https://www.globalissues.org/news/2026/10/16/44362",
-      "source": "globalissues.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-16",
-      "title": "Indonesia president ready to accept foreign assistance to combat fires , foreign minister says",
-      "url": "https://www.asiaone.com/asia/haze-indonesia-accept-foreign-assistance",
-      "source": "asiaone.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-16",
-      "title": "  Clean air is not a favour : Indonesia neighbours fed up with acrid haze as Singapore threatens to prosecute | Indonesia",
-      "url": "https://www.theguardian.com/world/2026/oct/16/singapore-threatens-prosecute-indonesia-fires-toxic-haze-smoke",
-      "source": "theguardian.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-16",
-      "title": "Saudi Arabia flight suspension : Full list of Indian , Dubai , UAE , Qatar , US , Japan and European flights cancelled",
-      "url": "https://www.livemint.com/news/world/saudi-arabia-flight-suspension-full-list-of-indian-dubai-uae-qatar-us-japan-and-european-flights-cancelled-11792139092771.html",
-      "source": "livemint.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-16",
-      "title": "Haze is a human rights issue",
-      "url": "https://aliran.com/civil-society-voices/haze-is-a-human-rights-issue",
-      "source": "aliran.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-16",
-      "title": "  Clean air is not a favour : Indonesia neighbours fed up with acrid haze as Singapore threatens to prosecute",
-      "url": "https://www.aol.co.uk/articles/clean-air-not-favour-indonesia-083401000.html",
-      "source": "aol.co.uk",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-16",
-      "title": "Helicopter operator says CAAM did not flag any maintenance flaw",
-      "url": "https://www.freemalaysiatoday.com/category/nation/2026/10/16/helicopter-operator-says-caam-flagged-no-aircraft-maintenance-flaws",
-      "source": "freemalaysiatoday.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -685,15 +811,6 @@
       "source": "The Irrawaddy",
       "kind": "media",
       "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-10-10",
-      "title": "  I should have won 8 Nobel Peace Prizes : Trump slams Nobel Committee for awarding Navi Pillay",
-      "url": "http://www.pakistantelegraph.com/news/279363161/i-should-have-won-8-nobel-peace-prizes-trump-slams-nobel-committee-for-awarding-navi-pillay",
-      "source": "pakistantelegraph.com",
-      "kind": "News",
-      "via": "GDELT"
     },
     {
       "country": "Singapore",
