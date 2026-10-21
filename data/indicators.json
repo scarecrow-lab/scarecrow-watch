@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T01:51:19+00:00",
+  "generated": "2026-10-21T01:37:56+00:00",
   "source": "World Bank WDI, V-Dem via OWID, UCDP",
   "indicators": {
     "infant_mortality": {
@@ -479,6 +479,7 @@
     "armed_conflict": {
       "source": "UCDP GED Candidate",
       "versions": [
+        "26.0.9",
         "26.0.8",
         "26.0.7",
         "26.0.6",
@@ -493,11 +494,11 @@
       ],
       "countries": {
         "Myanmar": {
-          "value": 1558,
+          "value": 1731,
           "year": "12 months to 2026-10"
         },
         "Thailand": {
-          "value": 127,
+          "value": 132,
           "year": "12 months to 2026-10"
         },
         "Cambodia": {
@@ -541,6 +542,7 @@
     "neighbor_violence": {
       "source": "UCDP GED Candidate",
       "versions": [
+        "26.0.9",
         "26.0.8",
         "26.0.7",
         "26.0.6",
@@ -559,7 +561,7 @@
           "year": "12 months to 2026-10"
         },
         "Thailand": {
-          "value": 323,
+          "value": 358,
           "year": "12 months to 2026-10"
         },
         "Cambodia": {
@@ -575,7 +577,7 @@
           "year": "12 months to 2026-10"
         },
         "Malaysia": {
-          "value": 37,
+          "value": 42,
           "year": "12 months to 2026-10"
         },
         "Singapore": {
