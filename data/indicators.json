@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T01:37:14+00:00",
+  "generated": "2026-10-25T01:12:45+00:00",
   "source": "World Bank WDI, V-Dem via OWID, UCDP",
   "indicators": {
     "infant_mortality": {
@@ -494,7 +494,7 @@
       ],
       "countries": {
         "Myanmar": {
-          "value": 1692,
+          "value": 1687,
           "year": "12 months to 2026-10"
         },
         "Thailand": {
@@ -561,7 +561,7 @@
           "year": "12 months to 2026-10"
         },
         "Thailand": {
-          "value": 358,
+          "value": 357,
           "year": "12 months to 2026-10"
         },
         "Cambodia": {
