@@ -1,7 +1,304 @@
 {
-  "generated": "2026-10-25T01:12:45+00:00",
+  "generated": "2026-10-26T01:13:24+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Philippines",
+      "date": "2026-10-25",
+      "title": "7 people around the world share how Iran war has reshaped their lives",
+      "url": "https://www.coloradohometownweekly.com/2026/07/27/days-disrupted-iran-war/",
+      "source": "coloradohometownweekly.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-25",
+      "title": "4 PAF pilots killed in training flight mishap",
+      "url": "https://www.sunstar.com.ph/manila/4-paf-pilots-killed-in-training-flight-mishap",
+      "source": "sunstar.com.ph",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-25",
+      "title": "BWF French Open : Sindhu finishes runner - up ; loses to An SeYoung in women singles final",
+      "url": "https://morungexpress.com/bwf-french-open-sindhu-finishes-runner-up-loses-to-an-seyoung-in-womens-singles-final",
+      "source": "morungexpress.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-25",
+      "title": "China Is Making It Harder to Leave . Some People Find Out at the Airport Gate . ",
+      "url": "https://www.theepochtimes.com/article/china-is-making-it-harder-to-leave-some-people-find-out-at-the-airport-gate-6100800",
+      "source": "theepochtimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-25",
+      "title": "Thailand welcomes US - Myanmar engagement , expects ASEAN talks on country future",
+      "url": "https://www.asiaone.com:443/asia/thailand-welcomes-us-myanmar-engagement-expects-asean-talks-countrys-future",
+      "source": "asiaone.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-25",
+      "title": "70 dogs saved from  utter hell  at one of South Korea last canine meat farms",
+      "url": "https://metro.co.uk/2026/10/25/70-dogs-saved-utter-hell-one-south-koreas-last-canine-meat-farms-29723668/",
+      "source": "metro.co.uk",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-25",
+      "title": "Thailand welcomes US - Myanmar engagement , expects ASEAN talks on country future",
+      "url": "https://www.asiaone.com/asia/thailand-welcomes-us-myanmar-engagement-expects-asean-talks-countrys-future",
+      "source": "asiaone.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-25",
+      "title": "Dining across the divide :  Im willing to cut Elon Musk some slack for his playful vibes  ",
+      "url": "https://www.aol.co.uk/articles/dining-across-divide-m-willing-120004000.html",
+      "source": "aol.co.uk",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-25",
+      "title": "Riyadh airport partially reopens after two - week shutdown despite fresh Houthi attacks",
+      "url": "https://www.businesstimes.com.sg/international/riyadh-airport-partially-reopens-after-two-week-shutdown-despite-fresh-houthi-attacks",
+      "source": "businesstimes.com.sg",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "the class struggle is developing objectively ..... ",
+      "url": "https://yourdemocracy.net/drupal/node/61542",
+      "source": "yourdemocracy.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "Four Pilots Killed as Two Philippine Air Force Aircraft Crash During Training Flight",
+      "url": "https://kashmirlife.net/four-pilots-killed-as-two-philippine-air-force-aircraft-crash-during-training-flight-458084/",
+      "source": "kashmirlife.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "A phoenix at sunrise",
+      "url": "https://www.philstar.com/business/2026/10/25/2565470/phoenix-sunrise",
+      "source": "philstar.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "Dynastic rule , a facade of democracy , poverty and the media",
+      "url": "https://www.manilatimes.net/2026/10/25/opinion/columns/dynastic-rule-a-facade-of-democracy-poverty-and-the-media/2453296",
+      "source": "manilatimes.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "Mahbubani advice : Realpolitik | The Manila Times",
+      "url": "https://www.manilatimes.net/2026/10/25/opinion/contributors/mahbubanis-advice-realpolitik/2453295",
+      "source": "manilatimes.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "Horror as two planes crash in huge mid - air smash with debris scattered",
+      "url": "https://www.express.co.uk/news/world/2260031/horror-two-planes-crash-Philippines-manila",
+      "source": "express.co.uk",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "Four Philippine pilots killed after two training planes collide mid - air",
+      "url": "https://www.independent.co.uk/asia/southeast-asia/philippine-pilot-deaths-crash-training-b3072648.html",
+      "source": "independent.co.uk",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "India Condemns Attack On Church In Jordan Karak ; Reaffirms Zero Tolerance For Terrorism",
+      "url": "https://www.freepressjournal.in/world/india-condemns-attack-on-church-in-jordans-karak-reaffirms-zero-tolerance-for-terrorism",
+      "source": "freepressjournal.in",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "1st LD Writethru : 4 pilots killed in north Philippine plane crash",
+      "url": "http://www.philippinetimes.com/news/279395874/1st-ld-writethru-4-pilots-killed-in-north-philippine-plane-crash",
+      "source": "philippinetimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "4 pilots killed in mid - air collision between Philippine training aircraft",
+      "url": "https://pajhwok.com/2026/10/24/4-pilots-killed-in-mid-air-collision-between-philippine-training-aircraft/",
+      "source": "pajhwok.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "4 Philippine Air Force pilots killed as 2 trainer aircraft crash during training flight",
+      "url": "http://www.russiaherald.com/news/279395926/4-philippine-air-force-pilots-killed-as-2-trainer-aircraft-crash-during-training-flight",
+      "source": "russiaherald.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-10-24",
+      "title": "Mid - air collision of Philippines military planes kills 4 pilots",
+      "url": "https://www.freemalaysiatoday.com/category/world/2026/10/24/mid-air-collision-of-philippines-military-planes-kills-4-pilots",
+      "source": "freemalaysiatoday.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-24",
+      "title": "Gibbon trafficking pushes rehabilitation centers to the max in North Sumatra",
+      "url": "https://news.mongabay.com/2025/11/gibbon-trafficking-pushes-rehabilitation-centers-to-the-max-in-north-sumatra/",
+      "source": "news.mongabay.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-24",
+      "title": "Military boards are defying orders and letting trans troops serve",
+      "url": "https://www.inquirer.com/news/nation-world/transgender-military-review-boards-vote-keep-hegseth-pentagon-navy-marines-20261023.html",
+      "source": "inquirer.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-24",
+      "title": "Bridge Under Construction Collapses in Bangkok Killing 5 , Injuring 22 Others",
+      "url": "https://www.chiangraitimes.com/bangkok/bridge-collapses-in-bangkok/",
+      "source": "chiangraitimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-24",
+      "title": "Thailand welcomes US - Myanmar engagement , expects Asean talks on country future",
+      "url": "https://www.businesstimes.com.sg/international/asean/thailand-welcomes-us-myanmar-engagement-expects-asean-talks-countrys-future",
+      "source": "businesstimes.com.sg",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-24",
+      "title": "Benedict Oramah : Africa Must Build Its Own AI Models , Not Just Supply the Data – THISDAYLIVE",
+      "url": "https://www.thisdaylive.com/2026/10/24/benedict-oramah-africa-must-build-its-own-ai-models-not-just-supply-the-data/",
+      "source": "thisdaylive.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-24",
+      "title": "Thailand welcomes US - Myanmar engagement , expects ASEAN talks on country future",
+      "url": "https://whbl.com/2026/10/23/thailand-welcomes-us-myanmar-engagement-expects-asean-talks-on-countrys-future/",
+      "source": "whbl.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-24",
+      "title": "To tackle trafficking in gibbons , experts probe what drives demand",
+      "url": "https://news.mongabay.com/2026/04/to-tackle-trafficking-in-gibbons-experts-probe-what-drives-demand/",
+      "source": "news.mongabay.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-24",
+      "title": "France riots : The protests are a warning to America about how civil unrest affects politics . ",
+      "url": "https://slate.com/news-and-politics/2026/10/france-riots-protests-violence-politics-fascism-right-wing.html",
+      "source": "slate.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-24",
+      "title": "Community Editorial Board : Considering the upcoming election",
+      "url": "https://www.dailycamera.com/2026/10/24/community-editorial-board-considering-midterm-election/",
+      "source": "dailycamera.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-24",
+      "title": "ASEAN haze crisis : why Indonesia must step up",
+      "url": "https://www.straitstimes.com/asia/se-asia/askst-why-has-asean-struggled-to-tackle-haze-and-what-can-countries-do-about-it",
+      "source": "straitstimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-24",
+      "title": "Trump says US may do another military operation against Iran",
+      "url": "https://www.businesstimes.com.sg/international/trump-says-us-may-do-another-military-operation-against-iran",
+      "source": "businesstimes.com.sg",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-24",
+      "title": "Thornhill Stapedectomy Claim Debunked : Fact - Check on ENT Innovations",
+      "url": "https://bangaloremirror.indiatimes.com/bangalore/civic/bust-fake-news-with-bangalore-mirror-thornhills-claim-father-invented-stapedectomy-and-katie-zacharias-credentials-decoded/articleshow/135158204.cms",
+      "source": "bangaloremirror.indiatimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
     {
       "country": "Myanmar",
       "date": "2026-10-24",
@@ -39,24 +336,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-10-24",
-      "title": "Thailand welcomes US - Myanmar engagement , expects Asean talks on country future",
-      "url": "https://www.businesstimes.com.sg/international/asean/thailand-welcomes-us-myanmar-engagement-expects-asean-talks-countrys-future",
-      "source": "businesstimes.com.sg",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-24",
-      "title": "Thailand welcomes US - Myanmar engagement , expects ASEAN talks on country future",
-      "url": "https://whbl.com/2026/10/23/thailand-welcomes-us-myanmar-engagement-expects-asean-talks-on-countrys-future/",
-      "source": "whbl.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Indonesia",
       "date": "2026-10-24",
       "title": "Indonesia delivers clean water to nearly 7 , 000 people in Gaza",
@@ -68,45 +347,9 @@
     {
       "country": "Indonesia",
       "date": "2026-10-24",
-      "title": "Gibbon trafficking pushes rehabilitation centers to the max in North Sumatra",
-      "url": "https://news.mongabay.com/2025/11/gibbon-trafficking-pushes-rehabilitation-centers-to-the-max-in-north-sumatra/",
-      "source": "news.mongabay.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-24",
-      "title": "To tackle trafficking in gibbons , experts probe what drives demand",
-      "url": "https://news.mongabay.com/2026/04/to-tackle-trafficking-in-gibbons-experts-probe-what-drives-demand/",
-      "source": "news.mongabay.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-24",
-      "title": "ASEAN haze crisis : why Indonesia must step up",
-      "url": "https://www.straitstimes.com/asia/se-asia/askst-why-has-asean-struggled-to-tackle-haze-and-what-can-countries-do-about-it",
-      "source": "straitstimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-24",
       "title": "Amnesty Indonesia is right , the Foreign Ministry is wrong : Quit Trump Board of Peace – Middle East Monitor",
       "url": "https://www.middleeastmonitor.com/20261024-amnesty-indonesia-is-right-the-foreign-ministry-is-wrong-quit-trumps-board-of-peace/",
       "source": "middleeastmonitor.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-10-24",
-      "title": "Benedict Oramah : Africa Must Build Its Own AI Models , Not Just Supply the Data – THISDAYLIVE",
-      "url": "https://www.thisdaylive.com/2026/10/24/benedict-oramah-africa-must-build-its-own-ai-models-not-just-supply-the-data/",
-      "source": "thisdaylive.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -138,16 +381,7 @@
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-10-23",
-      "title": "Evening news wrap : Delhi police detain SIR protesters marching towards EC headquarters ; Jordan church shooting leaves seven dead & more",
-      "url": "https://timesofindia.indiatimes.com/india/evening-news-wrap-delhi-police-detain-sir-protesters-marching-towards-ec-headquarters-jordan-church-shooting-leaves-seven-dead-more/articleshow/135146767.cms",
-      "source": "timesofindia.indiatimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
+      "country": "Thailand",
       "date": "2026-10-23",
       "title": "After nearly 6 years , ex - Myanmar leader Aung San Suu Kyi son hears her voice",
       "url": "https://www.klcc.org/npr-news/2026-10-23/after-nearly-6-years-ex-myanmar-leader-aung-san-suu-kyis-son-hears-her-voice",
@@ -156,7 +390,7 @@
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Thailand",
       "date": "2026-10-23",
       "title": "After nearly 6 years , ex - Myanmar leader Aung San Suu Kyi son hears her voice",
       "url": "https://www.southcarolinapublicradio.org/news/2026-10-23/after-nearly-6-years-ex-myanmar-leader-aung-san-suu-kyis-son-hears-her-voice",
@@ -165,11 +399,137 @@
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Thailand",
       "date": "2026-10-23",
       "title": "After nearly 6 years , ex - Myanmar leader Aung San Suu Kyi son hears her voice",
       "url": "https://www.ypradio.org/npr-news/2026-10-23/after-nearly-6-years-ex-myanmar-leader-aung-san-suu-kyis-son-hears-her-voice",
       "source": "ypradio.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-23",
+      "title": "Canada working closely with EU on foreign aid as U . S . pulls back , Sarai says",
+      "url": "https://www.pentictonherald.ca/news/national_news/article_008e24f0-76c4-50ef-8e9e-88428b80820b.html",
+      "source": "pentictonherald.ca",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-23",
+      "title": "Slain NYPD Hero is Remembered With New Gravestone",
+      "url": "https://thetablet.org/patrolman-rocco-laurie-nypd-remembered-new-gravestone/",
+      "source": "thetablet.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-23",
+      "title": "Tedeschi Trucks Band brings  Future Soul  and old soul to The Truth – The Vanderbilt Hustler",
+      "url": "https://vanderbilthustler.com/2026/10/23/tedeschi-trucks-band-brings-future-soul-and-old-soul-to-the-truth/",
+      "source": "vanderbilthustler.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-23",
+      "title": "Ruling on Korean atrocity in Vietnam comes 23 years after Hankyoreh 21 exposé",
+      "url": "https://english.hani.co.kr/arti/english_edition/e_national/1078868.html",
+      "source": "english.hani.co.kr",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-23",
+      "title": "Witkoff Meets Putin : the Upshot ? ",
+      "url": "https://www.kyivpost.com/post/87982",
+      "source": "kyivpost.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-23",
+      "title": "Joint Letter : Addressing Human Rights Abuses During Vietnam To Lam Visit",
+      "url": "https://www.icj.org/joint-letter-addressing-human-rights-abuses-during-vietnams-to-lams-visit/",
+      "source": "icj.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-23",
+      "title": "Vietnam and EU pledge deeper ties on security , trade , and resilience",
+      "url": "https://vir.com.vn/vietnam-and-eu-pledge-deeper-ties-on-security-trade-and-resilience-163563.html",
+      "source": "vir.com.vn",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-10-23",
+      "title": "Humanitarianism - Morgen A . Chalmiers et al . - Dead on Arrival : Mourning the Humanitarian Fantasy",
+      "url": "https://www.e-flux.com/architecture/humanitarianism/6783079/dead-on-arrival-mourning-the-humanitarian-fantasy",
+      "source": "e-flux.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-23",
+      "title": "The Galien Foundation Presents Senator John Kerry with 2026 Roy Vagelos Pro Bono Humanum Award for Global Health Equity",
+      "url": "https://www.prnewswire.com/news-releases/the-galien-foundation-presents-senator-john-kerry-with-2026-roy-vagelos-pro-bono-humanum-award-for-global-health-equity-302918473.html",
+      "source": "prnewswire.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-23",
+      "title": "World Bank revamp to start by April on push to broaden mission : Yellen",
+      "url": "https://spacewar.com/world-bank-revamp-to-start-by-april-on-push-to-broaden-mission-yellen-999/",
+      "source": "spacewar.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-23",
+      "title": "Saudi Arabia Postpones UN Forum Until 2027 Amid Regional Tensions",
+      "url": "http://www.pakistantelegraph.com/news/279394261/saudi-arabia-postpones-un-forum-until-2027-amid-regional-tensions",
+      "source": "pakistantelegraph.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-23",
+      "title": "The Hindu top news of the day for October 23 , 2026",
+      "url": "https://www.thehindu.com/news/top-news-of-the-day-october-23-2026/article71616056.ece",
+      "source": "thehindu.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-23",
+      "title": "Saudi Arabia Postpones UN Forum Until 2027 Amid Regional Tensions",
+      "url": "http://www.europesun.com/news/279394261/saudi-arabia-postpones-un-forum-until-2027-amid-regional-tensions",
+      "source": "europesun.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-23",
+      "title": "Evening news wrap : Delhi police detain SIR protesters marching towards EC headquarters ; Jordan church shooting leaves seven dead & more",
+      "url": "https://timesofindia.indiatimes.com/india/evening-news-wrap-delhi-police-detain-sir-protesters-marching-towards-ec-headquarters-jordan-church-shooting-leaves-seven-dead-more/articleshow/135146767.cms",
+      "source": "timesofindia.indiatimes.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -435,69 +795,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Singapore",
-      "date": "2026-10-22",
-      "title": "Putin Says Iran Deal Still Possible After Talks With US Envoy",
-      "url": "http://www.iraqsun.com/news/279391781/putin-says-iran-deal-still-possible-after-talks-with-us-envoy",
-      "source": "iraqsun.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-22",
-      "title": "Putin Says Iran Deal Still Possible After Talks With US Envoy",
-      "url": "http://www.israelherald.com/news/279391781/putin-says-iran-deal-still-possible-after-talks-with-us-envoy",
-      "source": "israelherald.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-22",
-      "title": "Putin Says Iran Deal Still Possible After Talks With US Envoy",
-      "url": "http://www.shanghainews.net/news/279391781/putin-says-iran-deal-still-possible-after-talks-with-us-envoy",
-      "source": "shanghainews.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-22",
-      "title": "Putin Says Iran Deal Still Possible After Talks With US Envoy",
-      "url": "http://www.iranherald.com/news/279391781/putin-says-iran-deal-still-possible-after-talks-with-us-envoy",
-      "source": "iranherald.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-22",
-      "title": "Putin Says Iran Deal Still Possible After Talks With US Envoy",
-      "url": "http://www.myanmarnews.net/news/279391781/putin-says-iran-deal-still-possible-after-talks-with-us-envoy",
-      "source": "myanmarnews.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-22",
-      "title": "Oil jumps $2 on escalating Middle East tension",
-      "url": "https://dunyanews.tv/en/Business/979048-oil-jumps-2-on-escalating-middle-east-tension",
-      "source": "dunyanews.tv",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-22",
-      "title": "Paris - based actress Sharon Au reflects on civil unrest in France",
-      "url": "https://www.thestar.com.my/lifestyle/entertainment/2026/10/22/paris-based-actress-sharon-au-reflects-on-civil-unrest-in-france-assures-loved-ones-she-is-safe",
-      "source": "thestar.com.my",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Vietnam",
       "date": "2026-10-22",
       "title": "Judge approves exhumation in Albuquerque cold case rape investigation",
@@ -539,24 +836,6 @@
       "title": "Technology , War , and the Limits of Innovation Power in the Middle East",
       "url": "https://www.washingtoninstitute.org/policy-analysis/technology-war-and-limits-innovation-power-middle-east",
       "source": "washingtoninstitute.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-22",
-      "title": "Florida executes William Reaves Jr ., 77 , a Vietnam veteran with PTSD",
-      "url": "https://www.wsws.org/en/articles/2026/10/21/jdlz-o21.html",
-      "source": "wsws.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-22",
-      "title": "Sisi says Egypt will  defend Saudi territory  but will not attack Yemen",
-      "url": "https://www.freemalaysiatoday.com/category/highlight/2026/10/22/sisi-says-egypt-will-defend-saudi-territory-but-will-not-attack-yemen",
-      "source": "freemalaysiatoday.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -683,78 +962,6 @@
       "title": "NSW Australian of the Year : 17 nominees revealed today | The Northern Daily Leader",
       "url": "https://www.northerndailyleader.com.au/story/9371703/nsw-australian-of-the-year-17-nominees-revealed-today/",
       "source": "northerndailyleader.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-21",
-      "title": "Military Pay Center - Navy Times",
-      "url": "https://www.navytimes.com/management/pay-benefits/military-pay-center/",
-      "source": "navytimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-21",
-      "title": "Vietnam : Independent Trade Unions Suppressed , HRW Says",
-      "url": "https://www.eurasiareview.com/21102026-vietnam-independent-trade-unions-suppressed-hrw-says/",
-      "source": "eurasiareview.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-21",
-      "title": "Military Pay Center - Marine Corps Times",
-      "url": "https://www.marinecorpstimes.com/pay-benefits/military-pay-center/",
-      "source": "marinecorpstimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-21",
-      "title": "FROM DAYS GONE BY - Fulton County News",
-      "url": "https://www.fultoncountynews.com/articles/from-days-gone-by-814/",
-      "source": "fultoncountynews.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-21",
-      "title": "The School of Diplomacy , Human Rights Foundation host panel discussion about Tyranny Tracker",
-      "url": "https://www.thesetonian.com/article/2026/10/the-school-of-diplomacy-human-rights-foundation-host-panel-discussion-about-tyranny-tracker",
-      "source": "thesetonian.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-21",
-      "title": "Chinese Coast Guard Monitors Philippine Vessel",
-      "url": "https://www.marinelink.com/news/chinese-coast-guard-monitors-philippine-543826",
-      "source": "marinelink.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-21",
-      "title": "Sisi says Egypt to  defend Saudi territory  and will not attack Yemen",
-      "url": "https://arynews.tv/sisi-says-egypt-to-defend-saudi-territory-and-will-not-attack-yemen",
-      "source": "arynews.tv",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-10-21",
-      "title": "Haiti Economy Key Players 2026 , Banks and Telecoms",
-      "url": "https://www.riotimesonline.com/haiti-economy-key-players-2026/",
-      "source": "riotimesonline.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -919,177 +1126,6 @@
       "source": "aliran.com",
       "kind": "News",
       "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-18",
-      "title": "ISRAELI KILLED : 43 - Year - Old Dies In Motorcycle Crash In Thailand",
-      "url": "https://www.theyeshivaworld.com/news/israel-news/2611193/israeli-killed-43-year-old-dies-in-motorcycle-crash-in-thailand.html",
-      "source": "theyeshivaworld.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-18",
-      "title": "Foreign Ministry : Israeli man in his 40s killed in Thailand motorcycle accident",
-      "url": "https://www.jpost.com/israel-news/article-912066",
-      "source": "jpost.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-18",
-      "title": "43 - year - old Israeli killed in motorcycle accident in Thailand",
-      "url": "https://www.israelnationalnews.com/flashes/695586",
-      "source": "israelnationalnews.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-18",
-      "title": "BFI LFF 2026 Awards Winners :  Imperium ,  Concrete Land  ",
-      "url": "https://www.hollywoodreporter.com/movies/movie-news/bfi-lff-2026-awards-winners-imperium-concrete-land-1236734344/",
-      "source": "hollywoodreporter.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-17",
-      "title": "EDITORIAL - Pinoy narcos",
-      "url": "https://www.philstar.com/opinion/2026/10/18/2563909/editorial-pinoy-narcos",
-      "source": "philstar.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-17",
-      "title": "Fed chief warns of  bumpy  AI ride as job impact unclear",
-      "url": "http://global.chinadaily.com.cn/a/202610/17/WS6ad2c1c4e4b06d4aa05634ba.html",
-      "source": "global.chinadaily.com.cn",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-17",
-      "title": "Fed chief warns of  bumpy  AI ride as job impact unclear",
-      "url": "http://usa.chinadaily.com.cn/a/202610/17/WS6ad2c1c4e4b06d4aa05634ba.html",
-      "source": "usa.chinadaily.com.cn",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-17",
-      "title": "Fed chief warns of  bumpy  AI ride as job impact unclear",
-      "url": "http://europe.chinadaily.com.cn/a/202610/17/WS6ad2c1c4e4b06d4aa05634ba.html",
-      "source": "europe.chinadaily.com.cn",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-16",
-      "title": "Uyghur activists urge Rubio to raise rights concerns with Central Asian officials",
-      "url": "https://www.rfa.org/english/uyghur/2026/10/16/uyghur-uzbekistan-rubio-trip-c5/",
-      "source": "rfa.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-16",
-      "title": "President Erdogan says Türkiye sees Cambodia as important partner in Southeast Asia",
-      "url": "https://aa.com.tr/en/world/president-erdogan-says-turkiye-sees-cambodia-as-important-partner-in-southeast-asia/4091302",
-      "source": "aa.com.tr",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-16",
-      "title": "13 Ways Into the Voluminous Work of William T . Vollmann",
-      "url": "https://www.publishersweekly.com:443/pw/by-topic/industry-news/tip-sheet/article/101383-13-ways-into-the-voluminous-work-of-william-t-vollmann.html",
-      "source": "publishersweekly.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-16",
-      "title": "Saving big cats : Storytelling duo Steve Winter & Sharon Guynup publish new book",
-      "url": "https://news.mongabay.com/2026/10/saving-big-cats-storytelling-duo-steve-winter-sharon-guynup-publish-new-book/",
-      "source": "news.mongabay.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-16",
-      "title": "Two Christian groups were paid $62m to resettle tens of thousands of Somalis in Minnesota",
-      "url": "https://nypost.com/2026/10/16/us-news/two-christian-groups-were-paid-62m-to-resettle-tens-of-thousands-of-somalis-in-minnesota/",
-      "source": "nypost.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-10-15",
-      "title": "Maritime piracy incidents remain at historic lows despite Somali piracy concerns",
-      "url": "https://www.hellenicshippingnews.com/maritime-piracy-incidents-remain-at-historic-lows-despite-somali-piracy-concerns/",
-      "source": "hellenicshippingnews.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-10-15",
-      "title": "Shell Faces Climate Disaster Claims on Two Continents From Brazil Deadly Floods to the Philippine Devastating Typhoon – Royal Dutch Shell Plc . com",
-      "url": "https://royaldutchshellplc.com/2026/10/15/shell-faces-climate-disaster-claims-on-two-continents-from-brazils-deadly-floods-to-the-philippines-devastating-typhoon/",
-      "source": "royaldutchshellplc.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-10-15",
-      "title": "  Duterte drug war dehumanized people  ",
-      "url": "https://www.philstar.com/headlines/2026/10/16/2563578/dutertes-drug-war-dehumanized-people",
-      "source": "philstar.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-10-15",
-      "title": "Paul Davis On Crime",
-      "url": "http://www.pauldavisoncrime.com/search?updated-max=2026-10-09T21:13:00-04:00&max-results=7",
-      "source": "pauldavisoncrime.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-10-15",
-      "title": "Now … to work - BusinessWorld Online",
-      "url": "http://bworldonline.com/opinion/2026/10/14/786940/now-to-work/",
-      "source": "bworldonline.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-11",
-      "title": "September 2026",
-      "url": "https://www.asiajusticecoalition.org/post/september-2026",
-      "source": "Asia Justice Coalition",
-      "kind": "network",
-      "via": "Curated sources"
     }
   ]
 }
