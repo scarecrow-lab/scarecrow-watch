@@ -189,6 +189,8 @@ window.T={
   "covEnter": "Enter the platform",
   "covSub": "Free to use · updated daily from public data",
   "covDignity": "We document patterns and verified public data — not graphic images of victims. The region remembers what happens when no one keeps watch.",
+  "covFramework": "Risk is scored on the eight factors of the UN Framework of Analysis for Atrocity Crimes, applied through the PREVENT approach of the Auschwitz Institute (AIPG), where this project's founder trained in its ASEAN programme.",
+  "covFrameworkLink": "See how we score →",
   "covM1": "Cambodia, 1975–79",
   "covM2": "Rohingya, Myanmar",
   "covM3": "Marawi & beyond"
@@ -363,6 +365,8 @@ window.T={
   "covEnter": "เข้าสู่แพลตฟอร์ม",
   "covSub": "ใช้งานฟรี · อัปเดตทุกวันจากข้อมูลสาธารณะ",
   "covDignity": "เราบันทึกรูปแบบและข้อมูลสาธารณะที่ตรวจสอบแล้ว — ไม่ใช่ภาพความรุนแรงของเหยื่อ ภูมิภาคนี้จดจำได้ดีว่าจะเกิดอะไรขึ้นเมื่อไม่มีใครเฝ้าระวัง",
+  "covFramework": "คะแนนความเสี่ยงประเมินตามปัจจัยทั้งแปดของกรอบการวิเคราะห์อาชญากรรมความโหดร้ายแห่งสหประชาชาติ (UN Framework of Analysis for Atrocity Crimes) โดยประยุกต์ผ่านแนวทาง PREVENT ของสถาบัน Auschwitz Institute (AIPG) ซึ่งผู้ก่อตั้งโครงการได้เข้าอบรมในหลักสูตรภูมิภาคอาเซียน",
+  "covFrameworkLink": "ดูวิธีให้คะแนน →",
   "covM1": "กัมพูชา, 1975–79",
   "covM2": "โรฮิงญา, เมียนมา",
   "covM3": "มาราวี และที่อื่น ๆ"
