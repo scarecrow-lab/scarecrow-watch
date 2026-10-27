@@ -2,64 +2,64 @@
   "sources": {
     "reliefweb": {
       "status": "error",
-      "checked": "2026-10-26T01:13:24+00:00",
+      "checked": "2026-10-27T02:06:11+00:00",
       "error": "https://api.reliefweb.int/v2/reports: HTTP Error 403: Forbidden"
     },
     "gdelt": {
       "status": "ok",
-      "updated": "2026-10-26T01:13:24+00:00",
-      "count": 81,
+      "updated": "2026-10-27T02:06:11+00:00",
+      "count": 49,
       "error": null
     },
     "unhcr": {
       "status": "ok",
-      "updated": "2026-10-26T01:13:24+00:00",
+      "updated": "2026-10-27T02:06:11+00:00",
       "count": 11,
       "error": null
     },
     "worldbank": {
       "status": "ok",
-      "updated": "2026-10-26T01:13:24+00:00",
+      "updated": "2026-10-27T02:06:11+00:00",
       "count": 6,
       "error": null
     },
     "vdem": {
       "status": "ok",
-      "updated": "2026-10-26T01:13:24+00:00",
+      "updated": "2026-10-27T02:06:11+00:00",
       "count": 4,
       "error": null
     },
     "ucdp": {
       "status": "ok",
-      "updated": "2026-10-26T01:13:24+00:00",
+      "updated": "2026-10-27T02:06:11+00:00",
       "count": 2,
       "error": null
     },
     "factbook": {
       "status": "ok",
-      "updated": "2026-10-26T01:13:24+00:00",
+      "updated": "2026-10-27T02:06:11+00:00",
       "error": null
     },
     "wikidata": {
       "status": "ok",
-      "updated": "2026-10-26T01:13:24+00:00",
+      "updated": "2026-10-27T02:06:11+00:00",
       "count": 3,
       "error": null
     },
     "partners": {
       "status": "ok",
-      "updated": "2026-10-26T01:13:24+00:00",
-      "count": 9,
+      "updated": "2026-10-27T02:06:11+00:00",
+      "count": 10,
       "error": null
     },
     "dtm": {
       "status": "error",
-      "checked": "2026-10-26T01:13:24+00:00",
+      "checked": "2026-10-27T02:06:11+00:00",
       "error": "DTMAPI_SUBSCRIPTION_KEY is not set (register for a free key at the DTM API portal)"
     },
     "views": {
       "status": "ok",
-      "updated": "2026-10-26T01:13:24+00:00",
+      "updated": "2026-10-27T02:06:11+00:00",
       "count": 11,
       "node": "https://api.viewsforecasting.org/fatalities003_2026_08_t01/cm/sb",
       "field_keys": [
@@ -78,21 +78,21 @@
     },
     "history": {
       "status": "ok",
-      "updated": "2026-10-26T01:13:24+00:00",
+      "updated": "2026-10-27T02:06:11+00:00",
       "count": 11,
       "months": 8,
       "error": null
     },
     "alerts": {
       "status": "ok",
-      "updated": "2026-10-26T01:13:24+00:00",
+      "updated": "2026-10-27T02:06:11+00:00",
       "count": 8,
       "error": null
     }
   },
-  "last_run": "2026-10-26T01:13:24+00:00",
+  "last_run": "2026-10-27T02:06:11+00:00",
   "auto_review": {
     "pending": 4,
-    "checked": "2026-10-26T01:13:24+00:00"
+    "checked": "2026-10-27T02:06:11+00:00"
   }
 }
