@@ -1,7 +1,115 @@
 {
-  "generated": "2026-10-27T02:06:11+00:00",
+  "generated": "2026-10-28T02:18:35+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Philippines",
+      "date": "2026-10-28",
+      "title": "South China Sea tensions cause China to ‘recall’ teachers from the Philippines",
+      "url": "https://rfa.org/english/southchinasea/2026/10/28/china-teachers-philippines-return-south-china-sea/",
+      "source": "Radio Free Asia",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-27",
+      "title": "Myanmar Migrant Applications Plunge at Thai CI Centers Amid Boycott",
+      "url": "https://www.irrawaddy.com/news/burma/myanmar-migrant-applications-plunge-at-thai-ci-centers-amid-boycott.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-27",
+      "title": "Hostage Diplomacy: How the Myanmar Junta Is Weaponizing Jailed Aung San Suu Kyi",
+      "url": "https://www.irrawaddy.com/opinion/analysis/hostage-diplomacy-how-the-myanmar-junta-is-weaponizing-jailed-aung-san-suu-kyi.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-27",
+      "title": "The Fatal Flaw in China’s Myanmar Policy is Economic Collapse",
+      "url": "https://www.irrawaddy.com/opinion/analysis/the-fatal-flaw-in-chinas-myanmar-policy-is-economic-collapse.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-27",
+      "title": "China’s Myanmar Policy and King Charles’s Gift to Aung San Suu Kyi",
+      "url": "https://www.irrawaddy.com/video/chinas-myanmar-policy-and-king-charless-gift-to-aung-san-suu-kyi.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-27",
+      "title": "Malaysia to Seek Clarification Over Reports of Detained Myanmar Returnees",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/malaysia-to-seek-clarification-over-reports-of-detained-myanmar-returnees.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-27",
+      "title": "Laos: Political Activist Disappears in Thailand as Restrictions on Civic Space Persist",
+      "url": "https://forum-asia.org/laos-political-activist-disappears-thailand-civic-space/?utm_source=rss&utm_medium=rss&utm_campaign=laos-political-activist-disappears-thailand-civic-space",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-27",
+      "title": "Dr . Cynthia Maung Accepts Okinawa Peace Prize , Calls for Urgent Safeguards for Civilians and Health Workers",
+      "url": "https://www.bnionline.net/en/news/dr-cynthia-maung-accepts-okinawa-peace-prize-calls-urgent-safeguards-civilians-and-health",
+      "source": "bnionline.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-27",
+      "title": "Recommendations for Political Financing Bill to be presented to parliamentary committee soon , says Azalina",
+      "url": "https://www.thestar.com.my/news/nation/2026/10/27/recommendations-for-political-financing-bill-to-be-presented-to-parliamentary-committee-soon-says-azalina",
+      "source": "thestar.com.my",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-26",
+      "title": "Regime Disguises Military Jet Fuel as Diesel to Evade Sanctions: JFM",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/regime-disguises-military-jet-fuel-as-diesel-to-evade-sanctions-jfm.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-26",
+      "title": "Myanmar Regime’s Minimum Rice Price ‘a License to Squeeze Farmers’",
+      "url": "https://www.irrawaddy.com/news/burma/myanmar-regimes-minimum-rice-price-a-license-to-squeeze-farmers.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-26",
+      "title": "Myanmar War Crimes Survivors Look to Denmark for Justice",
+      "url": "https://www.irrawaddy.com/opinion/guest-column/myanmar-war-crimes-survivors-look-to-denmark-for-justice.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
     {
       "country": "Singapore",
       "date": "2026-10-26",
@@ -12,7 +120,7 @@
       "via": "Curated sources"
     },
     {
-      "country": "Thailand",
+      "country": "Vietnam",
       "date": "2026-10-26",
       "title": "Baby orangutans in India expose illegal wildlife trade as experts question a billionaire zoo",
       "url": "https://www.niagarafallsreview.ca/business/baby-orangutans-in-india-expose-illegal-wildlife-trade-as-experts-question-a-billionaire-s-zoo/article_b93daaee-a53c-50dd-ab5d-c417b457efe4.html",
@@ -21,83 +129,29 @@
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Philippines",
       "date": "2026-10-25",
-      "title": "India : Rahul Gandhi calls for  Save the Vote  march in Delhi",
-      "url": "https://www.dw.com/en/india-news-rahul-gandhi-urges-protest-against-voter-deletions-announces-november-1-rally/live-79748098",
-      "source": "dw.com",
+      "title": "7 people around the world share how Iran war has reshaped their lives",
+      "url": "https://www.coloradohometownweekly.com/2026/07/27/days-disrupted-iran-war/",
+      "source": "coloradohometownweekly.com",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
+      "country": "Philippines",
       "date": "2026-10-25",
-      "title": "Thailand welcomes US - Myanmar engagement , expects ASEAN talks on country future",
-      "url": "https://www.asiaone.com:443/asia/thailand-welcomes-us-myanmar-engagement-expects-asean-talks-countrys-future",
-      "source": "asiaone.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-25",
-      "title": "Thailand welcomes US - Myanmar engagement , expects ASEAN talks on country future",
-      "url": "https://www.asiaone.com/asia/thailand-welcomes-us-myanmar-engagement-expects-asean-talks-countrys-future",
-      "source": "asiaone.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-25",
-      "title": "Myanmar Aung San Suu Kyi  sounds strong  but is isolated , son says",
-      "url": "https://www.aol.co.uk/articles/myanmar-aung-san-suu-kyi-020049000.html",
-      "source": "aol.co.uk",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-25",
-      "title": "BWF French Open : Sindhu finishes runner - up ; loses to An SeYoung in women singles final",
-      "url": "https://morungexpress.com/bwf-french-open-sindhu-finishes-runner-up-loses-to-an-seyoung-in-womens-singles-final",
-      "source": "morungexpress.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-25",
-      "title": "China Is Making It Harder to Leave . Some People Find Out at the Airport Gate . ",
-      "url": "https://www.theepochtimes.com/article/china-is-making-it-harder-to-leave-some-people-find-out-at-the-airport-gate-6100800",
-      "source": "theepochtimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-25",
-      "title": "70 dogs saved from  utter hell  at one of South Korea last canine meat farms",
-      "url": "https://metro.co.uk/2026/10/25/70-dogs-saved-utter-hell-one-south-koreas-last-canine-meat-farms-29723668/",
-      "source": "metro.co.uk",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-10-25",
-      "title": "Essex conservationist wins BAFTA honour for elephant work",
-      "url": "https://www.echo-news.co.uk/news/26655325.essex-conservationist-wins-bafta-honour-elephant-work/",
-      "source": "echo-news.co.uk",
+      "title": "4 PAF pilots killed in training flight mishap",
+      "url": "https://www.sunstar.com.ph/manila/4-paf-pilots-killed-in-training-flight-mishap",
+      "source": "sunstar.com.ph",
       "kind": "News",
       "via": "GDELT"
     },
     {
       "country": "Vietnam",
       "date": "2026-10-25",
-      "title": "7 people around the world share how Iran war has reshaped their lives",
-      "url": "https://www.coloradohometownweekly.com/2026/07/27/days-disrupted-iran-war/",
-      "source": "coloradohometownweekly.com",
+      "title": "70 dogs saved from  utter hell  at one of South Korea last canine meat farms",
+      "url": "https://metro.co.uk/2026/10/25/70-dogs-saved-utter-hell-one-south-koreas-last-canine-meat-farms-29723668/",
+      "source": "metro.co.uk",
       "kind": "News",
       "via": "GDELT"
     },
@@ -120,11 +174,29 @@
       "via": "GDELT"
     },
     {
-      "country": "Philippines",
+      "country": "Thailand",
       "date": "2026-10-25",
-      "title": "4 PAF pilots killed in training flight mishap",
-      "url": "https://www.sunstar.com.ph/manila/4-paf-pilots-killed-in-training-flight-mishap",
-      "source": "sunstar.com.ph",
+      "title": "BWF French Open : Sindhu finishes runner - up ; loses to An SeYoung in women singles final",
+      "url": "https://morungexpress.com/bwf-french-open-sindhu-finishes-runner-up-loses-to-an-seyoung-in-womens-singles-final",
+      "source": "morungexpress.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-10-25",
+      "title": "China Is Making It Harder to Leave . Some People Find Out at the Airport Gate . ",
+      "url": "https://www.theepochtimes.com/article/china-is-making-it-harder-to-leave-some-people-find-out-at-the-airport-gate-6100800",
+      "source": "theepochtimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-25",
+      "title": "Essex conservationist wins BAFTA honour for elephant work",
+      "url": "https://www.echo-news.co.uk/news/26655325.essex-conservationist-wins-bafta-honour-elephant-work/",
+      "source": "echo-news.co.uk",
       "kind": "News",
       "via": "GDELT"
     },
@@ -142,51 +214,6 @@
       "date": "2026-10-25",
       "title": "Riyadh airport partially reopens after two - week shutdown despite fresh Houthi attacks",
       "url": "https://www.businesstimes.com.sg/international/riyadh-airport-partially-reopens-after-two-week-shutdown-despite-fresh-houthi-attacks",
-      "source": "businesstimes.com.sg",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-24",
-      "title": "Naga Vision : From Village Republics to a Nation",
-      "url": "https://morungexpress.com/naga-vision-from-village-republics-to-a-nation",
-      "source": "morungexpress.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-24",
-      "title": "Junta Column Heading Toward Southern Chin Suffers Heavy Casualties in Resistance Ambushes",
-      "url": "https://www.bnionline.net/en/news/junta-column-heading-toward-southern-chin-suffers-heavy-casualties-resistance-ambushes",
-      "source": "bnionline.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-24",
-      "title": "Junta - SNA Coalition Seals Off a Village in Kachin State , Detains and Beats Children",
-      "url": "https://www.bnionline.net/en/news/junta-sna-coalition-seals-village-kachin-state-detains-and-beats-children",
-      "source": "bnionline.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-24",
-      "title": "Myanmar Military Regime Launches Fresh Airstrikes in Ye Township in Mon State Despite Absence of Fighting",
-      "url": "https://www.bnionline.net/en/news/myanmar-military-regime-launches-fresh-airstrikes-ye-township-mon-state-despite-absence",
-      "source": "bnionline.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-24",
-      "title": "Thailand welcomes US - Myanmar engagement , expects Asean talks on country future",
-      "url": "https://www.businesstimes.com.sg/international/asean/thailand-welcomes-us-myanmar-engagement-expects-asean-talks-countrys-future",
       "source": "businesstimes.com.sg",
       "kind": "News",
       "via": "GDELT"
@@ -408,15 +435,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Philippines",
-      "date": "2026-10-24",
-      "title": "Mid - air collision of Philippines military planes kills 4 pilots",
-      "url": "https://www.freemalaysiatoday.com/category/world/2026/10/24/mid-air-collision-of-philippines-military-planes-kills-4-pilots",
-      "source": "freemalaysiatoday.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Thailand",
       "date": "2026-10-24",
       "title": "Thailand welcomes US - Myanmar engagement , expects ASEAN talks on country future",
@@ -478,6 +496,24 @@
       "source": "wsws.org",
       "kind": "News",
       "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-23",
+      "title": "China Taps Myanmar’s Rare Earth Surge, Coffee Sell-Off, and More",
+      "url": "https://www.irrawaddy.com/news/china-briefing/china-taps-myanmars-rare-earth-surge-coffee-sell-off-and-more.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-23",
+      "title": "Myanmar Rare Earth Exports Surge Amid Illusion of Regime Control",
+      "url": "https://www.irrawaddy.com/news/burma/myanmar-rare-earth-exports-surge-amid-illusion-of-regime-control.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
     },
     {
       "country": "Thailand",
@@ -620,15 +656,6 @@
       "title": "Saudi Arabia Postpones UN Forum Until 2027 Amid Regional Tensions",
       "url": "http://www.europesun.com/news/279394261/saudi-arabia-postpones-un-forum-until-2027-amid-regional-tensions",
       "source": "europesun.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-23",
-      "title": "Evening news wrap : Delhi police detain SIR protesters marching towards EC headquarters ; Jordan church shooting leaves seven dead & more",
-      "url": "https://timesofindia.indiatimes.com/india/evening-news-wrap-delhi-police-detain-sir-protesters-marching-towards-ec-headquarters-jordan-church-shooting-leaves-seven-dead-more/articleshow/135146767.cms",
-      "source": "timesofindia.indiatimes.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -921,15 +948,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Vietnam",
-      "date": "2026-10-22",
-      "title": "Oxford American | Professor Mitchell Versus",
-      "url": "https://oxfordamerican.org/magazine/issue-133-134-summer-fall-2026/professor-mitchell-johns-hopkins",
-      "source": "oxfordamerican.org",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Myanmar",
       "date": "2026-10-21",
       "title": "Atrocity Risk Snap Shot Asia and Pacific October 2026",
@@ -1052,15 +1070,6 @@
       "title": "NSW Australian of the Year : 17 nominees revealed today | The Examiner",
       "url": "https://www.examiner.com.au/story/9371703/nsw-australian-of-the-year-17-nominees-revealed-today/",
       "source": "examiner.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-10-20",
-      "title": "France : Partial curfews issued in Paris , Nice after unrest",
-      "url": "https://www.dw.com/en/france-partial-curfews-issued-in-paris-nice-after-unrest/live-79707186",
-      "source": "dw.com",
       "kind": "News",
       "via": "GDELT"
     },
