@@ -13,7 +13,7 @@
           "enabling": 5,
           "trigger": 4
         },
-        "views_fat": 1034,
+        "views_fat": 1101,
         "views_trend": "flat"
       },
       "2026-09": {
@@ -51,7 +51,7 @@
           "enabling": 2,
           "trigger": 3
         },
-        "views_fat": 810,
+        "views_fat": 616,
         "views_trend": "rising"
       },
       "2026-09": {
@@ -89,7 +89,7 @@
           "enabling": 2,
           "trigger": 4
         },
-        "views_fat": 547,
+        "views_fat": 283,
         "views_trend": "rising"
       },
       "2026-09": {
@@ -165,8 +165,8 @@
           "enabling": 2,
           "trigger": 2
         },
-        "views_fat": 354,
-        "views_trend": "falling"
+        "views_fat": 369,
+        "views_trend": "rising"
       },
       "2026-09": {
         "views_fat": 279
@@ -429,5 +429,5 @@
     "2026-09",
     "2026-10"
   ],
-  "generated": "2026-10-28T02:18:35+00:00"
+  "generated": "2026-10-29T02:28:06+00:00"
 }

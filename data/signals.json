@@ -1,7 +1,34 @@
 {
-  "generated": "2026-10-28T02:18:35+00:00",
+  "generated": "2026-10-29T02:28:06+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Myanmar",
+      "date": "2026-10-28",
+      "title": "China’s Monroe Doctrine and Its Strategic Blunder in Myanmar",
+      "url": "https://www.irrawaddy.com/opinion/guest-column/chinas-monroe-doctrine-and-its-strategic-blunder-in-myanmar.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-28",
+      "title": "Nationalist Regime Supporters Turn Against China Over Northern Shan",
+      "url": "https://www.irrawaddy.com/news/myanmar-china-watch/nationalist-regime-supporters-turn-against-china-over-northern-shan.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-28",
+      "title": "Resistance Forces Inflict Heavy Losses on Regime Troops in Indaw",
+      "url": "https://www.irrawaddy.com/news/war-against-the-junta/resistance-forces-inflict-heavy-losses-on-regime-troops-in-indaw.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
     {
       "country": "Philippines",
       "date": "2026-10-28",
@@ -9,6 +36,33 @@
       "url": "https://rfa.org/english/southchinasea/2026/10/28/china-teachers-philippines-return-south-china-sea/",
       "source": "Radio Free Asia",
       "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-10-28",
+      "title": "Indonesia: Activists Continue to Face Targeting, Censorship Concerns and Disruption of Activism in Papua",
+      "url": "https://forum-asia.org/indonesia-activists-targeted-censorship-forest-fires-papua/?utm_source=rss&utm_medium=rss&utm_campaign=indonesia-activists-targeted-censorship-forest-fires-papua",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-10-28",
+      "title": "Cambodia: Rights Groups Renew Urgent Appeal to Free the Mother Nature Cambodia 5",
+      "url": "https://forum-asia.org/cambodia-renew-urgent-appeal-free-mother-nature-cambodia-5/?utm_source=rss&utm_medium=rss&utm_campaign=cambodia-renew-urgent-appeal-free-mother-nature-cambodia-5",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-10-28",
+      "title": "Towards a National Asylum Framework in Malaysia",
+      "url": "https://asylumaccess.org/towards-a-national-asylum-framework-in-malaysia/",
+      "source": "Asylum Access",
+      "kind": "ingo",
       "via": "Curated sources"
     },
     {
@@ -66,15 +120,6 @@
       "via": "Curated sources"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-10-27",
-      "title": "Dr . Cynthia Maung Accepts Okinawa Peace Prize , Calls for Urgent Safeguards for Civilians and Health Workers",
-      "url": "https://www.bnionline.net/en/news/dr-cynthia-maung-accepts-okinawa-peace-prize-calls-urgent-safeguards-civilians-and-health",
-      "source": "bnionline.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Malaysia",
       "date": "2026-10-27",
       "title": "Recommendations for Political Financing Bill to be presented to parliamentary committee soon , says Azalina",
@@ -102,15 +147,6 @@
       "via": "Curated sources"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-10-26",
-      "title": "Myanmar War Crimes Survivors Look to Denmark for Justice",
-      "url": "https://www.irrawaddy.com/opinion/guest-column/myanmar-war-crimes-survivors-look-to-denmark-for-justice.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
       "country": "Singapore",
       "date": "2026-10-26",
       "title": "Online post purportedly by Chinese students calls for restoring term limits for Xi",
@@ -120,7 +156,16 @@
       "via": "Curated sources"
     },
     {
-      "country": "Vietnam",
+      "country": "Myanmar",
+      "date": "2026-10-26",
+      "title": "Myanmar War Crimes Survivors Look to Denmark for Justice",
+      "url": "https://www.irrawaddy.com/opinion/guest-column/myanmar-war-crimes-survivors-look-to-denmark-for-justice.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Thailand",
       "date": "2026-10-26",
       "title": "Baby orangutans in India expose illegal wildlife trade as experts question a billionaire zoo",
       "url": "https://www.niagarafallsreview.ca/business/baby-orangutans-in-india-expose-illegal-wildlife-trade-as-experts-question-a-billionaire-s-zoo/article_b93daaee-a53c-50dd-ab5d-c417b457efe4.html",
@@ -822,15 +867,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Malaysia",
-      "date": "2026-10-22",
-      "title": "No repatriation if returnees face persecution in Myanmar",
-      "url": "https://www.thestar.com.my/news/nation/2026/10/22/no-repatriation-if-returnees-face-persecution-in-myanmar",
-      "source": "thestar.com.my",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Timor-Leste",
       "date": "2026-10-22",
       "title": "Peace in Kashmir cannot be secured through repetition , denial , or confrontation . It must be pursued through dialogue , diplomacy , and a negotiated settlement . ",
@@ -948,15 +984,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-10-21",
-      "title": "Atrocity Risk Snap Shot Asia and Pacific October 2026",
-      "url": "https://r2pasiapacific.org/article/2026/10/atrocity-risk-snap-shot-asia-and-pacific-october-2026",
-      "source": "Asia Pacific Centre for the Responsibility to Protect (APR2P)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
       "country": "Philippines",
       "date": "2026-10-21",
       "title": "Duterte impeachment: bribing elites is China’s strategy, military official says",
@@ -998,15 +1025,6 @@
       "title": "South Australia Australian of the Year 2027 nominees named | Namoi Valley Independent",
       "url": "https://www.nvi.com.au/story/9372755/south-australia-australian-of-the-year-2027-nominees-named/",
       "source": "nvi.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-10-21",
-      "title": "South Australia Australian of the Year 2027 nominees named | Yass Tribune",
-      "url": "https://www.yasstribune.com.au/story/9372755/south-australia-australian-of-the-year-2027-nominees-named/",
-      "source": "yasstribune.com.au",
       "kind": "News",
       "via": "GDELT"
     },
@@ -1072,15 +1090,6 @@
       "source": "examiner.com.au",
       "kind": "News",
       "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-19",
-      "title": "Rare photos of Aung San Suu Kyi spark renewed calls for her release",
-      "url": "https://rfa.org/english/myanmar/2026/10/19/myanmar-burma-aung-san-suu-kyi-king-charles/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
     },
     {
       "country": "Timor-Leste",
