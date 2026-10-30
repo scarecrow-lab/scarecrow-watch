@@ -1,7 +1,52 @@
 {
-  "generated": "2026-10-29T02:28:06+00:00",
+  "generated": "2026-10-30T02:38:12+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Myanmar",
+      "date": "2026-10-29",
+      "title": "Cartoon Campaign Boosts Myanmar Regime’s Hydropower Dreams",
+      "url": "https://www.irrawaddy.com/news/burma/cartoon-campaign-boosts-myanmar-regimes-hydropower-dreams.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-29",
+      "title": "Myanmar Regime Begins Releasing Rakhine Deportees After Malaysia Pressure",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/myanmar-regime-begins-releasing-rakhine-deportees-after-malaysia-pressure.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-29",
+      "title": "Myanmar Navy Loses 3 More Ships as Arakan Army Tightens Sittwe Noose",
+      "url": "https://www.irrawaddy.com/news/war-against-the-junta/myanmar-navy-loses-3-more-ships-as-arakan-army-tightens-sittwe-noose.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-29",
+      "title": "Myanmar Regime Seizes Historic Nawnghio Mosque Over Rebel Links",
+      "url": "https://www.irrawaddy.com/news/burma/myanmar-regime-seizes-historic-nawnghio-mosque-over-rebel-links.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-10-29",
+      "title": "China’s Risky Plan to Restrict Hi-Tech Exports",
+      "url": "https://www.irrawaddy.com/opinion/guest-column/chinas-risky-plan-to-restrict-hi-tech-exports.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
     {
       "country": "Myanmar",
       "date": "2026-10-28",
@@ -84,6 +129,15 @@
       "via": "Curated sources"
     },
     {
+      "country": "Thailand",
+      "date": "2026-10-27",
+      "title": "Laos: Political Activist Disappears in Thailand as Restrictions on Civic Space Persist",
+      "url": "https://forum-asia.org/laos-political-activist-disappears-thailand-civic-space/?utm_source=rss&utm_medium=rss&utm_campaign=laos-political-activist-disappears-thailand-civic-space",
+      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
+      "kind": "network",
+      "via": "Curated sources"
+    },
+    {
       "country": "Myanmar",
       "date": "2026-10-27",
       "title": "The Fatal Flaw in China’s Myanmar Policy is Economic Collapse",
@@ -111,15 +165,6 @@
       "via": "Curated sources"
     },
     {
-      "country": "Thailand",
-      "date": "2026-10-27",
-      "title": "Laos: Political Activist Disappears in Thailand as Restrictions on Civic Space Persist",
-      "url": "https://forum-asia.org/laos-political-activist-disappears-thailand-civic-space/?utm_source=rss&utm_medium=rss&utm_campaign=laos-political-activist-disappears-thailand-civic-space",
-      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
-      "kind": "network",
-      "via": "Curated sources"
-    },
-    {
       "country": "Malaysia",
       "date": "2026-10-27",
       "title": "Recommendations for Political Financing Bill to be presented to parliamentary committee soon , says Azalina",
@@ -127,6 +172,15 @@
       "source": "thestar.com.my",
       "kind": "News",
       "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-10-26",
+      "title": "Online post purportedly by Chinese students calls for restoring term limits for Xi",
+      "url": "https://rfa.org/english/china/2026/10/26/xi-jinping-term-limits-open-letter/",
+      "source": "Radio Free Asia",
+      "kind": "media",
+      "via": "Curated sources"
     },
     {
       "country": "Myanmar",
@@ -142,24 +196,6 @@
       "date": "2026-10-26",
       "title": "Myanmar Regime’s Minimum Rice Price ‘a License to Squeeze Farmers’",
       "url": "https://www.irrawaddy.com/news/burma/myanmar-regimes-minimum-rice-price-a-license-to-squeeze-farmers.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-26",
-      "title": "Online post purportedly by Chinese students calls for restoring term limits for Xi",
-      "url": "https://rfa.org/english/china/2026/10/26/xi-jinping-term-limits-open-letter/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-26",
-      "title": "Myanmar War Crimes Survivors Look to Denmark for Justice",
-      "url": "https://www.irrawaddy.com/opinion/guest-column/myanmar-war-crimes-survivors-look-to-denmark-for-justice.html",
       "source": "The Irrawaddy",
       "kind": "media",
       "via": "Curated sources"
@@ -543,24 +579,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-10-23",
-      "title": "China Taps Myanmar’s Rare Earth Surge, Coffee Sell-Off, and More",
-      "url": "https://www.irrawaddy.com/news/china-briefing/china-taps-myanmars-rare-earth-surge-coffee-sell-off-and-more.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-23",
-      "title": "Myanmar Rare Earth Exports Surge Amid Illusion of Regime Control",
-      "url": "https://www.irrawaddy.com/news/burma/myanmar-rare-earth-exports-surge-amid-illusion-of-regime-control.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
       "country": "Thailand",
       "date": "2026-10-23",
       "title": "After nearly 6 years , ex - Myanmar leader Aung San Suu Kyi son hears her voice",
@@ -748,24 +766,6 @@
       "source": "freemalaysiatoday.com",
       "kind": "News",
       "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-22",
-      "title": "‘I hope that she will be free before long’ Aung San Suu Kyi’s son Kim Aris says",
-      "url": "https://rfa.org/english/myanmar/2026/10/22/interview-kim-aris-aung-san-suu-kyi-phone-call-burma/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-10-22",
-      "title": "Aung San Suu Kyi phone call is ‘political calculation’ by military-backed government",
-      "url": "https://rfa.org/english/myanmar/2026/10/22/aung-san-suu-kyi-son-kim-aris-burma-phone-call/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
     },
     {
       "country": "Indonesia",
