@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31T02:25:46+00:00",
+  "generated": "2026-11-01T02:15:03+00:00",
   "source": "World Bank WDI, V-Dem via OWID, UCDP",
   "indicators": {
     "infant_mortality": {
@@ -489,53 +489,52 @@
         "26.0.2",
         "26.0.1",
         "25.0.12",
-        "25.0.11",
-        "25.0.10"
+        "25.0.11"
       ],
       "countries": {
         "Myanmar": {
-          "value": 1666,
-          "year": "12 months to 2026-10"
+          "value": 1656,
+          "year": "12 months to 2026-11"
         },
         "Thailand": {
           "value": 132,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Cambodia": {
           "value": 12,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Laos": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Vietnam": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Malaysia": {
           "value": 3,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Singapore": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Brunei": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Philippines": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Indonesia": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Timor-Leste": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         }
       }
     },
@@ -552,53 +551,52 @@
         "26.0.2",
         "26.0.1",
         "25.0.12",
-        "25.0.11",
-        "25.0.10"
+        "25.0.11"
       ],
       "countries": {
         "Myanmar": {
           "value": 8,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Thailand": {
           "value": 356,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Cambodia": {
           "value": 82,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Laos": {
           "value": 51,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Vietnam": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Malaysia": {
           "value": 42,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Singapore": {
           "value": 3,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Brunei": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Philippines": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Indonesia": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         },
         "Timor-Leste": {
           "value": 0,
-          "year": "12 months to 2026-10"
+          "year": "12 months to 2026-11"
         }
       }
     }
