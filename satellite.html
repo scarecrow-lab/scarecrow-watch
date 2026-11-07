@@ -15,13 +15,12 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Satellite check &mdash; Scarecrow Watch">
-<meta name="twitter:description" content="Compare before/after satellite imagery of any ASEAN location across two dates.">
 <meta name="twitter:image" content="https://scarecrowwatch.org/assets/og-image.png">
 <meta name="theme-color" content="#14181f">
 <link rel="icon" href="assets/logo-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Montserrat:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Montserrat:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Source+Serif+4:wght@600&family=Noto+Sans+Myanmar:wght@400;600&family=Noto+Sans+Khmer:wght@400;600&family=Noto+Sans+Lao:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#14181f; --panel:#1c222c; --panel-2:#232a35; --line:#333d4b;
@@ -47,14 +46,15 @@ header{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; a
 h1{ font-family:var(--serif); font-size:clamp(24px,4vw,32px); margin:0 0 6px; line-height:1.15; }
 .lede{ color:var(--ink-dim); margin:0; max-width:64ch; font-size:14.5px; }
 .controls{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
-.navlink,.btn{ background:var(--panel-2); color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font:500 12px var(--mono); cursor:pointer; text-decoration:none; transition:border-color .15s, color .15s; white-space:nowrap; }
-.navlink:hover,.btn:hover{ border-color:var(--gold); color:var(--gold); }
+.navlink{ background:var(--panel-2); color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font:500 12px var(--mono); cursor:pointer; text-decoration:none; transition:border-color .15s, color .15s; white-space:nowrap; }
+.navlink:hover{ border-color:var(--gold); color:var(--gold); }
 .navlink.here{ border-color:var(--gold); color:var(--gold); }
+.lang{ background:var(--panel-2); color:var(--gold); border:1px solid var(--gold); border-radius:999px; padding:7px 10px; font:500 12px var(--sans); cursor:pointer; max-width:170px; }
 h2{ font-family:var(--serif); font-size:18px; margin:24px 0 10px; }
 .card{ background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px; margin:0 0 16px; box-shadow:var(--shadow); }
 label.fl{ display:block; font:500 11.5px var(--mono); letter-spacing:.02em; text-transform:uppercase; color:var(--ink-faint); margin:0 0 6px; }
-input,select{ width:100%; background:var(--panel-2); border:1px solid var(--line); border-radius:9px; color:var(--ink); font:500 15px var(--sans); padding:11px 12px; }
-input:focus,select:focus{ outline:2px solid var(--gold); outline-offset:1px; }
+input,select.d{ width:100%; background:var(--panel-2); border:1px solid var(--line); border-radius:9px; color:var(--ink); font:500 15px var(--sans); padding:11px 12px; }
+input:focus{ outline:2px solid var(--gold); outline-offset:1px; }
 .row{ display:grid; gap:12px; }
 @media(min-width:560px){ .row.two{ grid-template-columns:1fr 1fr; } }
 .quick{ display:flex; flex-wrap:wrap; gap:7px; margin-top:9px; }
@@ -86,63 +86,62 @@ footer a{ color:var(--ink-dim); }
 </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main" data-i="skipToContent">Skip to content</a>
 <div class="wrap">
   <header>
     <div>
       <div class="wordmark"><span class="logo-mark" role="img" aria-label="Scarecrow"></span><span class="brand">SCARECROW<em>WATCH</em></span></div>
-      <h1>Satellite check</h1>
-      <p class="lede">Compare before/after satellite imagery of a place across two dates &mdash; to see destruction, displacement or new camps. Free and open: anyone can verify. <span style="color:var(--ink-faint)">&middot; เทียบภาพดาวเทียมก่อน&ndash;หลังของพื้นที่หนึ่งข้ามสองช่วงเวลา</span></p>
+      <h1 data-i="satTitle">Satellite check</h1>
+      <p class="lede" data-i="satLede">Compare before/after satellite imagery of a place across two dates &mdash; to see destruction, displacement or new camps. Free and open: anyone can verify.</p>
     </div>
     <nav class="controls" aria-label="Sections">
-      <a class="navlink" href="index.html">&larr; Dashboard</a>
-      <a class="navlink here" href="satellite.html" aria-current="page">Satellite</a>
-      <a class="navlink" href="about.html">About</a>
+      <a class="navlink" href="index.html">&larr; <span data-i="satDashboard">Dashboard</span></a>
+      <label style="position:absolute;left:-9999px" for="langSel">Language</label>
+      <select class="lang" id="langSel"></select>
     </nav>
   </header>
 
   <main id="main">
     <div class="card">
       <div>
-        <label class="fl" for="place">Place &middot; พื้นที่</label>
-        <input list="gaz" id="place" placeholder="Type a province / state, e.g. Rakhine State, Maungdaw" autocomplete="off">
+        <label class="fl" for="place" data-i="satPlace">Place</label>
+        <input list="gaz" id="place" data-ph="satPlacePh" placeholder="Type a province / state, e.g. Rakhine State, Maungdaw" autocomplete="off">
         <datalist id="gaz"></datalist>
         <div class="quick" id="quick"></div>
-        <div class="coordline" id="coord">Coordinates &middot; พิกัด: &mdash;</div>
+        <div class="coordline" id="coord"></div>
       </div>
       <div class="row two" style="margin-top:14px">
-        <div><label class="fl" for="d1">Before &middot; ก่อน</label><input type="date" id="d1"></div>
-        <div><label class="fl" for="d2">After &middot; หลัง</label><input type="date" id="d2"></div>
+        <div><label class="fl" for="d1" data-i="satBefore">Before</label><input type="date" id="d1"></div>
+        <div><label class="fl" for="d2" data-i="satAfter">After</label><input type="date" id="d2"></div>
       </div>
-      <div style="margin-top:14px"><button class="go" id="run" type="button">Build viewer links &middot; สร้างลิงก์ดูภาพ</button></div>
-      <p class="hint">Coordinates are an approximate area centre &mdash; pan/zoom to your spot once open, or type <code>lat, lng</code> (e.g. 20.82, 92.36).</p>
+      <div style="margin-top:14px"><button class="go" id="run" type="button" data-i="satBuild">Build viewer links</button></div>
+      <p class="hint" data-i="satHint">Coordinates are an approximate area centre &mdash; pan/zoom to your spot once open, or type lat, lng (e.g. 20.82, 92.36).</p>
     </div>
 
     <div id="out"></div>
 
     <div class="card guide">
-      <h2 style="margin-top:4px">How to read it &middot; อ่านภาพยังไง</h2>
+      <h2 style="margin-top:4px" data-i="satHowTitle">How to read it</h2>
       <ul>
-        <li><span class="d">&#9670;</span><span>Burned villages show as dark patches with vegetation gone (NDVI drop) &mdash; visible on Sentinel-2.</span></li>
-        <li><span class="d">&#9670;</span><span>Missing structures: compare before/after; roofs and buildings that were there are gone.</span></li>
-        <li><span class="d">&#9670;</span><span>New camps: tents/structures in a grid appearing on previously empty ground.</span></li>
-        <li><span class="d">&#9670;</span><span>Heavy monsoon cloud: switch to Sentinel-1 radar, which sees through cloud (in EO/Copernicus Browser).</span></li>
-        <li><span class="d">&#9670;</span><span>FIRMS marks near-real-time fire/heat &mdash; use it as an alert that burning is happening, then confirm with imagery.</span></li>
+        <li><span class="d">&#9670;</span><span data-i="satHow1"></span></li>
+        <li><span class="d">&#9670;</span><span data-i="satHow2"></span></li>
+        <li><span class="d">&#9670;</span><span data-i="satHow3"></span></li>
+        <li><span class="d">&#9670;</span><span data-i="satHow4"></span></li>
+        <li><span class="d">&#9670;</span><span data-i="satHow5"></span></li>
       </ul>
     </div>
 
-    <div class="caveat">
-      <b>Satellite imagery is not proof on its own.</b> Always corroborate with ground reports and other open-source evidence. Practical workflow: FIRMS (free, near-real-time) alerts you &rarr; Sentinel (free, ~5-day) compares before/after &rarr; request high-resolution imagery (Planet/Maxar) only to confirm a specific incident. &middot; <span style="color:var(--ink-faint)">ภาพดาวเทียมอย่างเดียวไม่ใช่หลักฐานสมบูรณ์ ต้อง corroborate เสมอ</span>
-    </div>
+    <div class="caveat"><b data-i="satCaveatLead">Satellite imagery is not proof on its own.</b> <span data-i="satCaveatBody"></span></div>
   </main>
 
-  <p style="margin-top:24px; padding-top:16px; border-top:1px solid var(--line); color:var(--ink-faint); font-size:12.5px;">Part of Scarecrow Watch &mdash; an independent, non-profit, open-source early-warning watch for Southeast Asia. This tool only opens public satellite viewers; it stores nothing.</p>
+  <p style="margin-top:24px; padding-top:16px; border-top:1px solid var(--line); color:var(--ink-faint); font-size:12.5px;" data-i="satFoot">Part of Scarecrow Watch &mdash; an independent, non-profit, open-source early-warning watch for Southeast Asia. This tool only opens public satellite viewers; it stores nothing.</p>
 </div>
 
 <footer>
-  <p>Scarecrow Watch. <a href="about.html">About &amp; independence</a> &middot; <a href="methodology/">Methodology</a> &middot; <a href="index.html">Live dashboard</a></p>
+  <p>Scarecrow Watch. <a href="about.html" data-i="satAbout">About</a> &middot; <a href="methodology/" data-i="satMethodology">Methodology</a> &middot; <a href="index.html" data-i="satLiveDash">Live dashboard</a></p>
 </footer>
 
+<script src="assets/i18n.js?v=20261107"></script>
 <script>
 "use strict";
 (function(){ try{ var s=localStorage.getItem("sw-theme"); if(s) document.documentElement.dataset.theme=s; }catch(e){} })();
@@ -170,8 +169,20 @@ var GAZ = {
  "Dili":[-8.56,125.6],"Aileu":[-8.7,125.6],"Ainaro":[-8.99,125.5],"Baucau":[-8.5,126.5],"Bobonaro":[-8.97,125.3],"Cova Lima":[-9.3,125.3],"Ermera":[-8.75,125.4],"Lautem":[-8.5,127.0],"Liquica":[-8.6,125.3],"Manatuto":[-8.6,126.0],"Manufahi":[-9.0,125.8],"Oecusse":[-9.2,124.3],"Viqueque":[-8.9,126.4]
 };
 (function(){
+  var T = window.T || {en:{}}, LANGS = window.LANGS || [{code:"en",name:"English",locale:"en-US"}];
+  var lang = "en";
+  try{ var sv=localStorage.getItem("sw-lang"); if(sv && (T[sv]||sv==="en")) lang=sv; }catch(e){}
+  function t(k){ return (T[lang]&&T[lang][k]!==undefined)?T[lang][k]:((T.en&&T.en[k]!==undefined)?T.en[k]:k); }
+
   var place=document.getElementById('place'), coord=document.getElementById('coord'), out=document.getElementById('out');
-  var d1=document.getElementById('d1'), d2=document.getElementById('d2');
+  var d1=document.getElementById('d1'), d2=document.getElementById('d2'), langSel=document.getElementById('langSel');
+
+  // language selector
+  LANGS.forEach(function(l){ var o=document.createElement('option'); o.value=l.code; o.textContent=l.name; langSel.appendChild(o); });
+  langSel.value = lang;
+  langSel.onchange = function(){ lang=langSel.value; try{localStorage.setItem("sw-lang",lang);}catch(e){} apply(); if(out.innerHTML.trim()) run(); };
+
+  // gazetteer + quick picks
   var QUICK=[["Maungdaw",20.8,92.4],["Buthidaung",20.9,92.5],["Sittwe",20.15,92.9],["Rakhine State",19.8,93.8]];
   QUICK.forEach(function(q){ if(!GAZ[q[0]]) GAZ[q[0]]=[q[1],q[2]]; });
   var dl=document.getElementById('gaz');
@@ -179,11 +190,13 @@ var GAZ = {
   var qc=document.getElementById('quick');
   QUICK.forEach(function(q){var b=document.createElement('button');b.className='chip';b.type='button';b.textContent=q[0];
     b.onclick=function(){place.value=q[0];setCoord(q[1],q[2]);};qc.appendChild(b);});
+
   var today=new Date(), prior=new Date(); prior.setFullYear(today.getFullYear()-1);
-  d2.value=iso(today); d1.value=iso(prior);
   function iso(dt){return dt.toISOString().slice(0,10);}
+  d2.value=iso(today); d1.value=iso(prior);
+
   var cur=null;
-  function setCoord(la,lo){cur=[la,lo];coord.innerHTML='Coordinates &middot; พิกัด: <span style="color:var(--gold)">'+la+', '+lo+'</span>';}
+  function setCoord(la,lo){cur=[la,lo];coord.innerHTML=t('satCoord')+': <span style="color:var(--gold)">'+la+', '+lo+'</span>';}
   function resolve(){
     var v=(place.value||'').trim();
     if(GAZ[v]){setCoord(GAZ[v][0],GAZ[v][1]);return cur;}
@@ -196,36 +209,42 @@ var GAZ = {
   }
   place.addEventListener('change',resolve); place.addEventListener('blur',resolve);
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function links(la,lo,b,a){
-    return [
-      {nm:'Copernicus Browser (Sentinel-2)',tag:'FREE',cls:'',url:'https://browser.dataspace.copernicus.eu/?zoom=12&lat='+la+'&lng='+lo,
-       d:'Optical 10&nbsp;m, ~5-day revisit. In-app, set the date to '+b+' then '+a+' to compare; switch to Sentinel-1 radar when cloudy.'},
-      {nm:'EO Browser (Sentinel-2)',tag:'FREE',cls:'',url:'https://apps.sentinel-hub.com/eo-browser/?zoom=12&lat='+la+'&lng='+lo+'&datasetId=S2L2A&layerId=1_TRUE_COLOR',
-       d:'Alternative Sentinel viewer with NDVI / false-colour layers that make burn scars and lost vegetation clearer.'},
-      {nm:'NASA FIRMS — fire / heat',tag:'NEAR-RT',cls:'fire',rt:true,url:'https://firms.modaps.eosdis.nasa.gov/map/#d:'+b+'..'+a+';@'+lo+','+la+',10z',
-       d:'Thermal anomalies from '+b+' to '+a+'. Village burning appears as heat points — the best early alert.'},
-      {nm:'Google Earth',tag:'FREE',cls:'',url:'https://earth.google.com/web/@'+la+','+lo+',1000a,25000d',
-       d:'On desktop, the historical-imagery slider lets you step year by year.'},
-      {nm:'Google Maps (satellite)',tag:'REF',cls:'',url:'https://www.google.com/maps/@'+la+','+lo+',13z/data=!3m1!1e3',
-       d:'Quick latest-satellite reference for the location.'}
-    ];
-  }
-  document.getElementById('run').addEventListener('click',function(){
+
+  var SRC=[
+    {nm:'Copernicus Browser (Sentinel-2)',tag:'satTagFree',cls:'',dk:'satD_copern',u:function(la,lo){return 'https://browser.dataspace.copernicus.eu/?zoom=12&lat='+la+'&lng='+lo;}},
+    {nm:'EO Browser (Sentinel-2)',tag:'satTagFree',cls:'',dk:'satD_eo',u:function(la,lo){return 'https://apps.sentinel-hub.com/eo-browser/?zoom=12&lat='+la+'&lng='+lo+'&datasetId=S2L2A&layerId=1_TRUE_COLOR';}},
+    {nm:'NASA FIRMS — fire / heat',tag:'satTagRt',cls:'fire',rt:true,dk:'satD_firms',u:function(la,lo,b,a){return 'https://firms.modaps.eosdis.nasa.gov/map/#d:'+b+'..'+a+';@'+lo+','+la+',10z';}},
+    {nm:'Google Earth',tag:'satTagFree',cls:'',dk:'satD_gearth',u:function(la,lo){return 'https://earth.google.com/web/@'+la+','+lo+',1000a,25000d';}},
+    {nm:'Google Maps (satellite)',tag:'satTagRef',cls:'',dk:'satD_gmap',u:function(la,lo){return 'https://www.google.com/maps/@'+la+','+lo+',13z/data=!3m1!1e3';}}
+  ];
+
+  function run(){
     var c=resolve(); out.innerHTML='';
-    if(!c){out.innerHTML='<div class="card" style="color:var(--fire)">Pick a place from the list, or type coordinates as lat, lng (e.g. 20.82, 92.36).</div>';place.focus();return;}
+    if(!c){ out.innerHTML='<div class="card" style="color:var(--fire)">'+esc(t('satPickErr'))+'</div>'; place.focus(); return; }
     var b=d1.value||'', a=d2.value||'';
     var head=document.createElement('div'); head.className='card';
-    head.innerHTML='<h2 style="margin-top:4px">Viewer links</h2><div class="coordline">'+esc(place.value)+' &middot; '+c[0]+', '+c[1]+' &middot; '+b+' &rarr; '+a+'</div>';
-    links(c[0],c[1],b,a).forEach(function(s){
+    head.innerHTML='<h2 style="margin-top:4px">'+esc(t('satViewerLinks'))+'</h2><div class="coordline">'+esc(place.value)+' &middot; '+c[0]+', '+c[1]+' &middot; '+b+' &rarr; '+a+'</div>';
+    SRC.forEach(function(s){
+      var desc=t(s.dk).replace('{b}',b).replace('{a}',a);
       var el=document.createElement('div'); el.className='src'+(s.cls?' '+s.cls:'');
-      el.innerHTML='<div class="nm">'+s.nm+' <span class="tag'+(s.rt?' rt':'')+'">'+s.tag+'</span></div>'+
-        '<div class="d">'+s.d+'</div>'+
-        '<a class="open" href="'+s.url+'" target="_blank" rel="noopener noreferrer">Open &#8599;</a>';
+      el.innerHTML='<div class="nm">'+s.nm+' <span class="tag'+(s.rt?' rt':'')+'">'+esc(t(s.tag))+'</span></div>'+
+        '<div class="d">'+esc(desc)+'</div>'+
+        '<a class="open" href="'+s.u(c[0],c[1],b,a)+'" target="_blank" rel="noopener noreferrer">'+esc(t('satOpen'))+' &#8599;</a>';
       head.appendChild(el);
     });
     out.appendChild(head);
     head.scrollIntoView({behavior:'smooth',block:'start'});
-  });
+  }
+  document.getElementById('run').addEventListener('click',run);
+
+  function apply(){
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i]').forEach(function(n){ var v=t(n.dataset.i); if(typeof v==='string') n.textContent=v; });
+    document.querySelectorAll('[data-ph]').forEach(function(n){ var v=t(n.dataset.ph); if(typeof v==='string') n.placeholder=v; });
+    if(cur) setCoord(cur[0],cur[1]); else coord.textContent=t('satCoord')+': —';
+    langSel.value=lang;
+  }
+  apply();
 })();
 </script>
 </body>
