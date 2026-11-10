@@ -1,7 +1,16 @@
 {
-  "generated": "2026-11-09T02:41:05+00:00",
+  "generated": "2026-11-10T04:38:07+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Myanmar",
+      "date": "2026-11-09",
+      "title": "Myanmar Foreign Debt Falls to $10.8b but Experts Warn of Collapse",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/myanmar-foreign-debt-falls-to-10-8b-but-experts-warn-of-collapse.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
     {
       "country": "Indonesia",
       "date": "2026-11-09",
@@ -581,15 +590,6 @@
     {
       "country": "Myanmar",
       "date": "2026-11-04",
-      "title": "Thailand’s New Deals with Myanmar and Washington’s Changing Priorities",
-      "url": "https://www.irrawaddy.com/opinion/guest-column/thailands-new-deals-with-myanmar-and-washingtons-changing-priorities.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-04",
       "title": "Myanmar opposition forces hopeful that U.S. strategy could bring about peace",
       "url": "https://rfa.org/english/myanmar/2026/11/04/myanmar-washington-strategy-strategy-rare-earth-burma/",
       "source": "Radio Free Asia",
@@ -603,6 +603,15 @@
       "url": "https://www.dccam.org/takeo-documentation-center/takeo-documentation-center/",
       "source": "Documentation Center of Cambodia (DC-Cam)",
       "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-04",
+      "title": "Thailand’s New Deals with Myanmar and Washington’s Changing Priorities",
+      "url": "https://www.irrawaddy.com/opinion/guest-column/thailands-new-deals-with-myanmar-and-washingtons-changing-priorities.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
       "via": "Curated sources"
     },
     {
@@ -714,15 +723,6 @@
       "via": "Curated sources"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-11-03",
-      "title": "China’s BRI Plans Take Shape in Myanmar’s Rebel-Held Borderlands",
-      "url": "https://www.irrawaddy.com/opinion/analysis/chinas-bri-plans-take-shape-in-myanmars-rebel-held-borderlands.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
       "country": "Cambodia",
       "date": "2026-10-30",
       "title": "Anlong Veng Peace Center. “Hospitality Kampuchea” Organized by Oddar Meanchey Provincial Tourism Department at Ta Mok’s Former Houses or Museum. October 30th, 2026.",
@@ -820,24 +820,6 @@
       "source": "thestar.com.my",
       "kind": "News",
       "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-10-26",
-      "title": "Online post purportedly by Chinese students calls for restoring term limits for Xi",
-      "url": "https://rfa.org/english/china/2026/10/26/xi-jinping-term-limits-open-letter/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-10-26",
-      "title": "The Queen Mother Library: His Majesty King Norodom Sihamoni, King of Cambodia at The Kathina Festival at Royal Palace.",
-      "url": "https://www.dccam.org/the-queen-mother-library/the-queen-mother-library-his-majesty-king-norodom-sihamoni-king-of-cambodia-at-the-kathina-festival-at-royal-palace/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
     }
   ]
 }
