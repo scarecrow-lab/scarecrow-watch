@@ -1,31 +1,193 @@
 {
-  "generated": "2026-11-12T03:49:34+00:00",
+  "generated": "2026-11-13T03:25:51+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Philippines",
+      "date": "2026-11-13",
+      "title": "Filipino fishermen urge Manila to defend territorial waters – their fishing grounds",
+      "url": "https://rfa.org/english/southchinasea/2026/11/13/fishermen-philippines-asean-apec-scarborough-shoal-china/",
+      "source": "Radio Free Asia",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-11-13",
+      "title": "US Senate Democrats vow to block funding for Trump Iran war in year - end spending deal",
+      "url": "https://aa.com.tr/en/americas/us-senate-democrats-vow-to-block-funding-for-trumps-iran-war-in-year-end-spending-deal/4123356",
+      "source": "aa.com.tr",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-11-13",
+      "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
+      "url": "http://www.bangladeshsun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
+      "source": "bangladeshsun.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-11-13",
+      "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
+      "url": "http://www.australiannews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
+      "source": "australiannews.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-11-13",
+      "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
+      "url": "http://www.myanmarnews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
+      "source": "myanmarnews.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-11-13",
+      "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
+      "url": "http://www.haitisun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
+      "source": "haitisun.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-12",
+      "title": "Myanmar Faces Year of Blackouts as Regime Admits 30% Power Shortfall",
+      "url": "https://www.irrawaddy.com/news/burma/myanmar-faces-year-of-blackouts-as-regime-admits-30-power-shortfall.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-12",
+      "title": "Three Years After Operation 1027, Hopang Transformed Under Wa Rule",
+      "url": "https://www.irrawaddy.com/news/burma/three-years-after-operation-1027-hopang-transformed-under-wa-rule.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-12",
+      "title": "Karapatan Monitor for July to September 2026",
+      "url": "https://www.karapatan.org/5641/",
+      "source": "Karapatan",
+      "kind": "cso",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-11-12",
+      "title": "📢 สรุปการแถลงข่าวภาคประชาสังคม | สิทธิผู้ลี้ภัยและการปราบปรามข้ามชาติ (TNR) หลังการทบทวนสถานการณ์สิทธิมนุษยชนของไทย UPR รอบที่ 4",
+      "url": "https://asylumaccess.org/press-conference-aat-upr/",
+      "source": "Asylum Access",
+      "kind": "ingo",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-11-12",
+      "title": "📢 Press Conference Recap | Refugee Rights and Transnational Repression (TNR) Following Thailand’s Fourth Universal Periodic Review (UPR IV)",
+      "url": "https://asylumaccess.org/press-conference-upr-iv/",
+      "source": "Asylum Access",
+      "kind": "ingo",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-12",
+      "title": " [ OPINION ] Why  Trump Out ? ",
+      "url": "https://www.rappler.com/voices/thought-leaders/opinion-why-protest-against-trump-visit-asean-summit-2026/",
+      "source": "rappler.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-12",
+      "title": "Rizal statue to grace Philippine Embassy in Ottawa , Canada Canada",
+      "url": "https://asianjournal.com/world/canada/rizal-statue-to-grace-philippine-embassy-in-ottawa-canada/",
+      "source": "asianjournal.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-11-12",
+      "title": "  They never had a chance to see their monument . Youre giving them something special : Charleston Honor Flight looks to take off",
+      "url": "https://www.live5news.com/2026/11/12/they-never-had-chance-see-their-monument-youre-giving-them-something-special-charleston-honor-flight-looks-take-off/",
+      "source": "live5news.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-11-12",
+      "title": "Folsom Marine veteran who survived Kabul airport bombing fights for accountability 5 years later",
+      "url": "https://www.cbsnews.com/sacramento/news/tyler-vargas-andrews-kabul-bombing-fights-for-accountability/",
+      "source": "cbsnews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-11-12",
+      "title": "BYU students search for lost veterans decades later",
+      "url": "https://www.ksl.com:443/article/51645323/byu-students-search-for-lost-veterans-decades-later",
+      "source": "ksl.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-11-12",
+      "title": "Flowers of red , white and blue : honoring those who served on Veterans Day",
+      "url": "https://wkuherald.com/99218/news/flowers-of-red-white-and-blue-honoring-those-who-served-on-veterans-day/",
+      "source": "wkuherald.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-11-12",
+      "title": "Honoring service , building bonds : Veterans Day events in Northampton , Amherst highlight camaraderie and community",
+      "url": "https://gazettenet.com/2026/11/11/honoring-service-building-bonds-veterans-day-events-in-northampton-amherst-highlight-camaraderie-and-community/",
+      "source": "gazettenet.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-11-12",
+      "title": "Bandon honors Veterans Day with annual ceremony at Bandon Veterans Memorial",
+      "url": "https://kval.com/news/local/bandon-honors-veterans-day-with-annual-ceremony-at-bandon-veterans-memorial",
+      "source": "kval.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-11-12",
+      "title": "Two heroes , two wars : Patten community center to honor local fallen servicemen",
+      "url": "https://www.wabi.tv:443/2026/11/11/two-heroes-two-wars-patten-community-center-honor-local-fallen-servicemen/",
+      "source": "wabi.tv",
+      "kind": "News",
+      "via": "GDELT"
+    },
     {
       "country": "Vietnam",
       "date": "2026-11-12",
       "title": "106 - year - old WWII veteran reflects on his service",
       "url": "https://www.wcvb.com/article/106-year-old-wwii-veteran/74399536",
       "source": "wcvb.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-11-12",
-      "title": "Blue tsunami : American reformist revolution and new progressivism",
-      "url": "https://www.ft.lk/columns/Blue-tsunami-American-reformist-revolution-and-new-progressivism/4-799999",
-      "source": "ft.lk",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-11-12",
-      "title": "Amsterdam honors service members on Veterans Day | Amsterdam",
-      "url": "https://www.dailygazette.com/the_recorder/the_recorder/news/amsterdam/amsterdam-honors-service-members-on-veterans-day/article_f61c79e8-7220-4f14-9ee6-6b34b15c0b73.html",
-      "source": "dailygazette.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -50,6 +212,24 @@
     {
       "country": "Vietnam",
       "date": "2026-11-12",
+      "title": "Blue tsunami : American reformist revolution and new progressivism",
+      "url": "https://www.ft.lk/columns/Blue-tsunami-American-reformist-revolution-and-new-progressivism/4-799999",
+      "source": "ft.lk",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-11-12",
+      "title": "Amsterdam honors service members on Veterans Day | Amsterdam",
+      "url": "https://www.dailygazette.com/the_recorder/the_recorder/news/amsterdam/amsterdam-honors-service-members-on-veterans-day/article_f61c79e8-7220-4f14-9ee6-6b34b15c0b73.html",
+      "source": "dailygazette.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-11-12",
       "title": "New series tells story of Afghan War Battle of Sangin , in time for Veterans Day",
       "url": "https://www.kpbs.org/podcasts/kpbs-midday-edition/new-series-tells-story-of-afghan-wars-battle-of-sangin-in-time-for-veterans-day",
       "source": "kpbs.org",
@@ -66,56 +246,11 @@
       "via": "GDELT"
     },
     {
-      "country": "Vietnam",
+      "country": "Malaysia",
       "date": "2026-11-12",
-      "title": "Veterans tell their stories during Veterans Day at IVH",
-      "url": "https://www.khqa.com/news/local/veterans-tell-their-stories-during-veterans-day-at-ivh/article_38c3443d-3a35-43db-9061-cf15058d67e2.html",
-      "source": "khqa.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-11-12",
-      "title": "Westminster College reflects on alumni killed in Vietnam War | Callaway County",
-      "url": "https://www.komu.com/news/callaway/westminster-college-reflects-on-vietnam-trip-honoring-alumni-killed-in-war/article_6cae923f-8f3e-4f94-8c06-0c4cb8c0e6aa.html",
-      "source": "komu.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-11-12",
-      "title": "US Defence Secretary Pete Hegseth group reprimanded by guard at Tomb of the Unknown Soldier",
-      "url": "https://www.nzherald.co.nz/world/us-defence-secretary-pete-hegseths-group-reprimanded-by-guard-at-tomb-of-the-unknown-soldier/LONIMQTYHJEO3KQUBKYLTFFUQY/",
-      "source": "nzherald.co.nz",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-11-12",
-      "title": "College of the Ozarks Honors Veterans with Special Tributes",
-      "url": "https://marshfieldmail.com/2026/11/11/college-of-the-ozarks-honors-veterans-with-special-tributes/",
-      "source": "marshfieldmail.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-11-12",
-      "title": "Trump Honors Veterans , Vows Victory Against Iran | News Radio 1200 WOAI",
-      "url": "https://woai.iheart.com/featured/san-antonios-first-news/content/2026-11-11-trump-honors-veterans-vows-victory-against-iran/",
-      "source": "woai.iheart.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-11-12",
-      "title": "Bandon honors Veterans Day with annual ceremony at Bandon Veterans Memorial",
-      "url": "https://kcby.com/news/local/bandon-honors-veterans-day-with-annual-ceremony-at-bandon-veterans-memorial",
-      "source": "kcby.com",
+      "title": "Malaysia EV Charging Runs on Three Apps : The Real Price of Each in 2026 – IT Business Net",
+      "url": "https://itbusinessnet.com/2026/11/malaysias-ev-charging-runs-on-three-apps-the-real-price-of-each-in-2026/",
+      "source": "itbusinessnet.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -192,11 +327,74 @@
       "via": "Curated sources"
     },
     {
-      "country": "Thailand",
+      "country": "Philippines",
+      "date": "2026-11-11",
+      "title": "David North closes lecture tour in Ann Arbor with Marxist assessment of US midterms",
+      "url": "https://www.wsws.org/en/articles/2026/11/11/gpyi-n11.html",
+      "source": "wsws.org",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-11",
+      "title": "China and ASEAN make progress on South China Sea pact but cant finish talks this year",
+      "url": "https://www.wsls.com/news/world/2026/11/11/china-and-asean-make-progress-on-south-china-sea-pact-but-cant-finish-talks-this-year/",
+      "source": "wsls.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
       "date": "2026-11-11",
       "title": "A new US Congress , but little relief for Bangladesh and developing Asia",
       "url": "https://asianews.network/a-new-us-congress-but-little-relief-for-bangladesh-and-developing-asia/",
       "source": "asianews.network",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-11",
+      "title": "China and ASEAN make progress on South China Sea pact but cant finish talks this year",
+      "url": "http://www.dailyadvance.com/news/world/china-and-asean-make-progress-on-south-china-sea-pact-but-cant-finish-talks-this/article_f5376c4d-b47b-5339-9142-96fd4a7b3893.html",
+      "source": "dailyadvance.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-11",
+      "title": "DLSU earns top honors at National Model United Nations D . C . conference",
+      "url": "https://www.manilatimes.net/2026/11/11/news/dlsu-earns-top-honors-at-national-model-united-nations-dc-conference/2467176",
+      "source": "manilatimes.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-11",
+      "title": "5 International Superheroes Who Prove the Genre Is Bigger Than the United States",
+      "url": "https://comicbook.com/comics/list/5-international-superheroes-who-prove-the-genre-is-bigger-than-the-united-states/",
+      "source": "comicbook.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-11",
+      "title": "Meghan ignores personal question during first public outing since father arrest",
+      "url": "https://www.cairnspost.com.au/entertainment/celebrity-life/royals/meghan-ignores-personal-question-during-first-public-outing-since-fathers-arrest/news-story/3dc04a52c63b1feba0bf5ec6851fe167?nk=cc0b2f288b371025df688870d052dbff-1794359803",
+      "source": "cairnspost.com.au",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-11",
+      "title": "Child , 4 others dead in 3 Central Mindanao gun attacks",
+      "url": "https://www.philstar.com/nation/2026/11/11/2569397/child-4-others-dead-3-central-mindanao-gun-attacks",
+      "source": "philstar.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -206,24 +404,6 @@
       "title": "Boulder County DA says predecessor was wrong to clear Ramseys in JonBenet Ramsey murder",
       "url": "https://www.dailycamera.com/2026/11/10/boulder-da-jonbenet-ramsey-case/",
       "source": "dailycamera.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-11-11",
-      "title": "Honor Flight Mission 58 : Tampa Bay veterans visit Washington memorials",
-      "url": "https://www.fox13news.com/news/honor-flight-mission-58-tampa-bay-veterans-visit-washington-memorials",
-      "source": "fox13news.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-11-11",
-      "title": "David North closes lecture tour in Ann Arbor with Marxist assessment of US midterms",
-      "url": "https://www.wsws.org/en/articles/2026/11/11/gpyi-n11.html",
-      "source": "wsws.org",
       "kind": "News",
       "via": "GDELT"
     },
@@ -257,24 +437,6 @@
     {
       "country": "Myanmar",
       "date": "2026-11-10",
-      "title": "Bangladesh Confirms Talks With AA Over Rohingya Repatriation",
-      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/bangladesh-confirms-talks-with-aa-over-rohingya-repatriation.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-10",
-      "title": "Oxford Museum Makes ‘Historic’ Return of Naga Human Remains",
-      "url": "https://www.irrawaddy.com/news/burma/oxford-museum-makes-historic-return-of-naga-human-remains.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-10",
       "title": "No internet, no advance warning: 11 killed in Myanmar military bombing in Sagaing",
       "url": "https://rfa.org/english/myanmar/2026/11/10/starlink-burma-civil-war-scam-center/",
       "source": "Radio Free Asia",
@@ -300,20 +462,29 @@
       "via": "Curated sources"
     },
     {
-      "country": "Thailand",
+      "country": "Myanmar",
       "date": "2026-11-10",
-      "title": "Phuket or Bali ? Why Geography Matters More Than Climate for January Beach Trips",
-      "url": "https://english.pravda.ru/travel/172111-january-beach-geography-trade-off/",
-      "source": "english.pravda.ru",
-      "kind": "News",
-      "via": "GDELT"
+      "title": "Bangladesh Confirms Talks With AA Over Rohingya Repatriation",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/bangladesh-confirms-talks-with-aa-over-rohingya-repatriation.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
     },
     {
-      "country": "Thailand",
+      "country": "Myanmar",
       "date": "2026-11-10",
-      "title": "COP31 Summit Leaders Urge Crisis - Wracked World To Move Faster On Climate",
-      "url": "https://www.deccanchronicle.com/lifestyle/environment/cop31-summit-leaders-urge-crisis-wracked-world-to-move-faster-on-climate-2003092",
-      "source": "deccanchronicle.com",
+      "title": "Oxford Museum Makes ‘Historic’ Return of Naga Human Remains",
+      "url": "https://www.irrawaddy.com/news/burma/oxford-museum-makes-historic-return-of-naga-human-remains.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-10",
+      "title": "Harry , Meghan visit Brussels after Thomas Markle arrest",
+      "url": "https://www.jacarandafm.com/news/news/harry-meghan-visit-brussels-after-thomas-markle-arrest/",
+      "source": "jacarandafm.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -332,6 +503,24 @@
       "title": "Philadelphia DHS reform urged after Malayshia Alford murder – NBC10 Philadelphia",
       "url": "https://www.nbcphiladelphia.com/news/local/calls-for-dhs-reform-grow-after-murder-of-10-year-old-malayshia-alford/4494575/",
       "source": "nbcphiladelphia.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-11-10",
+      "title": "Phuket or Bali ? Why Geography Matters More Than Climate for January Beach Trips",
+      "url": "https://english.pravda.ru/travel/172111-january-beach-geography-trade-off/",
+      "source": "english.pravda.ru",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-11-10",
+      "title": "COP31 Summit Leaders Urge Crisis - Wracked World To Move Faster On Climate",
+      "url": "https://www.deccanchronicle.com/lifestyle/environment/cop31-summit-leaders-urge-crisis-wracked-world-to-move-faster-on-climate-2003092",
+      "source": "deccanchronicle.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -435,78 +624,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Philippines",
-      "date": "2026-11-08",
-      "title": "Today in History : November 8 , Spanish conquistador Hernán Cortés enters Aztec capital of Tenochtitlán",
-      "url": "https://www.reporterherald.com/2026/11/08/today-in-history-november-8-spanish-conquistador-hernan-cortes-enters-aztec-capital-of-tenochtitlan/",
-      "source": "reporterherald.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-08",
-      "title": "Today in History : November 8 , Spanish conquistador Hernán Cortés enters Aztec capital of Tenochtitlán",
-      "url": "https://www.mcall.com/2026/11/08/today-in-history-november-8-spanish-conquistador-hernan-cortes-enters-aztec-capital-of-tenochtitlan/",
-      "source": "mcall.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-08",
-      "title": "Today in History : November 8 , Florida election recount begins",
-      "url": "https://www.khqa.com/news/nation-world/today-in-history-november-8-florida-election-recount-begins/article_2cda4234-4631-5782-9be3-cf62067069d0.html",
-      "source": "khqa.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-08",
-      "title": "Exporters expect to ship $108 billion this year - BusinessWorld Online",
-      "url": "https://bworldonline.com/economy/2026/11/08/792169/exporters-expect-to-ship-108-billion-this-year/",
-      "source": "bworldonline.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-08",
-      "title": "PHL expects steady US ties despite Democratic gains in Congress",
-      "url": "https://bworldonline.com/the-nation/2026/11/08/792205/phl-expects-steady-us-ties-despite-democratic-gains-in-congress/",
-      "source": "bworldonline.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-08",
-      "title": "Today in History : November 8 , Spanish conquistador Hernán Cortés enters Aztec capital of Tenochtitlán",
-      "url": "https://www.journal-advocate.com/2026/11/08/today-in-history-november-8-spanish-conquistador-hernan-cortes-enters-aztec-capital-of-tenochtitlan/",
-      "source": "journal-advocate.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-08",
-      "title": "Today in History : November 8 , Spanish conquistador Hernán Cortés enters Aztec capital of Tenochtitlán",
-      "url": "https://www.mendocinobeacon.com/2026/11/08/today-in-history-november-8-spanish-conquistador-hernan-cortes-enters-aztec-capital-of-tenochtitlan/",
-      "source": "mendocinobeacon.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-08",
-      "title": "Today in History : November 8 , Spanish conquistador Hernán Cortés enters Aztec capital of Tenochtitlán",
-      "url": "https://www.citizensvoice.com/2026/11/08/today-in-history-november-8-spanish-conquistador-hernan-cortes-enters-aztec-capital-of-tenochtitlan/",
-      "source": "citizensvoice.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Thailand",
       "date": "2026-11-08",
       "title": "WUC weekly brief highlights threats to Uyghur refugees in Thailand , international pushback against China repression",
@@ -530,51 +647,6 @@
       "title": "Two Australian crew confirmed safe after firefighting helicopter crashes in Borneo",
       "url": "https://www.abc.net.au/news/2026-11-08/indonesia-helicopter-crash-borneo-australians/107361384",
       "source": "abc.net.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-07",
-      "title": "Today in history Nov . 8",
-      "url": "https://www.journal-news.net/news/lifestyle/history/today-in-history-nov-8/article_b845cf05-0be7-5b25-8295-74b118aab0e0.html",
-      "source": "journal-news.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-07",
-      "title": "Monuments around the world to be lit up for Red Week 2026",
-      "url": "https://www.myspiritfm.com/News?view=post&blogid=Catholic%2DNews&articleid=307108",
-      "source": "myspiritfm.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-07",
-      "title": "38 Saudi OFWs arrive at NAIA",
-      "url": "https://www.philstar.com/nation/2026/11/08/2568621/38-saudi-ofws-arrive-naia",
-      "source": "philstar.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-07",
-      "title": "Mindanao ambush leaves 3 dead",
-      "url": "https://www.philstar.com/nation/2026/11/08/2568589/mindanao-ambush-leaves-3-dead",
-      "source": "philstar.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-11-07",
-      "title": "Bangkok Post - People Party rift raises fears of split",
-      "url": "https://www.bangkokpost.com/thailand/politics/3350485/peoples-party-rift-raises-fears-of-split",
-      "source": "bangkokpost.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -619,24 +691,6 @@
       "date": "2026-11-06",
       "title": "Myanmar Regime Plans April Vote in 55 Constituencies Despite Continued Clashes",
       "url": "https://www.irrawaddy.com/news/politics/myanmar-regime-plans-april-vote-in-55-constituencies-despite-continued-clashes.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-06",
-      "title": "Over 2m Myanmar Migrants in Thailand Reject Regime’s Identity Document",
-      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/over-2m-myanmar-migrants-in-thailand-reject-regimes-identity-document.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-06",
-      "title": "China Wields Carrot and Stick at Beijing Meet, Regime Seeks Elections in Shan, and More",
-      "url": "https://www.irrawaddy.com/news/china-briefing/china-wields-carrot-and-stick-at-beijing-meet-regime-seeks-elections-in-shan-and-more.html",
       "source": "The Irrawaddy",
       "kind": "media",
       "via": "Curated sources"
