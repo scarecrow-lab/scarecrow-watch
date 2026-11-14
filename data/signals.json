@@ -1,7 +1,43 @@
 {
-  "generated": "2026-11-13T03:25:51+00:00",
+  "generated": "2026-11-14T03:19:15+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Singapore",
+      "date": "2026-11-13",
+      "title": "[Event] “POFMA at Seven” at 5pm on 10 December 2026 at room2f Bras Basah Complex",
+      "url": "https://maruah.org/2026/11/13/event-pofma-at-seven-at-5pm-on-10-december-2026-at-room2f-bras-basah-complex/",
+      "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
+      "kind": "cso",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-13",
+      "title": "Myanmar Regime Seeks Closer Ties With Russian-Led Economic Bloc",
+      "url": "https://www.irrawaddy.com/business/myanmar-regime-seeks-closer-ties-with-russian-led-economic-bloc.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-13",
+      "title": "Myanmar’s Dwindling Debt to China, Scammers Nabbed in Shan, and More",
+      "url": "https://www.irrawaddy.com/news/china-briefing/myanmars-dwindling-debt-to-china-scammers-nabbed-in-shan-and-more.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-13",
+      "title": "ASEAN Should Accept Myanmar Back at Diplomat Level: Bangkok",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/asean-should-accept-myanmar-back-at-diplomat-level-bangkok.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
     {
       "country": "Philippines",
       "date": "2026-11-13",
@@ -21,7 +57,16 @@
       "via": "GDELT"
     },
     {
-      "country": "Malaysia",
+      "country": "Singapore",
+      "date": "2026-11-13",
+      "title": "Singapore - Flagged Bulk Carrier Strikes Delaware River Bridge , Coast Guard Investigating",
+      "url": "https://gcaptain.com/singapore-flagged-bulk-carrier-strikes-delaware-river-bridge-coast-guard-investigating/",
+      "source": "gcaptain.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
       "date": "2026-11-13",
       "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
       "url": "http://www.bangladeshsun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
@@ -30,7 +75,7 @@
       "via": "GDELT"
     },
     {
-      "country": "Malaysia",
+      "country": "Singapore",
       "date": "2026-11-13",
       "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
       "url": "http://www.australiannews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
@@ -39,7 +84,7 @@
       "via": "GDELT"
     },
     {
-      "country": "Malaysia",
+      "country": "Singapore",
       "date": "2026-11-13",
       "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
       "url": "http://www.myanmarnews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
@@ -48,7 +93,7 @@
       "via": "GDELT"
     },
     {
-      "country": "Malaysia",
+      "country": "Singapore",
       "date": "2026-11-13",
       "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
       "url": "http://www.haitisun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
@@ -84,6 +129,15 @@
       "via": "Curated sources"
     },
     {
+      "country": "Cambodia",
+      "date": "2026-11-12",
+      "title": "Koh Thma Documentation Center: A meeting regarding the 12th Global Youth Camp under the theme “Youth: Learning from the Past, Engaging in the Present to Develop the Future.” November 12,2026.",
+      "url": "https://www.dccam.org/koh-thma-documentation-center/koh-thma-documentation-center-a-meeting-regarding-the-12th-global-youth-camp-under-the-theme-youth-learning-from-the-past-engaging-in-the-present-to-develop-the-future-november-122026/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
       "country": "Thailand",
       "date": "2026-11-12",
       "title": "📢 สรุปการแถลงข่าวภาคประชาสังคม | สิทธิผู้ลี้ภัยและการปราบปรามข้ามชาติ (TNR) หลังการทบทวนสถานการณ์สิทธิมนุษยชนของไทย UPR รอบที่ 4",
@@ -100,24 +154,6 @@
       "source": "Asylum Access",
       "kind": "ingo",
       "via": "Curated sources"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-12",
-      "title": " [ OPINION ] Why  Trump Out ? ",
-      "url": "https://www.rappler.com/voices/thought-leaders/opinion-why-protest-against-trump-visit-asean-summit-2026/",
-      "source": "rappler.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-12",
-      "title": "Rizal statue to grace Philippine Embassy in Ottawa , Canada Canada",
-      "url": "https://asianjournal.com/world/canada/rizal-statue-to-grace-philippine-embassy-in-ottawa-canada/",
-      "source": "asianjournal.com",
-      "kind": "News",
-      "via": "GDELT"
     },
     {
       "country": "Vietnam",
@@ -246,6 +282,87 @@
       "via": "GDELT"
     },
     {
+      "country": "Singapore",
+      "date": "2026-11-12",
+      "title": "Faridabad Shooting : CCTV Footage Reveals Chilling Details of Parking Dispute Turned Murder",
+      "url": "https://openthemagazine.com/india/faridabad-shooting-cctv-shows-how-parking-dispute-turned-into-a-brutal-murder",
+      "source": "openthemagazine.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-11-12",
+      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
+      "url": "https://www.wsls.com/news/world/2026/11/12/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/",
+      "source": "wsls.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-11-12",
+      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
+      "url": "https://www.clickorlando.com/news/world/2026/11/12/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/",
+      "source": "clickorlando.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-11-12",
+      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
+      "url": "http://www.rockymounttelegram.com/news/world/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/article_8fdaf3f2-96a2-570d-bae2-2a5cba882a5a.html",
+      "source": "rockymounttelegram.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-11-12",
+      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
+      "url": "https://www.winknews.com/news/international/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/article_de8c4914-1e96-516e-b31d-b756ee64d313.html",
+      "source": "winknews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-11-12",
+      "title": "Pak Deputy PM Ishaq Dar grandson , 7 others indicted in Lahore gang rape case",
+      "url": "https://www.dailyexcelsior.com/pak-deputy-pm-ishaq-dars-grandson-7-others-indicted-in-lahore-gang-rape-case/",
+      "source": "dailyexcelsior.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-11-12",
+      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo – Winnipeg Free Press",
+      "url": "https://www.winnipegfreepress.com/world/2026/11/11/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo",
+      "source": "winnipegfreepress.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-12",
+      "title": " [ OPINION ] Why  Trump Out ? ",
+      "url": "https://www.rappler.com/voices/thought-leaders/opinion-why-protest-against-trump-visit-asean-summit-2026/",
+      "source": "rappler.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-12",
+      "title": "Rizal statue to grace Philippine Embassy in Ottawa , Canada Canada",
+      "url": "https://asianjournal.com/world/canada/rizal-statue-to-grace-philippine-embassy-in-ottawa-canada/",
+      "source": "asianjournal.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
       "country": "Malaysia",
       "date": "2026-11-12",
       "title": "Malaysia EV Charging Runs on Three Apps : The Real Price of Each in 2026 – IT Business Net",
@@ -327,20 +444,20 @@
       "via": "Curated sources"
     },
     {
-      "country": "Philippines",
+      "country": "Singapore",
       "date": "2026-11-11",
-      "title": "David North closes lecture tour in Ann Arbor with Marxist assessment of US midterms",
-      "url": "https://www.wsws.org/en/articles/2026/11/11/gpyi-n11.html",
-      "source": "wsws.org",
+      "title": "No flights to shift to Navi Mumbai airport , says Maha CM Fadnavis : What happening at Mumbai airports",
+      "url": "https://www.businesstoday.in/india/story/no-flights-to-shift-to-navi-mumbai-airport-says-maha-cm-fadnavis-whats-happening-at-mumbai-airports-566782-2026-11-11",
+      "source": "businesstoday.in",
       "kind": "News",
       "via": "GDELT"
     },
     {
-      "country": "Philippines",
+      "country": "Singapore",
       "date": "2026-11-11",
       "title": "China and ASEAN make progress on South China Sea pact but cant finish talks this year",
-      "url": "https://www.wsls.com/news/world/2026/11/11/china-and-asean-make-progress-on-south-china-sea-pact-but-cant-finish-talks-this-year/",
-      "source": "wsls.com",
+      "url": "http://www.dailyadvance.com/news/world/china-and-asean-make-progress-on-south-china-sea-pact-but-cant-finish-talks-this/article_f5376c4d-b47b-5339-9142-96fd4a7b3893.html",
+      "source": "dailyadvance.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -350,15 +467,6 @@
       "title": "A new US Congress , but little relief for Bangladesh and developing Asia",
       "url": "https://asianews.network/a-new-us-congress-but-little-relief-for-bangladesh-and-developing-asia/",
       "source": "asianews.network",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-11",
-      "title": "China and ASEAN make progress on South China Sea pact but cant finish talks this year",
-      "url": "http://www.dailyadvance.com/news/world/china-and-asean-make-progress-on-south-china-sea-pact-but-cant-finish-talks-this/article_f5376c4d-b47b-5339-9142-96fd4a7b3893.html",
-      "source": "dailyadvance.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -410,33 +518,6 @@
     {
       "country": "Myanmar",
       "date": "2026-11-10",
-      "title": "Myanmar Embassies Push Tax, Remittance Rules as Migrant Backlash Grows Across Asia",
-      "url": "https://www.irrawaddy.com/news/burma/myanmar-embassies-push-tax-remittance-rules-as-migrant-backlash-grows-across-asia.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-10",
-      "title": "Myanmar Regime Routs Resistance HQ on Bago–Mon Border",
-      "url": "https://www.irrawaddy.com/news/burma/myanmar-regime-routs-resistance-hq-on-bago-mon-border.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-10",
-      "title": "Blue Tsunami Claims a Congressional Champion of Myanmar’s Cause",
-      "url": "https://www.irrawaddy.com/opinion/guest-column/blue-tsunami-claims-a-congressional-champion-of-myanmars-cause.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-10",
       "title": "No internet, no advance warning: 11 killed in Myanmar military bombing in Sagaing",
       "url": "https://rfa.org/english/myanmar/2026/11/10/starlink-burma-civil-war-scam-center/",
       "source": "Radio Free Asia",
@@ -464,8 +545,8 @@
     {
       "country": "Myanmar",
       "date": "2026-11-10",
-      "title": "Bangladesh Confirms Talks With AA Over Rohingya Repatriation",
-      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/bangladesh-confirms-talks-with-aa-over-rohingya-repatriation.html",
+      "title": "Myanmar Embassies Push Tax, Remittance Rules as Migrant Backlash Grows Across Asia",
+      "url": "https://www.irrawaddy.com/news/burma/myanmar-embassies-push-tax-remittance-rules-as-migrant-backlash-grows-across-asia.html",
       "source": "The Irrawaddy",
       "kind": "media",
       "via": "Curated sources"
@@ -473,8 +554,26 @@
     {
       "country": "Myanmar",
       "date": "2026-11-10",
-      "title": "Oxford Museum Makes ‘Historic’ Return of Naga Human Remains",
-      "url": "https://www.irrawaddy.com/news/burma/oxford-museum-makes-historic-return-of-naga-human-remains.html",
+      "title": "Myanmar Regime Routs Resistance HQ on Bago–Mon Border",
+      "url": "https://www.irrawaddy.com/news/burma/myanmar-regime-routs-resistance-hq-on-bago-mon-border.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-10",
+      "title": "Blue Tsunami Claims a Congressional Champion of Myanmar’s Cause",
+      "url": "https://www.irrawaddy.com/opinion/guest-column/blue-tsunami-claims-a-congressional-champion-of-myanmars-cause.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-10",
+      "title": "Bangladesh Confirms Talks With AA Over Rohingya Repatriation",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/bangladesh-confirms-talks-with-aa-over-rohingya-repatriation.html",
       "source": "The Irrawaddy",
       "kind": "media",
       "via": "Curated sources"
@@ -532,15 +631,6 @@
       "source": "malaysiakini.com",
       "kind": "News",
       "via": "GDELT"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-09",
-      "title": "Myanmar Foreign Debt Falls to $10.8b but Experts Warn of Collapse",
-      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/myanmar-foreign-debt-falls-to-10-8b-but-experts-warn-of-collapse.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
     },
     {
       "country": "Thailand",
@@ -651,15 +741,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Singapore",
-      "date": "2026-11-07",
-      "title": "Gurugram parking killing : Shooter issued death threat to vic",
-      "url": "https://dailypioneer.com/india/gurugram-parking-killing-shooter-issued-death-threat-to-victim-at-police-post-hours-before-say-sources",
-      "source": "dailypioneer.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Cambodia",
       "date": "2026-11-06",
       "title": "Stung Treng Documentation Center: Welcome Visitors​ (November 2 – 6, 2026)",
@@ -684,15 +765,6 @@
       "url": "https://www.dccam.org/the-queen-mother-library/qml-architects-at-the-architecture-gallery-2026/",
       "source": "Documentation Center of Cambodia (DC-Cam)",
       "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-06",
-      "title": "Myanmar Regime Plans April Vote in 55 Constituencies Despite Continued Clashes",
-      "url": "https://www.irrawaddy.com/news/politics/myanmar-regime-plans-april-vote-in-55-constituencies-despite-continued-clashes.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
       "via": "Curated sources"
     },
     {
@@ -786,51 +858,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Singapore",
-      "date": "2026-11-06",
-      "title": "Europe eyes smartphone location data to stem virus spread",
-      "url": "https://www.c4isrnet.com:443/cyber/2020/03/24/europe-eyes-smartphone-location-data-to-stem-virus-spread/",
-      "source": "c4isrnet.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-06",
-      "title": "Centre eases immigration rules for Pakistani , Afghan minorities and other foreign nationals",
-      "url": "https://timesofindia.indiatimes.com/india/centre-eases-immigration-rules-for-pakistani-afghan-minorities-and-other-foreign-nationals/articleshow/135593727.cms",
-      "source": "timesofindia.indiatimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-06",
-      "title": "Give . Asia managing $480k of donations for son of Tampines crash victims",
-      "url": "https://www.straitstimes.com/singapore/fatal-tampines-crash-give-asia-managing-nearly-500k-raised-for-couples-son",
-      "source": "straitstimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-06",
-      "title": "Iran War Updates : More ships attacked in Persian Gulf , oil prices rebound slightly after post - midterm plunge",
-      "url": "https://peakoil.com/publicpolicy/iran-war-updates-more-ships-attacked-in-persian-gulf-oil-prices-rebound-slightly-after-post-midterm-plunge",
-      "source": "peakoil.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-06",
-      "title": "Newly - Elected International Court of Justice Judges Have Anti - Israel History , Danon Says",
-      "url": "https://jewishtimes.com/newly-elected-international-court-of-justice-judges-have-anti-israel-history-danon-says/",
-      "source": "jewishtimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Malaysia",
       "date": "2026-11-06",
       "title": "Flooding displaces over 1 , 300 in Malaysia",
@@ -885,15 +912,6 @@
       "via": "Curated sources"
     },
     {
-      "country": "Singapore",
-      "date": "2026-11-04",
-      "title": "Tampines crash survivor seeks psychiatric treatment",
-      "url": "https://www.straitstimes.com/singapore/survivor-of-tampines-crash-has-no-serious-injuries-but-seeking-psychiatric-treatment-baey-yam-keng",
-      "source": "straitstimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Thailand",
       "date": "2026-11-03",
       "title": "Civil Society Calls on GANHRI to Retain Mongolia’s National Human Rights Commission “A” Status and Address Remaining Gaps Slug",
@@ -927,24 +945,6 @@
       "url": "https://www.dccam.org/koh-thma-documentation-center/koh-thma-documentation-center-home-visits-with-10-survivors-of-the-khmer-rouge-regime-6-women-in-trapaing-raing-village-memot-commune-memot-district-tbong-khmum-province/",
       "source": "Documentation Center of Cambodia (DC-Cam)",
       "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-03",
-      "title": "The Queen Mother Library: ព្រះរាជដំណាក់ព្រះមហាក្សត្រីយានី ស៊ីសុវត្ថិមុនីវង្ស កុសុមៈ នារីរតន៍សិរីវឌ្ឍនា",
-      "url": "https://www.dccam.org/the-queen-mother-library/the-queen-mother-library-%e1%9e%96%e1%9f%92%e1%9e%9a%e1%9f%87%e1%9e%9a%e1%9e%b6%e1%9e%87%e1%9e%8a%e1%9f%86%e1%9e%8e%e1%9e%b6%e1%9e%80%e1%9f%8b%e1%9e%96%e1%9f%92%e1%9e%9a%e1%9f%87%e1%9e%98%e1%9e%a0/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-10-30",
-      "title": "Regime Threatens Migrant Workers in Thailand Over Document Boycott",
-      "url": "https://www.irrawaddy.com/news/burma/regime-threatens-migrant-workers-in-thailand-over-document-boycott.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
       "via": "Curated sources"
     }
   ]
