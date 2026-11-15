@@ -1,7 +1,25 @@
 {
-  "generated": "2026-11-14T03:19:15+00:00",
+  "generated": "2026-11-15T02:41:50+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Philippines",
+      "date": "2026-11-14",
+      "title": "Philippine Carmelle wins first Eurovision contest in Asia",
+      "url": "https://www.aol.co.uk/articles/philippines-carmelle-wins-first-eurovision-190132000.html",
+      "source": "aol.co.uk",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-14",
+      "title": "Muslim countries condemn Israel strike on Gaza Nasser Hospital",
+      "url": "https://www.jpost.com/israel-news/article-914881",
+      "source": "jpost.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
     {
       "country": "Singapore",
       "date": "2026-11-13",
@@ -48,11 +66,38 @@
       "via": "Curated sources"
     },
     {
-      "country": "Vietnam",
+      "country": "Indonesia",
       "date": "2026-11-13",
-      "title": "US Senate Democrats vow to block funding for Trump Iran war in year - end spending deal",
-      "url": "https://aa.com.tr/en/americas/us-senate-democrats-vow-to-block-funding-for-trumps-iran-war-in-year-end-spending-deal/4123356",
-      "source": "aa.com.tr",
+      "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
+      "url": "http://www.haitisun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
+      "source": "haitisun.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-13",
+      "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
+      "url": "http://www.bangladeshsun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
+      "source": "bangladeshsun.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-13",
+      "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
+      "url": "http://www.australiannews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
+      "source": "australiannews.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-13",
+      "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
+      "url": "http://www.myanmarnews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
+      "source": "myanmarnews.net",
       "kind": "News",
       "via": "GDELT"
     },
@@ -66,38 +111,11 @@
       "via": "GDELT"
     },
     {
-      "country": "Singapore",
+      "country": "Vietnam",
       "date": "2026-11-13",
-      "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
-      "url": "http://www.bangladeshsun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
-      "source": "bangladeshsun.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-13",
-      "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
-      "url": "http://www.australiannews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
-      "source": "australiannews.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-13",
-      "title": "Nasdaq extends losses on Nvidia CEO resignation , Mideast hostilities",
-      "url": "http://www.myanmarnews.net/news/279429293/nasdaq-extends-losses-on-nvidia-ceo-s-resignation-mideast-hostilities",
-      "source": "myanmarnews.net",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-13",
-      "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
-      "url": "http://www.haitisun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
-      "source": "haitisun.com",
+      "title": "US Senate Democrats vow to block funding for Trump Iran war in year - end spending deal",
+      "url": "https://aa.com.tr/en/americas/us-senate-democrats-vow-to-block-funding-for-trumps-iran-war-in-year-end-spending-deal/4123356",
+      "source": "aa.com.tr",
       "kind": "News",
       "via": "GDELT"
     },
@@ -154,6 +172,114 @@
       "source": "Asylum Access",
       "kind": "ingo",
       "via": "Curated sources"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-12",
+      "title": " [ OPINION ] Why  Trump Out ? ",
+      "url": "https://www.rappler.com/voices/thought-leaders/opinion-why-protest-against-trump-visit-asean-summit-2026/",
+      "source": "rappler.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-12",
+      "title": "Rizal statue to grace Philippine Embassy in Ottawa , Canada Canada",
+      "url": "https://asianjournal.com/world/canada/rizal-statue-to-grace-philippine-embassy-in-ottawa-canada/",
+      "source": "asianjournal.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-12",
+      "title": "Protecting the Climate Means Protecting Territorial Rights",
+      "url": "https://www.ipsnews.net/2026/11/protecting-the-climate-means-protecting-territorial-rights/",
+      "source": "ipsnews.net",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-12",
+      "title": "Indonesia : US Aid Cuts Fuel HIV",
+      "url": "http://www.philippinetimes.com/news/279427262/indonesia-us-aid-cuts-fuel-hiv",
+      "source": "philippinetimes.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-12",
+      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
+      "url": "https://www.wsls.com/news/world/2026/11/12/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/",
+      "source": "wsls.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-12",
+      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
+      "url": "https://www.clickorlando.com/news/world/2026/11/12/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/",
+      "source": "clickorlando.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-12",
+      "title": "The United Nations Vision For Global Peace  - OpEd",
+      "url": "https://www.eurasiareview.com/12112026-the-united-nations-vision-for-global-peace-oped/",
+      "source": "eurasiareview.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-12",
+      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
+      "url": "http://www.rockymounttelegram.com/news/world/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/article_8fdaf3f2-96a2-570d-bae2-2a5cba882a5a.html",
+      "source": "rockymounttelegram.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-12",
+      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
+      "url": "https://www.winknews.com/news/international/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/article_de8c4914-1e96-516e-b31d-b756ee64d313.html",
+      "source": "winknews.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-11-12",
+      "title": "Malaysia EV Charging Runs on Three Apps : The Real Price of Each in 2026 – IT Business Net",
+      "url": "https://itbusinessnet.com/2026/11/malaysias-ev-charging-runs-on-three-apps-the-real-price-of-each-in-2026/",
+      "source": "itbusinessnet.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-11-12",
+      "title": "Faridabad Shooting : CCTV Footage Reveals Chilling Details of Parking Dispute Turned Murder",
+      "url": "https://openthemagazine.com/india/faridabad-shooting-cctv-shows-how-parking-dispute-turned-into-a-brutal-murder",
+      "source": "openthemagazine.com",
+      "kind": "News",
+      "via": "GDELT"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-11-12",
+      "title": "Pak Deputy PM Ishaq Dar grandson , 7 others indicted in Lahore gang rape case",
+      "url": "https://www.dailyexcelsior.com/pak-deputy-pm-ishaq-dars-grandson-7-others-indicted-in-lahore-gang-rape-case/",
+      "source": "dailyexcelsior.com",
+      "kind": "News",
+      "via": "GDELT"
     },
     {
       "country": "Vietnam",
@@ -284,90 +410,9 @@
     {
       "country": "Singapore",
       "date": "2026-11-12",
-      "title": "Faridabad Shooting : CCTV Footage Reveals Chilling Details of Parking Dispute Turned Murder",
-      "url": "https://openthemagazine.com/india/faridabad-shooting-cctv-shows-how-parking-dispute-turned-into-a-brutal-murder",
-      "source": "openthemagazine.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-12",
-      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
-      "url": "https://www.wsls.com/news/world/2026/11/12/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/",
-      "source": "wsls.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-12",
-      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
-      "url": "https://www.clickorlando.com/news/world/2026/11/12/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/",
-      "source": "clickorlando.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-12",
-      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
-      "url": "http://www.rockymounttelegram.com/news/world/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/article_8fdaf3f2-96a2-570d-bae2-2a5cba882a5a.html",
-      "source": "rockymounttelegram.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-12",
-      "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo",
-      "url": "https://www.winknews.com/news/international/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo/article_de8c4914-1e96-516e-b31d-b756ee64d313.html",
-      "source": "winknews.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-12",
-      "title": "Pak Deputy PM Ishaq Dar grandson , 7 others indicted in Lahore gang rape case",
-      "url": "https://www.dailyexcelsior.com/pak-deputy-pm-ishaq-dars-grandson-7-others-indicted-in-lahore-gang-rape-case/",
-      "source": "dailyexcelsior.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Singapore",
-      "date": "2026-11-12",
       "title": "Indonesian lawmakers question police chief about wiretaps alleged to target President Prabowo – Winnipeg Free Press",
       "url": "https://www.winnipegfreepress.com/world/2026/11/11/indonesian-lawmakers-question-police-chief-about-wiretaps-alleged-to-target-president-prabowo",
       "source": "winnipegfreepress.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-12",
-      "title": " [ OPINION ] Why  Trump Out ? ",
-      "url": "https://www.rappler.com/voices/thought-leaders/opinion-why-protest-against-trump-visit-asean-summit-2026/",
-      "source": "rappler.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-12",
-      "title": "Rizal statue to grace Philippine Embassy in Ottawa , Canada Canada",
-      "url": "https://asianjournal.com/world/canada/rizal-statue-to-grace-philippine-embassy-in-ottawa-canada/",
-      "source": "asianjournal.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-11-12",
-      "title": "Malaysia EV Charging Runs on Three Apps : The Real Price of Each in 2026 – IT Business Net",
-      "url": "https://itbusinessnet.com/2026/11/malaysias-ev-charging-runs-on-three-apps-the-real-price-of-each-in-2026/",
-      "source": "itbusinessnet.com",
       "kind": "News",
       "via": "GDELT"
     },
@@ -773,87 +818,6 @@
       "title": "Pope Leo XIV trip to South America gets underway",
       "url": "https://www.asianews.it/en/news/press-review/pope-leo-xiv-s-trip-to-south-america-gets-underway",
       "source": "asianews.it",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-11-06",
-      "title": "Prabowo Subitano wiretapping : Indonesia scandal deepens as another suspect named ; thousands of police , military deployed",
-      "url": "https://www.theage.com.au/world/asia/another-suspect-named-as-wiretap-scandal-rocks-indonesia-20261106-p61c1g.html",
-      "source": "theage.com.au",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-11-06",
-      "title": "AP Trending SummaryBrief at 2 : 07 a . m . EST",
-      "url": "https://www.gjsentinel.com/news/us/ap-trending-summarybrief-at-2-07-a-m-est/article_3b28dc9b-9273-5656-96ca-97720f41dd1c.html",
-      "source": "gjsentinel.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-11-06",
-      "title": "AP Trending SummaryBrief at 2 : 07 a . m . EST",
-      "url": "http://www.wdtimes.com/news/national/ap-trending-summarybrief-at-2-07-a-m-est/article_adc8120e-1ef4-581d-aeae-c3f9952b33a4.html",
-      "source": "wdtimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-11-06",
-      "title": "Prabowo conveys condolences , urges swift helicopter crash evacuation",
-      "url": "https://en.antaranews.com/news/440715/prabowo-conveys-condolences-urges-swift-helicopter-crash-evacuation",
-      "source": "en.antaranews.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-11-06",
-      "title": "AP Trending SummaryBrief at 2 : 07 a . m . EST",
-      "url": "https://santamariatimes.com/ap/national/ap-trending-summarybrief-at-2-07-a-m-est/article_468fad28-4fce-5587-b034-e3df8f7d632f.html",
-      "source": "santamariatimes.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-11-06",
-      "title": "AP Trending SummaryBrief at 2 : 07 a . m . EST",
-      "url": "https://www.ktvo.com/news/nation-world/ap-trending-summarybrief-at-2-07-a-m-est/article_ca015264-8e0d-5362-97fc-1f21da84d7e4.html",
-      "source": "ktvo.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-11-06",
-      "title": "Health And Rights Observatory Exposes Gaps Between UPR Promises And Progress",
-      "url": "https://www.scoop.co.nz/stories/WO2611/S00054/health-and-rights-observatory-exposes-gaps-between-upr-promises-and-progress.htm",
-      "source": "scoop.co.nz",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-11-06",
-      "title": "They fled persecution in Myanmar . In Muslim - majority Malaysia , Rohingya still struggle to belong",
-      "url": "https://www.wsls.com/news/world/2026/11/06/they-fled-persecution-in-myanmar-in-muslim-majority-malaysia-rohingya-still-struggle-to-belong/",
-      "source": "wsls.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-11-06",
-      "title": "They fled persecution in Myanmar . In Muslim - majority Malaysia , Rohingya still struggle to belong",
-      "url": "https://www.clickondetroit.com/news/world/2026/11/06/they-fled-persecution-in-myanmar-in-muslim-majority-malaysia-rohingya-still-struggle-to-belong/",
-      "source": "clickondetroit.com",
       "kind": "News",
       "via": "GDELT"
     },
