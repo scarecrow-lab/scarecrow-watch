@@ -15,7 +15,7 @@ Pulls public data for the 11 ASEAN states and writes JSON files the dashboard re
 Lab assessments (data/assessments.json) are edited by hand and never touched here.
 Standard library only. If a source fails, its previous data is kept and the error is logged in meta.json.
 """
-import csv, email.utils, html, io, json, math, os, re, sys, time, urllib.parse, urllib.request
+import csv, email.utils, html, io, json, math, os, random, re, sys, time, urllib.error, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
@@ -144,36 +144,70 @@ def reliefweb():
 
 
 # ---------- GDELT DOC 2.0 (global news) ----------
-def gdelt():
-    out, failures = [], 0
-    for name in COUNTRIES:
-        q = f'"{name}" {GDELT_TERMS} sourcelang:english'
-        url = "https://api.gdeltproject.org/api/v2/doc/doc?" + urllib.parse.urlencode({
-            "query": q, "mode": "artlist", "format": "json", "maxrecords": 25,
-            "timespan": "3d", "sort": "datedesc"})
+def gdelt_get(url, tries=4):
+    """GET GDELT JSON, backing off on HTTP 429 (the shared-IP rate limit)."""
+    last = None
+    for i in range(tries):
         try:
-            res = http_json(url, tries=2)
-        except Exception as e:
-            failures += 1
-            log("gdelt", name, e)
-            res = {}
-        for a in res.get("articles", []) or []:
-            u = safe_url(a.get("url"))
-            if not u or not a.get("title"):
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=90) as r:
+                return json.loads(r.read().decode("utf-8", "replace"))
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code == 429 and i < tries - 1:
+                ra = e.headers.get("Retry-After") if e.headers else None
+                wait = int(ra) if (ra and str(ra).strip().isdigit()) else 20 * (i + 1)
+                time.sleep(min(wait, 90) + random.uniform(0, 3))
                 continue
-            d = str(a.get("seendate", ""))  # e.g. 20260930T120000Z
-            out.append({
-                "country": name,
-                "date": f"{d[0:4]}-{d[4:6]}-{d[6:8]}" if len(d) >= 8 else "",
-                "title": str(a["title"])[:300],
-                "url": u,
-                "source": str(a.get("domain", ""))[:80],
-                "kind": "News",
-                "via": "GDELT",
-            })
-        time.sleep(6)  # GDELT asks for at most one request every 5 seconds
-    if failures == len(COUNTRIES):
-        raise RuntimeError("GDELT failed for every country")
+            if i < tries - 1:
+                time.sleep(10 * (i + 1))
+                continue
+            break
+        except Exception as e:
+            last = e
+            if i < tries - 1:
+                time.sleep(10 * (i + 1))
+                continue
+            break
+    raise RuntimeError(f"https://api.gdeltproject.org/api/v2/doc/doc: {last}")
+
+
+# One combined query for all 11 countries keeps us well under GDELT's per-IP
+# limit; the old code made one request per country, multiplying the chance of a
+# 429 on the shared GitHub-Actions IP elevenfold.
+GDELT_ALIASES = {"burma": "Myanmar", "east timor": "Timor-Leste"}
+
+
+def gdelt():
+    names = list(COUNTRIES)
+    q = "(" + " OR ".join(f'"{n}"' for n in names) + ") " + GDELT_TERMS + " sourcelang:english"
+    url = "https://api.gdeltproject.org/api/v2/doc/doc?" + urllib.parse.urlencode({
+        "query": q, "mode": "artlist", "format": "json",
+        "maxrecords": 250, "timespan": "3d", "sort": "datedesc"})
+    res = gdelt_get(url)  # raises on failure, so the previous signals are kept
+    lows = [(n, n.lower()) for n in names]
+    out = []
+    for a in res.get("articles", []) or []:
+        u = safe_url(a.get("url"))
+        title = a.get("title")
+        if not u or not title:
+            continue
+        low = str(title).lower()
+        country = next((n for n, nl in lows if nl in low), None)
+        if country is None:
+            country = next((v for k, v in GDELT_ALIASES.items() if k in low), None)
+        if country is None:
+            continue
+        d = str(a.get("seendate", ""))  # e.g. 20260930T120000Z
+        out.append({
+            "country": country,
+            "date": f"{d[0:4]}-{d[4:6]}-{d[6:8]}" if len(d) >= 8 else "",
+            "title": str(title)[:300],
+            "url": u,
+            "source": str(a.get("domain", ""))[:80],
+            "kind": "News",
+            "via": "GDELT",
+        })
     return out
 
 

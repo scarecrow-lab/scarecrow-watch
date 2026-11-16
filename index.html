@@ -530,7 +530,7 @@ function renderFresh(){
     const s = (D.m.sources || {})[k] || {status:"pending"};
     const sp = el("span"); let cls = "dot", txt = t("pending");
     if (s.updated){ const hrs = (Date.now() - Date.parse(s.updated))/3600000; cls = hrs > 48 ? "dot stale" : "dot ok"; txt = t("updated") + " " + ago(s.updated) + (hrs > 48 ? " · " + t("stale") : ""); }
-    if (s.status === "error"){ cls = "dot bad"; txt = t("failed") + (s.updated ? " · " + t("updated") + " " + ago(s.updated) : ""); }
+    if (s.status === "error"){ const ehrs = s.updated ? (Date.now() - Date.parse(s.updated))/3600000 : Infinity; if (ehrs <= 48){ cls = "dot stale"; txt = t("updated") + " " + ago(s.updated) + " · " + t("stale"); } else { cls = "dot bad"; txt = t("failed") + (s.updated ? " · " + t("updated") + " " + ago(s.updated) : ""); } }
     sp.append(el("span",cls), el("b",null,name+": "), document.createTextNode(txt)); f.append(sp);
   }
 }
