@@ -1,14 +1,14 @@
 {
-  "generated": "2026-11-16T15:13:55+00:00",
+  "generated": "2026-11-17T05:05:29+00:00",
   "source": "UNHCR Refugee Data Finder",
   "countries": {
     "Myanmar": {
-      "year": 2025,
-      "refugees": 1524378,
-      "asylum_seekers": 67824,
-      "idps": 3628840,
-      "stateless": 519647,
-      "ooc": 496,
+      "year": 2026,
+      "refugees": 1549943,
+      "asylum_seekers": 72230,
+      "idps": 3948628,
+      "stateless": 524536,
+      "ooc": 494,
       "hosted_refugees": 0,
       "hosted_asylum_seekers": 0,
       "series": [
@@ -111,16 +111,26 @@
           "ooc": 496,
           "hosted_refugees": 0,
           "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2026,
+          "refugees": 1549943,
+          "asylum_seekers": 72230,
+          "idps": 3948628,
+          "stateless": 524536,
+          "ooc": 494,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
         }
       ]
     },
     "Philippines": {
-      "year": 2025,
-      "refugees": 807,
-      "asylum_seekers": 6088,
+      "year": 2026,
+      "refugees": 761,
+      "asylum_seekers": 7120,
       "idps": 43500,
-      "stateless": 55,
-      "ooc": 163707,
+      "stateless": 15,
+      "ooc": 155873,
       "hosted_refugees": 1032,
       "hosted_asylum_seekers": 942,
       "series": [
@@ -223,18 +233,28 @@
           "ooc": 163707,
           "hosted_refugees": 1032,
           "hosted_asylum_seekers": 942
+        },
+        {
+          "year": 2026,
+          "refugees": 761,
+          "asylum_seekers": 7120,
+          "idps": 43500,
+          "stateless": 15,
+          "ooc": 155873,
+          "hosted_refugees": 1032,
+          "hosted_asylum_seekers": 942
         }
       ]
     },
     "Thailand": {
-      "year": 2025,
-      "refugees": 327,
-      "asylum_seekers": 2656,
+      "year": 2026,
+      "refugees": 329,
+      "asylum_seekers": 2454,
       "idps": 0,
-      "stateless": 610791,
+      "stateless": 610437,
       "ooc": 0,
-      "hosted_refugees": 84017,
-      "hosted_asylum_seekers": 2880,
+      "hosted_refugees": 83557,
+      "hosted_asylum_seekers": 2516,
       "series": [
         {
           "year": 2016,
@@ -335,14 +355,24 @@
           "ooc": 0,
           "hosted_refugees": 84017,
           "hosted_asylum_seekers": 2880
+        },
+        {
+          "year": 2026,
+          "refugees": 329,
+          "asylum_seekers": 2454,
+          "idps": 0,
+          "stateless": 610437,
+          "ooc": 0,
+          "hosted_refugees": 83557,
+          "hosted_asylum_seekers": 2516
         }
       ]
     },
     "Cambodia": {
-      "year": 2025,
-      "refugees": 11332,
-      "asylum_seekers": 1646,
-      "idps": 517555,
+      "year": 2026,
+      "refugees": 11208,
+      "asylum_seekers": 1738,
+      "idps": 20923,
       "stateless": 75000,
       "ooc": 0,
       "hosted_refugees": 23,
@@ -447,18 +477,28 @@
           "ooc": 0,
           "hosted_refugees": 23,
           "hosted_asylum_seekers": 5
+        },
+        {
+          "year": 2026,
+          "refugees": 11208,
+          "asylum_seekers": 1738,
+          "idps": 20923,
+          "stateless": 75000,
+          "ooc": 0,
+          "hosted_refugees": 23,
+          "hosted_asylum_seekers": 5
         }
       ]
     },
     "Indonesia": {
-      "year": 2025,
-      "refugees": 9215,
-      "asylum_seekers": 8205,
+      "year": 2026,
+      "refugees": 9178,
+      "asylum_seekers": 8716,
       "idps": 0,
-      "stateless": 2639,
-      "ooc": 1137,
-      "hosted_refugees": 7374,
-      "hosted_asylum_seekers": 4697,
+      "stateless": 2499,
+      "ooc": 1121,
+      "hosted_refugees": 7148,
+      "hosted_asylum_seekers": 4957,
       "series": [
         {
           "year": 2016,
@@ -559,13 +599,23 @@
           "ooc": 1137,
           "hosted_refugees": 7374,
           "hosted_asylum_seekers": 4697
+        },
+        {
+          "year": 2026,
+          "refugees": 9178,
+          "asylum_seekers": 8716,
+          "idps": 0,
+          "stateless": 2499,
+          "ooc": 1121,
+          "hosted_refugees": 7148,
+          "hosted_asylum_seekers": 4957
         }
       ]
     },
     "Laos": {
-      "year": 2025,
-      "refugees": 6489,
-      "asylum_seekers": 466,
+      "year": 2026,
+      "refugees": 6417,
+      "asylum_seekers": 373,
       "idps": 0,
       "stateless": 0,
       "ooc": 0,
@@ -671,17 +721,27 @@
           "ooc": 0,
           "hosted_refugees": 0,
           "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2026,
+          "refugees": 6417,
+          "asylum_seekers": 373,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
         }
       ]
     },
     "Vietnam": {
-      "year": 2025,
-      "refugees": 20636,
-      "asylum_seekers": 19253,
+      "year": 2026,
+      "refugees": 20432,
+      "asylum_seekers": 17604,
       "idps": 0,
       "stateless": 25177,
-      "ooc": 28,
-      "hosted_refugees": 13,
+      "ooc": 31,
+      "hosted_refugees": 8,
       "hosted_asylum_seekers": 0,
       "series": [
         {
@@ -783,18 +843,28 @@
           "ooc": 28,
           "hosted_refugees": 13,
           "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2026,
+          "refugees": 20432,
+          "asylum_seekers": 17604,
+          "idps": 0,
+          "stateless": 25177,
+          "ooc": 31,
+          "hosted_refugees": 8,
+          "hosted_asylum_seekers": 0
         }
       ]
     },
     "Malaysia": {
-      "year": 2025,
-      "refugees": 2477,
-      "asylum_seekers": 5511,
+      "year": 2026,
+      "refugees": 2516,
+      "asylum_seekers": 4878,
       "idps": 0,
-      "stateless": 134676,
+      "stateless": 138551,
       "ooc": 0,
-      "hosted_refugees": 150164,
-      "hosted_asylum_seekers": 63011,
+      "hosted_refugees": 153355,
+      "hosted_asylum_seekers": 68016,
       "series": [
         {
           "year": 2016,
@@ -895,13 +965,23 @@
           "ooc": 0,
           "hosted_refugees": 150164,
           "hosted_asylum_seekers": 63011
+        },
+        {
+          "year": 2026,
+          "refugees": 2516,
+          "asylum_seekers": 4878,
+          "idps": 0,
+          "stateless": 138551,
+          "ooc": 0,
+          "hosted_refugees": 153355,
+          "hosted_asylum_seekers": 68016
         }
       ]
     },
     "Singapore": {
-      "year": 2025,
+      "year": 2026,
       "refugees": 43,
-      "asylum_seekers": 212,
+      "asylum_seekers": 164,
       "idps": 0,
       "stateless": 1109,
       "ooc": 0,
@@ -1007,13 +1087,23 @@
           "ooc": 0,
           "hosted_refugees": 0,
           "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2026,
+          "refugees": 43,
+          "asylum_seekers": 164,
+          "idps": 0,
+          "stateless": 1109,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
         }
       ]
     },
     "Brunei": {
-      "year": 2025,
+      "year": 2026,
       "refugees": 5,
-      "asylum_seekers": 170,
+      "asylum_seekers": 290,
       "idps": 0,
       "stateless": 20863,
       "ooc": 0,
@@ -1119,13 +1209,23 @@
           "ooc": 0,
           "hosted_refugees": 0,
           "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2026,
+          "refugees": 5,
+          "asylum_seekers": 290,
+          "idps": 0,
+          "stateless": 20863,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
         }
       ]
     },
     "Timor-Leste": {
-      "year": 2025,
-      "refugees": 15,
-      "asylum_seekers": 1520,
+      "year": 2026,
+      "refugees": 18,
+      "asylum_seekers": 1553,
       "idps": 0,
       "stateless": 0,
       "ooc": 0,
@@ -1226,6 +1326,16 @@
           "year": 2025,
           "refugees": 15,
           "asylum_seekers": 1520,
+          "idps": 0,
+          "stateless": 0,
+          "ooc": 0,
+          "hosted_refugees": 0,
+          "hosted_asylum_seekers": 0
+        },
+        {
+          "year": 2026,
+          "refugees": 18,
+          "asylum_seekers": 1553,
           "idps": 0,
           "stateless": 0,
           "ooc": 0,

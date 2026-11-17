@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T15:13:55+00:00",
+  "generated": "2026-11-17T05:05:29+00:00",
   "window_days": 14,
   "items": [
     {
@@ -17,6 +17,15 @@
       "title": "ASEAN Seeks ‘Calibrated Engagement’ With Myanmar: Statement",
       "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/asean-seeks-calibrated-engagement-with-myanmar-statement.html",
       "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Laos",
+      "date": "2026-11-16",
+      "title": "Villagers in northern Laos are afraid to use river water after rare-earth pond spill",
+      "url": "https://rfa.org/english/laos/2026/11/16/laos-water-rare-earth-contamination-china/",
+      "source": "Radio Free Asia",
       "kind": "media",
       "via": "Curated sources"
     },
