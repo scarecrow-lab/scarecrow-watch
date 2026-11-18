@@ -1,7 +1,79 @@
 {
-  "generated": "2026-11-17T05:05:29+00:00",
+  "generated": "2026-11-18T04:25:15+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Laos",
+      "date": "2026-11-18",
+      "title": "South China Sea code of conduct could depend on landlocked Laos: analysts",
+      "url": "https://rfa.org/english/southchinasea/2026/11/18/asean-south-china-sea-code-of-conduct/",
+      "source": "Radio Free Asia",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-11-17",
+      "title": "Regime Minister Turns to Migrant Workers in Malaysia to Plug Foreign Currency Gap",
+      "url": "https://www.irrawaddy.com/news/myanmar-china-watch/regime-minister-turns-to-migrant-workers-in-malaysia-to-plug-foreign-currency-gap.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-17",
+      "title": "All Quiet in Northern Shan—and for Good Reason",
+      "url": "https://www.irrawaddy.com/opinion/analysis/all-quiet-in-northern-shan-and-for-good-reason.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-17",
+      "title": "Dozens of Civilians Killed in Myanmar Regime Strikes as ASEAN Leaders Meet",
+      "url": "https://www.irrawaddy.com/news/burma/dozens-of-civilians-killed-in-myanmar-regime-strikes-as-asean-leaders-meet.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-17",
+      "title": "UN Chief Backs Engagement With Myanmar But ‘Violence Needs to Stop’",
+      "url": "https://www.irrawaddy.com/news/myanmar-china-watch/un-chief-backs-engagement-with-myanmar-but-violence-needs-to-stop.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-11-17",
+      "title": "Prey Veng Documentation Center: ទួន សាមាន ៖ ជីវិតខ្ញុំ ត្រូវគេមកសុំប្តូរ ហើយទៅស្លាប់ជំនួសខ្ញុំរហូត",
+      "url": "https://www.dccam.org/prey-veng-documentation-center/prey-veng-documentation-center-%e1%9e%91%e1%9e%bd%e1%9e%93-%e1%9e%9f%e1%9e%b6%e1%9e%98%e1%9e%b6%e1%9e%93-%e1%9f%96-%e1%9e%87%e1%9e%b8%e1%9e%9c%e1%9e%b7%e1%9e%8f%e1%9e%81%e1%9f%92%e1%9e%89%e1%9e%bb/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-11-17",
+      "title": "Prey Veng Documentation Center: នេត យាន ៖ ខ្មែរក្រហម មានគំនុំគុំកួននឹងខ្ញុំ ទើបយកប្តីខ្ញុំទៅសម្លាប់",
+      "url": "https://www.dccam.org/prey-veng-documentation-center/prey-veng-documentation-center-%e1%9e%93%e1%9f%81%e1%9e%8f-%e1%9e%99%e1%9e%b6%e1%9e%93-%e1%9f%96-%e1%9e%81%e1%9f%92%e1%9e%98%e1%9f%82%e1%9e%9a%e1%9e%80%e1%9f%92%e1%9e%9a%e1%9e%a0%e1%9e%98-%e1%9e%98/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-11-17",
+      "title": "The Queen Mother Library: Pursat Peacock Dance",
+      "url": "https://www.dccam.org/the-queen-mother-library/the-queen-mother-library-pursat-peacock-dance/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
     {
       "country": "Myanmar",
       "date": "2026-11-16",
@@ -156,15 +228,6 @@
       "via": "Curated sources"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-11-12",
-      "title": "Three Years After Operation 1027, Hopang Transformed Under Wa Rule",
-      "url": "https://www.irrawaddy.com/news/burma/three-years-after-operation-1027-hopang-transformed-under-wa-rule.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
       "country": "Philippines",
       "date": "2026-11-12",
       "title": "Karapatan Monitor for July to September 2026",
@@ -198,6 +261,15 @@
       "url": "https://asylumaccess.org/press-conference-upr-iv/",
       "source": "Asylum Access",
       "kind": "ingo",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-12",
+      "title": "Three Years After Operation 1027, Hopang Transformed Under Wa Rule",
+      "url": "https://www.irrawaddy.com/news/burma/three-years-after-operation-1027-hopang-transformed-under-wa-rule.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
       "via": "Curated sources"
     },
     {
@@ -444,33 +516,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-11-11",
-      "title": "Myanmar’s Coup President Barred From Upcoming 49th ASEAN Summit",
-      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/myanmars-coup-president-barred-from-upcoming-49th-asean-summit.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-11",
-      "title": "Myanmar Junta Seeks Record Military Budget as Millions Struggle With Poverty",
-      "url": "https://www.irrawaddy.com/news/burma/myanmar-junta-seeks-record-military-budget-as-millions-struggle-with-poverty.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-11",
-      "title": "Mideast Crisis Fuels Oil Conflict in Myanmar’s Heartland",
-      "url": "https://www.irrawaddy.com/news/burma/mideast-crisis-fuels-oil-conflict-in-myanmars-heartland.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
       "country": "Cambodia",
       "date": "2026-11-11",
       "title": "Koh Thma Documentation Center: Twenty students (including 12 females) from Bun Rany Hun Sen Koh Thma Primary School visited the photo exhibition at the Koh Thma Documentation Center. November 11,2026.",
@@ -495,6 +540,42 @@
       "url": "https://www.dccam.org/stung-treng-documentation-center/stung-treng-documentation-center-sangkum-reastr-niyum-king-father-queen-mother-borei-osvay-sen-chey-welcomes-french-tourists-ahead-of-cambodias-historic-summit/",
       "source": "Documentation Center of Cambodia (DC-Cam)",
       "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-11-11",
+      "title": "Veal Veng Reconciliation Center: Home Visits KR Survivors and Victims of The Thai Invasion in O-Suosdei Village, Thma Da Commune, Veal Veng District, Pursat Province.",
+      "url": "https://www.dccam.org/veal-veng-reconciliation-center/veal-veng-reconciliation-center-home-visits-kr-survivors-and-victims-of-the-thai-invasion-in-o-suosdei-village-thma-da-commune-veal-veng-district-pursat-province/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-11",
+      "title": "Myanmar’s Coup President Barred From Upcoming 49th ASEAN Summit",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/myanmars-coup-president-barred-from-upcoming-49th-asean-summit.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-11",
+      "title": "Myanmar Junta Seeks Record Military Budget as Millions Struggle With Poverty",
+      "url": "https://www.irrawaddy.com/news/burma/myanmar-junta-seeks-record-military-budget-as-millions-struggle-with-poverty.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-11",
+      "title": "Mideast Crisis Fuels Oil Conflict in Myanmar’s Heartland",
+      "url": "https://www.irrawaddy.com/news/burma/mideast-crisis-fuels-oil-conflict-in-myanmars-heartland.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
       "via": "Curated sources"
     },
     {
@@ -588,15 +669,6 @@
       "via": "GDELT"
     },
     {
-      "country": "Myanmar",
-      "date": "2026-11-10",
-      "title": "No internet, no advance warning: 11 killed in Myanmar military bombing in Sagaing",
-      "url": "https://rfa.org/english/myanmar/2026/11/10/starlink-burma-civil-war-scam-center/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
       "country": "Cambodia",
       "date": "2026-11-10",
       "title": "Stung Treng Documentation Center: District-Level Integration Workshop on the Three-Year Rolling Investment Programme (2027–2029) of Borei O’Svay Sen Chey District Administration",
@@ -612,24 +684,6 @@
       "url": "https://www.dccam.org/stung-treng-documentation-center/stung-treng-documentation-center-preah-romkel-high-school-teacher-and-students-embark-on-a-historical-study-tour-at-sangkum-reastr-niyum-king-father-queen-mother-borei-osvay/",
       "source": "Documentation Center of Cambodia (DC-Cam)",
       "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-10",
-      "title": "Myanmar Embassies Push Tax, Remittance Rules as Migrant Backlash Grows Across Asia",
-      "url": "https://www.irrawaddy.com/news/burma/myanmar-embassies-push-tax-remittance-rules-as-migrant-backlash-grows-across-asia.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-10",
-      "title": "Myanmar Regime Routs Resistance HQ on Bago–Mon Border",
-      "url": "https://www.irrawaddy.com/news/burma/myanmar-regime-routs-resistance-hq-on-bago-mon-border.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
       "via": "Curated sources"
     },
     {
@@ -880,42 +934,6 @@
       "date": "2026-11-04",
       "title": "Takeo Documentation Center",
       "url": "https://www.dccam.org/takeo-documentation-center/takeo-documentation-center/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-11-03",
-      "title": "Civil Society Calls on GANHRI to Retain Mongolia’s National Human Rights Commission “A” Status and Address Remaining Gaps Slug",
-      "url": "https://forum-asia.org/mongolia-ganhri-retain-nhrcm-a-status-address-remaining-gaps/?utm_source=rss&utm_medium=rss&utm_campaign=mongolia-ganhri-retain-nhrcm-a-status-address-remaining-gaps",
-      "source": "Asian Forum for Human Rights and Development (FORUM-ASIA)",
-      "kind": "network",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-03",
-      "title": "Bak Nim Community Healing Center: ទស្សនកិច្ច ឯកអគ្គរដ្ឋទូត Julio A. Jeldres នៅមជ្ឈមណ្ឌលសះស្បើយសហគមន៍បាក់នឹម",
-      "url": "https://www.dccam.org/bak-nim-community-healing-center/bak-nim-community-healing-center-%e1%9e%91%e1%9e%9f%e1%9f%92%e1%9e%9f%e1%9e%93%e1%9e%80%e1%9e%b7%e1%9e%85%e1%9f%92%e1%9e%85-%e1%9e%af%e1%9e%80%e1%9e%a2%e1%9e%82%e1%9f%92%e1%9e%82%e1%9e%9a%e1%9e%8a/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-03",
-      "title": "Stung Treng Documentation Center: A New Academic Year: Island Students in Borei O’Svay Sen Chey District Watch the Documentary Film “Don’t Think I’ve Forgotten: Cambodia’s Lost Rock and Roll” at Sangkum Reastr Niyum King Father–Queen Mother (Borei O’Svay–Sen Chey)",
-      "url": "https://www.dccam.org/stung-treng-documentation-center/stung-treng-documentation-center-a-new-academic-year-island-students-in-borei-osvay-sen-chey-district-watch-the-documentary-film-dont-think-ive-forgotten-cambodias-lost-rock-and-ro/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-03",
-      "title": "Koh Thma Documentation Center: Home Visits With 10 survivors of the Khmer Rouge regime (6 women) in Trapaing Raing village, Memot commune, Memot district, Tbong Khmum province",
-      "url": "https://www.dccam.org/koh-thma-documentation-center/koh-thma-documentation-center-home-visits-with-10-survivors-of-the-khmer-rouge-regime-6-women-in-trapaing-raing-village-memot-commune-memot-district-tbong-khmum-province/",
       "source": "Documentation Center of Cambodia (DC-Cam)",
       "kind": "research",
       "via": "Curated sources"
