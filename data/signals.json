@@ -1,7 +1,16 @@
 {
-  "generated": "2026-11-20T07:09:55+00:00",
+  "generated": "2026-11-20T07:28:34+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Cambodia",
+      "date": "2026-11-20",
+      "title": "Takeo Documentation Center៖ SANN CHREN: Just as I took a short break from work, the unit Chief named Yen scolded me with very harsh words.",
+      "url": "https://www.dccam.org/takeo-documentation-center/takeo-documentation-center%e1%9f%96-sann-chren-just-as-i-took-a-short-break-from-work-the-unit-chief-named-yen-scolded-me-with-very-harsh-words/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
     {
       "country": "Philippines",
       "date": "2026-11-20",
@@ -26,15 +35,6 @@
       "title": "Cambodian displaced families still await return home despite Trump’s ‘countless’ claim",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNb3AySTZPTTlEaWZPN1MtTEpTcTFuZS1aOGwySzF0THRNX2x1eURyYWJKMEVTRlptTW5kLW5zaU92ZVRpMHAtMk0xWjg2QjJHd1J1TzRTcWhLOGN2NW1wSVpGazlic0wzeERvemNiNVVlYVBnaHJZM3pYWllOeVZwdmFMX3FpSC0tVWJwZVpmZm5aaXdFMEM3b0lBcmJBNmNtOXNnN1pVc1dCOU9Vb2dTa0xfMFVWYk1EclpMdGtqNFQ?oc=5",
       "source": "Khmer Times",
-      "kind": "News",
-      "via": "Google News"
-    },
-    {
-      "country": "Indonesia",
-      "date": "2026-11-20",
-      "title": "Bangladesh Hopes ICJ Ruling Will Pave Way for Rohingya Repatriation",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQT2pNUTNHeEowaGg4TE8wZXhWdTZCeUM4OVZTYTlKVmZ3UmlQNWNjMU5fSzBWX1pSUld4d0xkMUxBVnR3Y01BWjlLOW9EREFwcmM2c2k0NGxIMWY5Qk44VWJpUzNNa2sxUlIwSm56VmZOQTRCMFpCVTUxa2xtV3JQVU5KVjhfYWo2VG9LS19HNUNjWnRIcXRHeU1RNHBJaU1X?oc=5",
-      "source": "Tempo.co English",
       "kind": "News",
       "via": "Google News"
     },
@@ -68,7 +68,7 @@
     {
       "country": "Malaysia",
       "date": "2026-11-20",
-      "title": "Cabinet approves plan to resettle 10,000 Rohingya in Türkiye",
+      "title": "Cabinet approves proposal to resettle 10,000 Rohingya refugees in Türkiye – Zahid",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1DM2lEZFN3RElfTWJOUmJCR0czZmFUQVFJZ2JubVdGR3V6bU9ra3JtY0Q4Wno2c19lSE9NTlVmSUZZMHNWV0owYmZRTXNybzlhb3VnSzZrRldBQWNnMzV4MGlkY1BaOWJCSzlwNXNRRmtTMjlDNHA0ZDF4cVk?oc=5",
       "source": "The Sun Malaysia",
       "kind": "News",
@@ -113,9 +113,36 @@
     {
       "country": "Malaysia",
       "date": "2026-11-20",
+      "title": "Filipino who killed woman gets 30 years",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVlFabmZKZm4ycEVPbDRzbHFQQXhScDNuTmZYRmpuemxzVGVoU0pWUmxHYjdBQnB4NDh5YV9XSk5vd0tLc2NWenQ5TGkySExIZDJ4U0xSZXNteHNKY3M2V2ZNZHNMUkdmNUNieFBtU1dQOHFaa3pVTlFLb2d6T1BPaE95RDlZSnNzZ1J5MA?oc=5",
+      "source": "Daily Express Malaysia",
+      "kind": "News",
+      "via": "Google News"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-11-20",
       "title": "Santiago demands answers over Malaysia’s bid to bring Myanmar back into Asean",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbXVYZXBOS2lrMlgybVhkallidTVBSmJzMW9wdE9FU1FUWU1oTnAzRDBTS3ZaeTBVQXZjdDlFcGZTck5HOURDV2JpVC1mWG1CUHI5ME80ekpEZEVkUGpzUFNCUktFckFZaWZpOFhwOXU2X1Q3YW1yTl9uQlYtZFZ0UlJKUkdLcG9Xdkd6QXo0SEZCYVBxb2RSLXU0TVRIZFhtNWViLVpNVnNTVTJLR3hHS2FiZ1Mtc2g2TWk2M0I0MzZoV3BhT0d2cUhqSnE?oc=5",
       "source": "The Vibes",
+      "kind": "News",
+      "via": "Google News"
+    },
+    {
+      "country": "Malaysia",
+      "date": "2026-11-20",
+      "title": "Zahid: Cabinet approves proposal to relocate 10,000 Rohingya refugees to Turkiye",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOc05HNHIzZXlLWEs2NXNtYnJ0eTFnZjlUcktUTzBYMnVkN3dMamJiVmtaT1RtMEtnZTQ2dlRrdHJ6ME5lTDAybnF2NkNrMjYyT0JtYVBOaklXT0Y2SFVYalpMNWVVOHFxVUFGRFIzSjdHTXMzcV9NQWZrN19IcHlIVXRfeTdQVVc5WTRtVjV5bjI3QUtUa1lnN1BfWjhCMlN0ZDlDNzhsS0tEYTJRSnRRMzZBMGJPQQ?oc=5",
+      "source": "NST Online",
+      "kind": "News",
+      "via": "Google News"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-20",
+      "title": "Bangladesh Hopes ICJ Ruling Will Pave Way for Rohingya Repatriation",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQT2pNUTNHeEowaGg4TE8wZXhWdTZCeUM4OVZTYTlKVmZ3UmlQNWNjMU5fSzBWX1pSUld4d0xkMUxBVnR3Y01BWjlLOW9EREFwcmM2c2k0NGxIMWY5Qk44VWJpUzNNa2sxUlIwSm56VmZOQTRCMFpCVTUxa2xtV3JQVU5KVjhfYWo2VG9LS19HNUNjWnRIcXRHeU1RNHBJaU1X?oc=5",
+      "source": "Tempo.co English",
       "kind": "News",
       "via": "Google News"
     },
@@ -219,13 +246,22 @@
       "via": "Curated sources"
     },
     {
-      "country": "Philippines",
+      "country": "Cambodia",
       "date": "2026-11-19",
-      "title": "Thailand Says US Trade Deal Includes Lowering of Forced Labor Duties",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaTFDNFJwdlc5ZWhndUJwU3FsQTVtdEFPLU5oQlgtNVZRcUpwQkppem50MjA5RFRLVzNXRUpXeklQUFJjVFM0REo4M0FEVmNxYnJ4eE9KNUdnb3FOTVU4cTRxd0tTQ0dSWGc0VWloU3pwTjZBMUc3LUdGR1lMMjlHalI5N1NLR1k1ZUhqalQ1b0hhYlNMRFZiVXI3R0VBT2l3TEh6bXYwNC1vbWJnZUpwb0R3?oc=5",
-      "source": "WWD",
-      "kind": "News",
-      "via": "Google News"
+      "title": "Veal Veng Reconciliation Center: Landscape and Surroundings of Wat Serey Santheay — Theay Commune, Ba Phnum District, Prey Veng Province (November 2026)",
+      "url": "https://www.dccam.org/veal-veng-reconciliation-center/veal-veng-reconciliation-center-landscape-and-surroundings-of-wat-serey-santheay-theay-commune-ba-phnum-district-prey-veng-province-november-2026/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-11-19",
+      "title": "The Queen Mother Library: Cambodian Researchers",
+      "url": "https://www.dccam.org/the-queen-mother-library/the-queen-mother-library-cambodian-researchers/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
     },
     {
       "country": "Philippines",
@@ -275,6 +311,24 @@
     {
       "country": "Philippines",
       "date": "2026-11-19",
+      "title": "Thailand Says US Trade Deal Includes Lowering of Forced Labor Duties",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaTFDNFJwdlc5ZWhndUJwU3FsQTVtdEFPLU5oQlgtNVZRcUpwQkppem50MjA5RFRLVzNXRUpXeklQUFJjVFM0REo4M0FEVmNxYnJ4eE9KNUdnb3FOTVU4cTRxd0tTQ0dSWGc0VWloU3pwTjZBMUc3LUdGR1lMMjlHalI5N1NLR1k1ZUhqalQ1b0hhYlNMRFZiVXI3R0VBT2l3TEh6bXYwNC1vbWJnZUpwb0R3?oc=5",
+      "source": "WWD",
+      "kind": "News",
+      "via": "Google News"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-19",
+      "title": "Justice for the Rohingya",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9WdW9rQVdfTlpHWnNpd0EwMWdaZDZ6N3RmMUowZno0YlNWSUp5dUE3YjlGRVItTFFiU2JaZlhWdDUwOHhhaFV2U0lnZW9OZGN1VlVkdVBYMkpaV2dYaUE?oc=5",
+      "source": "Human Rights Watch",
+      "kind": "News",
+      "via": "Google News"
+    },
+    {
+      "country": "Philippines",
+      "date": "2026-11-19",
       "title": "A Girl Unknown, Ella Arcangel take top QCinema awards | Business World Philippines - newspaper",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOYi1ld2EtYWhsUVVyMzFaSE9va2hHQ3lYcFc5akdPbWlZR3FOU2pIOWVvaWVTbTVXdTE2TUlsazFpZlJUVHhxcUNCeW4yMzFYNnlYMFFLTXd3T09TbExGTkhycmxCR2Z6RHlrVGRsVFI0TUJoZE83QzlIalpnYXlfY2xaS1Z4NXphaUtOUmxiMG16WlozV1dQS1JKeWVzcktJQ0F0cEFnNWFPOEhGdTVBNDRBaVFoSUd2TF9WemZB?oc=5",
       "source": "Magzter",
@@ -296,24 +350,6 @@
       "title": "Trump's Philippines Visit Faces Fresh Backlash Over Pax Silica Project That Farmers Say Threatens Their Homes",
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNLWU5YkNwMjFEQ2hEVjhodzNKMG81d0FBbTBKY1JmanJnZkxYTVkyR3JBN3Nfd240TEFZQ2cwZW1KOWI2SmFNZi1qbXNROFFzWUJMVnJsSzhxYkxHTm5pcWdDYU1LeXFNTXFiZ3ctQjBpSkVha1hncTE5bnV5OEhyZjlFbndvRlR0ME1PRlpxYnNvZkoxY29ha0FLWUpmUlo3cVRXYTN5N25ZNjNFVFZWRVNYTTA0Q0RwT01SZHhQY3dSSmpNNXFBNDFOQ3JRcEE?oc=5",
       "source": "inkl",
-      "kind": "News",
-      "via": "Google News"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-19",
-      "title": "ICJ to Rule Thursday on Genocide Case Against Myanmar for Rohingya Persecution",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQemdwMll2Ql9fb0J6bXZEaVFBb0J0cXZ6TzNDM1MxSlhMUkNqQmZJbVRhbUxYODFBbW1Ec2lLa1JTYndtU182enltV3prMjJ4cUtYdDZ3S2pNdVI2c05hejRiUUNVNmNvSXR1MU9kcGpMRnZ1X1paMUlNdHBZTWhnVFZJMEJZc1hXa3lmMEdaUHdqYXFtOHBJQU9rOVpuZjViQmp2MDVkOA?oc=5",
-      "source": "Udaipur Kiran",
-      "kind": "News",
-      "via": "Google News"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-11-19",
-      "title": "At least 7 people killed, more than a dozen injured in Thailand school shooting",
-      "url": "https://news.google.com/rss/articles/CBMiuAdBVV95cUxNM3RIUzI3dEFMT0o0OWNUUmgzdnlpMnpPaTBXclVHdXo3azJKZ3FzLTVzNmV1MEVWYTl0VEpWR3hKODdFR3A5N1ozNVZEczFob3lpWFlHVUc0TkZiNGFiOC00SVdxSXlUZjNYNFB6RFFzMVU4TUNJZDdnaFJYYk8yQnpDQUVEeFF5bi1ac19oOXF5NmxpTUtHbmY2VGtLWnJmeGdzRmlHc2wxdF9MaFNZY3BkREhQT1JYeGJ3bE1UWlpVSGZZbU94cVZMdVlKaDBZdl9JMmJoTzdib0cxS1BNZ1A1NUIwTUFtcTBBVi1adXd6WWtnbjkxUkZYS1czejJFZGd2Yml1QmR2Z2VobXdSZ1RrYWZjUXJ2RFFhQ0hQZ3RnOVJBcTdKRlJPZzY3cWVPRGRLUU1kUHJnQWh4bXdVYjR1dmo3aEExOUtRRkNSR011U2RwMXIxUEJ0OHZlbk85RnkwcG1BdzRwWDVzU2I1ZDJwemF0R3lRZlMzZ1VhS2p6X1RHZF94TVFKZHVVNl9rbXNMUnRHMDEyNl9zQXhxdGhUR0JJWC1MZmJQQTVDQ3Z5NXhxOWlfYVFzaVBPMW9ReVhkMjJVc3AyczlwMThycG1vZ1JSTFdlVVAxb3JCdFVYdEJxX29DNmM2bHp6Rm1ySm1wNjhtRUZPaFhQd1FMZGsxdGY4cmk3Q1RqMlZrMlowVjc2ckVzSmg4TFl4eV93WXEzUzhKVkFvTXZWQll2LXkxRXZYZldLVldIMkpXci0yVm1FM3BQc19pWmZzcnVtWVJ1b3ZKcmlKd0VNMlRISVFsVm9FN0dINnlsRzNmNUk0dmdtN1RSb1gtREpEMno2dGZfdHdtUndOem5FcHp5bW1HVGNmM25tZFl1a0hlOUR4emFPemE2MHhhY2tIQTBnand5MzNaXzlYeGtHTnN6akhSLWRuTTFlOGFfVmNjQi13RkR2WVBhOFc3SlNzMEJseDlVdkFlaG92RUhUMnZDNGsxNHp6eUJCUUhaQTRzLUZCV2EzSlFIN0pTQm1qS2k1c01wb3NtQ0o2MlRfU1lMNFo5NFlvMzJ2VkRmR29mTlFvSlFGcG5LQTk3SFhlNXZ4ck4wOFB3TV9YLVNTVkFUOXNFQTNjT1dZQnF1ZlpZMmluVmtaVzlFU2VsdndSTlJJeS15OUZoNlB4SWxRa0VoNjgtOXk1dWVEZWhXYUl3WGFPSDVSdXVtXzRJbldSNmZSSHFVYmg3N1Q4d2FkbFMwQWo4QWd0RTJ1?oc=5",
-      "source": "ABC30 Fresno",
       "kind": "News",
       "via": "Google News"
     },
@@ -350,24 +386,6 @@
       "title": "Thailand-Cambodia maritime talks to resume next week in KL",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPX0R6NFAzUEtmYmJGX3A3dm9IQmYxQ2Fyalp3aUR3MlBtUU1BQy1TbERsRVd5LThOVzd5NlNSLVpEenFVc0dxUTNkMkIwNldYNnF5SnJwRzFtZnMyS0dXdmZPWXRWY3FzYy1rMWlxVkxzaFVaYWJFRW82dFhIeDVOeUFNR1I0WXh5RXc0NWR0WmY0NERVb1NtM29NWUwtVmlfUjhPdEo1NWFDeE1JQ0Nz?oc=5",
       "source": "Bangkok Post",
-      "kind": "News",
-      "via": "Google News"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-19",
-      "title": "UN court's Rohingya genocide ruling against Myanmar is only fourth since Nazi Holocaust, Cambodia, Serbia",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTGRQN05FdWJqRlNqOG5RVGEtb1pQX1hwLXZvZTgwNUJyLWNCVHgtUmNBbTU2NmxUQXZhX2Z5YktvWlM2R0ZHZE1UTGFMRWRZbEdaY3hza2d4RnRzZ2pyVVUzNzk1ZHYtODVGMzhwWjRGb3gzcXJPaE1EdXZremFEMWtFT3IwbFRsMEx3RXFsOFlYcVpPVFFNSjlGVV9UQnhuMGgyOVFDVDNveXhnZVRLVkZLeXM4SkdfUnhXX2o4NTJ3ZlUySlZFZDFB0gHPAUFVX3lxTE1tSnpYRkllYWpiUllmeWRmZER5Mk1BMF9Gb3lNOTFZS200czAzMFlKMFJOWEdGSl9LMEo1ZFpqOXN5eklOVFJIZTZMeFN3NWljOXVzWGhYdU5aWmNITzY3U0lRMDdJQjVNLTQzRzN5ejBFUUR0MkxaRGtyUEpIUzYwZklhR0RGUU85QjY5VkNwQ2Fuc3AzU0E0d1ZuWk90T2ZNWEZCQUMwSWdaY01PWTB2TTJnLXFBM1RuSkxNeDVGZGlvMTBtWnNyMmJ3S1I1SQ?oc=5",
-      "source": "Telegraph India",
-      "kind": "News",
-      "via": "Google News"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-19",
-      "title": "Thailand urges Cambodia to honour all border agreements after Hun Sen's remarks",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPOE5RLV9ybHFsNUVzRzN2eEVKRVppWnpGeVNlb0RRaENWZzI1YjRoVWpodXRhX3NrYXpEbUlnZ3BxNmhqOUw3UFBpd2ZzUV9mQndnQlpuUlROYi1lN1pCS3FNNk84REFob0FoMHdKZC03M3MyR2Rxd2dqaWMtc2tpQjZZNmVGcUN2d2pzVHBndGEyOXpNQVo1ZDFVX0d3SWRIS04yUHJVRTZLM3JwVkhPTUEycjFfOXgxV1JGZmp2WHAtRjBETXFYdHZR0gHPAUFVX3lxTE9sTDgyOVc2SW02cjBUT0FWX1kybDY2RTdJU25VTXlqMEdFLW9kb2dWRnNvdFdwVlNranNEQzEzU1dYNzU0anp5VmV3NTl6d0dLMFNBUUZZSGNaZVBKVXdiakRNdkhJb0Nwb3p5NGJ6c0VVcDVGSEI5X1ByLXA2ZXdBbnNwbmFwdXVQdkRtS2VabG5oUnpGSkhsSUUxeTNlZnlKTnlnTW51TzRzdlJ4VXN4c3haSDhpckNWa1lqaTdzNEdodTkyQmJvVnRGa2ZrWQ?oc=5",
-      "source": "Khaosod English",
       "kind": "News",
       "via": "Google News"
     },
@@ -455,9 +473,9 @@
     {
       "country": "Vietnam",
       "date": "2026-11-19",
-      "title": "New Draft Law Would Let Public Security Minister Designate Key National Security Sites",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUlRLS0FsREgxTTVSYWNRMTFrXzV4cWg0TjQ5bDkwVUpfUXljTU9xczJkWlJmbkhHNEJnMUgwUUJmZ04zUUgyRHR6WmVWSW1vdWV2b0p0c2U5ZUpyek95dVJmQ001WU9uZFhqUU1jb2ZTdjFiejRXUUhBekM1R1cxd3NOODd0SnRnejdJcUxXdlhrWkhuQTRrX3BLY3E5OEtzdFhrU0RuZ0J5SkU5cUZCQW5GR0t6amZjVXhhQ3RB?oc=5",
-      "source": "The Vietnamese Magazine",
+      "title": "EU imposes 16% anti-dumping duty on Vietnam steel",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcTduZkdvczFKYzBReWpVZG1jTU4wVGpyaFVOOEZIQjVISHhNVEVGN19UWHpuSlVpSkRMOVhzaVZzX2hxV0NKUGtMa2NjNEgwdHkxTFpLb2kzSFlEOFJhZE1jUVRiUk9aNm1WemcxSV96MWFTTXVLTTItLURnRWZySTFvQzVQZGFHU2M2cVpEQXBtdy1UOGc?oc=5",
+      "source": "Yahoo Finance",
       "kind": "News",
       "via": "Google News"
     },
@@ -525,24 +543,6 @@
       "via": "Google News"
     },
     {
-      "country": "Malaysia",
-      "date": "2026-11-19",
-      "title": "Top UN court finds Myanmar committed genocide against Muslim Rohingya",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1lUmxqRGRNVEd6d1NZNzNZLUFrazQ4OXdUNnN2VVd5cVEzclp4LVhfN2dTeDhRR3ZJLWNHZlhvZ1FFSGpYZGJGdXcwYmM4OFB2?oc=5",
-      "source": "The Edge Malaysia",
-      "kind": "News",
-      "via": "Google News"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-11-19",
-      "title": "Rohingya refugee leader expresses gratitude following ICJ genocide ruling",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQLXMzZkoySmlhWDBKZVI1SDhycDcySVRFTEVEaTRucy1QbDBfaXYweE5DNHRXell6T2YyaHFQLU0wbjR0ZUZkY0E1bTZMU25UQTZJdnRKM2hVQ2dWS0NSNnJvZEVuOENtMV91YWk0Y3MteVpROU9ETjRDOG5taFFKUmtGaWVzT0gyVEdienFHdkwycENsVFVFM1Q1NG40RjdrLVF1blBhaXlHcXNo?oc=5",
-      "source": "The Sun Malaysia",
-      "kind": "News",
-      "via": "Google News"
-    },
-    {
       "country": "Singapore",
       "date": "2026-11-19",
       "title": "Rohingya refugee leader expresses gratitude after genocide ruling",
@@ -592,6 +592,15 @@
       "date": "2026-11-19",
       "title": "Myanmar guilty of genocide against Rohingya UN court rules",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc0hxY3MzUXcwTTJHZXQtOVduR3BJZlBVUzQ1aDY5X1dEcFh5elRlczdJS2JPT0VmOThXMnkweDRYajNCRVRLdEc1N1QxSU5ta3NzbldEM01MX3NkOVpvQUpra3g5NVJoVm9qY2RCU3l5dXFvTzJGR0hXNEp3dTJGaFRKRGdfRGFk?oc=5",
+      "source": "Yahoo News Singapore",
+      "kind": "News",
+      "via": "Google News"
+    },
+    {
+      "country": "Singapore",
+      "date": "2026-11-19",
+      "title": "Rohingya hope to return to homeland as Myanmar genocide ruling looms",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRTdvdkt1S3Bpem1Wd0U1aWo2R0tqZVlFNk9TN0JYdlloQ3JRQUNZR0NYSjV4YkxkWUNtcmNIUDlveTUwNUI1b2NNVnliMThOeDEwX0tjT09qRERxOU9HVTVJN0N6NFRLOUhEejhxYXBUbmhqWnBBNENwVkIyY2E0Mlh4WFY?oc=5",
       "source": "Yahoo News Singapore",
       "kind": "News",
       "via": "Google News"
@@ -687,6 +696,33 @@
       "via": "Google News"
     },
     {
+      "country": "Philippines",
+      "date": "2026-11-19",
+      "title": "ICJ to Rule Thursday on Genocide Case Against Myanmar for Rohingya Persecution",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQemdwMll2Ql9fb0J6bXZEaVFBb0J0cXZ6TzNDM1MxSlhMUkNqQmZJbVRhbUxYODFBbW1Ec2lLa1JTYndtU182enltV3prMjJ4cUtYdDZ3S2pNdVI2c05hejRiUUNVNmNvSXR1MU9kcGpMRnZ1X1paMUlNdHBZTWhnVFZJMEJZc1hXa3lmMEdaUHdqYXFtOHBJQU9rOVpuZjViQmp2MDVkOA?oc=5",
+      "source": "Udaipur Kiran",
+      "kind": "News",
+      "via": "Google News"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-11-19",
+      "title": "At least 7 people killed, more than a dozen injured in Thailand school shooting",
+      "url": "https://news.google.com/rss/articles/CBMiuAdBVV95cUxNM3RIUzI3dEFMT0o0OWNUUmgzdnlpMnpPaTBXclVHdXo3azJKZ3FzLTVzNmV1MEVWYTl0VEpWR3hKODdFR3A5N1ozNVZEczFob3lpWFlHVUc0TkZiNGFiOC00SVdxSXlUZjNYNFB6RFFzMVU4TUNJZDdnaFJYYk8yQnpDQUVEeFF5bi1ac19oOXF5NmxpTUtHbmY2VGtLWnJmeGdzRmlHc2wxdF9MaFNZY3BkREhQT1JYeGJ3bE1UWlpVSGZZbU94cVZMdVlKaDBZdl9JMmJoTzdib0cxS1BNZ1A1NUIwTUFtcTBBVi1adXd6WWtnbjkxUkZYS1czejJFZGd2Yml1QmR2Z2VobXdSZ1RrYWZjUXJ2RFFhQ0hQZ3RnOVJBcTdKRlJPZzY3cWVPRGRLUU1kUHJnQWh4bXdVYjR1dmo3aEExOUtRRkNSR011U2RwMXIxUEJ0OHZlbk85RnkwcG1BdzRwWDVzU2I1ZDJwemF0R3lRZlMzZ1VhS2p6X1RHZF94TVFKZHVVNl9rbXNMUnRHMDEyNl9zQXhxdGhUR0JJWC1MZmJQQTVDQ3Z5NXhxOWlfYVFzaVBPMW9ReVhkMjJVc3AyczlwMThycG1vZ1JSTFdlVVAxb3JCdFVYdEJxX29DNmM2bHp6Rm1ySm1wNjhtRUZPaFhQd1FMZGsxdGY4cmk3Q1RqMlZrMlowVjc2ckVzSmg4TFl4eV93WXEzUzhKVkFvTXZWQll2LXkxRXZYZldLVldIMkpXci0yVm1FM3BQc19pWmZzcnVtWVJ1b3ZKcmlKd0VNMlRISVFsVm9FN0dINnlsRzNmNUk0dmdtN1RSb1gtREpEMno2dGZfdHdtUndOem5FcHp5bW1HVGNmM25tZFl1a0hlOUR4emFPemE2MHhhY2tIQTBnand5MzNaXzlYeGtHTnN6akhSLWRuTTFlOGFfVmNjQi13RkR2WVBhOFc3SlNzMEJseDlVdkFlaG92RUhUMnZDNGsxNHp6eUJCUUhaQTRzLUZCV2EzSlFIN0pTQm1qS2k1c01wb3NtQ0o2MlRfU1lMNFo5NFlvMzJ2VkRmR29mTlFvSlFGcG5LQTk3SFhlNXZ4ck4wOFB3TV9YLVNTVkFUOXNFQTNjT1dZQnF1ZlpZMmluVmtaVzlFU2VsdndSTlJJeS15OUZoNlB4SWxRa0VoNjgtOXk1dWVEZWhXYUl3WGFPSDVSdXVtXzRJbldSNmZSSHFVYmg3N1Q4d2FkbFMwQWo4QWd0RTJ1?oc=5",
+      "source": "ABC30 Fresno",
+      "kind": "News",
+      "via": "Google News"
+    },
+    {
+      "country": "Vietnam",
+      "date": "2026-11-19",
+      "title": "New Draft Law Would Let Public Security Minister Designate Key National Security Sites",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOUlRLS0FsREgxTTVSYWNRMTFrXzV4cWg0TjQ5bDkwVUpfUXljTU9xczJkWlJmbkhHNEJnMUgwUUJmZ04zUUgyRHR6WmVWSW1vdWV2b0p0c2U5ZUpyek95dVJmQ001WU9uZFhqUU1jb2ZTdjFiejRXUUhBekM1R1cxd3NOODd0SnRnejdJcUxXdlhrWkhuQTRrX3BLY3E5OEtzdFhrU0RuZ0J5SkU5cUZCQW5GR0t6amZjVXhhQ3RB?oc=5",
+      "source": "The Vietnamese Magazine",
+      "kind": "News",
+      "via": "Google News"
+    },
+    {
       "country": "Myanmar",
       "date": "2026-11-18",
       "title": "Myanmar Regime Chief to Review Relations With ASEAN After Manila Snub",
@@ -725,6 +761,24 @@
     {
       "country": "Cambodia",
       "date": "2026-11-18",
+      "title": "Veal Veng Reconciliation Center: Youth Volunteers From The National Social Assistance Fund (NSAF) Visited Veal Veng Reconciliation Center on Novermber 18, 2026.",
+      "url": "https://www.dccam.org/veal-veng-reconciliation-center/veal-veng-reconciliation-center-youth-volunteers-from-the-national-social-assistance-fund-nsaf-visited-veal-veng-reconciliation-center-on-novermber-18-2026/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-11-18",
+      "title": "Mapping the Killing Field: Wat Ko Koh Chrum Killing Site at Ba Phnom District, Prey Veng Province – November 2026",
+      "url": "https://www.dccam.org/survivors/mapping-the-killing-field-wat-ko-koh-chrum-killing-site-at-ba-phnom-district-prey-veng-province-november-2026/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-11-18",
       "title": "Anlong Veng Peace & Human Rights Study Tour. Students of Lumtong Secondary School. November 18, 2026",
       "url": "https://www.dccam.org/development/anlong-veng-peace-center/anlong-veng-peace-human-rights-study-tour-students-of-lumtong-secondary-school-november-18-2026/",
       "source": "Documentation Center of Cambodia (DC-Cam)",
@@ -757,15 +811,6 @@
       "source": "The Irrawaddy",
       "kind": "media",
       "via": "Curated sources"
-    },
-    {
-      "country": "Philippines",
-      "date": "2026-11-18",
-      "title": "Philippine Police Detain Hundreds Protesting Trump Visit",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPemlpcDk2YVhCMGNzU0lBcnhteGRtYTY0WWg2dVNaX1hIQkR0TWJpcFMyenVpMGM2bWpwcEVCSEJIQ3Zhb0lwb2szNmVPaGdFOENCcEpCNVA0MTlOdXRQYVRsQ3BqcUtwN2IzMkNQUzg1M25oaVJJUEFsRzlfMS1FS2NKdDBtVmRzdmNFNENnR01JR1lFSk1N?oc=5",
-      "source": "Human Rights Watch",
-      "kind": "News",
-      "via": "Google News"
     },
     {
       "country": "Thailand",
@@ -959,6 +1004,24 @@
     {
       "country": "Cambodia",
       "date": "2026-11-17",
+      "title": "Takeo Documentation Center: Study Tour for Students at KR Killing Field and Photo Exhibition – November 2026",
+      "url": "https://www.dccam.org/takeo-documentation-center/takeo-documentation-center-study-tour-for-students-at-kr-killing-field-and-photo-exhibition-november-2026/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-11-17",
+      "title": "Takeo Documentation Center: Classroom Forum on a Study of A History of Democratic Kampuchea (1975-1979) – November 2026",
+      "url": "https://www.dccam.org/takeo-documentation-center/takeo-documentation-center-classroom-forum-on-a-study-of-a-history-of-democratic-kampuchea-1975-1979-november-2026/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-11-17",
       "title": "Prey Veng Documentation Center: ទួន សាមាន ៖ ជីវិតខ្ញុំ ត្រូវគេមកសុំប្តូរ ហើយទៅស្លាប់ជំនួសខ្ញុំរហូត",
       "url": "https://www.dccam.org/prey-veng-documentation-center/prey-veng-documentation-center-%e1%9e%91%e1%9e%bd%e1%9e%93-%e1%9e%9f%e1%9e%b6%e1%9e%98%e1%9e%b6%e1%9e%93-%e1%9f%96-%e1%9e%87%e1%9e%b8%e1%9e%9c%e1%9e%b7%e1%9e%8f%e1%9e%81%e1%9f%92%e1%9e%89%e1%9e%bb/",
       "source": "Documentation Center of Cambodia (DC-Cam)",
@@ -1004,18 +1067,18 @@
     {
       "country": "Indonesia",
       "date": "2026-11-17",
-      "title": "Human Rights Minister rejects criticism, overwhelmed by too many cases",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUG5yM0xSb0FyQll5S0hSSG4tNkduUDR2bUtIWWpBYU1UMk16YmU4cVdnNVlMVUg3S3pMZm5yTzM2amxTbjRXZVJQb2k3WVhsbVRmU2NmNWhiOWppaG1aSUNIaXAxMldvb1RNMURBa1Z0Ujl5LVVaUEVWRHlOMVhNTWVSUV9lVWcwZ3VYYjRSSnBibnZpRkg2QmxiVjNpN2MwYXZZWTJ0N1REc1Ytamg4?oc=5",
-      "source": "IDNFinancials",
+      "title": "Indonesia Ranks First Globally in Human Rights Education, Says Minister",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxObW9uTW5mVklfanI0OHZ5SkJlT2owOWtfVXNsX19xd3dkeDNSc0dhWG1JNnM2eVJNV25DZXUzOU1CNFJVazFRS2Y3QVJ6MWRSelA0YVgtT3NYeWVlWW53cWNaeFBCS0U3U0VvclFlMEFPODZoNDVjc0F2TlJPLXBDNGdjaTQ0SGpfTlNFQ1FmNXROdjJhUWc1TF8wNDRfTmhKUk16WTRR?oc=5",
+      "source": "Tempo.co English",
       "kind": "News",
       "via": "Google News"
     },
     {
       "country": "Indonesia",
       "date": "2026-11-17",
-      "title": "Indonesia Ranks First Globally in Human Rights Education, Says Minister",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTzNaYkZXcDlkd2h4ZzlZTWpYRTRLVFYxZ3NjNldGaHZLUkpkcWtOZTlGbG1CLUVDc1M4eDZyRXdGMjJuMDFjeDJ4eUNDZ2JJUktkeHZQN0lVRUxBbXp3RFdFNTJMTDBtTHdYTlQ3WXRWMVNDSzlBbmEwU05WRlJRbEU1REpvd2JZdkpaVDI3TnN5cVI0dmNPXzJhSTRJenNGbktRSg?oc=5",
-      "source": "Tempo.co English",
+      "title": "Human Rights Minister rejects criticism, overwhelmed by too many cases",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUG5yM0xSb0FyQll5S0hSSG4tNkduUDR2bUtIWWpBYU1UMk16YmU4cVdnNVlMVUg3S3pMZm5yTzM2amxTbjRXZVJQb2k3WVhsbVRmU2NmNWhiOWppaG1aSUNIaXAxMldvb1RNMURBa1Z0Ujl5LVVaUEVWRHlOMVhNTWVSUV9lVWcwZ3VYYjRSSnBibnZpRkg2QmxiVjNpN2MwYXZZWTJ0N1REc1Ytamg4?oc=5",
+      "source": "IDNFinancials",
       "kind": "News",
       "via": "Google News"
     },
@@ -1031,8 +1094,8 @@
     {
       "country": "Laos",
       "date": "2026-11-17",
-      "title": "Development in Laos methanol poisoning that killed two Aussie teens",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQzE4TUx2andoT1pBclBoemVHSUk0VkppcGFldDktUE0yYi01bjhPNXRJN2NLODJLa3RHNnM0aFY1RkFyc1I3NVlCXzNaQ3FVR0ZtM0hGWGJzMzZSemtwMnRjWlBrQmNoejczN2thb0V1TjJxdTBKdFJQY1pxY0t4bzZWazEwS3hnRGJVM2lGZmZPRjhMa1hXeA?oc=5",
+      "title": "Update in Laos methanol poisoning tragedy that killed two Aussie backpackers - as new details are sought over 'bitterly disappointing' charges for tainted alcohol",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQzE4TUx2andoT1pBclBoemVHSUk0VkppcGFldDktUE0yYi01bjhPNXRJN2NLODJLa3RHNnM0aFY1RkFyc1I3NVlCXzNaQ3FVR0ZtM0hGWGJzMzZSemtwMnRjWlBrQmNoejczN2thb0V1TjJxdTBKdFJQY1pxY0t4bzZWazEwS3hnRGJVM2lGZmZPRjhMa1hXeNIBngFBVV95cUxNTFlhLWltWWREeG5JU3lLWVlsalkxS3hidlhRQXIwckN5cTdldGhXLTRzdVJ4akhkcVNRaG1iRlFJYU1wWHZ5c3F6cmU3cmNjMG1PVFJjRGN6U1JjQ1JsNVJZQ3JzT3ZYbl9qQ2cyTk9zdEQ4dFRDTXZxYmFEZ0hRNEprek9BZnZuTHcwd0EzdTMyQXpsQkVmWjFvSzlqUQ?oc=5",
       "source": "Daily Mail",
       "kind": "News",
       "via": "Google News"
@@ -1042,15 +1105,6 @@
       "date": "2026-11-17",
       "title": "MiG-29 fighter jet crashes in Serbia, pilot killed.",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVVJ1MnRqV1d2aHJxWF9oellndUdkZ09CMzUzTWEyOE1Cd3Z6WVZmcXYtc25NWHBfY0xJYkVwT1N4RGhCeVBVUzZNVmROVHd5OEUtTnpXTGp1T3paT0U2bzZvbjhUc01Rc29uZVFwZnc3RXFGd2x0TnhweEJiR2Nlbg?oc=5",
-      "source": "Vietnam.vn",
-      "kind": "News",
-      "via": "Google News"
-    },
-    {
-      "country": "Vietnam",
-      "date": "2026-11-17",
-      "title": "Women's equality - a consistent trend in Vietnam's constitutional history.",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbTIxYWNjZ2VYS3lieTNsYmZ4RVFINzZ4a2hNRVpMWm5YMWNla0ZOZ1FrOGI2dlVhNnNDS1M4NmpJR0xnenZyYjlWOWVMTUpzeE5HTF9kamNwVlBrQ0FEY3RsTHVfbHBnTWRYeFZVVm8zV1ZickZhdWtmRWVOQnRycHg2QXhEVXY5R1VkVFcya1FPREpCVkpRcnlqdnRocXRuUzh0N1hVWQ?oc=5",
       "source": "Vietnam.vn",
       "kind": "News",
       "via": "Google News"
@@ -1074,20 +1128,29 @@
       "via": "Google News"
     },
     {
-      "country": "Singapore",
-      "date": "2026-11-17",
-      "title": "Explainer-How is genocide proven in court?",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTVVKV2lxZng2bmk4a2Z0c1lFdnhUemN6Y1h5TE0zVXp5bTBXU2RYd2Z2UzYzemdFaXUwVFdNMUswbFQ3aGxZTVppem1MTlZuWkItQmZxT1B1NkV0X1I3Z3JqYzNZSTlRa3dBVEpTVl80aHFtNGcwUGlDbjI4YjJmZQ?oc=5",
-      "source": "The Straits Times",
-      "kind": "News",
-      "via": "Google News"
-    },
-    {
       "country": "Timor-Leste",
       "date": "2026-11-17",
       "title": "Remembering the Santa Cruz massacre",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5rZ0w0OGQ2LWl3UFo1WlR4RFhrdFdnTDdSYnNXWUxIalhmNlYzR1gwV0R6d2UzWXRXYmhROUQ3WlhEMUpiQ1lPZVdGY1RyVmwyY3lHdS1RWWpEYXZkVGtQN2hCeWh3eG93Zmd1LUxQU2l6NW0xZmc?oc=5",
       "source": "Red Flag",
+      "kind": "News",
+      "via": "Google News"
+    },
+    {
+      "country": "Indonesia",
+      "date": "2026-11-17",
+      "title": "Indonesia Ranks First Globally in Human Rights Education, Says Minister",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTzNaYkZXcDlkd2h4ZzlZTWpYRTRLVFYxZ3NjNldGaHZLUkpkcWtOZTlGbG1CLUVDc1M4eDZyRXdGMjJuMDFjeDJ4eUNDZ2JJUktkeHZQN0lVRUxBbXp3RFdFNTJMTDBtTHdYTlQ3WXRWMVNDSzlBbmEwU05WRlJRbEU1REpvd2JZdkpaVDI3TnN5cVI0dmNPXzJhSTRJenNGbktRSg?oc=5",
+      "source": "Tempo.co English",
+      "kind": "News",
+      "via": "Google News"
+    },
+    {
+      "country": "Laos",
+      "date": "2026-11-17",
+      "title": "Development in Laos methanol poisoning that killed two Aussie teens",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQzE4TUx2andoT1pBclBoemVHSUk0VkppcGFldDktUE0yYi01bjhPNXRJN2NLODJLa3RHNnM0aFY1RkFyc1I3NVlCXzNaQ3FVR0ZtM0hGWGJzMzZSemtwMnRjWlBrQmNoejczN2thb0V1TjJxdTBKdFJQY1pxY0t4bzZWazEwS3hnRGJVM2lGZmZPRjhMa1hXeA?oc=5",
+      "source": "Daily Mail",
       "kind": "News",
       "via": "Google News"
     },
@@ -1137,30 +1200,12 @@
       "via": "GDELT"
     },
     {
-      "country": "Indonesia",
-      "date": "2026-11-13",
-      "title": "U . S . stocks lose steam on Nvidia CEO exit , rising bond yields",
-      "url": "http://www.bangladeshsun.com/news/279429293/u-s-stocks-lose-steam-on-nvidia-ceo-exit-rising-bond-yields",
-      "source": "bangladeshsun.com",
-      "kind": "News",
-      "via": "GDELT"
-    },
-    {
       "country": "Philippines",
       "date": "2026-11-12",
       "title": "Karapatan Monitor for July to September 2026",
       "url": "https://www.karapatan.org/5641/",
       "source": "Karapatan",
       "kind": "cso",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-12",
-      "title": "Koh Thma Documentation Center: A meeting regarding the 12th Global Youth Camp under the theme “Youth: Learning from the Past, Engaging in the Present to Develop the Future.” November 12,2026.",
-      "url": "https://www.dccam.org/koh-thma-documentation-center/koh-thma-documentation-center-a-meeting-regarding-the-12th-global-youth-camp-under-the-theme-youth-learning-from-the-past-engaging-in-the-present-to-develop-the-future-november-122026/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
       "via": "Curated sources"
     },
     {
@@ -1179,6 +1224,15 @@
       "url": "https://asylumaccess.org/press-conference-upr-iv/",
       "source": "Asylum Access",
       "kind": "ingo",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Cambodia",
+      "date": "2026-11-12",
+      "title": "Koh Thma Documentation Center: A meeting regarding the 12th Global Youth Camp under the theme “Youth: Learning from the Past, Engaging in the Present to Develop the Future.” November 12,2026.",
+      "url": "https://www.dccam.org/koh-thma-documentation-center/koh-thma-documentation-center-a-meeting-regarding-the-12th-global-youth-camp-under-the-theme-youth-learning-from-the-past-engaging-in-the-present-to-develop-the-future-november-122026/",
+      "source": "Documentation Center of Cambodia (DC-Cam)",
+      "kind": "research",
       "via": "Curated sources"
     },
     {
@@ -1213,51 +1267,6 @@
       "date": "2026-11-11",
       "title": "Veal Veng Reconciliation Center: Home Visits KR Survivors and Victims of The Thai Invasion in O-Suosdei Village, Thma Da Commune, Veal Veng District, Pursat Province.",
       "url": "https://www.dccam.org/veal-veng-reconciliation-center/veal-veng-reconciliation-center-home-visits-kr-survivors-and-victims-of-the-thai-invasion-in-o-suosdei-village-thma-da-commune-veal-veng-district-pursat-province/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-10",
-      "title": "Stung Treng Documentation Center: District-Level Integration Workshop on the Three-Year Rolling Investment Programme (2027–2029) of Borei O’Svay Sen Chey District Administration",
-      "url": "https://www.dccam.org/stung-treng-documentation-center/stung-treng-documentation-center-district-level-integration-workshop-on-the-three-year-rolling-investment-programme-2027-2029-of-borei-osvay-sen-chey-district-administration/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-10",
-      "title": "Stung Treng Documentation Center: Preah Romkel High School Teacher and Students Embark on a Historical Study Tour at Sangkum Reastr Niyum King Father–Queen Mother (Borei O’Svay–Sen Chey)",
-      "url": "https://www.dccam.org/stung-treng-documentation-center/stung-treng-documentation-center-preah-romkel-high-school-teacher-and-students-embark-on-a-historical-study-tour-at-sangkum-reastr-niyum-king-father-queen-mother-borei-osvay/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-06",
-      "title": "Stung Treng Documentation Center: Welcome Visitors​ (November 2 – 6, 2026)",
-      "url": "https://www.dccam.org/stung-treng-documentation-center/stung-treng-documentation-center-welcome-visitors-november-2-6-2026/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-06",
-      "title": "Koh Thma Documentation Center: Two students (one girl) from Bun Rany Hun Sen Kdol Phsar Primary School visited the photo exhibition and read books at Praying House of The S’tieng Ethnic Village.",
-      "url": "https://www.dccam.org/koh-thma-documentation-center/koh-thma-documentation-center-two-students-one-girl-from-bun-rany-hun-sen-kdol-phsar-primary-school-visited-the-photo-exhibition-and-read-books-at-praying-house-of-the-stieng-ethnic-village/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-06",
-      "title": "QML Architects at the Architecture Gallery 2026",
-      "url": "https://www.dccam.org/the-queen-mother-library/qml-architects-at-the-architecture-gallery-2026/",
       "source": "Documentation Center of Cambodia (DC-Cam)",
       "kind": "research",
       "via": "Curated sources"
