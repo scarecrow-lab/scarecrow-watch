@@ -2,7 +2,7 @@
 """Scarecrow Watch data updater.
 
 Pulls public data for the 11 ASEAN states and writes JSON files the dashboard reads:
-  data/signals.json       recent reports and news (ReliefWeb, GDELT)  -> unverified signals
+  data/signals.json       recent reports and news (ReliefWeb, Google News)  -> unverified signals
   data/displacement.json  people displaced from each country (UNHCR)
   data/indicators.json    World Bank, V-Dem (via OWID) and UCDP values used by the PREVENT layer
   data/auto_published.json  automated PREVENT scores currently public
@@ -143,71 +143,51 @@ def reliefweb():
     return out
 
 
-# ---------- GDELT DOC 2.0 (global news) ----------
-def gdelt_get(url, tries=4):
-    """GET GDELT JSON, backing off on HTTP 429 (the shared-IP rate limit)."""
-    last = None
-    for i in range(tries):
+# ---------- Google News RSS (global news search) ----------
+# Replaces the GDELT DOC API: GDELT rate-limits per IP (HTTP 429), and the
+# shared GitHub-Actions IP hit that limit almost every day. Google News RSS
+# fills the same role — news mentioning each country plus our risk terms —
+# far more reliably, and we already parse RSS elsewhere.
+def google_news():
+    out, failures = [], 0
+    for name in COUNTRIES:
+        q = f'"{name}" {GDELT_TERMS} when:3d'
+        url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({
+            "q": q, "hl": "en-US", "gl": "US", "ceid": "US:en"})
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
-            with urllib.request.urlopen(req, timeout=90) as r:
-                return json.loads(r.read().decode("utf-8", "replace"))
-        except urllib.error.HTTPError as e:
-            last = e
-            if e.code == 429 and i < tries - 1:
-                ra = e.headers.get("Retry-After") if e.headers else None
-                wait = int(ra) if (ra and str(ra).strip().isdigit()) else 20 * (i + 1)
-                time.sleep(min(wait, 90) + random.uniform(0, 3))
-                continue
-            if i < tries - 1:
-                time.sleep(10 * (i + 1))
-                continue
-            break
+            xml = http_text(url, tries=3)
+            root = ET.fromstring(xml)
         except Exception as e:
-            last = e
-            if i < tries - 1:
-                time.sleep(10 * (i + 1))
+            failures += 1
+            log("googlenews", name, e)
+            time.sleep(1.5)
+            continue
+        for item in root.findall(".//item")[:25]:
+            title = (item.findtext("title") or "").strip()
+            link = safe_url(item.findtext("link"))
+            if not title or not link:
                 continue
-            break
-    raise RuntimeError(f"https://api.gdeltproject.org/api/v2/doc/doc: {last}")
-
-
-# One combined query for all 11 countries keeps us well under GDELT's per-IP
-# limit; the old code made one request per country, multiplying the chance of a
-# 429 on the shared GitHub-Actions IP elevenfold.
-GDELT_ALIASES = {"burma": "Myanmar", "east timor": "Timor-Leste"}
-
-
-def gdelt():
-    names = list(COUNTRIES)
-    q = "(" + " OR ".join(f'"{n}"' for n in names) + ") " + GDELT_TERMS + " sourcelang:english"
-    url = "https://api.gdeltproject.org/api/v2/doc/doc?" + urllib.parse.urlencode({
-        "query": q, "mode": "artlist", "format": "json",
-        "maxrecords": 250, "timespan": "3d", "sort": "datedesc"})
-    res = gdelt_get(url)  # raises on failure, so the previous signals are kept
-    lows = [(n, n.lower()) for n in names]
-    out = []
-    for a in res.get("articles", []) or []:
-        u = safe_url(a.get("url"))
-        title = a.get("title")
-        if not u or not title:
-            continue
-        low = str(title).lower()
-        country = next((n for n, nl in lows if nl in low), None)
-        if country is None:
-            country = next((v for k, v in GDELT_ALIASES.items() if k in low), None)
-        if country is None:
-            continue
-        d = str(a.get("seendate", ""))  # e.g. 20260930T120000Z
-        out.append({
-            "country": country,
-            "date": f"{d[0:4]}-{d[4:6]}-{d[6:8]}" if len(d) >= 8 else "",
-            "title": str(title)[:300],
-            "url": u,
-            "source": str(a.get("domain", ""))[:80],
-            "kind": "News",
-            "via": "GDELT",
-        })
+            src_el = item.find("source")
+            source = (src_el.text or "").strip() if src_el is not None and src_el.text else ""
+            ttl = title
+            if source and title.endswith(" - " + source):
+                ttl = title[: -(len(source) + 3)].strip()
+            try:
+                d = email.utils.parsedate_to_datetime(item.findtext("pubDate") or "").strftime("%Y-%m-%d")
+            except Exception:
+                d = ""
+            out.append({
+                "country": name,
+                "date": d,
+                "title": ttl[:300],
+                "url": link,
+                "source": source[:80],
+                "kind": "News",
+                "via": "Google News",
+            })
+        time.sleep(1.5)
+    if failures == len(COUNTRIES):
+        raise RuntimeError("Google News failed for every country")
     return out
 
 
@@ -1150,7 +1130,7 @@ def main():
     stamp = NOW.isoformat(timespec="seconds")
     fresh = []
 
-    for key, fn in (("reliefweb", reliefweb), ("gdelt", gdelt), ("partners", partner_sources)):
+    for key, fn in (("reliefweb", reliefweb), ("googlenews", google_news), ("partners", partner_sources)):
         try:
             items = fn()
             fresh += items
