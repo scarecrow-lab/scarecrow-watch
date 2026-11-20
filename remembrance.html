@@ -87,29 +87,7 @@ footer a{ color:var(--ink-dim); }
   <main id="main">
     <div class="scale"><span data-i="remScale">The UN Fact-Finding Mission gave a conservative estimate that at least 10,000 Rohingya were killed in the two months after August 2017. Each event below is one documented part of that whole.</span> <a href="https://digitallibrary.un.org/record/1643079/files/A_HRC_39_CRP-2-EN.pdf" target="_blank" rel="noopener noreferrer">UN Fact-Finding Mission &#8599;</a></div>
 
-    <div class="src">
-      <div class="nm">Min Gyi (Tula Toli), Maungdaw <span class="when">30 Aug 2017</span></div>
-      <div class="d">UN investigators estimate around 750 Rohingya were killed, and the village was burned to the ground. The Fact-Finding Mission described it as a well-planned, deliberate attack on a specific civilian population.</div>
-      <a class="open" href="https://www.hrw.org/report/2017/12/19/massacre-river/burmese-army-crimes-against-humanity-tula-toli" target="_blank" rel="noopener noreferrer">Source: Human Rights Watch &#8599;</a>
-    </div>
-
-    <div class="src">
-      <div class="nm">Chut Pyin, Rathedaung <span class="when">27 Aug 2017</span></div>
-      <div class="d">Physicians for Human Rights documented an estimated 400 villagers killed or missing, including 99 children, and a group of 50 men who were taken away and never seen again.</div>
-      <a class="open" href="https://phr.org/?p=4970" target="_blank" rel="noopener noreferrer">Source: Physicians for Human Rights &#8599;</a>
-    </div>
-
-    <div class="src">
-      <div class="nm">Gu Dar Pyin, Buthidaung <span class="when">27 Aug 2017</span></div>
-      <div class="d">After soldiers overran the village, survivors described several mass graves. Village elders recorded 75 names; local estimates ran as high as 400 killed. First documented by the Associated Press in 2018.</div>
-      <a class="open" href="https://aa.com.tr/en/asia-pacific/myanmar-underreported-2017-rohingya-killing-watchdog/1938803" target="_blank" rel="noopener noreferrer">Source: Anadolu Agency / HRW &#8599;</a>
-    </div>
-
-    <div class="src">
-      <div class="nm">Inn Din, Maungdaw <span class="when">Sep 2017</span></div>
-      <div class="d">An initial survey counted 147 Inn Din villagers killed; Reuters documented the execution of ten detained men. Two Reuters journalists were jailed for reporting the killings.</div>
-      <a class="open" href="https://reliefweb.int/report/bangladesh/inn-din-village-we-begged-them-not-arrest-our-husbands-rohingya-genocide-report-december-2018" target="_blank" rel="noopener noreferrer">Source: Fortify Rights (ReliefWeb) &#8599;</a>
-    </div>
+    <div id="events"></div>
 
     <div class="note"><b data-i="remMethodLead">About this record.</b> <span data-i="remMethod">Estimates differ between investigations; each event links to its source. This records events and communities, not a registry of individuals. Records are kept in English, linked to the original investigations, for accuracy.</span></div>
   </main>
@@ -141,6 +119,21 @@ footer a{ color:var(--ink-dim); }
     document.querySelectorAll('[data-i]').forEach(function(n){ var v=t(n.dataset.i); if(typeof v==='string') n.textContent=v; });
     langSel.value=lang;
   }
+  function esc(x){return (x==null?'':String(x));}
+  function renderEvents(list){
+    var box=document.getElementById('events'); if(!box) return; box.textContent='';
+    list.forEach(function(e){
+      var card=document.createElement('div'); card.className='src';
+      var nm=document.createElement('div'); nm.className='nm';
+      nm.appendChild(document.createTextNode(esc(e.place)+(e.township?', '+esc(e.township):'')+' '));
+      if(e.date){ var w=document.createElement('span'); w.className='when'; w.textContent=esc(e.date); nm.appendChild(w); }
+      var d=document.createElement('div'); d.className='d'; d.textContent=esc(e.summary);
+      card.appendChild(nm); card.appendChild(d);
+      if(e.url && /^https?:\/\//.test(e.url)){ var av=document.createElement('a'); av.className='open'; av.href=e.url; av.target='_blank'; av.rel='noopener noreferrer'; av.textContent='Source: '+esc(e.source)+' \u2197'; card.appendChild(av); }
+      box.appendChild(card);
+    });
+  }
+  fetch('data/remembrance.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(j){ renderEvents((j&&j.events)||[]); }).catch(function(){});
   apply();
 })();
 </script>

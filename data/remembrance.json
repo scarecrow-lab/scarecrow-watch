@@ -1,0 +1,37 @@
+{
+  "_about": "Curated record of documented mass-atrocity events against the Rohingya, read by remembrance.html. Each event must come from a credible, public investigation and link to its source. This is edited by hand (never auto-ingested): add an event by appending an object below with place, township, date, summary and a source + url. Keep summaries factual, sober and non-graphic; no personal data about individuals.",
+  "events": [
+    {
+      "place": "Min Gyi (Tula Toli)",
+      "township": "Maungdaw",
+      "date": "30 Aug 2017",
+      "summary": "UN investigators estimate around 750 Rohingya were killed, and the village was burned to the ground. The Fact-Finding Mission described it as a well-planned, deliberate attack on a specific civilian population.",
+      "source": "Human Rights Watch",
+      "url": "https://www.hrw.org/report/2017/12/19/massacre-river/burmese-army-crimes-against-humanity-tula-toli"
+    },
+    {
+      "place": "Chut Pyin",
+      "township": "Rathedaung",
+      "date": "27 Aug 2017",
+      "summary": "Physicians for Human Rights documented an estimated 400 villagers killed or missing, including 99 children, and a group of 50 men who were taken away and never seen again.",
+      "source": "Physicians for Human Rights",
+      "url": "https://phr.org/?p=4970"
+    },
+    {
+      "place": "Gu Dar Pyin",
+      "township": "Buthidaung",
+      "date": "27 Aug 2017",
+      "summary": "After soldiers overran the village, survivors described several mass graves. Village elders recorded 75 names; local estimates ran as high as 400 killed. First documented by the Associated Press in 2018.",
+      "source": "Anadolu Agency / HRW",
+      "url": "https://aa.com.tr/en/asia-pacific/myanmar-underreported-2017-rohingya-killing-watchdog/1938803"
+    },
+    {
+      "place": "Inn Din",
+      "township": "Maungdaw",
+      "date": "Sep 2017",
+      "summary": "An initial survey counted 147 Inn Din villagers killed; Reuters documented the execution of ten detained men. Two Reuters journalists were jailed for reporting the killings.",
+      "source": "Fortify Rights (ReliefWeb)",
+      "url": "https://reliefweb.int/report/bangladesh/inn-din-village-we-begged-them-not-arrest-our-husbands-rohingya-genocide-report-december-2018"
+    }
+  ]
+}
