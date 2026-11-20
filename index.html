@@ -505,8 +505,9 @@ async function getJSON(path){
 
 async function load(){
   try{
-    const [a, s, d, m, cx, site, pv, ind, apub, arev, fba, vw, hist] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json","data/context.json","data/site.json","data/prevent.json","data/indicators.json","data/auto_published.json","data/auto_review.json","data/factbook_auto.json","data/views.json","data/history.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
-    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}, cx: cx || {}, site: site || {}, pv, ind: (ind && ind.indicators) || {}, apub: (apub && apub.countries) || {}, arev: (arev && arev.pending) || [], fba: (fba && fba.countries) || {}, vw: (vw && vw.countries) || {}, vwInfo: vw || {}, hist: (hist && hist.countries) || {}, histMonths: (hist && hist.months) || []};
+    const [a, s, d, m, cx, site, pv, ind, apub, arev, fba, vw, hist, flags] = await Promise.all(["data/assessments.json","data/signals.json","data/displacement.json","data/meta.json","data/context.json","data/site.json","data/prevent.json","data/indicators.json","data/auto_published.json","data/auto_review.json","data/factbook_auto.json","data/views.json","data/history.json","data/source_flags.json"].map(p => getJSON(p).catch(e => (p.includes("assessments") ? Promise.reject(e) : null))));
+    D = {a, s: s || {items:[]}, d: d || {countries:{}}, m: m || {sources:{}}, cx: cx || {}, site: site || {}, pv, ind: (ind && ind.indicators) || {}, apub: (apub && apub.countries) || {}, arev: (arev && arev.pending) || [], fba: (fba && fba.countries) || {}, vw: (vw && vw.countries) || {}, vwInfo: vw || {}, hist: (hist && hist.countries) || {}, histMonths: (hist && hist.months) || [], flags: flags || {}};
+    applySourceFlags();
     D.a.countries.sort((x,y) => avg(y.scores) - avg(x.scores));
     const fromHash = decodeURIComponent((location.hash.match(/country=([^&]+)/) || [])[1] || "");
     current = D.a.countries.find(c => c.name === fromHash) ? fromHash : D.a.countries[0].name;
@@ -539,6 +540,16 @@ function renderFresh(){
 const CURATED = "Curated sources";
 const viaOf = i => i.via === "Partner sources" ? CURATED : i.via;
 const rankSignals = list => list.slice().sort((a,b) => ((viaOf(a) !== CURATED) - (viaOf(b) !== CURATED)) || (b.date||"").localeCompare(a.date||""));
+// Source-credibility flags (data/source_flags.json). 'state' outlets are flagged
+// but kept (state-media incitement is itself a risk indicator); 'deny' are dropped.
+// Whole-word, case-insensitive match against the outlet name only.
+function flagRegexes(arr){ return (arr || []).map(p => new RegExp("\\b" + String(p).replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i")); }
+function applySourceFlags(){
+  const st = flagRegexes(D.flags && D.flags.state), dn = flagRegexes(D.flags && D.flags.deny);
+  const tier = src => { const s = src || ""; if (!s) return null; if (dn.some(r => r.test(s))) return "deny"; if (st.some(r => r.test(s))) return "state"; return null; };
+  (D.s.items || []).forEach(i => { i._tier = tier(i.source); });
+  D.s.items = (D.s.items || []).filter(i => i._tier !== "deny");
+}
 // Flags as SVG images (flag-icons, MIT licence): emoji flags don't render on Windows.
 const ISO2 = {"Myanmar":"mm","Thailand":"th","Cambodia":"kh","Laos":"la","Vietnam":"vn","Malaysia":"my","Singapore":"sg","Brunei":"bn","Philippines":"ph","Indonesia":"id","Timor-Leste":"tl"};
 function flagImg(name, big){
@@ -603,6 +614,7 @@ function sigRow(i, showCountry){
   body.append(link(i.url, i.title));
   const meta = el("div","meta");
   meta.append(el("span","chip",t("unverified")));
+  if (i._tier === "state") meta.append(Object.assign(el("span","chip",t("srcState")), {style:"color:var(--bad);border-color:var(--bad)"}));
   if (showCountry) meta.append(el("span","chip",i.country));
   if (i.kind === "state-linked") meta.append(Object.assign(el("span","chip",t("kindState")), {style:"color:var(--med);border-color:var(--med)"}));
   if (i.kind === "intergovernmental") meta.append(el("span","chip",t("kindIgo")));

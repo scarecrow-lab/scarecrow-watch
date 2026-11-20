@@ -1,0 +1,29 @@
+{
+  "_about": "Source-credibility flags for Scarecrow Watch signals. 'state' outlets are state-owned or state-affiliated media: they are NOT removed — they are flagged so analysts weigh them with caution, and because state-media incitement or dehumanization is itself a PREVENT risk indicator worth seeing. 'deny' outlets are pure spam / content farms and are removed from the feed; it starts empty so nothing is dropped until a name is curated in. Matching is case-insensitive and whole-word against the outlet name only (the signal's 'source' field), so keep entries specific to avoid false positives.",
+  "_maintainers": "Add an outlet by putting its publisher name (as it appears in the 'source' field of a signal) into the right list. Prefer the full, specific name over short acronyms.",
+  "state": [
+    "Global New Light of Myanmar",
+    "GNLM",
+    "Myawady",
+    "MRTV",
+    "Myanmar Alinn",
+    "Vientiane Times",
+    "Lao News Agency",
+    "Pasaxon",
+    "Nhan Dan",
+    "Nhandan",
+    "Vietnam News Agency",
+    "Quan Doi Nhan Dan",
+    "People's Army Newspaper",
+    "Voice of Vietnam",
+    "Agence Kampuchea Presse",
+    "Fresh News",
+    "Borneo Bulletin",
+    "Radio Television Brunei",
+    "Antara",
+    "Bernama",
+    "Philippine News Agency",
+    "National News Bureau of Thailand"
+  ],
+  "deny": []
+}
