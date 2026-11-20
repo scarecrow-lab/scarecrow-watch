@@ -1,7 +1,97 @@
 {
-  "generated": "2026-11-19T04:13:40+00:00",
+  "generated": "2026-11-20T03:59:31+00:00",
   "window_days": 14,
   "items": [
+    {
+      "country": "Myanmar",
+      "date": "2026-11-19",
+      "title": "[Repost] World Court Finds Myanmar Responsible for Rohingya Genocide – Human Rights Watch",
+      "url": "https://maruah.org/2026/11/19/repost-world-court-finds-myanmar-responsible-for-rohingya-genocide-human-rights-watch/",
+      "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
+      "kind": "cso",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-19",
+      "title": "ICJ Rules Myanmar Committed Genocide Against Rohingya",
+      "url": "https://www.irrawaddy.com/news/burma/icj-rules-myanmar-committed-genocide-against-rohingya.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-19",
+      "title": "4,500 Myanmar Refugees to Get Thai Job Training Under $3m Project",
+      "url": "https://www.irrawaddy.com/news/burma/4500-myanmar-refugees-to-get-thai-job-training-under-3m-project.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Thailand",
+      "date": "2026-11-19",
+      "title": "Regime Media Censor Min Aung Hlaing’s Swipes at China, Thailand",
+      "url": "https://www.irrawaddy.com/news/burma/regime-media-censor-min-aung-hlaings-swipes-at-china-thailand.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-19",
+      "title": "What’s at Stake in Myanmar’s ICJ Trial for Genocide?",
+      "url": "https://www.irrawaddy.com/news/burma/whats-at-stake-in-myanmars-icj-trial-for-genocide.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-19",
+      "title": "Min Aung Hlaing Accuses Thailand of Aiding ‘Illegal’ Border Trade",
+      "url": "https://www.irrawaddy.com/business/min-aung-hlaing-accuses-thailand-of-aiding-illegal-border-trade.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-19",
+      "title": "Top UN Court to Rule on Whether 2017 Rohingya Crackdown Was Genocide",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/top-un-court-to-rule-on-whether-2017-rohingya-crackdown-was-genocide.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-19",
+      "title": "Myanmar Regime Leader Says in Talks With ‘Adversary’ US",
+      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/myanmar-regime-leader-says-in-talks-with-adversary-us.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-19",
+      "title": "Why Does China Refuse to Itemize Its Climate Bill for Developing Countries?",
+      "url": "https://www.irrawaddy.com/opinion/guest-column/why-does-china-refuse-to-itemize-its-climate-bill-for-developing-countries.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-19",
+      "title": "World Court finds Myanmar responsible for Rohingya genocide in landmark ruling",
+      "url": "https://rfa.org/english/myanmar/2026/11/19/rohingya-genocide-icj-ruling-myanmar/",
+      "source": "Radio Free Asia",
+      "kind": "media",
+      "via": "Curated sources"
+    },
     {
       "country": "Myanmar",
       "date": "2026-11-18",
@@ -17,6 +107,24 @@
       "title": "ASEAN Leaders Accused of Enabling Myanmar Regime Atrocities",
       "url": "https://www.irrawaddy.com/news/burma/asean-leaders-accused-of-enabling-myanmar-regime-atrocities.html",
       "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Myanmar",
+      "date": "2026-11-18",
+      "title": "Rohingya hope for justice as UN court prepares to rule on Myanmar genocide case",
+      "url": "https://rfa.org/english/myanmar/2026/11/18/icj-prepares-rule-myanmar-genocide-case/",
+      "source": "Radio Free Asia",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
+      "country": "Laos",
+      "date": "2026-11-18",
+      "title": "South China Sea code of conduct could depend on landlocked Laos: analysts",
+      "url": "https://rfa.org/english/southchinasea/2026/11/18/asean-south-china-sea-code-of-conduct/",
+      "source": "Radio Free Asia",
       "kind": "media",
       "via": "Curated sources"
     },
@@ -43,60 +151,6 @@
       "date": "2026-11-18",
       "title": "Regime Blames Thailand for Border Scam Hubs While Shielding Militia Allies",
       "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/regime-blames-thailand-for-border-scam-hubs-while-shielding-militia-allies.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-18",
-      "title": "Rohingya hope for justice as UN court prepares to rule on Myanmar genocide case",
-      "url": "https://rfa.org/english/myanmar/2026/11/18/icj-prepares-rule-myanmar-genocide-case/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Laos",
-      "date": "2026-11-18",
-      "title": "South China Sea code of conduct could depend on landlocked Laos: analysts",
-      "url": "https://rfa.org/english/southchinasea/2026/11/18/asean-south-china-sea-code-of-conduct/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Malaysia",
-      "date": "2026-11-17",
-      "title": "Regime Minister Turns to Migrant Workers in Malaysia to Plug Foreign Currency Gap",
-      "url": "https://www.irrawaddy.com/news/myanmar-china-watch/regime-minister-turns-to-migrant-workers-in-malaysia-to-plug-foreign-currency-gap.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-17",
-      "title": "All Quiet in Northern Shan—and for Good Reason",
-      "url": "https://www.irrawaddy.com/opinion/analysis/all-quiet-in-northern-shan-and-for-good-reason.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-17",
-      "title": "Dozens of Civilians Killed in Myanmar Regime Strikes as ASEAN Leaders Meet",
-      "url": "https://www.irrawaddy.com/news/burma/dozens-of-civilians-killed-in-myanmar-regime-strikes-as-asean-leaders-meet.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-17",
-      "title": "UN Chief Backs Engagement With Myanmar But ‘Violence Needs to Stop’",
-      "url": "https://www.irrawaddy.com/news/myanmar-china-watch/un-chief-backs-engagement-with-myanmar-but-violence-needs-to-stop.html",
       "source": "The Irrawaddy",
       "kind": "media",
       "via": "Curated sources"
@@ -129,10 +183,19 @@
       "via": "Curated sources"
     },
     {
+      "country": "Malaysia",
+      "date": "2026-11-17",
+      "title": "Regime Minister Turns to Migrant Workers in Malaysia to Plug Foreign Currency Gap",
+      "url": "https://www.irrawaddy.com/news/myanmar-china-watch/regime-minister-turns-to-migrant-workers-in-malaysia-to-plug-foreign-currency-gap.html",
+      "source": "The Irrawaddy",
+      "kind": "media",
+      "via": "Curated sources"
+    },
+    {
       "country": "Myanmar",
-      "date": "2026-11-16",
-      "title": "Yangon Condo Raid Reveals Myanmar’s Cyber Scam Sector Thriving in Commercial Capital",
-      "url": "https://www.irrawaddy.com/news/burma/yangon-condo-raid-reveals-myanmars-cyber-scam-sector-thriving-in-commercial-capital.html",
+      "date": "2026-11-17",
+      "title": "All Quiet in Northern Shan—and for Good Reason",
+      "url": "https://www.irrawaddy.com/opinion/analysis/all-quiet-in-northern-shan-and-for-good-reason.html",
       "source": "The Irrawaddy",
       "kind": "media",
       "via": "Curated sources"
@@ -143,15 +206,6 @@
       "title": "Villagers in northern Laos are afraid to use river water after rare-earth pond spill",
       "url": "https://rfa.org/english/laos/2026/11/16/laos-water-rare-earth-contamination-china/",
       "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-16",
-      "title": "ASEAN Seeks ‘Calibrated Engagement’ With Myanmar: Statement",
-      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/asean-seeks-calibrated-engagement-with-myanmar-statement.html",
-      "source": "The Irrawaddy",
       "kind": "media",
       "via": "Curated sources"
     },
@@ -174,47 +228,20 @@
       "via": "GDELT"
     },
     {
-      "country": "Philippines",
-      "date": "2026-11-13",
-      "title": "Filipino fishermen urge Manila to defend territorial waters – their fishing grounds",
-      "url": "https://rfa.org/english/southchinasea/2026/11/13/fishermen-philippines-asean-apec-scarborough-shoal-china/",
-      "source": "Radio Free Asia",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
       "country": "Singapore",
       "date": "2026-11-13",
-      "title": "[Event] “POFMA at Seven” at 5pm on 10 December 2026 at room2f Bras Basah Complex",
+      "title": "[MARUAH Event] “POFMA at Seven, A review of the Protection from Online Falsehoods and Manipulation Act” on 10 Dec 2026 5pm – sign up now!",
       "url": "https://maruah.org/2026/11/13/event-pofma-at-seven-at-5pm-on-10-december-2026-at-room2f-bras-basah-complex/",
       "source": "MARUAH (Working Group for an ASEAN Human Rights Mechanism, Singapore)",
       "kind": "cso",
       "via": "Curated sources"
     },
     {
-      "country": "Myanmar",
+      "country": "Philippines",
       "date": "2026-11-13",
-      "title": "Myanmar Regime Seeks Closer Ties With Russian-Led Economic Bloc",
-      "url": "https://www.irrawaddy.com/business/myanmar-regime-seeks-closer-ties-with-russian-led-economic-bloc.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-13",
-      "title": "Myanmar’s Dwindling Debt to China, Scammers Nabbed in Shan, and More",
-      "url": "https://www.irrawaddy.com/news/china-briefing/myanmars-dwindling-debt-to-china-scammers-nabbed-in-shan-and-more.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-13",
-      "title": "ASEAN Should Accept Myanmar Back at Diplomat Level: Bangkok",
-      "url": "https://www.irrawaddy.com/news/myanmars-crisis-the-world/asean-should-accept-myanmar-back-at-diplomat-level-bangkok.html",
-      "source": "The Irrawaddy",
+      "title": "Filipino fishermen urge Manila to defend territorial waters – their fishing grounds",
+      "url": "https://rfa.org/english/southchinasea/2026/11/13/fishermen-philippines-asean-apec-scarborough-shoal-china/",
+      "source": "Radio Free Asia",
       "kind": "media",
       "via": "Curated sources"
     },
@@ -306,24 +333,6 @@
       "url": "https://asylumaccess.org/press-conference-upr-iv/",
       "source": "Asylum Access",
       "kind": "ingo",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-12",
-      "title": "Myanmar Faces Year of Blackouts as Regime Admits 30% Power Shortfall",
-      "url": "https://www.irrawaddy.com/news/burma/myanmar-faces-year-of-blackouts-as-regime-admits-30-power-shortfall.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Myanmar",
-      "date": "2026-11-12",
-      "title": "Three Years After Operation 1027, Hopang Transformed Under Wa Rule",
-      "url": "https://www.irrawaddy.com/news/burma/three-years-after-operation-1027-hopang-transformed-under-wa-rule.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
       "via": "Curated sources"
     },
     {
@@ -910,33 +919,6 @@
       "source": "bignewsnetwork.com",
       "kind": "News",
       "via": "GDELT"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-05",
-      "title": "Veal Veng Reconciliation Center: Film Screening «The First Witness.» November 5, 2026.",
-      "url": "https://www.dccam.org/veal-veng-reconciliation-center/veal-veng-reconciliation-center-film-screening-the-first-witness-november-5-2026/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Cambodia",
-      "date": "2026-11-05",
-      "title": "The Queen Mother Library: Cultural Heritage Media Journalist from California",
-      "url": "https://www.dccam.org/the-queen-mother-library/the-queen-mother-library-cultural-heritage-media-journalist-from-california/",
-      "source": "Documentation Center of Cambodia (DC-Cam)",
-      "kind": "research",
-      "via": "Curated sources"
-    },
-    {
-      "country": "Thailand",
-      "date": "2026-11-05",
-      "title": "Kyat Slump Disrupts Thai Border Trade as Import Costs Rise",
-      "url": "https://www.irrawaddy.com/business/kyat-slump-disrupts-thai-border-trade-as-import-costs-rise.html",
-      "source": "The Irrawaddy",
-      "kind": "media",
-      "via": "Curated sources"
     }
   ]
 }
