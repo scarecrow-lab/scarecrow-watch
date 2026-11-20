@@ -1,5 +1,5 @@
 /* Scarecrow Watch service worker — offline app shell + fresh data */
-const VERSION = '2026-11-20-41';
+const VERSION = '2026-11-20-42';
 const SHELL = 'sw-shell-' + VERSION;
 const RUNTIME = 'sw-runtime-' + VERSION;
 

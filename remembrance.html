@@ -78,6 +78,7 @@ footer a{ color:var(--ink-dim); }
     </div>
     <nav class="controls" aria-label="Sections">
       <a class="navlink" href="index.html">&larr; <span data-i="satDashboard">Dashboard</span></a>
+      <button class="navlink" id="theme" type="button" data-i="theme">Toggle theme</button>
       <label style="position:absolute;left:-9999px" for="langSel">Language</label>
       <select class="lang" id="langSel"></select>
     </nav>
@@ -133,6 +134,8 @@ footer a{ color:var(--ink-dim); }
   LANGS.forEach(function(l){ var o=document.createElement('option'); o.value=l.code; o.textContent=l.name; langSel.appendChild(o); });
   langSel.value = lang;
   langSel.onchange = function(){ lang=langSel.value; try{localStorage.setItem("sw-lang",lang);}catch(e){} apply(); };
+  var themeBtn=document.getElementById('theme');
+  if(themeBtn) themeBtn.onclick=function(){ var r=document.documentElement; var dk = r.dataset.theme ? r.dataset.theme==="dark" : !matchMedia("(prefers-color-scheme: light)").matches; r.dataset.theme = dk?"light":"dark"; try{localStorage.setItem("sw-theme", r.dataset.theme);}catch(e){} }
   function apply(){
     document.documentElement.lang = lang;
     document.querySelectorAll('[data-i]').forEach(function(n){ var v=t(n.dataset.i); if(typeof v==='string') n.textContent=v; });
