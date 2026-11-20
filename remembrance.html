@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Remembrance &middot; Scarecrow Watch</title>
+<meta name="description" content="Documented mass-atrocity events against the Rohingya, drawn from public UN and human-rights investigations. Places, dates and verified findings — to resist erasure — with no personal data and no graphic images.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Scarecrow Watch">
+<meta property="og:title" content="Remembrance &mdash; Scarecrow Watch">
+<meta property="og:description" content="Documented mass-atrocity events against the Rohingya, from public investigations. To resist erasure.">
+<meta property="og:url" content="https://scarecrowwatch.org/remembrance.html">
+<meta property="og:image" content="https://scarecrowwatch.org/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Remembrance &mdash; Scarecrow Watch">
+<meta name="twitter:image" content="https://scarecrowwatch.org/assets/og-image.png">
+<meta name="theme-color" content="#14181f">
+<link rel="icon" href="assets/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Montserrat:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=Source+Serif+4:wght@600&family=Noto+Sans+Myanmar:wght@400;600&family=Noto+Sans+Khmer:wght@400;600&family=Noto+Sans+Lao:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14181f; --panel:#1c222c; --panel-2:#232a35; --line:#333d4b;
+  --ink:#e9e6df; --ink-dim:#a9b0bc; --ink-faint:#8f98a7; --gold:#c99a4b;
+  --good:#5bbf91; --fire:#e2793f;
+  --glass:rgba(28,34,44,.72); --shadow:0 1px 2px rgba(0,0,0,.2), 0 12px 34px rgba(0,0,0,.28);
+  --serif:'Source Serif 4', Georgia, serif;
+  --sans:'IBM Plex Sans','IBM Plex Sans Thai',-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --brand:'Montserrat','Chakra Petch',var(--sans);
+}
+:root[data-theme="light"]{ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#62676f; --gold:#916418; --good:#2e7d52; --fire:#c05a28; --glass:rgba(255,255,255,.84); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); }
+@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){ --bg:#f2efe8; --panel:#fff; --panel-2:#faf8f3; --line:#ddd6c6; --ink:#20242b; --ink-dim:#4d5560; --ink-faint:#62676f; --gold:#916418; --good:#2e7d52; --fire:#c05a28; --glass:rgba(255,255,255,.84); --shadow:0 1px 2px rgba(32,36,43,.06), 0 10px 30px rgba(32,36,43,.08); } }
+*{ box-sizing:border-box; }
+body{ margin:0; background:radial-gradient(1200px 700px at 85% -10%, rgba(201,154,75,.10), transparent 60%), radial-gradient(900px 600px at -10% 110%, rgba(77,139,120,.08), transparent 60%), var(--bg); background-attachment:fixed; color:var(--ink); font-family:var(--sans); line-height:1.55; }
+a{ color:var(--gold); }
+.wrap{ max-width:760px; margin:0 auto; padding:28px 22px 60px; }
+.logo-mark{ display:inline-block; width:36px; height:37px; background:var(--ink); -webkit-mask:url(assets/logo-icon.png) center/contain no-repeat; mask:url(assets/logo-icon.png) center/contain no-repeat; flex:none; }
+header{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; align-items:flex-end; padding-bottom:20px; border-bottom:1px solid var(--line); margin-bottom:22px; }
+.wordmark{ display:flex; align-items:center; gap:11px; margin-bottom:12px; }
+.brand{ font-family:var(--brand); font-weight:800; font-size:21px; letter-spacing:.05em; color:var(--ink); line-height:1; }
+.brand em{ font-style:normal; font-weight:700; color:var(--gold); margin-left:.3em; }
+h1{ font-family:var(--serif); font-size:clamp(24px,4vw,32px); margin:0 0 6px; line-height:1.15; }
+.lede{ color:var(--ink-dim); margin:0; max-width:64ch; font-size:14.5px; }
+.controls{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.navlink{ background:var(--panel-2); color:var(--ink-dim); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font:500 12px var(--mono); cursor:pointer; text-decoration:none; transition:border-color .15s, color .15s; white-space:nowrap; }
+.navlink:hover{ border-color:var(--gold); color:var(--gold); }
+.lang{ background:var(--panel-2); color:var(--gold); border:1px solid var(--gold); border-radius:999px; padding:7px 10px; font:500 12px var(--sans); cursor:pointer; max-width:170px; }
+.scale{ background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--gold); border-radius:12px; padding:16px; margin:0 0 20px; box-shadow:var(--shadow); color:var(--ink-dim); font-size:14px; }
+.scale a{ font:600 12.5px var(--brand); }
+.src{ background:var(--panel-2); border:1px solid var(--line); border-radius:11px; padding:16px; margin:0 0 14px; border-left:3px solid var(--gold); }
+.src .nm{ font:700 16px var(--brand); display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; color:var(--ink); }
+.src .when{ font:600 11px var(--mono); letter-spacing:.04em; color:var(--ink-faint); text-transform:uppercase; }
+.src .d{ font-size:13.5px; color:var(--ink-dim); margin:9px 0 12px; }
+.src a.open{ display:inline-flex; align-items:center; gap:7px; text-decoration:none; background:transparent; border:1px solid var(--gold); color:var(--gold); border-radius:9px; font:600 12.5px var(--brand); padding:8px 13px; }
+.src a.open:hover{ background:var(--gold); color:#13161d; }
+.note{ background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--gold); border-radius:12px; padding:14px 16px; color:var(--ink-dim); font-size:13px; box-shadow:var(--shadow); margin-top:4px; }
+.note b{ color:var(--ink); }
+.skip-link{ position:absolute; left:-9999px; top:0; z-index:200; background:var(--gold); color:#13161d; padding:10px 16px; border-radius:0 0 8px 0; font:600 13px var(--sans); text-decoration:none; }
+.skip-link:focus{ left:0; }
+a:focus-visible,button:focus-visible,select:focus-visible,.navlink:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; border-radius:5px; }
+footer{ max-width:760px; margin:0 auto; padding:0 22px 40px; color:var(--ink-faint); font-size:12px; }
+footer a{ color:var(--ink-dim); }
+@media (max-width:620px){ header{ align-items:flex-start; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main" data-i="skipToContent">Skip to content</a>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="wordmark"><span class="logo-mark" role="img" aria-label="Scarecrow"></span><span class="brand">SCARECROW<em>WATCH</em></span></div>
+      <h1 data-i="remTitle">Remembrance</h1>
+      <p class="lede" data-i="remLede">Documented mass-atrocity events against the Rohingya, drawn from public investigations by the UN and human-rights organizations. We record places, dates and verified findings &mdash; to resist erasure &mdash; not the personal data of individuals, and we show no graphic images.</p>
+    </div>
+    <nav class="controls" aria-label="Sections">
+      <a class="navlink" href="index.html">&larr; <span data-i="satDashboard">Dashboard</span></a>
+      <label style="position:absolute;left:-9999px" for="langSel">Language</label>
+      <select class="lang" id="langSel"></select>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="scale"><span data-i="remScale">The UN Fact-Finding Mission gave a conservative estimate that at least 10,000 Rohingya were killed in the two months after August 2017. Each event below is one documented part of that whole.</span> <a href="https://digitallibrary.un.org/record/1643079/files/A_HRC_39_CRP-2-EN.pdf" target="_blank" rel="noopener noreferrer">UN Fact-Finding Mission &#8599;</a></div>
+
+    <div class="src">
+      <div class="nm">Min Gyi (Tula Toli), Maungdaw <span class="when">30 Aug 2017</span></div>
+      <div class="d">UN investigators estimate around 750 Rohingya were killed, and the village was burned to the ground. The Fact-Finding Mission described it as a well-planned, deliberate attack on a specific civilian population.</div>
+      <a class="open" href="https://www.hrw.org/report/2017/12/19/massacre-river/burmese-army-crimes-against-humanity-tula-toli" target="_blank" rel="noopener noreferrer">Source: Human Rights Watch &#8599;</a>
+    </div>
+
+    <div class="src">
+      <div class="nm">Chut Pyin, Rathedaung <span class="when">27 Aug 2017</span></div>
+      <div class="d">Physicians for Human Rights documented an estimated 400 villagers killed or missing, including 99 children, and a group of 50 men who were taken away and never seen again.</div>
+      <a class="open" href="https://phr.org/?p=4970" target="_blank" rel="noopener noreferrer">Source: Physicians for Human Rights &#8599;</a>
+    </div>
+
+    <div class="src">
+      <div class="nm">Gu Dar Pyin, Buthidaung <span class="when">27 Aug 2017</span></div>
+      <div class="d">After soldiers overran the village, survivors described several mass graves. Village elders recorded 75 names; local estimates ran as high as 400 killed. First documented by the Associated Press in 2018.</div>
+      <a class="open" href="https://aa.com.tr/en/asia-pacific/myanmar-underreported-2017-rohingya-killing-watchdog/1938803" target="_blank" rel="noopener noreferrer">Source: Anadolu Agency / HRW &#8599;</a>
+    </div>
+
+    <div class="src">
+      <div class="nm">Inn Din, Maungdaw <span class="when">Sep 2017</span></div>
+      <div class="d">An initial survey counted 147 Inn Din villagers killed; Reuters documented the execution of ten detained men. Two Reuters journalists were jailed for reporting the killings.</div>
+      <a class="open" href="https://reliefweb.int/report/bangladesh/inn-din-village-we-begged-them-not-arrest-our-husbands-rohingya-genocide-report-december-2018" target="_blank" rel="noopener noreferrer">Source: Fortify Rights (ReliefWeb) &#8599;</a>
+    </div>
+
+    <div class="note"><b data-i="remMethodLead">About this record.</b> <span data-i="remMethod">Estimates differ between investigations; each event links to its source. This records events and communities, not a registry of individuals. Records are kept in English, linked to the original investigations, for accuracy.</span></div>
+  </main>
+
+  <p style="margin-top:24px; padding-top:16px; border-top:1px solid var(--line); color:var(--ink-faint); font-size:12.5px;" data-i="remFoot">Part of Scarecrow Watch &mdash; an independent, non-profit, open-source early-warning watch for Southeast Asia. This page documents public findings and holds no personal data.</p>
+</div>
+
+<footer>
+  <p>Scarecrow Watch. <a href="about.html" data-i="satAbout">About</a> &middot; <a href="methodology/" data-i="satMethodology">Methodology</a> &middot; <a href="index.html" data-i="satLiveDash">Live dashboard</a></p>
+</footer>
+
+<script src="assets/i18n.js?v=20261120b"></script>
+<script>
+"use strict";
+(function(){ try{ var s=localStorage.getItem("sw-theme"); if(s) document.documentElement.dataset.theme=s; }catch(e){} })();
+(function(){
+  var T = window.T || {en:{}}, LANGS = window.LANGS || [{code:"en",name:"English",locale:"en-US"}];
+  var lang = "en";
+  try{ var sv=localStorage.getItem("sw-lang"); if(sv && (T[sv]||sv==="en")) lang=sv; }catch(e){}
+  function t(k){ return (T[lang]&&T[lang][k]!==undefined)?T[lang][k]:((T.en&&T.en[k]!==undefined)?T.en[k]:k); }
+  var langSel=document.getElementById('langSel');
+  LANGS.forEach(function(l){ var o=document.createElement('option'); o.value=l.code; o.textContent=l.name; langSel.appendChild(o); });
+  langSel.value = lang;
+  langSel.onchange = function(){ lang=langSel.value; try{localStorage.setItem("sw-lang",lang);}catch(e){} apply(); };
+  function apply(){
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i]').forEach(function(n){ var v=t(n.dataset.i); if(typeof v==='string') n.textContent=v; });
+    langSel.value=lang;
+  }
+  apply();
+})();
+</script>
+</body>
+</html>
