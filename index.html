@@ -607,7 +607,9 @@ function sigRow(i, showCountry){
   if (i.kind === "state-linked") meta.append(Object.assign(el("span","chip",t("kindState")), {style:"color:var(--med);border-color:var(--med)"}));
   if (i.kind === "intergovernmental") meta.append(el("span","chip",t("kindIgo")));
   const kindText = ["state-linked","intergovernmental"].includes(i.kind) ? "" : i.kind;
-  meta.append(document.createTextNode([i.source, kindText, "via " + viaOf(i)].filter(Boolean).join(" · ")));
+  if (i.source) meta.append(Object.assign(el("span","pub",i.source), {style:"font-weight:600;color:var(--ink)"}));
+  const tail = [kindText, "via " + viaOf(i)].filter(Boolean).join(" · ");
+  if (tail) meta.append(document.createTextNode((i.source ? " · " : "") + tail));
   body.append(meta); r.append(d, body); return r;
 }
 
